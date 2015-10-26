@@ -27,7 +27,7 @@ respawnDelay = 5;
 respawnDialog = false;
 
 loadScreen="loading.jpg";
-onLoadMission = "Verlegen Sie zur vorgeschobene Basis und bereiten Sie sich auf einen Gegenangriff vor.";
+onLoadMission = "Verlegen Sie zur vorgeschobenen Basis und bereiten Sie sich auf einen Gegenangriff vor.";
 OnLoadMissionTime = TRUE;
 author="Spec";
 OnLoadName = "OP Roll Out";
