@@ -1,0 +1,30 @@
+#include "W_Teleporter\dialog.hpp"
+
+class CfgFunctions {
+#include "spec_cache\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_crates\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "38";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Ob du wirklich richtig stehst, siehst du wenn dein Licht ausgeht!";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Mehrere Ziele";
+loadingScreen="loading.jpg";
+
+overviewText = "";
+overviewPicture = "";

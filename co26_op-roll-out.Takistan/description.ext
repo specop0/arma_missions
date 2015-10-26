@@ -1,0 +1,36 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_crates\CfgFunctions.hpp"
+#include "joko_tent\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+
+	class Spec{
+		class init{
+			file="scripts";
+			class spawn_vehicle {};
+		};
+	};
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "26";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+loadScreen="loading.jpg";
+onLoadMission = "Verlegen Sie zur vorgeschobene Basis und bereiten Sie sich auf einen Gegenangriff vor.";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Roll Out";
+
+overviewText = "";
+overviewPicture = "";

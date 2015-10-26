@@ -1,0 +1,26 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "15";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Nicht zu viel Atmen: Der Feind sieht den Schwaden.";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Kalte Forschung";
+
+overviewText = "";
+overviewPicture = "";

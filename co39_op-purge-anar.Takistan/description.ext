@@ -1,0 +1,23 @@
+﻿#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+	#include "W_Teleporter\CfgFunctions.hpp"
+};
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "39";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Nehmen Sie Anar ein und vernichten Sie die letzten Rebellen!";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Purge Anar";
+
+overviewText = "";
+overviewPicture = "";
