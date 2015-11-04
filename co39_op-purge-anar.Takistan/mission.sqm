@@ -18,8 +18,8 @@ class Mission
 		"A3_Characters_F_EPC",
 		"A3_Soft_F_Car",
 		"A3_armor_f_beta_APC_Tracked_02",
-		"ttt_vehicles_c",
-		"ttt_units_c",
+		"ttt_vehicles_bw_c",
+		"ttt_units_bw_c",
 		"A3_Soft_F_Quadbike",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Soft_F_HEMTT",
@@ -41,7 +41,7 @@ class Mission
 		"A3_Soft_F_Offroad_01",
 		"A3_Soft_F_Car",
 		"A3_armor_f_beta_APC_Tracked_02",
-		"ttt_units_c",
+		"ttt_units_bw_c",
 		"A3_Modules_F_GroupModifiers",
 		"3DEN",
 		"a3_modules_f_curator_curator",
@@ -50,7 +50,7 @@ class Mission
 		"ace_weather",
 		"A3_Soft_F_Gamma_Offroad",
 		"A3_Supplies_F_Heli_CargoNets",
-		"ttt_vehicles_c",
+		"ttt_vehicles_bw_c",
 		"A3_Soft_F_Quadbike",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Structures_F_Mil_Cargo",
@@ -3278,7 +3278,7 @@ class Mission
 					special="NONE";
 					id=102;
 					side="WEST";
-					vehicle="TTT_Schwarz1_Tropentarn";
+					vehicle="TTT_Schwarz1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3293,7 +3293,7 @@ class Mission
 					special="NONE";
 					id=103;
 					side="WEST";
-					vehicle="TTT_Schwarz2_Tropentarn";
+					vehicle="TTT_Schwarz2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3307,7 +3307,7 @@ class Mission
 					special="NONE";
 					id=104;
 					side="WEST";
-					vehicle="TTT_Schwarz3_Tropentarn";
+					vehicle="TTT_Schwarz3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3321,7 +3321,7 @@ class Mission
 					special="NONE";
 					id=105;
 					side="WEST";
-					vehicle="TTT_Schwarz4_Tropentarn";
+					vehicle="TTT_Schwarz4_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -3335,7 +3335,7 @@ class Mission
 					special="NONE";
 					id=106;
 					side="WEST";
-					vehicle="TTT_Schwarz5_Tropentarn";
+					vehicle="TTT_Schwarz5_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -3349,7 +3349,7 @@ class Mission
 					special="NONE";
 					id=107;
 					side="WEST";
-					vehicle="TTT_Schwarz6_Tropentarn";
+					vehicle="TTT_Schwarz6_Bw_Tropentarn";
 					player="PLAY CDG";
 					skill=0.40000001;
 					syncId=5;
@@ -3370,7 +3370,7 @@ class Mission
 					special="NONE";
 					id=108;
 					side="WEST";
-					vehicle="TTT_Rot1_Tropentarn";
+					vehicle="TTT_Rot1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3385,7 +3385,7 @@ class Mission
 					special="NONE";
 					id=109;
 					side="WEST";
-					vehicle="TTT_Rot2_Tropentarn";
+					vehicle="TTT_Rot2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3399,7 +3399,7 @@ class Mission
 					special="NONE";
 					id=110;
 					side="WEST";
-					vehicle="TTT_Rot3_Tropentarn";
+					vehicle="TTT_Rot3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3413,7 +3413,7 @@ class Mission
 					special="NONE";
 					id=111;
 					side="WEST";
-					vehicle="TTT_Rot4_Tropentarn";
+					vehicle="TTT_Rot4_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -3427,7 +3427,7 @@ class Mission
 					special="NONE";
 					id=112;
 					side="WEST";
-					vehicle="TTT_Rot5_Tropentarn";
+					vehicle="TTT_Rot5_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -3441,7 +3441,7 @@ class Mission
 					special="NONE";
 					id=113;
 					side="WEST";
-					vehicle="TTT_Rot6_Tropentarn";
+					vehicle="TTT_Rot6_Bw_Tropentarn";
 					player="PLAY CDG";
 					skill=0.40000001;
 					syncId=11;
@@ -3462,7 +3462,7 @@ class Mission
 					special="NONE";
 					id=114;
 					side="WEST";
-					vehicle="TTT_Blau1_Tropentarn";
+					vehicle="TTT_Blau1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3477,7 +3477,7 @@ class Mission
 					special="NONE";
 					id=115;
 					side="WEST";
-					vehicle="TTT_Blau2_Tropentarn";
+					vehicle="TTT_Blau2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3491,7 +3491,7 @@ class Mission
 					special="NONE";
 					id=116;
 					side="WEST";
-					vehicle="TTT_Blau3_Tropentarn";
+					vehicle="TTT_Blau3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3505,7 +3505,7 @@ class Mission
 					special="NONE";
 					id=117;
 					side="WEST";
-					vehicle="TTT_Blau4_Tropentarn";
+					vehicle="TTT_Blau4_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -3519,7 +3519,7 @@ class Mission
 					special="NONE";
 					id=118;
 					side="WEST";
-					vehicle="TTT_Blau5_Tropentarn";
+					vehicle="TTT_Blau5_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -3533,7 +3533,7 @@ class Mission
 					special="NONE";
 					id=119;
 					side="WEST";
-					vehicle="TTT_Blau6_Tropentarn";
+					vehicle="TTT_Blau6_Bw_Tropentarn";
 					player="PLAY CDG";
 					skill=0.40000001;
 					syncId=17;
@@ -3554,7 +3554,7 @@ class Mission
 					special="NONE";
 					id=120;
 					side="WEST";
-					vehicle="TTT_Violett1_Tropentarn";
+					vehicle="TTT_Violett1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3569,7 +3569,7 @@ class Mission
 					special="NONE";
 					id=121;
 					side="WEST";
-					vehicle="TTT_Violett2_Tropentarn";
+					vehicle="TTT_Violett2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3583,7 +3583,7 @@ class Mission
 					special="NONE";
 					id=122;
 					side="WEST";
-					vehicle="TTT_Violett3_Tropentarn";
+					vehicle="TTT_Violett3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3597,7 +3597,7 @@ class Mission
 					special="NONE";
 					id=123;
 					side="WEST";
-					vehicle="TTT_Violett4_Tropentarn";
+					vehicle="TTT_Violett4_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -3611,7 +3611,7 @@ class Mission
 					special="NONE";
 					id=124;
 					side="WEST";
-					vehicle="TTT_Violett5_Tropentarn";
+					vehicle="TTT_Violett5_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -3625,7 +3625,7 @@ class Mission
 					special="NONE";
 					id=125;
 					side="WEST";
-					vehicle="TTT_Violett6_Tropentarn";
+					vehicle="TTT_Violett6_Bw_Tropentarn";
 					player="PLAY CDG";
 					skill=0.40000001;
 					syncId=23;
@@ -3646,7 +3646,7 @@ class Mission
 					special="NONE";
 					id=126;
 					side="WEST";
-					vehicle="TTT_Bussard1_Tropentarn";
+					vehicle="TTT_Bussard1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3661,7 +3661,7 @@ class Mission
 					special="NONE";
 					id=127;
 					side="WEST";
-					vehicle="TTT_Bussard2_Tropentarn";
+					vehicle="TTT_Bussard2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3683,7 +3683,7 @@ class Mission
 					special="NONE";
 					id=128;
 					side="WEST";
-					vehicle="TTT_Gelb1_Tropentarn";
+					vehicle="TTT_Gelb1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
@@ -3698,7 +3698,7 @@ class Mission
 					special="NONE";
 					id=129;
 					side="WEST";
-					vehicle="TTT_Gelb2_Tropentarn";
+					vehicle="TTT_Gelb2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.64999998;
@@ -3720,7 +3720,7 @@ class Mission
 					special="NONE";
 					id=130;
 					side="WEST";
-					vehicle="TTT_Weiss1_Tropentarn";
+					vehicle="TTT_Weiss1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3736,7 +3736,7 @@ class Mission
 					special="NONE";
 					id=131;
 					side="WEST";
-					vehicle="TTT_Weiss2_Tropentarn";
+					vehicle="TTT_Weiss2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3750,7 +3750,7 @@ class Mission
 					special="NONE";
 					id=132;
 					side="WEST";
-					vehicle="TTT_Weiss3_Tropentarn";
+					vehicle="TTT_Weiss3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3765,7 +3765,7 @@ class Mission
 					special="NONE";
 					id=133;
 					side="WEST";
-					vehicle="TTT_Weiss4_Tropentarn";
+					vehicle="TTT_Weiss4_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -3787,7 +3787,7 @@ class Mission
 					special="NONE";
 					id=134;
 					side="WEST";
-					vehicle="TTT_Gruen1_Tropentarn";
+					vehicle="TTT_Gruen1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3802,7 +3802,7 @@ class Mission
 					special="NONE";
 					id=135;
 					side="WEST";
-					vehicle="TTT_Gruen2_Tropentarn";
+					vehicle="TTT_Gruen2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3816,7 +3816,7 @@ class Mission
 					special="NONE";
 					id=136;
 					side="WEST";
-					vehicle="TTT_Gruen3_Tropentarn";
+					vehicle="TTT_Gruen3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -3839,7 +3839,7 @@ class Mission
 					special="NONE";
 					id=137;
 					side="WEST";
-					vehicle="TTT_Braun1_Tropentarn";
+					vehicle="TTT_Braun1_Bw_Tropentarn";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -3854,7 +3854,7 @@ class Mission
 					special="NONE";
 					id=138;
 					side="WEST";
-					vehicle="TTT_Braun2_Tropentarn";
+					vehicle="TTT_Braun2_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -3868,7 +3868,7 @@ class Mission
 					special="NONE";
 					id=139;
 					side="WEST";
-					vehicle="TTT_Braun3_Tropentarn";
+					vehicle="TTT_Braun3_Bw_Tropentarn";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -5185,7 +5185,7 @@ class Mission
 			azimut=60;
 			id=184;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";
@@ -5206,7 +5206,7 @@ class Mission
 			azimut=60;
 			id=186;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo_1";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";
@@ -5217,7 +5217,7 @@ class Mission
 			azimut=60;
 			id=187;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo_2";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";
@@ -5228,7 +5228,7 @@ class Mission
 			azimut=60;
 			id=188;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo_3";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";
@@ -5279,7 +5279,7 @@ class Mission
 			azimut=150;
 			id=193;
 			side="EMPTY";
-			vehicle="TTT_Sanitaetshelikopter_Tropentarn";
+			vehicle="TTT_Sanitaetshelikopter_Bw_Tropentarn";
 			leader=1;
 			skill=0.5;
 			init="clearWeaponCargoGlobal this;  clearMagazineCargoGlobal this;  clearItemCargoGlobal this;";
@@ -5290,7 +5290,7 @@ class Mission
 			azimut=150;
 			id=194;
 			side="EMPTY";
-			vehicle="TTT_Sanitaetshelikopter_Tropentarn";
+			vehicle="TTT_Sanitaetshelikopter_Bw_Tropentarn";
 			leader=1;
 			skill=0.5;
 		};
@@ -5300,7 +5300,7 @@ class Mission
 			azimut=240;
 			id=195;
 			side="EMPTY";
-			vehicle="TTT_Oplfahrzeug_Tropentarn";
+			vehicle="TTT_Oplfahrzeug_Bw_Tropentarn";
 			leader=1;
 			skill=0.5;
 		};
@@ -5332,7 +5332,7 @@ class Mission
 			azimut=243;
 			id=198;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Ausruestung_bw";
+			vehicle="TTT_Logistik_Ausruestung_Bw";
 			skill=0.60000002;
 		};
 		class Item35
@@ -5341,7 +5341,7 @@ class Mission
 			azimut=243;
 			id=199;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Werfermunition_bw";
+			vehicle="TTT_Logistik_Werfermunition_Bw";
 			skill=0.60000002;
 		};
 		class Item36
@@ -5350,7 +5350,7 @@ class Mission
 			azimut=243;
 			id=200;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_bw";
+			vehicle="TTT_Logistik_Standardmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item37
@@ -5359,7 +5359,7 @@ class Mission
 			azimut=243;
 			id=201;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Werfermunition_bw";
+			vehicle="TTT_Logistik_Werfermunition_Bw";
 			skill=0.60000002;
 		};
 		class Item38
@@ -5368,7 +5368,7 @@ class Mission
 			azimut=243;
 			id=202;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_bw";
+			vehicle="TTT_Logistik_Granaten_Bw";
 			skill=0.60000002;
 		};
 		class Item39
@@ -5377,7 +5377,7 @@ class Mission
 			azimut=243;
 			id=203;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_bw";
+			vehicle="TTT_Logistik_Granaten_Bw";
 			skill=0.60000002;
 		};
 		class Item40
@@ -5386,7 +5386,7 @@ class Mission
 			azimut=243;
 			id=204;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item41
@@ -5395,7 +5395,7 @@ class Mission
 			azimut=243;
 			id=205;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_bw";
+			vehicle="TTT_Logistik_Standardmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item42
@@ -5404,7 +5404,7 @@ class Mission
 			azimut=243;
 			id=206;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_bw";
+			vehicle="TTT_Logistik_Standardmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item43
@@ -5413,7 +5413,7 @@ class Mission
 			azimut=243;
 			id=207;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_bw";
+			vehicle="TTT_Logistik_Standardmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item44
@@ -5422,7 +5422,7 @@ class Mission
 			azimut=243;
 			id=208;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_bw";
+			vehicle="TTT_Logistik_Standardmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item45
@@ -5431,7 +5431,7 @@ class Mission
 			azimut=243;
 			id=209;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Spezialmunition_bw";
+			vehicle="TTT_Logistik_Spezialmunition_Bw";
 			skill=0.60000002;
 		};
 		class Item46
@@ -5440,7 +5440,7 @@ class Mission
 			azimut=243;
 			id=210;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item47
@@ -5449,7 +5449,7 @@ class Mission
 			azimut=243;
 			id=211;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item48
@@ -5458,7 +5458,7 @@ class Mission
 			azimut=243;
 			id=212;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item49
@@ -5467,7 +5467,7 @@ class Mission
 			azimut=243;
 			id=213;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item50
@@ -5477,7 +5477,7 @@ class Mission
 			offsetY=0.40000001;
 			id=214;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item51
@@ -5486,7 +5486,7 @@ class Mission
 			offsetY=0.40000001;
 			id=215;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item52
@@ -5496,7 +5496,7 @@ class Mission
 			offsetY=0.40000001;
 			id=216;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item53
@@ -5506,7 +5506,7 @@ class Mission
 			offsetY=0.40000001;
 			id=217;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item54
@@ -5534,7 +5534,7 @@ class Mission
 			offsetY=0.40000001;
 			id=220;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_Rucksaecke_bw";
+			vehicle="TTT_Logistik_Medic_Rucksaecke_Bw";
 			skill=0.60000002;
 		};
 		class Item57
@@ -5544,7 +5544,7 @@ class Mission
 			offsetY=0.40000001;
 			id=221;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_bw";
+			vehicle="TTT_Logistik_Medic_Bw";
 			skill=0.60000002;
 		};
 		class Item58
@@ -5553,7 +5553,7 @@ class Mission
 			azimut=150;
 			id=222;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo_4";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";
@@ -5564,7 +5564,7 @@ class Mission
 			azimut=150;
 			id=223;
 			side="EMPTY";
-			vehicle="TTT_Truppfahrzeug_Mg_Tropentarn";
+			vehicle="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
 			skill=0.60000002;
 			text="dingo_extra_ammo_5";
 			init="this disableTIEquipment true; this addMagazineCargoGlobal [""BWA3_Pzf3_IT"",2]; this addMagazineCargoGlobal [""BWA3_30Rnd_556x45_G36_AP"",10];this addMagazineCargoGlobal [""BWA3_200Rnd_556x45"",5];this addMagazineCargoGlobal [""BWA3_120Rnd_762x51"",5];";

@@ -50,7 +50,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 			};
 			comment "SquadlLeader - FTL";
 			case ("O_Soldier_SL_F"): {
@@ -95,7 +94,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
 			};
 			comment "TeamLeader - #1";
 			case ("O_Soldier_TL_F"): {
@@ -144,7 +142,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 			};
 			comment "Grenadier - #2 inkl 40mm";
 			case ("O_Soldier_GL_F"):{
@@ -424,7 +421,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 				_x setVariable ["ACE_IsEngineer", 2];
 			};
 			comment "Combat Life Saver) - MedEvac";
@@ -479,7 +475,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 				
 				_x setVariable ["ace_medical_medicClass", 2];
 			};

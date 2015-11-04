@@ -50,7 +50,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,  "ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 				[_x, "ACE_NVG_Wide", 3] call Spec_fnc_addItemToContainer;
 			};
 		};
@@ -149,7 +148,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 				[_x, "ACE_NVG_Wide", 3] call Spec_fnc_addItemToContainer;
 			};
 		};
@@ -342,7 +340,6 @@ if(_parameterCorrect) then {
 				[_x,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
 				[_x,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_GD300_b", 2] call Spec_fnc_addItemToContainer;
 				[_x, "ACE_NVG_Wide", 3] call Spec_fnc_addItemToContainer;
 			};
 		};

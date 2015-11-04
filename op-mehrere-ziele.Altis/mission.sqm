@@ -5,30 +5,30 @@ class Mission
 	{
 		"3DEN",
 		"a3_modules_f_curator_curator",
-		"a3_map_altis",
 		"ace_repair",
-		"A3_Soft_F_Offroad_01",
-		"ttt_units_c",
 		"task_force_radio_items",
-		"A3_Soft_F_Truck",
 		"A3_Characters_F_Civil",
 		"a3_characters_f",
 		"A3_Modules_F",
 		"A3_Characters_F_INDEP",
+		"A3_Characters_F_EPC",
+		"A3_Soft_F_Offroad_01",
+		"A3_Soft_F_SUV",
+		"A3_Characters_F_BLUFOR",
+		"A3_Soft_F_Truck",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Soft_F_TruckHeavy",
 		"A3_Soft_F_Gamma_Offroad",
 		"A3_Soft_F_MRAP_03",
-		"A3_Characters_F_EPC",
 		"casigns_e",
 		"A3_Supplies_F_Heli_CargoNets",
-		"A3_Soft_F_SUV",
-		"ttt_vehicles_c",
+		"ttt_vehicles_us_c",
+		"ttt_units_us_c",
 		"A3_Structures_F_Mil_Cargo",
-		"A3_Characters_F_BLUFOR",
 		"lop_faction_racs",
 		"RHS_US_A2_AirImport",
-		"cup_misc_e_config"
+		"cup_misc_e_config",
+		"a3_map_altis"
 	};
 	addOnsAuto[]=
 	{
@@ -51,8 +51,8 @@ class Mission
 		"A3_Soft_F_MRAP_03",
 		"casigns_e",
 		"A3_Supplies_F_Heli_CargoNets",
-		"ttt_vehicles_c",
-		"ttt_units_c",
+		"ttt_vehicles_us_c",
+		"ttt_units_us_c",
 		"A3_Structures_F_Mil_Cargo",
 		"lop_faction_racs",
 		"RHS_US_A2_AirImport",
@@ -5411,7 +5411,7 @@ class Mission
 			azimut=130;
 			id=199;
 			side="EMPTY";
-			vehicle="TTT_Logistikhelikopter_Woodland";
+			vehicle="TTT_Logistikhelikopter_Us_Woodland";
 			skill=0.40000001;
 			text="helibig";
 		};
@@ -5421,7 +5421,7 @@ class Mission
 			azimut=130;
 			id=200;
 			side="EMPTY";
-			vehicle="TTT_Sanitaetshelikopter_Woodland";
+			vehicle="TTT_Sanitaetshelikopter_Us_Woodland";
 			skill=0.40000001;
 			text="helismall";
 		};
@@ -5432,7 +5432,7 @@ class Mission
 			offsetY=0.69999999;
 			id=201;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_us";
+			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_standardAmmo;";
 		};
@@ -5443,7 +5443,7 @@ class Mission
 			offsetY=0.69999999;
 			id=202;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_us";
+			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_standardAmmo;";
 		};
@@ -5454,7 +5454,7 @@ class Mission
 			offsetY=0.69999999;
 			id=203;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_us";
+			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_standardAmmo;";
 		};
@@ -5465,7 +5465,7 @@ class Mission
 			offsetY=0.69999999;
 			id=204;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_us";
+			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_standardAmmo;";
 		};
@@ -5476,7 +5476,7 @@ class Mission
 			offsetY=0.69999999;
 			id=205;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Standardmunition_us";
+			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_standardAmmo;";
 		};
@@ -5487,7 +5487,7 @@ class Mission
 			offsetY=0.69999999;
 			id=206;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_us";
+			vehicle="TTT_Logistik_Medic_Us";
 			skill=0.40000001;
 		};
 		class Item26
@@ -5497,7 +5497,7 @@ class Mission
 			offsetY=0.69999999;
 			id=207;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_us";
+			vehicle="TTT_Logistik_Medic_Us";
 			skill=0.40000001;
 		};
 		class Item27
@@ -5507,7 +5507,7 @@ class Mission
 			offsetY=0.69999999;
 			id=208;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_us";
+			vehicle="TTT_Logistik_Medic_Us";
 			skill=0.40000001;
 		};
 		class Item28
@@ -5517,7 +5517,7 @@ class Mission
 			offsetY=0.69999999;
 			id=209;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_us";
+			vehicle="TTT_Logistik_Medic_Us";
 			skill=0.40000001;
 		};
 		class Item29
@@ -5527,7 +5527,7 @@ class Mission
 			offsetY=0.69999999;
 			id=210;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Medic_us";
+			vehicle="TTT_Logistik_Medic_Us";
 			skill=0.40000001;
 		};
 		class Item30
@@ -5537,7 +5537,7 @@ class Mission
 			offsetY=0.69999999;
 			id=211;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_us";
+			vehicle="TTT_Logistik_Granaten_Us";
 			skill=0.40000001;
 		};
 		class Item31
@@ -5547,7 +5547,7 @@ class Mission
 			offsetY=0.69999999;
 			id=212;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_us";
+			vehicle="TTT_Logistik_Granaten_Us";
 			skill=0.40000001;
 		};
 		class Item32
@@ -5557,7 +5557,7 @@ class Mission
 			offsetY=0.69999999;
 			id=213;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_us";
+			vehicle="TTT_Logistik_Granaten_Us";
 			skill=0.40000001;
 		};
 		class Item33
@@ -5567,7 +5567,7 @@ class Mission
 			offsetY=0.69999999;
 			id=214;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Granaten_us";
+			vehicle="TTT_Logistik_Granaten_Us";
 			skill=0.40000001;
 		};
 		class Item34
@@ -5577,7 +5577,7 @@ class Mission
 			offsetY=0.69999999;
 			id=215;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Werfer_us";
+			vehicle="TTT_Logistik_Werfer_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_crateLauncher;";
 		};
@@ -5588,7 +5588,7 @@ class Mission
 			offsetY=0.69999999;
 			id=216;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Werfer_us";
+			vehicle="TTT_Logistik_Werfer_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_crateLauncher;";
 		};
@@ -5599,7 +5599,7 @@ class Mission
 			offsetY=0.69999999;
 			id=217;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Werfer_us";
+			vehicle="TTT_Logistik_Werfer_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_crateLauncher;";
 		};
@@ -5610,7 +5610,7 @@ class Mission
 			offsetY=0.69999999;
 			id=218;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Pionierausruestung_us";
+			vehicle="TTT_Logistik_Pionierausruestung_Us";
 			skill=0.40000001;
 		};
 		class Item38
@@ -5620,7 +5620,7 @@ class Mission
 			offsetY=0.69999999;
 			id=219;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Pionierausruestung_us";
+			vehicle="TTT_Logistik_Pionierausruestung_Us";
 			skill=0.40000001;
 		};
 		class Item39
@@ -5630,7 +5630,7 @@ class Mission
 			offsetY=0.69999999;
 			id=220;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Spezialmunition_us";
+			vehicle="TTT_Logistik_Spezialmunition_Us";
 			skill=0.40000001;
 		};
 		class Item40
@@ -5640,7 +5640,7 @@ class Mission
 			offsetY=0.69999999;
 			id=221;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Spezialwaffen_us";
+			vehicle="TTT_Logistik_Spezialwaffen_Us";
 			skill=0.40000001;
 		};
 		class Item41
@@ -5650,7 +5650,7 @@ class Mission
 			offsetY=0.69999999;
 			id=222;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Waffen_us";
+			vehicle="TTT_Logistik_Waffen_Us";
 			skill=0.40000001;
 			init="this call Spec_fnc_crateWeapons;";
 		};
@@ -5661,7 +5661,7 @@ class Mission
 			offsetY=0.69999999;
 			id=223;
 			side="EMPTY";
-			vehicle="TTT_Logistik_Ausruestung_us";
+			vehicle="TTT_Logistik_Ausruestung_Us";
 			skill=0.40000001;
 		};
 		class Item43
