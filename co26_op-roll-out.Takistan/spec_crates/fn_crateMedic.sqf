@@ -17,6 +17,8 @@ local _saline = "ACE_salineIV";
 local _saline500 = "ACE_salineIV_500";
 local _saline250 = "ACE_salineIV_250";
 
+local _bodyBag = "ACE_bodyBag";
+
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
@@ -36,4 +38,6 @@ if(_parameterCorrect) then {
 	
 	_x addItemCargoGlobal [_personalAidKit,10];
 	_x addItemCargoGlobal [_surgicalKit,10];
+	
+	_x addItemCargoGlobal [_bodyBag, 5];
 };
