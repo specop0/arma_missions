@@ -209,9 +209,10 @@ if(_parameterCorrect) then {
 				_x addPrimaryWeaponItem "acc_flashlight";
 			} else {
 				if(_type == _lmg) then {
-					for "_i" from 1 to 1 do {[_x,"rhs_200rnd_556x45_M_SAW",1] call Spec_fnc_addItemToContainer;};
-					for "_i" from 1 to 3 do {[_x,"rhs_200rnd_556x45_M_SAW",2] call Spec_fnc_addItemToContainer;};
-					_x addWeapon "rhs_weap_m249_pip_L";
+					for "_i" from 1 to 1 do {[_x,"BWA3_200Rnd_556x45_Tracer",1] call Spec_fnc_addItemToContainer;};
+					for "_i" from 1 to 3 do {[_x,"BWA3_200Rnd_556x45_Tracer",2] call Spec_fnc_addItemToContainer;};
+					_x addWeapon "BWA3_MG4";
+					_x addPrimaryWeaponItem "acc_flashlight";
 				} else {
 					comment "AT launcher";
 					if(_type == _at) then {
@@ -226,10 +227,10 @@ if(_parameterCorrect) then {
 			};
 		};
 		comment "secondary weapon for everyone";
-		for "_i" from 1 to 3 do {[_x,"rhsusf_mag_17Rnd_9x19_JHP",1] call Spec_fnc_addItemToContainer;};
+		for "_i" from 1 to 3 do {[_x,"CUP_17Rnd_9x19_glock17",1] call Spec_fnc_addItemToContainer;};
 		
-		_x addWeapon "rhsusf_weap_glock17g4";
-		_x addPrimaryWeaponItem "acc_flashlight";
+		_x addWeapon "CUP_hgun_Glock17";
+		_x addHandgunItem "CUP_acc_Glock17_Flashlight";
 	};
 };
 true

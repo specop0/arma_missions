@@ -4406,7 +4406,7 @@ class Mission
 					special="NONE";
 					id=141;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -4420,7 +4420,7 @@ class Mission
 					special="NONE";
 					id=142;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
@@ -4642,7 +4642,7 @@ class Mission
 					special="NONE";
 					id=156;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.55000001;
@@ -4656,7 +4656,7 @@ class Mission
 					special="NONE";
 					id=157;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
