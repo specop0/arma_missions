@@ -93,8 +93,10 @@ if(_parameterCorrect) then {
 		if(_type == _opl || _type == _tf || _type == _funker || _type == _logistic || _type == _medevac || _type == _pilot) then {
 			_x addItemToUniform "ACE_microDAGR";
 			if(_type == _opl) then {
+				[_x, "ttt_bft_tablet", 2] call Spec_fnc_addItemToContainer;
 				//[_x,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
 			} else {
+				[_x, "ttt_bft_pda", 2] call Spec_fnc_addItemToContainer;
 				//[_x,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
 			};
 		};
@@ -228,6 +230,6 @@ if(_parameterCorrect) then {
 		
 		_x addWeapon "rhsusf_weap_glock17g4";
 		_x addPrimaryWeaponItem "acc_flashlight";
-
 	};
 };
+true
