@@ -1,9 +1,9 @@
 local _parameterCorrect = params [["_x",objNull,[objNull]]];
 
 local _standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
-local _mgAmmo = "rhs_200rnd_556x45_M_SAW";
-local _lmgAmmo = "hlc_100Rnd_762x51_B_M60E4";
-local _secondaryAmmo = "rhsusf_mag_17Rnd_9x19_JHP";
+local _mgAmmo = "hlc_100Rnd_762x51_B_M60E4";
+local _lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
+local _secondaryAmmo = "CUP_17Rnd_9x19_glock17";
 
 local _smokeShell = "1Rnd_Smoke_Grenade_shell";
 local _smokeShellRed = "1Rnd_SmokeRed_Grenade_shell";

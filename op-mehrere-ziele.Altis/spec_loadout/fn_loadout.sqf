@@ -1,192 +1,224 @@
 waitUntil {!isNull player || isServer};
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+_parameterCorrect = params [["_unit",objNull,[objNull]]];
+
+_uniform = "TFA_aus_wdl";
+_vest = "TFAx_PlateCarrier_fol";
+
+_backpack = "TFAx_assault_fol";
+_backpackBig = "TFA_Kitbag_Grn";
+_backpackLR = "TFA_511_BDU";
+
+_headgear = "TFAX_H_HelmetIA_aus";
+_headgearPilot = "H_HelmetCrew_0";
+_googles = "BWA3_G_Combat_Black";
+
+_standardWeapon = "hlc_rifle_auga3";
+_standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
+_standardAccessory = ["acc_flashlight"];
+_standardAccessoryExtra = [];
+
+_grenadeLauncherWeapon = "hlc_rifle_auga3_GL";
+_grenadeLauncherAmmo = _standardAmmo;
+_grenadeLauncherAccessory = ["acc_flashlight"];
+_grenadeLauncherAccessoryExtra = [];
+
+_secondaryWeapon = "CUP_hgun_Glock17";
+_secondaryAmmo = "CUP_17Rnd_9x19_glock17";
+_secondaryAccessory = ["CUP_acc_Glock17_Flashlight"];
 
 comment "Officer";
-local _opl = "B_officer_F"; 
+_oplClass = "B_officer_F"; 
 comment "Squad Leader";
-local _funker = "B_Soldier_SL_F";
+_funkerClass = "B_Soldier_SL_F";
 comment "Combat Life Saver";
-local _medic = "B_medic_F";
-
+_medicClass = "B_medic_F";
 
 comment "Team Leader";
-local _tf = "B_Soldier_TL_F";
+_tfClass = "B_Soldier_TL_F";
 comment "Grenadier";
-local _gl = "B_Soldier_GL_F";
+_glClass = "B_Soldier_GL_F";
+
 comment "Autorifleman";
-local _mg = "B_soldier_AR_F";
+_mgClass = "B_soldier_AR_F";
+_mgWeapon = "hlc_lmg_m60";
+_mgAmmo = "hlc_100Rnd_762x51_B_M60E4";
+_mgAccessory = [];
+_mgAccessoryExtra = [];
 comment "Ammo Bearer";
-local _mgAssi = "B_Soldier_A_F";
-comment "Rifleman (AT)";
-local _at = "B_soldier_LAT_F";
-comment "Engineer";
-local _pio = "B_engineer_F";
-
-comment "Repair Specialist";
-local _logistic = "B_soldier_repair_F";
-comment "Rifleman (Light)";
-local _medevac = "B_Soldier_lite_F";
-
-comment "Helicopter Pilot";
-local _pilot = "B_Pilot_F";
+_mgAssiClass = "B_Soldier_A_F";
 
 comment "Helicopter Crew";
-local _lmg = "B_helicrew_F";
+_lmgClass = "B_helicrew_F";
+_lmgWeapon = "BWA3_MG4";
+_lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
+_lmgAccessory = ["acc_flashlight"];
+_lmgAccessoryExtra = [];
 
-comment "classes to use: B_Soldier_F (Rifleman), B_Helipilot_F (Helicopter Pilot), B_helicrew_F (Helicopter Crew)";
+comment "Rifleman (AT)";
+_atClass = "B_soldier_LAT_F";
+_atWeapon = "UK3CB_BAF_AT4_AT_Launcher";
+
+comment "Engineer";
+_pioClass = "B_engineer_F";
+
+comment "Repair Specialist";
+_logisticClass = "B_soldier_repair_F";
+comment "Rifleman (Light)";
+_medevacClass = "B_Soldier_lite_F";
+comment "Pilot";
+_pilotClass = "B_Pilot_F";
+
+comment "classes to use: B_Soldier_F (Rifleman), B_pilotClass_F (Pilot), B_helicrew_F (Helicopter Crew)";
 
 if(_parameterCorrect) then {
-	if(side _x == west) then {
-		local _type = typeOf _x;
+	if(side _unit == west) then {
+		_type = typeOf _unit;
 		
-		removeAllWeapons _x;
-		removeAllItems _x;
-		removeAllAssignedItems _x;
-		removeUniform _x;
-		removeVest _x;
-		removeBackpack _x;
-		removeHeadgear _x;
-		removeGoggles _x;
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
 		
-		comment "Edit Vest, Uniform, Backpack, Headgear (, Googgles)";
-		_x forceAddUniform "TFA_aus_wdl";
-		_x addVest "TFAx_PlateCarrier_fol";
-		if(_type == _opl || _type == _funker || _type == _logistic || _type == _pilot) then {
-			_x addBackpack "TFA_511_BDU";
+		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
+		_unit forceAddUniform _uniform;
+		_unit addVest _vest;
+		if(_type == _oplClass || _type == _funkerClass || _type == _logisticClass || _type == _pilotClass) then {
+			_unit addBackpack _backpackLR;
 		} else {
-			if(_type == _medevac || _type == _medic) then {
-				_x addBackpack "TFA_Kitbag_Grn";
+			if(_type == _medevacClass || _type == _medicClass) then {
+				_unit addBackpack _backpackBig;
 			} else {
-				_x addBackpack "TFAx_assault_fol";
+				_unit addBackpack _backpack;
 			};
 		};
-		if(_type == _pilot) then {
-			_x addHeadgear "H_HelmetCrew_0";
+		if(_type == _pilotClass) then {
+			_unit addHeadgear _headgearPilot;
 		} else {
-			_x addHeadgear "TFAX_H_HelmetIA_aus";
+			_unit addHeadgear _headgear;
 		};
-		_x addGoggles "BWA3_G_Combat_Black";
+		_unit addGoggles _googles;
 		
-		comment "Loadout based on TTT-Mod (edit weapons near end of file)";
-		if(_type == _pio) then {
+		comment "Loadout based on TTT-Mod (weapons near end of file)";
+		if(_type == _pioClass) then {
 			comment "MineDetector hast to be equipped BEFORE any ACE Item to be functional";
 			[_x, "MineDetector", 2] call Spec_fnc_addItemToContainer;
 		};
 		
-		
-		if(_type == _opl || _type == _tf) then {
-			_x addWeapon "ACE_Vector";
+		if(_type == _oplClass || _type == _tfClass) then {
+			_unit addWeapon "ACE_Vector";
 		} else {
-			if(_type == _at || _type == _mgAssi || _type == _gl) then{
-				_x addWeapon "ACE_Yardage450";
+			if(_type == _atClass || _type == _mgAssiClass || _type == _glClass) then{
+				_unit addWeapon "ACE_Yardage450";
 			} else {
-				_x addWeapon "Binocular";
+				_unit addWeapon "Binocular";
 			};
 		};
 		
-		_x linkItem "ItemMap";
-		_x linkItem "ItemCompass";
-		_x linkItem "ItemWatch";
-		_x linkItem "tf_anprc152";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "tf_anprc152";
 		
 		comment "lead equipment (tablet, etc)";
-		if(_type == _opl || _type == _tf || _type == _funker || _type == _logistic || _type == _medevac || _type == _pilot) then {
-			_x addItemToUniform "ACE_microDAGR";
-			if(_type == _opl) then {
-				[_x, "ttt_bft_tablet", 2] call Spec_fnc_addItemToContainer;
-				//[_x,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
+		if(_type == _oplClass || _type == _tfClass || _type == _funkerClass || _type == _logisticClass || _type == _medevacClass || _type == _pilotClass) then {
+			_unit addItemToUniform "ACE_microDAGR";
+			if(_type == _medevacClass || _type == _funkerClass) then {
+				[_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
 			} else {
-				[_x, "ttt_bft_pda", 2] call Spec_fnc_addItemToContainer;
-				//[_x,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
 			};
 		};
-		if(_type == _opl || _type == _tf || _type == _logistic || _type == _pilot) then {
-			//[_x,"ACE_HelmetCam",0] call Spec_fnc_addItemToContainer;
+		if(_type == _oplClass || _type == _tfClass || _type == _logisticClass || _type == _pilotClass) then {
+			//[_unit,"ACE_HelmetCam",0] call Spec_fnc_addItemToContainer;
 		};
-		if(_type == _opl || _type == _tf || _type == _funker) then {
-			for "_i" from 1 to 3 do {[_x,"ACE_CableTie",1] call Spec_fnc_addItemToContainer;};
+		if(_type == _oplClass || _type == _tfClass || _type == _funkerClass) then {
+			[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
 		};
 		
 		comment "standard equipment (ear plugs, grenades)";
-		[_x,"ACE_EarPlugs",0] call Spec_fnc_addItemToContainer;
-		[_x,"ACE_MapTools",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_EarPlugs",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_MapTools",0] call Spec_fnc_addItemToContainer;
 		
-		for "_i" from 1 to 2 do {[_x,"ACE_IR_Strobe_Item",0] call Spec_fnc_addItemToContainer;};
-		for "_i" from 1 to 2 do {[_x,"ACE_HandFlare_Green",0] call Spec_fnc_addItemToContainer;};
+		[_unit,"ACE_IR_Strobe_Item",0,2] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_HandFlare_Green",0,2] call Spec_fnc_addItemToContainer;
 
-		for "_i" from 1 to 2 do {[_x,"SmokeShell",0] call Spec_fnc_addItemToContainer;};
-		for "_i" from 1 to 2 do {[_x,"SmokeShellGreen",0] call Spec_fnc_addItemToContainer;};
-		[_x,"SmokeShellPurple",0] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShell",0,2] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShellGreen",0, 2] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShellPurple",0] call Spec_fnc_addItemToContainer;
 		
 		comment "night equipment";
-		[_x,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
-		[_x,"ACE_NVG_Wide",1] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_NVG_Wide",1] call Spec_fnc_addItemToContainer;
 		
-		for "_i" from 1 to 2 do {[_x,"ACE_M84",1] call Spec_fnc_addItemToContainer;};
+		[_unit,"ACE_M84",1, 2] call Spec_fnc_addItemToContainer;
 
 		comment "medic equipment";
 		switch _type do {
-			case _medic : {
-				for "_i" from 1 to 10 do {[_x,"ACE_fieldDressing",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 15 do {[_x,"ACE_elasticBandage",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 10 do {[_x,"ACE_quikclot",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 10 do {[_x,"ACE_packingBandage",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 3 do {[_x,"ACE_tourniquet",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 4 do {[_x,"ACE_salineIV_500",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 5 do {[_x,"ACE_atropine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 8 do {[_x,"ACE_epinephrine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 8 do {[_x,"ACE_morphine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 3 do {[_x,"ACE_surgicalKit",2] call Spec_fnc_addItemToContainer;};
-				_x setVariable ["ace_medical_medicClass", 1];
+			case _medicClass : {
+				[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_tourniquet",2, 3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_salineIV_500",2, 4] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_atropine",2, 5] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
+				_unit setVariable ["ace_medical_medicClass", 1];
 			};
-			case _medevac : {
-				for "_i" from 1 to 10 do {[_x,"ACE_fieldDressing",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 15 do {[_x,"ACE_elasticBandage",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 10 do {[_x,"ACE_quikclot",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 10 do {[_x,"ACE_packingBandage",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 2 do {[_x,"ACE_tourniquet",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 6 do {[_x,"ACE_salineIV",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 8 do {[_x,"ACE_atropine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 12 do {[_x,"ACE_epinephrine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 12 do {[_x,"ACE_morphine",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 5 do {[_x,"ACE_surgicalKit",2] call Spec_fnc_addItemToContainer;};
-				[_x,"ACE_personalAidKit",2] call Spec_fnc_addItemToContainer;
-				_x setVariable ["ace_medical_medicClass", 2];
+			case _medevacClass : {
+				[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_salineIV",2, 6] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_atropine",2, 8] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_epinephrine",2, 12] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_personalAidKit",2] call Spec_fnc_addItemToContainer;
+				_unit setVariable ["ace_medical_medicClass", 2];
 			};
 			default {
-				for "_i" from 1 to 7 do {[_x,"ACE_fieldDressing",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 2 do {[_x,"ACE_tourniquet",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 1 do {[_x,"ACE_morphine",2] call Spec_fnc_addItemToContainer;};
+				[_unit,"ACE_fieldDressing",2, 7] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
 			};
 		};
 		
 		comment "role specific special equipment";
 		switch _type do {
-			case _tf : {
-				for "_i" from 1 to 6 do {[_x,"1Rnd_Smoke_Grenade_shell",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 6 do {[_x,"1Rnd_SmokeRed_Grenade_shell",2] call Spec_fnc_addItemToContainer;};
+			case _tfClass : {
+				[_unit,"1Rnd_Smoke_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
+				[_unit,"1Rnd_SmokeRed_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
 			};
-			case _gl : {
-				for "_i" from 1 to 12 do {[_x,"1Rnd_HE_Grenade_shell",2] call Spec_fnc_addItemToContainer;};
+			case _glClass : {
+				[_unit,"1Rnd_HE_Grenade_shell",2, 12] call Spec_fnc_addItemToContainer;
 			};
-			case _pio : {
-				_x addItemToBackpack "ToolKit";
-				for "_i" from 1 to 2 do {[_x,"DemoCharge_Remote_Mag",2] call Spec_fnc_addItemToContainer;};
-				for "_i" from 1 to 2 do {[_x,"SLAMDirectionalMine_Wire_Mag",3] call Spec_fnc_addItemToContainer;};
-				[_x,"ACE_M26_Clacker",2] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_Clacker",2] call Spec_fnc_addItemToContainer;
-				[_x,"ACE_DefusalKit",2] call Spec_fnc_addItemToContainer;
-				_x setVariable ["ACE_IsEngineer", 2];
+			case _pioClass : {
+				[_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
+				[_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"SLAMDirectionalMine_Wire_Mag",3, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_M26_Clacker",3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
+				_unit setVariable ["ACE_IsEngineer", 2];
 			};
-			case _logistic : {
-				[_x,"ToolKit",2] call Spec_fnc_addItemToContainer;
-				_x setVariable ["ACE_IsEngineer", 2];
+			case _logisticClass : {
+				[_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
+				_unit setVariable ["ACE_IsEngineer", 2];
 			};
-			case _mg : {
-				[_x,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
+			case _mgClass : {
+				[_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
 			};
-			case _mgAssi : {
-				for "_i" from 1 to 2 do {[_x,"hlc_100Rnd_762x51_B_M60E4",2] call Spec_fnc_addItemToContainer;};
+			case _mgAssiClass : {
+				[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			};
 		};
 		
@@ -194,43 +226,63 @@ if(_parameterCorrect) then {
 		comment "==============  Weapons  ==================";
 		comment "===========================================";
 		
-		comment "MG (change 'case _mgAssi :' ammunition for mmg above)";
-		if(_type == _mg) then {
-			for "_i" from 1 to 2 do {[_x,"hlc_100Rnd_762x51_B_M60E4",2] call Spec_fnc_addItemToContainer;};
-			[_x,"hlc_100Rnd_762x51_B_M60E4",1] call Spec_fnc_addItemToContainer;
-
-			_x addWeapon "hlc_lmg_m60";
+		if(_type == _mgClass) then {
+			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+			_unit addWeapon _mgWeapon;
+			{
+				_unit addPrimaryWeaponItem _x;
+			} forEach _mgAccessory;
+			{
+				[_unit,_x,3] call Spec_fnc_addItemToContainer;
+			} forEach _mgAccessoryExtra;	
 		} else {
-			comment "grenade launcher";
-			if(_type == _tf || _type == _gl) then {
-				for "_i" from 1 to 6 do {[_x,"hlc_30Rnd_556x45_SOST_AUG",2] call Spec_fnc_addItemToContainer;};
-
-				_x addWeapon "hlc_rifle_auga3_GL";
-				_x addPrimaryWeaponItem "acc_flashlight";
+			if(_type == _lmgClass) then {
+				[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
+				[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+				
+				_unit addWeapon _lmgWeapon;
+				{
+					_unit addPrimaryWeaponItem _x;
+				} forEach _lmgAccessory;
+				{
+					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+				} forEach _lmgAccessoryExtra;				
 			} else {
-				if(_type == _lmg) then {
-					for "_i" from 1 to 1 do {[_x,"BWA3_200Rnd_556x45_Tracer",1] call Spec_fnc_addItemToContainer;};
-					for "_i" from 1 to 3 do {[_x,"BWA3_200Rnd_556x45_Tracer",2] call Spec_fnc_addItemToContainer;};
-					_x addWeapon "BWA3_MG4";
-					_x addPrimaryWeaponItem "acc_flashlight";
+				comment "grenade launcher";
+				if(_type == _tfClass || _type == _glClass) then {
+					[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
+					
+					_unit addWeapon _grenadeLauncherWeapon;
+					{
+						_unit addPrimaryWeaponItem _x;
+					} forEach _grenadeLauncherAccessory;
+					{
+						[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					} forEach _grenadeLauncherAccessoryExtra;
 				} else {
 					comment "AT launcher";
-					if(_type == _at) then {
-						_x addWeapon "UK3CB_BAF_AT4_AT_Launcher";
+					if(_type == _atClass) then {
+						_unit addWeapon _atWeapon;
 					};
 					comment "standard weapon";
-					for "_i" from 1 to 6 do {[_x,"hlc_30Rnd_556x45_SOST_AUG",1] call Spec_fnc_addItemToContainer;};
+					[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
 
-					_x addWeapon "hlc_rifle_auga3";
-					_x addPrimaryWeaponItem "acc_flashlight";
+					_unit addWeapon _standardWeapon;
+					{
+						_unit addPrimaryWeaponItem _x;
+					} forEach _standardAccessory;
+					{
+						[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					} forEach _standardAccessoryExtra;
 				};
 			};
 		};
-		comment "secondary weapon for everyone";
-		for "_i" from 1 to 3 do {[_x,"CUP_17Rnd_9x19_glock17",1] call Spec_fnc_addItemToContainer;};
-		
-		_x addWeapon "CUP_hgun_Glock17";
-		_x addHandgunItem "CUP_acc_Glock17_Flashlight";
+		comment "secondary weapon";
+		[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
+		_unit addWeapon _secondaryWeapon;
+		{
+			_unit addSecondaryWeaponItem _x;
+		} forEach _secondaryAccessory;
 	};
 };
-true

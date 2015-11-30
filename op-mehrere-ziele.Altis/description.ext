@@ -23,7 +23,7 @@ respawnDialog = false;
 onLoadMission = "Ob du wirklich richtig stehst, siehst du wenn dein Licht ausgeht!";
 OnLoadMissionTime = TRUE;
 author="Spec";
-OnLoadName = "OP Mehrere Ziele";
+OnLoadName = "Schwierige Entscheidung";
 loadingScreen="loading.jpg";
 
 overviewText = "";

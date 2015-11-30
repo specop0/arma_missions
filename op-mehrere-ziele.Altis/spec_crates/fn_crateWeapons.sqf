@@ -2,7 +2,7 @@ local _parameterCorrect = params [["_x",objNull,[objNull]]];
 
 local _standardWeapon = "hlc_rifle_auga3";
 local _standardWeaponGL = "hlc_rifle_auga3_GL";
-local _lmg = "rhs_weap_m249_pip_L";
+local _lmg = "BWA3_MG4";
 local _mg = "hlc_lmg_m60";
 
 
