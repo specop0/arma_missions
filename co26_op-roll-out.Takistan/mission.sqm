@@ -2336,7 +2336,7 @@ class Mission
 					special="NONE";
 					id=54;
 					side="WEST";
-					vehicle="TTT_Gelb1_Tropentarn";
+					vehicle="TTT_Gelb1_Bw_Tropentarn";
 					leader=1;
 					rank="COLONEL";
 					skill=0.69999999;
@@ -2389,7 +2389,7 @@ class Mission
 					special="NONE";
 					id=56;
 					side="WEST";
-					vehicle="TTT_Weiss2_Bw_Tropentarn";
+					vehicle="TTT_Gelb2_Bw_Tropentarn";
 					leader=1;
 					rank="COLONEL";
 					skill=0.69999999;
@@ -3773,7 +3773,7 @@ class Mission
 						items=4;
 						class Item0
 						{
-							value="#adminLogged";
+							value="76561197981528537";
 							parentCls="ModuleCurator_F";
 							typeName="Owner";
 						};
