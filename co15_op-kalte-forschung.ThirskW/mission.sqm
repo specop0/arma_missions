@@ -3,7 +3,6 @@ class Mission
 {
 	addOns[]=
 	{
-		"3DEN",
 		"a3_modules_f_curator_curator",
 		"thirskw",
 		"A3_Characters_F_BLUFOR",
@@ -43,10 +42,8 @@ class Mission
 		"lop_faction_napa",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"task_force_radio_items",
 		"A3_Modules_F_Intel",
-		"3DEN",
-		"a3_modules_f_curator_curator",
+		"A3_Modules_F_Curator_Curator",
 		"ace_weather",
 		"A3_Structures_F_Walls",
 		"A3_Structures_F_Mil_BagFence",
@@ -1829,11 +1826,11 @@ class Mission
 					id=50;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					init="(group this) setGroupID [""Alpha""];";
+					init="this setVariable [""Spec_var_TFARgroup"", 0]";
 					description="Alpha - Zugführer";
 				};
 				class Item1
@@ -1847,6 +1844,7 @@ class Mission
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 0]";
 					description="Alpha - Grenadier";
 				};
 				class Item2
@@ -1860,6 +1858,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 0]";
 					description="Alpha - Sanitäter";
 				};
 			};
@@ -1881,7 +1880,7 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.60000002;
-					init="(group this) setGroupID [""Bravo""];";
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - Truppführer";
 				};
 				class Item1
@@ -1894,6 +1893,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - Grenadier";
 				};
 				class Item2
@@ -1906,6 +1906,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - LMG-Schütze";
 				};
 				class Item3
@@ -1918,6 +1919,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - LMG-Schütze";
 				};
 				class Item4
@@ -1930,6 +1932,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - AT-Schütze";
 				};
 				class Item5
@@ -1941,6 +1944,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 1]";
 					description="Bravo - Sprengstoffexperte";
 				};
 			};
@@ -1962,7 +1966,7 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.60000002;
-					init="(group this) setGroupID [""Charlie""];";
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - Truppführer";
 				};
 				class Item1
@@ -1975,6 +1979,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - Grenadier";
 				};
 				class Item2
@@ -1987,6 +1992,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - MG-Schütze";
 				};
 				class Item3
@@ -1999,6 +2005,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - MG-Assistent";
 				};
 				class Item4
@@ -2011,6 +2018,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - Gruppenscharfschütze";
 				};
 				class Item5
@@ -2022,6 +2030,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					init="this setVariable [""Spec_var_TFARgroup"", 2]";
 					description="Charlie - Spotter";
 				};
 			};
@@ -2110,70 +2119,6 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4630.0889,-0.022528213,4979.9922};
-					class args
-					{
-						items=7;
-						class Item0
-						{
-							value="0";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="TeamLeaderRadio";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="RiflemanRadio";
-						};
-						class Item2
-						{
-							value="7";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="terrain_interception_coefficient";
-						};
-						class Item3
-						{
-							value="LaufendeMission";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="radio_channel_name";
-						};
-						class Item4
-						{
-							value="130";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="radio_channel_password";
-						};
-						class Item5
-						{
-							value="0";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="same_sw_frequencies_for_side";
-						};
-						class Item6
-						{
-							value="0";
-							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
-							typeName="same_lr_frequencies_for_side";
-						};
-					};
-					id=69;
-					side="LOGIC";
-					vehicle="tfar_ModuleTaskForceRadioEnforceUsage";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item34
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={4670.2056,0.0047297166,4979.3433};
 					class args
 					{
@@ -2209,7 +2154,7 @@ class Mission
 							typeName="Description";
 						};
 					};
-					id=70;
+					id=69;
 					side="LOGIC";
 					vehicle="ModuleCreateDiaryRecord_F";
 					leader=1;
@@ -2218,7 +2163,7 @@ class Mission
 				};
 			};
 		};
-		class Item35
+		class Item34
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2261,7 +2206,7 @@ class Mission
 							typeName="Description";
 						};
 					};
-					id=71;
+					id=70;
 					side="LOGIC";
 					vehicle="ModuleCreateDiaryRecord_F";
 					leader=1;
@@ -2270,7 +2215,7 @@ class Mission
 				};
 			};
 		};
-		class Item36
+		class Item35
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2313,7 +2258,7 @@ class Mission
 							typeName="Description";
 						};
 					};
-					id=72;
+					id=71;
 					side="LOGIC";
 					vehicle="ModuleCreateDiaryRecord_F";
 					leader=1;
@@ -2322,7 +2267,7 @@ class Mission
 				};
 			};
 		};
-		class Item37
+		class Item36
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2365,7 +2310,7 @@ class Mission
 							typeName="Description";
 						};
 					};
-					id=73;
+					id=72;
 					side="LOGIC";
 					vehicle="ModuleCreateDiaryRecord_F";
 					leader=1;
@@ -2374,7 +2319,7 @@ class Mission
 				};
 			};
 		};
-		class Item38
+		class Item37
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2382,7 +2327,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4630.0161,0.00082914717,4969.9761};
+					position[]={4630.0161,0.16251823,4969.9761};
 					class args
 					{
 						items=4;
@@ -2411,7 +2356,7 @@ class Mission
 							typeName="Forced";
 						};
 					};
-					id=74;
+					id=73;
 					side="LOGIC";
 					vehicle="ModuleCurator_F";
 					leader=1;
@@ -2420,7 +2365,7 @@ class Mission
 				};
 			};
 		};
-		class Item39
+		class Item38
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2469,9 +2414,55 @@ class Mission
 							typeName="serverUpdateInterval";
 						};
 					};
-					id=75;
+					id=74;
 					side="LOGIC";
 					vehicle="ace_weather_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item39
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4629.9678,0.18022917,4979.9263};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561197981528537";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=75;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -3070,7 +3061,7 @@ class Mission
 			vehicle="Intel_File2_F";
 			skill=0.60000002;
 			text="intel3";
-			init="if (isServer) then {  this setVariable ['RscAttributeDiaryRecord_texture','a3\structures_f_epc\Items\Documents\Data\files_secret_ca.paa', true];  [this,'RscAttributeDiaryRecord',['Forschungsbericht - Top Secret','Ein Protokoll von verschiedenen Versuchen:<br />Anscheinend wurden Experimente mit einer neuen Waffe gemacht.','']] call bis_fnc_setServerVariable;  this setVariable ['recipients', west, true];  [ [_intel,""init""], ""bis_fnc_initIntelObject"", west ] call BIS_fnc_MP;};  ";
+			init="if (isServer) then {  this setVariable ['RscAttributeDiaryRecord_texture','a3\structures_f_epc\Items\Documents\Data\files_secret_ca.paa', true];  [this,'RscAttributeDiaryRecord',['Forschungsbericht - Top Secret','Ein Protokoll von verschiedenen Versuchen:<br />Anscheinend wurden Experimente mit einer neuen Waffe gemacht.','']] call bis_fnc_setServerVariable;  this setVariable ['recipients', west, true]; };  ";
 		};
 		class Item62
 		{
