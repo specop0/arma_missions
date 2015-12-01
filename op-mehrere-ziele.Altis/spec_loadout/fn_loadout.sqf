@@ -1,78 +1,78 @@
 waitUntil {!isNull player || isServer};
-_parameterCorrect = params [["_unit",objNull,[objNull]]];
+private _parameterCorrect = params [["_unit",objNull,[objNull]]];
 
-_uniform = "TFA_aus_wdl";
-_vest = "TFAx_PlateCarrier_fol";
+private _uniform = "TFA_aus_wdl";
+private _vest = "TFAx_PlateCarrier_fol";
 
-_backpack = "TFAx_assault_fol";
-_backpackBig = "TFA_Kitbag_Grn";
-_backpackLR = "TFA_511_BDU";
+private _backpack = "TFAx_assault_fol";
+private _backpackBig = "TFA_Kitbag_Grn";
+private _backpackLR = "TFA_511_BDU";
 
-_headgear = "TFAX_H_HelmetIA_aus";
-_headgearPilot = "H_HelmetCrew_0";
-_googles = "BWA3_G_Combat_Black";
+private _headgear = "TFAX_H_HelmetIA_aus";
+private _headgearPilot = "H_HelmetCrew_0";
+private _googles = "BWA3_G_Combat_Black";
 
-_standardWeapon = "hlc_rifle_auga3";
-_standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
-_standardAccessory = ["acc_flashlight"];
-_standardAccessoryExtra = [];
+private _standardWeapon = "hlc_rifle_auga3";
+private _standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
+private _standardAccessory = ["acc_flashlight"];
+private _standardAccessoryExtra = [];
 
-_grenadeLauncherWeapon = "hlc_rifle_auga3_GL";
-_grenadeLauncherAmmo = _standardAmmo;
-_grenadeLauncherAccessory = ["acc_flashlight"];
-_grenadeLauncherAccessoryExtra = [];
+private _grenadeLauncherWeapon = "hlc_rifle_auga3_GL";
+private _grenadeLauncherAmmo = _standardAmmo;
+private _grenadeLauncherAccessory = ["acc_flashlight"];
+private _grenadeLauncherAccessoryExtra = [];
 
-_secondaryWeapon = "CUP_hgun_Glock17";
-_secondaryAmmo = "CUP_17Rnd_9x19_glock17";
-_secondaryAccessory = ["CUP_acc_Glock17_Flashlight"];
+private _secondaryWeapon = "CUP_hgun_Glock17";
+private _secondaryAmmo = "CUP_17Rnd_9x19_glock17";
+private _secondaryAccessory = ["CUP_acc_Glock17_Flashlight"];
 
 comment "Officer";
-_oplClass = "B_officer_F"; 
+private _oplClass = "B_officer_F"; 
 comment "Squad Leader";
-_funkerClass = "B_Soldier_SL_F";
+private _funkerClass = "B_Soldier_SL_F";
 comment "Combat Life Saver";
-_medicClass = "B_medic_F";
+private _medicClass = "B_medic_F";
 
 comment "Team Leader";
-_tfClass = "B_Soldier_TL_F";
+private _tfClass = "B_Soldier_TL_F";
 comment "Grenadier";
-_glClass = "B_Soldier_GL_F";
+private _glClass = "B_Soldier_GL_F";
 
 comment "Autorifleman";
-_mgClass = "B_soldier_AR_F";
-_mgWeapon = "hlc_lmg_m60";
-_mgAmmo = "hlc_100Rnd_762x51_B_M60E4";
-_mgAccessory = [];
-_mgAccessoryExtra = [];
+private _mgClass = "B_soldier_AR_F";
+private _mgWeapon = "hlc_lmg_m60";
+private _mgAmmo = "hlc_100Rnd_762x51_B_M60E4";
+private _mgAccessory = [];
+private _mgAccessoryExtra = [];
 comment "Ammo Bearer";
-_mgAssiClass = "B_Soldier_A_F";
+private _mgAssiClass = "B_Soldier_A_F";
 
 comment "Helicopter Crew";
-_lmgClass = "B_helicrew_F";
-_lmgWeapon = "BWA3_MG4";
-_lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
-_lmgAccessory = ["acc_flashlight"];
-_lmgAccessoryExtra = [];
+private _lmgClass = "B_helicrew_F";
+private _lmgWeapon = "BWA3_MG4";
+private _lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
+private _lmgAccessory = ["acc_flashlight"];
+private _lmgAccessoryExtra = [];
 
 comment "Rifleman (AT)";
-_atClass = "B_soldier_LAT_F";
-_atWeapon = "UK3CB_BAF_AT4_AT_Launcher";
+private _atClass = "B_soldier_LAT_F";
+private _atWeapon = "UK3CB_BAF_AT4_AT_Launcher";
 
 comment "Engineer";
-_pioClass = "B_engineer_F";
+private _pioClass = "B_engineer_F";
 
 comment "Repair Specialist";
-_logisticClass = "B_soldier_repair_F";
+private _logisticClass = "B_soldier_repair_F";
 comment "Rifleman (Light)";
-_medevacClass = "B_Soldier_lite_F";
+private _medevacClass = "B_Soldier_lite_F";
 comment "Pilot";
-_pilotClass = "B_Pilot_F";
+private _pilotClass = "B_Pilot_F";
 
 comment "classes to use: B_Soldier_F (Rifleman), B_pilotClass_F (Pilot), B_helicrew_F (Helicopter Crew)";
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
-		_type = typeOf _unit;
+		private _type = typeOf _unit;
 		
 		removeAllWeapons _unit;
 		removeAllItems _unit;
