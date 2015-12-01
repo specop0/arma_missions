@@ -1,23 +1,23 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _bandageBasic = "ACE_fieldDressing";
-local _packingBandage = "ACE_packingBandage";
-local _quikcloth = "ACE_quikclot";
-local _elasticBandage = "ACE_elasticBandage";
-local _tourniquet = "ACE_tourniquet";
+private _bandageBasic = "ACE_fieldDressing";
+private _packingBandage = "ACE_packingBandage";
+private _quikcloth = "ACE_quikclot";
+private _elasticBandage = "ACE_elasticBandage";
+private _tourniquet = "ACE_tourniquet";
 
-local _morphine = "ACE_morphine";
-local _epinephrine = "ACE_epinephrine";
-local _atropine = "ACE_atropine";
+private _morphine = "ACE_morphine";
+private _epinephrine = "ACE_epinephrine";
+private _atropine = "ACE_atropine";
 
-local _personalAidKit = "ACE_personalAidKit";
-local _surgicalKit = "ACE_surgicalKit";
+private _personalAidKit = "ACE_personalAidKit";
+private _surgicalKit = "ACE_surgicalKit";
 
-local _saline = "ACE_salineIV";
-local _saline500 = "ACE_salineIV_500";
-local _saline250 = "ACE_salineIV_250";
+private _saline = "ACE_salineIV";
+private _saline500 = "ACE_salineIV_500";
+private _saline250 = "ACE_salineIV_250";
 
-local _bodyBag = "ACE_bodyBag";
+private _bodyBag = "ACE_bodyBag";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;

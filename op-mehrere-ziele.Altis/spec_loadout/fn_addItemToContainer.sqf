@@ -1,9 +1,9 @@
-local _parameterCorrect = params [["_unit",objNull],["_item",objNull],["_container",3,[0]]];
-local _returnValue = 0;
+private _parameterCorrect = params [["_unit",objNull],["_item",objNull],["_container",3,[0]]];
+private _returnValue = 0;
 
 if(_parameterCorrect) then {
 	params ["","","", ["_numberOfItems",1,[0]] ];
-	local _itemsAdded = 0;
+	private _itemsAdded = 0;
 	switch (_container) do {
 		case 0 : {
 			while {_itemsAdded < _numberOfItems} do {

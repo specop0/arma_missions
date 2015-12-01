@@ -1,5 +1,5 @@
-local _parameterCorrect = params [["_x",objNull],["_item",objNull],["_container",3,[0]]];
-local _returnValue = 1;
+private _parameterCorrect = params [["_x",objNull],["_item",objNull],["_container",3,[0]]];
+private _returnValue = 1;
 
 if(_parameterCorrect) then {
 	switch (_container) do {

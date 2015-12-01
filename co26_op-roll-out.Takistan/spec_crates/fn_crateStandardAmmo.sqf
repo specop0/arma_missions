@@ -1,11 +1,11 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _standardAmmo = "30Rnd_65x39_caseless_green";
-local _mgAmmo = "150Rnd_762x54_Box";
+private _standardAmmo = "30Rnd_65x39_caseless_green";
+private _mgAmmo = "150Rnd_762x54_Box";
 
-local _smokeShell = "1Rnd_Smoke_Grenade_shell";
-local _smokeShellRed = "1Rnd_SmokeRed_Grenade_shell";
-local _heShell = "1Rnd_HE_Grenade_shell";
+private _smokeShell = "1Rnd_Smoke_Grenade_shell";
+private _smokeShellRed = "1Rnd_SmokeRed_Grenade_shell";
+private _heShell = "1Rnd_HE_Grenade_shell";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;

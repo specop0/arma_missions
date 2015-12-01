@@ -1,6 +1,6 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _parachute = "B_Parachute";
+private _parachute = "B_Parachute";
 
 
 if(_parameterCorrect) then {

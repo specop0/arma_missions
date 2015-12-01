@@ -1,8 +1,8 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _explosiveCharge = "DemoCharge_Remote_Mag";
-local _apMine = "SLAMDirectionalMine_Wire_Mag";
-local _clacker = "ACE_Clacker";
+private _explosiveCharge = "DemoCharge_Remote_Mag";
+private _apMine = "SLAMDirectionalMine_Wire_Mag";
+private _clacker = "ACE_Clacker";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;

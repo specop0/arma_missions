@@ -9,7 +9,7 @@ JK_fnc_canBuildTent = {
 
 JK_fnc_destructTent = {
     (_this select 0) params ["_JKtent","_JKplayer"];
-    local _JKvehicle = _JKtent getVariable ["JK_tentVehicle", objNull];
+    private _JKvehicle = _JKtent getVariable ["JK_tentVehicle", objNull];
     _JKtent setVariable ["JK_tentVehicle", objNull, true];
     _JKvehicle setVariable ["JK_buildTent", false, true];
     deleteVehicle _JKtent;
@@ -22,11 +22,11 @@ JK_fnc_destructTentProgressBar = {
 
 JK_fnc_buildTent = {
     (_this select 0) params ["_JKvehicle","_JKplayer"];
-    local _position = (getPos _JKvehicle) findEmptyPosition [5, 20, "MASH"];
+    private _position = (getPos _JKvehicle) findEmptyPosition [5, 20, "MASH"];
     if (_position isEqualTo []) exitWith {hint "Nicht genug Platz zum Aufbau des Zeltes vorhanden."};
-    local _JKtent = "MASH" createVehicle _position;
+    private _JKtent = "MASH" createVehicle _position;
     _JKtent setdir (getDir _JKvehicle);
-    local _action = ["JK_BuildTent", "Reiße medizinisches Zelt ab", "",
+    private _action = ["JK_BuildTent", "Reiße medizinisches Zelt ab", "",
         JK_fnc_destructTentProgressBar,
         JK_fnc_canBuildTent
     ] call ace_interact_menu_fnc_createAction;
@@ -38,7 +38,7 @@ JK_fnc_buildTent = {
 
 JK_buildTentProgressBar = {
     params ["_JKvehicle"];
-    local _position = (getPos _JKvehicle) findEmptyPosition [5, 20, "MASH"];
+    private _position = (getPos _JKvehicle) findEmptyPosition [5, 20, "MASH"];
 	if (_position isEqualTo []) exitWith {hint "Nicht genug Platz zum Aufbau des Zeltes vorhanden."};
     player playMove JK_BuildAnimation;
     [JK_BuildTime, _this, JK_fnc_buildTent, {(_this select 0) select 1 switchMove ""}, "Baue medzinisches Zelt auf"] call ace_common_fnc_progressBar;

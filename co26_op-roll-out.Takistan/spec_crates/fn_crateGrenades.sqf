@@ -1,11 +1,11 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _smokeWhite = "SmokeShell";
-local _smokeRed = "SmokeShellRed";
-local _smokeGreen = "SmokeShellGreen";
-local _smokePurple = "SmokeShellPurple";
-local _stunGranade = "ACE_M84";
-local _irStrobe = "ACE_IR_Strobe_Item";
+private _smokeWhite = "SmokeShell";
+private _smokeRed = "SmokeShellRed";
+private _smokeGreen = "SmokeShellGreen";
+private _smokePurple = "SmokeShellPurple";
+private _stunGranade = "ACE_M84";
+private _irStrobe = "ACE_IR_Strobe_Item";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;

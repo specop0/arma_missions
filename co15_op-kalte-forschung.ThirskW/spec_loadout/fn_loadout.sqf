@@ -1,20 +1,20 @@
 waitUntil {!isNull player || isServer};
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _tf = "B_Soldier_TL_F";
-local _gl = "B_Soldier_GL_F";
-local _medic = "B_medic_F";
-local _mg = "B_soldier_AR_F";
-local _mgAssi = "B_Soldier_A_F";
-local _at = "B_soldier_LAT_F";
-local _pio = "B_engineer_F";
-local _lmg = "B_Soldier_lite_F";
-local _sniper = "B_Soldier_F";
-local _sniperHelp = "B_Helipilot_F";
+private _tf = "B_Soldier_TL_F";
+private _gl = "B_Soldier_GL_F";
+private _medic = "B_medic_F";
+private _mg = "B_soldier_AR_F";
+private _mgAssi = "B_Soldier_A_F";
+private _at = "B_soldier_LAT_F";
+private _pio = "B_engineer_F";
+private _lmg = "B_Soldier_lite_F";
+private _sniper = "B_Soldier_F";
+private _sniperHelp = "B_Helipilot_F";
 
 if(_parameterCorrect) then {
 	if(side _x == west) then {
-		local _type = typeOf _x;
+		private _type = typeOf _x;
 		
 		removeAllWeapons _x;
 		removeAllItems _x;

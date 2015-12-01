@@ -1,7 +1,7 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _atAmmo = "RPG32_F";
-local _atAmmoHE = "RPG32_HE_F";
+private _atAmmo = "RPG32_F";
+private _atAmmoHE = "RPG32_HE_F";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;

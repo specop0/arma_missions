@@ -1,18 +1,18 @@
-local _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_x",objNull,[objNull]]];
 
-local _mineDetector = "MineDetector";
-local _binocular = "Binocular";
-local _gps = "ACE_microDAGR";
-local _rangefinder = "ACE_Yardage450";
-local _toolkit = "ToolKit";
+private _mineDetector = "MineDetector";
+private _binocular = "Binocular";
+private _gps = "ACE_microDAGR";
+private _rangefinder = "ACE_Yardage450";
+private _toolkit = "ToolKit";
 
-local _backpack = "B_FieldPack_ocamo";
+private _backpack = "B_FieldPack_ocamo";
 
-local _weaponFlashlight = "acc_flashlight";
-local _weaponLaser = "acc_pointer_IR";
-local _weaponSilencerH = "muzzle_snds_H";
-local _weaponSilencerL = "muzzle_snds_L";
-local _weaponScope = "optic_Arco";
+private _weaponFlashlight = "acc_flashlight";
+private _weaponLaser = "acc_pointer_IR";
+private _weaponSilencerH = "muzzle_snds_H";
+private _weaponSilencerL = "muzzle_snds_L";
+private _weaponScope = "optic_Arco";
 
 if(_parameterCorrect) then {
 	clearWeaponCargoGlobal _x;
