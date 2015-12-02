@@ -104,7 +104,7 @@ if(_parameterCorrect) then {
 		
 		comment "Loadout based on TTT-Mod (weapons near end of file)";
 		if(_type == _pioClass) then {
-			comment "MineDetector hast to be equipped BEFORE any ACE Item to be functional";
+			comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
 			[_x, "MineDetector", 2] call Spec_fnc_addItemToContainer;
 		};
 		

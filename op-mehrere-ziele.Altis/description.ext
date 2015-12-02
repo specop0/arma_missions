@@ -24,7 +24,7 @@ onLoadMission = "Ob du wirklich richtig stehst, siehst du wenn dein Licht ausgeh
 OnLoadMissionTime = TRUE;
 author="Spec";
 OnLoadName = "Schwierige Entscheidung";
-loadingScreen="loading.jpg";
+loadScreen="loading.jpg";
 
 overviewText = "";
 overviewPicture = "";
