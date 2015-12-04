@@ -3,7 +3,7 @@ class spec_loadout {
 	class init {
 		file="spec_loadout";
 		class loadout {};
-		class ki_init {};
+		class units_init { postInit = 1; };
 		class addItemToContainer {};
 	};
 };

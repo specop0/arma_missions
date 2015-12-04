@@ -1,3 +1,16 @@
+/*
+	Author: SpecOp0
+
+	Description:
+	Assigns a loadout to a given unit.
+	
+	Parameter(s):
+	0: OBJECT - unit to assign loadout to
+
+	Returns:
+	true
+*/
+
 waitUntil {!isNull player || isServer};
 private _parameterCorrect = params [["_unit",objNull,[objNull]]];
 
@@ -286,3 +299,4 @@ if(_parameterCorrect) then {
 		} forEach _secondaryAccessory;
 	};
 };
+true
