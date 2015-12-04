@@ -13,5 +13,5 @@ if(_parameterCorrect) then {
 	_object addAction ["OPL", Spec_fnc_loadout, "B_officer_F", -12];
 	_object addAction ["Pilot", Spec_fnc_loadout, "B_Helipilot_F", -13];
 	_object addAction ["Pionier", Spec_fnc_loadout, "B_engineer_F", -14];
-	_object addAction ["TF", Spec_fnc_loadout, "B_Soldier_TL_F", -15];
+	_object addAction ["Truppfuehrer", Spec_fnc_loadout, "B_Soldier_TL_F", -15];
 };

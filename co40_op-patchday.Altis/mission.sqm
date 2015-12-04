@@ -80,7 +80,7 @@ class Mission
 					special="NONE";
 					id=1;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
@@ -95,7 +95,7 @@ class Mission
 					special="NONE";
 					id=2;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.5;
@@ -131,7 +131,7 @@ class Mission
 					special="NONE";
 					id=4;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -223,7 +223,7 @@ class Mission
 					special="NONE";
 					id=10;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -315,7 +315,7 @@ class Mission
 					special="NONE";
 					id=16;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
@@ -330,7 +330,7 @@ class Mission
 					special="NONE";
 					id=17;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.5;
@@ -366,7 +366,7 @@ class Mission
 					special="NONE";
 					id=19;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
@@ -458,7 +458,7 @@ class Mission
 					special="NONE";
 					id=25;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="MAJOR";
