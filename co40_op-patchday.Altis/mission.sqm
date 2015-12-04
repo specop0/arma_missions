@@ -51,7 +51,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15178.391,17.914438,17359.938};
+					position[]={15178.299,17.914316,17359.938};
 					azimut=235;
 					special="NONE";
 					id=0;
@@ -62,6 +62,8 @@ class Mission
 					rank="MAJOR";
 					skill=0.5;
 					text="z2";
+					init="this setVariable [""Spec_var_TFARgroup"", 0];";
+					description="Gelb - stellv. OPL";
 				};
 			};
 		};
@@ -83,6 +85,8 @@ class Mission
 					leader=1;
 					rank="COLONEL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 1];";
+					description="Gruen - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -95,6 +99,8 @@ class Mission
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 1];";
+					description="Gruen - Funker";
 				};
 				class Item2
 				{
@@ -107,6 +113,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 1];";
+					description="Gruen - Gefechtssanitaeter";
 				};
 			};
 		};
@@ -128,6 +136,8 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -140,6 +150,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - Grenadier";
 				};
 				class Item2
 				{
@@ -152,6 +164,8 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - LMG-Schuetze";
 				};
 				class Item3
 				{
@@ -164,6 +178,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - LMG-Schuetze";
 				};
 				class Item4
 				{
@@ -176,6 +192,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - AT-Schuetze";
 				};
 				class Item5
 				{
@@ -187,6 +205,8 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 2];";
+					description="Schwarz - AT-Schuetze";
 				};
 			};
 		};
@@ -208,6 +228,8 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -220,6 +242,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - Grenadier";
 				};
 				class Item2
 				{
@@ -232,6 +256,8 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - MG-Assistent";
 				};
 				class Item3
 				{
@@ -244,6 +270,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - MG-Schuetze";
 				};
 				class Item4
 				{
@@ -256,6 +284,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - Pionier";
 				};
 				class Item5
 				{
@@ -267,6 +297,8 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 3];";
+					description="Blau - Pionier";
 				};
 			};
 		};
@@ -288,6 +320,8 @@ class Mission
 					leader=1;
 					rank="COLONEL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 4];";
+					description="Braun - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -300,6 +334,8 @@ class Mission
 					player="PLAY CDG";
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 4];";
+					description="Braun - Funker";
 				};
 				class Item2
 				{
@@ -312,6 +348,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 4];";
+					description="Braun - Gefechtssanitaeter";
 				};
 			};
 		};
@@ -333,6 +371,8 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -345,6 +385,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - Grenadier";
 				};
 				class Item2
 				{
@@ -357,6 +399,8 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - LMG-Schuetze";
 				};
 				class Item3
 				{
@@ -369,6 +413,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - LMG-Schuetze";
 				};
 				class Item4
 				{
@@ -381,6 +427,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - AT-Schuetze";
 				};
 				class Item5
 				{
@@ -392,6 +440,8 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 5];";
+					description="Rot - AT-Schuetze";
 				};
 			};
 		};
@@ -413,6 +463,8 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - Truppfuehrer";
 				};
 				class Item1
 				{
@@ -425,6 +477,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - Grenadier";
 				};
 				class Item2
 				{
@@ -437,6 +491,8 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - MG-Assistent";
 				};
 				class Item3
 				{
@@ -449,6 +505,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - MG-Schuetze";
 				};
 				class Item4
 				{
@@ -461,6 +519,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - Pionier";
 				};
 				class Item5
 				{
@@ -472,6 +532,8 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 6];";
+					description="Violett - Pionier";
 				};
 			};
 		};
@@ -493,6 +555,8 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - Pilot";
 				};
 				class Item1
 				{
@@ -505,6 +569,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - CoPilot";
 				};
 				class Item2
 				{
@@ -517,6 +583,8 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - Pilot";
 				};
 				class Item3
 				{
@@ -529,6 +597,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - CoPilot";
 				};
 				class Item4
 				{
@@ -541,6 +611,8 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - Feldarzt";
 				};
 				class Item5
 				{
@@ -552,6 +624,8 @@ class Mission
 					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.5;
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Silber - Feldarzt";
 				};
 			};
 		};
@@ -666,6 +740,8 @@ class Mission
 					rank="COLONEL";
 					skill=0.5;
 					text="z1";
+					init="this setVariable [""Spec_var_TFARgroup"", 0];";
+					description="Gelb - OPL";
 				};
 			};
 		};
@@ -780,6 +856,8 @@ class Mission
 					rank="MAJOR";
 					skill=0.5;
 					text="z3";
+					init="this setVariable [""Spec_var_TFARgroup"", 0];";
+					description="Zeus 3";
 				};
 			};
 		};
@@ -802,6 +880,8 @@ class Mission
 					rank="MAJOR";
 					skill=0.5;
 					text="z4";
+					init="this setVariable [""Spec_var_TFARgroup"", 0];";
+					description="Zeus 4";
 				};
 			};
 		};
