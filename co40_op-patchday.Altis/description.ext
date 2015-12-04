@@ -1,0 +1,29 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
+
+#include "spec_tfar\CfgFunctions.hpp" // crashes mission if add on not used
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "40";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Never play on a patch day!";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Patchday";
+loadScreen="bluescreen.jpg";
+
+overviewText = "";
+overviewPicture = "";
