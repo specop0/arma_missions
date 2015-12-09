@@ -5808,12 +5808,12 @@ class Mission
 	};
 	class Markers
 	{
-		items=22;
+		items=12;
 		class Item0
 		{
-			position[]={22021.58,33.431641,21096.551};
+			position[]={22790.445,37.47345,21026.793};
 			name="cleanup_1";
-			text="cleanup_1 1km";
+			text="cleanup_1 2km";
 			type="Empty";
 		};
 		class Item1
@@ -5871,98 +5871,26 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={11487.061,19.197153,14471.252};
-			name="marker_spawn_3";
-			type="hd_arrow";
-			colorName="ColorWEST";
-			angle=230;
-		};
-		class Item9
-		{
-			position[]={10772.279,86.969292,19147.379};
-			name="marker_spawn_3_1";
-			type="hd_arrow";
-			colorName="ColorWEST";
-			angle=280;
-		};
-		class Item10
-		{
-			position[]={17264.549,-19.229584,19945.064};
-			name="marker_spawn_dot";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item11
-		{
-			position[]={19765.439,14.863537,15622.457};
-			name="marker_spawn_dot_1";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item12
-		{
-			position[]={19521.658,24.745205,14755.304};
-			name="marker_spawn_dot_2";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item13
-		{
-			position[]={14932.941,0.59388667,10904.631};
-			name="marker_spawn_dot_3";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item14
-		{
-			position[]={13005.53,3.5520263,13207.137};
-			name="marker_spawn_dot_4";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item15
-		{
-			position[]={9946.8125,138.76337,15768.931};
-			name="marker_spawn_dot_5";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item16
-		{
-			position[]={9510.2871,93.57975,17014.402};
-			name="marker_spawn_dot_6";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item17
-		{
-			position[]={12004.642,103.60213,21339.973};
-			name="marker_spawn_dot_7";
-			type="hd_dot";
-			colorName="ColorWEST";
-		};
-		class Item18
-		{
 			position[]={15160.262,17.868658,17333.506};
 			name="respawn_west";
 			type="Empty";
 			angle=45;
 		};
-		class Item19
+		class Item9
 		{
 			position[]={15190.527,21.051157,17366.709};
 			name="marker_opl";
 			type="b_hq";
 			colorName="ColorWEST";
 		};
-		class Item20
+		class Item10
 		{
 			position[]={15115.366,17.878981,17282.227};
 			name="marker_medic";
 			type="b_med";
 			colorName="ColorWEST";
 		};
-		class Item21
+		class Item11
 		{
 			position[]={15168.954,17.871773,17333.828};
 			name="marker_teleporter";
