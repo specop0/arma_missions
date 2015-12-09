@@ -3766,7 +3766,7 @@ class Mission
 					vehicle="C_man_polo_3_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 10);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 10);";
 				};
 			};
 		};
@@ -3785,7 +3785,7 @@ class Mission
 					vehicle="C_man_polo_4_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 11);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 11);";
 				};
 			};
 		};
@@ -3804,7 +3804,7 @@ class Mission
 					vehicle="C_man_shorts_2_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 13);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 13);";
 				};
 			};
 		};
@@ -3823,7 +3823,7 @@ class Mission
 					vehicle="C_man_polo_5_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 14);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 14);";
 				};
 			};
 		};
@@ -3842,7 +3842,7 @@ class Mission
 					vehicle="C_man_polo_5_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 7);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 7);";
 				};
 			};
 		};
@@ -3861,7 +3861,7 @@ class Mission
 					vehicle="C_man_polo_6_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 8);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 8);";
 				};
 			};
 		};
@@ -3880,7 +3880,7 @@ class Mission
 					vehicle="C_man_shorts_2_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 9);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 9);";
 				};
 			};
 		};
@@ -3899,7 +3899,7 @@ class Mission
 					vehicle="C_man_polo_2_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 15);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 15);";
 				};
 			};
 		};
@@ -3918,7 +3918,7 @@ class Mission
 					vehicle="C_man_polo_1_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed;; this setPos ((position this nearestObject 790120) buildingPos 14);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed;; this setPos ((position this nearestObject 790206) buildingPos 14);";
 				};
 			};
 		};
@@ -3937,7 +3937,7 @@ class Mission
 					vehicle="C_Nikos_aged";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 12);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 12);";
 				};
 			};
 		};
@@ -3956,7 +3956,7 @@ class Mission
 					vehicle="C_man_polo_1_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790120) buildingPos 11);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 11);";
 				};
 			};
 		};
@@ -3975,7 +3975,7 @@ class Mission
 					vehicle="C_man_polo_2_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 17);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 17);";
 				};
 			};
 		};
@@ -3994,7 +3994,7 @@ class Mission
 					vehicle="C_man_polo_3_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 18);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 18);";
 				};
 			};
 		};
@@ -4013,7 +4013,7 @@ class Mission
 					vehicle="C_man_polo_4_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791114) buildingPos 20);";
+					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 20);";
 				};
 			};
 		};
@@ -4902,7 +4902,7 @@ class Mission
 				{
 					position[]={23480.396,92.633041,21107.156};
 					combat="SAFE";
-					expCond="if(isServer) then { triggerActivated bluforNearHostages } else { false };";
+					expCond="triggerActivated bluforNearHostages";
 					class Effects
 					{
 					};
@@ -4921,9 +4921,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={23483.807,90.459999,21145.246};
-					idStatic=1539728;
-					idObject=-669487472;
+					position[]={23483.564,90.440002,21143.494};
 					type="GETIN NEAREST";
 					combat="AWARE";
 					class Effects
@@ -4976,7 +4974,7 @@ class Mission
 				{
 					position[]={23484.955,92.836792,21107.242};
 					combat="SAFE";
-					expCond="if(isServer) then { triggerActivated bluforNearHostages } else { false };";
+					expCond="triggerActivated bluforNearHostages";
 					class Effects
 					{
 					};
@@ -6061,8 +6059,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="bluforNearHostages";
-			expCond="if(isServer) then { this } else { true };";
-			expActiv="if(!isNil ""beggar"" && !isNil ""beggar_killer"") then {  beggar_killer doFire beggar;  };";
+			expActiv="if(isServer) then { if(!isNil ""beggar"" && !isNil ""beggar_killer"") then {  beggar_killer doFire beggar;  }; };";
 			class Effects
 			{
 			};
