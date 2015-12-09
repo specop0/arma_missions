@@ -10,6 +10,7 @@ if(isServer) then {
 				_spawnedUnit = _group createUnit [_x, _position, [], 0, "FORM"];
 				_spawnedUnit setDir _direction;
 				_spawnedUnit setSkill 1;
+				_spawnedUnit call Spec_fnc_assignToAllCurators;
 			} foreach _unitTypeArray;
 			// assign group waypoints
 			private "_waypoint";

@@ -13,6 +13,19 @@
 
 waitUntil {!isNull player || isServer};
 private _parameterCorrect = params [["_unit",objNull,[objNull]]];
+private _type = "";
+if !(_unit isKindOf "Man") then {
+	_parameterCorrect = params [ "", ["_caller", objNull,[objNull]] ];
+	if(_parameterCorrect) then {
+		_unit = _caller;
+	};
+	if ((_this select 3) isEqualTypeAny ["",[]]) then {
+		private _addActionParameterCorrect = (_this select 3) params [ ["_typeAddActionArg","",["STRING"]] ];
+		if(_addActionParameterCorrect) then {
+			_type = _typeAddActionArg;
+		};
+	};
+};
 
 private _uniform = "BWA3_Uniform2_Fleck";
 private _vest = "BWA3_Vest_Fleck";
@@ -85,7 +98,9 @@ comment "classes to use: B_Soldier_F (Rifleman), B_pilotClass_F (Pilot), B_helic
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
-		private _type = typeOf _unit;
+		if(_type == "") then {
+			_type = typeOf _unit;
+		};
 		
 		removeAllWeapons _unit;
 		removeAllItems _unit;

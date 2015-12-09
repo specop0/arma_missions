@@ -475,7 +475,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.60000002;
-					init="repaired = false; _carAlarm1 = [] spawn { while {!isNil ""offroad"" && !repaired} do { playSound3D [""A3\Sounds_F\sfx\alarmCar.wss"", offroad, false, getPosASL offroad, 0.5]; sleep 10; }; };  _carAlarm2 = [] spawn { while {!isNil ""truck"" && !repaired} do { playSound3D [""A3\Sounds_F\sfx\alarmCar.wss"", truck, false, getPosASL truck, 0.5]; sleep 8; }; };  ";
+					init="_scriptHandle = [] execVM ""carAlarm.sqf""";
 				};
 			};
 		};
@@ -5973,7 +5973,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			position[]={7235.1626,4.3576832,11027.287};
@@ -6068,21 +6068,6 @@ class Mission
 			};
 		};
 		class Item6
-		{
-			position[]={7243.7725,4.5713801,11028.563};
-			a=30;
-			b=10;
-			rectangular=1;
-			activationBy="CIV";
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="if(isServer) then { repaired } else { true };";
-			expActiv="if(isServer) then { { _x enableAI 'MOVE' } forEach thisList; };";
-			class Effects
-			{
-			};
-		};
-		class Item7
 		{
 			position[]={20787.258,28.039764,7262.5576};
 			a=30;
