@@ -5,6 +5,7 @@ class CfgFunctions {
 #include "spec_loadout\CfgFunctions.hpp"
 #include "spec_crates\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
 #include "W_Teleporter\CfgFunctions.hpp"
 };
 

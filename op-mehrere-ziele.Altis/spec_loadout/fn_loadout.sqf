@@ -14,14 +14,14 @@
 waitUntil {!isNull player || isServer};
 private _parameterCorrect = params [["_unit",objNull,[objNull]]];
 
-private _uniform = "TFA_aus_wdl";
-private _vest = "TFAx_PlateCarrier_fol";
+private _uniform = "BWA3_Uniform2_Fleck";
+private _vest = "BWA3_Vest_Fleck";
 
-private _backpack = "TFAx_assault_fol";
-private _backpackBig = "TFA_Kitbag_Grn";
-private _backpackLR = "TFA_511_BDU";
+private _backpack = "BWA3_AssaultPack_Fleck";
+private _backpackBig = "BWA3_Kitbag_Fleck_Medic"; //BWA3_Kitbag_Fleck
+private _backpackLR = "tf_mr3000_bwmod";
 
-private _headgear = "TFAX_H_HelmetIA_aus";
+private _headgear = "BWA3_M92_Fleck";
 private _headgearPilot = "H_HelmetCrew_0";
 private _googles = "BWA3_G_Combat_Black";
 
@@ -123,6 +123,7 @@ if(_parameterCorrect) then {
 		
 		if(_type == _oplClass || _type == _tfClass) then {
 			_unit addWeapon "ACE_Vector";
+			[_unit,"BWA3_Beret_Falli",2] call Spec_fnc_addItemToContainer;
 		} else {
 			if(_type == _atClass || _type == _mgAssiClass || _type == _glClass) then{
 				_unit addWeapon "ACE_Yardage450";

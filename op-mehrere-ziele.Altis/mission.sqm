@@ -4803,7 +4803,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.64999998;
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 1 - Pilot";
+					description="Silber 1 - Pilot";
 				};
 				class Item1
 				{
@@ -4817,7 +4817,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 2 - Co-Pilot";
+					description="Silber 2 - Co-Pilot";
 				};
 				class Item2
 				{
@@ -4831,7 +4831,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.64999998;
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 3 - Pilot";
+					description="Silber 3 - Pilot";
 				};
 				class Item3
 				{
@@ -4845,7 +4845,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 4 - Co-Pilot";
+					description="Silber 4 - Co-Pilot";
 				};
 				class Item4
 				{
@@ -4858,9 +4858,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.55000001;
-					text="bussard_5";
+					text="Silber_5";
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 5 - Feldarzt";
+					description="Silber 5 - Feldarzt";
 				};
 				class Item5
 				{
@@ -4872,9 +4872,9 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.5;
-					text="bussard_6";
+					text="Silber_6";
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";
-					description="Bussard 5 - Feldarzt";
+					description="Silber 5 - Feldarzt";
 				};
 			};
 		};
