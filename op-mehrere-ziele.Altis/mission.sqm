@@ -76,9 +76,9 @@ class Mission
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
-		year=2035;
-		month=6;
-		day=24;
+		year=2018;
+		month=12;
+		day=14;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;
@@ -4923,7 +4923,7 @@ class Mission
 				{
 					position[]={23483.807,90.459999,21145.246};
 					idStatic=1539728;
-					idObject=-669485424;
+					idObject=-669487472;
 					type="GETIN NEAREST";
 					combat="AWARE";
 					class Effects
@@ -5072,7 +5072,7 @@ class Mission
 				{
 					position[]={23560.084,94.331543,21203.234};
 					idStatic=1539688;
-					idObject=-665285016;
+					idObject=-665287064;
 					housePos=1;
 					type="GETIN";
 					class Effects
@@ -5125,7 +5125,7 @@ class Mission
 				{
 					position[]={23730.426,105.5537,21009.316};
 					idStatic=1545793;
-					idObject=-677855679;
+					idObject=-677857727;
 					housePos=1;
 					type="GETIN";
 					class Effects
@@ -5186,7 +5186,7 @@ class Mission
 				{
 					position[]={23730.426,105.5537,21009.316};
 					idStatic=1545793;
-					idObject=-677855679;
+					idObject=-677857727;
 					housePos=0;
 					formation="ECH LEFT";
 					class Effects
