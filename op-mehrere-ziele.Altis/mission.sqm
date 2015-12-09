@@ -5468,7 +5468,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
-			init="this call Spec_fnc_standardAmmo;";
+			init="this call Spec_fnc_crateStandardAmmo;";
 		};
 		class Item21
 		{
@@ -5479,7 +5479,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
-			init="this call Spec_fnc_standardAmmo;";
+			init="this call Spec_fnc_crateStandardAmmo;";
 		};
 		class Item22
 		{
@@ -5490,7 +5490,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
-			init="this call Spec_fnc_standardAmmo;";
+			init="this call Spec_fnc_crateStandardAmmo;";
 		};
 		class Item23
 		{
@@ -5501,7 +5501,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
-			init="this call Spec_fnc_standardAmmo;";
+			init="this call Spec_fnc_crateStandardAmmo;";
 		};
 		class Item24
 		{
@@ -5512,7 +5512,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TTT_Logistik_Standardmunition_Us";
 			skill=0.40000001;
-			init="this call Spec_fnc_standardAmmo;";
+			init="this call Spec_fnc_crateStandardAmmo;";
 		};
 		class Item25
 		{
