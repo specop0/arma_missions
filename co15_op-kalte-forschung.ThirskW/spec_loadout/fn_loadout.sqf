@@ -106,7 +106,7 @@ if(_parameterCorrect) then {
 			[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
 			
 			Spec_fnc_ammoBox = compile preprocessFileLineNumbers "scripts\ammoBox.sqf";
-			_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, false, "", "_target == _this"];
+			_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, true, "", "_target == _this"];
 			Spec_fnc_canCallAmmoBox = {
 				params ["_target","_caller"];
 				_target == _caller
