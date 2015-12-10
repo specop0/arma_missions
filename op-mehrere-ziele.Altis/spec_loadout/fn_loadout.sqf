@@ -3,26 +3,49 @@
 
 	Description:
 	Assigns a loadout to a given unit.
+	The type of loadout is determined with the classname.
+	
+	Can be used as an addAction entry as well.
 	
 	Parameter(s):
 	0: OBJECT - unit to assign loadout to
+	1 (Optional) : STRING - classname which represents loadout type (default: classname of unit)
+	
+	Alternativ Usage:
+	0: -
+	1: OBJECT - unit which choose addAction entry
+	2: -
+	3 (Optional): STRING - classname which represents loadout type (default: classname of unit)
 
 	Returns:
 	true
 */
 
 waitUntil {!isNull player || isServer};
-private _parameterCorrect = params [["_unit",objNull,[objNull]]];
+private _unit = objNull;
 private _type = "";
-if !(_unit isKindOf "Man") then {
+private _parameterCorrect = false;
+// test if addAction was used (caller _this select 3 is present)
+if(_this isEqualType [] && {count _this > 3}) then {
 	_parameterCorrect = params [ "", ["_caller", objNull,[objNull]] ];
-	if(_parameterCorrect) then {
-		_unit = _caller;
-	};
-	if ((_this select 3) isEqualTypeAny ["",[]]) then {
+	_unit = _caller;
+	_type = typeOf _unit;
+	// test if addAction arguments were used
+	if (count _this > 3 && {(_this select 3) isEqualTypeAny ["",[]]}) then {
 		private _addActionParameterCorrect = (_this select 3) params [ ["_typeAddActionArg","",["STRING"]] ];
 		if(_addActionParameterCorrect) then {
 			_type = _typeAddActionArg;
+		};
+	};
+} else {
+	_parameterCorrect = params [["_unitArg",objNull,[objNull]]];
+	_unit = _unitArg;
+	_type = typeOf _unit;
+	// test if type argument present (_this select 1)
+	if(_this isEqualType [] && {count _this > 1}) then {
+		private _typeParameterCorrect = params ["", ["_typeArg","",[""]] ];
+		if(_typeArg != "") then {
+			_type = _typeArg;
 		};
 	};
 };
@@ -98,10 +121,7 @@ comment "classes to use: B_Soldier_F (Rifleman), B_pilotClass_F (Pilot), B_helic
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
-		if(_type == "") then {
-			_type = typeOf _unit;
-		};
-		
+
 		removeAllWeapons _unit;
 		removeAllItems _unit;
 		removeAllAssignedItems _unit;
