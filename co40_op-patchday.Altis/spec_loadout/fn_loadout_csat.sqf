@@ -51,47 +51,47 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "U_B_CombatUniform_mcam";
-private _vest = "V_PlateCarrier2_rgr";
+private _uniform = "U_O_CombatUniform_ocamo";
+private _vest = "V_TacVest_khk";
 
-private _backpack = "B_AssaultPack_mcamo";
-private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "tf_rt1523g_big";
+private _backpack = "B_AssaultPack_ocamo";
+private _backpackBig = "B_Carryall_ocamo";
+private _backpackLR = "tf_mr3000";
 
-private _headgear = "H_HelmetSpecB_paint1";
-private _headgearPilot = "H_PilotHelmetHeli_B";
+private _headgear = "H_HelmetLeaderO_ocamo";
+private _headgearPilot = "H_PilotHelmetHeli_O";
 private _googles = "G_Combat";
 
-private _standardWeapon = "arifle_MX_F";
-private _standardAmmo = "30Rnd_65x39_caseless_mag";
-private _standardAccessory = ["acc_pointer_IR","optic_Hamr"];
+private _standardWeapon = "arifle_Katiba_ARCO_pointer_F";
+private _standardAmmo = "30Rnd_65x39_caseless_green";
+private _standardAccessory = [""];
 private _standardAccessoryExtra = ["optic_Aco"];
 
-private _secondaryWeapon = "hgun_Pistol_heavy_01_F";
-private _secondaryAmmo = "11Rnd_45ACP_Mag";
+private _secondaryWeapon = "hgun_Rook40_F";
+private _secondaryAmmo = "16Rnd_9x21_Mag";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "arifle_MX_GL_F";
+private _grenadeLauncherWeapon = "arifle_Katiba_GL_ARCO_pointer_F";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "LMG_Zafir_F";
+private _mgWeapon = "LMG_Zafir_ARCO_F";
 private _mgAmmo = "150Rnd_762x54_Box_Tracer";
-private _mgAccessory = _standardAccessory;
+private _mgAccessory = ["acc_pointer_IR"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "arifle_MX_SW_F";
-private _lmgAmmo = "100Rnd_65x39_caseless_mag_Tracer";
+private _lmgWeapon = "LMG_Mk200_LP_BI_F";
+private _lmgAmmo = "200Rnd_65x39_cased_Box";
 private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "launch_NLAW_F";
-private _atAmmo = "NLAW_F";
+private _atWeapon = "launch_RPG32_F";
+private _atAmmo = ["RPG32_F","RPG32_F"];
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
@@ -133,8 +133,8 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 
 		if(_type == Spec_var_mgClass) then {
-			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-			[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
@@ -189,7 +189,7 @@ if(_parameterCorrect) then {
 			};
 		};
 		comment "Secondary Weapon";
-		[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
+		[_unit,_secondaryAmmo,3, 3] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _secondaryWeapon;
 		{
 			_unit addSecondaryWeaponItem _x;

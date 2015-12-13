@@ -51,28 +51,28 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "U_B_CombatUniform_mcam";
-private _vest = "V_PlateCarrier2_rgr";
+private _uniform = "U_I_CombatUniform";
+private _vest = "V_PlateCarrierIA2_dgtl";
 
-private _backpack = "B_AssaultPack_mcamo";
-private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "tf_rt1523g_big";
+private _backpack = "B_AssaultPack_dgtl";
+private _backpackBig = "B_Carryall_oli";
+private _backpackLR = "tf_anprc155";
 
-private _headgear = "H_HelmetSpecB_paint1";
-private _headgearPilot = "H_PilotHelmetHeli_B";
+private _headgear = "H_HelmetIA";
+private _headgearPilot = "H_PilotHelmetHeli_I";
 private _googles = "G_Combat";
 
-private _standardWeapon = "arifle_MX_F";
-private _standardAmmo = "30Rnd_65x39_caseless_mag";
+private _standardWeapon = "arifle_Mk20_F";
+private _standardAmmo = "30Rnd_556x45_Stanag";
 private _standardAccessory = ["acc_pointer_IR","optic_Hamr"];
 private _standardAccessoryExtra = ["optic_Aco"];
 
-private _secondaryWeapon = "hgun_Pistol_heavy_01_F";
-private _secondaryAmmo = "11Rnd_45ACP_Mag";
+private _secondaryWeapon = "hgun_ACPC2_F";
+private _secondaryAmmo = "9Rnd_45ACP_Mag";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "arifle_MX_GL_F";
+private _grenadeLauncherWeapon = "arifle_Mk20_GL_F";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
@@ -84,8 +84,8 @@ private _mgAccessory = _standardAccessory;
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "arifle_MX_SW_F";
-private _lmgAmmo = "100Rnd_65x39_caseless_mag_Tracer";
+private _lmgWeapon = "LMG_Mk200_LP_BI_F";
+private _lmgAmmo = "200Rnd_65x39_cased_Box";
 private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
@@ -133,8 +133,8 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 
 		if(_type == Spec_var_mgClass) then {
-			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-			[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
@@ -145,7 +145,7 @@ if(_parameterCorrect) then {
 		} else {
 			if(_type == Spec_var_lmgClass) then {
 				[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-				[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+				[_unit,_lmgAmmo,3, 3] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _lmgWeapon;
 				{

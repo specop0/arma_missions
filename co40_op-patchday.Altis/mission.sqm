@@ -583,7 +583,7 @@ class Mission
 					special="NONE";
 					id=34;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
@@ -597,7 +597,7 @@ class Mission
 					special="NONE";
 					id=35;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_helicrew_F";
 					player="PLAY CDG";
 					skill=0.5;
 					init="this setVariable [""Spec_var_TFARgroup"", 9];";

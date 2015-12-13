@@ -51,42 +51,42 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "U_B_CombatUniform_mcam";
-private _vest = "V_PlateCarrier2_rgr";
+private _uniform = "rhs_uniform_FROG01_m81";
+private _vest = "rhsusf_spc_rifleman";
 
-private _backpack = "B_AssaultPack_mcamo";
-private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "tf_rt1523g_big";
+private _backpack = "rhsusf_assault_eagleaiii_coy";
+private _backpackBig = "B_Carryall_cbr";
+private _backpackLR = "tf_anprc155_coyote";
 
-private _headgear = "H_HelmetSpecB_paint1";
+private _headgear = "rhsusf_ach_bare_semi";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "G_Combat";
 
-private _standardWeapon = "arifle_MX_F";
-private _standardAmmo = "30Rnd_65x39_caseless_mag";
-private _standardAccessory = ["acc_pointer_IR","optic_Hamr"];
-private _standardAccessoryExtra = ["optic_Aco"];
+private _standardWeapon = "rhs_m4a1_grip_acog";
+private _standardAmmo = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+private _standardAccessory = ["rhsusf_acc_anpeq15side","rhsusf_acc_ACOG"];
+private _standardAccessoryExtra = ["rhsusf_acc_eotech_552"];
 
 private _secondaryWeapon = "hgun_Pistol_heavy_01_F";
 private _secondaryAmmo = "11Rnd_45ACP_Mag";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "arifle_MX_GL_F";
+private _grenadeLauncherWeapon = "rhs_weap_m4a1_m320";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "LMG_Zafir_F";
-private _mgAmmo = "150Rnd_762x54_Box_Tracer";
-private _mgAccessory = _standardAccessory;
+private _mgWeapon = "rhs_weap_m240B_CAP";
+private _mgAmmo = "rhsusf_100Rnd_762x51_m62_tracer";
+private _mgAccessory = ["rhsusf_acc_ELCAN"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "arifle_MX_SW_F";
-private _lmgAmmo = "100Rnd_65x39_caseless_mag_Tracer";
-private _lmgAccessory = _standardAccessory;
+private _lmgWeapon = "rhs_weap_m249_pip_elcan";
+private _lmgAmmo = "rhs_200rnd_556x45_T_SAW";
+private _lmgAccessory = ["rhsusf_acc_ELCAN"];
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
@@ -107,6 +107,26 @@ if(_parameterCorrect) then {
 
 		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 		[_unit, _uniform] call Spec_fnc_addContainer;
+		switch (_type) do {
+			case Spec_var_mgClass : {
+				_vest = "rhsusf_spc_mg";
+			};
+			case Spec_var_lmgClass : {
+				_vest = "rhsusf_spc_mg";
+			};
+			case Spec_var_tfClass : {
+				_vest = "rhsusf_spc_Squadleader";
+			};
+			case Spec_var_oplClass : {
+				_vest = "rhsusf_spc_Squadleader";
+			};
+			case Spec_var_funkerClass : {
+				_vest = "rhsusf_spc_Teamleader";
+			};
+			default {
+				_vest = "rhsusf_spc_Rifleman";
+			};
+		};
 		[_unit, _vest] call Spec_fnc_addContainer;
 		if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
 			[_unit, _backpackLR] call Spec_fnc_addContainer;
@@ -123,6 +143,11 @@ if(_parameterCorrect) then {
 		if(_type == Spec_var_pilotClass) then {
 			_unit addHeadgear _headgearPilot;
 		} else {
+			if(_type == Spec_var_tfClass || _type == Spec_var_oplClass) then {
+				_headgear = ["rhsusf_ach_bare_semi_headset","rhsusf_ach_bare_semi_headset_ess"] call BIS_fnc_selectRandom;
+			} else {
+				_headgear = ["rhsusf_ach_bare_semi","rhsusf_ach_bare_semi_ess"] call BIS_fnc_selectRandom;
+			};
 			_unit addHeadgear _headgear;
 		};
 		_unit addGoggles _googles;
@@ -133,8 +158,8 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 
 		if(_type == Spec_var_mgClass) then {
-			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-			[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
@@ -145,7 +170,7 @@ if(_parameterCorrect) then {
 		} else {
 			if(_type == Spec_var_lmgClass) then {
 				[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-				[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+				[_unit,_lmgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _lmgWeapon;
 				{
