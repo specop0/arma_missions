@@ -30,7 +30,12 @@ if(_parameterCorrect) then {
         if(_type == Spec_var_atClass || _type == Spec_var_mgAssiClass || _type == Spec_var_glClass) then{
             _unit addWeapon "ACE_Yardage450";
         } else {
-            _unit addWeapon "Binocular";
+			if(_type == Spec_var_funkerClass) then {
+				_unit addWeapon "Laserdesignator";
+				[_unit,"Laserbatteries",3] call Spec_fnc_addItemToContainer;
+			} else {
+				_unit addWeapon "Binocular";
+			};
         };
     };
 

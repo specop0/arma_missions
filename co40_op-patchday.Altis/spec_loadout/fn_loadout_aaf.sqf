@@ -91,7 +91,7 @@ private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
 private _atWeapon = "launch_NLAW_F";
-private _atAmmo = "NLAW_F";
+private _atAmmo = [];
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
@@ -169,6 +169,9 @@ if(_parameterCorrect) then {
 				} else {
 					comment "AT launcher";
 					if(_type == Spec_var_atClass) then {
+						{
+							[_unit,_x,2] call Spec_fnc_addItemToContainer;
+						} forEach _atAmmo;
 						_unit addWeapon _atWeapon;
 					};
 					comment "MG Ammunition for MG Assistant";

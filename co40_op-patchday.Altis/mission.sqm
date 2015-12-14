@@ -980,7 +980,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			lock="LOCKED";
 			skill=0.60000002;
-			init="_script = [this] execVM ""loadoutBox.sqf""";
+			text="loadout_box";
 		};
 		class Item2
 		{

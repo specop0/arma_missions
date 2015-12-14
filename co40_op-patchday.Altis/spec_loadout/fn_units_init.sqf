@@ -16,6 +16,8 @@
 
 comment "Initialize global class variables";
 [] call Spec_fnc_initClassVariables;
+[] call Spec_fnc_initLoadoutLists;
+[loadout_box] call Spec_fnc_loadoutBox;
 
 if(isServer) then {
 	{

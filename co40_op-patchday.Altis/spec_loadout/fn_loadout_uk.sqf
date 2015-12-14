@@ -51,47 +51,46 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "U_O_CombatUniform_ocamo";
-private _vest = "V_TacVest_khk";
+private _uniform = "UK3CB_BAF_U_CombatUniform_MTP";
+private _vest = "UK3CB_BAF_V_Osprey_Holster";
 
-private _backpack = "B_AssaultPack_ocamo";
-private _backpackBig = "B_Carryall_ocamo";
-private _backpackLR = "tf_mr3000";
+private _backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
 
-private _headgear = "H_HelmetLeaderO_ocamo";
-private _headgearPilot = "H_PilotHelmetHeli_O";
-private _googles = "G_Combat";
+private _headgear = "UK3CB_BAF_H_Mk7_Camo_A";
+_headgear = ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_B","UK3CB_BAF_H_Mk7_Camo_C","UK3CB_BAF_H_Mk7_Camo_D","UK3CB_BAF_H_Mk7_Camo_E","UK3CB_BAF_H_Mk7_Camo_F","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_ESS_B","UK3CB_BAF_H_Mk7_Camo_ESS_C","UK3CB_BAF_H_Mk7_Camo_ESS_D","UK3CB_BAF_H_Mk7_Camo_CESS_A","UK3CB_BAF_H_Mk7_Camo_CESS_B","UK3CB_BAF_H_Mk7_Camo_CESS_C","UK3CB_BAF_H_Mk7_Camo_CESS_D"] call BIS_fnc_selectRandom;
+private _headgearPilot = "H_PilotHelmetHeli_B";
+private _googles = ["UK3CB_BAF_G_Tactical_Black","UK3CB_BAF_G_Tactical_Clear","UK3CB_BAF_G_Tactical_Grey","UK3CB_BAF_G_Tactical_Orange","UK3CB_BAF_G_Tactical_Yellow"] call BIS_fnc_selectRandom;
 
-private _standardWeapon = "arifle_Katiba_ARCO_pointer_F";
-private _standardAmmo = "30Rnd_65x39_caseless_green";
-private _standardAccessory = [""];
-private _standardAccessoryExtra = ["optic_Aco"];
+private _standardWeapon = "UK3CB_BAF_L85A2_RIS_LDSR2D_IR";
+private _standardAmmo = "UK3CB_BAF_30Rnd";
+private _standardAccessory = ["UK3CB_BAF_LLM_IR_Black","UK3CB_BAF_SpecterLDS_Dot"];
+private _standardAccessoryExtra = [];
 
-private _secondaryWeapon = "hgun_Rook40_F";
-private _secondaryAmmo = "16Rnd_9x21_Mag";
+private _secondaryWeapon = "UK3CB_BAF_L131A1";
+private _secondaryAmmo = "UK3CB_BAF_17Rnd_9mm";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "arifle_Katiba_GL_ARCO_pointer_F";
+private _grenadeLauncherWeapon = "UK3CB_BAF_L85A2_UGLLAD_LDSR2D_IR";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "LMG_Zafir_ARCO_F";
-private _mgAmmo = "150Rnd_762x54_Box_Tracer";
-private _mgAccessory = ["acc_pointer_IR"];
+private _mgWeapon = "UK3CB_BAF_L7A2";
+private _mgAmmo = "UK3CB_BAF_75Rnd_T";
+private _mgAccessory = ["rhsusf_acc_ELCAN"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "LMG_Mk200_LP_BI_F";
-private _lmgAmmo = "200Rnd_65x39_cased_Box";
-private _lmgAccessory = _standardAccessory;
+private _lmgWeapon = "UK3CB_BAF_L110A2_TA31F";
+private _lmgAmmo = "UK3CB_BAF_200Rnd_T";
+private _lmgAccessory = ["UK3CB_BAF_TA31F"];
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "launch_RPG32_F";
-private _atAmmo = ["RPG32_F","RPG32_F"];
+private _atWeapon = "UK3CB_BAF_AT4_CS_AP_Launcher";
+private _atAmmo = [];
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
@@ -107,19 +106,84 @@ if(_parameterCorrect) then {
 
 		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 		[_unit, _uniform] call Spec_fnc_addContainer;
-		[_unit, _vest] call Spec_fnc_addContainer;
-		if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
-			[_unit, _backpackLR] call Spec_fnc_addContainer;
-			if(backpack _unit == "") then {
-				[_unit, _backpack] call Spec_fnc_addContainer;
+		
+		switch (_type) do {
+			case Spec_var_glClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_Grenadier_A","UK3CB_BAF_V_Osprey_Grenadier_B"] call BIS_fnc_selectRandom;
 			};
-		} else {
-			if(_type == Spec_var_medevacClass || _type == Spec_var_pioClass) then {
-				[_unit, _backpackBig] call Spec_fnc_addContainer;
-			} else {
-				[_unit, _backpack] call Spec_fnc_addContainer;
+			case Spec_var_tfClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
+			};
+			case Spec_var_oplClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
+			};
+			case Spec_var_funkerClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
+			};
+			case Spec_var_medicClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_Medic_B","UK3CB_BAF_V_Osprey_Medic_C","UK3CB_BAF_V_Osprey_Medic_D"] call BIS_fnc_selectRandom;
+			};
+			case Spec_var_medevacClass : {
+				_vest = ["UK3CB_BAF_V_Osprey_Medic_B","UK3CB_BAF_V_Osprey_Medic_C","UK3CB_BAF_V_Osprey_Medic_D"] call BIS_fnc_selectRandom;
+			};
+			case Spec_var_mgClass : {
+				_vest = "UK3CB_BAF_V_Osprey_MG_B";
+			};
+			case Spec_var_lmgClass : {
+				_vest = "UK3CB_BAF_V_Osprey_MG_B";
+			};
+			default {
+				_vest = ["UK3CB_BAF_V_Osprey_Holster","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call BIS_fnc_selectRandom;
 			};
 		};
+		[_unit, _vest] call Spec_fnc_addContainer;
+		
+		switch (_type) do {
+			// long ranges
+			case Spec_var_funkerClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";
+			};
+			case Spec_var_logisticClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_H_B";
+			};
+			case Spec_var_pilotClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
+			};
+			case Spec_var_oplClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_L_B";
+			};
+			// big backpacks
+			case Spec_var_medevacClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Medic_H_B";
+			};
+			case Spec_var_pioClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Sapper_L_A";
+			};
+			// normal backpacks
+			case Spec_var_medicClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Medic_L_A";
+			};
+			case Spec_var_mgClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+			};
+			case Spec_var_lmgClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+			};
+			case Spec_var_mgAssiClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";
+			};
+			case Spec_var_tfClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C";
+			};
+			case Spec_var_glClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
+			};
+			case Spec_var_atClass : {
+				_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C";
+			};
+		};
+		[_unit, _backpack] call Spec_fnc_addContainer;
+
 		if(_type == Spec_var_pilotClass) then {
 			_unit addHeadgear _headgearPilot;
 		} else {
@@ -145,7 +209,7 @@ if(_parameterCorrect) then {
 		} else {
 			if(_type == Spec_var_lmgClass) then {
 				[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-				[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+				[_unit,_lmgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _lmgWeapon;
 				{
@@ -179,7 +243,7 @@ if(_parameterCorrect) then {
 						[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 					};
 					comment "Standard Weapon";
-					[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
+					[_unit,_standardAmmo,3, 6] call Spec_fnc_addItemToContainer;
 
 					_unit addWeapon _standardWeapon;
 					{

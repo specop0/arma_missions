@@ -67,8 +67,8 @@ private _standardAmmo = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 private _standardAccessory = ["rhsusf_acc_anpeq15side","rhsusf_acc_ACOG"];
 private _standardAccessoryExtra = ["rhsusf_acc_eotech_552"];
 
-private _secondaryWeapon = "hgun_Pistol_heavy_01_F";
-private _secondaryAmmo = "11Rnd_45ACP_Mag";
+private _secondaryWeapon = "rhsusf_weap_m1911a1";
+private _secondaryAmmo = "rhsusf_mag_7x45acp_MHP";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
@@ -90,8 +90,8 @@ private _lmgAccessory = ["rhsusf_acc_ELCAN"];
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "launch_NLAW_F";
-private _atAmmo = "NLAW_F";
+private _atWeapon = "rhs_weap_M136";
+private _atAmmo = [];
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
@@ -122,9 +122,6 @@ if(_parameterCorrect) then {
 			};
 			case Spec_var_funkerClass : {
 				_vest = "rhsusf_spc_Teamleader";
-			};
-			default {
-				_vest = "rhsusf_spc_Rifleman";
 			};
 		};
 		[_unit, _vest] call Spec_fnc_addContainer;
@@ -194,6 +191,9 @@ if(_parameterCorrect) then {
 				} else {
 					comment "AT launcher";
 					if(_type == Spec_var_atClass) then {
+						{
+							[_unit,_x,2] call Spec_fnc_addItemToContainer;
+						} forEach _atAmmo;
 						_unit addWeapon _atWeapon;
 					};
 					comment "MG Ammunition for MG Assistant";
