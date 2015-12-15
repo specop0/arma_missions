@@ -12,7 +12,7 @@ if(_parameterCorrect && hasInterface) then {
 	    _object addAction [_x, {
 				(_this select 3) params ["_factionName"];
 				Spec_var_loadoutFaction = _factionName;
-			}, [_x], -2, false, true, "", _conditionString];
+			}, [_x], -2, false, false, "", _conditionString];
 	} forEach Spec_var_loadoutFactionList;
 
 	// for each faction add classes
@@ -41,6 +41,6 @@ if(_parameterCorrect && hasInterface) then {
 		} forEach Spec_var_loadoutClassList;
 	} forEach Spec_var_loadoutFactionList;
 
-	_object addAction ["<t color=""#A50000"">Zurueck</t>", {Spec_var_loadoutFaction = "MAIN";}, nil, -2, false, true, "", "!(Spec_var_loadoutFaction isEqualTo ""MAIN"")"];
-	_object addAction ["<t color=""#A50000"">Zurueck</t>", {Spec_var_loadoutFaction = "MAIN";}, nil, _i, false, true, "", "!(Spec_var_loadoutFaction isEqualTo ""MAIN"")"];
+	_object addAction ["<t color=""#A50000"">Zurueck</t>", {Spec_var_loadoutFaction = "MAIN";}, nil, -2, false, false, "", "!(Spec_var_loadoutFaction isEqualTo ""MAIN"")"];
+	_object addAction ["<t color=""#A50000"">Zurueck</t>", {Spec_var_loadoutFaction = "MAIN";}, nil, _i, false, false, "", "!(Spec_var_loadoutFaction isEqualTo ""MAIN"")"];
 };
