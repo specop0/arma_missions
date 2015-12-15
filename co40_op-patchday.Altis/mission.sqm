@@ -981,6 +981,7 @@ class Mission
 			lock="LOCKED";
 			skill=0.60000002;
 			text="loadout_box";
+			init="[this] call Spec_fnc_loadoutBox;";
 		};
 		class Item2
 		{

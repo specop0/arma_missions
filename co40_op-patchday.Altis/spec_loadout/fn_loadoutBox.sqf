@@ -1,6 +1,9 @@
 private _parameterCorrect = params [ ["_object",objNull,[objNull]] ];
-if(_parameterCorrect) then {
+if(_parameterCorrect && hasInterface) then {
 	Spec_var_loadoutFaction = "MAIN";
+	if(isNil "Spec_var_loadoutFactionList") then {
+		[] call Spec_fnc_initLoadoutLists;
+	};
 
 	// selection faction
 	private _conditionString = "";
