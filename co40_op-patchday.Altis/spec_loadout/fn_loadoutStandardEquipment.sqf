@@ -48,9 +48,9 @@ if(_parameterCorrect) then {
     if(_type == Spec_var_oplClass || _type == Spec_var_tfClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_medevacClass || _type == Spec_var_pilotClass) then {
         _unit addItemToUniform "ACE_microDAGR";
         if(_type == Spec_var_medevacClass || _type == Spec_var_funkerClass) then {
-            [_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
-        } else {
             [_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
+        } else {
+            [_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type == Spec_var_oplClass || _type == Spec_var_tfClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
