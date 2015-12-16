@@ -194,6 +194,9 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 		comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";
 		[_unit, _type] call Spec_fnc_loadoutStandardEquipment;
+		_unit removeItem "ACE_NVG_Wide";
+		[_unit,"UK3CB_BAF_HMNVS",1] call Spec_fnc_addItemToContainer;
+		[_unit,"UK3CB_BAF_H_Beret_PR",2] call Spec_fnc_addItemToContainer;
 		comment "===========================================";
 
 		if(_type == Spec_var_mgClass) then {
