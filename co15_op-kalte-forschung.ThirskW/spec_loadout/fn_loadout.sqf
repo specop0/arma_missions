@@ -1,12 +1,61 @@
+/*
+	Author: SpecOp0
+
+	Description:
+	Assigns a loadout to a given unit.
+	The type of loadout is determined with the classname.
+	
+	Can be used as an addAction entry as well.
+	
+	Parameter(s):
+	0: OBJECT - unit to assign loadout to
+	1 (Optional) : STRING - classname which represents loadout type (default: classname of unit)
+	
+	Alternativ Usage:
+	0: -
+	1: OBJECT - unit which choose addAction entry
+	2: -
+	3 (Optional): STRING - classname which represents loadout type (default: classname of unit)
+
+	Returns:
+	true
+*/
+
 waitUntil {!isNull player || isServer};
-private _parameterCorrect = params [["_unit",objNull,[objNull]]];
+private _unit = objNull;
+private _type = "";
+private _parameterCorrect = false;
+// test if addAction was used (caller _this select 3 is present)
+if(_this isEqualType [] && {count _this > 3}) then {
+	_parameterCorrect = params [ "", ["_caller", objNull,[objNull]] ];
+	_unit = _caller;
+	_type = typeOf _unit;
+	// test if addAction arguments were used
+	if (count _this > 3 && {(_this select 3) isEqualTypeAny ["",[]]}) then {
+		private _addActionParameterCorrect = (_this select 3) params [ ["_typeAddActionArg","",["STRING"]] ];
+		if(_addActionParameterCorrect) then {
+			_type = _typeAddActionArg;
+		};
+	};
+} else {
+	_parameterCorrect = params [["_unitArg",objNull,[objNull]]];
+	_unit = _unitArg;
+	_type = typeOf _unit;
+	// test if type argument present (_this select 1)
+	if(_this isEqualType [] && {count _this > 1}) then {
+		private _typeParameterCorrect = params ["", ["_typeArg","",[""]] ];
+		if(_typeArg != "") then {
+			_type = _typeArg;
+		};
+	};
+};
 
-private _uniform = "TFA_white";
-private _vest = "TFA_PlateCarrier_WTE";
+private _uniform = "rhs_uniform_cu_ucp";
+private _vest = "rhsusf_iotv_ucp_Squadleader";
 
-private _backpack = "TFA_assault_wte";
+private _backpack = "rhsusf_assault_eagleaiii_ucp";
 
-private _headgear = "TFA_H_HelmetIA_wte";
+private _headgear = "rhsusf_ach_helmet_ucp";
 private _googles = "G_Balaclava_combat";
 
 private _standardWeapon = "rhs_weap_m4_grip";
@@ -19,8 +68,8 @@ private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
-private _secondaryWeapon = "BWA3_P8";
-private _secondaryAmmo = "BWA3_15Rnd_9x19_P8";
+private _secondaryWeapon = "rhsusf_weap_m1911a1";
+private _secondaryAmmo = "rhsusf_mag_7x45acp_MHP";
 private _secondaryAccessory = [];
 
 comment "Team Leader";
@@ -63,8 +112,6 @@ private _sniperHelpClass = "B_Helipilot_F";
 
 if(_parameterCorrect) then {
 	if(side _unit == west) then {
-		private _type = typeOf _unit;
-		
 		removeAllWeapons _unit;
 		removeAllItems _unit;
 		removeAllAssignedItems _unit;
@@ -77,7 +124,7 @@ if(_parameterCorrect) then {
 		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 		_unit forceAddUniform _uniform;
 		_unit addVest _vest;
-		if(_type == _medicClass || _type == _pioClass) then {
+		if(_type == _medicClass || _type == _pioClass || _type == _mgAssiClass) then {
 			_unit addBackpack _backpack;
 		};
 		
@@ -107,16 +154,13 @@ if(_parameterCorrect) then {
 			
 			Spec_fnc_ammoBox = compile preprocessFileLineNumbers "scripts\ammoBox.sqf";
 			_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, true, "", "_target == _this"];
-			Spec_fnc_canCallAmmoBox = {
+			/*Spec_fnc_canCallAmmoBox = {
 				params ["_target","_caller"];
 				_target == _caller
-			};
-			_action = ["Spec_ammoBox_bla", "Fordere Nachschub an", "",
-				Spec_fnc_ammoBox,
-				true
-			] call ace_interact_menu_fnc_createAction;
+			};*/	
+			//_action = ["Spec_ammoBox_bla", "Fordere Nachschub an", "",Spec_fnc_ammoBox,	{true}] call ace_interact_menu_fnc_createAction;
 			// https://github.com/acemod/ACE3/issues/1232
-			[_unit,1,["ACE_SelfActions", "Fordere Nachsch"], _action] call ace_interact_menu_fnc_addActionToObject;
+			//[_unit,0,["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 		};
 		
 		comment "standard equipment (ear plugs, grenades)";
@@ -149,12 +193,14 @@ if(_parameterCorrect) then {
 				[_unit,"ACE_atropine",2, 5] call Spec_fnc_addItemToContainer;
 				[_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
 				[_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
-				[_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_surgicalKit",3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_surgicalKit",1, 2] call Spec_fnc_addItemToContainer;
 				_unit setVariable ["ace_medical_medicClass", 1];
 			};
 			default {
 				[_unit,"ACE_fieldDressing",1, 7] call Spec_fnc_addItemToContainer;
-				[_unit,"ACE_tourniquet",1, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_packingBandage",1, 3] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_tourniquet",1, 1] call Spec_fnc_addItemToContainer;
 				[_unit,"ACE_morphine",1, 1] call Spec_fnc_addItemToContainer;
 			};
 		};
@@ -175,7 +221,7 @@ if(_parameterCorrect) then {
 				_unit setVariable ["ACE_IsEngineer", 2];
 			};
 			case _mgAssiClass : {
-				[_unit,_mgAmmo,3, 2] call Spec_fnc_addItemToContainer;
+				[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			};
 			case _sniperHelpClass : {
 				[_unit,_sniperAmmo,1, 5] call Spec_fnc_addItemToContainer;
@@ -187,7 +233,7 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 		
 		if(_type == _mgClass) then {
-			[_unit,_mgAmmo,1, 3] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
@@ -195,9 +241,10 @@ if(_parameterCorrect) then {
 			{
 				[_unit,_x,3] call Spec_fnc_addItemToContainer;
 			} forEach _mgAccessoryExtra;	
+			[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
 		} else {
 			if(_type == _lmgClass) then {
-				[_unit,_lmgAmmo,1, 3] call Spec_fnc_addItemToContainer;
+				[_unit,_lmgAmmo,1, 2] call Spec_fnc_addItemToContainer;
 				_unit addWeapon _lmgWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
@@ -208,7 +255,7 @@ if(_parameterCorrect) then {
 				[_unit,_lmgAmmo,1, 1] call Spec_fnc_addItemToContainer;
 			} else {
 				if(_type == _sniperClass) then {
-					[_unit,_sniperAmmo,1, 11] call Spec_fnc_addItemToContainer;
+					[_unit,_sniperAmmo,1, 8] call Spec_fnc_addItemToContainer;
 					_unit addWeapon _sniperWeapon;
 					{
 						_unit addPrimaryWeaponItem _x;
@@ -219,7 +266,7 @@ if(_parameterCorrect) then {
 				} else {
 					comment "grenade launcher";
 					if(_type == _tfClass || _type == _glClass) then {
-						[_unit,_grenadeLauncherAmmo,1, 10] call Spec_fnc_addItemToContainer;
+						[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
 						
 						_unit addWeapon _grenadeLauncherWeapon;
 						{
@@ -237,7 +284,7 @@ if(_parameterCorrect) then {
 							removeBackpack _unit;
 						};
 						comment "standard weapon";
-						[_unit,_standardAmmo,1, 10] call Spec_fnc_addItemToContainer;
+						[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
 
 						_unit addWeapon _standardWeapon;
 						{
@@ -251,7 +298,7 @@ if(_parameterCorrect) then {
 			};
 		};
 		comment "secondary weapon";
-		[_unit,_secondaryAmmo,3, 3] call Spec_fnc_addItemToContainer;
+		[_unit,_secondaryAmmo,3, 1] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _secondaryWeapon;
 		{
 			_unit addSecondaryWeaponItem _x;

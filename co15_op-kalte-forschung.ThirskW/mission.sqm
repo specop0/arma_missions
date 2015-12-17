@@ -34,7 +34,8 @@ class Mission
 		"task_force_radio_items",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Modules_F_Intel",
-		"ace_weather"
+		"ace_weather",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -43,7 +44,8 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"A3_Modules_F_Intel",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"ace_weather",
 		"A3_Structures_F_Walls",
 		"A3_Structures_F_Mil_BagFence",
@@ -3314,7 +3316,7 @@ class Mission
 			timeoutMax=30;
 			age="UNKNOWN";
 			expCond="this && triggerActivated obj_sucess";
-			expActiv="[""Mission Complete"",True] call BIS_fnc_endMission;";
+			expActiv="[""Mission Complete"",True] call BIS_fnc_endMissionServer;";
 			class Effects
 			{
 			};
