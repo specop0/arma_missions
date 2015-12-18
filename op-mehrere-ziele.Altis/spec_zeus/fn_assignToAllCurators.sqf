@@ -22,6 +22,22 @@ if(!isServer) then {
 		{
 			_x addCuratorEditableObjects [[_player],false];
 		} forEach allCurators;
+
+		/*private _scriptHandle = _this spawn {
+			// wait for full initialization (1 works as well) otherwise getAssignedCuratorLogic always null
+			sleep 20;
+			private _parameterCorrect = params [ ["_player",objNull,[objNull]] ];
+			if(_parameterCorrect) then {
+				// if player is Curator add allUnits action
+				if(!isNull (getAssignedCuratorLogic _player) ) then {
+					[_player, ["Assign Units", 
+						{
+							(getAssignedCuratorLogic (_this select 1)) addCuratorEditableObjects [allUnits, false];
+							(getAssignedCuratorLogic (_this select 1)) addCuratorEditableObjects [vehicles, false];
+						}, nil, 1.5, false, true, "", "true"] ] remoteExec ["addAction", _player] ;
+				};
+			};
+		};*/
 	} else {
 		"Wrong Parameter: Expected (player) object" call BIS_fnc_error;
 	};
