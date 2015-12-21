@@ -152,14 +152,10 @@ if(_parameterCorrect) then {
 		[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
 		
 		Spec_fnc_ammoBox = compile preprocessFileLineNumbers "scripts\ammoBox.sqf";
-		_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, true, "", "_target == _this"];
-		/*Spec_fnc_canCallAmmoBox = {
-			params ["_target","_caller"];
-			_target == _caller
-		};*/	
-		//_action = ["Spec_ammoBox_bla", "Fordere Nachschub an", "",Spec_fnc_ammoBox,	{true}] call ace_interact_menu_fnc_createAction;
-		// https://github.com/acemod/ACE3/issues/1232
-		//[_unit,0,["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+		//_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, true, "", "_target == _this"];
+
+		_action = ["Spec_ammoBox_bla", "Fordere Nachschub an", "",Spec_fnc_ammoBox,	{true}] call ace_interact_menu_fnc_createAction;
+		[_unit,1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	};
 	
 	comment "standard equipment (ear plugs, grenades)";
