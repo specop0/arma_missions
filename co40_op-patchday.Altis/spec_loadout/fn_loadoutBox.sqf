@@ -26,7 +26,7 @@ if(_parameterCorrect && hasInterface) then {
 		_object addACtion ["Benutze Slot",{
 				params ["","_caller"];
 				(_this select 3) params ["_factionName"];
-				[player, _factionName] call Spec_fnc_loadoutFaction;
+				[_caller, _factionName] call Spec_fnc_loadoutFaction;
 				Spec_var_loadoutFaction = "MAIN";
 			}, [_factionName], _i, false, true, "", _conditionString];
 		// for each class addAction

@@ -94,140 +94,137 @@ private _atWeapon = "BWA3_Pzf3";
 private _atAmmo = ["BWA3_Pzf3_IT"];
 
 if(_parameterCorrect) then {
-	if(side _unit == west) then {
+	removeAllWeapons _unit;
+	removeAllItems _unit;
+	removeAllAssignedItems _unit;
+	removeUniform _unit;
+	removeVest _unit;
+	removeBackpack _unit;
+	removeHeadgear _unit;
+	removeGoggles _unit;
 
-		removeAllWeapons _unit;
-		removeAllItems _unit;
-		removeAllAssignedItems _unit;
-		removeUniform _unit;
-		removeVest _unit;
-		removeBackpack _unit;
-		removeHeadgear _unit;
-		removeGoggles _unit;
-
-		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
-		[_unit, _uniform] call Spec_fnc_addContainer;
-		switch (_type) do {
-			case Spec_var_mgClass : {
-				_vest = "BWA3_Vest_Autorifleman_Fleck";
-			};
-			case Spec_var_lmgClass : {
-				_vest = "BWA3_Vest_Autorifleman_Fleck";
-			};
-			case Spec_var_glClass : {
-				_vest = "BWA3_Vest_Grenadier_Fleck";
-			};
-			case Spec_var_medicClass : {
-				_vest = "BWA3_Vest_Medic_Fleck";
-			};
-			case Spec_var_medevacClass : {
-				_vest = "BWA3_Vest_Medic_Fleck";
-			};
-			case Spec_var_tfClass : {
-				_vest = "BWA3_Vest_Leader_Fleck";
-			};
-			case Spec_var_funkerClass : {
-				_vest = "BWA3_Vest_Leader_Fleck";
-			};
+	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
+	[_unit, _uniform] call Spec_fnc_addContainer;
+	switch (_type) do {
+		case Spec_var_mgClass : {
+			_vest = "BWA3_Vest_Autorifleman_Fleck";
 		};
-		[_unit, _vest] call Spec_fnc_addContainer;
-		if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
-			[_unit, _backpackLR] call Spec_fnc_addContainer;
-			if(backpack _unit == "") then {
-				[_unit, _backpack] call Spec_fnc_addContainer;
-			};
+		case Spec_var_lmgClass : {
+			_vest = "BWA3_Vest_Autorifleman_Fleck";
+		};
+		case Spec_var_glClass : {
+			_vest = "BWA3_Vest_Grenadier_Fleck";
+		};
+		case Spec_var_medicClass : {
+			_vest = "BWA3_Vest_Medic_Fleck";
+		};
+		case Spec_var_medevacClass : {
+			_vest = "BWA3_Vest_Medic_Fleck";
+		};
+		case Spec_var_tfClass : {
+			_vest = "BWA3_Vest_Leader_Fleck";
+		};
+		case Spec_var_funkerClass : {
+			_vest = "BWA3_Vest_Leader_Fleck";
+		};
+	};
+	[_unit, _vest] call Spec_fnc_addContainer;
+	if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
+		[_unit, _backpackLR] call Spec_fnc_addContainer;
+		if(backpack _unit == "") then {
+			[_unit, _backpack] call Spec_fnc_addContainer;
+		};
+	} else {
+		if(_type == Spec_var_medevacClass || _type == Spec_var_pioClass) then {
+			[_unit, _backpackBig] call Spec_fnc_addContainer;
 		} else {
-			if(_type == Spec_var_medevacClass || _type == Spec_var_pioClass) then {
-				[_unit, _backpackBig] call Spec_fnc_addContainer;
-			} else {
-				if(_type == Spec_var_medicClass) then {
-					_backpack = "BWA3_TacticalPack_Fleck_Medic";
-				};
-				[_unit, _backpack] call Spec_fnc_addContainer;
+			if(_type == Spec_var_medicClass) then {
+				_backpack = "BWA3_TacticalPack_Fleck_Medic";
 			};
+			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
-		if(_type == Spec_var_pilotClass) then {
-			_unit addHeadgear _headgearPilot;
-		} else {
-			_unit addHeadgear _headgear;
-		};
-		_unit addGoggles _googles;
+	};
+	if(_type == Spec_var_pilotClass) then {
+		_unit addHeadgear _headgearPilot;
+	} else {
+		_unit addHeadgear _headgear;
+	};
+	_unit addGoggles _googles;
 
-		comment "===========================================";
-		comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";
-		[_unit, _type] call Spec_fnc_loadoutStandardEquipment;
-		comment "===========================================";
+	comment "===========================================";
+	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";
+	[_unit, _type] call Spec_fnc_loadoutStandardEquipment;
+	comment "===========================================";
 
-		if(_type == Spec_var_mgClass) then {
-			[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-			[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
-			_unit addWeapon _mgWeapon;
+	if(_type == Spec_var_mgClass) then {
+		[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+		_unit addWeapon _mgWeapon;
+		{
+			_unit addPrimaryWeaponItem _x;
+		} forEach _mgAccessory;
+		{
+			[_unit,_x,3] call Spec_fnc_addItemToContainer;
+		} forEach _mgAccessoryExtra;
+	} else {
+		if(_type == Spec_var_lmgClass) then {
+			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+
+			_unit addWeapon _lmgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
-			} forEach _mgAccessory;
+			} forEach _lmgAccessory;
 			{
 				[_unit,_x,3] call Spec_fnc_addItemToContainer;
-			} forEach _mgAccessoryExtra;
+			} forEach _lmgAccessoryExtra;
 		} else {
-			if(_type == Spec_var_lmgClass) then {
-				[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-				[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+			comment "Grenade launcher";
+			if(_type == Spec_var_tfClass || _type == Spec_var_glClass) then {
+				[_unit,_grenadeLauncherAmmo,2, 6] call Spec_fnc_addItemToContainer;
 
-				_unit addWeapon _lmgWeapon;
+				_unit addWeapon _grenadeLauncherWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
-				} forEach _lmgAccessory;
+				} forEach _grenadeLauncherAccessory;
 				{
 					[_unit,_x,3] call Spec_fnc_addItemToContainer;
-				} forEach _lmgAccessoryExtra;
+				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
-				comment "Grenade launcher";
-				if(_type == Spec_var_tfClass || _type == Spec_var_glClass) then {
-					[_unit,_grenadeLauncherAmmo,2, 6] call Spec_fnc_addItemToContainer;
-
-					_unit addWeapon _grenadeLauncherWeapon;
+				comment "AT launcher";
+				if(_type == Spec_var_atClass) then {
 					{
-						_unit addPrimaryWeaponItem _x;
-					} forEach _grenadeLauncherAccessory;
-					{
-						[_unit,_x,3] call Spec_fnc_addItemToContainer;
-					} forEach _grenadeLauncherAccessoryExtra;
-				} else {
-					comment "AT launcher";
-					if(_type == Spec_var_atClass) then {
-						{
-							[_unit,_x,2] call Spec_fnc_addItemToContainer;
-						} forEach _atAmmo;
-						_unit addWeapon _atWeapon;
-						// remove backpack to avoid clipping with backpack
-						removeBackpack _unit;
-						[_unit,"ACE_fieldDressing",1, 7] call Spec_fnc_addItemToContainer;
-						[_unit,"ACE_tourniquet",1, 2] call Spec_fnc_addItemToContainer;
-						[_unit,"ACE_morphine",1, 1] call Spec_fnc_addItemToContainer;
-					};
-					comment "MG Ammunition for MG Assistant";
-					if(_type == Spec_var_mgAssiClass) then {
-						[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
-					};
-					comment "Standard Weapon";
-					[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
-
-					_unit addWeapon _standardWeapon;
-					{
-						_unit addPrimaryWeaponItem _x;
-					} forEach _standardAccessory;
-					{
-						[_unit,_x,3] call Spec_fnc_addItemToContainer;
-					} forEach _standardAccessoryExtra;
+						[_unit,_x,2] call Spec_fnc_addItemToContainer;
+					} forEach _atAmmo;
+					_unit addWeapon _atWeapon;
+					// remove backpack to avoid clipping with backpack
+					removeBackpack _unit;
+					[_unit,"ACE_fieldDressing",1, 7] call Spec_fnc_addItemToContainer;
+					[_unit,"ACE_tourniquet",1, 2] call Spec_fnc_addItemToContainer;
+					[_unit,"ACE_morphine",1, 1] call Spec_fnc_addItemToContainer;
 				};
+				comment "MG Ammunition for MG Assistant";
+				if(_type == Spec_var_mgAssiClass) then {
+					[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+				};
+				comment "Standard Weapon";
+				[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
+
+				_unit addWeapon _standardWeapon;
+				{
+					_unit addPrimaryWeaponItem _x;
+				} forEach _standardAccessory;
+				{
+					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+				} forEach _standardAccessoryExtra;
 			};
 		};
-		comment "Secondary Weapon";
-		[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
-		_unit addWeapon _secondaryWeapon;
-		{
-			_unit addSecondaryWeaponItem _x;
-		} forEach _secondaryAccessory;
 	};
+	comment "Secondary Weapon";
+	[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
+	_unit addWeapon _secondaryWeapon;
+	{
+		_unit addSecondaryWeaponItem _x;
+	} forEach _secondaryAccessory;
 };
 true

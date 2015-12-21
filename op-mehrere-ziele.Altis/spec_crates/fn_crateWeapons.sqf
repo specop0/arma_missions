@@ -6,7 +6,7 @@ private _lmg = "BWA3_MG4";
 private _mg = "hlc_lmg_m60";
 
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _crate;
 	_crate addWeaponCargoGlobal [_standardWeapon,4];
 	_crate addWeaponCargoGlobal [_standardWeaponGL,1];

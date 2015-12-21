@@ -1,12 +1,12 @@
-private _parameterCorrect = params [["_x",objNull,[objNull]]];
+private _parameterCorrect = params [["_crate",objNull,[objNull]]];
 
 private _parachute = "B_Parachute";
 
 
-if(_parameterCorrect) then {
-	clearWeaponCargoGlobal _x;
-	clearBackpackCargoGlobal _x;
-	clearItemCargoGlobal _x;
-	clearMagazineCargoGlobal _x;
-	_x addBackpackCargoGlobal [_parachute, 80];
+if(_parameterCorrect && isServer) then {
+	clearWeaponCargoGlobal _crate;
+	clearBackpackCargoGlobal _crate;
+	clearItemCargoGlobal _crate;
+	clearMagazineCargoGlobal _crate;
+	_crate addBackpackCargoGlobal [_parachute, 80];
 };
