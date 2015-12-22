@@ -4,7 +4,7 @@
 	Description:
 	Assigns the standard equipment to a given unit.
 	For example map, radio, grenades and medic stuff.
-    Furthermore role specifig stuff like explosives or 40mm HE grenades.
+    Furthermore role specific stuff like explosives or 40mm HE grenades.
 
 	Can be used as an addAction entry as well.
 
