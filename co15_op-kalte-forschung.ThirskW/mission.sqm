@@ -328,7 +328,7 @@ class Mission
 					azimut=130;
 					id=6;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 143469) buildingPos 14);";
@@ -423,7 +423,7 @@ class Mission
 					azimut=270;
 					id=11;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 12432) buildingPos 4);";
@@ -471,7 +471,7 @@ class Mission
 					azimut=40;
 					id=14;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					skill=0.60000002;
 				};
 				class Item2
@@ -735,7 +735,7 @@ class Mission
 					azimut=40;
 					id=20;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					skill=0.60000002;
 				};
 				class Item2
@@ -1007,7 +1007,7 @@ class Mission
 					azimut=185;
 					id=28;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1025,7 +1025,7 @@ class Mission
 					azimut=185;
 					id=29;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1155,7 +1155,7 @@ class Mission
 					azimut=40;
 					id=32;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					skill=0.60000002;
 				};
 				class Item2
@@ -1548,7 +1548,7 @@ class Mission
 					position[]={1560.5707,46.396156,3107.4888};
 					id=44;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					skill=0.40000001;
 				};
 				class Item8
@@ -2050,7 +2050,7 @@ class Mission
 					special="NONE";
 					id=65;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AR";
+					vehicle="LOP_NAPA_Infantry_MG";
 					leader=1;
 					skill=0.60000002;
 				};
