@@ -113,7 +113,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.60000002;
-					init="lighthouse = [0,0,0] nearestObject 150307;";
+					init="lighthouse = (position this) nearestObject 150307;";
 				};
 			};
 		};
@@ -131,7 +131,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.60000002;
-					init="dome = [0,0,0] nearestObject 143419;";
+					init="dome = (position this) nearestObject 143419;";
 				};
 			};
 		};
@@ -3281,7 +3281,7 @@ class Mission
 			age="UNKNOWN";
 			name="obj_lab_trigger";
 			expCond="gatheredIntel >= 3";
-			expActiv="hint ""Ihr habt genug Informationen gesammelt um das Forschungsprojekt im Groben zu verstehen. Den Rest müssen zwar Spezielisten übernehmen, aber ein Nachspiel für die NAPA wird das Projekt auf jeden Fall haben!""";
+			expActiv="hint ""Ihr habt genug Informationen gesammelt um das Forschungsprojekt im Groben zu verstehen. Den Rest müssen zwar Spezialisten übernehmen, aber ein Nachspiel für die NAPA wird das Projekt auf jeden Fall haben!""";
 			class Effects
 			{
 			};
