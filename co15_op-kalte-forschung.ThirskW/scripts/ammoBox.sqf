@@ -1,3 +1,23 @@
+/*
+	Author: SpecOp0
+
+	Description:
+	Ammunition Parachute Box.
+	Spawns a Ammunition Box in the air and adds a parachute.
+	The Ammunition Box will land safely if it is stuck in a tree.
+	Furthermore a enemy unit is spawned as a drawback.
+	
+	For use in a addAction entry, most parameter are hardcoded.
+	
+	
+	Parameter(s):
+	0: -
+	1: OBJECT - player who wants to spawn the object (i.e. a player who chooses the menu entry)
+
+	Returns:
+	true
+*/
+
 private _script = _this spawn {
 
 private _ammoBoxType = "B_supplyCrate_F";
@@ -123,3 +143,4 @@ if(_parameterCorrect) then {
 };
 
 };
+true
