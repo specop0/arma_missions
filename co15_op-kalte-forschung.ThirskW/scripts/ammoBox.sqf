@@ -3,9 +3,9 @@ private _script = _this spawn {
 private _ammoBoxType = "B_supplyCrate_F";
 private _parachuteType = "B_Parachute_02_F";
 
-private _enemyPatLeaderType = "LOP_NAPA_Infantry_TL";
-private _enemyPatSoldierAtype = "LOP_NAPA_Infantry_Rifleman";
-private _enemyPatSoldierBtype = "LOP_NAPA_Infantry_AT";
+private _enemyPatLeaderType = "rhs_g_Soldier_TL_F";
+private _enemyPatSoldierAtype = "rhs_g_Soldier_F";
+private _enemyPatSoldierBtype = "rhs_g_Soldier_AR_F";
 private _enemyPatSide = RESISTANCE;
 private _enemyPatCycleRadius = 125 + random 100;
 private _spawnedAmmoBoxHeight = 500;
