@@ -3,6 +3,7 @@ _loadoutFactionList pushBack "NATO";
 _loadoutFactionList pushBack "AAF";
 _loadoutFactionList pushBack "CSAT";
 // RHS
+_loadoutFactionList pushBack "USARMY";
 _loadoutFactionList pushBack "USMC";
 _loadoutFactionList pushBack "USSOCOM";
 _loadoutFactionList pushBack "RUS";

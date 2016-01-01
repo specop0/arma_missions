@@ -51,14 +51,14 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "rhs_uniform_FROG01_d";
-private _vest = "rhsusf_spc_rifleman";
+private _uniform = "rhs_uniform_cu_ucp";
+private _vest = "rhsusf_iotv_ucp_Rifleman";
 
-private _backpack = "rhsusf_assault_eagleaiii_coy";
-private _backpackBig = "B_Carryall_cbr";
-private _backpackLR = "tf_anprc155_coyote";
+private _backpack = "rhsusf_assault_eagleaiii_ucp";
+private _backpackBig = "B_Carryall_mcamo";
+private _backpackLR = "tf_rt1523g_black";
 
-private _headgear = ["rhsusf_lwh_helmet_marpatd","rhsusf_lwh_helmet_marpatd_ess","rhsusf_lwh_helmet_marpatd_headset"] call BIS_fnc_selectRandom;
+private _headgear = "H_HelmetSpecB_paint1";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "G_Combat";
 
@@ -106,20 +106,32 @@ if(_parameterCorrect) then {
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	[_unit, _uniform] call Spec_fnc_addContainer;
 	switch (_type) do {
-		case Spec_var_mgClass : {
-			_vest = "rhsusf_spc_mg";
-		};
 		case Spec_var_lmgClass : {
-			_vest = "rhsusf_spc_mg";
+			_vest = "rhsusf_iotv_ucp_SAW";
+		};
+		case Spec_var_glClass : {
+			_vest = "rhsusf_iotv_ucp_Grenadier";
+		};
+		case Spec_var_medicClass : {
+			_vest = "rhsusf_iotv_ucp_Medic";
+		};
+		case Spec_var_medevacClass : {
+			_vest = "rhsusf_iotv_ucp_Medic";
 		};
 		case Spec_var_tfClass : {
-			_vest = "rhsusf_spc_Squadleader";
+			_vest = "rhsusf_iotv_ucp_Squadleader";
 		};
 		case Spec_var_oplClass : {
-			_vest = "rhsusf_spc_Squadleader";
+			_vest = "rhsusf_iotv_ucp_Squadleader";
 		};
 		case Spec_var_funkerClass : {
-			_vest = "rhsusf_spc_Teamleader";
+			_vest = "rhsusf_iotv_ucp_Teamleader";
+		};
+		case Spec_var_pioClass : {
+			_vest = "rhsusf_iotv_ucp_Repair";
+		};
+		case Spec_var_logisticClass : {
+			_vest = "rhsusf_iotv_ucp_Repair";
 		};
 	};
 	[_unit, _vest] call Spec_fnc_addContainer;
@@ -138,6 +150,11 @@ if(_parameterCorrect) then {
 	if(_type == Spec_var_pilotClass) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
+		if(_type == Spec_var_tfClass || _type == Spec_var_oplClass) then {
+			_headgear = ["rhsusf_ach_helmet_headset_ucp","rhsusf_ach_helmet_headset_ess_ucp"] call BIS_fnc_selectRandom;
+		} else {
+			_headgear = ["rhsusf_ach_helmet_ESS_ucp","rhsusf_ach_helmet_ucp_norotos"] call BIS_fnc_selectRandom;
+		};
 		_unit addHeadgear _headgear;
 	};
 	_unit addGoggles _googles;

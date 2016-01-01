@@ -14,6 +14,7 @@ class spec_loadout {
 		class loadout_rus_flora {};
 		class loadout_rus_flora_alt {};
 		class loadout_uk {};
+		class loadout_usarmy {};
 		class loadout_usmc {};
 		class loadout_ussocom {};
 		class loadoutBox {};
