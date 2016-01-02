@@ -49,6 +49,7 @@ if(_parameterCorrect) then {
 	_unitName setGroupID [_callsign];
 	_unitName setVariable ["BG_BFT_groupId", _callsign, true];
 	_unitName setVariable ["BG_BFT_icon", _BFTicon, true]; 
+	_unitName setVariable ["BG_BFT_remarks", _BFTremarks, true];
 	if(count _swFreq > 0) then {
 		_unitName setVariable ["BG_BFT_radioSR", (_swFreq select 0), true];
 	};

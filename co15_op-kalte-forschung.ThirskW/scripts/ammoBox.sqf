@@ -107,6 +107,7 @@ if(_parameterCorrect) then {
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_morphine",10];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_atropine",5];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_surgicalKit",2];
+		_spawnedAmmoBox addItemCargoGlobal ["ACE_personalAidKit",2];
 
 		_spawnedAmmoBox addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
 		_spawnedAmmoBox addWeaponCargoGlobal ["BWA3_Pzf3",1];
