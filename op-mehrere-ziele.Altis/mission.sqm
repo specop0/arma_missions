@@ -31,7 +31,9 @@ class Mission
 		"CUP_AirVehicles_C130J",
 		"cup_misc_e_config",
 		"a3_map_altis",
-		"CUP_AirVehicles_MV22"
+		"CUP_AirVehicles_MV22",
+		"A3_Structures_F_Items_Electronics",
+		"A3_Structures_F_Civ_Camping"
 	};
 	addOnsAuto[]=
 	{
@@ -52,7 +54,7 @@ class Mission
 		"A3_Soft_F_TruckHeavy",
 		"A3_Soft_F_Gamma_Offroad",
 		"A3_Soft_F_MRAP_03",
-		"cup_casigns_e",
+		"A3_Structures_F_Items_Electronics",
 		"A3_Supplies_F_Heli_CargoNets",
 		"CUP_AirVehicles_CH47",
 		"CUP_AirVehicles_UH60",
@@ -63,6 +65,7 @@ class Mission
 		"CUP_AirVehicles_C130J",
 		"cup_misc_e_config",
 		"CUP_AirVehicles_MV22",
+		"A3_Structures_F_Civ_Camping",
 		"a3_map_altis"
 	};
 	randomSeed=3131573;
@@ -5243,7 +5246,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=54;
+		items=57;
 		class Item0
 		{
 			position[]={7236.8511,4.373208,11031.179};
@@ -5417,14 +5420,16 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={15204.57,17.951046,17360.322};
-			azimut=45;
+			position[]={15202.531,17.940172,17359.66};
+			azimut=10;
+			offsetY=2;
 			id=197;
 			side="EMPTY";
-			vehicle="SignM_UN_Base_EP1";
+			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
 			skill=0.60000002;
 			text="spawner";
+			init="this attachTo [table, [0.45,0,0.57]]";
 		};
 		class Item17
 		{
@@ -5804,6 +5809,36 @@ class Mission
 			side="EMPTY";
 			vehicle="CUP_B_MV22_USMC";
 			skill=0.40000001;
+		};
+		class Item54
+		{
+			position[]={15202.841,17.941822,17359.398};
+			azimut=230;
+			id=235;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			skill=0.60000002;
+			text="table";
+		};
+		class Item55
+		{
+			position[]={15200.104,17.933613,17358.92};
+			azimut=250;
+			id=236;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item56
+		{
+			position[]={15201.789,17.938107,17357.012};
+			azimut=195;
+			id=237;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 	class Markers
