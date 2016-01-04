@@ -5117,7 +5117,7 @@ class Mission
 			azimut=135;
 			id=184;
 			side="EMPTY";
-			vehicle="B_G_Offroad_01_armed_F";
+			vehicle="I_MRAP_03_hmg_F";
 			leader=1;
 			skill=0.60000002;
 		};
