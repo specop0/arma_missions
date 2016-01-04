@@ -51,8 +51,8 @@ class Mission
 		"A3_Soft_F_Truck",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Soft_F_TruckHeavy",
-		"A3_Soft_F_Gamma_Offroad",
 		"A3_Soft_F_MRAP_03",
+		"A3_Soft_F_Gamma_Offroad",
 		"A3_Structures_F_Items_Electronics",
 		"A3_Supplies_F_Heli_CargoNets",
 		"CUP_AirVehicles_CH47",
@@ -764,7 +764,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3355.2554,85.067215,19080.104};
+					position[]={3381.1526,107.45582,19170.758};
 					type="GETOUT";
 					class Effects
 					{
@@ -896,7 +896,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3342.3354,65.628151,18940.98};
+					position[]={3381.9185,99.347786,19147.795};
 					type="GETOUT";
 					class Effects
 					{
