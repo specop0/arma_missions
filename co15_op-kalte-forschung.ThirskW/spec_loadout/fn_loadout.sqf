@@ -123,7 +123,7 @@ if(_parameterCorrect) then {
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	_unit forceAddUniform _uniform;
 	_unit addVest _vest;
-	if(_type == _medicClass || _type == _pioClass || _type == _mgAssiClass) then {
+	if(_type in [_medicClass, _pioClass, _mgAssiClass]) then {
 		_unit addBackpack _backpack;
 	};
 	
@@ -134,7 +134,7 @@ if(_parameterCorrect) then {
 	if(_type == _tfClass) then {
 		_unit addWeapon "ACE_Vector";
 	} else {
-		if(_type == _atClass || _type == _mgAssiClass || _type == _glClass || _type == _sniperHelpClass) then{
+		if(_type in [_atClass, _mgAssiClass, _glClass, _sniperHelpClass]) then{
 			_unit addWeapon "ACE_Yardage450";
 		} else {
 			_unit addWeapon "Binocular";
@@ -260,7 +260,7 @@ if(_parameterCorrect) then {
 				} forEach _sniperAccessoryExtra;
 			} else {
 				comment "grenade launcher";
-				if(_type == _tfClass || _type == _glClass) then {
+				if(_type in [_tfClass, _glClass]) then {
 					[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
 					
 					_unit addWeapon _grenadeLauncherWeapon;

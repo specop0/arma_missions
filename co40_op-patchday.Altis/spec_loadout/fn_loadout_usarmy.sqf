@@ -135,13 +135,13 @@ if(_parameterCorrect) then {
 		};
 	};
 	[_unit, _vest] call Spec_fnc_addContainer;
-	if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
+	if(_type in [Spec_var_oplClass, Spec_var_funkerClass, Spec_var_logisticClass, Spec_var_pilotClass]) then {
 		[_unit, _backpackLR] call Spec_fnc_addContainer;
 		if(backpack _unit == "") then {
 			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
 	} else {
-		if(_type == Spec_var_medevacClass || _type == Spec_var_pioClass) then {
+		if(_type in [Spec_var_medevacClass, Spec_var_pioClass]) then {
 			[_unit, _backpackBig] call Spec_fnc_addContainer;
 		} else {
 			[_unit, _backpack] call Spec_fnc_addContainer;
@@ -150,7 +150,7 @@ if(_parameterCorrect) then {
 	if(_type == Spec_var_pilotClass) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
-		if(_type == Spec_var_tfClass || _type == Spec_var_oplClass) then {
+		if(_type in [Spec_var_tfClass, Spec_var_oplClass]) then {
 			_headgear = ["rhsusf_ach_helmet_headset_ucp","rhsusf_ach_helmet_headset_ess_ucp"] call BIS_fnc_selectRandom;
 		} else {
 			_headgear = ["rhsusf_ach_helmet_ESS_ucp","rhsusf_ach_helmet_ucp_norotos"] call BIS_fnc_selectRandom;
@@ -188,7 +188,7 @@ if(_parameterCorrect) then {
 			} forEach _lmgAccessoryExtra;
 		} else {
 			comment "Grenade launcher";
-			if(_type == Spec_var_tfClass || _type == Spec_var_glClass) then {
+			if(_type in [Spec_var_tfClass, Spec_var_glClass]) then {
 				[_unit,_grenadeLauncherAmmo,2, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _grenadeLauncherWeapon;

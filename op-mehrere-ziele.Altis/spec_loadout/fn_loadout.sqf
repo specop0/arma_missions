@@ -132,10 +132,10 @@ if(_parameterCorrect) then {
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	_unit forceAddUniform _uniform;
 	_unit addVest _vest;
-	if(_type == _oplClass || _type == _funkerClass || _type == _logisticClass || _type == _pilotClass) then {
+	if(_type in [_oplClass, _funkerClass, _logisticClass, _pilotClass]) then {
 		_unit addBackpack _backpackLR;
 	} else {
-		if(_type == _medevacClass || _type == _medicClass) then {
+		if(_type in [_medevacClass, _medicClass]) then {
 			_unit addBackpack _backpackBig;
 		} else {
 			_unit addBackpack _backpack;
@@ -154,11 +154,11 @@ if(_parameterCorrect) then {
 		[_x, "MineDetector", 2] call Spec_fnc_addItemToContainer;
 	};
 	
-	if(_type == _oplClass || _type == _tfClass) then {
+	if(_type in [_oplClass, _tfClass]) then {
 		_unit addWeapon "ACE_Vector";
 		[_unit,"BWA3_Beret_Falli",2] call Spec_fnc_addItemToContainer;
 	} else {
-		if(_type == _atClass || _type == _mgAssiClass || _type == _glClass) then{
+		if(_type in [_atClass, _mgAssiClass, _glClass]) then{
 			_unit addWeapon "ACE_Yardage450";
 		} else {
 			_unit addWeapon "Binocular";
@@ -171,18 +171,18 @@ if(_parameterCorrect) then {
 	_unit linkItem "tf_anprc152";
 	
 	comment "lead equipment (tablet, etc)";
-	if(_type == _oplClass || _type == _tfClass || _type == _funkerClass || _type == _logisticClass || _type == _medevacClass || _type == _pilotClass) then {
+	if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
 		_unit addItemToUniform "ACE_microDAGR";
-		if(_type == _medevacClass || _type == _funkerClass) then {
+		if(_type in [_medevacClass, _funkerClass]) then {
 			[_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
 		} else {
 			[_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
 		};
 	};
-	if(_type == _oplClass || _type == _tfClass || _type == _logisticClass || _type == _pilotClass) then {
+	if(_type in [_oplClass, _tfClass, _logisticClass, _pilotClass]) then {
 		//[_unit,"ACE_HelmetCam",0] call Spec_fnc_addItemToContainer;
 	};
-	if(_type == _oplClass || _type == _tfClass || _type == _funkerClass) then {
+	if(_type in [_oplClass, _tfClass, _funkerClass]) then {
 		[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
 	};
 	
@@ -297,7 +297,7 @@ if(_parameterCorrect) then {
 			} forEach _lmgAccessoryExtra;				
 		} else {
 			comment "grenade launcher";
-			if(_type == _tfClass || _type == _glClass) then {
+			if(_type in [_tfClass, _glClass]) then {
 				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
 				
 				_unit addWeapon _grenadeLauncherWeapon;
