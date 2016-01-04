@@ -19,7 +19,7 @@ private _saline250 = "ACE_salineIV_250";
 
 private _bodyBag = "ACE_bodyBag";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;

@@ -14,7 +14,7 @@ private _weaponSilencerH = "muzzle_snds_H";
 private _weaponSilencerL = "muzzle_snds_L";
 private _weaponScope = "optic_Arco";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;

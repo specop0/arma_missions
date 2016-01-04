@@ -7,7 +7,7 @@ private _smokeShell = "1Rnd_Smoke_Grenade_shell";
 private _smokeShellRed = "1Rnd_SmokeRed_Grenade_shell";
 private _heShell = "1Rnd_HE_Grenade_shell";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;

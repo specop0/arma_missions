@@ -7,7 +7,7 @@ private _smokePurple = "SmokeShellPurple";
 private _stunGranade = "ACE_M84";
 private _irStrobe = "ACE_IR_Strobe_Item";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;

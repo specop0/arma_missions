@@ -4,7 +4,7 @@ private _explosiveCharge = "DemoCharge_Remote_Mag";
 private _apMine = "SLAMDirectionalMine_Wire_Mag";
 private _clacker = "ACE_Clacker";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;

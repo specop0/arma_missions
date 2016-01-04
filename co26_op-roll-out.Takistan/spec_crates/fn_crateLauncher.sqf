@@ -3,7 +3,7 @@ private _parameterCorrect = params [["_x",objNull,[objNull]]];
 private _atAmmo = "RPG32_F";
 private _atAmmoHE = "RPG32_HE_F";
 
-if(_parameterCorrect) then {
+if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _x;
 	clearMagazineCargoGlobal _x;
 	clearItemCargoGlobal _x;
