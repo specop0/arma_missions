@@ -148,8 +148,7 @@ if(_parameterCorrect) then {
 	comment "===========================================";
 
 	if(_type == Spec_var_mgClass) then {
-		[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-		[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,3, 2] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
 		{
 			_unit addPrimaryWeaponItem _x;
@@ -157,6 +156,7 @@ if(_parameterCorrect) then {
 		{
 			[_unit,_x,3] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;
+		[_unit,_mgAmmo,3] call Spec_fnc_addItemToContainer;
 	} else {
 		if(_type == Spec_var_lmgClass) then {
 			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
