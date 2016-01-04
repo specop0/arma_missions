@@ -3,7 +3,7 @@ private _parameterCorrect = params ["_parameter", ["_faction","NATO",[""]] ];
 if(_parameterCorrect) then {
     switch (_faction) do {
         case "NATO" : {
-            _parameter call Spec_fnc_loadout;
+            _parameter call Spec_fnc_loadout_nato;
         };
         case "AAF" : {
             _parameter call Spec_fnc_loadout_aaf;
@@ -36,7 +36,7 @@ if(_parameterCorrect) then {
 			_parameter call Spec_fnc_loadout_bw_flecktarn;
 		};
         default {
-            _parameter call Spec_fnc_loadout;
+            _parameter call Spec_fnc_loadout_nato;
         };
     };
 };

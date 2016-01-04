@@ -6,11 +6,11 @@ class spec_loadout {
 		class addItemToContainer {};
 		class initClassVariables {};
 		class initLoadoutLists {};
-		class loadout {};
 		class loadout_aaf {};
 		class loadout_bw_tropentarn {};
 		class loadout_bw_flecktarn {};
 		class loadout_csat {};
+		class loadout_nato {};
 		class loadout_rus_flora {};
 		class loadout_rus_flora_alt {};
 		class loadout_uk {};

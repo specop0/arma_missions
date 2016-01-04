@@ -21,15 +21,15 @@ if(isServer) then {
 	{
 		if(side _x == west) then {
 			comment "assign loadout to AI only (excellent for testing purposes)";
-			[_x] call Spec_fnc_loadout;
-			_x addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout;}];
+			[_x] call Spec_fnc_loadout_nato;
+			_x addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout_nato;}];
 		} else {
 			_x removeMagazines "1Rnd_HE_Grenade_shell";
 		};
 	} foreach  allUnits - allPlayers;  
 };
 if(hasInterface) then {
-	[player] call Spec_fnc_loadout;
-	player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout;}];
+	[player] call Spec_fnc_loadout_nato;
+	player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout_nato;}];
 };
 true
