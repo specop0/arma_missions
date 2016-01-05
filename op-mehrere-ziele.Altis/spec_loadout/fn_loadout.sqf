@@ -168,7 +168,7 @@ if(_parameterCorrect) then {
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
 	_unit linkItem "ItemWatch";
-	_unit linkItem "tf_anprc152";
+	_unit linkItem "ItemRadio";
 	
 	comment "lead equipment (tablet, etc)";
 	if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
