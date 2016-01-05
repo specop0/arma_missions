@@ -1,6 +1,7 @@
 ﻿#include "W_Teleporter\dialog.hpp"
 class CfgFunctions {
 	#include "W_Teleporter\CfgFunctions.hpp"
+	#include "spec_tfar\CfgFunctions.hpp"
 };
 
 class Header
