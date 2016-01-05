@@ -4088,6 +4088,8 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.55000001;
 					text="z1";
+					init="this setVariable [""Spec_var_TFARgroup"", 9];";
+					description="Zeus";
 				};
 			};
 		};
