@@ -65,7 +65,7 @@ if(_parameterCorrect) then {
 				clearMagazineCargoGlobal _backpack;
 				clearWeaponCargoGlobal _backpack;
 			} else {
-				removeBackpack _unit;
+				removeBackpackGlobal _unit;
 				_unit addBackpack _containerClassname;
 			};
 		};

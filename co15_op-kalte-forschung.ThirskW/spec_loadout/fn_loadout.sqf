@@ -116,7 +116,7 @@ if(_parameterCorrect) then {
 	removeAllAssignedItems _unit;
 	removeUniform _unit;
 	removeVest _unit;
-	removeBackpack _unit;
+	removeBackpackGlobal _unit;
 	removeHeadgear _unit;
 	removeGoggles _unit;
 	
@@ -276,7 +276,7 @@ if(_parameterCorrect) then {
 						_unit addBackpack _backpack;
 						_unit addItemToBackpack _atAmmo;
 						_unit addWeapon _atWeapon;
-						removeBackpack _unit;
+						removeBackpackGlobal _unit;
 					};
 					comment "standard weapon";
 					[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;

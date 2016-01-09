@@ -125,7 +125,7 @@ if(_parameterCorrect) then {
 	removeAllAssignedItems _unit;
 	removeUniform _unit;
 	removeVest _unit;
-	removeBackpack _unit;
+	removeBackpackGlobal _unit;
 	removeHeadgear _unit;
 	removeGoggles _unit;
 	
