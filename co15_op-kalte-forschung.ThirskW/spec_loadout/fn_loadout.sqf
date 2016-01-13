@@ -50,12 +50,12 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "rhs_uniform_cu_ucp";
-private _vest = "rhsusf_iotv_ucp_Squadleader";
+private _uniform = "MNP_CombatUniform_USMC_arctic";
+private _vest = "V_PlateCarrier2_blk";
 
-private _backpack = "rhsusf_assault_eagleaiii_ucp";
+private _backpack = "MNP_B_WB_KB";
 
-private _headgear = "rhsusf_ach_helmet_ucp";
+private _headgear = "MNP_Helmet_USMC_arctic";
 private _googles = "G_Balaclava_combat";
 
 private _standardWeapon = "rhs_weap_m4_grip";
@@ -171,7 +171,7 @@ if(_parameterCorrect) then {
 	
 	comment "night equipment";
 	[_unit,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
-	[_unit,"ACE_NVG_Wide",1] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_NVG_Wide",0] call Spec_fnc_addItemToContainer;
 	
 	[_unit,"ACE_M84",1, 2] call Spec_fnc_addItemToContainer;
 
