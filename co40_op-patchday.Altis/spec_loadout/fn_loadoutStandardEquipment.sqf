@@ -80,36 +80,37 @@ if(_parameterCorrect) then {
     comment "medic equipment";
     switch _type do {
         case Spec_var_medicClass : {
-            [_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_tourniquet",2, 3] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_salineIV_500",2, 4] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_atropine",2, 5] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 1];
+			[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",2, 3] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_salineIV_500",2, 4] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_atropine",2, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
+			_unit setVariable ["ace_medical_medicClass", 1];
         };
         case Spec_var_medevacClass : {
-            [_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_salineIV",2, 6] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_atropine",2, 8] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_epinephrine",2, 12] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_personalAidKit",2] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 2];
+			[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_salineIV",2, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_atropine",2, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_epinephrine",2, 12] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_personalAidKit",2, 3] call Spec_fnc_addItemToContainer;
+			_unit setVariable ["ace_medical_medicClass", 2];
         };
         default {
-            [_unit,"ACE_fieldDressing",2, 7] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",2, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;;
         };
     };
 

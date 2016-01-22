@@ -63,12 +63,12 @@ private _googles = "BWA3_G_Combat_Black";
 
 private _standardWeapon = "hlc_rifle_auga3";
 private _standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
-private _standardAccessory = ["acc_flashlight"];
+private _standardAccessory = ["acc_flashlight","optic_MRCO"];
 private _standardAccessoryExtra = [];
 
 private _grenadeLauncherWeapon = "hlc_rifle_auga3_GL";
 private _grenadeLauncherAmmo = _standardAmmo;
-private _grenadeLauncherAccessory = ["acc_flashlight"];
+private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = [];
 
 private _secondaryWeapon = "CUP_hgun_Glock17";
@@ -89,9 +89,9 @@ private _glClass = "B_Soldier_GL_F";
 
 comment "Autorifleman";
 private _mgClass = "B_soldier_AR_F";
-private _mgWeapon = "hlc_lmg_m60";
-private _mgAmmo = "hlc_100Rnd_762x51_B_M60E4";
-private _mgAccessory = [];
+private _mgWeapon = "hlc_lmg_M60E4";
+private _mgAmmo = "hlc_100Rnd_762x51_T_M60E4";
+private _mgAccessory = ["optic_MRCO"];
 private _mgAccessoryExtra = [];
 comment "Ammo Bearer";
 private _mgAssiClass = "B_Soldier_A_F";
@@ -100,7 +100,7 @@ comment "Helicopter Crew";
 private _lmgClass = "B_helicrew_F";
 private _lmgWeapon = "BWA3_MG4";
 private _lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
-private _lmgAccessory = ["acc_flashlight"];
+private _lmgAccessory = ["acc_flashlight","optic_MRCO"];
 private _lmgAccessoryExtra = [];
 
 comment "Rifleman (AT)";
@@ -229,13 +229,14 @@ if(_parameterCorrect) then {
 			[_unit,"ACE_epinephrine",2, 12] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_personalAidKit",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_personalAidKit",2, 3] call Spec_fnc_addItemToContainer;
 			_unit setVariable ["ace_medical_medicClass", 2];
 		};
 		default {
-			[_unit,"ACE_fieldDressing",2, 7] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",2, 5] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;;
 		};
 	};
 	

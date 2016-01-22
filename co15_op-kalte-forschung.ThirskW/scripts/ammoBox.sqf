@@ -96,13 +96,13 @@ if(_parameterCorrect) then {
 		_spawnedAmmoBox addMagazineCargoGlobal ["BWA3_120Rnd_762x51",3];
 		_spawnedAmmoBox addMagazineCargoGlobal ["BWA3_200Rnd_556x45",4];
 
-		_spawnedAmmoBox addItemCargoGlobal ["ACE_fieldDressing",50];
+		_spawnedAmmoBox addItemCargoGlobal ["ACE_fieldDressing",10];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_packingBandage",35];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_elasticBandage",10];
-		_spawnedAmmoBox addItemCargoGlobal ["ACE_quikclot",10];
+		_spawnedAmmoBox addItemCargoGlobal ["ACE_quikclot",60];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_tourniquet",6];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_salineIV_500",10];
-		_spawnedAmmoBox addItemCargoGlobal ["ACE_salineIV",10];
+		_spawnedAmmoBox addItemCargoGlobal ["ACE_salineIV",4];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_epinephrine",10];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_morphine",10];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_atropine",5];
