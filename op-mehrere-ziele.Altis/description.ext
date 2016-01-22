@@ -1,7 +1,6 @@
 #include "W_Teleporter\dialog.hpp"
 
 class CfgFunctions {
-#include "spec_cache\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"
 #include "spec_crates\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"

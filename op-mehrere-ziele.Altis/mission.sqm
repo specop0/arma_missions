@@ -9,7 +9,6 @@ class Mission
 		"task_force_radio_items",
 		"A3_Characters_F_Civil",
 		"a3_characters_f",
-		"A3_Modules_F",
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_EPC",
 		"A3_Soft_F_Offroad_01",
@@ -433,7 +432,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 19] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -590,7 +588,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 16] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -693,18 +690,17 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4887.4399,347.25839,21929.428};
+					position[]={4956.7236,337.31824,21892.975};
 					id=15;
 					side="GUER";
 					vehicle="I_soldier_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 20] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
-					position[]={4892.4399,347.24829,21924.428};
+					position[]={4961.7236,335.4917,21887.975};
 					id=16;
 					side="GUER";
 					vehicle="I_Soldier_AR_F";
@@ -713,7 +709,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4882.4399,347.0491,21924.428};
+					position[]={4951.7236,336.87988,21887.975};
 					id=17;
 					side="GUER";
 					vehicle="I_soldier_F";
@@ -721,7 +717,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4897.4399,347.4791,21919.428};
+					position[]={4966.7236,333.57571,21882.975};
 					id=18;
 					side="GUER";
 					vehicle="I_Soldier_A_F";
@@ -730,20 +726,30 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=7;
+				items=8;
 				class Item0
 				{
-					position[]={4932.3008,339.97937,21891.896};
+					position[]={4942.0029,337.98434,21885.021};
 					type="GETIN NEAREST";
 					class Effects
 					{
 					};
-					timeoutMin=60;
-					timeoutMid=60;
-					timeoutMax=60;
 					showWP="NEVER";
 				};
 				class Item1
+				{
+					position[]={4945.3384,337.14716,21882.848};
+					synchronizations[]={10};
+					class Effects
+					{
+					};
+					timeoutMin=10;
+					timeoutMid=10;
+					timeoutMax=10;
+					showWP="NEVER";
+					syncId=0;
+				};
+				class Item2
 				{
 					position[]={3381.1526,107.45582,19170.758};
 					type="GETOUT";
@@ -752,7 +758,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={3203.939,113.80019,19098.568};
 					formation="WEDGE";
@@ -762,7 +768,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={3073.1477,71.883865,19102.482};
 					class Effects
@@ -770,7 +776,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={2992.6323,19.223602,18910.961};
 					class Effects
@@ -778,7 +784,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item6
 				{
 					position[]={3049.8416,61.704338,18659.371};
 					combatMode="YELLOW";
@@ -787,7 +793,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item6
+				class Item7
 				{
 					position[]={3008.4739,33.16,18514.5};
 					speed="NORMAL";
@@ -806,18 +812,17 @@ class Mission
 				items=6;
 				class Item0
 				{
-					position[]={4892.5923,347.06525,21935.168};
+					position[]={4933.5024,342.15552,21914.715};
 					id=19;
 					side="GUER";
 					vehicle="I_soldier_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 22] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
-					position[]={4897.5923,346.58005,21930.168};
+					position[]={4938.5024,341.17404,21909.715};
 					id=20;
 					side="GUER";
 					vehicle="I_soldier_F";
@@ -825,7 +830,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4887.5923,347.27621,21930.168};
+					position[]={4928.5024,342.20789,21909.715};
 					id=21;
 					side="GUER";
 					vehicle="I_soldier_LAT_F";
@@ -834,7 +839,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4902.5923,346.4881,21925.168};
+					position[]={4943.5024,340.10162,21904.715};
 					id=22;
 					side="GUER";
 					vehicle="I_Soldier_AR_F";
@@ -842,7 +847,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={4882.5923,347.06973,21925.168};
+					position[]={4923.5024,342.20023,21904.715};
 					id=23;
 					side="GUER";
 					vehicle="I_soldier_F";
@@ -851,7 +856,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={4907.5923,345.73465,21920.168};
+					position[]={4948.5024,338.79477,21899.715};
 					id=24;
 					side="GUER";
 					vehicle="I_soldier_AR_F";
@@ -861,21 +866,30 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
-					position[]={4942.457,337.85947,21884.623};
-					id=182;
+					position[]={4932.7007,339.90826,21891.568};
 					type="GETIN NEAREST";
 					class Effects
 					{
 					};
-					timeoutMin=30;
-					timeoutMid=30;
-					timeoutMax=30;
 					showWP="NEVER";
 				};
 				class Item1
+				{
+					position[]={4935.8672,339.30887,21889.029};
+					synchronizations[]={10};
+					class Effects
+					{
+					};
+					timeoutMin=20;
+					timeoutMid=20;
+					timeoutMax=20;
+					showWP="NEVER";
+					syncId=1;
+				};
+				class Item2
 				{
 					position[]={3381.9185,99.347786,19147.795};
 					type="GETOUT";
@@ -884,7 +898,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={3467.9121,135.47736,18752.211};
 					formation="WEDGE";
@@ -894,7 +908,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={3320.6633,57.970482,18347.926};
 					class Effects
@@ -902,7 +916,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={3185.1653,17.698471,18301.426};
 					speed="NORMAL";
@@ -921,18 +935,17 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={4877.8887,347.16895,21928.441};
+					position[]={4957.7944,332.09814,21864.076};
 					id=25;
 					side="GUER";
 					vehicle="I_soldier_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 21] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
-					position[]={4883.0776,347.03217,21923.252};
+					position[]={4962.9834,331.01306,21858.887};
 					id=26;
 					side="GUER";
 					vehicle="I_Soldier_AT_F";
@@ -941,7 +954,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4873.0776,345.73102,21923.252};
+					position[]={4952.9834,331.44806,21858.887};
 					id=27;
 					side="GUER";
 					vehicle="I_soldier_F";
@@ -950,11 +963,10 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
-					position[]={4953.6406,334.71198,21874.975};
-					id=183;
+					position[]={4953.6909,334.74231,21875.193};
 					type="GETIN NEAREST";
 					class Effects
 					{
@@ -963,6 +975,16 @@ class Mission
 				};
 				class Item1
 				{
+					position[]={4954.1812,334.39606,21873.605};
+					synchronizations[]={10};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					syncId=2;
+				};
+				class Item2
+				{
 					position[]={3202.5925,23.220917,18437.678};
 					combatMode="YELLOW";
 					class Effects
@@ -970,7 +992,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={3036.0562,32.368988,18462.639};
 					speed="LIMITED";
@@ -997,7 +1019,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 15] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1093,10 +1114,12 @@ class Mission
 				{
 					position[]={7506.8374,19.281092,11986.934};
 					type="CYCLE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					syncId=3;
 				};
 				class Item8
 				{
@@ -1125,7 +1148,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 12] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1228,10 +1250,12 @@ class Mission
 				{
 					position[]={8038.8198,8.9716911,10408.106};
 					type="CYCLE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					syncId=4;
 				};
 				class Item9
 				{
@@ -1259,7 +1283,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 14] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1418,10 +1441,12 @@ class Mission
 				{
 					position[]={5860.6694,15.589061,10505.916};
 					type="CYCLE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					syncId=5;
 				};
 				class Item16
 				{
@@ -1450,7 +1475,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 13] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1594,10 +1618,12 @@ class Mission
 				{
 					position[]={6457.1792,110.84528,12815.156};
 					type="CYCLE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					syncId=6;
 				};
 				class Item12
 				{
@@ -1626,7 +1652,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 17] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1742,7 +1767,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 18] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -1868,7 +1892,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 11] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2071,10 +2094,12 @@ class Mission
 				{
 					position[]={8435.5293,45.841969,12434.024};
 					type="CYCLE";
+					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					syncId=7;
 				};
 				class Item19
 				{
@@ -2102,7 +2127,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 5] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2203,7 +2227,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 10] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2326,7 +2349,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 8] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2477,7 +2499,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 1] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2585,7 +2606,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 2] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2685,7 +2705,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 3] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -2815,7 +2834,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 0] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -3033,7 +3051,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 9] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -3208,7 +3225,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 7] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -3340,7 +3356,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 4] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -3472,7 +3487,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, 6] call Spec_fnc_cacheGroup;";
 				};
 				class Item1
 				{
@@ -4696,12 +4710,12 @@ class Mission
 				{
 					position[]={23482.072,92.833298,21105.84};
 					type="LEADER";
-					synchronizations[]={1};
+					synchronizations[]={9};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=0;
+					syncId=8;
 				};
 				class Item2
 				{
@@ -4768,12 +4782,12 @@ class Mission
 				{
 					position[]={23483.77,92.896469,21105.883};
 					type="JOIN";
-					synchronizations[]={0};
+					synchronizations[]={8};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=1;
+					syncId=9;
 				};
 			};
 		};
@@ -5715,7 +5729,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=7;
+		items=6;
 		class Item0
 		{
 			position[]={7235.1626,4.3576832,11027.287};
@@ -5738,44 +5752,31 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="if(isServer) then { this } else { true };";
-			expActiv="if(isServer) then { [20,22] call Spec_fnc_spawnGroups };";
 			class Effects
 			{
 			};
+			synchronizations[]={2,0,1};
+			syncId=10;
 		};
 		class Item2
 		{
-			position[]={7236.5537,4.3884425,11027.134};
+			position[]={7237.3237,4.409976,11026.176};
 			a=20;
 			b=20;
 			activationBy="WEST";
 			timeoutMin=240;
 			timeoutMid=300;
 			timeoutMax=360;
+			type="SWITCH";
 			age="UNKNOWN";
 			name="blufor_repairing";
 			class Effects
 			{
 			};
+			synchronizations[]={5,4,7,6,3};
+			syncId=11;
 		};
 		class Item3
-		{
-			position[]={6252.6958,44.179276,11811.146};
-			a=3500;
-			b=1800;
-			angle=20;
-			rectangular=1;
-			activationBy="GUER";
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="if(isServer) then { triggerActivated blufor_repairing } else { true };";
-			expActiv="if(isServer) then {  {  if ((leader _x) in thisList) then {  _number = (count (waypoints _x)) - 1;  _x setCurrentWaypoint [_x,_number];  };   } forEach allGroups;  if(!isNil ""fennek"") then {  _crew = crew fennek;  if(count _crew > 0) then {  _group = group (_crew select 0);  _number = (count (waypoints _group)) - 1;  _group setCurrentWaypoint [_group,_number];  };  };  };";
-			class Effects
-			{
-			};
-		};
-		class Item4
 		{
 			position[]={21970.602,18.702847,21024.055};
 			a=30;
@@ -5793,7 +5794,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item4
 		{
 			position[]={21927.664,19.199839,21005.309};
 			a=300;
@@ -5808,7 +5809,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item5
 		{
 			position[]={20787.258,28.039764,7262.5576};
 			a=30;

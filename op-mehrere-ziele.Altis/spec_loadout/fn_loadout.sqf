@@ -55,7 +55,7 @@ private _vest = "BWA3_Vest_Fleck";
 
 private _backpack = "BWA3_AssaultPack_Fleck";
 private _backpackBig = "BWA3_Kitbag_Fleck_Medic"; //BWA3_Kitbag_Fleck
-private _backpackLR = "tf_mr3000_bwmod";
+private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn";
 
 private _headgear = "BWA3_M92_Fleck";
 private _headgearPilot = "H_HelmetCrew_0";
@@ -134,6 +134,7 @@ if(_parameterCorrect) then {
 	_unit addVest _vest;
 	if(_type in [_oplClass, _funkerClass, _logisticClass, _pilotClass]) then {
 		_unit addBackpack _backpackLR;
+		clearItemCargoGlobal (unitBackpack _unit);
 	} else {
 		if(_type in [_medevacClass, _medicClass]) then {
 			_unit addBackpack _backpackBig;
