@@ -1,0 +1,33 @@
+class CfgFunctions {
+#include "spec_crates\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+class spec_scripts {
+	tag = "Spec";
+	class init {
+		file="scripts";
+		class changeSide {};
+	};
+};
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "51";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Soldat, nicht die Ersatzbatterien fuer die Taschenlampe vergessen.";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Lights Out ";
+//loadScreen="loading.jpg";
+
+overviewText = "";
+overviewPicture = "";
