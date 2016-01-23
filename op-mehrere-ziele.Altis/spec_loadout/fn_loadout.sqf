@@ -58,7 +58,7 @@ private _backpackBig = "BWA3_Kitbag_Fleck_Medic"; //BWA3_Kitbag_Fleck
 private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn";
 
 private _headgear = "BWA3_M92_Fleck";
-private _headgearPilot = "H_HelmetCrew_0";
+private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "BWA3_G_Combat_Black";
 
 private _standardWeapon = "hlc_rifle_auga3";
