@@ -3857,7 +3857,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadSquare_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item4
 		{
@@ -3867,7 +3867,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TentHangar_V1_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item5
 		{
@@ -3990,7 +3990,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadRescue_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item17
 		{
@@ -4000,7 +4000,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Medevac_HQ_V1_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item18
 		{
@@ -4010,7 +4010,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Medevac_house_V1_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item19
 		{
@@ -4030,7 +4030,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampShabby_F";
 			skill=0.40000001;
-			init="this setPosATL [(getPosATL this) select 0, (getPosATL this) select 1, -4.7];";
+			init="this setPosATL [(getPosATL this) select 0, (getPosATL this) select 1, -4.35];";
 		};
 		class Item21
 		{
@@ -4162,7 +4162,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Tower_V3_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item33
 		{
@@ -4316,7 +4316,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Tower_V3_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item48
 		{
@@ -4678,7 +4678,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item81
 		{
@@ -4776,7 +4776,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item90
 		{
@@ -4817,7 +4817,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item94
 		{
@@ -4837,7 +4837,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item96
 		{
@@ -4858,7 +4858,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item98
 		{
@@ -4869,7 +4869,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Fort_Watchtower_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item99
 		{
@@ -4900,7 +4900,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Fort_Watchtower_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item102
 		{
@@ -4911,7 +4911,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item103
 		{
@@ -4975,7 +4975,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Fort_Watchtower_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item109
 		{
@@ -4996,7 +4996,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item111
 		{
@@ -5007,7 +5007,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item112
 		{
@@ -5018,7 +5018,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item113
 		{
@@ -5029,7 +5029,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item114
 		{
@@ -5040,7 +5040,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item115
 		{
@@ -5051,7 +5051,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item116
 		{
@@ -5062,7 +5062,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item117
 		{
@@ -5073,7 +5073,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item118
 		{
@@ -5084,7 +5084,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item119
 		{
@@ -5095,7 +5095,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item120
 		{
@@ -5127,7 +5127,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Fort_Watchtower_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item123
 		{
@@ -5148,7 +5148,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item125
 		{
@@ -5159,7 +5159,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_small_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item126
 		{
@@ -5210,7 +5210,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Patrol_V3_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item131
 		{
@@ -5430,7 +5430,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Patrol_V3_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item151
 		{
@@ -5584,7 +5584,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_big_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item165
 		{
@@ -5710,7 +5710,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_fortified_nest_big_EP1";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item177
 		{
@@ -5894,7 +5894,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Patrol_V3_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item194
 		{
@@ -6209,7 +6209,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadSquare_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item225
 		{
@@ -6219,7 +6219,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadSquare_F";
 			skill=0.40000001;
-			init="if(isServer) then { this enableSimulationGlobal false; };";
+			init="if(isServer) then { this enableSimulationGlobal false; this allowDamage false; };";
 		};
 		class Item226
 		{
@@ -6488,7 +6488,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=6;
+		items=8;
 		class Item0
 		{
 			position[]={4740.9678,13.610837,4008.1108};
@@ -6509,8 +6509,8 @@ class Mission
 		{
 			position[]={2221.7197,13.150028,2550.261};
 			name="obj_bridge";
-			text="OBJ Bridge";
-			type="mil_objective";
+			text="Bridge";
+			type="mil_marker";
 			colorName="ColorWEST";
 		};
 		class Item3
@@ -6540,6 +6540,22 @@ class Mission
 			a=300;
 			b=25;
 			angle=335;
+		};
+		class Item6
+		{
+			position[]={2705.7842,0.55775809,3255.3608};
+			name="obj_rat";
+			text="Rat Run";
+			type="mil_marker";
+			colorName="ColorWEST";
+		};
+		class Item7
+		{
+			position[]={2407.2559,-0.23350832,2916.9063};
+			name="obj_swale";
+			text="Swale";
+			type="mil_marker";
+			colorName="ColorWEST";
 		};
 	};
 	class Sensors

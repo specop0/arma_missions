@@ -153,7 +153,7 @@ if(_parameterCorrect) then {
 		
 		Spec_fnc_ammoBox = compile preprocessFileLineNumbers "scripts\ammoBox.sqf";
 		//_unit addAction ["Fordere Nachschub an", Spec_fnc_ammoBox, [], -100, false, true, "", "_target == _this"];
-		[player,1,["ACE_SelfActions","Spec_action_ammoBox"]] call ace_interact_menu_fnc_removeActionFromObject;
+		[_unit,1,["ACE_SelfActions","Spec_action_ammoBox"]] call ace_interact_menu_fnc_removeActionFromObject;
 		_action = ["Spec_action_ammoBox", "Fordere Nachschub an", "", Spec_fnc_ammoBox, {true}] call ace_interact_menu_fnc_createAction;
 		[_unit,1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	};

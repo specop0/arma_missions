@@ -212,7 +212,7 @@ if(_parameterCorrect) then {
 			};
 			
 			comment "Loadout based on TTT-Mod (weapons near end of file)";
-			if(_type in [_oplClass, _tfClass]) then {
+			if(_type in [_oplClass, _tfClass, _funkerClass]) then {
 				_unit addWeapon "ACE_Vector";
 			} else {
 				if(_type in [_atClass, _mgAssiClass, _glClass]) then{
@@ -405,5 +405,17 @@ if(_parameterCorrect) then {
 		};
 		
 		[_unit,"ACE_HandFlare_Red",3,2] call Spec_fnc_addItemToContainer;
+		if(_type == _usLead || true) then {
+			[_unit,1,["ACE_SelfActions","Spec_action_changeSideCIV"]] call ace_interact_menu_fnc_removeActionFromObject;
+			[_unit,1,["ACE_SelfActions","Spec_action_changeSideBLUE"]] call ace_interact_menu_fnc_removeActionFromObject;
+			private _actionCIV = ["Spec_action_changeSideCIV", "Change to Civilian", "", {
+				[_this select 0, 1] remoteExec ["Spec_fnc_changeSide", 2];
+			}, {!(side (_this select 0) isEqualTo CIVILIAN)}] call ace_interact_menu_fnc_createAction;
+			private _actionBLUE = ["Spec_action_changeSideBLUE", "Change to Blufor", "", {
+				[_this select 0, 0] remoteExec ["Spec_fnc_changeSide", 2];
+			}, {!(side (_this select 0) isEqualTo WEST)}] call ace_interact_menu_fnc_createAction;
+			[_unit,1, ["ACE_SelfActions"], _actionCIV] call ace_interact_menu_fnc_addActionToObject;
+			[_unit,1, ["ACE_SelfActions"], _actionBLUE] call ace_interact_menu_fnc_addActionToObject;
+		};
 	};
 };
