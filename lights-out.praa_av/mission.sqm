@@ -6638,7 +6638,7 @@ class Mission
 			interruptable=1;
 			type="SWITCH";
 			age="UNKNOWN";
-			expActiv="[leader_reinforce_1] remoteExec [""Spec_fnc_activateWaypointAfterCycle"", leader_reinforce_1]; [leader_reinforce_2] remoteExec [""Spec_fnc_activateWaypointAfterCycle"", leader_reinforce_2];";
+			expActiv="[leader_reinforce_1] call Spec_fnc_activateWaypointAfterCycle;  [leader_reinforce_2] call Spec_fnc_activateWaypointAfterCycle;";
 			class Effects
 			{
 			};
