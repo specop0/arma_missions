@@ -1,7 +1,9 @@
+#include "W_Teleporter\dialog.hpp"
 class CfgFunctions {
 #include "spec_crates\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
 class spec_scripts {
 	tag = "Spec";
 	class init {

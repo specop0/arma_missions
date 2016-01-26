@@ -3174,7 +3174,7 @@ class Mission
 					special="NONE";
 					id=120;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.2;
 					init="this setVariable [""Spec_var_TFARgroup"",3];";
@@ -3818,7 +3818,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=252;
+		items=253;
 		class Item0
 		{
 			position[]={429.16199,0.64610398,2677.1699};
@@ -6485,10 +6485,21 @@ class Mission
 			vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			skill=0.40000001;
 		};
+		class Item252
+		{
+			position[]={607.03528,28.545265,3641.0925};
+			azimut=345;
+			special="NONE";
+			id=412;
+			side="EMPTY";
+			vehicle="FirePlace_burning_F";
+			skill=0.2;
+			text="teleporter";
+		};
 	};
 	class Markers
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={4740.9678,13.610837,4008.1108};
@@ -6556,6 +6567,12 @@ class Mission
 			text="Swale";
 			type="mil_marker";
 			colorName="ColorWEST";
+		};
+		class Item8
+		{
+			position[]={681.95172,30.183611,3602.1609};
+			name="respawn";
+			type="Empty";
 		};
 	};
 	class Sensors

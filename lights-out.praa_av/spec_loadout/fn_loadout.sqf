@@ -79,7 +79,7 @@ private _medicClass = "B_medic_F";
 
 comment "Team Leader";
 private _tfClass = "B_Soldier_TL_F";
-comment "Grenadier"; // no GL!
+comment "Grenadier"; // no GL - chemlights instead
 private _glClass = "B_Soldier_GL_F";
 
 comment "Autorifleman";
@@ -332,6 +332,12 @@ if(_parameterCorrect) then {
 			case _mgAssiClass : {
 				[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			};
+			case _glClass : {
+				[_unit,"ACE_HandFlare_Yellow",1, 4] call Spec_fnc_addItemToContainer;
+			};
+			case _funkerClass : {
+				[_unit,"ACE_HandFlare_Yellow",2, 4] call Spec_fnc_addItemToContainer;
+			};
 			case _usPio : {
 				[_unit,"DemoCharge_Remote_Mag",2, 3] call Spec_fnc_addItemToContainer;
 				[_unit,"ACE_M26_Clacker",2] call Spec_fnc_addItemToContainer;
@@ -405,7 +411,7 @@ if(_parameterCorrect) then {
 		};
 		
 		[_unit,"ACE_HandFlare_Red",3,2] call Spec_fnc_addItemToContainer;
-		if(_type == _usLead || true) then {
+		if(_type == _usLead) then {
 			[_unit,1,["ACE_SelfActions","Spec_action_changeSideCIV"]] call ace_interact_menu_fnc_removeActionFromObject;
 			[_unit,1,["ACE_SelfActions","Spec_action_changeSideBLUE"]] call ace_interact_menu_fnc_removeActionFromObject;
 			private _actionCIV = ["Spec_action_changeSideCIV", "Change to Civilian", "", {
