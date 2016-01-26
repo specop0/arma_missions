@@ -1731,6 +1731,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					text="leader_reinforce_2";
 				};
 				class Item1
 				{
@@ -1993,6 +1994,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					text="leader_reinforce_1";
 				};
 				class Item1
 				{
@@ -2606,12 +2608,11 @@ class Mission
 				class Item0
 				{
 					position[]={4772.7725,9.743885,480.98328};
-					synchronizations[]={9};
+					expCond="triggerActivated trigger_jaffar";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=6;
 				};
 				class Item1
 				{
@@ -2757,12 +2758,11 @@ class Mission
 				class Item0
 				{
 					position[]={4749.0063,10.264068,485.89874};
-					synchronizations[]={9};
+					expCond="triggerActivated trigger_jaffar";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=7;
 				};
 				class Item1
 				{
@@ -2927,12 +2927,11 @@ class Mission
 				class Item0
 				{
 					position[]={4738.2754,10.469447,488.57025};
-					synchronizations[]={9};
+					expCond="triggerActivated trigger_jaffar";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=8;
 				};
 				class Item1
 				{
@@ -3690,7 +3689,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12]; [this, 1] call Spec_fnc_changeSide;";
 					description="Snake - Leader";
 					syncId=0;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 				class Item1
 				{
@@ -3705,7 +3704,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Radio Operator";
 					syncId=1;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 				class Item2
 				{
@@ -3720,7 +3719,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Medic";
 					syncId=2;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 				class Item3
 				{
@@ -3735,7 +3734,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Rifleman AT";
 					syncId=3;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 				class Item4
 				{
@@ -3750,7 +3749,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Explosive Specalist";
 					syncId=4;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 				class Item5
 				{
@@ -3765,7 +3764,7 @@ class Mission
 					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Explosive Specalist";
 					syncId=5;
-					synchronizations[]={10};
+					synchronizations[]={6};
 				};
 			};
 		};
@@ -6597,7 +6596,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={4319.2974,10.987304,2342.1365};
@@ -6606,11 +6605,10 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
+			name="trigger_jaffar";
 			class Effects
 			{
 			};
-			synchronizations[]={8,7,6};
-			syncId=9;
 		};
 		class Item1
 		{
@@ -6627,7 +6625,23 @@ class Mission
 			{
 			};
 			synchronizations[]={0,1,5,4,3,2};
-			syncId=10;
+			syncId=6;
+		};
+		class Item2
+		{
+			position[]={2434.9912,0.00073540024,2593.0706};
+			a=200;
+			b=500;
+			angle=40;
+			activationBy="WEST";
+			activationType="EAST D";
+			interruptable=1;
+			type="SWITCH";
+			age="UNKNOWN";
+			expActiv="[leader_reinforce_1] remoteExec [""Spec_fnc_activateWaypointAfterCycle"", leader_reinforce_1]; [leader_reinforce_2] remoteExec [""Spec_fnc_activateWaypointAfterCycle"", leader_reinforce_2];";
+			class Effects
+			{
+			};
 		};
 	};
 };

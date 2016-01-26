@@ -10,6 +10,7 @@ class spec_scripts {
 	class init {
 		file="scripts";
 		class changeSide {};
+		class activateWaypointAfterCycle {};
 	};
 };
 };
