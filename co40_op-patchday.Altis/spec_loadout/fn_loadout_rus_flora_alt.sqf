@@ -78,6 +78,7 @@ private _grenadeLauncherWeapon = "rhs_weap_ak74m_gp25";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
+private _grenadeLauncher40mm = "rhs_VOG25";
 
 comment "Machine Gunner";
 private _mgWeapon = "rhs_weap_pkp";
@@ -183,6 +184,10 @@ if(_parameterCorrect) then {
 		} else {
 			comment "Grenade launcher";
 			if(_type in [Spec_var_tfClass, Spec_var_glClass]) then {
+				if(_type == Spec_var_glClass) then {
+					_unit removeMagazines "1Rnd_HE_Grenade_shell";
+					[_unit,_grenadeLauncher40mm,2, 12] call Spec_fnc_addItemToContainer;
+				};
 				[_unit,_grenadeLauncherAmmo,2, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _grenadeLauncherWeapon;

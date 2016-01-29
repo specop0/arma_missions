@@ -110,7 +110,7 @@ if(_parameterCorrect) then {
 			[_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_packingBandage",2, 5] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;;
+			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
         };
     };
 
