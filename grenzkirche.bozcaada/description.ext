@@ -1,0 +1,30 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "joko_tent\CfgFunctions.hpp"
+
+#include "spec_crates\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+};
+
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "22";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Verlegen Sie zur vorgeschobenen Basis Saratow und schützen Sie die Grenze.";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Grenzkirche";
+
+overviewText = "";
+overviewPicture = "";
