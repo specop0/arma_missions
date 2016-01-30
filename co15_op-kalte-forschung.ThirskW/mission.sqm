@@ -8,7 +8,6 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"A3_Modules_F",
-		"lop_faction_napa",
 		"A3_Structures_F_Walls",
 		"A3_Supplies_F_Heli_Bladders",
 		"A3_Structures_F_Mil_BagFence",
@@ -36,12 +35,13 @@ class Mission
 		"A3_Modules_F_Intel",
 		"ace_weather",
 		"3DEN",
-		"ace_medical"
+		"ace_medical",
+		"rhs_cti_insurgents"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Modules_F",
-		"lop_faction_napa",
+		"rhs_cti_insurgents",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"A3_Modules_F_Intel",
@@ -148,7 +148,7 @@ class Mission
 					position[]={1047.8104,4.3946257,4855.6899};
 					id=2;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_SL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -157,7 +157,7 @@ class Mission
 					position[]={1055.5632,4.8587217,4848.2944};
 					id=3;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					skill=0.60000002;
 				};
 			};
@@ -303,7 +303,7 @@ class Mission
 					position[]={3413.3054,18.227934,4789.0122};
 					id=4;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 150382) buildingPos 1);";
@@ -322,7 +322,7 @@ class Mission
 					azimut=130;
 					id=5;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 143469) buildingPos 14);";
@@ -341,7 +341,7 @@ class Mission
 					azimut=20;
 					id=6;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_SL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 143469) buildingPos 13);";
@@ -360,7 +360,7 @@ class Mission
 					azimut=200;
 					id=7;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 143470) buildingPos 1);";
@@ -379,7 +379,7 @@ class Mission
 					azimut=270;
 					id=8;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 143470) buildingPos 2);";
@@ -398,7 +398,7 @@ class Mission
 					azimut=40;
 					id=9;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 12432) buildingPos 2);";
@@ -417,7 +417,7 @@ class Mission
 					azimut=270;
 					id=10;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 12432) buildingPos 4);";
@@ -436,7 +436,7 @@ class Mission
 					azimut=5;
 					id=11;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="this setPos ((position this nearestObject 12308) buildingPos 2);";
@@ -455,7 +455,7 @@ class Mission
 					azimut=40;
 					id=12;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -465,7 +465,7 @@ class Mission
 					azimut=40;
 					id=13;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -474,7 +474,7 @@ class Mission
 					azimut=40;
 					id=14;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -587,7 +587,7 @@ class Mission
 					azimut=225;
 					id=15;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -597,7 +597,7 @@ class Mission
 					azimut=225;
 					id=16;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -606,7 +606,7 @@ class Mission
 					azimut=225;
 					id=17;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -719,7 +719,7 @@ class Mission
 					azimut=40;
 					id=18;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -729,7 +729,7 @@ class Mission
 					azimut=40;
 					id=19;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -738,7 +738,7 @@ class Mission
 					azimut=40;
 					id=20;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -819,7 +819,7 @@ class Mission
 					azimut=260;
 					id=21;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -829,7 +829,7 @@ class Mission
 					azimut=260;
 					id=22;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -838,7 +838,7 @@ class Mission
 					azimut=260;
 					id=23;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -914,7 +914,7 @@ class Mission
 					azimut=135;
 					id=24;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -924,7 +924,7 @@ class Mission
 					azimut=145;
 					id=25;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -933,7 +933,7 @@ class Mission
 					azimut=135;
 					id=26;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -1001,7 +1001,7 @@ class Mission
 					azimut=185;
 					id=27;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1019,7 +1019,7 @@ class Mission
 					azimut=185;
 					id=28;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1036,7 +1036,7 @@ class Mission
 					position[]={1396.1742,36.320679,4149.645};
 					id=29;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1139,7 +1139,7 @@ class Mission
 					azimut=40;
 					id=30;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1149,7 +1149,7 @@ class Mission
 					azimut=40;
 					id=31;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -1158,7 +1158,7 @@ class Mission
 					azimut=40;
 					id=32;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -1231,7 +1231,7 @@ class Mission
 					azimut=292;
 					id=33;
 					side="GUER";
-					vehicle="LOP_NAPA_Landrover_M2";
+					vehicle="rhs_uaz_dshkm_chdkz";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1328,7 +1328,7 @@ class Mission
 					azimut=25;
 					id=34;
 					side="GUER";
-					vehicle="LOP_NAPA_Landrover_M2";
+					vehicle="rhs_uaz_dshkm_chdkz";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1400,7 +1400,7 @@ class Mission
 					azimut=292;
 					id=35;
 					side="GUER";
-					vehicle="LOP_NAPA_Truck";
+					vehicle="rhs_ural_work_open_chdkz";
 					leader=1;
 					skill=0.60000002;
 					text="transporter1";
@@ -1481,7 +1481,7 @@ class Mission
 					position[]={1545.5707,46.396156,3112.4888};
 					id=36;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -1491,7 +1491,7 @@ class Mission
 					position[]={1548.5707,46.396156,3107.4888};
 					id=37;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_SL";
+					vehicle="rhs_g_Soldier_TL_F";
 					rank="CORPORAL";
 					skill=0.44999999;
 				};
@@ -1500,7 +1500,7 @@ class Mission
 					position[]={1550.5707,46.396156,3107.4888};
 					id=38;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Corpsman";
+					vehicle="rhs_g_medic_F";
 					rank="CORPORAL";
 					skill=0.44999999;
 				};
@@ -1509,7 +1509,7 @@ class Mission
 					position[]={1552.5707,46.396156,3107.4888};
 					id=39;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Marksman";
+					vehicle="rhs_g_Soldier_M_F";
 					rank="CORPORAL";
 					skill=0.44999999;
 				};
@@ -1518,7 +1518,7 @@ class Mission
 					position[]={1554.5707,46.396156,3107.4888};
 					id=40;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					skill=0.40000001;
 				};
 				class Item5
@@ -1526,7 +1526,7 @@ class Mission
 					position[]={1556.5707,46.396156,3107.4888};
 					id=41;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					skill=0.40000001;
 				};
 				class Item6
@@ -1534,7 +1534,7 @@ class Mission
 					position[]={1558.5707,46.396156,3107.4888};
 					id=42;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.40000001;
 				};
 				class Item7
@@ -1542,7 +1542,7 @@ class Mission
 					position[]={1560.5707,46.396156,3107.4888};
 					id=43;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					skill=0.40000001;
 				};
 				class Item8
@@ -1550,7 +1550,7 @@ class Mission
 					position[]={1562.5707,46.396156,3107.4888};
 					id=44;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					skill=0.40000001;
 				};
 			};
@@ -1640,7 +1640,7 @@ class Mission
 					azimut=70;
 					id=45;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_TL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1650,7 +1650,7 @@ class Mission
 					azimut=70;
 					id=46;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_AT";
+					vehicle="rhs_g_Soldier_LAT_F";
 					skill=0.60000002;
 				};
 				class Item2
@@ -1659,7 +1659,7 @@ class Mission
 					azimut=70;
 					id=47;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_GL";
+					vehicle="rhs_g_Soldier_GL_F";
 					skill=0.60000002;
 				};
 			};
@@ -1740,7 +1740,7 @@ class Mission
 					azimut=55;
 					id=48;
 					side="GUER";
-					vehicle="LOP_NAPA_Landrover_M2";
+					vehicle="rhs_uaz_dshkm_chdkz";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -2044,7 +2044,7 @@ class Mission
 					special="NONE";
 					id=64;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_MG";
+					vehicle="rhs_g_Soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -2063,7 +2063,7 @@ class Mission
 					special="NONE";
 					id=65;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_SL";
+					vehicle="rhs_g_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -2082,7 +2082,7 @@ class Mission
 					special="NONE";
 					id=66;
 					side="GUER";
-					vehicle="LOP_NAPA_Infantry_Rifleman";
+					vehicle="rhs_g_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 				};
