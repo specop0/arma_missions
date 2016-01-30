@@ -31,7 +31,7 @@ onLoadMission = "Soldat, nicht die Ersatzbatterien fuer die Taschenlampe vergess
 OnLoadMissionTime = TRUE;
 author="Spec";
 OnLoadName = "OP Lights Out ";
-//loadScreen="loading.jpg";
+loadScreen="loading.jpg";
 
 overviewText = "";
 overviewPicture = "";
