@@ -14,7 +14,7 @@
 
 if(!isServer) then {
 	// call this function on server
-	_this remoteExecCall ["Spec_fnc_assignToAllCurators", 2, false];
+	_this remoteExec ["Spec_fnc_assignToAllCurators", 2, false];
 } else {
 	private _parameterCorrect = params [ ["_player",objNull,[objNull]] ];
 	if(_parameterCorrect) then {
@@ -23,7 +23,7 @@ if(!isServer) then {
 			_x addCuratorEditableObjects [[_player],false];
 		} forEach allCurators;
 
-		/*private _scriptHandle = _this spawn {
+		private _scriptHandle = _this spawn {
 			// wait for full initialization (1 works as well) otherwise getAssignedCuratorLogic always null
 			sleep 20;
 			private _parameterCorrect = params [ ["_player",objNull,[objNull]] ];
@@ -37,7 +37,7 @@ if(!isServer) then {
 						}, nil, 1.5, false, true, "", "true"] ] remoteExec ["addAction", _player] ;
 				};
 			};
-		};*/
+		};
 	} else {
 		"Wrong Parameter: Expected (player) object" call BIS_fnc_error;
 	};
