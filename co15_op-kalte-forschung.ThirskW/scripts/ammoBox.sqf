@@ -68,19 +68,19 @@ if(_parameterCorrect) then {
 		private _enemyPatSoldierB = _patGroup createUnit [_enemyPatSoldierBtype, getMarkerPos _enemySpawnMarker, [], 25, "FORM"];
 		[_enemyPatSoldierB] join _patGroup;
 
-		private _wp0 = _patGroup addWaypoint [_pos,0];
+		private _wp0 = _patGroup addWaypoint [_pos,5];
 		_wp0 setWaypointType "MOVE";
 		_wp0 setWaypointSpeed "FULL";
 
 		private _tempAngle = 41 + random 10;
-		private _wp1 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],1];
+		private _wp1 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],5];
 		_wp1 setWaypointSpeed "NORMAL";
 		_tempAngle = 131 + random 10;
-		private _wp2 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],2];
+		private _wp2 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],5];
 		_tempAngle = 221 + random 10;
-		private _wp3 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],3];
+		private _wp3 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],5];
 		_tempAngle = 311 + random 10;
-		private _wp4 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],4];
+		private _wp4 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],5];
 		_tempAngle = 45;
 		private _wp5 = _patGroup addWaypoint [_caller modelToWorld [sin(_tempAngle)*_enemyPatCycleRadius,cos(_tempAngle)*_enemyPatCycleRadius,0],5];
 		_wp5 setWaypointType "CYCLE";
@@ -108,6 +108,11 @@ if(_parameterCorrect) then {
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_atropine",5];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_surgicalKit",2];
 		_spawnedAmmoBox addItemCargoGlobal ["ACE_personalAidKit",2];
+		
+		_spawnedAmmoBox addItemCargoGlobal ["SmokeShell", 24];
+		_spawnedAmmoBox addItemCargoGlobal ["SmokeShellRed", 24];
+		_spawnedAmmoBox addItemCargoGlobal ["SmokeShellGreen", 24];
+		_spawnedAmmoBox addItemCargoGlobal ["SmokeShellPurple", 12];
 
 		_spawnedAmmoBox addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
 		_spawnedAmmoBox addWeaponCargoGlobal ["BWA3_Pzf3",1];
