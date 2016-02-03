@@ -66,7 +66,7 @@ if(_parameterCorrect) then {
 				clearWeaponCargoGlobal _backpack;
 			} else {
 				removeBackpackGlobal _unit;
-				_unit addBackpack _containerClassname;
+				_unit addBackpackGlobal _containerClassname;
 			};
 		};
 		default {

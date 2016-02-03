@@ -127,6 +127,7 @@ private _usHeadgear = "BWA3_OpsCore_Schwarz_Camera";
 private _usHeadgearPilot = "rhsusf_hgu56p_mask";
 
 private _usStandardWeapon = "rhs_weap_m4_grip";
+private _usStandardWeaponGL = "rhs_weap_m4_m320";
 private _usStandardAmmo = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 private _usStandardAccessory = ["rhsusf_acc_nt4_black","rhsusf_acc_anpeq15A","rhsusf_acc_eotech_552"];
 private _usStandardAccessoryExtra = [];
@@ -158,13 +159,13 @@ if(_parameterCorrect) then {
 		_unit forceAddUniform _usUniform;
 		_unit addVest _usVest;
 		if(_type in [_usPilot, _usFunk, _usSpotterLead]) then {
-			_unit addBackpack _usLongRange;
+			_unit addBackpackGlobal _usLongRange;
 		} else {
 			if(_type == _usSpotterUAV) then {
-				_unit addBackpack "B_UAV_01_backpack_F";
+				_unit addBackpackGlobal "B_UAV_01_backpack_F";
 				_unit linkItem "B_UavTerminal";
 			} else {
-				_unit addBackpack _usBackpack;
+				_unit addBackpackGlobal _usBackpack;
 			};
 		};
 		if(_type == _usPilot) then {
@@ -178,6 +179,12 @@ if(_parameterCorrect) then {
 			_unit addMagazine "Laserbatteries";
 		} else {
 			_unit addWeapon "Rangefinder";
+		};
+		comment "lead equipment for us";
+		if(_type in [_usLead, _usPilot, _usSpotterLead]) then {
+			[_unit,"ACE_microDAGR",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_CableTie",2, 3] call Spec_fnc_addItemToContainer;
 		};
 	} else {
 		_unit forceAddUniform _uniform;
@@ -229,8 +236,8 @@ if(_parameterCorrect) then {
 	
 	comment "lead equipment (tablet, etc)";
 	if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
-		_unit addItemToUniform "ACE_microDAGR";
-		if(_type in [_medevacClass, _funkerClass]) then {
+		[_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
+		if(_type in [_medevacClass, _funkerClass, _usFunk, _usSpotterUAV]) then {
 			[_unit,"ACE_GD300_b",1] call Spec_fnc_addItemToContainer;
 		} else {
 			[_unit,"ACE_DK10_b",1] call Spec_fnc_addItemToContainer;
@@ -368,7 +375,11 @@ if(_parameterCorrect) then {
 	} else {
 		if(_nvgEquipment) then {
 			[_unit,_usStandardAmmo,1, 6] call Spec_fnc_addItemToContainer;
-			_unit addWeapon _usStandardWeapon;
+			if(_type == _usSpotterLead) then {
+				_unit addWeapon _usStandardWeaponGL;
+			} else {
+				_unit addWeapon _usStandardWeapon;
+			};
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _usStandardAccessory;

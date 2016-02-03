@@ -13,6 +13,8 @@ if(isServer && _parameterCorrect) then {
 			_side = INDEPENDENT;
 		};
 	};
-	private _group = createGroup _side;
-	(units (group _leader)) joinSilent _group;
+	if !(side _leader isEqualTo _side) then {
+		private _group = createGroup _side;
+		(units (group _leader)) joinSilent _group;
+	};
 };

@@ -79,7 +79,7 @@ if(_parameterCorrect) then {
 		_unit forceAddUniform _uniform;
 		_unit addVest _vest;
 		if(_type == _mgClass) then {
-			_unit addBackpack _backpack;
+			_unit addBackpackGlobal _backpack;
 		};
 		_unit addHeadgear _headgear;
 		

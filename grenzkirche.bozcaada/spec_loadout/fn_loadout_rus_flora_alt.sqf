@@ -135,15 +135,15 @@ if(_parameterCorrect) then {
 	};
 	_unit addVest _vest;
 	if(_type == Spec_var_oplClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
-		_unit addBackpack _backpackLR;
+		_unit addBackpackGlobal _backpackLR;
 		if(backpack _unit == "") then {
-			_unit addBackpack _backpack;
+			_unit addBackpackGlobal _backpack;
 		};
 	} else {
 		if(_type == Spec_var_medevacClass || _type == Spec_var_pioClass) then {
-			_unit addBackpack _backpackBig;
+			_unit addBackpackGlobal _backpackBig;
 		} else {
-			_unit addBackpack _backpack;
+			_unit addBackpackGlobal _backpack;
 		};
 	};
 	if(_type == Spec_var_pilotClass) then {

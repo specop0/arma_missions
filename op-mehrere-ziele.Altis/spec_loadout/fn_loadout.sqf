@@ -133,13 +133,14 @@ if(_parameterCorrect) then {
 	_unit forceAddUniform _uniform;
 	_unit addVest _vest;
 	if(_type in [_oplClass, _funkerClass, _logisticClass, _pilotClass]) then {
-		_unit addBackpack _backpackLR;
+		_unit addBackpackGlobal _backpackLR;
 		clearItemCargoGlobal (unitBackpack _unit);
+		clearMagazineCargoGlobal (unitBackpack _unit);
 	} else {
 		if(_type in [_medevacClass, _medicClass]) then {
-			_unit addBackpack _backpackBig;
+			_unit addBackpackGlobal _backpackBig;
 		} else {
-			_unit addBackpack _backpack;
+			_unit addBackpackGlobal _backpack;
 		};
 	};
 	if(_type == _pilotClass) then {
@@ -173,7 +174,7 @@ if(_parameterCorrect) then {
 	
 	comment "lead equipment (tablet, etc)";
 	if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
-		_unit addItemToUniform "ACE_microDAGR";
+		[_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
 		if(_type in [_medevacClass, _funkerClass]) then {
 			[_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
 		} else {
