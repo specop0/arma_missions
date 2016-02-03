@@ -293,19 +293,18 @@ if(_parameterCorrect) then {
 		if(_type == _lmgClass) then {
 			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
 			[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
-			
 			_unit addWeapon _lmgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _lmgAccessory;
 			{
 				[_unit,_x,3] call Spec_fnc_addItemToContainer;
-			} forEach _lmgAccessoryExtra;				
+			} forEach _lmgAccessoryExtra;	
+			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
 		} else {
 			comment "grenade launcher";
 			if(_type in [_tfClass, _glClass, _funkerClass]) then {
 				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
-				
 				_unit addWeapon _grenadeLauncherWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
