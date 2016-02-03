@@ -23,11 +23,11 @@ if(_parameterCorrect) then {
         comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
         [_unit, "MineDetector", 2] call Spec_fnc_addItemToContainer;
     };
-
-    if(_type == Spec_var_oplClass || _type == Spec_var_tfClass) then {
+		
+    if(_type in [Spec_var_oplClass, Spec_var_tfClass]) then {
         _unit addWeapon "ACE_Vector";
     } else {
-        if(_type == Spec_var_atClass || _type == Spec_var_mgAssiClass || _type == Spec_var_glClass) then{
+        if(_type in [Spec_var_atClass, Spec_var_mgAssiClass, Spec_var_glClass]) then{
             _unit addWeapon "ACE_Yardage450";
         } else {
 			if(_type == Spec_var_funkerClass) then {
@@ -45,18 +45,18 @@ if(_parameterCorrect) then {
     _unit linkItem "ItemRadio"; //tf_anprc152
 
     comment "lead equipment (tablet, etc)";
-    if(_type == Spec_var_oplClass || _type == Spec_var_tfClass || _type == Spec_var_funkerClass || _type == Spec_var_logisticClass || _type == Spec_var_medevacClass || _type == Spec_var_pilotClass) then {
-		[_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
-        if(_type == Spec_var_medevacClass || _type == Spec_var_funkerClass) then {
+    if(_type in [Spec_var_oplClass, Spec_var_tfClass, Spec_var_funkerClass, Spec_var_logisticClass, Spec_var_medevacClass, Spec_var_pilotClass]) then {
+        [_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
+        if(_type in [Spec_var_medevacClass, Spec_var_funkerClass]) then {
             [_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
         } else {
             [_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
         };
     };
-    if(_type == Spec_var_oplClass || _type == Spec_var_tfClass || _type == Spec_var_logisticClass || _type == Spec_var_pilotClass) then {
+    if(_type in [Spec_var_oplClass, Spec_var_tfClass, Spec_var_logisticClass, Spec_var_pilotClass]) then {
         //[_unit,"ACE_HelmetCam",0] call Spec_fnc_addItemToContainer;
     };
-    if(_type == Spec_var_oplClass || _type == Spec_var_tfClass || _type == Spec_var_funkerClass) then {
+    if(_type in [Spec_var_oplClass, Spec_var_tfClass, Spec_var_funkerClass]) then {
         [_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
     };
 
@@ -123,6 +123,9 @@ if(_parameterCorrect) then {
         case Spec_var_glClass : {
             [_unit,"rhs_VOG25",2, 12] call Spec_fnc_addItemToContainer;
         };
+		case Spec_var_funkerClass : {
+			[_unit,"1Rnd_SmokeRed_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
+		};
         case Spec_var_pioClass : {
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
