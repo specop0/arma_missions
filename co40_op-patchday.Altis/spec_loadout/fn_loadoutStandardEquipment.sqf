@@ -123,6 +123,9 @@ if(_parameterCorrect) then {
         case Spec_var_glClass : {
             [_unit,"1Rnd_HE_Grenade_shell",2, 12] call Spec_fnc_addItemToContainer;
         };
+		case Spec_var_funkerClass : {
+			[_unit,"1Rnd_SmokeRed_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
+		};
         case Spec_var_pioClass : {
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
