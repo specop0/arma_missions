@@ -139,6 +139,9 @@ if(_parameterCorrect) then {
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", 2];
         };
+		case Spec_var_pilotClass : {
+			_unit setVariable ["ACE_IsEngineer", 2];
+		};
         case Spec_var_mgClass : {
             [_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
         };

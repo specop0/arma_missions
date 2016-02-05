@@ -22,7 +22,7 @@ comment "Grenadier";
 Spec_var_glClass = "O_Soldier_GL_F";
 
 comment "Autorifleman";
-Spec_var_mgClass = "O_soldier_AR_F";
+Spec_var_mgClass = "O_Soldier_AR_F";
 comment "Ammo Bearer";
 Spec_var_mgAssiClass = "O_Soldier_A_F";
 
@@ -30,7 +30,7 @@ comment "Rifleman (Light)";
 Spec_var_lmgClass = "O_Soldier_lite_F";
 
 comment "Rifleman (AT)";
-Spec_var_atClass = "O_soldier_LAT_F";
+Spec_var_atClass = "O_Soldier_LAT_F";
 comment "Engineer";
 Spec_var_pioClass = "O_engineer_F";
 
@@ -38,7 +38,7 @@ Spec_var_pioClass = "O_engineer_F";
 comment "Helicopter Crew";
 Spec_var_medevacClass = "O_helicrew_F";
 comment "Helicopter Pilot";
-Spec_var_pilotClass = "O_Helipilot_F";
+Spec_var_pilotClass = "O_helipilot_F";
 
 comment "Repair Specialist";
 Spec_var_logisticClass = "O_soldier_repair_F";

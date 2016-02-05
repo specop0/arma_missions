@@ -30,6 +30,6 @@ if(isServer) then {
 };
 if(hasInterface) then {
 	[player] call Spec_fnc_loadout_rus_flora_alt;
-	player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout;}];
+	player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout_rus_flora_alt;}];
 };
 true
