@@ -3699,7 +3699,7 @@ class Mission
 					vehicle="C_man_polo_3_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 10);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 10); };";
 				};
 			};
 		};
@@ -3718,7 +3718,7 @@ class Mission
 					vehicle="C_man_polo_4_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 11);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 11); };";
 				};
 			};
 		};
@@ -3737,7 +3737,7 @@ class Mission
 					vehicle="C_man_shorts_2_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 13);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 13); };";
 				};
 			};
 		};
@@ -3756,7 +3756,7 @@ class Mission
 					vehicle="C_man_polo_5_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 14);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 14); };";
 				};
 			};
 		};
@@ -3775,7 +3775,7 @@ class Mission
 					vehicle="C_man_polo_5_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 7);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 7); };";
 				};
 			};
 		};
@@ -3794,7 +3794,7 @@ class Mission
 					vehicle="C_man_polo_6_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 8);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 8); };";
 				};
 			};
 		};
@@ -3813,7 +3813,7 @@ class Mission
 					vehicle="C_man_shorts_2_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 9);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 9); };";
 				};
 			};
 		};
@@ -3832,7 +3832,7 @@ class Mission
 					vehicle="C_man_polo_2_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 15);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 15); };";
 				};
 			};
 		};
@@ -3851,7 +3851,7 @@ class Mission
 					vehicle="C_man_polo_1_F_asia";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed;; this setPos ((position this nearestObject 790206) buildingPos 14);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed;; this setPos ((position this nearestObject 790206) buildingPos 14); };";
 				};
 			};
 		};
@@ -3870,7 +3870,7 @@ class Mission
 					vehicle="C_Nikos_aged";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 12);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 12); };";
 				};
 			};
 		};
@@ -3889,7 +3889,7 @@ class Mission
 					vehicle="C_man_polo_1_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 11);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 790206) buildingPos 11); };";
 				};
 			};
 		};
@@ -3908,7 +3908,7 @@ class Mission
 					vehicle="C_man_polo_2_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 17);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 17); };";
 				};
 			};
 		};
@@ -3927,7 +3927,7 @@ class Mission
 					vehicle="C_man_polo_3_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 18);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 18); };";
 				};
 			};
 		};
@@ -3946,7 +3946,7 @@ class Mission
 					vehicle="C_man_polo_4_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="[this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 20);";
+					init="if(isServer) then { [this, true] call ACE_captives_fnc_setHandcuffed; this setPos ((position this nearestObject 791038) buildingPos 20); };";
 				};
 			};
 		};
@@ -5052,7 +5052,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="offroad";
-			init="this setHit [""motor"", 0.75];  this setHit [""wheel_1_1_steering"", 1];  this setHit [""karoserie"", 0.75];  this setFuel 0.7;";
+			init="if(local this) then { this setHit [""motor"", 0.75];  this setHit [""wheel_1_1_steering"", 1];  this setHit [""karoserie"", 0.75];  this setFuel 0.7; };";
 		};
 		class Item1
 		{
@@ -5064,7 +5064,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="truck";
-			init="this setHit [""wheel_1_1_steering"", 1];  this setHit [""karoserie"", 0.5];  this setFuel 0.4;";
+			init="if(local this) then { this setHit [""wheel_1_1_steering"", 1];  this setHit [""karoserie"", 0.5];  this setFuel 0.4; };";
 		};
 		class Item2
 		{
