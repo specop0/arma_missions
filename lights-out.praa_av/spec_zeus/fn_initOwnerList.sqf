@@ -67,9 +67,27 @@ if(isServer) then {
 						};
 					};
 				} forEach allGroups - _playerGroups;
-
 			};
-
+			// force flashlight on
+			private _mgClass = "O_Soldier_AR_F";
+			{
+				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
+					if(vehicle _x == _x) then {
+						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
+					};
+					[_x,["GetOut", {_this enableGunLights "forceOn";} ]] remoteExec ["addEventHandler",_x];
+					sleep 0.5;
+				};
+			} forEach allUnits - allPlayers;
+			// try again if failed
+			{
+				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
+					if(!(_x isFlashlightOn (currentWeapon _x))) then {
+						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
+						sleep 1;
+					};
+				};
+			} forEach allUnits - allPlayers;
 		};
 	};
 };

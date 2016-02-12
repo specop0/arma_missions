@@ -182,9 +182,5 @@ if(_parameterCorrect) then {
 				} forEach _standardAccessoryExtra;
 			};
 		};
-		if(_type != _mgClass) then {
-			_unit enableGunLights "forceOn";
-			_unit addEventHandler ["GetOut", {_this enableGunLights "forceOn";} ];
-		};
 	};
 };

@@ -432,5 +432,11 @@ if(_parameterCorrect) then {
 		}, {!(side (_this select 0) isEqualTo WEST)}] call ace_interact_menu_fnc_createAction;
 		[_unit,1, ["ACE_SelfActions"], _actionCIV] call ace_interact_menu_fnc_addActionToObject;
 		[_unit,1, ["ACE_SelfActions"], _actionBLUE] call ace_interact_menu_fnc_addActionToObject;
+		// tablet fix
+		[_unit,1,["ACE_SelfActions","Spec_action_fixTablet"]] call ace_interact_menu_fnc_removeActionFromObject;
+		private _actionFixTablet = ["Spec_action_fixTablet", "Fix Tablet", "", {
+			_this select 0 setVariable ["BG_BFT_icon", "b_inf", true]; 
+		}, {true}] call ace_interact_menu_fnc_createAction;
+		[_unit,1, ["ACE_SelfActions"], _actionFixTablet] call ace_interact_menu_fnc_addActionToObject;
 	};
 };
