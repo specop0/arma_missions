@@ -3686,7 +3686,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
-					init="this setVariable [""Spec_var_TFARgroup"",12]; [this, 1] call Spec_fnc_changeSide;";
+					init="this setVariable [""Spec_var_TFARgroup"",12];";
 					description="Snake - Leader";
 					syncId=0;
 					synchronizations[]={6};
