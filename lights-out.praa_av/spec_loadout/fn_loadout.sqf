@@ -326,11 +326,12 @@ if(_parameterCorrect) then {
 			[_unit,"ACE_M26_Clacker",3] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ACE_IsEngineer", 2];
+			_unit setVariable ["ACE_IsEngineer", true];
+			_unit setVariable ["ACE_isEOD", true];
 		};
 		case _logisticClass : {
 			[_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ACE_IsEngineer", 2];
+			_unit setVariable ["ACE_IsEngineer", true];
 		};
 		case _mgClass : {
 			[_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
@@ -348,7 +349,7 @@ if(_parameterCorrect) then {
 			[_unit,"DemoCharge_Remote_Mag",2, 3] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_M26_Clacker",2] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_DefusalKit",2] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ACE_IsEngineer", 2];
+			_unit setVariable ["ACE_isEOD", true];
 		};
 		case _usSpotterUAV : {
 			[_unit, "ACE_UAVBattery", 1] call Spec_fnc_addItemToContainer;

@@ -213,7 +213,7 @@ if(_parameterCorrect) then {
 			[_unit,"DemoCharge_Remote_Mag",2, 5] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
 			[_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ACE_IsEngineer", 2];
+			_unit setVariable ["ACE_isEOD", true];
 		};
 		case _mgAssiClass : {
 			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
