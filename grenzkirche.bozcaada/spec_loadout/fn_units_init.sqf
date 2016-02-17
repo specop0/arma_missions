@@ -14,9 +14,6 @@
 	true
 */
 
-comment "Initialize global class variables";
-[] call Spec_fnc_initClassVariables;
-
 if(isServer) then {
 	{
 		if(side _x == east) then {

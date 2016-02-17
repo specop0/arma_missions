@@ -1,19 +1,21 @@
+#include "classVariables.hpp"
+
 private _parameterCorrect = params [ ["_object",objNull,[objNull]] ];
 if(_parameterCorrect && hasInterface) then {
 	private _loadoutClassList = [];
-	_loadoutClassList pushBack ["AT-Schuetze","O_soldier_LAT_F"];
-	_loadoutClassList pushBack ["Feldarzt","O_helicrew_F"];
-	_loadoutClassList pushBack ["Funker","O_Soldier_SL_F"];
-	_loadoutClassList pushBack ["Gefechtssanitaeter","O_medic_F"];
-	_loadoutClassList pushBack ["Grenadier","O_Soldier_GL_F"];
-	_loadoutClassList pushBack ["LMG-Schuetze","O_Soldier_lite_F"];
-	_loadoutClassList pushBack ["Logistik","O_soldier_repair_F"];
-	_loadoutClassList pushBack ["MG-Assistent","O_Soldier_A_F"];
-	_loadoutClassList pushBack ["MG-Schuetze","O_soldier_AR_F"];
-	_loadoutClassList pushBack ["OPL","O_officer_F"];
-	_loadoutClassList pushBack ["Pilot","O_Helipilot_F"];
-	_loadoutClassList pushBack ["Pionier","O_engineer_F"];
-	_loadoutClassList pushBack ["Truppfuehrer","O_Soldier_TL_F"];
+	_loadoutClassList pushBack ["AT-Schuetze",CLASS_AT];
+	_loadoutClassList pushBack ["Feldarzt",CLASS_MEDEVAC];
+	_loadoutClassList pushBack ["Funker",CLASS_FUNKER];
+	_loadoutClassList pushBack ["Gefechtssanitaeter",CLASS_MEDIC];
+	_loadoutClassList pushBack ["Grenadier",CLASS_GL];
+	_loadoutClassList pushBack ["LMG-Schuetze",CLASS_LMG];
+	_loadoutClassList pushBack ["Logistik",CLASS_LOGISTIC];
+	_loadoutClassList pushBack ["MG-Assistent",CLASS_MG_ASSI];
+	_loadoutClassList pushBack ["MG-Schuetze",CLASS_MG];
+	_loadoutClassList pushBack ["OPL",CLASS_OPL];
+	_loadoutClassList pushBack ["Pilot",CLASS_PILOT];
+	_loadoutClassList pushBack ["Pionier",CLASS_PIO];
+	_loadoutClassList pushBack ["Truppfuehrer",CLASS_TF];
 
 	//add classes
 	private _i = -4;
