@@ -5816,6 +5816,7 @@ class Mission
 			timeoutMid=300;
 			timeoutMax=360;
 			age="UNKNOWN";
+			name="triggerIndepAttackEdessa";
 			expCond="triggerActivated blufor_repairing";
 			expActiv="[thisList] call compile preprocessFileLineNumbers ""abortPat.sqf""";
 			class Effects
