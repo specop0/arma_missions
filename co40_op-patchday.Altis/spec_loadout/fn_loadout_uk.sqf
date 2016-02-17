@@ -20,6 +20,7 @@
 	Returns:
 	true
 */
+#include "classVariables.hpp"
 
 waitUntil {!isNull player || isServer};
 private _unit = objNull;
@@ -106,28 +107,28 @@ if(_parameterCorrect) then {
 	[_unit, _uniform] call Spec_fnc_addContainer;
 	
 	switch (_type) do {
-		case Spec_var_glClass : {
+		case CLASS_GL : {
 			_vest = ["UK3CB_BAF_V_Osprey_Grenadier_A","UK3CB_BAF_V_Osprey_Grenadier_B"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_tfClass : {
+		case CLASS_TF : {
 			_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_oplClass : {
+		case CLASS_OPL : {
 			_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_funkerClass : {
+		case CLASS_FUNKER : {
 			_vest = ["UK3CB_BAF_V_Osprey_SL_A","UK3CB_BAF_V_Osprey_SL_B","UK3CB_BAF_V_Osprey_SL_C","UK3CB_BAF_V_Osprey_SL_D"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_medicClass : {
+		case CLASS_MEDIC : {
 			_vest = ["UK3CB_BAF_V_Osprey_Medic_B","UK3CB_BAF_V_Osprey_Medic_C","UK3CB_BAF_V_Osprey_Medic_D"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_medevacClass : {
+		case CLASS_MEDEVAC : {
 			_vest = ["UK3CB_BAF_V_Osprey_Medic_B","UK3CB_BAF_V_Osprey_Medic_C","UK3CB_BAF_V_Osprey_Medic_D"] call BIS_fnc_selectRandom;
 		};
-		case Spec_var_mgClass : {
+		case CLASS_MG : {
 			_vest = "UK3CB_BAF_V_Osprey_MG_B";
 		};
-		case Spec_var_lmgClass : {
+		case CLASS_LMG : {
 			_vest = "UK3CB_BAF_V_Osprey_MG_B";
 		};
 		default {
@@ -138,51 +139,51 @@ if(_parameterCorrect) then {
 	
 	switch (_type) do {
 		// long ranges
-		case Spec_var_funkerClass : {
+		case CLASS_FUNKER : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";
 		};
-		case Spec_var_logisticClass : {
+		case CLASS_LOGISTIC : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_H_B";
 		};
-		case Spec_var_pilotClass : {
+		case CLASS_PILOT : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_L_A";
 		};
-		case Spec_var_oplClass : {
+		case CLASS_OPL : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Radio_L_B";
 		};
 		// big backpacks
-		case Spec_var_medevacClass : {
+		case CLASS_MEDEVAC : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Medic_H_B";
 		};
-		case Spec_var_pioClass : {
+		case CLASS_PIO : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Sapper_L_A";
 		};
 		// normal backpacks
-		case Spec_var_medicClass : {
+		case CLASS_MEDIC : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Medic_L_A";
 		};
-		case Spec_var_mgClass : {
+		case CLASS_MG : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 		};
-		case Spec_var_lmgClass : {
+		case CLASS_LMG : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 		};
-		case Spec_var_mgAssiClass : {
+		case CLASS_MG_ASSI : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A";
 		};
-		case Spec_var_tfClass : {
+		case CLASS_TF : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C";
 		};
-		case Spec_var_glClass : {
+		case CLASS_GL : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 		};
-		case Spec_var_atClass : {
+		case CLASS_AT : {
 			_backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C";
 		};
 	};
 	[_unit, _backpack] call Spec_fnc_addContainer;
 
-	if(_type == Spec_var_pilotClass) then {
+	if(_type == CLASS_PILOT) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
 		_unit addHeadgear _headgear;
@@ -197,7 +198,7 @@ if(_parameterCorrect) then {
 	[_unit,"UK3CB_BAF_H_Beret_PR",2] call Spec_fnc_addItemToContainer;
 	comment "===========================================";
 
-	if(_type == Spec_var_mgClass) then {
+	if(_type == CLASS_MG) then {
 		[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
 		[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
@@ -208,7 +209,7 @@ if(_parameterCorrect) then {
 			[_unit,_x,3] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;
 	} else {
-		if(_type == Spec_var_lmgClass) then {
+		if(_type == CLASS_LMG) then {
 			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _lmgWeapon;
 			{
@@ -220,7 +221,7 @@ if(_parameterCorrect) then {
 			[_unit,_lmgAmmo,3, 3] call Spec_fnc_addItemToContainer;
 		} else {
 			comment "Grenade launcher";
-			if(_type in [Spec_var_tfClass, Spec_var_glClass, Spec_var_funkerClass]) then {
+			if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
 				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _grenadeLauncherWeapon;
@@ -232,14 +233,14 @@ if(_parameterCorrect) then {
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
-				if(_type == Spec_var_atClass) then {
+				if(_type == CLASS_AT) then {
 					{
 						[_unit,_x,2] call Spec_fnc_addItemToContainer;
 					} forEach _atAmmo;
 					_unit addWeapon _atWeapon;
 				};
 				comment "MG Ammunition for MG Assistant";
-				if(_type == Spec_var_mgAssiClass) then {
+				if(_type == CLASS_MG_ASSI) then {
 					[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 				};
 				comment "Standard Weapon";

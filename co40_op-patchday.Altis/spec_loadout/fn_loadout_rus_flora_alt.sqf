@@ -20,6 +20,7 @@
 	Returns:
 	true
 */
+#include "classVariables.hpp"
 
 waitUntil {!isNull player || isServer};
 private _unit = objNull;
@@ -111,45 +112,45 @@ if(_parameterCorrect) then {
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	[_unit, _uniform] call Spec_fnc_addContainer;
 	switch (_type) do {
-		case Spec_var_glClass : {
+		case CLASS_GL : {
 			_vest = "rhs_6b23_ML_6sh92_vog";
 		};
-		case Spec_var_tfClass : {
+		case CLASS_TF : {
 			_vest = "rhs_6b23_ML_6sh92_headset";
 		};
-		case Spec_var_oplClass : {
+		case CLASS_OPL : {
 			_vest = "rhs_6b23_ML_6sh92_headset";
 		};
-		case Spec_var_funkerClass : {
+		case CLASS_FUNKER : {
 			_vest = "rhs_6b23_ML_6sh92_radio";
 		};
-		case Spec_var_medicClass : {
+		case CLASS_MEDIC : {
 			_vest = "rhs_6b23_ML_medic";
 		};
-		case Spec_var_medevacClass : {
+		case CLASS_MEDEVAC : {
 			_vest = "rhs_6b23_ML_medic";
 		};
-		case Spec_var_pioClass : {
+		case CLASS_PIO : {
 			_vest = "rhs_6b23_ML_engineer";
 		};
-		case Spec_var_logisticClass : {
+		case CLASS_LOGISTIC : {
 			_vest = "rhs_6b23_ML_engineer";
 		};
 	};
 	[_unit, _vest] call Spec_fnc_addContainer;
-	if(_type in [Spec_var_oplClass, Spec_var_funkerClass, Spec_var_logisticClass, Spec_var_pilotClass]) then {
+	if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
 		[_unit, _backpackLR] call Spec_fnc_addContainer;
 		if(backpack _unit == "") then {
 			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
 	} else {
-		if(_type in [Spec_var_medevacClass, Spec_var_pioClass]) then {
+		if(_type in [CLASS_MEDEVAC, CLASS_PIO]) then {
 			[_unit, _backpackBig] call Spec_fnc_addContainer;
 		} else {
 			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
 	};
-	if(_type == Spec_var_pilotClass) then {
+	if(_type == CLASS_PILOT) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
 		_unit addHeadgear _headgear;
@@ -161,7 +162,7 @@ if(_parameterCorrect) then {
 	[_unit, _type] call Spec_fnc_loadoutStandardEquipment;
 	comment "===========================================";
 
-	if(_type == Spec_var_mgClass) then {
+	if(_type == CLASS_MG) then {
 		[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
 		[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
@@ -172,7 +173,7 @@ if(_parameterCorrect) then {
 			[_unit,_x,3] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;
 	} else {
-		if(_type == Spec_var_lmgClass) then {
+		if(_type == CLASS_LMG) then {
 			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _lmgWeapon;
 			{
@@ -184,15 +185,15 @@ if(_parameterCorrect) then {
 			[_unit,_lmgAmmo,2, 5] call Spec_fnc_addItemToContainer;
 		} else {
 			comment "Grenade launcher";
-			if(_type in [Spec_var_tfClass, Spec_var_glClass, Spec_var_funkerClass]) then {
+			if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
 				_unit removeMagazines "1Rnd_HE_Grenade_shell";
 				_unit removeMagazines "1Rnd_SmokeRed_Grenade_shell";
 				_unit removeMagazines "1Rnd_Smoke_Grenade_shell";
-				if(_type == Spec_var_glClass) then {
+				if(_type == CLASS_GL) then {
 					[_unit,_grenadeLauncher40mm,2, 12] call Spec_fnc_addItemToContainer;
 				} else {
 					[_unit,_grenadeLauncherRedSmoke,2, 6] call Spec_fnc_addItemToContainer;
-					if(_type == Spec_var_tfClass) then {
+					if(_type == CLASS_TF) then {
 						[_unit,_grenadeLauncherWhiteSmoke,2, 6] call Spec_fnc_addItemToContainer;
 					};
 				};
@@ -205,7 +206,7 @@ if(_parameterCorrect) then {
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
-				if(_type == Spec_var_atClass) then {
+				if(_type == CLASS_AT) then {
 					{
 						[_unit,_x,2] call Spec_fnc_addItemToContainer;
 					} forEach _atAmmo;
@@ -213,7 +214,7 @@ if(_parameterCorrect) then {
 					_secondaryAccessory pushBack "rhs_acc_1pn93_2";
 				};
 				comment "MG Ammunition for MG Assistant";
-				if(_type == Spec_var_mgAssiClass) then {
+				if(_type == CLASS_MG_ASSI) then {
 					[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 				};
 				comment "Standard Weapon";

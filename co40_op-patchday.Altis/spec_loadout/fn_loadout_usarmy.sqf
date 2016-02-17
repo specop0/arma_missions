@@ -20,6 +20,7 @@
 	Returns:
 	true
 */
+#include "classVariables.hpp"
 
 waitUntil {!isNull player || isServer};
 private _unit = objNull;
@@ -106,51 +107,51 @@ if(_parameterCorrect) then {
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	[_unit, _uniform] call Spec_fnc_addContainer;
 	switch (_type) do {
-		case Spec_var_lmgClass : {
+		case CLASS_LMG : {
 			_vest = "rhsusf_iotv_ucp_SAW";
 		};
-		case Spec_var_glClass : {
+		case CLASS_GL : {
 			_vest = "rhsusf_iotv_ucp_Grenadier";
 		};
-		case Spec_var_medicClass : {
+		case CLASS_MEDIC : {
 			_vest = "rhsusf_iotv_ucp_Medic";
 		};
-		case Spec_var_medevacClass : {
+		case CLASS_MEDEVAC : {
 			_vest = "rhsusf_iotv_ucp_Medic";
 		};
-		case Spec_var_tfClass : {
+		case CLASS_TF : {
 			_vest = "rhsusf_iotv_ucp_Squadleader";
 		};
-		case Spec_var_oplClass : {
+		case CLASS_OPL : {
 			_vest = "rhsusf_iotv_ucp_Squadleader";
 		};
-		case Spec_var_funkerClass : {
+		case CLASS_FUNKER : {
 			_vest = "rhsusf_iotv_ucp_Teamleader";
 		};
-		case Spec_var_pioClass : {
+		case CLASS_PIO : {
 			_vest = "rhsusf_iotv_ucp_Repair";
 		};
-		case Spec_var_logisticClass : {
+		case CLASS_LOGISTIC : {
 			_vest = "rhsusf_iotv_ucp_Repair";
 		};
 	};
 	[_unit, _vest] call Spec_fnc_addContainer;
-	if(_type in [Spec_var_oplClass, Spec_var_funkerClass, Spec_var_logisticClass, Spec_var_pilotClass]) then {
+	if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
 		[_unit, _backpackLR] call Spec_fnc_addContainer;
 		if(backpack _unit == "") then {
 			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
 	} else {
-		if(_type in [Spec_var_medevacClass, Spec_var_pioClass]) then {
+		if(_type in [CLASS_MEDEVAC, CLASS_PIO]) then {
 			[_unit, _backpackBig] call Spec_fnc_addContainer;
 		} else {
 			[_unit, _backpack] call Spec_fnc_addContainer;
 		};
 	};
-	if(_type == Spec_var_pilotClass) then {
+	if(_type == CLASS_PILOT) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
-		if(_type in [Spec_var_tfClass, Spec_var_oplClass]) then {
+		if(_type in [CLASS_TF, CLASS_OPL]) then {
 			_headgear = ["rhsusf_ach_helmet_headset_ucp","rhsusf_ach_helmet_headset_ess_ucp"] call BIS_fnc_selectRandom;
 		} else {
 			_headgear = ["rhsusf_ach_helmet_ESS_ucp","rhsusf_ach_helmet_ucp_norotos"] call BIS_fnc_selectRandom;
@@ -164,7 +165,7 @@ if(_parameterCorrect) then {
 	[_unit, _type] call Spec_fnc_loadoutStandardEquipment;
 	comment "===========================================";
 
-	if(_type == Spec_var_mgClass) then {
+	if(_type == CLASS_MG) then {
 		[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
 		[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
@@ -175,7 +176,7 @@ if(_parameterCorrect) then {
 			[_unit,_x,3] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;
 	} else {
-		if(_type == Spec_var_lmgClass) then {
+		if(_type == CLASS_LMG) then {
 			[_unit,_lmgAmmo,1, 2] call Spec_fnc_addItemToContainer;
 			[_unit,_lmgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _lmgWeapon;
@@ -187,7 +188,7 @@ if(_parameterCorrect) then {
 			} forEach _lmgAccessoryExtra;
 		} else {
 			comment "Grenade launcher";
-			if(_type in [Spec_var_tfClass, Spec_var_glClass, Spec_var_funkerClass]) then {
+			if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
 				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _grenadeLauncherWeapon;
@@ -199,14 +200,14 @@ if(_parameterCorrect) then {
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
-				if(_type == Spec_var_atClass) then {
+				if(_type == CLASS_AT) then {
 					{
 						[_unit,_x,2] call Spec_fnc_addItemToContainer;
 					} forEach _atAmmo;
 					_unit addWeapon _atWeapon;
 				};
 				comment "MG Ammunition for MG Assistant";
-				if(_type == Spec_var_mgAssiClass) then {
+				if(_type == CLASS_MG_ASSI) then {
 					[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
 				};
 				comment "Standard Weapon";

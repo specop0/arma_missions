@@ -4,7 +4,6 @@ class spec_loadout {
 		file="spec_loadout";
 		class addContainer {};
 		class addItemToContainer {};
-		class initClassVariables {};
 		class initLoadoutLists {};
 		class loadout_aaf {};
 		class loadout_bw_tropentarn {};
