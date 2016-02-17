@@ -5800,7 +5800,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="if(isServer) then { this } else { true };";
-			expActiv="if(isServer) then { if(!isNil ""officer1"") then { [officer1, true] call ACE_captives_fnc_setSurrendered; }; if(!isNil ""officer2"") then { [officer2, true] call ACE_captives_fnc_setSurrendered; }; };";
+			expActiv="if(isServer) then { if(!isNil ""officer1"") then { [officer1, true] remoteExec [""ACE_captives_fnc_setSurrendered"",officer1]; }; if(!isNil ""officer2"") then { [officer2, true] remoteExec [""ACE_captives_fnc_setSurrendered"", officer2]; }; };";
 			class Effects
 			{
 			};
