@@ -10,12 +10,13 @@
 	Parameter(s):
 	0: OBJECT - unit to add an item
 	1: STRING - item to add (class name)
-	3: NUMBER - container to add item: 0 Uniform, 1 Vest, 2 Backpack, 3 wherever possible (tries uniform, then vest and then backpack)
+	3: NUMBER - container to add item: 0 Uniform, 1 Vest, 2 Backpack, 3 wherever possible (tries uniform, then vest and then backpack) [use addItemToContainer.hpp]
 	4 (Optional): NUMBER - quantity of the item (default 1)
 
 	Returns:
 	NUMBER - 0 if item(s) could be added, else 1
 */
+#include "addItemToContainer.hpp"
 
 private _parameterCorrect = params [["_unit",objNull],["_item",objNull],["_container",3,[0]]];
 private _returnValue = 0;
@@ -24,7 +25,7 @@ if(_parameterCorrect) then {
 	params ["","","", ["_numberOfItems",1,[0]] ];
 	private _itemsAdded = 0;
 	switch (_container) do {
-		case 0 : {
+		case UNIFORM : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToUniform _item) then {
 					_unit addItemToUniform _item;
@@ -36,7 +37,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		case 1 : {
+		case VEST : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToVest _item) then {
 					_unit addItemToVest _item;
@@ -48,7 +49,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		case 2 : {
+		case BACKPACK : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToBackpack _item) then {
 					_unit addItemToBackpack _item;
@@ -60,6 +61,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
+		// ANYWHERE
 		default {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToUniform _item) then {
