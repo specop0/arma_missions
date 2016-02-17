@@ -25,7 +25,7 @@ if(_parameterCorrect) then {
 	params ["","","", ["_numberOfItems",1,[0]] ];
 	private _itemsAdded = 0;
 	switch (_container) do {
-		case UNIFORM : {
+		case ADD_TO_UNIFORM : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToUniform _item) then {
 					_unit addItemToUniform _item;
@@ -37,7 +37,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		case VEST : {
+		case ADD_TO_VEST : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToVest _item) then {
 					_unit addItemToVest _item;
@@ -49,7 +49,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		case BACKPACK : {
+		case ADD_TO_BACKPACK : {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToBackpack _item) then {
 					_unit addItemToBackpack _item;
@@ -61,7 +61,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		// ANYWHERE
+		// ADD_ANYHWERE
 		default {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToUniform _item) then {
