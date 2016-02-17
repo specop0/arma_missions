@@ -739,7 +739,7 @@ class Mission
 				class Item1
 				{
 					position[]={4945.3384,337.14716,21882.848};
-					synchronizations[]={10};
+					expCond="triggerActivated triggerBlueforAtSolar";
 					class Effects
 					{
 					};
@@ -747,7 +747,6 @@ class Mission
 					timeoutMid=10;
 					timeoutMax=10;
 					showWP="NEVER";
-					syncId=0;
 				};
 				class Item2
 				{
@@ -879,7 +878,7 @@ class Mission
 				class Item1
 				{
 					position[]={4935.8672,339.30887,21889.029};
-					synchronizations[]={10};
+					expCond="triggerActivated triggerBlueforAtSolar";
 					class Effects
 					{
 					};
@@ -887,7 +886,6 @@ class Mission
 					timeoutMid=20;
 					timeoutMax=20;
 					showWP="NEVER";
-					syncId=1;
 				};
 				class Item2
 				{
@@ -976,12 +974,11 @@ class Mission
 				class Item1
 				{
 					position[]={4954.1812,334.39606,21873.605};
-					synchronizations[]={10};
+					expCond="triggerActivated triggerBlueforAtSolar";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=2;
 				};
 				class Item2
 				{
@@ -1114,12 +1111,10 @@ class Mission
 				{
 					position[]={7506.8374,19.281092,11986.934};
 					type="CYCLE";
-					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=3;
 				};
 				class Item8
 				{
@@ -1250,12 +1245,10 @@ class Mission
 				{
 					position[]={8038.8198,8.9716911,10408.106};
 					type="CYCLE";
-					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=4;
 				};
 				class Item9
 				{
@@ -1441,12 +1434,10 @@ class Mission
 				{
 					position[]={5860.6694,15.589061,10505.916};
 					type="CYCLE";
-					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=5;
 				};
 				class Item16
 				{
@@ -1618,12 +1609,10 @@ class Mission
 				{
 					position[]={6457.1792,110.84528,12815.156};
 					type="CYCLE";
-					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=6;
 				};
 				class Item12
 				{
@@ -2094,12 +2083,10 @@ class Mission
 				{
 					position[]={8435.5293,45.841969,12434.024};
 					type="CYCLE";
-					synchronizations[]={11};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=7;
 				};
 				class Item19
 				{
@@ -4710,12 +4697,12 @@ class Mission
 				{
 					position[]={23482.072,92.833298,21105.84};
 					type="LEADER";
-					synchronizations[]={9};
+					synchronizations[]={1};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=8;
+					syncId=0;
 				};
 				class Item2
 				{
@@ -4782,12 +4769,12 @@ class Mission
 				{
 					position[]={23483.77,92.896469,21105.883};
 					type="JOIN";
-					synchronizations[]={8};
+					synchronizations[]={0};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=9;
+					syncId=1;
 				};
 			};
 		};
@@ -5729,7 +5716,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={7235.1626,4.3576832,11027.287};
@@ -5752,11 +5739,10 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
+			name="triggerBlueforAtSolar";
 			class Effects
 			{
 			};
-			synchronizations[]={2,0,1};
-			syncId=10;
 		};
 		class Item2
 		{
@@ -5764,17 +5750,12 @@ class Mission
 			a=20;
 			b=20;
 			activationBy="WEST";
-			timeoutMin=240;
-			timeoutMid=300;
-			timeoutMax=360;
 			type="SWITCH";
 			age="UNKNOWN";
 			name="blufor_repairing";
 			class Effects
 			{
 			};
-			synchronizations[]={5,4,7,6,3};
-			syncId=11;
 		};
 		class Item3
 		{
@@ -5804,7 +5785,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="bluforNearHostages";
-			expActiv="if(isServer) then { if(!isNil ""beggar"" && !isNil ""beggar_killer"") then {  beggar_killer doFire beggar;  }; };";
+			expActiv="if(isServer) then { if(!isNil ""beggar"" && !isNil ""beggar_killer"") then {  [beggar_killer,beggar] remoteExec [""doFire"",beggar_killer];  }; };";
 			class Effects
 			{
 			};
@@ -5820,6 +5801,23 @@ class Mission
 			age="UNKNOWN";
 			expCond="if(isServer) then { this } else { true };";
 			expActiv="if(isServer) then { if(!isNil ""officer1"") then { [officer1, true] call ACE_captives_fnc_setSurrendered; }; if(!isNil ""officer2"") then { [officer2, true] call ACE_captives_fnc_setSurrendered; }; };";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={7318.4272,17.7131,11641.85};
+			a=2000;
+			b=1500;
+			rectangular=1;
+			activationBy="GUER";
+			timeoutMin=240;
+			timeoutMid=300;
+			timeoutMax=360;
+			age="UNKNOWN";
+			expCond="triggerActivated blufor_repairing";
+			expActiv="[thisList] call compile preprocessFileLineNumbers ""abortPat.sqf""";
 			class Effects
 			{
 			};
