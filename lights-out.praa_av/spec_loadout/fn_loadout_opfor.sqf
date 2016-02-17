@@ -10,6 +10,7 @@
 	Returns:
 	true
 */
+#include "addItemToContainer.hpp"
 
 waitUntil {!isNull player || isServer};
 private _parameterCorrect = params [["_unit",objNull,[objNull]]];
@@ -101,41 +102,41 @@ if(_parameterCorrect) then {
 		
 		comment "lead equipment (tablet, etc)";
 		if(_type == _tfClass) then {
-			[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_CableTie",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 		};
 		
 		comment "standard equipment (ear plugs, grenades)";
-		[_unit,"ACE_EarPlugs",0] call Spec_fnc_addItemToContainer;
-		[_unit,"ACE_MapTools",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_EarPlugs",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_MapTools",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 		
-		[_unit,"ACE_IR_Strobe_Item",0,2] call Spec_fnc_addItemToContainer;
-		[_unit,"ACE_HandFlare_Yellow",0,2] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_IR_Strobe_Item",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_HandFlare_Yellow",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
 
-		[_unit,"SmokeShell",0,2] call Spec_fnc_addItemToContainer;
-		[_unit,"SmokeShellGreen",0, 2] call Spec_fnc_addItemToContainer;
-		[_unit,"SmokeShellPurple",0] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShell",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShellGreen",ADD_TO_UNIFORM, 2] call Spec_fnc_addItemToContainer;
+		[_unit,"SmokeShellPurple",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 		
 		comment "night equipment";
-		[_unit,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_Flashlight_MX991",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 		
-		[_unit,"ACE_M84",1, 2] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_M84",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
 
 		comment "medic equipment";
 		switch _type do {
 			default {
-				[_unit,"ACE_fieldDressing",1, 7] call Spec_fnc_addItemToContainer;
-				[_unit,"ACE_tourniquet",1, 2] call Spec_fnc_addItemToContainer;
-				[_unit,"ACE_morphine",1, 1] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_fieldDressing",ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_tourniquet",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_morphine",ADD_TO_VEST, 1] call Spec_fnc_addItemToContainer;
 			};
 		};
 		
 		comment "role specific special equipment";
 		switch _type do {
 			case _tfClass : {
-				[_unit,"1Rnd_HE_Grenade_shell",1, 3] call Spec_fnc_addItemToContainer;
+				[_unit,"1Rnd_HE_Grenade_shell",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 			};
 			case _mgClass : {
-				[_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 			};
 		};
 		
@@ -144,26 +145,26 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 		
 		if(_type == _mgClass) then {
-			[_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
-			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _mgAccessory;
 			{
-				[_unit,_x,3] call Spec_fnc_addItemToContainer;
+				[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 			} forEach _mgAccessoryExtra;	
 		} else {
 			comment "grenade launcher";
 			if(_type == _tfClass) then {
-				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 				
 				_unit addWeapon _grenadeLauncherWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _grenadeLauncherAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
@@ -171,14 +172,14 @@ if(_parameterCorrect) then {
 					_unit addWeapon _atWeapon;
 				};
 				comment "standard weapon";
-				[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _standardWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _standardAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _standardAccessoryExtra;
 			};
 		};

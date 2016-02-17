@@ -20,6 +20,7 @@
 	Returns:
 	true
 */
+#include "addItemToContainer.hpp"
 #include "classVariables.hpp"
 
 waitUntil {!isNull player || isServer};
@@ -160,71 +161,71 @@ if(_parameterCorrect) then {
 	comment "===========================================";
 
 	if(_type == CLASS_MG) then {
-		[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-		[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
 		{
 			_unit addPrimaryWeaponItem _x;
 		} forEach _mgAccessory;
 		{
-			[_unit,_x,3] call Spec_fnc_addItemToContainer;
+			[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;
 	} else {
 		if(_type == CLASS_LMG) then {
-			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-			[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
 
 			_unit addWeapon _lmgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _lmgAccessory;
 			{
-				[_unit,_x,3] call Spec_fnc_addItemToContainer;
+				[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 			} forEach _lmgAccessoryExtra;
 		} else {
 			comment "Grenade launcher";
 			if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
-				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _grenadeLauncherWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _grenadeLauncherAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
 				if(_type == CLASS_AT) then {
 					{
-						[_unit,_x,2] call Spec_fnc_addItemToContainer;
+						[_unit,_x,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 					} forEach _atAmmo;
 					_unit addWeapon _atWeapon;
 					// remove backpack to avoid clipping with backpack
 					removeBackpack _unit;
-					[_unit,"ACE_fieldDressing",1, 7] call Spec_fnc_addItemToContainer;
-					[_unit,"ACE_tourniquet",1, 2] call Spec_fnc_addItemToContainer;
-					[_unit,"ACE_morphine",1, 1] call Spec_fnc_addItemToContainer;
+					[_unit,"ACE_fieldDressing",ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
+					[_unit,"ACE_tourniquet",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+					[_unit,"ACE_morphine",ADD_TO_VEST, 1] call Spec_fnc_addItemToContainer;
 				};
 				comment "MG Ammunition for MG Assistant";
 				if(_type == CLASS_MG_ASSI) then {
-					[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+					[_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
 				};
 				comment "Standard Weapon";
-				[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _standardWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _standardAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _standardAccessoryExtra;
 			};
 		};
 	};
 	comment "Secondary Weapon";
-	[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
+	[_unit,_secondaryAmmo,ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 	_unit addWeapon _secondaryWeapon;
 	{
 		_unit addSecondaryWeaponItem _x;

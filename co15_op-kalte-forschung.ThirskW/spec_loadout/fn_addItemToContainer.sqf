@@ -61,7 +61,7 @@ if(_parameterCorrect) then {
 				};
 			};
 		};
-		// ADD_ANYHWERE
+		// ADD_ANYWHERE
 		default {
 			while {_itemsAdded < _numberOfItems} do {
 				if(_unit canAddItemToUniform _item) then {

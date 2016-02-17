@@ -20,6 +20,7 @@
 	Returns:
 	true
 */
+#include "addItemToContainer.hpp"
 
 waitUntil {!isNull player || isServer};
 private _unit = objNull;
@@ -153,12 +154,12 @@ if(_parameterCorrect) then {
 	comment "Loadout based on TTT-Mod (weapons near end of file)";
 	if(_type == _pioClass) then {
 		comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
-		[_unit, "MineDetector", 2] call Spec_fnc_addItemToContainer;
+		[_unit, "MineDetector",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 	};
 	
 	if(_type in [_oplClass, _tfClass]) then {
 		_unit addWeapon "ACE_Vector";
-		[_unit,"BWA3_Beret_Falli",2] call Spec_fnc_addItemToContainer;
+		[_unit,"BWA3_Beret_Falli",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 	} else {
 		if(_type in [_atClass, _mgAssiClass, _glClass]) then{
 			_unit addWeapon "ACE_Yardage450";
@@ -174,105 +175,105 @@ if(_parameterCorrect) then {
 	
 	comment "lead equipment (tablet, etc)";
 	if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
-		[_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 		if(_type in [_medevacClass, _funkerClass]) then {
-			[_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 		} else {
-			[_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 		};
 	};
 	if(_type in [_oplClass, _tfClass, _logisticClass, _pilotClass]) then {
-		//[_unit,"ACE_HelmetCam",0] call Spec_fnc_addItemToContainer;
+		//[_unit,"ACE_HelmetCam",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 	};
 	if(_type in [_oplClass, _tfClass, _funkerClass]) then {
-		[_unit,"ACE_CableTie",1, 3] call Spec_fnc_addItemToContainer;
+		[_unit,"ACE_CableTie",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 	};
 	
 	comment "standard equipment (ear plugs, grenades)";
-	[_unit,"ACE_EarPlugs",0] call Spec_fnc_addItemToContainer;
-	[_unit,"ACE_MapTools",0] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_EarPlugs",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_MapTools",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 	
-	[_unit,"ACE_IR_Strobe_Item",0,2] call Spec_fnc_addItemToContainer;
-	[_unit,"ACE_HandFlare_Green",0,2] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_IR_Strobe_Item",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_HandFlare_Green",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
 
-	[_unit,"SmokeShell",0,2] call Spec_fnc_addItemToContainer;
-	[_unit,"SmokeShellGreen",0, 2] call Spec_fnc_addItemToContainer;
-	[_unit,"SmokeShellPurple",0] call Spec_fnc_addItemToContainer;
+	[_unit,"SmokeShell",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
+	[_unit,"SmokeShellGreen",ADD_TO_UNIFORM, 2] call Spec_fnc_addItemToContainer;
+	[_unit,"SmokeShellPurple",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
 	
 	comment "night equipment";
-	[_unit,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
-	[_unit,"ACE_NVG_Wide",1] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_Flashlight_MX991",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_NVG_Wide",ADD_TO_VEST] call Spec_fnc_addItemToContainer;
 	
-	[_unit,"ACE_M84",1, 2] call Spec_fnc_addItemToContainer;
+	[_unit,"ACE_M84",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
 
 	comment "medic equipment";
 	switch _type do {
 		case _medicClass : {
-			[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",2, 3] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_salineIV_500",2, 4] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_atropine",2, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_salineIV_500",ADD_TO_BACKPACK, 4] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_atropine",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
 			_unit setVariable ["ace_medical_medicClass", 1];
 		};
 		case _medevacClass : {
-			[_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_elasticBandage",2, 15] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_quikclot",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",2, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_salineIV",2, 6] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_atropine",2, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_epinephrine",2, 12] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_personalAidKit",2, 3] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_salineIV",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_atropine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_personalAidKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
 			_unit setVariable ["ace_medical_medicClass", 2];
 		};
 		default {
-			[_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",2, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
 		};
 	};
 	
 	comment "role specific special equipment";
 	switch _type do {
 		case _tfClass : {
-			[_unit,"1Rnd_Smoke_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
-			[_unit,"1Rnd_SmokeRed_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"1Rnd_Smoke_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
 		};
 		case _glClass : {
-			[_unit,"1Rnd_HE_Grenade_shell",2, 12] call Spec_fnc_addItemToContainer;
+			[_unit,"1Rnd_HE_Grenade_shell",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
 		};
 		case _funkerClass : {
-			[_unit,"1Rnd_SmokeRed_Grenade_shell",2, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
 		};
 		case _pioClass : {
-			[_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
-			[_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"SLAMDirectionalMine_Wire_Mag",3, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_M26_Clacker",3] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
+			[_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+			[_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"SLAMDirectionalMine_Wire_Mag",ADD_ANYWHERE, 2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_M26_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 			_unit setVariable ["ACE_IsEngineer", true];
 			_unit setVariable ["ACE_isEOD", true];
 		};
 		case _logisticClass : {
-			[_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 			_unit setVariable ["ACE_IsEngineer", true];
 		};
 		case _mgClass : {
-			[_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 		};
 		case _mgAssiClass : {
-			[_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+			[_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
 		};
 	};
 	
@@ -281,37 +282,37 @@ if(_parameterCorrect) then {
 	comment "===========================================";
 	
 	if(_type == _mgClass) then {
-		[_unit,_mgAmmo,1, 2] call Spec_fnc_addItemToContainer;
-		[_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+		[_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 		_unit addWeapon _mgWeapon;
 		{
 			_unit addPrimaryWeaponItem _x;
 		} forEach _mgAccessory;
 		{
-			[_unit,_x,3] call Spec_fnc_addItemToContainer;
+			[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 		} forEach _mgAccessoryExtra;	
 	} else {
 		if(_type == _lmgClass) then {
-			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
-			[_unit,_lmgAmmo,2, 3] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _lmgWeapon;
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _lmgAccessory;
 			{
-				[_unit,_x,3] call Spec_fnc_addItemToContainer;
+				[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 			} forEach _lmgAccessoryExtra;	
-			[_unit,_lmgAmmo,1] call Spec_fnc_addItemToContainer;
+			[_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
 		} else {
 			comment "grenade launcher";
 			if(_type in [_tfClass, _glClass, _funkerClass]) then {
-				[_unit,_grenadeLauncherAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 				_unit addWeapon _grenadeLauncherWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _grenadeLauncherAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _grenadeLauncherAccessoryExtra;
 			} else {
 				comment "AT launcher";
@@ -319,20 +320,20 @@ if(_parameterCorrect) then {
 					_unit addWeapon _atWeapon;
 				};
 				comment "standard weapon";
-				[_unit,_standardAmmo,1, 6] call Spec_fnc_addItemToContainer;
+				[_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
 
 				_unit addWeapon _standardWeapon;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _standardAccessory;
 				{
-					[_unit,_x,3] call Spec_fnc_addItemToContainer;
+					[_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
 				} forEach _standardAccessoryExtra;
 			};
 		};
 	};
 	comment "secondary weapon";
-	[_unit,_secondaryAmmo,1, 3] call Spec_fnc_addItemToContainer;
+	[_unit,_secondaryAmmo,ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 	_unit addWeapon _secondaryWeapon;
 	{
 		_unit addSecondaryWeaponItem _x;
