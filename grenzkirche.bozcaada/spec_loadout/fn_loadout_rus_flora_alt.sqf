@@ -60,12 +60,12 @@ private _backpackBig = "B_Carryall_oli";
 private _backpackLR = "tf_mr3000_rhs";
 
 private _headgear = "rhs_6b26";
-_headgear = ["rhs_6b27m_ml","rhs_6b27m_ml_bala","rhs_6b27m_ml_ess","rhs_6b27m_ML_ess_bala"] call selectRandom;
+_headgear = selectRandom ["rhs_6b27m_ml","rhs_6b27m_ml_bala","rhs_6b27m_ml_ess","rhs_6b27m_ML_ess_bala"];
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "G_Combat";
 
 private _standardWeapon = "rhs_weap_ak74m_camo";
-_standardWeapon = ["rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo"] call selectRandom;
+_standardWeapon = selectRandom ["rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo"];
 private _standardAmmo = "rhs_30Rnd_545x39_AK";
 private _standardAccessory = ["rhs_acc_1pn93_1"];
 private _standardAccessoryExtra = ["rhs_acc_pkas"];

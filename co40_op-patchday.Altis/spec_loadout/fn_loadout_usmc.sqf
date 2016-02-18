@@ -60,7 +60,7 @@ private _backpack = "rhsusf_assault_eagleaiii_coy";
 private _backpackBig = "B_Carryall_cbr";
 private _backpackLR = "tf_anprc155_coyote";
 
-private _headgear = ["rhsusf_lwh_helmet_marpatd","rhsusf_lwh_helmet_marpatd_ess","rhsusf_lwh_helmet_marpatd_headset"] call selectRandom;
+private _headgear = selectRandom ["rhsusf_lwh_helmet_marpatd","rhsusf_lwh_helmet_marpatd_ess","rhsusf_lwh_helmet_marpatd_headset"];
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "G_Combat";
 
