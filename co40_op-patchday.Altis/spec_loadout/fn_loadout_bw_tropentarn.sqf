@@ -62,7 +62,7 @@ private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Tropentarn"; //"tf_mr3000_bwmod
 
 private _headgear = "BWA3_MICH_Tropen";
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"] call BIS_fnc_selectRandom;
+private _googles = ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"] call selectRandom;
 
 private _standardWeapon = "BWA3_G36";
 private _standardAmmo = "BWA3_30Rnd_556x45_G36";

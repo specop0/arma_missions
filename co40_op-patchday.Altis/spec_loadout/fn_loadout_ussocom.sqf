@@ -141,9 +141,9 @@ if(_parameterCorrect) then {
 		_unit addHeadgear _headgearPilot;
 	} else {
 		if(_type in [CLASS_TF, CLASS_OPL]) then {
-			_headgear = ["rhsusf_ach_bare_semi_headset","rhsusf_ach_bare_semi_headset_ess"] call BIS_fnc_selectRandom;
+			_headgear = ["rhsusf_ach_bare_semi_headset","rhsusf_ach_bare_semi_headset_ess"] call selectRandom;
 		} else {
-			_headgear = ["rhsusf_ach_bare_semi","rhsusf_ach_bare_semi_ess"] call BIS_fnc_selectRandom;
+			_headgear = ["rhsusf_ach_bare_semi","rhsusf_ach_bare_semi_ess"] call selectRandom;
 		};
 		_unit addHeadgear _headgear;
 	};
