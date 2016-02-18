@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=534;
+		nextID=536;
 	};
 	class MarkerIDProvider
 	{
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={5960.9053,108.07896,11288.277};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -49,9 +49,10 @@ addons[]=
 	"A3_Characters_F_OPFOR",
 	"a3_characters_f",
 	"A3_Modules_F_Curator_Curator",
-	"lop_faction_afr_civ",
+	"A3_Characters_F_Civil",
 	"ace_cargo",
-	"ace_medical"
+	"ace_medical",
+	"A3_Soft_F_Car"
 };
 randomSeed=13596736;
 class Mission
@@ -201,7 +202,7 @@ class Mission
 			fillName="FDiagonal";
 			a=69;
 			b=37;
-			angle=344.99994;
+			angle=344.99991;
 			id=12;
 		};
 		class Item13
@@ -228,7 +229,7 @@ class Mission
 			position[]={5972.9048,83.060059,11333.341};
 			name="marker_spawner";
 			type="Empty";
-			angle=186.99997;
+			angle=186.99995;
 			id=15;
 		};
 		class Item16
@@ -293,7 +294,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8904.6924,421.75455,4342.5034};
-			angle=0.34906578;
+			angle=0.34906575;
 			class Attributes
 			{
 				name="ambush_1_trigger";
@@ -339,7 +340,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6820.1494,411.82492,5341.5488};
-			angle=0.69813156;
+			angle=0.6981315;
 			class Attributes
 			{
 				name="pickup_2_trigger";
@@ -391,7 +392,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8142.7417,296.04001,1947.3153};
-			angle=2.6179934;
+			angle=2.6179931;
 			class Attributes
 			{
 				onActivation="hint ""Die BLUFOR-Basis ist feindfrei. Sie konnten Notfallpläne für einen Gegenangriff der CSAT sicherstellen:\n- Straßensperre im Sar-e Sang Pass\n- Straßensperre im Darbang Pass\n- Hinterhalt im Naran Darre Pass"";";
@@ -7418,16 +7419,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2225.4812,208.29523,5451.376};
-						angles[]={6.2368164,2.1816616,6.2256484};
+						position[]={2225.481,208.29526,5451.376};
+						angles[]={6.2368116,2.1816616,6.2256417};
 					};
 					side="Civilian";
 					flags=2;
 					class Attributes
 					{
 					};
-					id=511;
-					type="LOP_AFR_Civ_Man_04";
+					id=535;
+					type="C_man_1";
 				};
 				class Item1
 				{
@@ -7494,8 +7495,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=511;
-						item1=510;
+						item0=535;
+						item1=534;
 						class CustomData
 						{
 							role=1;
@@ -7506,23 +7507,6 @@ class Mission
 			id=509;
 		};
 		class Item157
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2225.5645,209.74007,5451.2612};
-				angles[]={6.2368164,2.1816616,6.2256484};
-			};
-			side="Civilian";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-			};
-			id=510;
-			type="LOP_AFR_Civ_Hatchback";
-		};
-		class Item158
 		{
 			dataType="Group";
 			side="West";
@@ -7724,7 +7708,7 @@ class Mission
 			};
 			id=516;
 		};
-		class Item159
+		class Item158
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7909,7 +7893,7 @@ class Mission
 				nAttributes=9;
 			};
 		};
-		class Item160
+		class Item159
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7942,7 +7926,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item160
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8051,7 +8035,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item162
+		class Item161
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8312,6 +8296,46 @@ class Mission
 				nAttributes=13;
 			};
 		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2225.5642,209.7401,5451.2612};
+				angles[]={6.2368116,2.1816616,6.2256417};
+			};
+			side="Civilian";
+			flags=2;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=534;
+			type="C_Hatchback_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
@@ -8325,7 +8349,7 @@ class Mission
 			class Item0
 			{
 				linkID=0;
-				item0=510;
+				item0=534;
 				item1=22;
 				class CustomData
 				{
