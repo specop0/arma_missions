@@ -1,3 +1,6 @@
+/*
+ * Author: joko // Jonas
+ */
 JK_BuildAnimation = "Acts_carFixingWheel";
 JK_BuildTime = 12;
 JK_Medical_Vehicles = [zamak_medic];
