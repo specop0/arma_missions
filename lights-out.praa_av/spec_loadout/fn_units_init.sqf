@@ -16,7 +16,7 @@
 
 if(isServer) then {
 	{
-		if(side _x == west || side _x == civilian) then {
+		if(side _x == west) then {
 			comment "assign loadout to AI only (excellent for testing purposes)";
 			[_x] call Spec_fnc_loadout;
 			_x addEventHandler ["Respawn", Spec_fnc_loadout];

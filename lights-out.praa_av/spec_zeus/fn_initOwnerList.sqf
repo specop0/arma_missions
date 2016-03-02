@@ -75,7 +75,6 @@ if(isServer) then {
 					if(vehicle _x == _x) then {
 						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
 					};
-					[_x,["GetOut", {_this enableGunLights "forceOn";} ]] remoteExec ["addEventHandler",_x];
 					sleep 0.5;
 				};
 			} forEach allUnits - allPlayers;

@@ -357,7 +357,7 @@ if(_parameterCorrect) then {
 		};
 		case _usSpotterLead : {
 			[_unit,"ACE_HuntIR_monitor",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_HuntIR_M203",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_HuntIR_M203",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
 		};
 	};
 	
