@@ -74,6 +74,12 @@ if(isServer) then {
 				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
 					if(vehicle _x == _x) then {
 						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
+						[_x,["GunLightOn", _x]] remoteExec ["action",_x];
+						[_x,["GetOutMan",{
+							params ["_unit"];
+							_unit enableGunLights "forceOn";
+							_unit action ["GunLightOn", _unit];
+						}]] remoteExec ["addEventHandler",_x];
 					};
 					sleep 0.5;
 				};
@@ -81,8 +87,9 @@ if(isServer) then {
 			// try again if failed
 			{
 				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
-					if(!(_x isFlashlightOn (currentWeapon _x))) then {
+					if(vehicle _x == _x && !(_x isFlashlightOn (currentWeapon _x))) then {
 						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
+						[_x,["GunLightOn", _x]] remoteExec ["action",_x];
 						sleep 1;
 					};
 				};

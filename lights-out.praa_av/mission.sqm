@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4774.397,47.222198,4012.0151};
-		dir[]={-0.5149563,-0.39825448,-0.75909638};
-		up[]={-0.22357938,0.91727287,-0.32957768};
-		aside[]={-0.82755369,-1.0887743e-007,0.56139779};
+		pos[]={4477.4932,155.33493,960.31366};
+		dir[]={-0.33073157,-0.44526386,0.83208227};
+		up[]={-0.16446617,0.89539796,0.41377723};
+		aside[]={0.92928535,-3.7543941e-009,0.36936781};
 	};
 };
 binarizationWanted=0;
@@ -60,6 +60,10 @@ addons[]=
 	"A3_Characters_F_Gamma"
 };
 randomSeed=5552720;
+class ScenarioData
+{
+	author="SpecOp0";
+};
 class Mission
 {
 	class Intel
@@ -2032,7 +2036,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="[this] call Spec_fnc_gunlightsGetOutEH;";
 			};
 			id=117;
 			type="LOP_TKA_UAZ";
@@ -3940,13 +3943,12 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3255.7002,7.8769789,3518.0984};
-				angles[]={6.2826962,1.9198622,6.2826962};
+				angles[]={6.2826958,1.919862,6.2826958};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.40000001;
-				init="[this] call Spec_fnc_gunlightsGetOutEH;";
 			};
 			id=229;
 			type="LOP_TKA_UAZ";
@@ -4002,7 +4004,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="[this] call Spec_fnc_gunlightsGetOutEH;";
 			};
 			id=231;
 			type="LOP_TKA_UAZ";
@@ -4042,7 +4043,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="[this] call Spec_fnc_gunlightsGetOutEH;";
 			};
 			id=232;
 			type="LOP_TKA_UAZ";
@@ -4075,14 +4075,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4733.1909,12.378213,497.73044};
+				position[]={4733.1909,12.378212,497.73044};
 				angles[]={0.023177972,4.9741883,0.013159783};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.40000001;
-				init="[this] call Spec_fnc_gunlightsGetOutEH;";
 			};
 			id=233;
 			type="B_G_Offroad_01_armed_F";
@@ -16037,7 +16036,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={665.0564,27.31192,3705.426};
+				position[]={665.05603,27.311918,3705.426};
 			};
 			name="hc1";
 			isPlayable=1;
