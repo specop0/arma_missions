@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2005.6088,40.758106,2196.9119};
-		dir[]={0.25643152,-0.5299955,0.80830401};
-		up[]={0.16026829,0.84799951,0.50518596};
-		aside[]={0.95318717,3.9086444e-008,-0.30239516};
+		pos[]={937.48016,266.17279,3454.9812};
+		dir[]={-0.78963363,-0.47611067,-0.38707858};
+		up[]={-0.4275192,0.87938094,-0.20956901};
+		aside[]={-0.4401682,-5.2899122e-007,0.89793539};
 	};
 };
 binarizationWanted=0;
@@ -205,12 +205,12 @@ class Mission
 		class Item11
 		{
 			dataType="Trigger";
-			position[]={2434.9912,0.00073540024,2593.0706};
-			angle=0.69813144;
+			position[]={2418.155,17.207644,2640.428};
+			angle=0.69813162;
 			class Attributes
 			{
 				onActivation="[leader_reinforce_1] call Spec_fnc_activateWaypointAfterCycle;  [leader_reinforce_2] call Spec_fnc_activateWaypointAfterCycle;";
-				sizeA=200;
+				sizeA=300;
 				sizeB=500;
 				interuptable=1;
 				activationType="EAST D";
