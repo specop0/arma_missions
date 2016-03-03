@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=652;
+		nextID=653;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4477.4932,155.33493,960.31366};
-		dir[]={-0.33073157,-0.44526386,0.83208227};
-		up[]={-0.16446617,0.89539796,0.41377723};
-		aside[]={0.92928535,-3.7543941e-009,0.36936781};
+		pos[]={2005.6088,40.758106,2196.9119};
+		dir[]={0.25643152,-0.5299955,0.80830401};
+		up[]={0.16026829,0.84799951,0.50518596};
+		aside[]={0.95318717,3.9086444e-008,-0.30239516};
 	};
 };
 binarizationWanted=0;
@@ -9034,7 +9034,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=18;
+				items=19;
 				class Item0
 				{
 					dataType="Object";
@@ -9394,7 +9394,7 @@ class Mission
 				class Item10
 				{
 					dataType="Waypoint";
-					position[]={2514.7803,12.996135,2195.772};
+					position[]={2384.2937,12.505845,2187.8125};
 					class Effects
 					{
 					};
@@ -9408,7 +9408,7 @@ class Mission
 				class Item11
 				{
 					dataType="Waypoint";
-					position[]={2240.8169,13.533062,2128.5391};
+					position[]={2255.4187,11.824074,2211.1831};
 					class Effects
 					{
 					};
@@ -9419,7 +9419,18 @@ class Mission
 				class Item12
 				{
 					dataType="Waypoint";
-					position[]={2122.6323,18.473539,2086.8076};
+					position[]={2135.1304,14.769171,2189.5811};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=652;
+					type="Move";
+				};
+				class Item13
+				{
+					dataType="Waypoint";
+					position[]={2119.4673,18.039442,2104.8508};
 					class Effects
 					{
 					};
@@ -9430,10 +9441,10 @@ class Mission
 					id=426;
 					type="Move";
 				};
-				class Item13
+				class Item14
 				{
 					dataType="Waypoint";
-					position[]={2083.0693,15.403631,2194.3088};
+					position[]={2002.8473,14.577512,2204.4365};
 					class Effects
 					{
 					};
@@ -9441,7 +9452,7 @@ class Mission
 					id=427;
 					type="Move";
 				};
-				class Item14
+				class Item15
 				{
 					dataType="Waypoint";
 					position[]={2288.8286,11.610983,2296.5872};
@@ -9452,7 +9463,7 @@ class Mission
 					id=428;
 					type="Move";
 				};
-				class Item15
+				class Item16
 				{
 					dataType="Waypoint";
 					position[]={2198.5229,13.423282,2378.01};
@@ -9463,7 +9474,7 @@ class Mission
 					id=429;
 					type="Move";
 				};
-				class Item16
+				class Item17
 				{
 					dataType="Waypoint";
 					position[]={2220.5278,14.05659,2422.0066};
@@ -9474,7 +9485,7 @@ class Mission
 					id=430;
 					type="Move";
 				};
-				class Item17
+				class Item18
 				{
 					dataType="Waypoint";
 					position[]={2263.574,13.004631,2443.8945};

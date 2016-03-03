@@ -69,27 +69,19 @@ if(isServer) then {
 				} forEach allGroups - _playerGroups;
 			};
 			// force flashlight on
-			private _mgClass = "O_Soldier_AR_F";
 			{
-				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
+				if(!isNull _x && {side _x == EAST}) then {
 					if(vehicle _x == _x) then {
-						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
-						[_x,["GunLightOn", _x]] remoteExec ["action",_x];
-						[_x,["GetOutMan",{
-							params ["_unit"];
-							_unit enableGunLights "forceOn";
-							_unit action ["GunLightOn", _unit];
-						}]] remoteExec ["addEventHandler",_x];
+						[_x,"forceOn"] remoteExec ["enableGunLights",[_x,2]];
 					};
 					sleep 0.5;
 				};
 			} forEach allUnits - allPlayers;
 			// try again if failed
 			{
-				if(!isNull _x && {side _x == EAST && typeOf _x != _mgClass}) then {
+				if(!isNull _x && {side _x == EAST}) then {
 					if(vehicle _x == _x && !(_x isFlashlightOn (currentWeapon _x))) then {
-						[_x,"forceOn"] remoteExec ["enableGunLights",_x];
-						[_x,["GunLightOn", _x]] remoteExec ["action",_x];
+						[_x,"forceOn"] remoteExec ["enableGunLights",[_x,2]];
 						sleep 1;
 					};
 				};

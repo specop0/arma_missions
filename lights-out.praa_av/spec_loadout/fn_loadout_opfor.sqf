@@ -34,9 +34,9 @@ private _backpack = "rhs_sidor";
 
 private _headgear = "LOP_H_SSh68Helmet_TAN";
 
-private _standardWeapon = "rhs_weap_akms";
-private _standardAmmo = "rhs_30Rnd_762x39mm_tracer";
-private _standardAccessory = ["rhs_acc_2dpZenit"];
+private _standardWeapon = "CUP_arifle_Sa58RIS1_des";//"rhs_weap_akms";
+private _standardAmmo = "CUP_30Rnd_Sa58_M_TracerR";//"rhs_30Rnd_762x39mm_tracer";
+private _standardAccessory = ["acc_flashlight"];//["rhs_acc_2dpZenit"];
 private _standardAccessoryExtra = [];
 
 private _grenadeLauncherWeapon = _standardWeapon;
@@ -49,9 +49,9 @@ private _tfClass = "O_Soldier_TL_F";
 
 comment "Autorifleman";
 private _mgClass = "O_Soldier_AR_F";
-private _mgWeapon = "rhs_weap_pkm";
-private _mgAmmo = "rhs_100Rnd_762x54mmR_green";
-private _mgAccessory = [];
+private _mgWeapon = "CUP_lmg_Mk48_des";
+private _mgAmmo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+private _mgAccessory = _standardAccessory;
 private _mgAccessoryExtra = [];
 
 comment "Rifleman (AT)";
@@ -67,6 +67,9 @@ if(_parameterCorrect) then {
 			_type = typeOf _unit;
 		};
 		
+		_unit enableGunLights "forceOff";
+		_unit action ["GunLightOff",_unit];
+		
 		removeAllWeapons _unit;
 		removeAllItems _unit;
 		removeAllAssignedItems _unit;
@@ -75,7 +78,7 @@ if(_parameterCorrect) then {
 		removeBackpackGlobal _unit;
 		removeHeadgear _unit;
 		removeGoggles _unit;
-		
+			
 		comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 		_unit forceAddUniform _uniform;
 		_unit addVest _vest;
@@ -136,7 +139,7 @@ if(_parameterCorrect) then {
 				[_unit,"1Rnd_HE_Grenade_shell",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
 			};
 			case _mgClass : {
-				[_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+				[_unit,"ACE_SpareBarrel",ADD_TO_VEST] call Spec_fnc_addItemToContainer;
 			};
 		};
 		
@@ -145,9 +148,9 @@ if(_parameterCorrect) then {
 		comment "===========================================";
 		
 		if(_type == _mgClass) then {
-			[_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
 			[_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
 			_unit addWeapon _mgWeapon;
+			[_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
 			{
 				_unit addPrimaryWeaponItem _x;
 			} forEach _mgAccessory;
@@ -157,9 +160,9 @@ if(_parameterCorrect) then {
 		} else {
 			comment "grenade launcher";
 			if(_type == _tfClass) then {
-				[_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
-				
+				[_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 5] call Spec_fnc_addItemToContainer;
 				_unit addWeapon _grenadeLauncherWeapon;
+				[_unit,_standardAmmo,ADD_TO_VEST,1] call Spec_fnc_addItemToContainer;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _grenadeLauncherAccessory;
@@ -172,9 +175,9 @@ if(_parameterCorrect) then {
 					_unit addWeapon _atWeapon;
 				};
 				comment "standard weapon";
-				[_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
-
+				[_unit,_standardAmmo,ADD_TO_VEST,5] call Spec_fnc_addItemToContainer;
 				_unit addWeapon _standardWeapon;
+				[_unit,_standardAmmo,ADD_TO_VEST,1] call Spec_fnc_addItemToContainer;
 				{
 					_unit addPrimaryWeaponItem _x;
 				} forEach _standardAccessory;
