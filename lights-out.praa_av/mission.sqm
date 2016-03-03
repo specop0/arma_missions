@@ -60,6 +60,10 @@ addons[]=
 	"A3_Characters_F_Gamma"
 };
 randomSeed=5552720;
+class ScenarioData
+{
+	author="SpecOp0";
+};
 class Mission
 {
 	class Intel
@@ -11874,7 +11878,7 @@ class Mission
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={4772.7725,9.743885,480.98328};
+					position[]={4772.772,9.7439165,480.983};
 					expCond="triggerActivated trigger_jaffar";
 					class Effects
 					{
@@ -11886,7 +11890,7 @@ class Mission
 				class Item7
 				{
 					dataType="Waypoint";
-					position[]={4758.1021,9.8905506,487.72858};
+					position[]={4758.1021,9.8905478,487.729};
 					type="GetInNearest";
 					speed="FULL";
 					class Effects

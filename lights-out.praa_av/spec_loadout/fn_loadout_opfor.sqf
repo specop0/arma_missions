@@ -67,9 +67,6 @@ if(_parameterCorrect) then {
 			_type = typeOf _unit;
 		};
 		
-		_unit enableGunLights "forceOff";
-		_unit action ["GunLightOff",_unit];
-		
 		removeAllWeapons _unit;
 		removeAllItems _unit;
 		removeAllAssignedItems _unit;
