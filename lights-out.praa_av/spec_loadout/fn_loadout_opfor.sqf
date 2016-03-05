@@ -28,11 +28,11 @@ if !(_unit isKindOf "Man") then {
 	};
 };
 
-private _uniform = "LOP_U_TKA_Fatigue_01";
+private _uniform = "CUP_U_O_TK_MixedCamo";
 private _vest = "rhs_6sh92_digi";
 private _backpack = "rhs_sidor";
 
-private _headgear = "LOP_H_SSh68Helmet_TAN";
+private _headgear = "CUP_H_TK_Helmet";
 
 private _standardWeapon = "CUP_arifle_Sa58RIS1_des";//"rhs_weap_akms";
 private _standardAmmo = "CUP_30Rnd_Sa58_M_TracerR";//"rhs_30Rnd_762x39mm_tracer";

@@ -51,15 +51,15 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "LOP_U_TKA_Fatigue_02";
-private _vest = "LOP_V_6Sh92_OLV";
+private _uniform = "CUP_U_O_TK_Green";
+private _vest = "CUP_V_O_TK_Vest_1";
 
 private _backpack = "B_AssaultPack_rgr";
 private _backpackBig = "B_Carryall_oli";
-private _backpackLR = "tf_bussole";
+private _backpackLR = "tf_rt1523g_rhs";//"tf_bussole";
 
-private _headgear = "LOP_H_SSh68Helmet_OLV";
-private _headgearPilot = "H_PilotHelmetHeli_B";
+private _headgear = "CUP_H_TK_Helmet";
+private _headgearPilot = "CUP_H_TK_PilotHelmet";
 private _googles = "";
 
 private _standardWeapon = "rhs_weap_akms";
@@ -189,17 +189,6 @@ if(_parameterCorrect) then {
 		};
 	} else {
 		_unit forceAddUniform _uniform;
-		switch _type do {
-			case _oplClass : {
-				_vest = "LOP_V_6Sh92_Radio_OLV";
-			};
-			case _tfClass : {
-				_vest = "LOP_V_6Sh92_Radio_OLV";
-			};
-			case _mgClass : {
-				_vest = "LOP_V_6Sh92_Vog_OLV";
-			};
-		};
 		_unit addVest _vest;
 		if(_type in [_oplClass, _funkerClass, _logisticClass, _pilotClass]) then {
 			_unit addBackpack _backpackLR;
