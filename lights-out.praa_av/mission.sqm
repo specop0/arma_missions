@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=685;
+		nextID=714;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4726.811,14.792921,4031.5171};
-		dir[]={-0.71991384,-0.27271101,-0.63826019};
-		up[]={-0.20406707,0.96209365,-0.18092115};
-		aside[]={-0.66340667,-2.4944893e-007,0.74827772};
+		pos[]={692.90942,63.598408,3663.1013};
+		dir[]={-0.84423923,-0.53363246,-0.050796177};
+		up[]={-0.53269714,0.84569883,-0.03205068};
+		aside[]={-0.060058363,4.7006688e-007,0.99823004};
 	};
 };
 binarizationWanted=0;
@@ -58,8 +58,7 @@ addons[]=
 	"A3_Characters_F_Gamma",
 	"CUP_TrackedVehicles_T72",
 	"CUP_WheeledVehicles_UAZ",
-	"CUP_TrackedVehicles_ZSU23",
-	"CUP_Creatures_Military_Taki"
+	"CUP_TrackedVehicles_ZSU23"
 };
 randomSeed=5552720;
 class ScenarioData
@@ -79,7 +78,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=338;
+		items=339;
 		class Item0
 		{
 			dataType="Marker";
@@ -208,7 +207,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2418.155,17.207644,2640.428};
-			angle=0.69813156;
+			angle=0.6981315;
 			class Attributes
 			{
 				onActivation="[leader_reinforce_1] call Spec_fnc_activateWaypointAfterCycle;  [leader_reinforce_2] call Spec_fnc_activateWaypointAfterCycle;";
@@ -6177,7 +6176,7 @@ class Mission
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={2325.0356,20.244556,2632.2637};
+					position[]={2325.01,20.245701,2632.2637};
 					type="GetInNearest";
 					class Effects
 					{
@@ -16751,59 +16750,90 @@ class Mission
 		};
 		class Item336
 		{
-			dataType="Group";
-			side="East";
-			class Entities
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4723.2915,12.762139,4027.7764};
-					};
-					side="East";
-					flags=3;
-					class Attributes
-					{
-					};
-					id=682;
-					type="CUP_O_TK_Soldier_MG";
-				};
+				position[]={631.13129,28.891081,3674.9834};
+				angles[]={0.032899454,2.8870537,0.0045727626};
 			};
+			side="Empty";
 			class Attributes
 			{
 			};
-			id=681;
+			id=700;
+			type="CUP_O_LR_Ambulance_TKA";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[1]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item337
 		{
-			dataType="Group";
-			side="East";
-			class Entities
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4721.8232,12.672438,4027.8164};
-					};
-					side="East";
-					flags=3;
-					class Attributes
-					{
-					};
-					id=684;
-					type="CUP_O_TK_Pilot";
-				};
+				position[]={606.96216,30.209652,3663.0283};
+				angles[]={0.0088768154,1.3266586,6.242579};
 			};
+			side="Empty";
 			class Attributes
 			{
 			};
-			id=683;
+			id=702;
+			type="CUP_O_Ural_TKA";
+		};
+		class Item338
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={666.3938,27.326004,3679.134};
+				angles[]={0.014302679,3.0018435,0.021454247};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=711;
+			type="CUP_O_UAZ_Unarmed_TKA";
 		};
 	};
 	class Connections
