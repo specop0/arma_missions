@@ -29,10 +29,10 @@ if(!isNil "z1") then {
 		removeHeadgear player;
 		removeGoggles player;
 
-		player forceAddUniform "LOP_U_AA_Fatigue_03";
-		player addVest "LOP_V_6B23_UN";
+		player forceAddUniform "MNP_CombatUniform_Police";
+		player addVest "V_TacVest_blk_POLICE";
 		player addBackpack "tf_rt1523g_black";
-		player addHeadgear "LOP_H_6B27M_UN";
+		player addHeadgear "MNP_Helmet_UN";
 
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
