@@ -1,8 +1,8 @@
 private _parameterCorrect = params [["_crate",objNull,[objNull]]];
 
 private _atLauncher = "UK3CB_BAF_AT4_AT_Launcher";
-private _aaLauncher = "rhs_weap_fim92";
-private _aaAmmo = "rhs_fim92_mag";
+private _aaLauncher = "BWA3_Fliegerfaust";
+private _aaAmmo = "BWA3_Fliegerfaust_Mag";
 
 if(_parameterCorrect && isServer) then {
 	clearWeaponCargoGlobal _crate;

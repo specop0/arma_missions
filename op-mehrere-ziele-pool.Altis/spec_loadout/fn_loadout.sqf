@@ -62,12 +62,12 @@ private _headgear = "BWA3_M92_Fleck";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _googles = "BWA3_G_Combat_Black";
 
-private _standardWeapon = "hlc_rifle_auga3";
-private _standardAmmo = "hlc_30Rnd_556x45_SOST_AUG";
+private _standardWeapon = "CUP_arifle_CZ805_A1";
+private _standardAmmo = "30Rnd_556x45_Stanag";
 private _standardAccessory = ["acc_flashlight","optic_MRCO"];
 private _standardAccessoryExtra = [];
 
-private _grenadeLauncherWeapon = "hlc_rifle_auga3_GL";
+private _grenadeLauncherWeapon = "CUP_arifle_CZ805_GL";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = [];
@@ -90,8 +90,8 @@ private _glClass = "B_Soldier_GL_F";
 
 comment "Autorifleman";
 private _mgClass = "B_soldier_AR_F";
-private _mgWeapon = "hlc_lmg_M60E4";
-private _mgAmmo = "hlc_100Rnd_762x51_T_M60E4";
+private _mgWeapon = "CUP_lmg_M60E4";
+private _mgAmmo = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 private _mgAccessory = ["optic_MRCO"];
 private _mgAccessoryExtra = [];
 comment "Ammo Bearer";
