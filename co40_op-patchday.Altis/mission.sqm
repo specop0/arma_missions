@@ -19,7 +19,7 @@ class EditorData
 		pos[]={15176.682,42.914146,17336.424};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -32,6 +32,10 @@ addons[]=
 	"A3_Modules_F_Curator_Curator"
 };
 randomSeed=6024783;
+class ScenarioData
+{
+	author="SpecOp0";
+};
 class Mission
 {
 	class Intel
