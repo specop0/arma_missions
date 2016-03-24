@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1337.1637,141.22412,860.77985};
-		dir[]={0.017274315,-0.62351,0.78163016};
-		up[]={0.013776691,0.78181303,0.62336051};
-		aside[]={0.99976021,2.3901521e-009,-0.022095019};
+		pos[]={1310.5341,141.22412,910.81671};
+		dir[]={-0.0029696091,-0.75047165,0.66096896};
+		up[]={-0.0033790928,0.66063428,0.75069219};
+		aside[]={1.0000538,1.2439305e-006,0.0044971569};
 	};
 };
 binarizationWanted=0;
@@ -2111,12 +2111,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1198.0127,20.70652,1082.03};
+				position[]={1198.0126,20.70652,1082.03};
 				angles[]={0,4.6949358,0.0010995574};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="[this] call Spec_cargoDrop_fnc_addParadropEvent;";
 				name="plane";
 			};
 			id=502;
