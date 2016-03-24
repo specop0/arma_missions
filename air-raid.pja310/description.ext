@@ -29,6 +29,7 @@ onLoadMission = "Zeus";
 OnLoadMissionTime = TRUE;
 author="Spec";
 OnLoadName = "Zeus";
+loadScreen="loading.jpg";
 
 overviewText = "";
 overviewPicture = "";
