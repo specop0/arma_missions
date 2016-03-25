@@ -4,7 +4,7 @@ private _parameterCorrect = params [ ["_unit",objNull,[objNull]] ];
 
 if(_parameterCorrect) then {
 	removeBackpackGlobal _unit;
-	_unit addBackpackGlobal "TTT_Backpack_Funkerfac_Us_Woodland";
+	_unit addBackpackGlobal "TTT_Backpack_Funkerfac_Bw_Flecktarn";
 	clearItemCargoGlobal (unitBackpack _unit);
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	[_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

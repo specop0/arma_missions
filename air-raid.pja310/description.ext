@@ -3,6 +3,7 @@ class CfgFunctions {
 #include "spec_cargoDrop\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
 #include "FUPS\CfgFunctions.hpp"
 	class Spec_scripts {
 		tag = "Spec";
