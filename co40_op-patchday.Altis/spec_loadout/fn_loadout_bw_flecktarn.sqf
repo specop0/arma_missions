@@ -62,7 +62,7 @@ private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn"; // "tf_mr3000_bwmod
 
 private _headgear = "BWA3_MICH_Fleck";
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = selectRandom ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"];
+private _goggles = selectRandom ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"];
 
 private _standardWeapon = "BWA3_G36";
 private _standardAmmo = "BWA3_30Rnd_556x45_G36";
@@ -153,7 +153,7 @@ if(_parameterCorrect) then {
 	} else {
 		_unit addHeadgear _headgear;
 	};
-	_unit addGoggles _googles;
+	_unit addGoggles _goggles;
 
 	comment "===========================================";
 	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";

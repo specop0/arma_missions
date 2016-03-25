@@ -61,7 +61,7 @@ private _backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
 private _headgear = "UK3CB_BAF_H_Mk7_Camo_A";
 _headgear = selectRandom ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_B","UK3CB_BAF_H_Mk7_Camo_C","UK3CB_BAF_H_Mk7_Camo_D","UK3CB_BAF_H_Mk7_Camo_E","UK3CB_BAF_H_Mk7_Camo_F","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_ESS_B","UK3CB_BAF_H_Mk7_Camo_ESS_C","UK3CB_BAF_H_Mk7_Camo_ESS_D","UK3CB_BAF_H_Mk7_Camo_CESS_A","UK3CB_BAF_H_Mk7_Camo_CESS_B","UK3CB_BAF_H_Mk7_Camo_CESS_C","UK3CB_BAF_H_Mk7_Camo_CESS_D"];
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = selectRandom ["UK3CB_BAF_G_Tactical_Black","UK3CB_BAF_G_Tactical_Clear","UK3CB_BAF_G_Tactical_Grey","UK3CB_BAF_G_Tactical_Orange","UK3CB_BAF_G_Tactical_Yellow"];
+private _goggles = selectRandom ["UK3CB_BAF_G_Tactical_Black","UK3CB_BAF_G_Tactical_Clear","UK3CB_BAF_G_Tactical_Grey","UK3CB_BAF_G_Tactical_Orange","UK3CB_BAF_G_Tactical_Yellow"];
 
 private _standardWeapon = "UK3CB_BAF_L85A2_RIS_LDSR2D_IR";
 private _standardAmmo = "UK3CB_BAF_30Rnd";
@@ -189,7 +189,7 @@ if(_parameterCorrect) then {
 	} else {
 		_unit addHeadgear _headgear;
 	};
-	_unit addGoggles _googles;
+	_unit addGoggles _goggles;
 
 	comment "===========================================";
 	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";

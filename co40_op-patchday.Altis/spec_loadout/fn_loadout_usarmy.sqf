@@ -62,7 +62,7 @@ private _backpackLR = "tf_rt1523g_black";
 
 private _headgear = "H_HelmetSpecB_paint1";
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = "G_Combat";
+private _goggles = "G_Combat";
 
 private _standardWeapon = "rhs_m4a1_grip_acog";
 private _standardAmmo = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -86,7 +86,7 @@ private _mgAccessory = ["rhsusf_acc_ELCAN"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "rhs_weap_m249_pip_elcan";
+private _lmgWeapon = "rhs_weap_m249_pip_L";
 private _lmgAmmo = "rhs_200rnd_556x45_T_SAW";
 private _lmgAccessory = ["rhsusf_acc_ELCAN"];
 private _lmgAccessoryExtra = _standardAccessoryExtra;
@@ -159,7 +159,7 @@ if(_parameterCorrect) then {
 		};
 		_unit addHeadgear _headgear;
 	};
-	_unit addGoggles _googles;
+	_unit addGoggles _goggles;
 
 	comment "===========================================";
 	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";

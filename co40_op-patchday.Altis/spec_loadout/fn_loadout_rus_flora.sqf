@@ -63,7 +63,7 @@ private _backpackLR = "tf_mr3000_rhs";
 private _headgear = "rhs_6b26";
 _headgear = selectRandom ["rhs_6b26","rhs_6b26_bala","rhs_6b26_ess","rhs_6b26_ess_bala"];
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = "G_Combat";
+private _goggles = "G_Combat";
 
 private _standardWeapon = "rhs_weap_ak74m_camo";
 _standardWeapon = selectRandom ["rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo"];
@@ -156,7 +156,7 @@ if(_parameterCorrect) then {
 	} else {
 		_unit addHeadgear _headgear;
 	};
-	_unit addGoggles _googles;
+	_unit addGoggles _goggles;
 
 	comment "===========================================";
 	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";

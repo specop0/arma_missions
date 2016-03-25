@@ -62,7 +62,7 @@ private _backpackLR = "tf_rt1523g_big";
 
 private _headgear = "H_HelmetSpecB_paint1";
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _googles = "G_Combat";
+private _goggles = "G_Combat";
 
 private _standardWeapon = "arifle_MX_F";
 private _standardAmmo = "30Rnd_65x39_caseless_mag";
@@ -125,7 +125,7 @@ if(_parameterCorrect) then {
 	} else {
 		_unit addHeadgear _headgear;
 	};
-	_unit addGoggles _googles;
+	_unit addGoggles _goggles;
 
 	comment "===========================================";
 	comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";
