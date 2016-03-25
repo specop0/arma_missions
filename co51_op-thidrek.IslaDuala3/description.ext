@@ -1,0 +1,37 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_checkpoint\CfgFunctions.hpp"
+	class spec_scripts {
+		tag = "Spec";
+		class init {
+			file="scripts";
+			class deleteGroup {};
+			class disableGroupAI {};
+			class fireAtNearest {};
+			class playMove {};
+		};
+	};
+#include "FUPS\CfgFunctions.hpp"
+};
+//#include "FUPS\hearing_XEH.hpp"
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "51";
+};
+
+respawn = 3;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "tacticalteam.de";
+OnLoadMissionTime = TRUE;
+author="Tactical Training Team";
+OnLoadName = "Kalter Entzug";
+loadScreen =  "pictures\picture_co.paa";
+
+disabledAI = 1;
