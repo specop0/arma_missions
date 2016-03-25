@@ -4,6 +4,9 @@ private _loadoutFactionList = [];
 _loadoutFactionList pushBack "NATO";
 _loadoutFactionList pushBack "AAF";
 _loadoutFactionList pushBack "CSAT";
+// CUP
+_loadoutFactionList pushBack "CUP_USSOCOM";
+_loadoutFactionList pushBack "KOREA";
 // RHS
 _loadoutFactionList pushBack "USARMY";
 _loadoutFactionList pushBack "USMC";

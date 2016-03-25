@@ -15,12 +15,11 @@
 	BOOL - true if container was added (or cleared) successful
 */
 
-private _parameterCorrect = params [["_unit",objNull,[objNull]],["_containerClassname","",["STRING"]]];
+private _parameterCorrect = params [ ["_unit",objNull,[objNull]], ["_containerClassname","",["STRING"]], ["_containerNumber",-1,[0]] ];
 private _returnValue = false;
 
-if(_parameterCorrect) then {
+if !(isNull _unit || _containerClassname isEqualTo "") then {
 	private _cfg = (configFile >> "CfgWeapons");
-	private _containerNumber = -1;
 	if (_containerClassname isKindOf ["Uniform_Base", _cfg]) then {
 		_containerNumber = 0;
 		

@@ -9,6 +9,8 @@ class spec_loadout {
 		class loadout_bw_tropentarn {};
 		class loadout_bw_flecktarn {};
 		class loadout_csat {};
+		class loadout_cup_ussocom {};
+		class loadout_korea {};
 		class loadout_nato {};
 		class loadout_rus_flora {};
 		class loadout_rus_flora_alt {};

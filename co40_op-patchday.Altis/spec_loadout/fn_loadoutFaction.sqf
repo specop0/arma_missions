@@ -11,6 +11,12 @@ if(_parameterCorrect) then {
         case "CSAT" : {
             _parameter call Spec_fnc_loadout_csat;
         };
+		case "CUP_USSOCOM" : {
+			_parameter call Spec_fnc_loadout_cup_ussocom;
+		};
+		case "KOREA" : {
+			_parameter call Spec_fnc_loadout_korea;
+		};
 		case "USARMY" : {
 			_parameter call Spec_fnc_loadout_usarmy;
 		};
