@@ -1,3 +1,4 @@
+[teleporter] call FETT_fnc_W_addTeleport;
 if(typeOf player in ["TTT_Bussard1_Us_Woodland","TTT_Bussard2_Us_Woodland"]) then {
 	[player] call Spec_cargoDrop_fnc_addPackAction;
 };

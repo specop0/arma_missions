@@ -1,3 +1,4 @@
+#include "W_Teleporter\dialog.hpp"
 class CfgFunctions {
 #include "joko_tent\CfgFunctions.hpp"
 #include "spec_cargoDrop\CfgFunctions.hpp"
@@ -5,6 +6,7 @@ class CfgFunctions {
 #include "spec_tfar\CfgFunctions.hpp"
 #include "spec_zeus\CfgFunctions.hpp"
 #include "FUPS\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
 	class Spec_scripts {
 		tag = "Spec";
 		class init {
