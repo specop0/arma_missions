@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1323.8726,26.676779,959.67755};
-		dir[]={-0.12848632,-0.44776261,0.88497692};
-		up[]={-0.064397745,0.89394647,0.44350937};
-		aside[]={0.98972374,2.0013249e-006,0.14369537};
+		pos[]={1317.7563,43.501427,933.68292};
+		dir[]={-0.033177968,-0.37433147,0.9268043};
+		up[]={-0.013413738,0.927118,0.37451497};
+		aside[]={0.99946314,2.0608131e-006,0.035780534};
 	};
 };
 binarizationWanted=0;
@@ -11701,6 +11701,48 @@ class Mission
 			};
 			id=1488;
 			type="Flag_US_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item234
 		{
@@ -15843,7 +15885,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1327.2061,15.062436,986.38202};
+						position[]={1327.2061,15.062436,986.38196};
 					};
 					side="West";
 					flags=2;
@@ -15851,8 +15893,9 @@ class Mission
 					{
 						skill=0.64999998;
 						rank="MAJOR";
-						init="this setVariable [""Spec_var_TFARgroup"", 10];";
+						init="this setVariable [""Spec_var_TFARgroup"", 10]; this setVariable [""isBussard"",true]";
 						description="Bussard 1 - Pilot";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1942;
@@ -15912,7 +15955,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="this setVariable [""Spec_var_TFARgroup"", 10];";
+						init="this setVariable [""Spec_var_TFARgroup"", 10]; this setVariable [""isBussard"",true]";
 						description="Bussard 2 - Co-Pilot";
 						isPlayable=1;
 					};
@@ -15990,7 +16033,6 @@ class Mission
 						rank="MAJOR";
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
 						description="Grau 1 - Truppfuehrer";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1945;
