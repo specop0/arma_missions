@@ -28,10 +28,10 @@ respawn = BASE;
 respawnDelay = 5;
 respawnDialog = false;
 
-onLoadMission = "Zeus";
+onLoadMission = "Thema SGA Manöver Plus heute:<br/>Kisten packen und entpacken ohne WinRAR";
 OnLoadMissionTime = TRUE;
 author="Spec";
-OnLoadName = "Zeus";
+OnLoadName = "OP Air Raid";
 loadScreen="loading.jpg";
 
 overviewText = "";

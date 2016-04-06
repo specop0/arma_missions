@@ -15623,6 +15623,7 @@ class Mission
 						rank="MAJOR";
 						init="this setVariable [""Spec_var_TFARgroup"", 7]; this setVariable [""isLeader"",true];";
 						description="Weiss 1 - Oberfeldarzt";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1936;
@@ -15895,7 +15896,6 @@ class Mission
 						rank="MAJOR";
 						init="this setVariable [""Spec_var_TFARgroup"", 10]; this setVariable [""isBussard"",true]";
 						description="Bussard 1 - Pilot";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1942;
