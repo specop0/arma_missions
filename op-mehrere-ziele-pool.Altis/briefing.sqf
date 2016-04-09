@@ -10,7 +10,8 @@ Der Funker kann Bussard rufen, muss hierzu aber die LZ erst bewegen bzw. platzie
 Nicht direkt unter dem Landepunkt stehen, da sonst die KI nicht landet (die neue LZ muss dann einige Meter von der Alten entfernt sein) - der Rufende sollte aber nach dem Landen schnell zum Heli laufen, damit dieser nicht abhebt.<br/>
 Fuer die Helis werden ein Haufen Hints ausgegeben - Lesen ist von Vorteil.<br/>
 <font size=20 color='#0094FF'>Sonstiges</font><br/>
-Der Funker besitzt einen Zeus, falls etwas schief laeuft (etwa die KI einen Heli versemmelt - diesen dann per Zeus reparieren). Alternativ ueber den Laptop einen Neuen anfordern.
+Der Funker besitzt einen Zeus, falls etwas schief laeuft (etwa die KI einen Heli versemmelt - diesen dann per Zeus reparieren).<br/>
+Zur Zurückverlegung soll die LR im Chinook genutzt werden (kurz Aufnehmen, Grün anfunken und warten bis der Heli abhebt - frühestens dann kann der alte Rucksack wieder aufgenommen werden).
 "]];
 
 _unit createDiaryRecord ["Diary",["Zusaetzliche Informationen","
