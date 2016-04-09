@@ -1,0 +1,31 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "FUPS\CfgFunctions.hpp"
+#include "spec_dynamic\CfgFunctions.hpp"
+#include "spec_heli\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+};
+//#include "FUPS\hearing_XEH.hpp"
+
+class Header
+{
+	gameType = "coop";
+	minPlayers = "1";
+	maxPlayers = "25";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Wilkommen zur OP Dynamischer FUPS...ähhh...Fuchs";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Dynamischer Fuchs";
+loadScreen="loading.jpg";
+
+overviewText = "";
+overviewPicture = "";
