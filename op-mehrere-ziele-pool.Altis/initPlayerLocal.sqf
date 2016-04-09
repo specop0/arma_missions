@@ -10,3 +10,5 @@ if(typeOf player in [_funkerClass,_tfClass]) then {
 		[player,1, ["ACE_SelfActions"], _actionBussard] call ace_interact_menu_fnc_addActionToObject;
 	};
 };
+
+[player] call compile preprocessFileLineNumbers "briefing.sqf"
