@@ -19,7 +19,7 @@ class EditorData
 		pos[]={23484.551,115.47355,21107.287};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -53,6 +53,10 @@ addons[]=
 	"A3_Air_F_Heli_Light_01"
 };
 randomSeed=96623;
+class ScenarioData
+{
+	author="SpecOp0";
+};
 class Mission
 {
 	class Intel
@@ -60,11 +64,14 @@ class Mission
 		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
+		startWindDir=90;
 		startWaves=0.099999994;
 		forecastWeather=0.29999998;
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
+		forecastWindDir=180;
+		windForced=1;
 		year=2018;
 		month=12;
 		day=14;
@@ -255,7 +262,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={21927.664,19.199839,21005.309};
-			angle=0.34906575;
+			angle=0.34906572;
 			class Attributes
 			{
 				name="bluforNearHostages";
