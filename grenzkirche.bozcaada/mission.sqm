@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=96;
+		nextID=97;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8054.5205,98.307121,10792.69};
-		dir[]={-0.32278347,-0.51589924,0.79352909};
-		up[]={-0.19439091,0.85663801,0.47789007};
-		aside[]={0.92631215,-1.5692785e-007,0.37679404};
+		pos[]={7746.1982,35.962719,12424.211};
+		dir[]={0.34238344,-0.57825953,0.74055648};
+		up[]={0.24267551,0.81583464,0.52489442};
+		aside[]={0.90769827,-4.0163286e-008,-0.41966081};
 	};
 };
 binarizationWanted=0;
@@ -41,6 +41,10 @@ addons[]=
 	"A3_Characters_F_Civil"
 };
 randomSeed=5140179;
+class ScenarioData
+{
+	author="SpecOp0";
+};
 class Mission
 {
 	class Intel
@@ -53,7 +57,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=72;
+		items=73;
 		class Item0
 		{
 			dataType="Marker";
@@ -73,7 +77,7 @@ class Mission
 			fillName="Grid";
 			a=100;
 			b=1000;
-			angle=54.999992;
+			angle=54.999989;
 			id=1;
 		};
 		class Item2
@@ -87,7 +91,7 @@ class Mission
 			fillName="Grid";
 			a=100;
 			b=1350;
-			angle=12.999998;
+			angle=12.999997;
 			id=2;
 		};
 		class Item3
@@ -1007,8 +1011,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7752.7544,17.352825,12446.925};
-						angles[]={0.0009765625,3.6651914,0.002990101};
+						position[]={7752.7539,17.352823,12446.925};
+						angles[]={0.00097738439,3.6651914,0.0029845131};
 					};
 					side="East";
 					flags=2;
@@ -1016,14 +1020,56 @@ class Mission
 					{
 						skill=0.2;
 						rank="COLONEL";
-						init="this setVariable [""Spec_var_TFARgroup"", 0];";
+						init="this setVariable [""Spec_var_TFARgroup"", 5];";
 						name="z1";
-						description="Olga - OPL";
+						description="HQ - Zeus";
 						isPlayer=1;
 						isPlayable=1;
 					};
 					id=61;
 					type="O_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1215,7 +1261,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7762.4443,17.379778,12449.949};
+				position[]={7762.4438,17.379774,12449.949};
 			};
 			id=67;
 			type="ModuleCurator_F";
@@ -2030,6 +2076,116 @@ class Mission
 			{
 			};
 			id=93;
+		};
+		class Item72
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7753.7822,17.352194,12449.153};
+				angles[]={0.00097738439,0,0.0029845131};
+			};
+			id=96;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="z1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
