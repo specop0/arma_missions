@@ -7,36 +7,36 @@
 */
 
 // "Officer"
-#define CLASS_OPL "B_officer_F"
+#define CLASS_OPL "O_officer_F"
 // "Squad Leader"
-#define CLASS_FUNKER "B_Soldier_SL_F"
+#define CLASS_FUNKER "O_Soldier_SL_F"
 // "Combat Life Saver"
-#define CLASS_MEDIC "B_medic_F"
+#define CLASS_MEDIC "O_medic_F"
 
 
 // "Team Leader"
-#define CLASS_TF "B_Soldier_TL_F"
+#define CLASS_TF "O_Soldier_TL_F"
 // "Grenadier"
-#define CLASS_GL "B_Soldier_GL_F"
+#define CLASS_GL "O_Soldier_GL_F"
 
 // "Autorifleman"
-#define CLASS_MG "B_soldier_AR_F"
+#define CLASS_MG "O_Soldier_AR_F"
 // "Ammo Bearer"
-#define CLASS_MG_ASSI "B_Soldier_A_F"
+#define CLASS_MG_ASSI "O_Soldier_A_F"
 
 // "Rifleman (Light)"
-#define CLASS_LMG "B_Soldier_lite_F"
+#define CLASS_LMG "O_Soldier_lite_F"
 
 // "Rifleman (AT)"
-#define CLASS_AT "B_soldier_LAT_F"
+#define CLASS_AT "O_Soldier_LAT_F"
 // "Engineer"
-#define CLASS_PIO "B_engineer_F"
+#define CLASS_PIO "O_engineer_F"
 
 
 // "Helicopter Crew"
-#define CLASS_MEDEVAC "B_helicrew_F"
+#define CLASS_MEDEVAC "O_helicrew_F"
 // "Helicopter Pilot"
-#define CLASS_PILOT "B_Helipilot_F"
+#define CLASS_PILOT "O_helipilot_F"
 
 // "Repair Specialist"
-#define CLASS_LOGISTIC "B_soldier_repair_F"
+#define CLASS_LOGISTIC "o_soldier_repair_F"
