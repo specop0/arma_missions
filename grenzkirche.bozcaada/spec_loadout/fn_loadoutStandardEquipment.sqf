@@ -143,7 +143,7 @@ if(_parameterCorrect) then {
             _unit setVariable ["ACE_IsEngineer", true];
         };
 		case CLASS_PILOT : {
-			_unit setVariable ["ACE_IsEngineer", 2];
+			_unit setVariable ["ACE_IsEngineer", true];
 		};
         case CLASS_MG : {
             [_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;

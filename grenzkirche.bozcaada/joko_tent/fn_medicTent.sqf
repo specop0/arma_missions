@@ -8,7 +8,7 @@ if(hasInterface) then {
 
 	JK_fnc_canBuildTent = {
 		params ["_JKvehicle","_JKplayer"];
-		!(_JKvehicle getVariable ["JK_buildTent", false]) && ((_JKplayer getVariable ["ace_medical_medicClass", 0]) >= 1 || (_JKplayer getVariable ["ACE_IsEngineer", 0]) == 2) && _JKplayer == vehicle _JKplayer
+		!(_JKvehicle getVariable ["JK_buildTent", false]) && ((_JKplayer getVariable ["ace_medical_medicClass", 0]) >= 1 || (_JKplayer getVariable ["ACE_IsEngineer", false])) && _JKplayer == vehicle _JKplayer
 	};
 
 	JK_fnc_destructTent = {
