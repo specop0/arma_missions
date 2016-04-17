@@ -337,17 +337,39 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7762.9209,21.241049,12475.36};
-				angles[]={0,2.0465033,0.0039967569};
+				position[]={7762.9209,21.241016,12475.36};
+				angles[]={0,2.0465033,0.0039968039};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this setVariable [""ace_medical_isMedicalFacility"", true];";
 			};
 			id=25;
 			type="Land_Medevac_HQ_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item15
 		{
@@ -355,7 +377,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7771.707,18.105122,12467.274};
-				angles[]={0,3.6070547,0.002990101};
+				angles[]={0,3.6070547,0.0029845131};
 			};
 			side="Empty";
 			class Attributes
@@ -364,6 +386,29 @@ class Mission
 			};
 			id=26;
 			type="Land_Medevac_house_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item16
 		{
