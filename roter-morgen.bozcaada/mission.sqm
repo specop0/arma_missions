@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=901;
+		nextID=908;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7741.5747,43.684902,12406.403};
-		dir[]={0.35396156,-0.51958138,0.77771264};
-		up[]={0.21524784,0.85439014,0.47293639};
-		aside[]={0.91020572,-5.0495146e-007,-0.41426614};
+		pos[]={7745.5947,36.07645,12419.004};
+		dir[]={0.333736,-0.40980065,0.84903604};
+		up[]={0.14993382,0.9121449,0.38144055};
+		aside[]={0.93076199,-1.1244701e-006,-0.36586034};
 	};
 };
 binarizationWanted=0;
@@ -92,14 +92,19 @@ class Mission
 {
 	class Intel
 	{
-		startWind=0.1;
-		forecastWind=0.1;
+		startWeather=0.054140449;
+		startWind=0.054140449;
+		startWindDir=270;
+		forecastWeather=0.054140449;
+		forecastWind=0.14664555;
 		forecastWaves=0.1;
+		forecastWindDir=270;
+		windForced=1;
 		year=2016;
 		month=1;
 		day=24;
-		hour=8;
-		minute=-30;
+		hour=6;
+		minute=-15;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
 	};

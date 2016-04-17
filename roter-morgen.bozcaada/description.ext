@@ -33,10 +33,11 @@ respawn = BASE;
 respawnDelay = 5;
 respawnDialog = false;
 
-onLoadMission = "Verlegen Sie zur vorgeschobenen Basis Saratow und schützen Sie die Grenze.";
-OnLoadMissionTime = TRUE;
 author="Spec";
 OnLoadName = "OP Roter Morgen";
+loadScreen="loading.jpg";
+onLoadMission = "Greifen Sie die Rebellenbasis im Steinbruch an.";
+OnLoadMissionTime = TRUE;
 
 overviewText = "";
 overviewPicture = "";
