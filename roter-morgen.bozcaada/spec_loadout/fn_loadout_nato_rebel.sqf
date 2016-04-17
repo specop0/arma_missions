@@ -20,8 +20,9 @@
 	Returns:
 	true
 */
-#include "classVariables.hpp"
 #include "addItemToContainer.hpp"
+#define CLASS_MG "B_soldier_AR_F"
+#define CLASS_AT "B_soldier_LAT_F"
 
 private _parameterCorrect = params [ ["_unit",objNull,[objNull]] ];
 private _type = typeOf _unit;
