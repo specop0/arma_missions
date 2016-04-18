@@ -61,15 +61,12 @@ if(_parameterCorrect) then {
 	removeAllAssignedItems _unit;
 	removeUniform _unit;
 	removeVest _unit;
-	removeBackpack _unit;
+	removeBackpackGlobal _unit;
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	_unit forceAddUniform _uniform;
-	private _texture = "\a3\characters_f\BLUFOR\Data\clothing_sage_co.paa";
-	_unit setObjectTextureGlobal [0, _texture];
-	uniformContainer _unit setVariable ["texture", _texture, true];
 	_unit addVest _vest;
 	/*if(_type in [CLASS_MG]) then {
 		_unit addBackpackGlobal _backpackBig;
@@ -149,5 +146,7 @@ if(_parameterCorrect) then {
 	{
 		_unit addSecondaryWeaponItem _x;
 	} forEach _secondaryAccessory;
+	sleep 2;
+	_unit setObjectTextureGlobal [0, "\a3\characters_f\BLUFOR\Data\clothing_sage_co.paa"];
 };
 true

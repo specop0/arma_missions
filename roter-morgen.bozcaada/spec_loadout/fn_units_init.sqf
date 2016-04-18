@@ -21,7 +21,7 @@ if(isServer) then {
 			[_x] call Spec_fnc_loadout_rus_flora_alt;
 			_x addEventHandler ["Respawn", Spec_fnc_loadout_rus_flora_alt];
 		} else {
-			[_x] call Spec_fnc_loadout_nato_rebel;
+			[_x] spawn Spec_fnc_loadout_nato_rebel;
 			_x addEventHandler ["Respawn", Spec_fnc_loadout_nato_rebel];
 		};
 	} foreach  allUnits - allPlayers;
@@ -31,7 +31,7 @@ if(hasInterface) then {
 		[player] call Spec_fnc_loadout_rus_flora_alt;
 		player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout_rus_flora_alt;}];
 	} else {
-		[player] call Spec_fnc_loadout_nato_rebel;
+		[player] spawn Spec_fnc_loadout_nato_rebel;
 		player addEventHandler ["Respawn", {(_this select 0) call Spec_fnc_loadout_nato_rebel;}];
 	};
 };
