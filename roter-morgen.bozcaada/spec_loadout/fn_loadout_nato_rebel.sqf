@@ -67,7 +67,9 @@ if(_parameterCorrect) then {
 
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
 	_unit forceAddUniform _uniform;
-	_unit setObjectTextureGlobal [0, "\a3\characters_f\BLUFOR\Data\clothing_sage_co.paa"];
+	private _texture = "\a3\characters_f\BLUFOR\Data\clothing_sage_co.paa";
+	_unit setObjectTextureGlobal [0, _texture];
+	uniformContainer _unit setVariable ["texture", _texture, true];
 	_unit addVest _vest;
 	/*if(_type in [CLASS_MG]) then {
 		_unit addBackpackGlobal _backpackBig;

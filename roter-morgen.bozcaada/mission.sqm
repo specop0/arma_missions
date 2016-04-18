@@ -1,7 +1,7 @@
 version=51;
 class EditorData
 {
-	moveGridStep=1;
+	moveGridStep=0.125;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
@@ -4497,6 +4497,29 @@ class Mission
 			};
 			id=492;
 			type="01_bushes_01_b_amygdalusn1s_ep1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item88
 		{
@@ -4504,7 +4527,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10542.783,65.44529,9236.4346};
-				angles[]={0.09471602,0,0.19258328};
+				angles[]={0.094719015,0,0.19257964};
 			};
 			side="Empty";
 			class Attributes
@@ -4512,6 +4535,29 @@ class Mission
 			};
 			id=496;
 			type="01_bushes_01_b_amygdalusn1s_ep1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item89
 		{
@@ -4527,6 +4573,29 @@ class Mission
 			};
 			id=497;
 			type="01_bushes_01_b_amygdalusn1s_ep1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item90
 		{
@@ -4991,7 +5060,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10542.85,64.954391,9236.0146};
+				position[]={10542.75,64.96003,9235.75};
 				angles[]={0.09471602,3.6640923,0.19258328};
 			};
 			side="Empty";
@@ -5044,7 +5113,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11189.681,57.457977,10565.152};
+				position[]={11189.125,57.473003,10564.875};
 				angles[]={0.0020132356,3.5582418,6.2571907};
 			};
 			side="Empty";
@@ -5804,7 +5873,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12436.128,42.500416,11483.854};
-				angles[]={0.086781353,0,0.014998405};
+				angles[]={0.086781353,4.9284573,0.014998405};
 			};
 			side="Empty";
 			class Attributes
@@ -5812,14 +5881,37 @@ class Mission
 			};
 			id=632;
 			type="01_bushes_01_b_amygdalusn1s_ep1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item110
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12438.632,42.367451,11487.75};
-				angles[]={0.079830162,0,0.02199479};
+				position[]={12438.625,42.243622,11487.75};
+				angles[]={0.079830162,2.7337029,0.02199479};
 			};
 			side="Empty";
 			class Attributes
@@ -5827,13 +5919,36 @@ class Mission
 			};
 			id=633;
 			type="01_bushes_01_b_amygdalusn1s_ep1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item111
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12436.729,41.950562,11484.183};
+				position[]={12436.75,41.928513,11484.375};
 				angles[]={0.079830162,0.52224588,0.02199479};
 			};
 			side="Empty";
@@ -5848,8 +5963,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12438.698,41.882793,11487.33};
-				angles[]={0,3.6640923,0};
+				position[]={12439,41.75,11487.125};
+				angles[]={0.079830162,3.6640923,0.02199479};
 			};
 			side="Empty";
 			class Attributes
