@@ -20,24 +20,64 @@ if(_parameterCorrect) then {
 	private _groupID = _unitName getVariable ["Spec_var_TFARgroup", 0];
 	private ["_swFreq", "_lrFreq", "_callsign", "_BFTicon", "_BFTremarks"];
 	_BFTicon = "b_inf";
-	_lrFreq = [];
 	_BFTremarks = name _unitName;
 	
 	switch _groupID do {
 		case 0 : {
-			_swFreq = ["101","100","102","103"];
-			_callsign = "Alpha";
+			_swFreq = ["100"];
+			_lrFreq = ["30","31","32","41","42","43","51","52"];
+			_callsign = "Gelb";
 		};
 		case 1 : {
-			_swFreq = ["102","100","101","103"];
-			_callsign = "Bravo";
+			_swFreq = ["111","110","112","113"];
+			_lrFreq = ["31","30"];
+			_callsign = "Gruen";
 		};
 		case 2 : {
-			_swFreq = ["103","100","101","102"];
-			_callsign = "Charlie";
+			_swFreq = ["112","110","111","113"];
+			_lrFreq = ["31","30"];
+			_callsign = "Schwarz";
+		};
+		case 3 : {
+			_swFreq = ["113","110","111","112"];
+			_lrFreq = ["31","30"];
+			_callsign = "Blau";
+		};
+		case 4 : {
+			_swFreq = ["121","120","122","123"];
+			_lrFreq = ["32","30"];
+			_callsign = "Braun";
+		};
+		case 5 : {
+			_swFreq = ["122","120","121","123"];
+			_lrFreq = ["32","30"];
+			_callsign = "Rot";
+		};
+		case 6 : {
+			_swFreq = ["123","120","121","122"];
+			_lrFreq = ["32","30"];
+			_callsign = "Violett";
+		};
+		case 7 : {
+			_swFreq = ["141","140"];
+			_lrFreq = ["41","30","31","32","42","43","51","52"];
+			_callsign = "Weiss";
+			_BFTicon = "b_air";
+		};
+		case 8 : {
+			_swFreq = ["143","140"];
+			_lrFreq = ["43","30","31","32","41","42","51","52"];
+			_callsign = "Bussard";
+			_BFTicon = "b_air";
+		};
+		case 9 : {
+			_swFreq = [];
+			_lrFreq = ["50","30"];
+			_callsign = "Zeus";
 		};
 		default {
-			_swFreq = ["101","100","102","103"];
+			_swFreq = ["100"];
+			_lrFreq = ["30"];
 			_callsign = "Default";
 		};
 	};

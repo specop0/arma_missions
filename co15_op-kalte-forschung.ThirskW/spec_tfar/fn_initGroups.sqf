@@ -19,43 +19,25 @@ private _parameterCorrect = params [["_unitName",objNull,[objNull]]];
 if(_parameterCorrect) then {
 	private _groupID = _unitName getVariable ["Spec_var_TFARgroup", 0];
 	private ["_swFreq", "_lrFreq", "_callsign", "_BFTicon", "_BFTremarks"];
-	_BFTicon = "o_inf";
+	_BFTicon = "b_inf";
 	_BFTremarks = name _unitName;
+	_lrFreq = [];
 	
 	switch _groupID do {
 		case 0 : {
-			_swFreq = ["100"];
-			_lrFreq = ["30","31","32"];
-			_callsign = "Olga";
+			_swFreq = ["101","100","102","103"];
+			_callsign = "Alpha";
 		};
 		case 1 : {
-			_swFreq = ["111","110","112","113"];
-			_lrFreq = ["31","30"];
-			_callsign = "Dmitri";
+			_swFreq = ["102","100","101","103"];
+			_callsign = "Bravo";
 		};
 		case 2 : {
-			_swFreq = ["112","110","111","113"];
-			_lrFreq = ["31","30"];
-			_callsign = "Boris";
-		};
-		case 3 : {
-			_swFreq = ["113","110","111","112"];
-			_lrFreq = ["31","30"];
-			_callsign = "Yuri";
-		};
-		case 4 : {
-			_swFreq = ["120","110","100"];
-			_lrFreq = ["32","30","31"];
-			_callsign = "Tatyana";
-		};
-		case 5 : {
-			_swFreq = ["157","100"];
-			_lrFreq = ["33","30","31","32"];
-			_callsign = "HQ";
+			_swFreq = ["103","100","101","102"];
+			_callsign = "Charlie";
 		};
 		default {
-			_swFreq = ["100"];
-			_lrFreq = ["30"];
+			_swFreq = ["101","100","102","103"];
 			_callsign = "Default";
 		};
 	};
@@ -66,7 +48,7 @@ if(_parameterCorrect) then {
 	// BFT Settings
 	_unitName setGroupIdGlobal [_callsign];
 	_unitName setVariable ["BG_BFT_groupId", _callsign, true];
-	_unitName setVariable ["BG_BFT_icon", _BFTicon, true];
+	_unitName setVariable ["BG_BFT_icon", _BFTicon, true]; 
 	_unitName setVariable ["BG_BFT_remarks", _BFTremarks, true];
 	if(count _swFreq > 0) then {
 		_unitName setVariable ["BG_BFT_radioSR", (_swFreq select 0), true];

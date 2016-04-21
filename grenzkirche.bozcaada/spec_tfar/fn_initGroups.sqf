@@ -24,28 +24,38 @@ if(_parameterCorrect) then {
 	
 	switch _groupID do {
 		case 0 : {
-			_swFreq = ["111","110","112","113","114"];
-			_lrFreq = ["31","30"];
-			_callsign = "Gruen";
+			_swFreq = ["100"];
+			_lrFreq = ["30","31","32"];
+			_callsign = "Olga";
 		};
 		case 1 : {
-			_swFreq = ["112","110","111","113","114"];
+			_swFreq = ["111","110","112","113"];
 			_lrFreq = ["31","30"];
-			_callsign = "Schwarz";
+			_callsign = "Dmitri";
 		};
 		case 2 : {
-			_swFreq = ["113","110","111","112","114"];
+			_swFreq = ["112","110","111","113"];
 			_lrFreq = ["31","30"];
-			_callsign = "Blau";
+			_callsign = "Boris";
 		};
 		case 3 : {
-			_swFreq = ["114","110","111","112","113"];
+			_swFreq = ["113","110","111","112"];
 			_lrFreq = ["31","30"];
-			_callsign = "Violett";
+			_callsign = "Yuri";
+		};
+		case 4 : {
+			_swFreq = ["120","110","100"];
+			_lrFreq = ["32","30","31"];
+			_callsign = "Tatyana";
+		};
+		case 5 : {
+			_swFreq = ["157","100"];
+			_lrFreq = ["33","30","31","32"];
+			_callsign = "HQ";
 		};
 		default {
-			_swFreq = ["110"];
-			_lrFreq = ["31"];
+			_swFreq = ["100"];
+			_lrFreq = ["30"];
 			_callsign = "Default";
 		};
 	};
@@ -56,7 +66,7 @@ if(_parameterCorrect) then {
 	// BFT Settings
 	_unitName setGroupIdGlobal [_callsign];
 	_unitName setVariable ["BG_BFT_groupId", _callsign, true];
-	_unitName setVariable ["BG_BFT_icon", _BFTicon, true];
+	_unitName setVariable ["BG_BFT_icon", _BFTicon, true]; 
 	_unitName setVariable ["BG_BFT_remarks", _BFTremarks, true];
 	if(count _swFreq > 0) then {
 		_unitName setVariable ["BG_BFT_radioSR", (_swFreq select 0), true];

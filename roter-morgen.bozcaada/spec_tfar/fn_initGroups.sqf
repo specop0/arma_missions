@@ -25,55 +25,53 @@ if(_parameterCorrect) then {
 	switch _groupID do {
 		case 0 : {
 			_swFreq = ["100"];
-			_lrFreq = ["30","31","32","41","42","43","51","52"];
-			_callsign = "Gelb";
+			_lrFreq = ["30","31","32","41","42","43"];
+			_callsign = "Olga";
 		};
 		case 1 : {
 			_swFreq = ["111","110","112","113"];
 			_lrFreq = ["31","30"];
-			_callsign = "Gruen";
+			_callsign = "Dmitri";
 		};
 		case 2 : {
 			_swFreq = ["112","110","111","113"];
 			_lrFreq = ["31","30"];
-			_callsign = "Schwarz";
+			_callsign = "Boris";
 		};
 		case 3 : {
 			_swFreq = ["113","110","111","112"];
 			_lrFreq = ["31","30"];
-			_callsign = "Blau";
+			_callsign = "Yuri";
 		};
 		case 4 : {
 			_swFreq = ["121","120","122","123"];
 			_lrFreq = ["32","30"];
-			_callsign = "Braun";
+			_callsign = "Anna";
 		};
 		case 5 : {
 			_swFreq = ["122","120","121","123"];
 			_lrFreq = ["32","30"];
-			_callsign = "Rot";
+			_callsign = "Elena";
 		};
 		case 6 : {
 			_swFreq = ["123","120","121","122"];
 			_lrFreq = ["32","30"];
-			_callsign = "Violett";
+			_callsign = "Tatyana";
 		};
 		case 7 : {
-			_swFreq = ["141","140"];
-			_lrFreq = ["41","30","31","32","42","43","51","52"];
-			_callsign = "Weiss";
-			_BFTicon = "b_air";
+			_swFreq = ["142","140"];
+			_lrFreq = ["42","30","31","32","41","43"];
+			_callsign = "Leonid";
 		};
 		case 8 : {
-			_swFreq = ["143","140"];
-			_lrFreq = ["43","30","31","32","41","42","51","52"];
-			_callsign = "Bussard";
-			_BFTicon = "b_air";
+			_swFreq = ["141","140"];
+			_lrFreq = ["41","30","31","32","42","43"];
+			_callsign = "Mikhail";
 		};
 		case 9 : {
-			_swFreq = [];
-			_lrFreq = ["50","30"];
-			_callsign = "Zeus";
+			_swFreq = ["143","140"];
+			_lrFreq = ["43","30","31","32","41","42"];
+			_callsign = "Vasily";
 		};
 		default {
 			_swFreq = ["100"];
@@ -88,7 +86,7 @@ if(_parameterCorrect) then {
 	// BFT Settings
 	_unitName setGroupIdGlobal [_callsign];
 	_unitName setVariable ["BG_BFT_groupId", _callsign, true];
-	_unitName setVariable ["BG_BFT_icon", _BFTicon, true];
+	_unitName setVariable ["BG_BFT_icon", _BFTicon, true]; 
 	_unitName setVariable ["BG_BFT_remarks", _BFTremarks, true];
 	if(count _swFreq > 0) then {
 		_unitName setVariable ["BG_BFT_radioSR", (_swFreq select 0), true];

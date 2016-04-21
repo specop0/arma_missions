@@ -24,80 +24,28 @@ if(_parameterCorrect) then {
 	
 	switch _groupID do {
 		case 0 : {
-			_swFreq = ["100"];
-			_lrFreq = ["30","31","32","41","42","43","44"];
-			_callsign = "Gelb";
-			_BFTicon = "b_hq";
-		};
-		case 1 : {
-			_swFreq = ["111","110","112","113"];
+			_swFreq = ["111","110","112","113","114"];
 			_lrFreq = ["31","30"];
 			_callsign = "Gruen";
 		};
-		case 2 : {
-			_swFreq = ["112","110","111","113"];
+		case 1 : {
+			_swFreq = ["112","110","111","113","114"];
 			_lrFreq = ["31","30"];
 			_callsign = "Schwarz";
 		};
-		case 3 : {
-			_swFreq = ["113","110","111","112"];
+		case 2 : {
+			_swFreq = ["113","110","111","112","114"];
 			_lrFreq = ["31","30"];
 			_callsign = "Blau";
 		};
-		case 4 : {
-			_swFreq = ["121","120","122","123"];
-			_lrFreq = ["32","30"];
-			_callsign = "Braun";
-		};
-		case 5 : {
-			_swFreq = ["122","120","121","123"];
-			_lrFreq = ["32","30"];
-			_callsign = "Rot";
-		};
-		case 6 : {
-			_swFreq = ["123","120","121","122"];
-			_lrFreq = ["32","30"];
+		case 3 : {
+			_swFreq = ["114","110","111","112","113"];
+			_lrFreq = ["31","30"];
 			_callsign = "Violett";
 		};
-		case 7 : {
-			_swFreq = ["141","111","121"];
-			_lrFreq = ["41","30","31","32","42","43","44"];
-			_callsign = "Weiss";
-			_BFTicon = "b_med";
-		};
-		case 8 : {
-			_swFreq = ["142","140"];
-			_lrFreq = ["42","30","31","32","41","43","44"];
-			_callsign = "Adler";
-			_BFTicon = "b_plane";
-		};
-		case 9 : {
-			_swFreq = ["143","140"];
-			_lrFreq = ["43","30","31","32","41","42","51","52"];
-			_callsign = "Silber - Habicht";
-			_BFTicon = "b_service";
-		};
-		case 10 : {
-			_swFreq = ["143","140"];
-			_lrFreq = ["43","30","31","32","41","42","44"];
-			_callsign = "Silber - Bussard";
-			_BFTicon = "b_service";			
-		};
-		case 11 : {
-			_swFreq = ["151","150","152"];
-			_lrFreq = ["51","30","31","32","52"];
-			_callsign = "Gold";
-			_BFTicon = "b_recon";
-		};
-		case 12 : {
-			_swFreq = ["144","111","121"];
-			_lrFreq = ["44","30","31","32"];
-			_callsign = "Grau";
-			_BFTicon = "b_service";
-		};
 		default {
-			_swFreq = ["100"];
-			_lrFreq = ["30"];
+			_swFreq = ["110"];
+			_lrFreq = ["31"];
 			_callsign = "Default";
 		};
 	};
