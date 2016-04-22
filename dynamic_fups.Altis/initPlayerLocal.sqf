@@ -25,10 +25,9 @@ laptop addAction [
 	"_this distance _target <3"
 ];
 player addEventHandler ["Respawn",{
-	private _posASL = getPosASL player;
-	_posASL resize 2;
-	if(_posASL distance (getMarkerPos "respawn") < 1000) then {
-		deleteVehicle (_this select 1);
+	params ["","_corpse"];
+	if((getPosASL player) distance (getMarkerPos "respawn") < 1000) then {
+		deleteVehicle _corpse;
 	};
 }];
 // call medevac and logistic helicopter
