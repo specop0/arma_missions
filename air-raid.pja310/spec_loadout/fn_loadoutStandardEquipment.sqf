@@ -53,7 +53,7 @@ if(_parameterCorrect) then {
         if(_type in [CLASS_MEDEVAC, CLASS_FUNKER]) then {
             [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         } else {
-            [_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+			[_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_LOGISTIC, CLASS_PILOT]) then {

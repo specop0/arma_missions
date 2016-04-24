@@ -1,10 +1,10 @@
 #include "addItemToContainer.hpp"
 
-private _parameterCorrect = params [ ["_unit",objNull,[objNull]] ];
+private _parameterCorrect = params [ ["_unit",objNull,[objNull]], ["_backpackLR","",[""]] ];
 
 if(_parameterCorrect) then {
 	removeBackpackGlobal _unit;
-	_unit addBackpackGlobal "TTT_Backpack_Funkerfac_Bw_Flecktarn";
+	_unit addBackpackGlobal _backpackLR;
 	clearItemCargoGlobal (unitBackpack _unit);
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	[_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

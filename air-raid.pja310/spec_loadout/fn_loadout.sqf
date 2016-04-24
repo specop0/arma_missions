@@ -53,16 +53,16 @@ if(_this isEqualType [] && {count _this > 3}) then {
 	};
 };
 
-private _uniform = "MNP_CombatUniform_TIG";
-private _vest = selectRandom ["MNP_Vest_TS_1","MNP_Vest_TS_2"];
+private _uniform = "rhs_uniform_cu_ocp";
+private _vest = "MNP_Vest_DS_2";
 
-private _backpack = selectRandom ["B_FieldPack_blk","B_AssaultPack_blk"];
-private _backpackBig = "CUP_B_USPack_Black";
-private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn";
+private _backpack = "B_AssaultPack_mcamo";
+private _backpackBig = "B_Carryall_mcamo";
+private _backpackLR = "TTT_Backpack_Funkerfac_Us_Woodland";
 
-private _headgear = "MNP_Helmet_ACU";
+private _headgear = "H_HelmetB_light_snakeskin";
 private _headgearPilot = selectRandom ["TTT_Helmet_Buzzard","TTT_Helmet_Eagle"];
-private _goggles = "G_Combat";
+private _goggles = "rhs_googles_clear";
 // use profile goggle if available
 if!(goggles _unit isEqualTo "") then {
 	_goggles = goggles _unit;
@@ -84,7 +84,7 @@ private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "rhs_weap_m240B_CAP";
+private _mgWeapon = "rhs_weap_m240B";
 private _mgAmmo = "rhsusf_100Rnd_762x51_m80a1epr";
 private _mgAccessory = [];
 private _mgAccessoryExtra = ["rhsusf_acc_ELCAN","rhsusf_acc_eotech_552"];
@@ -110,7 +110,8 @@ if(_parameterCorrect) then {
 	removeGoggles _unit;
 
 	comment "Vest, Uniform, Backpack, Headgear (, Googgles)";
-	[_unit, _uniform] call Spec_fnc_addContainer;
+	_unit forceAddUniform _uniform;
+	//[_unit, _uniform] call Spec_fnc_addContainer;
 	[_unit, _vest] call Spec_fnc_addContainer;
 	if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
 		[_unit, _backpackLR] call Spec_fnc_addContainer;
@@ -204,7 +205,7 @@ if(_parameterCorrect) then {
 		_unit addSecondaryWeaponItem _x;
 	} forEach _secondaryAccessory;
 	if(_unit getVariable ["isLeader",false]) then {
-		_unit call Spec_fnc_longrangeMedic;
+		[_unit,_backpackLR] call Spec_fnc_longrangeMedic;
 	};
 };
 true
