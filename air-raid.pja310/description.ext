@@ -12,6 +12,7 @@ class CfgFunctions {
 		class init {
 			file="scripts";
 			class unlimitedAmmo { postInit = 1; };
+			class crateMedic {};
 		};
 	};
 };

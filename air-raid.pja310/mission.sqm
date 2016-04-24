@@ -1360,10 +1360,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=442;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.089999199;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item27
 		{
@@ -1377,10 +1401,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=446;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.089999199;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item28
 		{
@@ -1844,10 +1892,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=483;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.0011291504;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item54
 		{
@@ -1861,9 +1933,33 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=484;
 			type="TTT_Logistik_Medic_Us";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item55
 		{
@@ -1877,9 +1973,33 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=487;
 			type="TTT_Logistik_Medic_Us";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item56
 		{
@@ -1893,10 +2013,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=488;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.001083374;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item57
 		{
@@ -1910,10 +2054,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=489;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.0060472488;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item58
 		{
@@ -1927,10 +2095,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=490;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.0071763992;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item59
 		{
@@ -2101,10 +2293,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=496;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.087787628;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item64
 		{
@@ -2118,10 +2334,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=497;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.088176727;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item65
 		{
@@ -2135,9 +2375,33 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=498;
 			type="TTT_Logistik_Medic_Us";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item66
 		{
@@ -2151,10 +2415,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this] call Spec_fnc_crateMedic";
 			};
 			id=499;
 			type="TTT_Logistik_Medic_Us";
 			atlOffset=0.0049629211;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item67
 		{
