@@ -3,6 +3,7 @@ class Spec_dynamic {
     class init {
         file="spec_dynamic";
         class addControlActions {};
+        class changeSettings {};
         class cleanUp {};
         class initCityList { postInit = 1; };
         class selectCity {};

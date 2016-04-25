@@ -4,3 +4,4 @@ private _id = addMissionEventHandler ["HandleDisconnect",{
         deleteVehicle _unit;
     };
 }];
+[] call Spec_dynamic_fnc_initCityList;

@@ -58,7 +58,8 @@ if(isServer) then {
         private _noVehicles = NUMBER_OF_VEHICLES;
         private _noArmored = NUMBER_OF_ARMORED;
         private _vehiclePositions = _posLocation nearRoads 300;
-        private _indexDiff = floor ((count _vehiclePositions) / (_noVehicles + _noArmored));
+        private _noAllVehicles = (_noVehicles + _noArmored) max 1;
+        private _indexDiff = floor ((count _vehiclePositions) / _noAllVehicles);
         private _indexVehicle = 0;
         // TODO error count _vehiclePositions < (_noVehicles + _noArmored)
         

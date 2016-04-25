@@ -29,62 +29,19 @@ if(_parameterCorrect && hasInterface) then {
         _object addAction [format ["<t color='#%2'>Show Extra %1</t>", _type select _i, _color select _i], {
             params ["_target","_caller"];
             (_this select 3) params ["_i"];
-            [0,{
-                params ["_index","_caller"];
-                private _extraType = ["Group","Vehicle","Armor"] select _index;
-                private _extraVar = [EXTRA_GROUP_VAR,EXTRA_VEHICLE_VAR,EXTRA_ARMOR_VAR] select _index;
-                format ["Extra %1 = %2", _extraType, _extraVar] remoteExecCall ["hint",_caller];
-            }, [_i,_caller]] call CBA_fnc_globalExecute;
+            [_caller,_i,0] remoteExec ["Spec_dynamic_fnc_changeSettings",2];
         }, _i, _entry, false, false, "", _conditionString ];
         // increase
         _object addAction [format ["<t color='#%2'>Increase Extra %1</t>", _type select _i, _color select _i], {
             params ["_target","_caller"];
             (_this select 3) params ["_i"];
-            [0,{
-                params ["_index","_caller"];
-                private _extraVar = "ERROR";
-                switch (_index) do {
-                    case 0 : {
-                        EXTRA_GROUP_VAR = EXTRA_GROUP_VAR +1;
-                        _extraVar = EXTRA_GROUP_VAR;
-                    };
-                    case 1: {
-                        EXTRA_VEHICLE_VAR = EXTRA_VEHICLE_VAR + 1;
-                        _extraVar = EXTRA_VEHICLE_VAR;
-                    };
-                    case 2: {
-                        EXTRA_ARMOR_VAR = EXTRA_ARMOR_VAR + 1;
-                        _extraVar = EXTRA_ARMOR_VAR;
-                    };
-                };
-                private _extraType = ["Group","Vehicle","Armor"] select _index;
-                format ["Extra %1 = %2", _extraType, _extraVar] remoteExecCall ["hint",_caller];
-            }, [_i,_caller]] call CBA_fnc_globalExecute;
+            [_caller,_i,1] remoteExec ["Spec_dynamic_fnc_changeSettings",2];
         }, _i, _entry, false, false, "", _conditionString ];
         // decrease
         _object addAction [format ["<t color='#%2'>Decrease Extra %1</t>", _type select _i, _color select _i], {
             params ["_target","_caller"];
             (_this select 3) params ["_i"];
-            [0,{
-                params ["_index","_caller"];
-                private _extraVar = "ERROR";
-                switch (_index) do {
-                    case 0 : {
-                        EXTRA_GROUP_VAR = EXTRA_GROUP_VAR - 1;
-                        _extraVar = EXTRA_GROUP_VAR;
-                    };
-                    case 1: {
-                        EXTRA_VEHICLE_VAR = EXTRA_VEHICLE_VAR - 1;
-                        _extraVar = EXTRA_VEHICLE_VAR;
-                    };
-                    case 2: {
-                        EXTRA_ARMOR_VAR = EXTRA_ARMOR_VAR - 1;
-                        _extraVar = EXTRA_ARMOR_VAR;
-                    };
-                };
-                private _extraType = ["Group","Vehicle","Armor"] select _index;
-                format ["Extra %1 = %2", _extraType, _extraVar] remoteExecCall ["hint",_caller];
-            }, [_i,_caller]] call CBA_fnc_globalExecute;
+            [_caller,_i,-1] remoteExec ["Spec_dynamic_fnc_changeSettings",2];
         }, _i, _entry, false, false, "", _conditionString ];
     };
     
