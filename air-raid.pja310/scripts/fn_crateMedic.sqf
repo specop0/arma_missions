@@ -19,23 +19,23 @@ private _saline500 = "ACE_salineIV_500";
 private _bodyBag = "ACE_bodyBag";
 
 if(_parameterCorrect && isServer) then {
-	clearWeaponCargoGlobal _crate;
-	clearMagazineCargoGlobal _crate;
-	clearItemCargoGlobal _crate;
-	_crate addItemCargoGlobal [_bandageBasic,20];
-	_crate addItemCargoGlobal [_packingBandage,75];
-	_crate addItemCargoGlobal [_quikcloth,20];
-	_crate addItemCargoGlobal [_elasticBandage,75];
-	_crate addItemCargoGlobal [_tourniquet,10];
-	
-	_crate addItemCargoGlobal [_saline,25];
-	_crate addItemCargoGlobal [_saline500,20];
-	_crate addItemCargoGlobal [_morphine,15];
-	_crate addItemCargoGlobal [_epinephrine,15];
-	_crate addItemCargoGlobal [_atropine,10];
-	
-	_crate addItemCargoGlobal [_personalAidKit,15];
-	_crate addItemCargoGlobal [_surgicalKit,15];
-	
-	_crate addItemCargoGlobal [_bodyBag, 10];
+    clearWeaponCargoGlobal _crate;
+    clearMagazineCargoGlobal _crate;
+    clearItemCargoGlobal _crate;
+    _crate addItemCargoGlobal [_bandageBasic,20];
+    _crate addItemCargoGlobal [_packingBandage,75];
+    _crate addItemCargoGlobal [_quikcloth,20];
+    _crate addItemCargoGlobal [_elasticBandage,75];
+    _crate addItemCargoGlobal [_tourniquet,10];
+    
+    _crate addItemCargoGlobal [_saline,25];
+    _crate addItemCargoGlobal [_saline500,20];
+    _crate addItemCargoGlobal [_morphine,15];
+    _crate addItemCargoGlobal [_epinephrine,15];
+    _crate addItemCargoGlobal [_atropine,10];
+    
+    _crate addItemCargoGlobal [_personalAidKit,15];
+    _crate addItemCargoGlobal [_surgicalKit,15];
+    
+    _crate addItemCargoGlobal [_bodyBag, 10];
 };

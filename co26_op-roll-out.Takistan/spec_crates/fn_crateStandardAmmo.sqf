@@ -8,12 +8,12 @@ private _smokeShellRed = "1Rnd_SmokeRed_Grenade_shell";
 private _heShell = "1Rnd_HE_Grenade_shell";
 
 if(_parameterCorrect && isServer) then {
-	clearWeaponCargoGlobal _x;
-	clearMagazineCargoGlobal _x;
-	clearItemCargoGlobal _x;
-	_x addMagazineCargoGlobal [_standardAmmo,34];
-	_x addMagazineCargoGlobal [_mgAmmo,8];
-	_x addMagazineCargoGlobal [_smokeShell,6];
-	_x addMagazineCargoGlobal [_smokeShellRed,6];
-	_x addMagazineCargoGlobal [_heShell,12];
+    clearWeaponCargoGlobal _x;
+    clearMagazineCargoGlobal _x;
+    clearItemCargoGlobal _x;
+    _x addMagazineCargoGlobal [_standardAmmo,34];
+    _x addMagazineCargoGlobal [_mgAmmo,8];
+    _x addMagazineCargoGlobal [_smokeShell,6];
+    _x addMagazineCargoGlobal [_smokeShellRed,6];
+    _x addMagazineCargoGlobal [_heShell,12];
 };

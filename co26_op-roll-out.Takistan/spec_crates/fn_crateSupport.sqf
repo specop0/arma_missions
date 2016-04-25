@@ -15,20 +15,20 @@ private _weaponSilencerL = "muzzle_snds_L";
 private _weaponScope = "optic_Arco";
 
 if(_parameterCorrect && isServer) then {
-	clearWeaponCargoGlobal _x;
-	clearMagazineCargoGlobal _x;
-	clearItemCargoGlobal _x;
-	_x addItemCargoGlobal [_mineDetector,3];
-	_x addItemCargoGlobal [_binocular,12];
-	_x addItemCargoGlobal [_gps,5];
-	_x addItemCargoGlobal [_rangefinder,5];
-	_x addItemCargoGlobal [_toolkit,3];
-	
-	_x addBackpackCargoGlobal [_backpack,4];
-	
-	_x addItemCargoGlobal [_weaponFlashlight,12];
-	_x addItemCargoGlobal [_weaponLaser,12];
-	_x addItemCargoGlobal [_weaponSilencerH,12];
-	_x addItemCargoGlobal [_weaponSilencerL,12];
-	_x addItemCargoGlobal [_weaponSilencerL,12];
+    clearWeaponCargoGlobal _x;
+    clearMagazineCargoGlobal _x;
+    clearItemCargoGlobal _x;
+    _x addItemCargoGlobal [_mineDetector,3];
+    _x addItemCargoGlobal [_binocular,12];
+    _x addItemCargoGlobal [_gps,5];
+    _x addItemCargoGlobal [_rangefinder,5];
+    _x addItemCargoGlobal [_toolkit,3];
+    
+    _x addBackpackCargoGlobal [_backpack,4];
+    
+    _x addItemCargoGlobal [_weaponFlashlight,12];
+    _x addItemCargoGlobal [_weaponLaser,12];
+    _x addItemCargoGlobal [_weaponSilencerH,12];
+    _x addItemCargoGlobal [_weaponSilencerL,12];
+    _x addItemCargoGlobal [_weaponSilencerL,12];
 };

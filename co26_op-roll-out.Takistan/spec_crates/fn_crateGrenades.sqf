@@ -8,13 +8,13 @@ private _stunGranade = "ACE_M84";
 private _irStrobe = "ACE_IR_Strobe_Item";
 
 if(_parameterCorrect && isServer) then {
-	clearWeaponCargoGlobal _x;
-	clearMagazineCargoGlobal _x;
-	clearItemCargoGlobal _x;
-	_x addItemCargoGlobal [_smokeWhite,12];
-	_x addItemCargoGlobal [_smokeRed,12];
-	_x addItemCargoGlobal [_smokeGreen,12];
-	_x addItemCargoGlobal [_smokePurple,12];
-	_x addItemCargoGlobal [_stunGranade,12];
-	_x addItemCargoGlobal [_irStrobe,12];
+    clearWeaponCargoGlobal _x;
+    clearMagazineCargoGlobal _x;
+    clearItemCargoGlobal _x;
+    _x addItemCargoGlobal [_smokeWhite,12];
+    _x addItemCargoGlobal [_smokeRed,12];
+    _x addItemCargoGlobal [_smokeGreen,12];
+    _x addItemCargoGlobal [_smokePurple,12];
+    _x addItemCargoGlobal [_stunGranade,12];
+    _x addItemCargoGlobal [_irStrobe,12];
 };

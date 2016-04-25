@@ -9,14 +9,14 @@ class CfgFunctions {
 #include "spec_zeus\CfgFunctions.hpp"
 
 class spec_scripts {
-	tag = "Spec";
-	class init {
-		file="scripts";
-		class fennek {};
-		class kasatka {};
-		class pandur {};
-		class reinforceMarker {};
-	};
+    tag = "Spec";
+    class init {
+        file="scripts";
+        class fennek {};
+        class kasatka {};
+        class pandur {};
+        class reinforceMarker {};
+    };
 };
 
 };
@@ -24,9 +24,9 @@ class spec_scripts {
 
 class Header
 {
-	gameType = "coop";
-	minPlayers = "1";
-	maxPlayers = "22";
+    gameType = "coop";
+    minPlayers = "1";
+    maxPlayers = "22";
 };
 
 respawn = BASE;

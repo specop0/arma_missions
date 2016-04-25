@@ -1,19 +1,19 @@
 /*
-	Author: SpecOp0
+    Author: SpecOp0
 
-	Description:
-	Assigns the standard equipment to a given unit.
-	For example map, radio, grenades and medic stuff.
+    Description:
+    Assigns the standard equipment to a given unit.
+    For example map, radio, grenades and medic stuff.
     Furthermore role specific stuff like explosives or 40mm HE grenades.
 
-	Can be used as an addAction entry as well.
+    Can be used as an addAction entry as well.
 
-	Parameter(s):
-	0: OBJECT - unit to assign loadout to
-	1: STRING - classname which represents loadout type
+    Parameter(s):
+    0: OBJECT - unit to assign loadout to
+    1: STRING - classname which represents loadout type
 
-	Returns:
-	true
+    Returns:
+    true
 */
 #include "addItemToContainer.hpp"
 #include "classVariables.hpp"
@@ -33,12 +33,12 @@ if(_parameterCorrect) then {
         if(_type in [CLASS_AT, CLASS_MG_ASSI, CLASS_GL]) then{
             _unit addWeapon "ACE_Yardage450";
         } else {
-			if(_type == CLASS_FUNKER) then {
-				_unit addWeapon "Laserdesignator";
-				[_unit,"Laserbatteries",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-			} else {
-				_unit addWeapon "Binocular";
-			};
+            if(_type == CLASS_FUNKER) then {
+                _unit addWeapon "Laserdesignator";
+                [_unit,"Laserbatteries",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+            } else {
+                _unit addWeapon "Binocular";
+            };
         };
     };
 
@@ -83,37 +83,37 @@ if(_parameterCorrect) then {
     comment "medic equipment";
     switch _type do {
         case CLASS_MEDIC : {
-			[_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_salineIV_500",ADD_TO_BACKPACK, 4] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_atropine",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ace_medical_medicClass", 1];
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_salineIV_500",ADD_TO_BACKPACK, 4] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_atropine",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+            _unit setVariable ["ace_medical_medicClass", 1];
         };
         case CLASS_MEDEVAC : {
-			[_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_salineIV",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_atropine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_personalAidKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
-			_unit setVariable ["ace_medical_medicClass", 2];
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_salineIV",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_atropine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_personalAidKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+            _unit setVariable ["ace_medical_medicClass", 2];
         };
         default {
-			[_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-			[_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
         };
     };
 
@@ -126,9 +126,9 @@ if(_parameterCorrect) then {
         case CLASS_GL : {
             [_unit,"1Rnd_HE_Grenade_shell",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
         };
-		case CLASS_FUNKER : {
-			[_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
-		};
+        case CLASS_FUNKER : {
+            [_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
+        };
         case CLASS_PIO : {
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
@@ -137,7 +137,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", true];
-			_unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_isEOD", true];
         };
         case CLASS_LOGISTIC : {
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

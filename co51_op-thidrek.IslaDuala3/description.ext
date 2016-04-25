@@ -3,25 +3,25 @@ class CfgFunctions {
 #include "W_Teleporter\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
 #include "spec_checkpoint\CfgFunctions.hpp"
-	class spec_scripts {
-		tag = "Spec";
-		class init {
-			file="scripts";
-			class deleteGroup {};
-			class disableGroupAI {};
-			class fireAtNearest {};
-			class playMove {};
-		};
-	};
+    class spec_scripts {
+        tag = "Spec";
+        class init {
+            file="scripts";
+            class deleteGroup {};
+            class disableGroupAI {};
+            class fireAtNearest {};
+            class playMove {};
+        };
+    };
 #include "FUPS\CfgFunctions.hpp"
 };
 //#include "FUPS\hearing_XEH.hpp"
 
 class Header
 {
-	gameType = "coop";
-	minPlayers = "1";
-	maxPlayers = "51";
+    gameType = "coop";
+    minPlayers = "1";
+    maxPlayers = "51";
 };
 
 respawn = 3;

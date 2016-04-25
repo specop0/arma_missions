@@ -6,22 +6,22 @@ class CfgFunctions {
 #include "spec_zeus\CfgFunctions.hpp"
 #include "W_Teleporter\CfgFunctions.hpp"
 class spec_scripts {
-	tag = "Spec";
-	class init {
-		file="scripts";
-		class activateWaypointAfterCycle {};
-		class changeSide {};
-		class gunlightsGetOutEH {};
-	};
+    tag = "Spec";
+    class init {
+        file="scripts";
+        class activateWaypointAfterCycle {};
+        class changeSide {};
+        class gunlightsGetOutEH {};
+    };
 };
 };
 
 
 class Header
 {
-	gameType = "coop";
-	minPlayers = "1";
-	maxPlayers = "52";
+    gameType = "coop";
+    minPlayers = "1";
+    maxPlayers = "52";
 };
 
 respawn = BASE;

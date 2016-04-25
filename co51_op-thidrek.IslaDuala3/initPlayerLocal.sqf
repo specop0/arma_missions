@@ -3,5 +3,5 @@
 
 private _match = [typeOf player,"Gelb"] call ace_common_fnc_stringCompare;
 if(_match >= 4) then {
-	player call Spec_checkpoint_fnc_addShowDataAction;
+    player call Spec_checkpoint_fnc_addShowDataAction;
 };

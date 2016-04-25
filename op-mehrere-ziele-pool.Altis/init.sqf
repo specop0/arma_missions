@@ -1,4 +1,4 @@
 if(isNil "repaired") then {
-	repaired = false;
+    repaired = false;
 };
 call compile preprocessFileLineNumbers "carAlarm.sqf";

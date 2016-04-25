@@ -1,8 +1,8 @@
 /*
-	Author: SpecOp0
+    Author: SpecOp0
 
-	Description:
-	Defines CLASS_TYPE variables.
+    Description:
+    Defines CLASS_TYPE variables.
 
 */
 

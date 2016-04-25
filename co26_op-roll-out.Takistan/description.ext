@@ -6,20 +6,20 @@ class CfgFunctions {
 #include "joko_tent\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
 
-	class Spec{
-		class init{
-			file="scripts";
-			class spawn_vehicle {};
-		};
-	};
+    class Spec{
+        class init{
+            file="scripts";
+            class spawn_vehicle {};
+        };
+    };
 };
 
 
 class Header
 {
-	gameType = "coop";
-	minPlayers = "1";
-	maxPlayers = "26";
+    gameType = "coop";
+    minPlayers = "1";
+    maxPlayers = "26";
 };
 
 respawn = BASE;
