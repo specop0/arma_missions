@@ -36,7 +36,7 @@ if(isNull _caller) then {
     if( isNull _helicopter || (_helipadBasePos select 0 == 0 && _helipadBasePos select 1 == 0 && _helipadBasePos select 2 == 0) ) then {
         format ["Script Error: Helicopter '%1' and/or Helipad '%2' not found", str _helicopter, str _markerNameBase] remoteExec ["hint",_caller];
     } else {
-        private _crewGroup = group _helicopter;
+        private _crewGroup = group driver _helicopter;
         _crewGroup setGroupOwner 2;
         
         if(isNull _crewGroup) then {
@@ -63,6 +63,7 @@ if(isNull _caller) then {
                 _crewGroup setCurrentWaypoint _wp0;
                 private _wp1 = _crewGroup addWaypoint [_helipadPos,0];
                 _wp1 setWaypointType "TR UNLOAD"; 
+                _wp1 setWaypointTimeout [7,7,7];
                 HINT_HELI_TAXI_ON_MOVE remoteExec ["hint",_caller];    
 
                 private _waypointsOfThisScript = [_wp0 select 1, _wp1 select 1];                
@@ -122,6 +123,7 @@ if(isNull _caller) then {
                 // fly to base and turn off engine
                 private _wp2 = _crewGroup addWaypoint [_helipadBasePos,0];
                 _wp2 setWaypointType "TR UNLOAD"; 
+                _wp2 setWaypointTimeout [7,7,7];
                 _wp2 setWaypointStatements ["true","this action [""engineOff"", vehicle this];"];
             };
         }; 
