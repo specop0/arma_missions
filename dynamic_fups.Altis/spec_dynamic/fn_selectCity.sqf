@@ -195,8 +195,12 @@ if(isServer) then {
         private _trigger = createTrigger ["EmptyDetector",_posLocation,false];
         _trigger setTriggerArea [_locationSize select 0, _locationSize select 1, 0, false];
         _trigger setTriggerActivation ["WEST", "PRESENT", true];
+        private _sideString = format ["%1",ENEMY_SIDE];
+        if(ENEMY_SIDE isEqualTo INDEPENDENT) then {
+            _sideString = "INDEPENDENT";
+        };
         _trigger setTriggerStatements ["this",
-            format ["['%1',[%2],%3,false,true] call FUPS_fnc_reinforcement;",_locationMarker,_index,ENEMY_SIDE],
+            format ["['%1',[%2],%3,false,true] call FUPS_fnc_reinforcement;",_locationMarker,_index,_sideString],
             ""
         ];
         //_trigger setTriggerTimeout [60,180,300,false];
