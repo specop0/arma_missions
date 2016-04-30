@@ -40,6 +40,8 @@ if(typeOf player in [_funkerClass,_tfClass]) then {
         [] call Spec_fnc_moveMarkerLZ;
         private _actionBussard = ["Spec_action_callBussard", "Rufe Bussard", "", {_this remoteExec ["Spec_fnc_heli_taxi",2]}, {true}] call ace_interact_menu_fnc_createAction;
         [player,1, ["ACE_SelfActions"], _actionBussard] call ace_interact_menu_fnc_addActionToObject;
+        private _actionAmmoBox = ["Spec_action_spawnAmmoBox", "Nachschubkiste", "", {_this remoteExec ["Spec_crates_fnc_spawnAmmoBox",2]}, {true}] call ace_interact_menu_fnc_createAction;
+        [player,1, ["ACE_SelfActions"], _actionAmmoBox] call ace_interact_menu_fnc_addActionToObject;
     };
 };
 // briefing

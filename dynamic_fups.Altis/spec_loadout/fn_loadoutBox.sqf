@@ -141,14 +141,21 @@ if(_parameterCorrect && hasInterface) then {
         
         Spec_var_loadoutFaction = "MAIN";
     }, [], -5, false, true, "", _conditionString];
+    _object addAction ["Nachschubkiste",{
+        params ["_target","_caller"];
+        private _actionAmmoBox = ["Spec_action_spawnAmmoBox", "Nachschubkiste", "", {_this remoteExec ["Spec_crates_fnc_spawnAmmoBox",2]}, {true}] call ace_interact_menu_fnc_createAction;
+        [_caller,1, ["ACE_SelfActions"], _actionAmmoBox] call ace_interact_menu_fnc_addActionToObject;
+        Spec_var_loadoutFaction = "MAIN";
+    }, [], -6, false, true, "", _conditionString];
     _object addAction ["Entferne Actions",{
         params ["_target","_caller"];
         [_caller,1,["ACE_SelfActions", "Spec_action_moveMarkerLZ"]] call ace_interact_menu_fnc_removeActionFromObject; 
         [_caller,1,["ACE_SelfActions", "Spec_action_callMedevac"]] call ace_interact_menu_fnc_removeActionFromObject; 
         [_caller,1,["ACE_SelfActions", "Spec_action_callBussard"]] call ace_interact_menu_fnc_removeActionFromObject; 
+        [_caller,1,["ACE_SelfActions", "Spec_action_spawnAmmoBox"]] call ace_interact_menu_fnc_removeActionFromObject; 
         
         Spec_var_loadoutFaction = "MAIN";
-    }, [], -6, false, true, "", _conditionString];
+    }, [], -7, false, true, "", _conditionString];
     
     // add items to cargo (launcher / weapon only)
     _factionName = "ADD_CARGO";

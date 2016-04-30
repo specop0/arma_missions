@@ -2,6 +2,7 @@
 class CfgFunctions {
 #include "W_Teleporter\CfgFunctions.hpp"
 #include "FUPS\CfgFunctions.hpp"
+#include "spec_crates\CfgFunctions.hpp"
 #include "spec_dynamic\CfgFunctions.hpp"
 #include "spec_heli\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"

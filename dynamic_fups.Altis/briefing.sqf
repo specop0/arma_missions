@@ -26,7 +26,7 @@ Nicht direkt unter dem Landepunkt stehen, da sonst die KI nicht landet (die neue
 Fuer die Helis werden ein Haufen Hints ausgegeben - Lesen ist von Vorteil.<br/>
 <font size=20 color='#0094FF'>Sonstiges</font><br/>
 Der Funker besitzt einen Zeus, falls etwas schief laeuft (etwa die KI einen Heli versemmelt - diesen dann per Zeus reparieren). Alternativ ueber den Laptop einen Neuen anfordern.<br/>
-ueber die Loadout-Kiste (NATO-Kiste) koennen auch die ACE-Interaktionen fuer die Heli-Scripts aktiviert bzw. deaktiviert werden.
+ueber die Loadout-Kiste (NATO-Kiste) koennen auch die ACE-Interaktionen fuer die Heli-Scripts (und Nachschubkiste) aktiviert bzw. deaktiviert werden.
 "]];
 
 _unit createDiaryRecord ["Diary",["Loadout-Kiste","
@@ -36,7 +36,7 @@ Loadout-Kiste bzw. NATO-Kiste -> Fraktion waehlen -> Benutze Slot oder Slot deme
 <font size=20 color='#0094FF'>Sonstige Funktionen</font><br/>
 M4/M4A1/M16A4-Varianten sind ueber die Loadout-Kiste waehlbar (M4_VARIANTS). Dies nur nutzen, wenn die Zugfuehrung eine andere Gattung vorschreibt - nicht selbstaendig mischen.<br/>
 Zusaetzliche AT-Waffen ueber die Loadout-Kiste nutzbar (ADD_CARGO). Diese werden in die Kiste hineingelegt. Die Kiste selbst kann auch wieder geleert werden (Leere Box).<br/>
-Ueber die Loadout-Kiste (NATO-Kiste) koennen auch die ACE-Interaktionen fuer die Heli-Scripts aktiviert bzw. deaktiviert werden.
+Ueber die Loadout-Kiste (NATO-Kiste) koennen auch die ACE-Interaktionen fuer die Heli-Scripts (und Nachschubkiste) aktiviert bzw. deaktiviert werden.
 "]];
 
 _unit createDiaryRecord ["Diary",["Briefing","
