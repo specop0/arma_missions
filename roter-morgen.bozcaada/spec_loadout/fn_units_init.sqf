@@ -16,16 +16,18 @@
 
 if(isServer) then {
     private _scriptHandle = [] spawn {
-    {
-        if(side _x == east) then {
-            comment "assign loadout to AI only (excellent for testing purposes)";
-            [_x] call Spec_fnc_loadout_rus_flora_alt;
-            _x addEventHandler ["Respawn", Spec_fnc_loadout_rus_flora_alt];
-        } else {
-            [_x] spawn Spec_fnc_loadout_nato_rebel;
-            _x addEventHandler ["Respawn", Spec_fnc_loadout_nato_rebel];
-        };
-    } foreach  allUnits - allPlayers;
+        {
+            if(local _x) then {
+                if(side _x == east) then {
+                    comment "assign loadout to AI only (excellent for testing purposes)";
+                    [_x] call Spec_fnc_loadout_rus_flora_alt;
+                    _x addEventHandler ["Respawn", Spec_fnc_loadout_rus_flora_alt];
+                } else {
+                    [_x] spawn Spec_fnc_loadout_nato_rebel;
+                    _x addEventHandler ["Respawn", Spec_fnc_loadout_nato_rebel];
+                };
+            };
+        } foreach  allUnits - allPlayers;
     };
 };
 if(hasInterface) then {
