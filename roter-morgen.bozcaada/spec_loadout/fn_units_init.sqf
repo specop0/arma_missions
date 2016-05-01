@@ -15,6 +15,7 @@
 */
 
 if(isServer) then {
+    private _scriptHandle = [] spawn {
     {
         if(side _x == east) then {
             comment "assign loadout to AI only (excellent for testing purposes)";
@@ -25,6 +26,7 @@ if(isServer) then {
             _x addEventHandler ["Respawn", Spec_fnc_loadout_nato_rebel];
         };
     } foreach  allUnits - allPlayers;
+    };
 };
 if(hasInterface) then {
     if(side player == east) then {

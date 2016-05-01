@@ -19,7 +19,7 @@ private _parameterCorrect = params [["_unitName",objNull,[objNull]]];
 if(_parameterCorrect) then {
     private _groupID = _unitName getVariable ["Spec_var_TFARgroup", 0];
     private ["_swFreq", "_lrFreq", "_callsign", "_BFTicon", "_BFTremarks"];
-    _BFTicon = "b_inf";
+    _BFTicon = "o_inf";
     _BFTremarks = name _unitName;
     
     switch _groupID do {
