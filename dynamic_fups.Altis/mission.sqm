@@ -8,7 +8,7 @@ class EditorData
 	toggles=41;
 	class ItemIDProvider
 	{
-		nextID=286;
+		nextID=288;
 	};
 	class MarkerIDProvider
 	{
@@ -40,10 +40,10 @@ addons[]=
 	"A3_Soft_F_Gamma_HEMTT",
 	"A3_Soft_F_HEMTT",
 	"UK3CB_BAF_Vehicles_Coyote_Jackal",
-	"CUP_WheeledVehicles_Dingo",
 	"rhsusf_c_hmmwv",
 	"rhsusf_vehicles",
-	"CUP_AirVehicles_A10"
+	"CUP_AirVehicles_A10",
+	"CUP_WheeledVehicles_Dingo"
 };
 randomSeed=12438478;
 class ScenarioData
@@ -1709,40 +1709,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15171.617,20.569283,17311.574};
-				angles[]={0.0053265258,2.3561945,6.2805333};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=136;
-			type="CUP_B_Dingo_GL_GER_Wdl";
-			atlOffset=-5.1498413e-005;
-		};
-		class Item31
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15174.29,20.558746,17314.004};
-				angles[]={0.0053265258,2.3561945,0.0026520467};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=137;
-			type="CUP_B_Dingo_GL_GER_Wdl";
-			atlOffset=-5.3405762e-005;
-		};
-		class Item32
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={15177.181,17.985859,17317.262};
 				angles[]={6.2791886,2.3561945,0.0066682254};
 			};
@@ -1755,7 +1721,7 @@ class Mission
 			type="rhsusf_m1025_w_m2";
 			atlOffset=0.00034332275;
 		};
-		class Item33
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1772,7 +1738,7 @@ class Mission
 			type="rhsusf_m1025_w_m2";
 			atlOffset=-0.0024337769;
 		};
-		class Item34
+		class Item32
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1789,7 +1755,7 @@ class Mission
 			type="rhsusf_m998_w_2dr_fulltop";
 			atlOffset=-0.00012207031;
 		};
-		class Item35
+		class Item33
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1806,7 +1772,7 @@ class Mission
 			type="rhsusf_m998_w_2dr_fulltop";
 			atlOffset=-1.5258789e-005;
 		};
-		class Item36
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1823,7 +1789,7 @@ class Mission
 			type="CUP_B_A10_CAS_USA";
 			atlOffset=-8.2015991e-005;
 		};
-		class Item37
+		class Item35
 		{
 			dataType="Group";
 			side="West";
@@ -2028,7 +1994,7 @@ class Mission
 			};
 			id=211;
 		};
-		class Item38
+		class Item36
 		{
 			dataType="Group";
 			side="West";
@@ -2417,7 +2383,7 @@ class Mission
 			};
 			id=236;
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -2807,7 +2773,7 @@ class Mission
 			};
 			id=243;
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Group";
 			side="West";
@@ -3199,7 +3165,7 @@ class Mission
 			id=250;
 			atlOffset=0.0030002594;
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3309,7 +3275,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3420,7 +3386,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Group";
 			side="West";
@@ -3558,7 +3524,7 @@ class Mission
 			id=261;
 			atlOffset=0.058603287;
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3668,7 +3634,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3778,7 +3744,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Marker";
 			position[]={15181.93,17.92626,17364.848};
@@ -3787,7 +3753,7 @@ class Mission
 			id=271;
 			atlOffset=-5.7220459e-006;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Marker";
 			position[]={15194.858,17.91,17348.215};
@@ -3795,7 +3761,7 @@ class Mission
 			type="Empty";
 			id=272;
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3810,6 +3776,85 @@ class Mission
 			id=285;
 			type="TTT_Schuetzenpanzer_Us_Woodland";
 			atlOffset=1.6399994;
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15171.618,20.608339,17311.574};
+				angles[]={0.0053232545,2.3561945,6.2805324};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=286;
+			type="CUP_B_Dingo_GER_Wdl";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_Mk20_F"",""FirstAidKit""],[2,10]],[[""30Rnd_556x45_Stanag"",""200Rnd_65x39_cased_Box"",""HandGrenade"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellPurple"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokePurple_Grenade_shell"",""9Rnd_45ACP_Mag"",""NLAW_F""],[16,3,10,4,4,4,4,10,4,4,4,4,12,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item48
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15174.29,20.597807,17314.004};
+				angles[]={0.0053232545,2.3561945,0.0026529003};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=287;
+			type="CUP_B_Dingo_GER_Wdl";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_Mk20_F"",""FirstAidKit""],[2,10]],[[""30Rnd_556x45_Stanag"",""200Rnd_65x39_cased_Box"",""HandGrenade"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellPurple"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokePurple_Grenade_shell"",""9Rnd_45ACP_Mag"",""NLAW_F""],[16,3,10,4,4,4,4,10,4,4,4,4,12,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
