@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=41;
+	toggles=169;
 	class ItemIDProvider
 	{
-		nextID=288;
+		nextID=289;
 	};
 	class MarkerIDProvider
 	{
@@ -26,8 +26,10 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Structures_F_Mil_Flags",
+	"A3_Ui_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Civ_Camping",
+	"ace_sitting",
 	"A3_Structures_F_Items_Electronics",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Structures_F_Mil_Helipads",
@@ -35,15 +37,158 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"ttt_units_us_c",
 	"CUP_AirVehicles_UH60",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
-	"A3_Soft_F_Gamma_HEMTT",
-	"A3_Soft_F_HEMTT",
+	"A3_Characters_F",
+	"asr_ai3_main",
+	"A3_Soft_F_Gamma_Truck_01",
+	"ace_realisticnames",
+	"ace_refuel",
+	"ace_repair",
+	"ace_cargo",
+	"ace_rearm",
+	"A3_Soft_F_Beta_Truck_01",
 	"UK3CB_BAF_Vehicles_Coyote_Jackal",
-	"rhsusf_c_hmmwv",
 	"rhsusf_vehicles",
 	"CUP_AirVehicles_A10",
+	"ace_explosives",
 	"CUP_WheeledVehicles_Dingo"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=23;
+		class Item0
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted features";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F";
+			name="Arma 3 Alpha - Buildings and structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="ace_sitting";
+			name="ace_sitting";
+		};
+		class Item5
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="ttt_vehicles_us_c";
+			name="ttt_vehicles_us_c";
+		};
+		class Item7
+		{
+			className="ttt_units_us_c";
+			name="ttt_units_us_c";
+		};
+		class Item8
+		{
+			className="CUP_AirVehicles_UH60";
+			name="CUP_AirVehicles_UH60";
+		};
+		class Item9
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="asr_ai3_main";
+			name="asr_ai3_main";
+		};
+		class Item11
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="ace_realisticnames";
+			name="ace_realisticnames";
+		};
+		class Item13
+		{
+			className="ace_refuel";
+			name="ace_refuel";
+		};
+		class Item14
+		{
+			className="ace_repair";
+			name="ace_repair";
+		};
+		class Item15
+		{
+			className="ace_cargo";
+			name="ace_cargo";
+		};
+		class Item16
+		{
+			className="ace_rearm";
+			name="ace_rearm";
+		};
+		class Item17
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored land vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item18
+		{
+			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
+			name="UK3CB_BAF_Vehicles_Coyote_Jackal";
+		};
+		class Item19
+		{
+			className="rhsusf_vehicles";
+			name="rhsusf_vehicles";
+		};
+		class Item20
+		{
+			className="CUP_AirVehicles_A10";
+			name="CUP_AirVehicles_A10";
+		};
+		class Item21
+		{
+			className="ace_explosives";
+			name="ace_explosives";
+		};
+		class Item22
+		{
+			className="CUP_WheeledVehicles_Dingo";
+			name="CUP_WheeledVehicles_Dingo";
+		};
+	};
 };
 randomSeed=12438478;
 class ScenarioData
@@ -101,7 +246,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			dataType="Object";
@@ -142,7 +287,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -340,7 +485,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -435,7 +580,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -515,7 +660,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -612,7 +757,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -745,7 +890,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -3775,7 +3920,7 @@ class Mission
 			};
 			id=285;
 			type="TTT_Schuetzenpanzer_Us_Woodland";
-			atlOffset=1.6399994;
+			atlOffset=1.6401596;
 		};
 		class Item47
 		{
@@ -3855,6 +4000,20 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item49
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15182.518,17.896545,17390.063};
+				angles[]={0.0026520467,0,0.0039967569};
+			};
+			name="hc1";
+			isPlayable=1;
+			id=288;
+			type="HeadlessClient_F";
+			atlOffset=-2.6702881e-005;
 		};
 	};
 };

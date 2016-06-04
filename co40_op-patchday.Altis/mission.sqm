@@ -1,4 +1,4 @@
-version=51;
+version=52;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=59;
+		nextID=62;
 	};
 	class MarkerIDProvider
 	{
@@ -25,11 +25,65 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
+	"A3_Ui_F",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Supplies_F_Heli_CargoNets",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
+	"A3_Characters_F",
+	"asr_ai3_main",
+	"ace_explosives",
 	"A3_Modules_F_Curator_Curator"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=7;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="asr_ai3_main";
+			name="asr_ai3_main";
+		};
+		class Item5
+		{
+			className="ace_explosives";
+			name="ace_explosives";
+		};
+		class Item6
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted features";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=6024783;
 class ScenarioData
@@ -61,7 +115,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=22;
 		class Item0
 		{
 			dataType="Marker";
@@ -79,6 +133,7 @@ class Mission
 				position[]={15192.115,21.886805,17352.041};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -96,6 +151,7 @@ class Mission
 				angles[]={6.2818484,0,0.0013372133};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -115,6 +171,7 @@ class Mission
 				angles[]={0,0,0.0039967569};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -140,7 +197,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -160,6 +217,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -179,6 +237,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -211,7 +270,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -231,6 +290,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -250,6 +310,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -269,6 +330,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -288,6 +350,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.010664274};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -307,6 +370,7 @@ class Mission
 						angles[]={0.0039967569,0.78539819,0.0080009829};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
@@ -338,7 +402,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -358,6 +422,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0080009829};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -377,6 +442,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -396,6 +462,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -415,6 +482,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -434,6 +502,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0026520467};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
@@ -465,7 +534,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -485,6 +554,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -504,6 +574,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -536,7 +607,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -556,6 +627,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -575,6 +647,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -594,6 +667,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -613,6 +687,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -632,6 +707,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0026520467};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 5];";
@@ -663,7 +739,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -683,6 +759,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -702,6 +779,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -721,6 +799,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -740,6 +819,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -759,6 +839,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 6];";
@@ -790,7 +871,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -810,6 +891,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
@@ -829,6 +911,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
@@ -848,6 +931,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -867,6 +951,7 @@ class Mission
 						angles[]={6.2818484,0.78539819,0.0053265258};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -875,7 +960,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=45;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 				class Item5
 				{
@@ -886,6 +971,7 @@ class Mission
 						angles[]={0.0013372133,0.78539819,0.0026520467};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 9];";
@@ -893,7 +979,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=46;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -1135,7 +1221,7 @@ class Mission
 						angles[]={6.2818484,4.1015239,0.0013372133};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -1157,6 +1243,7 @@ class Mission
 						angles[]={6.2818484,4.1015239,0.0013372133};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -1408,7 +1495,7 @@ class Mission
 						angles[]={6.2818937,4.1015239,0};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						rank="COLONEL";
@@ -1429,6 +1516,7 @@ class Mission
 						angles[]={6.2818937,4.1015239,0};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						rank="MAJOR";
@@ -1663,6 +1751,45 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15170.358,17.924175,17379.4};
+				angles[]={0.0053265258,0,0.011995304};
+			};
+			name="hc1";
+			isPlayable=1;
+			id=59;
+			type="HeadlessClient_F";
+		};
+		class Item20
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15173.204,17.930883,17382.605};
+				angles[]={0.0053265258,0,6.2805333};
+			};
+			name="hc2";
+			isPlayable=1;
+			id=60;
+			type="HeadlessClient_F";
+		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15176.54,17.924877,17385.033};
+				angles[]={0.014664836,0,0.0013372133};
+			};
+			name="hc3";
+			isPlayable=1;
+			id=61;
+			type="HeadlessClient_F";
 		};
 	};
 };
