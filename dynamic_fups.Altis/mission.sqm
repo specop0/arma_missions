@@ -8,7 +8,7 @@ class EditorData
 	toggles=169;
 	class ItemIDProvider
 	{
-		nextID=289;
+		nextID=290;
 	};
 	class MarkerIDProvider
 	{
@@ -4006,14 +4006,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15182.518,17.896545,17390.063};
-				angles[]={0.0026520467,0,0.0039967569};
+				position[]={15182.172,17.892925,17390.91};
 			};
 			name="hc1";
 			isPlayable=1;
-			id=288;
+			id=289;
 			type="HeadlessClient_F";
-			atlOffset=-2.6702881e-005;
+			atlOffset=-1.9073486e-006;
 		};
 	};
 };
