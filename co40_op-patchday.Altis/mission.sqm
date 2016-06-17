@@ -29,8 +29,6 @@ addons[]=
 	"A3_Structures_F_Mil_Flags",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Characters_F",
-	"asr_ai3_main",
-	"ace_explosives",
 	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData

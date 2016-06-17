@@ -38,7 +38,6 @@ addons[]=
 	"CUP_WheeledVehicles_UAZ",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Characters_F",
-	"asr_ai3_main",
 	"A3_Modules_F_Curator_Curator",
 	"ace_explosives"
 };
