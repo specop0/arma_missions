@@ -44,6 +44,7 @@ addons[]=
 	"CUP_Misc_e_Config",
 	"A3_Structures_F_Civ_Camping",
 	"ace_sitting",
+	"acex_sitting",
 	"A3_Data_F_Curator_Intel",
 	"A3_Structures_F_EPC_Items_Documents",
 	"CUP_Misc_DBE1",
@@ -84,8 +85,10 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="ace_realisticnames";
-			name="ace_realisticnames";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item4
 		{
@@ -111,65 +114,71 @@ class AddonsMetaData
 		};
 		class Item8
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item9
-		{
-			className="ace_explosives";
-			name="ace_explosives";
-		};
-		class Item10
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted features";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored land vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored land vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_repair";
-			name="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Structures_F";
 			name="Arma 3 Alpha - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_sitting";
-			name="ace_sitting";
+			name="ACE3 - Sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item17
+		{
+			className="acex_sitting";
+			name="acex_sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item18
 		{
@@ -193,7 +202,9 @@ class AddonsMetaData
 		class Item21
 		{
 			className="ace_medical";
-			name="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item22
 		{
@@ -229,7 +240,9 @@ class AddonsMetaData
 		class Item27
 		{
 			className="ace_dragging";
-			name="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -486,7 +499,6 @@ class Mission
 			};
 			id=12;
 			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.084339142;
 		};
 		class Item12
 		{
@@ -3789,7 +3801,7 @@ class Mission
 						angles[]={0,5.3163972,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.75;
@@ -3797,7 +3809,7 @@ class Mission
 					};
 					id=355;
 					type="B_soldier_LAT_F";
-					atlOffset=3.8336868;
+					atlOffset=0.20398712;
 				};
 				class Item1
 				{
@@ -3809,14 +3821,13 @@ class Mission
 					};
 					showWP="NEVER";
 					id=357;
-					atlOffset=3.836319;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=353;
-			atlOffset=3.8336868;
+			atlOffset=0.20398712;
 		};
 		class Item69
 		{
@@ -3834,7 +3845,7 @@ class Mission
 						angles[]={0,0.18664658,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.75;
@@ -3842,7 +3853,7 @@ class Mission
 					};
 					id=354;
 					type="B_Soldier_F";
-					atlOffset=3.8334045;
+					atlOffset=0.20398712;
 				};
 				class Item1
 				{
@@ -3854,14 +3865,14 @@ class Mission
 					};
 					showWP="NEVER";
 					id=358;
-					atlOffset=3.8341827;
+					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=356;
-			atlOffset=3.8334045;
+			atlOffset=0.20398712;
 		};
 		class Item70
 		{
@@ -4933,6 +4944,7 @@ class Mission
 			position[]={13144.604,51.237537,9290.6309};
 			class Attributes
 			{
+				sizeC=15;
 				activationBy="EAST";
 			};
 			id=419;
@@ -5366,16 +5378,17 @@ class Mission
 		class Item86
 		{
 			dataType="Trigger";
-			position[]={10526.533,62.450954,9238.7559};
+			position[]={10526.533,62.450516,9238.7559};
 			class Attributes
 			{
 				sizeA=25;
 				sizeB=25;
+				sizeC=10;
 				activationBy="EAST";
 			};
 			id=482;
 			type="EmptyDetectorAreaR50";
-			atlOffset=0.83243561;
+			atlOffset=0.83199692;
 		};
 		class Item87
 		{
@@ -5850,6 +5863,7 @@ class Mission
 			{
 				sizeA=25;
 				sizeB=25;
+				sizeC=10;
 				activationBy="EAST";
 			};
 			id=522;
@@ -6285,6 +6299,7 @@ class Mission
 			{
 				sizeA=25;
 				sizeB=25;
+				sizeC=10;
 				activationBy="EAST";
 			};
 			id=566;
@@ -6510,6 +6525,7 @@ class Mission
 			{
 				sizeA=25;
 				sizeB=25;
+				sizeC=10;
 				activationBy="EAST";
 			};
 			id=606;
@@ -6831,6 +6847,7 @@ class Mission
 			{
 				sizeA=60;
 				sizeB=15;
+				sizeC=10;
 				activationBy="EAST";
 				isRectangle=1;
 			};
@@ -8125,6 +8142,7 @@ class Mission
 			class Attributes
 			{
 				onActivation="if(isServer) then { [""enemy_base""] call Spec_fnc_reinforceMarker; };";
+				sizeC=15;
 				activationBy="EAST";
 			};
 			id=734;
@@ -8239,7 +8257,6 @@ class Mission
 			};
 			id=757;
 			type="ACE_Wheel";
-			atlOffset=0.052034378;
 		};
 		class Item123
 		{
@@ -8391,7 +8408,7 @@ class Mission
 			};
 			id=768;
 			type="TTT_Logistik_Pionierausruestung_Us";
-			atlOffset=0.091875076;
+			atlOffset=0.0090427399;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10683,6 +10700,7 @@ class Mission
 			};
 			id=998;
 			type="Park_bench2";
+			atlOffset=3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10975,7 +10993,7 @@ class Mission
 			};
 			id=1004;
 			type="Park_bench2";
-			atlOffset=5.9127808e-005;
+			atlOffset=3.2424927e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11130,7 +11148,7 @@ class Mission
 			};
 			id=1006;
 			type="Park_bench2";
-			atlOffset=7.6293945e-006;
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11208,6 +11226,7 @@ class Mission
 			};
 			id=1007;
 			type="Park_bench2";
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
