@@ -126,7 +126,10 @@ if(_parameterCorrect) then {
             [_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
         };
         case CLASS_PIO : {
-            [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            private _returnValueMineDetector = [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            if(_returnValueMineDetector != 0) then {
+                [_unit,"MineDetector",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            };
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
