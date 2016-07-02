@@ -201,7 +201,7 @@ if(_parameterCorrect) then {
         } else {
             comment "Grenade launcher";
             if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
-                [_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
+                [_unit,_grenadeLauncherAmmo,ADD_ANYWHERE, 6] call Spec_fnc_addItemToContainer;
 
                 _unit addWeapon _grenadeLauncherWeapon;
                 {

@@ -198,6 +198,8 @@ if(_parameterCorrect) then {
                         [_unit,_grenadeLauncherWhiteSmoke,ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
                     };
                 };
+                [_unit,_grenadeLauncherAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;
+                
                 _unit addWeapon _grenadeLauncherWeapon;
                 {
                     _unit addPrimaryWeaponItem _x;

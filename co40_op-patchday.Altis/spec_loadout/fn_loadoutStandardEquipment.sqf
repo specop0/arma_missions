@@ -21,11 +21,7 @@
 private _parameterCorrect = params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
 if(_parameterCorrect) then {
-    comment "Loadout based on TTT-Mod (weapons near end of file)";
-    if(_type == CLASS_PIO) then {
-        comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
-        [_unit, "MineDetector",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-    };
+    comment "Loadout based on TTT-Mod";
 
     if(_type in [CLASS_OPL, CLASS_TF]) then {
         _unit addWeapon "ACE_Vector";
@@ -59,9 +55,9 @@ if(_parameterCorrect) then {
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_LOGISTIC, CLASS_PILOT]) then {
         //[_unit,"ACE_HelmetCam",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
     };
-    if(_type in [CLASS_OPL, CLASS_TF, CLASS_FUNKER]) then {
-        [_unit,"ACE_CableTie",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
-    };
+
+    
+    [_unit,"ACE_CableTie",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
 
     comment "standard equipment (ear plugs, grenades)";
     [_unit,"ACE_EarPlugs",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
@@ -70,12 +66,12 @@ if(_parameterCorrect) then {
     [_unit,"ACE_IR_Strobe_Item",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_HandFlare_Green",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
 
-    [_unit,"SmokeShell",ADD_TO_UNIFORM,2] call Spec_fnc_addItemToContainer;
-    [_unit,"SmokeShellGreen",ADD_TO_UNIFORM, 2] call Spec_fnc_addItemToContainer;
-    [_unit,"SmokeShellPurple",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShell",ADD_ANYWHERE,5] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShellGreen",ADD_ANYWHERE,2] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShellPurple",ADD_ANYWHERE,2] call Spec_fnc_addItemToContainer;
 
     comment "night equipment";
-    [_unit,"ACE_Flashlight_MX991",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
+    [_unit,"ACE_Flashlight_MX991",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_NVG_Wide",ADD_TO_VEST] call Spec_fnc_addItemToContainer;
 
     [_unit,"ACE_M84",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
@@ -130,6 +126,7 @@ if(_parameterCorrect) then {
             [_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
         };
         case CLASS_PIO : {
+            [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;

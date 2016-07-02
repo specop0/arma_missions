@@ -178,9 +178,10 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
             [_unit,_lmgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;

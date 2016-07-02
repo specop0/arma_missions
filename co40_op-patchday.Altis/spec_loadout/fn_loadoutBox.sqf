@@ -111,8 +111,44 @@ if(_parameterCorrect && hasInterface) then {
         _minimumActionIndex = _i;
     };
     
+    // add items to cargo (launcher / weapon only)
+    _factionName = "ADD_CARGO";
+    _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
+    _object addAction [_factionName, {
+        (_this select 3) params ["_factionName"];
+        Spec_var_loadoutFaction = _factionName;
+    }, [_factionName], -2, false, false, "", _conditionString];
+    private _cargoItems = [
+        "rhs_weap_M136","UK3CB_BAF_AT4_CS_AP_Launcher",
+        "BWA3_Pzf3",
+        "rhs_weap_rpg7",
+        "launch_NLAW_F","rhs_weap_smaw","BWA3_RGW90","CUP_launch_Mk153Mod0",
+        "CUP_launch_Javelin","rhs_weap_fgm148",
+        "launch_I_Titan_short_F",
+        "CUP_launch_FIM92Stinger","BWA3_Fliegerfaust","launch_B_Titan_F"
+    ];
+    _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
+    _i = -4;
+    {
+        _object addAction [_x, {
+            params ["_target"];
+            (_this select 3) params ["_cargoItem"];
+            _target addWeaponCargoGlobal [_cargoItem,2];
+            // add magazines
+            _magazines = getArray (configFile >> "CfgWeapons" >> _cargoItem >> "Magazines");
+            {
+                _target addMagazineCargoGlobal [_x,3];
+            } forEach _magazines;
+            Spec_var_loadoutFaction = "MAIN";
+        }, [_x], _i, false, true, "", _conditionString];
+        _i = _i - 1;
+    } forEach _cargoItems;
+    if(_i < _minimumActionIndex) then {
+        _minimumActionIndex = _i;
+    };
+    
     // clear cargo of loadoutBox
-    _i = _i - 1;
+    _i = _minimumActionIndex - 1;
     _object addAction ["Leere Box", {
         params ["_target","_caller"];
         clearBackpackCargoGlobal _target;
