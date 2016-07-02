@@ -151,12 +151,7 @@ if(_parameterCorrect) then {
     };
     _unit addGoggles _googles;
     
-    comment "Loadout based on TTT-Mod (weapons near end of file)";
-    if(_type == _pioClass) then {
-        comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
-        [_unit, "MineDetector",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-    };
-    
+    comment "Loadout based on TTT-Mod (weapons near end of file)";   
     if(_type in [_oplClass, _tfClass]) then {
         _unit addWeapon "ACE_Vector";
         [_unit,"BWA3_Beret_Falli",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
@@ -256,6 +251,7 @@ if(_parameterCorrect) then {
             [_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
         };
         case _pioClass : {
+            [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",ADD_ANYWHERE, 2] call Spec_fnc_addItemToContainer;
