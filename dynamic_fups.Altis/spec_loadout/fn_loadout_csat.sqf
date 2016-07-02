@@ -54,7 +54,7 @@ if(_this isEqualType [] && {count _this > 3}) then {
 };
 
 private _uniform = "U_O_CombatUniform_ocamo";
-private _vest = "V_TacVest_khk";
+private _vest = "V_Chestrig_khk";
 
 private _backpack = "B_AssaultPack_ocamo";
 private _backpackBig = "B_Carryall_ocamo";

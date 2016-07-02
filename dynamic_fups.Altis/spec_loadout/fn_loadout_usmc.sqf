@@ -209,8 +209,9 @@ if(_parameterCorrect) then {
         };
     };
     comment "Secondary Weapon";
-    [_unit,_secondaryAmmo,ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
+    [_unit,_secondaryAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
     _unit addWeapon _secondaryWeapon;
+    [_unit,_secondaryAmmo,ADD_ANYWHERE, 2] call Spec_fnc_addItemToContainer;
     {
         _unit addSecondaryWeaponItem _x;
     } forEach _secondaryAccessory;
