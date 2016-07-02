@@ -16,15 +16,12 @@
     true
 */
 #include "classVariables.hpp"
+#include "addItemToContainer.hpp"
 
 private _parameterCorrect = params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
 if(_parameterCorrect) then {
     comment "Loadout based on TTT-Mod (weapons near end of file)";
-    if(_type == CLASS_PIO) then {
-        comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
-        [_unit, "MineDetector", 2] call Spec_fnc_addItemToContainer;
-    };
         
     if(_type in [CLASS_OPL, CLASS_TF]) then {
         _unit addWeapon "ACE_Vector";
@@ -69,12 +66,12 @@ if(_parameterCorrect) then {
     [_unit,"ACE_IR_Strobe_Item",0,2] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_HandFlare_Green",0,2] call Spec_fnc_addItemToContainer;
 
-    [_unit,"SmokeShell",0,2] call Spec_fnc_addItemToContainer;
-    [_unit,"SmokeShellGreen",0, 2] call Spec_fnc_addItemToContainer;
-    [_unit,"SmokeShellPurple",0] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShell",ADD_ANYWHERE,5] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShellGreen",ADD_ANYWHERE,2] call Spec_fnc_addItemToContainer;
+    [_unit,"SmokeShellPurple",ADD_ANYWHERE,2] call Spec_fnc_addItemToContainer;
 
     comment "night equipment";
-    [_unit,"ACE_Flashlight_MX991",0] call Spec_fnc_addItemToContainer;
+    [_unit,"ACE_Flashlight_MX991",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_NVG_Wide",1] call Spec_fnc_addItemToContainer;
 
     [_unit,"ACE_M84",1, 2] call Spec_fnc_addItemToContainer;
@@ -129,6 +126,7 @@ if(_parameterCorrect) then {
             [_unit,"rhs_GRD40_White",2, 6] call Spec_fnc_addItemToContainer;
         };
         case CLASS_PIO : {
+            [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",2, 2] call Spec_fnc_addItemToContainer;
