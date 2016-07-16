@@ -68,7 +68,7 @@ private _goggles = "G_Combat";
 private _standardWeapon = "rhs_weap_ak74m_camo";
 _standardWeapon = selectRandom ["rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo"];
 private _standardAmmo = "rhs_30Rnd_545x39_AK";
-private _standardAccessory = ["rhs_acc_1pn93_1"];
+private _standardAccessory = ["rhs_acc_1p78"];
 private _standardAccessoryExtra = ["rhs_acc_pkas"];
 
 private _secondaryWeapon = "rhs_weap_pya";
