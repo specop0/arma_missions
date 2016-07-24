@@ -131,7 +131,6 @@ if(_parameterCorrect) then {
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_M26_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", true];
             _unit setVariable ["ACE_isEOD", true];

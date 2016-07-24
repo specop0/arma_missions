@@ -9,11 +9,15 @@ class spec_loadout {
         class loadout_bw_tropentarn {};
         class loadout_bw_flecktarn {};
         class loadout_csat {};
+        class loadout_csat_tropentarn {};
         class loadout_cup_ussocom {};
         class loadout_korea {};
         class loadout_nato {};
+        class loadout_nato_tropentarn {};
+        class loadout_police {};
         class loadout_rus_flora {};
         class loadout_rus_flora_alt {};
+        class loadout_syndicat {};
         class loadout_uk {};
         class loadout_usarmy {};
         class loadout_usmc {};

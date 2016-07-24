@@ -11,6 +11,18 @@ if(_parameterCorrect) then {
         case "CSAT" : {
             _parameter call Spec_fnc_loadout_csat;
         };
+        case "NATO_PACIFIC" : {
+            _parameter call Spec_fnc_loadout_nato_tropentarn;
+        };
+        case "CSAT_PACIFIC" : {
+            _parameter call Spec_fnc_loadout_csat_tropentarn;
+        };
+        case "SYNDICAT" : {
+            _parameter call Spec_fnc_loadout_syndicat;
+        };
+        case "POLICE" : {
+            _parameter call Spec_fnc_loadout_police;
+        };
         case "CUP_USSOCOM" : {
             _parameter call Spec_fnc_loadout_cup_ussocom;
         };

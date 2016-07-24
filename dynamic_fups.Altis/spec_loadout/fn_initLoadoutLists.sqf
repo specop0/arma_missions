@@ -4,6 +4,8 @@ private _loadoutFactionList = [];
 _loadoutFactionList pushBack "NATO";
 _loadoutFactionList pushBack "AAF";
 _loadoutFactionList pushBack "CSAT";
+_loadoutFactionList pushBack "NATO_PACIFIC";
+_loadoutFactionList pushBack "CSAT_PACIFIC";
 // CUP
 _loadoutFactionList pushBack "CUP_USSOCOM";
 _loadoutFactionList pushBack "KOREA";
@@ -18,6 +20,9 @@ _loadoutFactionList pushBack "UK";
 //BW
 _loadoutFactionList pushBack "BW_TROPEN";
 _loadoutFactionList pushBack "BW_FLECK";
+// low tech
+_loadoutFactionList pushBack "POLICE";
+_loadoutFactionList pushBack "SYNDICAT";
 Spec_var_loadoutFactionList = _loadoutFactionList;
 
 private _loadoutClassList = [];

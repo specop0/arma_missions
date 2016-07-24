@@ -2,7 +2,7 @@
 private _parameterCorrect = params [ ["_enemy","",[""]] ];
 
 if(isNil {ENEMY_SIDE_ARRAY}) then {
-    ENEMY_SIDE_ARRAY = ["CSAT","RUS_MSV","RUS_VDV","TAKISTAN","AAF","RACS","NAPA","EAST_MILITIA"];
+    ENEMY_SIDE_ARRAY = ["CSAT","CSAT_PACIFIC","RUS_MSV","RUS_VDV","TAKISTAN","AAF","RACS","NAPA","EAST_MILITIA", "SYNDICAT"];
 };
 
 if(_parameterCorrect) then {
@@ -169,6 +169,56 @@ if(_parameterCorrect) then {
             UNITS_MARKSMAN = ["CUP_O_TK_Sniper","CUP_O_TK_Sniper_KSVK"];
             VEHICLE_ENEMY = ["CUP_O_LR_MG_TKA","CUP_O_UAZ_MG_TKA"];
             ARMOR_ENEMY = ["CUP_O_M113_TKA","CUP_O_T72_TKA","CUP_O_BMP1_TKA","CUP_O_BMP2_TKA","CUP_O_BRDM2_TKA","CUP_O_BTR60_TK"];
+        };
+        case "CSAT_PACIFIC" : {
+            ENEMY_SIDE = EAST;
+            UNITS_ENEMY = [
+                "O_T_Soldier_A_F",
+                "O_T_Soldier_AAR_F",
+                "O_T_Soldier_AAA_F",
+                "O_T_Soldier_AAT_F",
+                "O_T_Soldier_AR_F",
+                "O_T_medic_F",
+                "O_T_crew_F",
+                "O_T_engineer_F",
+                "O_T_soldier_exp_F",
+                "O_T_Soldier_AA_F",
+                "O_T_Soldier_AT_F",
+                "O_T_Soldier_LAT_F",
+                "O_T_Soldier_F",
+                "O_T_Soldier_TL_F",
+                "O_T_Soldier_AR_F",
+                "O_T_Soldier_AR_F"
+            ];
+            VEHICLE_ENEMY = ["O_T_MRAP_02_hmg_ghex_F", "O_T_LSV_02_armed_F"];
+            ARMOR_ENEMY = ["O_T_APC_Tracked_02_cannon_ghex_F", "O_T_APC_Wheeled_02_rcws_ghex_F", "O_T_MBT_02_cannon_ghex_F"];
+            UNITS_MARKSMAN = ["O_T_soldier_M_F","O_T_Recon_M_F","O_T_sniper_F"];
+        };
+        case "SYNDICAT" : {
+            ENEMY_SIDE = INDEPENDENT;
+            UNITS_ENEMY = [
+                "I_C_Soldier_Bandit_7_F",
+                "I_C_Soldier_Bandit_2_F",
+                "I_C_Pilot_F",
+                "I_C_Soldier_Bandit_5_F",
+                "I_C_Soldier_Bandit_1_F",
+                "I_C_Soldier_Bandit_8_F",
+                "I_C_Soldier_Bandit_4_F",
+                "I_C_Soldier_Para_7_F",
+                "I_C_Soldier_Para_2_F",
+                "I_C_Helipilot_F",
+                "I_C_Soldier_Para_3_F",
+                "I_C_Soldier_Para_8_F",
+                "I_C_Soldier_Para_1_F",
+                "I_C_Soldier_Para_5_F",
+                "I_C_Soldier_Bandit_3_F",
+                "I_C_Soldier_Para_4_F",
+                "I_C_Soldier_Bandit_3_F",
+                "I_C_Soldier_Para_4_F"
+            ];
+            UNITS_MARKSMAN = ["I_C_Soldier_Bandit_6_F","I_C_Soldier_Para_6_F"];
+            VEHICLE_ENEMY = ["I_MRAP_03_hmg_F"];
+            ARMOR_ENEMY = ["I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","I_MBT_03_cannon_F"];
         };
         default {
             // CSAT
