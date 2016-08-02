@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=677;
+		nextID=678;
 	};
 	class MarkerIDProvider
 	{
@@ -223,7 +223,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=50;
+		items=51;
 		class Item0
 		{
 			dataType="Object";
@@ -280,6 +280,7 @@ class Mission
 			};
 			id=76;
 			type="CUP_O_AN2_TK";
+			atlOffset=-0.020082474;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -319,6 +320,7 @@ class Mission
 			};
 			id=81;
 			type="CUP_O_AN2_TK";
+			atlOffset=-0.018518448;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5609,6 +5611,44 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11863.958,4.1341171,10493.78};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="spectator_cam_helper";
+			};
+			id=677;
+			type="Land_HelipadEmpty_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

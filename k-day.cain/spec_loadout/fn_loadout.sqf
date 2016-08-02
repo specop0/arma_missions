@@ -118,10 +118,13 @@ if(_parameterCorrect) then {
     if(_type in [CLASS_MEDIC_GER,CLASS_MEDIC_RUS]) then {
         [_unit,"ACE_fieldDressing",ADD_TO_UNIFORM,13]  call Spec_fnc_addItemToContainer;
         [_unit,"ACE_bloodIV_250",ADD_TO_UNIFORM, 7]  call Spec_fnc_addItemToContainer;
-        [_unit,"ACE_morphine",ADD_TO_UNIFORM, 5] call Spec_fnc_addItemToContainer;
+        [_unit,"ACE_epinephrine",ADD_TO_UNIFORM, 5] call Spec_fnc_addItemToContainer;
         _unit setVariable ["ace_medical_medicClass",2,true];
     } else {
         [_unit,"ACE_fieldDressing",ADD_TO_UNIFORM,3]  call Spec_fnc_addItemToContainer;
+        if(_type in [CLASS_DEFAULT_GER, CLASS_DEFAULT_RUS]) then {
+            [_unit,"ACE_morphine",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+        };
     };
     comment "===========================================";
 
