@@ -71,8 +71,8 @@ if(_parameterCorrect) then {
             _BFTicon = "b_air";
         };
         case 9 : {
-            _swFreq = ["143","140"];
-            _lrFreq = ["43","30","31","32","41","42","51","52"];
+            _swFreq = ["142","140"];
+            _lrFreq = ["42","30","31","32","41","42","51","52"];
             _callsign = "Silber";
             _BFTicon = "b_air";
         };

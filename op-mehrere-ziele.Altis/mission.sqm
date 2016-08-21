@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=658;
+		nextID=660;
 	};
 	class MarkerIDProvider
 	{
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={15181.523,42.91758,17335.684};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -281,6 +281,7 @@ class Mission
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
+		windForced=1;
 		year=2018;
 		month=12;
 		day=14;
@@ -291,7 +292,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=143;
+		items=144;
 		class Item0
 		{
 			dataType="Marker";
@@ -517,7 +518,6 @@ class Mission
 				onActivation="[thisList] call compile preprocessFileLineNumbers ""abortPat.sqf""";
 				sizeA=2000;
 				sizeB=1500;
-				timeout[]={60,120,180};
 				activationBy="GUER";
 				isRectangle=1;
 				isServerOnly=1;
@@ -8416,77 +8416,96 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=6;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15175.039,17.904648,17354.918};
-						angles[]={6.2818484,0.78539819,0.0013372133};
+						position[]={15172.65,17.898291,17352.537};
+						angles[]={6.2818413,0.78539819,0.0013439035};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.64999998;
-						rank="MAJOR";
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
-						description="Silber 1 - Pilot";
+						rank="LIEUTENANT";
+						init="this setVariable [""Spec_var_TFARgroup"", 7];";
+						description="Weiss 1 - Pilot";
 						isPlayable=1;
 					};
-					id=600;
+					id=602;
 					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15173.872,17.90148,17353.707};
-						angles[]={6.2818484,0.78539819,0.0013372133};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
-						description="Silber 2 - Co-Pilot";
-						isPlayable=1;
-					};
-					id=601;
-					type="B_Pilot_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={15172.649,17.898289,17352.537};
-						angles[]={6.2818484,0.78539819,0.0013372133};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.64999998;
-						rank="LIEUTENANT";
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
-						description="Silber 3 - Pilot";
-						isPlayable=1;
-					};
-					id=602;
-					type="B_Pilot_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={15171.304,17.894699,17351.191};
-						angles[]={6.2818484,0.78539819,0.0013372133};
+						angles[]={6.2818413,0.78539819,0.0013439035};
 					};
 					side="West";
 					flags=4;
@@ -8494,20 +8513,81 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
-						description="Silber 4 - Co-Pilot";
+						init="this setVariable [""Spec_var_TFARgroup"", 7];";
+						description="Weiss 2 - Co-Pilot";
 						isPlayable=1;
 					};
 					id=603;
 					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
-				class Item4
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
 						position[]={15169.825,17.890814,17349.756};
-						angles[]={6.2818484,0.78539819,0.0013372133};
+						angles[]={6.2818413,0.78539819,0.0013439035};
 					};
 					side="West";
 					flags=4;
@@ -8515,33 +8595,155 @@ class Mission
 					{
 						skill=0.55000001;
 						rank="CORPORAL";
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
+						init="this setVariable [""Spec_var_TFARgroup"", 7];";
 						name="Silber_5";
-						description="Silber 5 - Feldarzt";
+						description="Weiss 3 - Feldarzt";
 						isPlayable=1;
 					};
 					id=604;
 					type="B_Soldier_lite_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
-				class Item5
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
 						position[]={15168.39,17.887047,17348.367};
-						angles[]={6.2818484,0.78539819,0.0013372133};
+						angles[]={6.2818413,0.78539819,0.0013439035};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""Spec_var_TFARgroup"", 9];";
+						init="this setVariable [""Spec_var_TFARgroup"", 7];";
 						name="Silber_6";
-						description="Silber 5 - Feldarzt";
+						description="Weiss 4 - Feldarzt";
 						isPlayable=1;
 					};
 					id=605;
 					type="B_Soldier_lite_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
@@ -8902,7 +9104,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=631;
-					atlOffset=4.9521027;
+					atlOffset=0.60701752;
 				};
 				class Item14
 				{
@@ -8983,7 +9185,7 @@ class Mission
 					showWP="NEVER";
 					id=638;
 					type="Move";
-					atlOffset=4.9521027;
+					atlOffset=0.60701752;
 				};
 			};
 			class Attributes
@@ -9240,6 +9442,122 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item143
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15175.039,17.904648,17354.918};
+						angles[]={6.2818413,0.78539819,0.0013439035};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.64999998;
+						rank="MAJOR";
+						init="this setVariable [""Spec_var_TFARgroup"", 9];";
+						description="Silber 1 - Pilot";
+						isPlayable=1;
+					};
+					id=600;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15173.872,17.90148,17353.707};
+						angles[]={6.2818484,0.78539819,0.0013372133};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="this setVariable [""Spec_var_TFARgroup"", 9];";
+						description="Silber 2 - Co-Pilot";
+						isPlayable=1;
+					};
+					id=601;
+					type="B_Pilot_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=659;
 		};
 	};
 	class Connections
