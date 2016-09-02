@@ -32,9 +32,6 @@ _simpleObject setVectorDirAndUp [[-0.374521,-0.922429,-0.0941184],[-0.02133,-0.0
 _simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9093.88,10173,27.27]];
 _simpleObject setVectorDirAndUp [[0.904959,-0.425497,-0.00100426],[-0.00265204,-0.00800056,0.999964]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9101.07,10196.6,28.243]];
-_simpleObject setVectorDirAndUp [[-0.915611,0.401981,0.00829176],[-0.0213272,-0.0691513,0.997378]];
-
 _simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9059.3,10172.8,26.6868]];
 _simpleObject setVectorDirAndUp [[-0.409213,-0.903266,-0.129056],[-0.0559124,-0.116352,0.991633]];
 
@@ -952,3 +949,4 @@ _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0
 
 _simpleObject = createSimpleObject ["a3\structures_f\civ\camping\sun_chair_green_f.p3d", [9147.71,10170.2,26.3192]];
 _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0,0.999999]];
+

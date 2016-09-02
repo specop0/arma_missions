@@ -11595,15 +11595,77 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9101.0693,28.242981,10196.557};
-				angles[]={6.213963,5.1256428,0.021328852};
+				angles[]={6.2139654,5.125648,0.021327924};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="course_b3_dummy";
 			};
 			id=106;
 			type="Land_Shoot_House_Panels_Windows_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item152
 		{
