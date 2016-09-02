@@ -46,8 +46,9 @@ private _course =
     laptop addAction [_x select 1, {
         params ["_target","_caller","_id","_arguments"];
         _arguments params ["_object", "_name"];
-        _object hideObjectGlobal !(isObjectHidden _object);
-        if(isObjectHidden _object) then {
+        private _isObjectShown = !(isObjectHidden _object);
+        [_object, _isObjectShown] remoteExecCall ["hideObjectGlobal", 2];
+        if(_isObjectShown) then {
             hint format ["%1: %2", _name, "offen"];
         } else {
             hint format ["%1: %2", _name, "verschlossen"];

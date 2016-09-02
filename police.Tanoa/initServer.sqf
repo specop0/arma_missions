@@ -14,9 +14,6 @@ _terrainObjects = nearestTerrainObjects [[5682.446,11060.217,0],[],15];
 } foreach _terrainObjects;
 
 private ["_simpleObject"];
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9114.57,10219.9,30.2739]];
-_simpleObject setVectorDirAndUp [[-0.923172,0.382612,-0.0369011],[-0.0929267,-0.128996,0.987281]];
-
 _simpleObject = createSimpleObject ["a3\structures_f\dominants\hospital\hospital_side1_f.p3d", [5625.44,11050.3,10.7675]];
 _simpleObject setVectorDirAndUp [[-0.707107,-0.707107,0],[0,0,1]];
 
