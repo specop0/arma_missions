@@ -96,18 +96,11 @@ if(_parameterCorrect) then {
         _spawnedAmmoBox addMagazineCargoGlobal ["BWA3_120Rnd_762x51",3];
         _spawnedAmmoBox addMagazineCargoGlobal ["BWA3_200Rnd_556x45",4];
 
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_fieldDressing",10];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_packingBandage",35];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_elasticBandage",10];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_quikclot",60];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_tourniquet",6];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_salineIV_500",10];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_salineIV",4];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_epinephrine",10];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_morphine",10];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_atropine",5];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_surgicalKit",2];
-        _spawnedAmmoBox addItemCargoGlobal ["ACE_personalAidKit",2];
+        _spawnedAmmoBox addItemCargoGlobal ["ACE_fieldDressing",55];
+        _spawnedAmmoBox addItemCargoGlobal ["ACE_bloodIV_500",10];
+        _spawnedAmmoBox addItemCargoGlobal ["ACE_bloodIV",4];
+        _spawnedAmmoBox addItemCargoGlobal ["ACE_epinephrine",8];
+        _spawnedAmmoBox addItemCargoGlobal ["ACE_morphine",8];
         
         _spawnedAmmoBox addItemCargoGlobal ["SmokeShell", 24];
         _spawnedAmmoBox addItemCargoGlobal ["SmokeShellRed", 24];
