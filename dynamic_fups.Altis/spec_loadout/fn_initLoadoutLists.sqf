@@ -20,6 +20,10 @@ _loadoutFactionList pushBack "UK";
 //BW
 _loadoutFactionList pushBack "BW_TROPEN";
 _loadoutFactionList pushBack "BW_FLECK";
+//other / mixed
+_loadoutFactionList pushBack "NORWAY_WOOD";
+_loadoutFactionList pushBack "NORWAY_DESERT";
+_loadoutFactionList pushBack "UKRAINE";
 // low tech
 _loadoutFactionList pushBack "POLICE";
 _loadoutFactionList pushBack "SYNDICAT";

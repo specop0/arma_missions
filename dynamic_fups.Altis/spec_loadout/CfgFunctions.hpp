@@ -14,11 +14,14 @@ class spec_loadout {
         class loadout_korea {};
         class loadout_nato {};
         class loadout_nato_tropentarn {};
+        class loadout_norway_wood {};
+        class loadout_norway_desert {};
         class loadout_police {};
         class loadout_rus_flora {};
         class loadout_rus_flora_alt {};
         class loadout_syndicat {};
         class loadout_uk {};
+        class loadout_ukraine {};
         class loadout_usarmy {};
         class loadout_usmc {};
         class loadout_ussocom {};

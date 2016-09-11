@@ -53,6 +53,15 @@ if(_parameterCorrect) then {
         case "BW_FLECK" : {
             _parameter call Spec_fnc_loadout_bw_flecktarn;
         };
+        case "NORWAY_WOOD" : {
+            _parameter call Spec_fnc_loadout_norway_wood;
+        };
+        case "NORWAY_DESERT" : {
+            _parameter call Spec_fnc_loadout_norway_desert;
+        };
+        case "UKRAINE" : {
+            _parameter call Spec_fnc_loadout_ukraine;
+        };
         default {
             _parameter call Spec_fnc_loadout_nato;
         };

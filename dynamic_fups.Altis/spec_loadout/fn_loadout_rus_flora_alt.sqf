@@ -214,7 +214,7 @@ if(_parameterCorrect) then {
                         [_unit,_x,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
                     } forEach _atAmmo;
                     _unit addWeapon _atWeapon;
-                    _secondaryAccessory pushBack "rhs_acc_1pn93_2";
+                    _secondaryAccessory pushBack "rhs_acc_pgo7v";
                 };
                 comment "MG Ammunition for MG Assistant";
                 if(_type == CLASS_MG_ASSI) then {
