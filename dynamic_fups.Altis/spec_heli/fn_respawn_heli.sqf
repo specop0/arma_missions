@@ -14,6 +14,7 @@ if(isServer) then {
         {
             _x addCuratorEditableObjects [[MEDEVAC_ID],true];
         } forEach allCurators;
+        publicVariable "weiss";
     } else {
         {
             deleteVehicle _x;
@@ -26,6 +27,7 @@ if(isServer) then {
         {
             _x addCuratorEditableObjects [[HELI_TAXI_ID],true];
         } forEach allCurators;
+        publicVariable "bussard";
     };
 } else {
     _this remoteExec ["Spec_fnc_respawn_heli",2];
