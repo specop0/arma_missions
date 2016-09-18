@@ -19,7 +19,7 @@ class EditorData
 		pos[]={9136.1387,50.549999,10145.66};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -377,7 +377,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=184;
+		items=183;
 		class Item0
 		{
 			dataType="Marker";
@@ -11695,48 +11695,6 @@ class Mission
 		};
 		class Item176
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={9038.3301,24.637299,10132.153};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=1306;
-					type="B_support_AMG_F";
-					atlOffset=-0.00017166138;
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					position[]={9024.7217,24.724934,10123.769};
-					type="Hold";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=1307;
-					atlOffset=-0.0002117157;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1305;
-			atlOffset=-0.00017166138;
-		};
-		class Item177
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -11774,7 +11732,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item178
+		class Item177
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11852,7 +11810,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item179
+		class Item178
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11930,7 +11888,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item180
+		class Item179
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12008,7 +11966,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item181
+		class Item180
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12086,7 +12044,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item182
+		class Item181
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12164,7 +12122,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item183
+		class Item182
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12178,7 +12136,7 @@ class Mission
 			};
 			id=1354;
 			type="Land_CampingChair_V1_F";
-			atlOffset=5.4460049;
+			atlOffset=5.4453259;
 		};
 	};
 	class Connections
