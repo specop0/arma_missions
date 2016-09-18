@@ -14,641 +14,524 @@ _terrainObjects = nearestTerrainObjects [[5682.446,11060.217,0],[],15];
 } foreach _terrainObjects;
 
 private ["_simpleObject"];
-_simpleObject = createSimpleObject ["a3\structures_f\dominants\hospital\hospital_side1_f.p3d", [5625.44,11050.3,10.7675]];
-_simpleObject setVectorDirAndUp [[-0.707107,-0.707107,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["a3\structures_f\dominants\hospital\hospital_main_f.p3d", [5651.82,11070,10.88]];
-_simpleObject setVectorDirAndUp [[-0.707107,-0.707107,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["a3\structures_f\dominants\hospital\hospital_side2_f.p3d", [5678.74,11057.3,10.9689]];
-_simpleObject setVectorDirAndUp [[-0.707107,-0.707107,0],[0,0,1]];
-
 _simpleObject = createSimpleObject ["ca\signs2\signt\sign_hospital.p3d", [5691.53,10992.9,4.31868]];
 _simpleObject setVectorDirAndUp [[-0.828784,-0.559569,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9117.57,10200.5,28.5666]];
-_simpleObject setVectorDirAndUp [[-0.374521,-0.922429,-0.0941184],[-0.02133,-0.0929082,0.995446]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9083.62,10166,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9093.88,10173,27.27]];
-_simpleObject setVectorDirAndUp [[0.904959,-0.425497,-0.00100426],[-0.00265204,-0.00800056,0.999964]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.16,10151.9,29.48]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9059.3,10172.8,26.6868]];
-_simpleObject setVectorDirAndUp [[-0.409213,-0.903266,-0.129056],[-0.0559124,-0.116352,0.991633]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.49,10153.4,29.48]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.51,10158.4,27.2115]];
-_simpleObject setVectorDirAndUp [[-0.374573,-0.926929,-0.0222969],[-0.0133317,-0.018661,0.999737]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.82,10155,29.48]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.74,10159.8,27.1612]];
-_simpleObject setVectorDirAndUp [[-0.374346,-0.926017,-0.048555],[-0.0373063,-0.0372801,0.998608]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.14,10156.5,29.48]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.04,10161.3,27.074]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.92598,-0.0495511],[-0.039967,-0.0372763,0.998505]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.47,10158.1,29.48]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.32,10162.8,26.978]];
-_simpleObject setVectorDirAndUp [[-0.374266,-0.925509,-0.0579432],[-0.042629,-0.045247,0.998066]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.8,10159.7,29.482]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.61,10164.3,26.929]];
-_simpleObject setVectorDirAndUp [[-0.374222,-0.923572,-0.0835044],[-0.0452855,-0.0717394,0.996395]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9062.13,10161.2,29.482]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.92,10165.8,26.8888]];
-_simpleObject setVectorDirAndUp [[-0.374382,-0.923858,-0.0795297],[-0.0346456,-0.0717709,0.996819]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9058.46,10162.8,29.482]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.19,10167.3,26.8458]];
-_simpleObject setVectorDirAndUp [[-0.374176,-0.923273,-0.0869483],[-0.0479448,-0.0743739,0.996077]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9054.78,10164.3,29.482]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.49,10168.8,26.774]];
-_simpleObject setVectorDirAndUp [[-0.374127,-0.923199,-0.0879412],[-0.0506028,-0.0743642,0.995946]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9050.1,10168.4,29.4787]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.78,10170.2,26.6962]];
-_simpleObject setVectorDirAndUp [[-0.374075,-0.921318,-0.106027],[-0.0532575,-0.0927975,0.99426]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9051.66,10172.1,29.4792]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9062.12,10171.7,26.6907]];
-_simpleObject setVectorDirAndUp [[-0.374521,-0.922429,-0.0941184],[-0.02133,-0.0929082,0.995446]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9053.21,10175.8,29.4788]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9059.23,10175.1,26.9284]];
-_simpleObject setVectorDirAndUp [[-0.893745,0.448346,0.0143369],[-0.0266593,-0.0849937,0.996025]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9054.77,10179.4,29.4801]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9061.02,10178.7,27.2438]];
-_simpleObject setVectorDirAndUp [[-0.893983,0.447831,0.0155211],[-0.0133361,-0.0612125,0.998036]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9059.45,10190.5,29.4785]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9062.81,10182.3,27.3967]];
-_simpleObject setVectorDirAndUp [[-0.89325,0.44606,0.0559847],[0.0426276,-0.0399318,0.998293]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9061.01,10194.1,29.4785]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9064.59,10185.9,27.4757]];
-_simpleObject setVectorDirAndUp [[-0.893606,0.446315,0.0476652],[0.0319849,-0.0426058,0.99858]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9062.57,10197.8,29.4785]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9066.35,10189.5,27.5436]];
-_simpleObject setVectorDirAndUp [[-0.893035,0.444477,0.0702071],[0.0479446,-0.0611475,0.996977]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9064.13,10201.5,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.14,10193,27.6069]];
-_simpleObject setVectorDirAndUp [[-0.889942,0.453016,0.0527259],[0.0293202,-0.0585401,0.997854]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.69,10205.2,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.93,10196.6,27.7403]];
-_simpleObject setVectorDirAndUp [[-0.89325,0.443475,0.0737116],[0.0426276,-0.0796727,0.995909]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9067.25,10208.8,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.7,10200.2,27.885]];
-_simpleObject setVectorDirAndUp [[-0.893679,0.444902,0.0583167],[0.0293221,-0.0717836,0.996989]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.81,10212.5,29.4793]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.47,10203.8,28.0599]];
-_simpleObject setVectorDirAndUp [[-0.893146,0.443486,0.0749063],[0.0452867,-0.077024,0.996]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9070.37,10216.2,29.4793]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9075.24,10207.3,28.1857]];
-_simpleObject setVectorDirAndUp [[-0.893984,0.446671,0.0357583],[0.0133313,-0.0532526,0.998492]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.93,10219.9,29.4793]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.97,10210.8,28.3773]];
-_simpleObject setVectorDirAndUp [[-0.90402,0.425193,0.044265],[0.02133,-0.0585529,0.998056]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.49,10223.6,29.4805]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9078.68,10214.4,28.6355]];
-_simpleObject setVectorDirAndUp [[-0.904197,0.424894,0.0435181],[0.00800059,-0.0850212,0.996347]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.65,10155.4,29.48]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.37,10218,28.7239]];
-_simpleObject setVectorDirAndUp [[-0.903837,0.42761,-0.0151186],[-0.0293202,-0.0266456,0.999215]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9081.98,10157,29.48]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.05,10221.7,28.8911]];
-_simpleObject setVectorDirAndUp [[-0.903067,0.428465,-0.0297909],[-0.0506016,-0.0372602,0.998024]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9078.3,10158.6,29.48]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.75,10225.3,29.2162]];
-_simpleObject setVectorDirAndUp [[-0.899251,0.437297,-0.0109163],[-0.0559124,-0.0901552,0.994357]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9074.63,10160.1,29.48]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.45,10228.9,29.7588]];
-_simpleObject setVectorDirAndUp [[-0.901715,0.432233,-0.00916526],[-0.0744604,-0.134385,0.988128]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9067.29,10163.2,29.4818]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.25,10161.9,27.2685]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.92713,-0.0104151],[-0.0080009,-0.00800033,0.999936]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9059.95,10166.3,29.482]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9093.48,10163.4,27.2403]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.927191,-0.00153589],[-0.0106641,0.00265189,0.99994]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.8,10172.6,29.4897]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9089.78,10164.9,27.1909]];
-_simpleObject setVectorDirAndUp [[-0.374521,-0.927184,-0.00798932],[-0.0213272,0,0.999773]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.13,10174.1,29.4897]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.06,10166.3,27.115]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.926695,-0.0307068],[-0.0159977,-0.0266537,0.999517]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.45,10175.7,29.4897]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9078.66,10169.3,27.1241]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.925961,-0.0479758],[-0.0159977,-0.0452809,0.998846]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.78,10177.3,29.4897]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9074.93,10170.8,27.1177]];
-_simpleObject setVectorDirAndUp [[-0.374541,-0.92658,-0.0341734],[-0.0186628,-0.029315,0.999396]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.11,10178.8,29.4897]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.23,10172.3,27.0645]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.925591,-0.055423],[-0.0293202,-0.0479225,0.998421]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9072.43,10180.4,29.4836]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9067.52,10173.8,27.0265]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.925735,-0.05296],[-0.0293202,-0.0452658,0.998545]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.76,10181.9,29.4833]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9063.86,10175.2,27.0334]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.923577,-0.0824387],[-0.0293202,-0.077069,0.996595]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.09,10183.5,29.4829]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9083.33,10167.5,27.1016]];
-_simpleObject setVectorDirAndUp [[-0.409807,-0.91165,-0.0308697],[-0.0159977,-0.0266537,0.999517]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9061.41,10185.1,29.4833]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9101.55,10179.5,27.4357]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.927113,-0.0118386],[0.00799344,-0.015997,0.99984]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9058.88,10184,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.86,10181,27.444]];
-_simpleObject setVectorDirAndUp [[-0.374601,-0.927033,-0.0168277],[-0.0053265,-0.0159973,0.999858]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9057.33,10180.4,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.14,10182.5,27.4435]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.926748,-0.0287095],[-0.0106641,-0.0266556,0.999588]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9055.77,10176.7,29.482]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.42,10184,27.4128]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.926845,-0.0257656],[-0.0159977,-0.0213244,0.999645]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9054.21,10173,29.482]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.73,10185.5,27.3855]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.926773,-0.0282374],[-0.0159977,-0.0239903,0.999584]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9067,10167.6,29.482]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.01,10187,27.3678]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.926948,-0.0212978],[-0.0106641,-0.0186616,0.999769]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.56,10171.3,29.4825]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.3,10188.5,27.3645]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.926966,-0.0203004],[-0.0080009,-0.018662,0.999794]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9070.12,10174.9,29.4833]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9075.59,10189.9,27.3887]];
-_simpleObject setVectorDirAndUp [[-0.374605,-0.926828,-0.0257092],[-0.00265204,-0.026657,0.999641]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.67,10178.6,29.4836]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.93,10191.4,27.4488]];
-_simpleObject setVectorDirAndUp [[-0.374605,-0.926741,-0.0286612],[0.00265199,-0.0319829,0.999485]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.45,10163.2,29.48]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9104.33,10178.4,27.3948]];
-_simpleObject setVectorDirAndUp [[-0.409836,-0.912126,-0.00778976],[0.0106641,-0.0133306,0.999854]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.89,10159.6,29.4796]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.13,10190.4,27.4777]];
-_simpleObject setVectorDirAndUp [[0.903748,-0.426518,-0.0363575],[0.02133,-0.0399591,0.998974]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.79,10168.8,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9067.44,10186.8,27.3964]];
-_simpleObject setVectorDirAndUp [[0.902914,-0.426323,-0.0547237],[0.0479446,-0.0266265,0.998495]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.17,10156.5,29.48]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.76,10183.2,27.3624]];
-_simpleObject setVectorDirAndUp [[0.903491,-0.426917,-0.0380264],[0.0319849,-0.0213162,0.999261]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9089.74,10160.2,29.48]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9063.96,10179.5,27.2649]];
-_simpleObject setVectorDirAndUp [[0.90038,-0.434841,-0.0151439],[0.00265199,-0.0293201,0.999567]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.3,10163.8,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9078.63,10173.7,27.2105]];
-_simpleObject setVectorDirAndUp [[-0.894063,0.447901,0.00596973],[0,-0.013327,0.999911]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.86,10167.5,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.4,10177.3,27.2374]];
-_simpleObject setVectorDirAndUp [[-0.89406,0.447941,0.00240593],[-0.00265204,-0.010664,0.99994]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.42,10171.2,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.17,10180.8,27.2794]];
-_simpleObject setVectorDirAndUp [[-0.89405,0.447967,1.49277e-005],[-0.0053265,-0.0106639,0.999929]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.98,10174.9,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.96,10184.4,27.3345]];
-_simpleObject setVectorDirAndUp [[-0.890274,0.455412,-0.00342355],[-0.0106641,-0.0133306,0.999854]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.54,10178.5,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9077.32,10171,27.1622]];
-_simpleObject setVectorDirAndUp [[0.898799,-0.438359,0.00152843],[-0.0159977,-0.0293164,0.999442]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.1,10182.2,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.53,10170.3,27.2384]];
-_simpleObject setVectorDirAndUp [[-0.894034,0.447984,-0.00356928],[-0.0080009,-0.00800033,0.999936]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9100.66,10185.9,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.75,10166.7,27.2061]];
-_simpleObject setVectorDirAndUp [[-0.894012,0.447986,-0.00714824],[-0.0106641,-0.00532624,0.999929]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9102.22,10189.6,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.17,10175.7,27.3093]];
-_simpleObject setVectorDirAndUp [[-0.89405,0.447965,0.00120984],[-0.0053265,-0.0133311,0.999897]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9105.34,10196.9,29.4857]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.95,10163,27.2793]];
-_simpleObject setVectorDirAndUp [[-0.89406,0.447922,-0.00475702],[-0.00265204,0.00532648,0.999982]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9106.91,10200.6,29.4852]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9101.74,10166.7,27.2887]];
-_simpleObject setVectorDirAndUp [[-0.894063,0.447927,0.00358059],[0,-0.00799344,0.999968]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9108.47,10204.3,29.4857]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9103.53,10170.2,27.3123]];
-_simpleObject setVectorDirAndUp [[-0.89406,0.44787,0.00834248],[0.00265199,-0.0133313,0.999908]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9093.43,10173.8,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9105.31,10173.8,27.3393]];
-_simpleObject setVectorDirAndUp [[-0.89386,0.447774,0.022651],[0.0213271,-0.00799877,0.999741]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9089.75,10175.4,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9107.07,10177.4,27.32]];
-_simpleObject setVectorDirAndUp [[-0.893745,0.447876,0.025021],[0.0266571,-0.00265105,0.999641]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.29,10177.7,29.4899]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9108.86,10180.9,27.3277]];
-_simpleObject setVectorDirAndUp [[-0.890008,0.454888,0.0310145],[0.0266571,-0.0159918,0.999517]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.62,10179.2,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9110.65,10184.5,27.3888]];
-_simpleObject setVectorDirAndUp [[-0.893606,0.446682,0.0440968],[0.031983,-0.0346279,0.998888]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.95,10180.8,29.4897]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9112.42,10188.1,27.4995]];
-_simpleObject setVectorDirAndUp [[-0.893526,0.445941,0.0524161],[0.0346456,-0.0479158,0.99825]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.27,10182.3,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9114.19,10191.7,27.6865]];
-_simpleObject setVectorDirAndUp [[-0.893349,0.443853,0.0701641],[0.0399667,-0.0770415,0.996226]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.6,10183.9,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9115.96,10195.2,28.0002]];
-_simpleObject setVectorDirAndUp [[-0.89386,0.442853,0.0699759],[0.02133,-0.113895,0.993264]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9064.09,10186.2,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9125.66,10215.6,31.5012]];
-_simpleObject setVectorDirAndUp [[-0.866721,0.485828,-0.112986],[-0.213619,-0.15685,0.964243]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9060.41,10187.8,29.4833]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9119.28,10202.1,28.7737]];
-_simpleObject setVectorDirAndUp [[-0.903596,0.428192,0.0128797],[-0.0373079,-0.10861,0.993384]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.52,10186.4,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9120.97,10205.7,29.2949]];
-_simpleObject setVectorDirAndUp [[-0.902223,0.431155,-0.0099721],[-0.0665191,-0.116276,0.990987]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.84,10187.9,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9122.65,10209.3,29.9507]];
-_simpleObject setVectorDirAndUp [[-0.894994,0.442358,-0.057492],[-0.142529,-0.161453,0.976534]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.16,10189.5,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9124.35,10212.9,30.8371]];
-_simpleObject setVectorDirAndUp [[-0.884504,0.455377,-0.101413],[-0.188557,-0.150108,0.970523]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.48,10191,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9106.25,10180.2,27.3792]];
-_simpleObject setVectorDirAndUp [[-0.374499,-0.927209,-0.00584569],[0.0239934,-0.0159929,0.999584]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.8,10192.6,29.4785]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9102.48,10181.7,27.4661]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.926902,-0.0231898],[0.0106641,-0.0293161,0.999513]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.13,10194.2,29.4785]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.06,10184.7,27.5142]];
-_simpleObject setVectorDirAndUp [[-0.374573,-0.926639,-0.0321789],[-0.0133317,-0.0293195,0.999481]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9072.45,10195.7,29.4785]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.35,10186.2,27.4854]];
-_simpleObject setVectorDirAndUp [[-0.374521,-0.926641,-0.0327025],[-0.0213272,-0.026651,0.999417]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.77,10197.3,29.4785]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.65,10187.7,27.4528]];
-_simpleObject setVectorDirAndUp [[-0.374541,-0.926668,-0.0317048],[-0.0186628,-0.0266525,0.999471]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9065.1,10198.8,29.4785]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.93,10189.2,27.4299]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.926695,-0.0307068],[-0.0159977,-0.0266537,0.999517]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9077.7,10182.7,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.23,10190.6,27.4284]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.926774,-0.0277122],[-0.0080009,-0.0266563,0.999613]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.26,10186.4,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9074.71,10192.7,27.4679]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.926368,-0.0389951],[0.00800059,-0.0452853,0.998942]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.82,10190.1,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9071.05,10194.2,27.571]];
-_simpleObject setVectorDirAndUp [[-0.374266,-0.926956,-0.0260377],[0.042629,-0.045247,0.998066]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9098.88,10186.7,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9097.84,10183.5,27.5137]];
-_simpleObject setVectorDirAndUp [[-0.409853,-0.911693,-0.0289265],[-0.0053265,-0.0293197,0.999556]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.21,10188.3,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9109.89,10191.8,27.8312]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.925428,-0.0580838],[0.0293202,-0.0744266,0.996795]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.54,10189.8,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9106.12,10193.3,28.0132]];
-_simpleObject setVectorDirAndUp [[-0.374573,-0.924809,-0.0665088],[0.0133313,-0.0770953,0.996935]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.87,10191.4,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9102.43,10194.8,28.1257]];
-_simpleObject setVectorDirAndUp [[-0.374607,-0.924963,-0.0641297],[0,-0.0691661,0.997605]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.2,10193,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9098.71,10196.3,28.1809]];
-_simpleObject setVectorDirAndUp [[-0.374541,-0.924665,-0.0686511],[-0.0186628,-0.0665075,0.997611]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.52,10194.5,29.4797]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095,10197.8,28.1721]];
-_simpleObject setVectorDirAndUp [[-0.374415,-0.924525,-0.0711753],[-0.0319849,-0.063836,0.997448]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.85,10196.1,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.3,10199.3,28.1301]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924335,-0.0741594],[-0.039967,-0.0638177,0.997161]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.17,10197.6,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.58,10200.7,28.0726]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924715,-0.0692484],[-0.0399685,-0.0585194,0.997486]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9069.5,10199.2,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.87,10202.2,28.0245]];
-_simpleObject setVectorDirAndUp [[-0.374415,-0.925064,-0.0638023],[-0.031983,-0.0558827,0.997925]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9087.25,10179.8,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.17,10203.7,27.9884]];
-_simpleObject setVectorDirAndUp [[-0.374415,-0.925064,-0.0638023],[-0.031983,-0.0558827,0.997925]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9086.51,10177.9,29.4849]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.5,10205.2,28.0497]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.925957,-0.0478514],[0.0106641,-0.0559081,0.998379]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9066.69,10202.6,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.62,10190.3,27.5257]];
-_simpleObject setVectorDirAndUp [[-0.893907,0.44825,0.00123038],[-0.0186628,-0.0399598,0.999027]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9068.25,10206.3,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.4,10193.9,27.7322]];
-_simpleObject setVectorDirAndUp [[-0.893679,0.448669,-0.00590202],[-0.0293202,-0.0452658,0.998545]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9070.58,10211.8,29.4793]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.17,10197.5,27.9979]];
-_simpleObject setVectorDirAndUp [[-0.893606,0.448839,-0.00350468],[-0.031983,-0.0558836,0.997925]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9072.14,10215.5,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9112.67,10193.1,27.8597]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924371,-0.0736995],[0.0399667,-0.0954848,0.994628]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9074.47,10221,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9108.9,10194.6,28.0924]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.92476,-0.067889],[0.0293202,-0.0849874,0.995951]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9073.17,10212.9,29.4793]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9105.21,10196.1,28.2438]];
-_simpleObject setVectorDirAndUp [[-0.374601,-0.923996,-0.0768406],[0.00533751,-0.0850227,0.996365]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.84,10211.4,29.4793]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9101.49,10197.6,28.3216]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.924756,-0.0671205],[-0.0080009,-0.0691648,0.997573]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.51,10209.8,29.4793]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.78,10199.1,28.3492]];
-_simpleObject setVectorDirAndUp [[-0.374541,-0.924665,-0.0686511],[-0.0186628,-0.0665075,0.997611]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.15,10201.7,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.08,10200.6,28.3223]];
-_simpleObject setVectorDirAndUp [[-0.374382,-0.92465,-0.069715],[-0.0346473,-0.0611812,0.997525]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.71,10205.3,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.36,10202.1,28.2611]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924716,-0.0692476],[-0.0399685,-0.0585185,0.997486]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9083.8,10212.6,29.4805]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.65,10203.5,28.1999]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924716,-0.0692476],[-0.0399685,-0.0585185,0.997486]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.36,10216.3,29.4805]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.95,10205,28.1524]];
-_simpleObject setVectorDirAndUp [[-0.374382,-0.925008,-0.0647997],[-0.0346473,-0.0558787,0.997836]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.92,10220,29.4805]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9079.28,10206.5,28.1092]];
-_simpleObject setVectorDirAndUp [[-0.374415,-0.92523,-0.0613425],[-0.031983,-0.0532292,0.99807]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9109.85,10212.4,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9097.96,10186.8,27.6361]];
-_simpleObject setVectorDirAndUp [[-0.927171,0.374476,0.0110344],[-0.0053265,-0.042627,0.999077]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9106.17,10213.9,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9097.23,10185,27.5513]];
-_simpleObject setVectorDirAndUp [[-0.927102,0.374808,-0.00137135],[-0.0133317,-0.0293195,0.999481]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9102.5,10215.5,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9078.46,10209.2,28.2488]];
-_simpleObject setVectorDirAndUp [[-0.90402,0.425193,0.044265],[0.02133,-0.0585529,0.998056]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9098.83,10217.1,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.17,10212.8,28.5399]];
-_simpleObject setVectorDirAndUp [[-0.903763,0.427968,0.0074948],[-0.031983,-0.0849804,0.995869]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.16,10218.6,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.74,10218.4,28.8019]];
-_simpleObject setVectorDirAndUp [[-0.903965,0.427482,-0.010304],[-0.0239937,-0.0266494,0.999357]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.49,10220.2,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.45,10222,29.0148]];
-_simpleObject setVectorDirAndUp [[-0.903404,0.428412,-0.0180257],[-0.0426276,-0.047901,0.997942]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.82,10221.7,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.01,10227.6,29.6746]];
-_simpleObject setVectorDirAndUp [[-0.902223,0.431265,-0.00204927],[-0.0665182,-0.134461,0.988684]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.14,10223.3,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.69,10217.6,28.8357]];
-_simpleObject setVectorDirAndUp [[-0.374415,-0.926212,-0.0440967],[-0.031983,-0.0346279,0.998888]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9080.47,10224.8,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.36,10216.1,28.9185]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.926108,-0.0470858],[-0.039967,-0.0346179,0.998601]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.8,10226.4,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.07,10214.6,29.0164]];
-_simpleObject setVectorDirAndUp [[-0.374266,-0.925352,-0.0604037],[-0.0426276,-0.047901,0.997942]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9082.72,10204.4,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.37,10206.5,28.525]];
-_simpleObject setVectorDirAndUp [[-0.903404,0.42858,-0.0134682],[-0.0426276,-0.0585121,0.997376]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9084.28,10208.1,29.4793]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.08,10210.1,28.7992]];
-_simpleObject setVectorDirAndUp [[-0.903503,0.428374,-0.0133454],[-0.0399685,-0.0532148,0.997783]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.83,10211.8,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9089.15,10203.8,28.3133]];
-_simpleObject setVectorDirAndUp [[-0.926443,0.376134,-0.0150556],[-0.0399685,-0.0585185,0.997486]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9087.39,10215.5,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.53,10217.7,29.3116]];
-_simpleObject setVectorDirAndUp [[-0.903067,0.428886,-0.0229465],[-0.0506016,-0.0531891,0.997302]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.95,10219.1,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.24,10221.3,29.6021]];
-_simpleObject setVectorDirAndUp [[-0.900199,0.435456,-0.0044659],[-0.031983,-0.0558827,0.997925]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9081.16,10200.8,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9098.94,10225,29.9552]];
-_simpleObject setVectorDirAndUp [[-0.903837,0.427552,0.0166753],[-0.0293222,-0.100773,0.994477]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9096.11,10190.2,29.4865]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9087.93,10231.7,30.2863]];
-_simpleObject setVectorDirAndUp [[-0.40837,-0.90296,-0.133779],[-0.0850241,-0.108292,0.990476]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.43,10191.8,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9124.14,10217.2,31.4688]];
-_simpleObject setVectorDirAndUp [[-0.36596,-0.902307,-0.22785],[-0.213619,-0.15685,0.964243]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9088.76,10193.3,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9120.37,10218.7,30.9326]];
-_simpleObject setVectorDirAndUp [[-0.367143,-0.903209,-0.222307],[-0.198629,-0.157357,0.96736]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.09,10194.9,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9116.67,10220.2,30.5716]];
-_simpleObject setVectorDirAndUp [[-0.370498,-0.908844,-0.191662],[-0.147696,-0.146075,0.978186]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9081.41,10196.4,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9112.95,10221.7,30.3562]];
-_simpleObject setVectorDirAndUp [[-0.372986,-0.914858,-0.154649],[-0.09293,-0.129004,0.98728]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9100.52,10190.5,29.4862]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9109.24,10223.2,30.2963]];
-_simpleObject setVectorDirAndUp [[-0.373709,-0.912329,-0.167326],[-0.069168,-0.152483,0.985883]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9096.84,10192.1,29.4862]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9105.54,10224.7,30.2701]];
-_simpleObject setVectorDirAndUp [[-0.374176,-0.918099,-0.130715],[-0.0479448,-0.121614,0.991419]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9093.17,10193.7,29.4862]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9101.82,10226.2,30.1727]];
-_simpleObject setVectorDirAndUp [[-0.373414,-0.916649,-0.142539],[-0.0797454,-0.121366,0.989399]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9089.49,10195.2,29.4862]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9098.12,10227.7,30.2583]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.915004,-0.150191],[-0.0293222,-0.150209,0.988219]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9085.81,10196.8,29.4862]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.41,10229.1,30.3429]];
-_simpleObject setVectorDirAndUp [[-0.374446,-0.916523,-0.140628],[-0.0293202,-0.139883,0.989734]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9102.81,10195.9,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9090.75,10230.6,30.3849]];
-_simpleObject setVectorDirAndUp [[-0.374222,-0.919215,-0.12248],[-0.0452868,-0.113804,0.992471]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.17,10197.5,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9088.23,10230.3,30.1597]];
-_simpleObject setVectorDirAndUp [[-0.923827,0.380955,-0.0376516],[-0.0850241,-0.108292,0.990476]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.49,10199,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9086.67,10231.6,30.1649]];
-_simpleObject setVectorDirAndUp [[-0.923827,0.380955,-0.0376516],[-0.0850241,-0.108292,0.990476]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9091.82,10200.6,29.4862]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.19,10209.8,28.8651]];
-_simpleObject setVectorDirAndUp [[-0.903503,0.428374,-0.0133454],[-0.0399685,-0.0532148,0.997783]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9086.32,10202.9,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9095.9,10213.4,29.1157]];
-_simpleObject setVectorDirAndUp [[-0.903404,0.428459,-0.0168872],[-0.042629,-0.0505556,0.997811]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9094.47,10201.5,29.4857]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.59,10217,29.3763]];
-_simpleObject setVectorDirAndUp [[-0.903763,0.427989,-0.00613496],[-0.031983,-0.0532301,0.99807]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9096.03,10205.2,29.4857]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.27,10220.6,29.6518]];
-_simpleObject setVectorDirAndUp [[-0.903298,0.428677,-0.0170078],[-0.0452868,-0.0558549,0.997411]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.6,10208.9,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9100.97,10224.2,29.9247]];
-_simpleObject setVectorDirAndUp [[-0.900273,0.434973,0.0175324],[-0.0293222,-0.100773,0.994477]];
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.16,10212.6,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9092.46,10206.3,28.5986]];
-_simpleObject setVectorDirAndUp [[-0.89325,0.449404,-0.0118126],[-0.0426276,-0.0585121,0.997376]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9062.62,10166.6,28.279]];
+_simpleObject setVectorDirAndUp [[0.926217,-0.37699,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9111.88,10196.2,28.1769]];
-_simpleObject setVectorDirAndUp [[-0.374541,-0.923609,-0.081644],[0.0186593,-0.0955436,0.99525]];
+_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_8m_f.p3d", [9067.17,10178.4,28.6119]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9108.16,10197.7,28.358]];
-_simpleObject setVectorDirAndUp [[-0.374607,-0.924032,-0.0763859],[0,-0.0823849,0.996601]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9071.82,10170.6,28.2828]];
+_simpleObject setVectorDirAndUp [[-0.69506,0.718951,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9104.45,10199.2,28.4747]];
-_simpleObject setVectorDirAndUp [[-0.374559,-0.923962,-0.0774638],[-0.0159977,-0.0770933,0.996895]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9073.3,10172.6,28.2855]];
+_simpleObject setVectorDirAndUp [[-0.887041,0.461691,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9100.75,10200.7,28.5219]];
-_simpleObject setVectorDirAndUp [[-0.374499,-0.924342,-0.0730981],[-0.0239937,-0.069148,0.997318]];
+_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_4m_f.p3d", [9066.72,10187.4,28.6072]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9097.03,10202.2,28.5326]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924134,-0.0766147],[-0.0399685,-0.0664659,0.996988]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9089.25,10162.3,28.2797]];
+_simpleObject setVectorDirAndUp [[-0.415354,-0.90966,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9093.33,10203.7,28.4826]];
-_simpleObject setVectorDirAndUp [[-0.374266,-0.924467,-0.0726994],[-0.042629,-0.0611623,0.997217]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9087.46,10162.2,28.2799]];
+_simpleObject setVectorDirAndUp [[0.913244,-0.407412,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9114.83,10197.7,28.2603]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.922017,-0.0977919],[0.00800059,-0.108682,0.994044]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9080.61,10180.8,28.2853]];
+_simpleObject setVectorDirAndUp [[-0.909933,0.414756,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9111.11,10199.2,28.4587]];
-_simpleObject setVectorDirAndUp [[-0.374601,-0.923132,-0.0866116],[0.00533751,-0.0955589,0.995409]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9081.65,10183,28.2853]];
+_simpleObject setVectorDirAndUp [[-0.908336,0.418242,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9107.4,10200.7,28.5918]];
-_simpleObject setVectorDirAndUp [[-0.374607,-0.92513,-0.0616745],[0,-0.0665181,0.997785]];
+_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_8m_f.p3d", [9094.7,10181.9,28.6136]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9103.7,10202.2,28.6744]];
-_simpleObject setVectorDirAndUp [[-0.374573,-0.924798,-0.0666576],[-0.0133317,-0.0665122,0.997697]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9072.26,10199.8,27.29]];
+_simpleObject setVectorDirAndUp [[-0.910793,0.412864,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9099.98,10203.7,28.7105]];
-_simpleObject setVectorDirAndUp [[-0.374499,-0.924342,-0.0730981],[-0.0239937,-0.069148,0.997318]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9077.89,10204.7,28.2792]];
+_simpleObject setVectorDirAndUp [[0.904645,-0.426166,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9096.28,10205.2,28.6897]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.924715,-0.0692484],[-0.0399685,-0.0585194,0.997486]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9083.6,10215.7,28.28]];
+_simpleObject setVectorDirAndUp [[0.420059,0.907497,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9114.71,10201.6,28.6246]];
-_simpleObject setVectorDirAndUp [[-0.374585,-0.922801,-0.0901374],[-0.0106638,-0.0929212,0.995616]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9081.39,10216.7,28.2806]];
+_simpleObject setVectorDirAndUp [[0.411678,0.911329,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9110.99,10203,28.7566]];
-_simpleObject setVectorDirAndUp [[-0.374605,-0.924685,-0.0680377],[0.0026744,-0.0744583,0.997221]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9101.2,10201.1,28.2847]];
+_simpleObject setVectorDirAndUp [[-0.349818,-0.936818,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9107.28,10204.5,28.8562]];
-_simpleObject setVectorDirAndUp [[-0.374601,-0.925163,-0.0612093],[-0.0053265,-0.0638678,0.997944]];
+_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9103.56,10200.2,28.2848]];
+_simpleObject setVectorDirAndUp [[-0.352055,-0.935979,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9103.58,10206,28.9287]];
-_simpleObject setVectorDirAndUp [[-0.374595,-0.925099,-0.0622091],[-0.0080009,-0.0638667,0.997926]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9078.53,10194.5,31.321]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9096.16,10209,28.9011]];
-_simpleObject setVectorDirAndUp [[-0.374307,-0.925071,-0.0643306],[-0.0399685,-0.0532148,0.997783]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9080.08,10198.2,31.32]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_f.p3d", [9098.92,10207.9,28.9443]];
-_simpleObject setVectorDirAndUp [[-0.374382,-0.925177,-0.0623387],[-0.0346379,-0.0532278,0.997981]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9081.64,10201.9,31.3197]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9108.22,10206.4,28.982]];
-_simpleObject setVectorDirAndUp [[-0.904213,0.426491,0.0224689],[-0.0053265,-0.0638678,0.997944]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9083.85,10203.9,31.3218]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9109.92,10210,29.2098]];
-_simpleObject setVectorDirAndUp [[-0.904213,0.426604,0.0202025],[-0.0053265,-0.0585645,0.998269]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9087.52,10202.4,31.3137]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9111.6,10213.6,29.4391]];
-_simpleObject setVectorDirAndUp [[-0.903837,0.427828,0.00649561],[-0.0293181,-0.077069,0.996595]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9091.2,10200.8,31.3152]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9113.3,10217.3,29.9007]];
-_simpleObject setVectorDirAndUp [[-0.897979,0.439172,-0.0276028],[-0.0771034,-0.0952758,0.99246]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9094.88,10199.3,31.3138]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9074.33,10172.5,25.9571]];
-_simpleObject setVectorDirAndUp [[0.934261,-0.356521,0.00698869],[-0.0186628,-0.029315,0.999396]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9098.55,10197.7,31.3131]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_8m_f.p3d", [9079.08,10184.1,26.4258]];
-_simpleObject setVectorDirAndUp [[0.356582,0.934264,0],[0,0,1]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9102.22,10196.1,31.3136]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9082.21,10177.8,26.0471]];
-_simpleObject setVectorDirAndUp [[0.45496,0.890473,0.00833115],[-0.00265204,-0.00800056,0.999964]];
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9106.51,10196.9,30.2779]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9084.42,10176.7,26.045]];
-_simpleObject setVectorDirAndUp [[0.454955,0.8904,0.0142948],[-0.0053265,-0.0133311,0.999897]];
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9107.7,10199.7,28.4579]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_4m_f.p3d", [9077.16,10194,26.6475]];
-_simpleObject setVectorDirAndUp [[0.925512,-0.378717,0],[0,0,1]];
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9079.15,10192.9,31.3183]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9101.33,10168.7,26.1053]];
-_simpleObject setVectorDirAndUp [[-0.391575,-0.920117,-0.00735513],[0,-0.00799344,0.999968]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9099.05,10169.6,26.078]];
-_simpleObject setVectorDirAndUp [[-0.391525,-0.920067,-0.0136192],[-0.0159977,-0.00799242,0.99984]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9090.98,10187.9,26.3253]];
-_simpleObject setVectorDirAndUp [[-0.919585,0.392663,-0.013378],[-0.0293202,-0.0346307,0.99897]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9091.98,10190.2,26.4576]];
-_simpleObject setVectorDirAndUp [[-0.919585,0.392827,-0.00710542],[-0.0293202,-0.0505799,0.99829]];
-
-_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\wooden\woodenwall_01_m_8m_f.p3d", [9108.08,10188.1,26.7637]];
-_simpleObject setVectorDirAndUp [[-0.918023,0.396528,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9082.26,10206.9,27.0369]];
-_simpleObject setVectorDirAndUp [[-0.919428,0.393133,-0.0099094],[-0.0346473,-0.0558787,0.997836]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9091.39,10211.8,27.656]];
-_simpleObject setVectorDirAndUp [[-0.402814,-0.913472,-0.0575412],[-0.0399685,-0.045252,0.998176]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9096.22,10222.4,28.4325]];
-_simpleObject setVectorDirAndUp [[0.39493,0.916481,0.0639792],[-0.031983,-0.0558827,0.997925]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9093.88,10223.4,28.453]];
-_simpleObject setVectorDirAndUp [[0.384888,0.917481,0.100451],[-0.031983,-0.0955114,0.994914]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9111.22,10208.9,27.9498]];
-_simpleObject setVectorDirAndUp [[-0.320943,-0.945755,-0.05044],[0,-0.0532574,0.998581]];
-
-_simpleObject = createSimpleObject ["a3\props_f_exp\commercial\market\woodencounter_01_f.p3d", [9113.61,10208.1,27.9368]];
-_simpleObject setVectorDirAndUp [[-0.320829,-0.945299,-0.0589832],[-0.0266571,-0.0532384,0.998226]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9105.86,10172.1,26.5548]];
-_simpleObject setVectorDirAndUp [[0.425528,0.904945,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9105.18,10178,29.236]];
-_simpleObject setVectorDirAndUp [[0.913779,-0.406211,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9101.54,10179.7,29.2745]];
-_simpleObject setVectorDirAndUp [[0.913801,-0.406162,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9097.86,10181.3,29.3079]];
-_simpleObject setVectorDirAndUp [[0.913779,-0.406211,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9094.19,10182.9,29.3148]];
-_simpleObject setVectorDirAndUp [[0.913779,-0.406211,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9090.54,10184.5,29.2852]];
-_simpleObject setVectorDirAndUp [[0.913779,-0.406211,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9086.89,10186.1,29.2659]];
-_simpleObject setVectorDirAndUp [[0.913779,-0.406211,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9086.89,10189.1,29.3649]];
-_simpleObject setVectorDirAndUp [[0.440812,0.896069,0.0523973],[0,-0.0583749,0.998295]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9088.56,10192.7,29.5487]];
-_simpleObject setVectorDirAndUp [[0.440812,0.896858,0.0364895],[0,-0.0406523,0.999173]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9090.33,10196.3,29.7489]];
-_simpleObject setVectorDirAndUp [[0.440812,0.89582,0.0564866],[0,-0.0629308,0.998018]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9092.09,10199.8,29.9927]];
-_simpleObject setVectorDirAndUp [[0.440812,0.89582,0.0564866],[0,-0.0629308,0.998018]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9093.84,10203.4,30.3217]];
-_simpleObject setVectorDirAndUp [[0.440812,0.891826,0.101643],[0,-0.113239,0.993568]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9095.59,10207,30.6128]];
-_simpleObject setVectorDirAndUp [[0.440812,0.89582,0.0564866],[0,-0.0629308,0.998018]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9097.9,10208.9,30.7415]];
-_simpleObject setVectorDirAndUp [[0.911218,-0.411909,0.00358089],[-0.00392976,0,0.999992]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9107.13,10174.8,28.3373]];
-_simpleObject setVectorDirAndUp [[0.414761,0.90993,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp2m0_2.p3d", [9107.93,10176.8,29.2528]];
-_simpleObject setVectorDirAndUp [[-0.911408,0.411503,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9101.53,10207.2,30.7473]];
-_simpleObject setVectorDirAndUp [[0.911225,-0.411909,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9105.16,10205.6,30.7313]];
-_simpleObject setVectorDirAndUp [[0.911225,-0.411909,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9108.82,10204,30.6772]];
-_simpleObject setVectorDirAndUp [[0.911035,-0.411909,-0.0185824],[0.0203927,0,0.999792]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9112.48,10202.3,30.5828]];
-_simpleObject setVectorDirAndUp [[0.910865,-0.411909,-0.0256067],[0.0281014,0,0.999605]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9116.1,10200.6,30.4441]];
-_simpleObject setVectorDirAndUp [[0.911035,-0.411909,-0.0185824],[0.0203927,0,0.999792]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9121.19,10204,27.6906]];
-_simpleObject setVectorDirAndUp [[-0.433711,-0.901052,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9119.88,10201.3,29.473]];
-_simpleObject setVectorDirAndUp [[-0.422989,-0.906135,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp2m0_2.p3d", [9118.85,10199.3,30.3886]];
-_simpleObject setVectorDirAndUp [[0.907642,-0.419745,0],[0,0,1]];
-
-_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9090.8,10200.6,30.0357]];
-_simpleObject setVectorDirAndUp [[0.440812,0.89582,0.0564866],[0,-0.0629308,0.998018]];
-
-_simpleObject = createSimpleObject ["a3\structures_f\civ\camping\campingtable_f.p3d", [9090.62,10200.5,30.4672]];
-_simpleObject setVectorDirAndUp [[0.919163,-0.392704,-0.0303884],[0,-0.0771516,0.997019]];
+_simpleObject = createSimpleObject ["a3\structures_f\civ\camping\campingtable_f.p3d", [9080.71,10194.6,31.7566]];
+_simpleObject setVectorDirAndUp [[0.930246,0.366937,0],[0,0,1]];
 
 _simpleObject = createSimpleObject ["a3\structures_f\civ\camping\sun_chair_green_f.p3d", [5634.12,11053.5,3.01372]];
 _simpleObject setVectorDirAndUp [[-0.70809,0.706122,0],[0,0,1]];
@@ -800,9 +683,6 @@ _simpleObject setVectorDirAndUp [[-0.246343,-0.968804,0.027105],[-0.0053265,0.02
 _simpleObject = createSimpleObject ["a3\structures_f_exp\walls\tin\tinwall_02_l_4m_f.p3d", [9195.71,10145.7,27.7405]];
 _simpleObject setVectorDirAndUp [[-0.976302,0.216412,0],[0,0,1]];
 
-_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_gate_f.p3d", [9100.64,10156.5,26.6021]];
-_simpleObject setVectorDirAndUp [[-0.362627,-0.931934,0],[0,0,1]];
-
 _simpleObject = createSimpleObject ["ca\structures\furniture\chairs\ch_office_b\ch_office_b.p3d", [9184.79,10124.2,26.0819]];
 _simpleObject setVectorDirAndUp [[0.29614,0.955144,0],[0,0,1]];
 
@@ -920,9 +800,6 @@ _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0
 _simpleObject = createSimpleObject ["a3\structures_f\civ\camping\sun_chair_green_f.p3d", [9128.28,10177.3,25.8564]];
 _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0,0.999999]];
 
-_simpleObject = createSimpleObject ["a3\structures_f_epc\civ\camping\sunshade_02_f.p3d", [9090.68,10199.3,31.741]];
-_simpleObject setVectorDirAndUp [[0,0.998018,0.0629303],[0,-0.0629303,0.998018]];
-
 _simpleObject = createSimpleObject ["a3\structures_f\ind\shed\shed_small_f.p3d", [9191,10143.7,28.5237]];
 _simpleObject setVectorDirAndUp [[-0.123577,-0.992335,0],[0,0,1]];
 
@@ -949,4 +826,310 @@ _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0
 
 _simpleObject = createSimpleObject ["a3\structures_f\civ\camping\sun_chair_green_f.p3d", [9147.71,10170.2,26.3192]];
 _simpleObject setVectorDirAndUp [[-0.405903,-0.913916,0.000485351],[0.00119573,0,0.999999]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9079.09,10160.5,15.4917]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9109.64,10207,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9070.28,10190.5,15.4902]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9075.01,10201.6,15.4915]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9088.56,10182.7,15.4966]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9093.29,10193.8,15.4979]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9079.71,10212.7,15.4909]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9081.88,10217.8,15.4922]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9097.99,10205,15.4973]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9100.16,10210,15.4986]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9083.83,10171.6,15.5014]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9060.83,10168.3,15.4937]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9065.55,10179.4,15.495]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9056.33,10183.1,29.4801]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9057.89,10186.8,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9056.28,10167.9,29.482]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9063.62,10164.8,29.482]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9071.88,10161.3,29.48]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9051.11,10165.9,29.482]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9053.53,10169.1,29.482]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9065.85,10164.9,29.482]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9074.66,10226.3,29.4805]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9110.81,10209.8,29.4869]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9066.74,10200.4,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9076.02,10224.6,29.4805]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_wall_long_f.p3d", [9077.59,10198,29.4798]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9079.99,10198,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\training\shoot_house_panels_f.p3d", [9083.57,10204.1,29.4798]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9104.54,10195.1,31.3131]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9108.89,10202.5,26.6314]];
+_simpleObject setVectorDirAndUp [[-0.390731,-0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9081.1,10190.7,31.3248]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9079.54,10187,31.3235]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9077.98,10183.4,31.3212]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9076.54,10180,31.321]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9078.6,10177.8,31.3184]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9082.28,10176.2,31.319]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9085.95,10174.6,31.3199]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9089.63,10173.1,31.3178]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9093.29,10171.5,31.3151]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9094.35,10171.1,31.3173]];
+_simpleObject setVectorDirAndUp [[0.920505,-0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9094.43,10168.5,30.2749]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9093.23,10165.7,28.4549]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9092.04,10162.9,26.6285]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\steps\stairs_timber_2x2m.p3d", [9090.83,10160,24.7727]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9081.84,10192.5,31.3216]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9079.79,10194.2,31.3203]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9081.03,10195.4,31.3157]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9081.95,10196.2,31.3179]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["praa\praa_statics\ramps\woodenramp4m0_2.p3d", [9082.73,10194.5,31.3221]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_epc\civ\camping\sunshade_03_f.p3d", [9080.13,10194.7,32.6311]];
+_simpleObject setVectorDirAndUp [[0.924896,0.38022,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9100.76,10197.6,32.5527]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\polewalls\polewall_01_3m_f.p3d", [9078.9,10192.3,32.1255]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9093.39,10200.7,32.5529]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9086.02,10203.8,32.5528]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9082.32,10205.4,32.5574]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9102.01,10195.4,32.5527]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9094.64,10198.6,32.5529]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9087.28,10201.7,32.5528]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9083.58,10203.3,32.5573]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9080.18,10200.3,32.5588]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_4m_f.p3d", [9077.84,10194.8,32.5451]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.06,10193,32.5568]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9082.13,10204.9,32.5576]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9081.93,10204.4,32.5576]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_4m_f.p3d", [9081.86,10200.5,32.5438]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9081.06,10198.7,32.5558]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9083.1,10203.5,32.5576]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9082.94,10203.1,32.5555]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9082.79,10202.7,32.5555]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\walls\polewalls\polewall_01_3m_f.p3d", [9082.39,10196.7,32.1282]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9080.61,10197.6,32.5555]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9080.76,10197.9,32.5555]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9080.91,10198.3,32.5576]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9078.8,10187.2,32.5626]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_4m_f.p3d", [9076.46,10181.7,32.5453]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9075.68,10179.8,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9075.48,10179.4,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9075.28,10178.9,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9075.09,10178.5,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9089.83,10172.2,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9082.46,10175.3,32.5581]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_4m_f.p3d", [9076.94,10177.7,32.5425]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_4m_f.p3d", [9078.87,10178.4,32.5425]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.02,10179.2,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9084.39,10176.1,32.5581]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9091.76,10172.9,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9082.62,10192.4,32.5606]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_8m_f.p3d", [9079.48,10185,32.5626]];
+_simpleObject setVectorDirAndUp [[-0.920505,0.390731,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.9,10181.3,32.557]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.18,10179.6,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.37,10180,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.57,10180.5,32.5336]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f\walls\net_fence_pole_f.p3d", [9077.77,10180.9,32.5569]];
+_simpleObject setVectorDirAndUp [[0.390731,0.920505,0],[0,0,1]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9063.27,10174,21.7504]];
+_simpleObject setVectorDirAndUp [[-2.99939e-007,-3.61446e-007,-1],[-0.390731,-0.920505,4.49908e-007]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9081.53,10166.3,21.7454]];
+_simpleObject setVectorDirAndUp [[-2.99939e-007,-3.61446e-007,-1],[-0.390731,-0.920505,4.49908e-007]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9064.44,10171.1,21.7447]];
+_simpleObject setVectorDirAndUp [[-3.04313e-007,-4.02999e-007,-1],[-0.920505,0.390731,1.22657e-007]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9072.31,10189.6,21.7464]];
+_simpleObject setVectorDirAndUp [[-3.04313e-007,-4.02999e-007,-1],[-0.920505,0.390731,1.22657e-007]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9089.07,10160.7,14.1254]];
+_simpleObject setVectorDirAndUp [[0.797181,-0.338384,-0.499999],[0.460252,-0.195364,0.866026]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9096.93,10179.2,14.1319]];
+_simpleObject setVectorDirAndUp [[0.797181,-0.338384,-0.499999],[0.460252,-0.195364,0.866026]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9104.84,10197.7,14.1029]];
+_simpleObject setVectorDirAndUp [[0.797181,-0.338384,-0.499999],[0.460252,-0.195364,0.866026]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9106.99,10202.8,14.119]];
+_simpleObject setVectorDirAndUp [[0.797181,-0.338384,-0.499999],[0.460252,-0.195364,0.866026]];
+
+_simpleObject = createSimpleObject ["a3\structures_f_exp\infrastructure\airports\airstripplatform_01_f.p3d", [9096.03,10160.1,17.4772]];
+_simpleObject setVectorDirAndUp [[-0.460253,0.195365,-0.866025],[-0.390731,-0.920505,8.88839e-007]];
 
