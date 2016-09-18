@@ -64,12 +64,12 @@ private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = selectRandom ["UK3CB_BAF_G_Tactical_Black","UK3CB_BAF_G_Tactical_Clear","UK3CB_BAF_G_Tactical_Grey","UK3CB_BAF_G_Tactical_Orange","UK3CB_BAF_G_Tactical_Yellow"];
 
 private _standardWeapon = "UK3CB_BAF_L85A2_RIS_LDSR2D_IR";
-private _standardAmmo = "UK3CB_BAF_30Rnd";
+private _standardAmmo = "UK3CB_BAF_556_30Rnd";
 private _standardAccessory = ["UK3CB_BAF_LLM_IR_Black","UK3CB_BAF_SpecterLDS_Dot"];
 private _standardAccessoryExtra = [];
 
 private _secondaryWeapon = "UK3CB_BAF_L131A1";
-private _secondaryAmmo = "UK3CB_BAF_17Rnd_9mm";
+private _secondaryAmmo = "UK3CB_BAF_9_17Rnd";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
@@ -80,13 +80,13 @@ private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
 private _mgWeapon = "UK3CB_BAF_L7A2";
-private _mgAmmo = "UK3CB_BAF_75Rnd_T";
+private _mgAmmo = "UK3CB_BAF_762_100Rnd_T";
 private _mgAccessory = ["rhsusf_acc_ELCAN"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "UK3CB_BAF_L110A2_TA31F";
-private _lmgAmmo = "UK3CB_BAF_200Rnd_T";
+private _lmgWeapon = "UK3CB_BAF_L110A2";
+private _lmgAmmo = "UK3CB_BAF_556_200Rnd_T";
 private _lmgAccessory = ["UK3CB_BAF_TA31F"];
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
