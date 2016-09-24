@@ -36,7 +36,7 @@ class Header
 {
     gameType = "coop";
     minPlayers = "1";
-    maxPlayers = "40";
+    maxPlayers = "37";
 };
 
 respawn = BASE;

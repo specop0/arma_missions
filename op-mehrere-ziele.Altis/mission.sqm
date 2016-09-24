@@ -36,6 +36,7 @@ addons[]=
 	"ace_realisticnames",
 	"A3_Soft_F_Beta_MRAP_03",
 	"A3_Structures_F_Items_Electronics",
+	"A3_3DEN",
 	"A3_Supplies_F_Heli_CargoNets",
 	"CUP_AirVehicles_UH60",
 	"ttt_units_us_c",
@@ -66,7 +67,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -139,125 +140,132 @@ class AddonsMetaData
 		};
 		class Item10
 		{
-			className="A3_Supplies_F_Heli";
-			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			className="A3_3DEN";
+			name="Arma 3 Eden Update - Eden Editor";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item11
 		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
 			className="CUP_AirVehicles_UH60";
 			name="CUP_AirVehicles_UH60";
 		};
-		class Item12
+		class Item13
 		{
 			className="ttt_units_us_c";
 			name="ttt_units_us_c";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="CUP_WheeledVehicles_HMMWV";
 			name="CUP_WheeledVehicles_HMMWV";
 		};
-		class Item15
+		class Item16
 		{
 			className="CUP_AirVehicles_C130J";
 			name="CUP_AirVehicles_C130J";
 		};
-		class Item16
+		class Item17
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item17
+		class Item18
 		{
 			className="CUP_AirVehicles_MV22";
 			name="CUP_AirVehicles_MV22";
 		};
-		class Item18
+		class Item19
 		{
 			className="r_unfold";
 			name="r_unfold";
 			author="Rallen";
 		};
-		class Item19
+		class Item20
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item21
 		{
 			className="acex_sitting";
 			name="acex_sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item27
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item29
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item29
+		class Item30
 		{
 			className="CUP_AirVehicles_CH47";
 			name="CUP_AirVehicles_CH47";
@@ -883,7 +891,7 @@ class Mission
 			};
 			id=98;
 			type="TTT_Logistik_Standardmunition_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70000648;
 		};
 		class Item39
 		{
@@ -901,7 +909,7 @@ class Mission
 			};
 			id=99;
 			type="TTT_Logistik_Standardmunition_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70000648;
 		};
 		class Item40
 		{
@@ -919,7 +927,7 @@ class Mission
 			};
 			id=100;
 			type="TTT_Logistik_Standardmunition_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.7000351;
 		};
 		class Item41
 		{
@@ -937,7 +945,7 @@ class Mission
 			};
 			id=101;
 			type="TTT_Logistik_Standardmunition_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70001221;
 		};
 		class Item42
 		{
@@ -955,7 +963,7 @@ class Mission
 			};
 			id=102;
 			type="TTT_Logistik_Standardmunition_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.7000351;
 		};
 		class Item43
 		{
@@ -989,7 +997,7 @@ class Mission
 			};
 			id=104;
 			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70003891;
 		};
 		class Item45
 		{
@@ -1006,7 +1014,7 @@ class Mission
 			};
 			id=105;
 			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70004082;
 		};
 		class Item46
 		{
@@ -1166,7 +1174,7 @@ class Mission
 			};
 			id=114;
 			type="TTT_Logistik_Werfer_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.69998932;
 		};
 		class Item55
 		{
@@ -1183,7 +1191,7 @@ class Mission
 			};
 			id=115;
 			type="TTT_Logistik_Pionierausruestung_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70000839;
 		};
 		class Item56
 		{
@@ -1200,7 +1208,7 @@ class Mission
 			};
 			id=116;
 			type="TTT_Logistik_Pionierausruestung_Us";
-			atlOffset=0.70000076;
+			atlOffset=0.70001221;
 		};
 		class Item57
 		{
@@ -1280,19 +1288,40 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15116.289,21.747944,17282.479};
-				angles[]={0.0066682254,3.9269907,0.0013372133};
+				position[]={15116.289,21.747858,17282.479};
+				angles[]={0.0066671576,3.9269907,0.0013439035};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this setVariable [""ace_medical_isMedicalFacility"", 1];";
 			};
 			id=121;
 			type="Land_Medevac_HQ_V1_F";
-			atlOffset=8.5830688e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item62
 		{
@@ -8849,7 +8878,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=631;
-					atlOffset=4.9521027;
+					atlOffset=0.60701752;
 				};
 				class Item14
 				{
@@ -8930,7 +8959,7 @@ class Mission
 					showWP="NEVER";
 					id=638;
 					type="Move";
-					atlOffset=4.9521027;
+					atlOffset=0.60701752;
 				};
 			};
 			class Attributes
