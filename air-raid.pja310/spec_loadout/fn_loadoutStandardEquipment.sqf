@@ -21,12 +21,6 @@
 private _parameterCorrect = params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
 if(_parameterCorrect) then {
-    comment "Loadout based on TTT-Mod (weapons near end of file)";
-    if(_type == CLASS_PIO) then {
-        comment "MineDetector has to be equipped BEFORE any ACE Item to be functional";
-        [_unit, "MineDetector",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-    };
-
     if(_type in [CLASS_OPL, CLASS_TF]) then {
         _unit addWeapon "ACE_Vector";
     } else {
@@ -130,6 +124,7 @@ if(_parameterCorrect) then {
             [_unit,"1Rnd_SmokeRed_Grenade_shell",ADD_TO_BACKPACK, 6] call Spec_fnc_addItemToContainer;
         };
         case CLASS_PIO : {
+            [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
             [_unit,"SLAMDirectionalMine_Wire_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;

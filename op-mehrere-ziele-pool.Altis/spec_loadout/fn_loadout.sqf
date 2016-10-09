@@ -150,8 +150,7 @@ if(_parameterCorrect) then {
         _unit addHeadgear _headgear;
     };
     _unit addGoggles _googles;
-    
-    comment "Loadout based on TTT-Mod (weapons near end of file)";   
+       
     if(_type in [_oplClass, _tfClass]) then {
         _unit addWeapon "ACE_Vector";
         [_unit,"BWA3_Beret_Falli",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
