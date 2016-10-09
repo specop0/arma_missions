@@ -164,6 +164,9 @@ if(_parameterCorrect) then {
                 [_unit,"ACE_wirecutter",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
                 _unit setVariable ["ACE_isEOD", true];
             };
+            case CLASS_FUNKER : {
+                _unit linkItem "ItemGPS";
+            };
             case CLASS_TF : {
                 _unit linkItem "ItemGPS";
             };
