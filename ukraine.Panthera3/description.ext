@@ -1,0 +1,37 @@
+#include "W_Teleporter\dialog.hpp"
+
+class CfgFunctions {
+#include "spec_zeus\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_crates\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
+    class spec_scripts {
+        tag = "Spec";
+        class init {
+            file = "scripts";
+            class sniper {};
+            class toggleAI {};
+        };
+    };
+};
+
+class Header
+{
+    gameType = "coop";
+    minPlayers = "1";
+    maxPlayers = "50";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+disableAI = 1;
+
+// Anton Holoborodko (Антон Голобородько) - http://www.ex.ua/76677715
+// https://de.wikipedia.org/wiki/Krimkrise#/media/File:2014-03-09_-_Perevalne_military_base_-_0202.JPG
+// CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
+loadScreen="loading.jpg";
+OnLoadName = "Die Pantherakrise";
+OnLoadMissionTime = TRUE;
+author="SpecOp0";
