@@ -64,9 +64,9 @@ private _headgear = "BWA3_MICH_Fleck";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = selectRandom ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"];
 
-private _standardWeapon = "BWA3_G36";
-private _standardAmmo = "BWA3_30Rnd_556x45_G36";
-private _standardAccessory = ["BWA3_acc_LLM01_irlaser","BWA3_optic_ZO4x30"];
+private _standardWeapon = "hlc_rifle_G36KE1";
+private _standardAmmo = "hlc_30rnd_556x45_EPR_G36";
+private _standardAccessory = ["HLC_Optic_G36dualoptic35x"];
 private _standardAccessoryExtra = [];
 
 private _secondaryWeapon = "BWA3_P8";
@@ -74,7 +74,7 @@ private _secondaryAmmo = "BWA3_15Rnd_9x19_P8";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "BWA3_G36_AG";
+private _grenadeLauncherWeapon = "hlc_rifle_G36E1AG36";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
@@ -82,12 +82,12 @@ private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 comment "Machine Gunner";
 private _mgWeapon = "BWA3_MG5_equipped";
 private _mgAmmo = "BWA3_120Rnd_762x51_Tracer";
-private _mgAccessory = _standardAccessory;
+private _mgAccessory = ["BWA3_optic_EOTech_Mag_Off"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "BWA3_MG4_equipped";
-private _lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
+private _lmgWeapon = "hlc_rifle_MG36";
+private _lmgAmmo = "hlc_100rnd_556x45_EPR_G36";
 private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
