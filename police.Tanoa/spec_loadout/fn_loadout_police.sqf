@@ -66,10 +66,15 @@ private _goggles = "G_Tactical_Clear";
 private _standardWeapon = "SMG_05_F";
 private _standardAmmo = "30Rnd_9x21_Mag_SMG_02";
 private _standardAccessory = [];
-private _standardAccessoryExtra = ["optic_Holosight_smg_blk_F"];
+private _standardAccessoryExtra = ["optic_Holosight_smg_blk_F", "muzzle_snds_L"];
 
-private _secondaryWeapon = "hgun_P07_F";
-private _secondaryAmmo = "16Rnd_9x21_Mag";
+private _shieldWeapon = "CUP_hgun_BallisticShield_Armed";
+private _shieldAmmo = "CUP_15Rnd_9x19_M9";
+private _shieldSecondary = "BWA3_MP7";
+private _shieldSecondaryAmmo = "BWA3_40Rnd_46x30_MP7";
+
+private _secondaryWeapon = "CUP_hgun_M9";
+private _secondaryAmmo = "CUP_15Rnd_9x19_M9";
 private _secondaryAccessory = [];
 
 if(_parameterCorrect) then {
@@ -113,15 +118,6 @@ if(_parameterCorrect) then {
         
         if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
             [_unit, _backpackLR] call Spec_fnc_addContainer;
-            if(backpack _unit == "") then {
-                //[_unit, _backpack] call Spec_fnc_addContainer;
-            };
-        } else {
-            if(_type in [CLASS_MEDEVAC, CLASS_PIO]) then {
-                //[_unit, _backpackBig] call Spec_fnc_addContainer;
-            } else {
-                //[_unit, _backpack] call Spec_fnc_addContainer;
-            };
         };
         if(_type in [CLASS_GL, CLASS_PIO]) then {
             [_unit, _backpack] call Spec_fnc_addContainer;
@@ -136,7 +132,6 @@ if(_parameterCorrect) then {
             };
         };
         _unit addHeadgear _headgear;
-        
         _unit addGoggles _goggles;
         
         if(_type in [CLASS_TF, CLASS_OPL, CLASS_FUNKER, CLASS_PILOT]) then {
@@ -147,8 +142,8 @@ if(_parameterCorrect) then {
         comment "standard equipment (Map, Grenades, Medic Stuff, Explosives)";
         
         [_unit,"ACE_M84",ADD_ANYWHERE, 6] call Spec_fnc_addItemToContainer;
-        [_unit,"ACE_elasticBandage",ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
-        [_unit,"ACE_packingBandage",ADD_TO_VEST, 5] call Spec_fnc_addItemToContainer;
+        [_unit,"ACE_fieldDressing",ADD_TO_VEST, 9] call Spec_fnc_addItemToContainer;
+        [_unit,"ACE_packingBandage",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
         [_unit,"ACE_tourniquet",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
         
         [_unit,"ACE_CableTie",ADD_TO_UNIFORM, 2] call Spec_fnc_addItemToContainer;
@@ -177,23 +172,29 @@ if(_parameterCorrect) then {
         
         comment "===========================================";
 
-        [_unit,_standardAmmo,ADD_ANYWHERE, 6] call Spec_fnc_addItemToContainer;
+        if(_type == CLASS_PIO) then {
+            [_unit,_shieldAmmo, ADD_ANYWHERE, 8] call Spec_fnc_addItemToContainer;
+            _unit addWeapon _shieldWeapon;
+            
+            [_unit,_shieldSecondaryAmmo,ADD_ANYWHERE, 3] call Spec_fnc_addItemToContainer;
+            _unit addWeapon _shieldSecondary;
+        } else {
+            [_unit,_standardAmmo,ADD_ANYWHERE, 6] call Spec_fnc_addItemToContainer;
+            _unit addWeapon _standardWeapon;
+            {
+                _unit addPrimaryWeaponItem _x;
+            } forEach _standardAccessory;
+            {
+                [_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+            } forEach _standardAccessoryExtra;
 
-        _unit addWeapon _standardWeapon;
-        {
-            _unit addPrimaryWeaponItem _x;
-        } forEach _standardAccessory;
-        {
-            [_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-        } forEach _standardAccessoryExtra;
-
-        comment "Secondary Weapon";
-        [_unit,_secondaryAmmo,ADD_ANYWHERE, 3] call Spec_fnc_addItemToContainer;
-        _unit addWeapon _secondaryWeapon;
-        {
-            _unit addSecondaryWeaponItem _x;
-        } forEach _secondaryAccessory;
-        
+            comment "Secondary Weapon";
+            [_unit,_secondaryAmmo,ADD_ANYWHERE, 3] call Spec_fnc_addItemToContainer;
+            _unit addWeapon _secondaryWeapon;
+            {
+                _unit addSecondaryWeaponItem _x;
+            } forEach _secondaryAccessory;
+        };
     };
 };
 true
