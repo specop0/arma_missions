@@ -105,10 +105,43 @@ if(_parameterCorrect && _type in [CLASS_LOGISTIC, CLASS_REPORTER]) then {
         if(!isNull (_unit getVariable ["camera", objNull])) then {
             deleteVehicle (_unit getVariable ["camera", objNull]);
         };
+        // camera
         private _camera = "Land_HandyCam_F" createVehicle getPosASL player;
-        _camera attachTo [_unit, [0.13,-0.03,1.58]];
+        _camera attachTo [_unit, [0.13,-0.03,0.56], "Pelvis"];
         _camera setDir 180;
         _unit setVariable ["camera", _camera];
+        _unit addEventHandler ["GetInMan", {
+            params ["_unit"];
+            private _camera = _unit getVariable ["camera", objNull];
+            _unit setVariable ["cameraHidden", isObjectHidden _camera];
+            _camera hideObjectGlobal true;
+        }];
+        _unit addEventHandler ["GetOutMan", {
+            params ["_unit"];
+            private _camera = _unit getVariable ["camera", objNull];
+            private _isHidden = _unit getVariable ["cameraHidden", false];
+            if (!_isHidden) then {
+                _camera hideObjectGlobal false;
+            };
+        }];
+        [_unit,1,["ACE_SelfActions","cameraShowHide"]] call ace_interact_menu_fnc_removeActionFromObject;
+        private _actionShowHideCamera = ["cameraShowHide", "Zeige / Verstecke Kamera", "", {
+            params ["_target","_caller"];
+            private _camera = _caller getVariable ["camera", objNull];
+            private _isHidden = isObjectHidden _camera;
+            _camera hideObjectGlobal (!_isHidden);
+            _caller setVariable ["cameraHidden", !_isHidden];
+            if(_isHidden) then {
+                hint "Kamera läuft.";
+            } else {
+                hint "Kamera eingepackt.";
+            };
+        },
+        {
+            params ["_target", "_caller"];
+            _caller == vehicle _caller
+        }] call ace_interact_menu_fnc_createAction;
+        [_unit,1,["ACE_SelfActions"],_actionShowHideCamera] call ace_interact_menu_fnc_addActionToObject;
     };
 
 };
