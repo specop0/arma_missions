@@ -1,0 +1,1 @@
+_null = [80,14400,false,300] execVM "AL_snowstorm\al_snow.sqf";

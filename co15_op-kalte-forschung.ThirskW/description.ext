@@ -5,6 +5,10 @@ class CfgFunctions {
 #include "spec_tfar\CfgFunctions.hpp"
 };
 
+class CfgSounds
+{
+#include "AL_snowstorm\CfgSounds.hpp"
+};
 
 class Header
 {
