@@ -12,9 +12,9 @@ if(_parameterCorrect && hasInterface) then {
     private _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
     {
         _object addAction [_x, {
-                (_this select 3) params ["_factionName"];
-                Spec_var_loadoutFaction = _factionName;
-            }, [_x], -2, false, false, "", _conditionString];
+            (_this select 3) params ["_factionName"];
+            Spec_var_loadoutFaction = _factionName;
+        }, [_x], -2, false, false, "", _conditionString];
     } forEach Spec_var_loadoutFactionList;
 
     // for each faction add classes
@@ -25,7 +25,7 @@ if(_parameterCorrect && hasInterface) then {
         _i = -4;
         
         _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
-        _object addACtion ["Benutze Slot",{
+        _object addAction ["Benutze Slot",{
                 params ["","_caller"];
                 (_this select 3) params ["_factionName"];
                 [_caller, _factionName] call Spec_fnc_loadoutFaction;
@@ -136,7 +136,7 @@ if(_parameterCorrect && hasInterface) then {
             _caller setVariable ["hasClickEvent",true];
         } else {
             _action = ["Spec_action_moveMarkerLZ", "Bewege LZ", "", {(_this select 0) setVariable ["Spec_var_selectLZ", true]}, {true}] call ace_interact_menu_fnc_createAction;
-        [_caller,1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+            [_caller,1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
         };
         
         Spec_var_loadoutFaction = "MAIN";
