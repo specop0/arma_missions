@@ -106,10 +106,9 @@ if(_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 2];
         };
         default {
-            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 9] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
         };
     };
 
