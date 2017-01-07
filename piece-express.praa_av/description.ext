@@ -1,0 +1,19 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+#include "joko_tent\CfgFunctions.hpp"
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+loadScreen="images\loading.jpg";
+onLoadMission = "Afghanistan? Das sagt mir nichts.";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Piece Express";
