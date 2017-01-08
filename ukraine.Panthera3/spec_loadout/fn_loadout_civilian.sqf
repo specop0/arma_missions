@@ -109,19 +109,27 @@ if(_parameterCorrect && _type in [CLASS_LOGISTIC, CLASS_REPORTER]) then {
         private _camera = "Land_HandyCam_F" createVehicle getPosASL player;
         _camera attachTo [_unit, [0.13,-0.03,0.56], "Pelvis"];
         _camera setDir 180;
-        _unit setVariable ["camera", _camera];
+        _unit setVariable ["camera", _camera, true];
         _unit addEventHandler ["GetInMan", {
             params ["_unit"];
             private _camera = _unit getVariable ["camera", objNull];
             _unit setVariable ["cameraHidden", isObjectHidden _camera];
-            _camera hideObjectGlobal true;
+            [_camera, true] remoteExecCall ["hideObjectGlobal",2];
         }];
         _unit addEventHandler ["GetOutMan", {
             params ["_unit"];
             private _camera = _unit getVariable ["camera", objNull];
             private _isHidden = _unit getVariable ["cameraHidden", false];
             if (!_isHidden) then {
-                _camera hideObjectGlobal false;
+                [_camera, false] remoteExecCall ["hideObjectGlobal",2];
+            };
+        }];
+        _unit addEventHandler ["Killed", {
+            params ["_unit"];
+            private _camera = _unit getVariable ["camera", objNull];
+            if(!isNull _camera) then {
+                detach _camera;
+                [_camera, true] remoteExecCall ["hideObjectGlobal",2];
             };
         }];
         [_unit,1,["ACE_SelfActions","cameraShowHide"]] call ace_interact_menu_fnc_removeActionFromObject;
@@ -129,11 +137,12 @@ if(_parameterCorrect && _type in [CLASS_LOGISTIC, CLASS_REPORTER]) then {
             params ["_target","_caller"];
             private _camera = _caller getVariable ["camera", objNull];
             private _isHidden = isObjectHidden _camera;
-            _camera hideObjectGlobal (!_isHidden);
             _caller setVariable ["cameraHidden", !_isHidden];
             if(_isHidden) then {
+                [_camera, false] remoteExecCall ["hideObjectGlobal",2];
                 hint "Kamera läuft.";
             } else {
+                [_camera, true] remoteExecCall ["hideObjectGlobal",2];
                 hint "Kamera eingepackt.";
             };
         },

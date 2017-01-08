@@ -30,3 +30,12 @@ private _scriptHandle = [] spawn {
         _x call acex_sitting_fnc_sit;
     } foreach _chairAndPerson;
 };
+
+private _id = addMissionEventHandler ["HandleDisconnect",{
+    params ["_unit"];
+    private _camera = _unit getVariable ["camera", objNull];
+    if(!isNull _camera) then {
+        detach _camera;
+        [_camera, true] remoteExecCall ["hideObjectGlobal",2];
+    };
+}];
