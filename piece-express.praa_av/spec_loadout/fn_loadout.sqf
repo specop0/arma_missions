@@ -95,7 +95,7 @@ comment "Group Marksman";
 private _sniperWeapon = "rhs_weap_m14ebrri";
 private _sniperAmmo = "rhsusf_20Rnd_762x51_m118_special_Mag";
 private _sniperAccessory = ["rhsusf_acc_LEUPOLDMK4","UK3CB_BAF_LLM_IR_Black", "rhsusf_acc_harris_bipod"];
-private _sniperAccessoryExtra = _standardAccessoryExtra;
+private _sniperAccessoryExtra = ["ACE_RangeCard"];
 
 comment "Rifleman (AT)";
 private _atWeapon = "rhs_weap_M136";
