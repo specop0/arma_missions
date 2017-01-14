@@ -22,11 +22,8 @@ if(_upOnTriggerNumber != -1) then {
         _x setUnitPos "UP";
     } forEach _unitsToFire;
     // wait short time before commanding suppressive fire
-    hint "getup";
     sleep 4;
-    hint "fire!";
     for "_i" from 0 to 20 do {
-        hint format ["fire %1", time];
         {
             // getPosATL if targets are above water!
             private _position = if(_targetsAboveWater) then { getPosATL (selectRandom _nearestEnemies) } else { getPosASL (selectRandom _nearestEnemies) };
