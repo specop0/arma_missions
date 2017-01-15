@@ -28,6 +28,7 @@ _contact addAction ["Wir uebernehmen. Steigt in den Bus", {
 } forEach [truckA, truckB];
 
 // only player who "canDriveTruck" can drive the wisent or bus
+/*
 player addEventHandler ["GetInMan", {
     params ["_unit", "_position", "_vehicle", "_turret"];
     if(typeOf _vehicle in ["CUP_C_Ikarus_TKC", "rsr_wisent_covered_tropentarn"]) then {
@@ -39,10 +40,20 @@ player addEventHandler ["GetInMan", {
         };
     };
 }];
+*/
 
 // add teleporter and spectator cam
 [teleporter] call FETT_fnc_W_addTeleport;
 teleporter addAction ["Zuschauermodus", {
     params ["_target","_caller"];
     ["Initialize", [_caller, [], true]] call BIS_fnc_EGSpectator;
+    [_caller,true] remoteExecCall ["hideObjectGlobal", 2];
 },[],0.5,false,true,"","",5];
+
+// remove corpse if respawned in base
+player addEventHandler ["Respawn",{
+    params ["","_corpse"];
+    if((getPosASL player) distance (getMarkerPos "respawn") < 1000) then {
+        deleteVehicle _corpse;
+    };
+}];
