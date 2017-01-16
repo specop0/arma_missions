@@ -35,6 +35,7 @@ if(isServer) then {
         SPAWNED_OBJECTS_ARRAY pushBack [];
         
         // spawn units in location
+        private ["_leader"];
         private _noGroups = NUMBER_OF_GROUPS;
         private ["_unitsPerGroup","_unit","_group","_vehicle","_safePos"];
         for "_i" from 1 to _noGroups do {
@@ -50,7 +51,10 @@ if(isServer) then {
                 } forEach allCurators;
             };
             // initialize FUPS (and wait for unit to move some distance)
-            [leader _group, _locationMarker] call FUPS_fnc_main;
+            _leader = leader _group;
+            if(!(isNull _leader) && _locationMarker != "") then {
+                [_leader, _locationMarker] call FUPS_fnc_main;
+            };
             sleep SLEEP_TIME_PER_GROUP;
         };
         
@@ -82,7 +86,10 @@ if(isServer) then {
                     _x addCuratorEditableObjects [[_vehicle],true];
                 } forEach allCurators;
                 // initialize FUPS (and wait for unit to move some distance)
-                [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
+                _leader = (crew _vehicle) select 0;
+                if(!(isNil { _leader }) && {!(isNull _leader) && _locationMarker != ""}) then {
+                    [_leader, _locationMarker] call FUPS_fnc_main;
+                };
                 sleep SLEEP_TIME_PER_GROUP;
             };
             
@@ -104,7 +111,10 @@ if(isServer) then {
                     _x addCuratorEditableObjects [[_vehicle],true];
                 } forEach allCurators;
                 // initialize FUPS (and wait for unit to move some distance)
-                [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
+                _leader = (crew _vehicle) select 0;
+                if(!(isNil { _leader }) && {!(isNull _leader) && _locationMarker != ""}) then {
+                    [_leader, _locationMarker] call FUPS_fnc_main;
+                };
                 sleep SLEEP_TIME_PER_GROUP;
             };
         };
@@ -137,7 +147,10 @@ if(isServer) then {
                     } forEach allCurators;
                 };
                 // initialize FUPS (and wait for unit to move some distance)
-                [leader _group, _hillMarker, "REINFORCEMENT:",[_index] ] call FUPS_fnc_main;
+                _leader = leader _group;
+                if(!(isNull _leader) && _hillMarker != "") then {
+                    [_leader, _hillMarker, "REINFORCEMENT:",[_index] ] call FUPS_fnc_main;
+                };
                 sleep SLEEP_TIME_PER_GROUP;
             } forEach _hills;
         };
@@ -188,7 +201,11 @@ if(isServer) then {
                     _x addCuratorEditableObjects [[_unit],false];
                 } forEach allCurators;
             };
-            [leader _group, _sentryMarker, "REINFORCEMENT:",[_index] ] call FUPS_fnc_main;
+            // initialize FUPS (and wait for unit to move some distance)
+            _leader = leader _group;
+            if(!(isNull _leader) && _sentryMarker != "") then {
+                [_leader, _sentryMarker, "REINFORCEMENT:",[_index] ] call FUPS_fnc_main;
+            };
             sleep SLEEP_TIME_PER_GROUP;
         };
         
