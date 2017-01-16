@@ -64,49 +64,50 @@ if(isServer) then {
         // TODO error count _vehiclePositions < (_noVehicles + _noArmored)
         
         // spawn vehicle (hmg or gmg)
-        for "_i" from 1 to _noVehicles do {
-            _safePos = _vehiclePositions select (_indexDiff * _indexVehicle + 1);
-            _indexVehicle = _indexVehicle + 1;
-            _vehicle = createVehicle [selectRandom VEHICLE_ENEMY, _safePos, [], 0, "NONE"];
-            _spawnedObjects pushBack _vehicle;
-            sleep SLEEP_TIME;
-            // spawn crew
-            createVehicleCrew _vehicle;
-            {
-                _spawnedObjects pushBack _x;
-            } forEach crew _vehicle;
-            sleep SLEEP_TIME;
-            // add to curator
-            {
-                _x addCuratorEditableObjects [[_vehicle],true];
-            } forEach allCurators;
-            // initialize FUPS (and wait for unit to move some distance)
-            [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
-            sleep SLEEP_TIME_PER_GROUP;
+        if(count _vehiclePositions > 0) then {
+            for "_i" from 1 to _noVehicles do {
+                _safePos = _vehiclePositions select (floor (_indexDiff * _indexVehicle + 1));
+                _indexVehicle = _indexVehicle + 1;
+                _vehicle = createVehicle [selectRandom VEHICLE_ENEMY, _safePos, [], 0, "NONE"];
+                _spawnedObjects pushBack _vehicle;
+                sleep SLEEP_TIME;
+                // spawn crew
+                createVehicleCrew _vehicle;
+                {
+                    _spawnedObjects pushBack _x;
+                } forEach crew _vehicle;
+                sleep SLEEP_TIME;
+                // add to curator
+                {
+                    _x addCuratorEditableObjects [[_vehicle],true];
+                } forEach allCurators;
+                // initialize FUPS (and wait for unit to move some distance)
+                [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
+                sleep SLEEP_TIME_PER_GROUP;
+            };
+            
+            // spawn armored vehicle (tank or apc)
+            for "_i" from 1 to _noArmored do {
+                _safePos = _vehiclePositions select (floor (_indexDiff * _indexVehicle + 1));
+                _indexVehicle = _indexVehicle + 1;
+                _vehicle = createVehicle [selectRandom ARMOR_ENEMY, _safePos, [], 0, "NONE"];
+                _spawnedObjects pushBack _vehicle;
+                sleep SLEEP_TIME;
+                // spawn crew
+                createVehicleCrew _vehicle;
+                {
+                    _spawnedObjects pushBack _x;
+                } forEach crew _vehicle;
+                sleep SLEEP_TIME;
+                // add to curator
+                {
+                    _x addCuratorEditableObjects [[_vehicle],true];
+                } forEach allCurators;
+                // initialize FUPS (and wait for unit to move some distance)
+                [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
+                sleep SLEEP_TIME_PER_GROUP;
+            };
         };
-        
-        // spawn armored vehicle (tank or apc)
-        for "_i" from 1 to _noArmored do {
-            _safePos = _vehiclePositions select (_indexDiff * _indexVehicle + 1);
-            _indexVehicle = _indexVehicle + 1;
-            _vehicle = createVehicle [selectRandom ARMOR_ENEMY, _safePos, [], 0, "NONE"];
-            _spawnedObjects pushBack _vehicle;
-            sleep SLEEP_TIME;
-            // spawn crew
-            createVehicleCrew _vehicle;
-            {
-                _spawnedObjects pushBack _x;
-            } forEach crew _vehicle;
-            sleep SLEEP_TIME;
-            // add to curator
-            {
-                _x addCuratorEditableObjects [[_vehicle],true];
-            } forEach allCurators;
-            // initialize FUPS (and wait for unit to move some distance)
-            [(crew _vehicle) select 0, _locationMarker] call FUPS_fnc_main;
-            sleep SLEEP_TIME_PER_GROUP;
-        };
-        
         // search for hills nearby
         private _hills = nearestLocations [_posLocation, ["Hill"],HILL_DISTANCE];
         private ["_hillMarkerName","_hillMarker","_posSentry"];
