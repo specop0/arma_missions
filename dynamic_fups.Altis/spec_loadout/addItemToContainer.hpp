@@ -10,3 +10,4 @@
 #define ADD_TO_VEST 1
 #define ADD_TO_BACKPACK 2
 #define ADD_ANYWHERE 3
+#define ADD_ANYWHERE_REVERSE 4

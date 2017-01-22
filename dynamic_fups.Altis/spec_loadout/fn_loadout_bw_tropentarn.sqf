@@ -202,10 +202,11 @@ if(_parameterCorrect) then {
                     } forEach _atAmmo;
                     _unit addWeapon _atWeapon;
                     // remove backpack to avoid clipping with backpack
+                    private _backpackItems = backpackItems _unit;
                     removeBackpack _unit;
-                    [_unit,"ACE_fieldDressing",ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
-                    [_unit,"ACE_tourniquet",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
-                    [_unit,"ACE_morphine",ADD_TO_VEST, 1] call Spec_fnc_addItemToContainer;
+                    {
+                        [_unit,_x,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
+                    } forEach _backpackItems;
                 };
                 comment "MG Ammunition for MG Assistant";
                 if(_type == CLASS_MG_ASSI) then {

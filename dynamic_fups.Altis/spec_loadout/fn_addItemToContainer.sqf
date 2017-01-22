@@ -10,7 +10,12 @@
     Parameter(s):
     0: OBJECT - unit to add an item
     1: STRING - item to add (class name)
-    3: NUMBER - container to add item: 0 Uniform, 1 Vest, 2 Backpack, 3 wherever possible (tries uniform, then vest and then backpack) [use addItemToContainer.hpp]
+    3: NUMBER - container to add item [use addItemToContainer.hpp]:
+        0 Uniform
+        1 Vest
+        2 Backpack
+        3 wherever possible (tries uniform, then vest and finally backpack)
+        4 wherever possible (tries backpack, then vest and finally uniform)
     4 (Optional): NUMBER - quantity of the item (default 1)
 
     Returns:
@@ -59,8 +64,7 @@ if(_parameterCorrect) then {
                 };
             };
         };
-        // ADD_ANYWHERE
-        default {
+        case ADD_ANYWHERE : {
             for "_itemsAdded" from 1 to _numberOfItems do {
                 if(_unit canAddItemToUniform _item) then {
                     _unit addItemToUniform _item;
@@ -70,6 +74,26 @@ if(_parameterCorrect) then {
                     } else {
                         if(_unit canAddItemToBackpack _item) then {
                             _unit addItemToBackpack _item;
+                        } else {
+                            hint format ["Could not add %1 to any Container\nUnit Type = %2\nUnit Name = %3\n%4/%5 items added", _item, typeOf _unit, str _unit, (_itemsAdded - 1), _numberOfItems];
+                            _returnValue = 1;
+                            breakTo "main";
+                        };
+                    };
+                };
+            };
+        };
+        // ADD_ANYWHERE_REVERSE
+        default {
+            for "_itemsAdded" from 1 to _numberOfItems do {
+                if(_unit canAddItemToBackpack _item) then {
+                    _unit addItemToBackpack _item;
+                } else {
+                    if(_unit canAddItemToVest _item) then {
+                        _unit addItemToVest _item;
+                    } else {
+                        if(_unit canAddItemToUniform _item) then {
+                            _unit addItemToUniform _item;
                         } else {
                             hint format ["Could not add %1 to any Container\nUnit Type = %2\nUnit Name = %3\n%4/%5 items added", _item, typeOf _unit, str _unit, (_itemsAdded - 1), _numberOfItems];
                             _returnValue = 1;
