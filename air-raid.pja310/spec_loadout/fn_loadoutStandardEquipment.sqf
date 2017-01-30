@@ -44,7 +44,7 @@ if(_parameterCorrect) then {
     comment "lead equipment (tablet, etc)";
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_MEDEVAC, CLASS_PILOT]) then {
         [_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
-        if(_type in [CLASS_MEDEVAC, CLASS_FUNKER]) then {
+        if(_type in [CLASS_OPL]) then {
             [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         } else {
             [_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
@@ -104,10 +104,9 @@ if(_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 2];
         };
         default {
-            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 9] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
         };
     };
 
