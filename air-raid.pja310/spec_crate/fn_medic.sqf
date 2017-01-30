@@ -22,10 +22,10 @@ if(_parameterCorrect && isServer) then {
     clearWeaponCargoGlobal _crate;
     clearMagazineCargoGlobal _crate;
     clearItemCargoGlobal _crate;
-    _crate addItemCargoGlobal [_bandageBasic,20];
-    _crate addItemCargoGlobal [_packingBandage,75];
-    _crate addItemCargoGlobal [_quikcloth,20];
-    _crate addItemCargoGlobal [_elasticBandage,75];
+    _crate addItemCargoGlobal [_packingBandage,50];
+    _crate addItemCargoGlobal [_elasticBandage,25];
+    _crate addItemCargoGlobal [_bandageBasic,125];
+    _crate addItemCargoGlobal [_quikcloth,25];
     _crate addItemCargoGlobal [_tourniquet,10];
     
     _crate addItemCargoGlobal [_saline,25];

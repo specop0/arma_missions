@@ -24,7 +24,7 @@ if(_parameterCorrect) then {
     if(_type in [CLASS_OPL, CLASS_TF]) then {
         _unit addWeapon "ACE_Vector";
     } else {
-        if(_type in [CLASS_AT, CLASS_MG_ASSI, CLASS_GL]) then{
+        if(_type in [CLASS_MG_ASSI, CLASS_GL]) then{
             _unit addWeapon "ACE_Yardage450";
         } else {
             if(_type == CLASS_FUNKER) then {
@@ -45,9 +45,9 @@ if(_parameterCorrect) then {
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_MEDEVAC, CLASS_PILOT]) then {
         [_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
         if(_type in [CLASS_OPL]) then {
-            [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-        } else {
             [_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        } else {
+            [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_LOGISTIC, CLASS_PILOT]) then {

@@ -30,34 +30,44 @@ if(_parameterCorrect) then {
             _BFTicon = "b_hq";
         };
         case 1 : {
-            _swFreq = ["111","110","112","113"];
+            _swFreq = ["111","110","112","113","114"];
             _lrFreq = ["31","30"];
             _callsign = "Gruen";
         };
         case 2 : {
-            _swFreq = ["112","110","111","113"];
+            _swFreq = ["112","110","111","113","114"];
             _lrFreq = ["31","30"];
             _callsign = "Schwarz";
         };
         case 3 : {
-            _swFreq = ["113","110","111","112"];
+            _swFreq = ["113","110","111","112","114"];
             _lrFreq = ["31","30"];
             _callsign = "Blau";
         };
+        case 5 : {
+            _swFreq = ["114","110","111","112","113"];
+            _lrFreq = ["31","30"];
+            _callsign = "Rot";
+        };
         case 4 : {
-            _swFreq = ["121","120","122","123"];
+            _swFreq = ["121","120","122","123","124"];
             _lrFreq = ["32","30"];
             _callsign = "Braun";
         };
-        case 5 : {
-            _swFreq = ["122","120","121","123"];
+        case 21 : {
+            _swFreq = ["122","120","121","123","124"];
             _lrFreq = ["32","30"];
-            _callsign = "Rot";
+            _callsign = "Orange";
         };
         case 6 : {
-            _swFreq = ["123","120","121","122"];
+            _swFreq = ["123","120","121","122","124"];
             _lrFreq = ["32","30"];
             _callsign = "Violett";
+        };
+        case 22 : {
+            _swFreq = ["124","120","121","122","123"];
+            _lrFreq = ["32","30"];
+            _callsign = "Gold";
         };
         case 7 : {
             _swFreq = ["141","111","121"];
@@ -80,7 +90,7 @@ if(_parameterCorrect) then {
         case 10 : {
             _swFreq = ["143","140"];
             _lrFreq = ["43","30","31","32","41","42","44"];
-            _callsign = "Silber - Bussard";
+            _callsign = "Bussard";
             _BFTicon = "b_service";            
         };
         case 11 : {

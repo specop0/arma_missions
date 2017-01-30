@@ -96,8 +96,9 @@ private _lmgAccessory = [];
 private _lmgAccessoryExtra = _mgAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "rhs_weap_M136";
-private _atAmmo = [];
+private _atWeapon = "rhs_weap_fgm148";
+private _atAmmo = "rhs_fgm148_magazine_AT";
+private _atAccessory = [];
 
 if(_parameterCorrect) then {
     removeAllWeapons _unit;
@@ -122,7 +123,7 @@ if(_parameterCorrect) then {
             clearMagazineCargoGlobal (unitBackpack _unit);
         };
     } else {
-        if(_type in [CLASS_MEDEVAC, CLASS_PIO]) then {
+        if(_type in [CLASS_MEDEVAC, CLASS_PIO, CLASS_AT_ASSI]) then {
             [_unit, _backpackBig] call Spec_fnc_addContainer;
         } else {
             [_unit, _backpack] call Spec_fnc_addContainer;
@@ -141,7 +142,7 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
         [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
         {
@@ -176,14 +177,15 @@ if(_parameterCorrect) then {
             } else {
                 comment "AT launcher";
                 if(_type == CLASS_AT) then {
-                    {
-                        [_unit,_x,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-                    } forEach _atAmmo;
                     _unit addWeapon _atWeapon;
+                };
+                comment "AT Ammunition for AT Assistant";
+                if(_type == CLASS_AT_ASSI) then {
+                    [_unit,_atAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
                 };
                 comment "MG Ammunition for MG Assistant";
                 if(_type == CLASS_MG_ASSI) then {
-                    [_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+                    [_unit,_mgAmmo,ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
                 };
                 comment "Standard Weapon";
                 [_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;

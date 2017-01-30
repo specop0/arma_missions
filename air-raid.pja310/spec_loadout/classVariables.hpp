@@ -27,8 +27,10 @@
 // "Rifleman (Light)"
 #define CLASS_LMG "B_Soldier_lite_F"
 
-// "Rifleman (AT)"
-#define CLASS_AT "B_soldier_LAT_F"
+// "Missile Specialist (AT)"
+#define CLASS_AT "B_soldier_AT_F"
+// "Asst. Missile Specialist (AT)"
+#define CLASS_AT_ASSI "B_soldier_AAT_F"
 // "Engineer"
 #define CLASS_PIO "B_engineer_F"
 
