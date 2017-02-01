@@ -36,7 +36,7 @@
 
 
 // "Helicopter Crew"
-#define CLASS_MEDEVAC "B_helicrew_F"
+#define CLASS_MEDEVAC "B_Helicrew_F"
 // "Helicopter Pilot"
 #define CLASS_PILOT "B_Helipilot_F"
 
