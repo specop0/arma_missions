@@ -24,24 +24,29 @@ if(_parameterCorrect) then {
     
     switch _groupID do {
         case 0 : {
-            _swFreq = ["111","110","112","113","114"];
+            _swFreq = ["111","110","112","113","114","115"];
             _lrFreq = ["31","30"];
             _callsign = "Gruen";
         };
         case 1 : {
-            _swFreq = ["112","110","111","113","114"];
+            _swFreq = ["112","110","111","113","114","115"];
             _lrFreq = ["31","30"];
             _callsign = "Schwarz";
         };
         case 2 : {
-            _swFreq = ["113","110","111","112","114"];
+            _swFreq = ["113","110","111","112","114","115"];
             _lrFreq = ["31","30"];
             _callsign = "Blau";
         };
         case 3 : {
-            _swFreq = ["114","110","111","112","113"];
+            _swFreq = ["114","110","111","112","113","115"];
             _lrFreq = ["31","30"];
             _callsign = "Violett";
+        };
+        case 4 : {
+            _swFreq = ["115","110","111","112","113","114"];
+            _lrFreq = ["31","30"];
+            _callsign = "Rot";
         };
         default {
             _swFreq = ["110"];

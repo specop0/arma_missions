@@ -14,8 +14,6 @@ class CfgFunctions {
 class Header
 {
     gameType = "coop";
-    minPlayers = "1";
-    maxPlayers = "23";
 };
 
 respawn = BASE;
@@ -30,3 +28,5 @@ loadScreen="loading.jpg";
 
 overviewText = "";
 overviewPicture = "";
+
+disabledAI = 1;
