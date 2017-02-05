@@ -8,7 +8,7 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=2036;
+		nextID=2046;
 	};
 	class MarkerIDProvider
 	{
@@ -328,7 +328,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=305;
+		items=306;
 		class Item0
 		{
 			dataType="Object";
@@ -18007,6 +18007,54 @@ class Mission
 			id=2035;
 			type="TTT_Logistik_Standardmunition_Us";
 			atlOffset=0.0069484711;
+		};
+		class Item305
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1302.5,15.048886,975.54999};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						description="Kameramann";
+						isPlayable=1;
+					};
+					id=2043;
+					type="B_Soldier_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1302.5319,15.045774,972.68378};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Kameramann";
+						isPlayable=1;
+					};
+					id=2045;
+					type="B_Soldier_F";
+					atlOffset=8.7738037e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2042;
 		};
 	};
 	class Connections
