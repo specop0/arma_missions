@@ -33,5 +33,6 @@ author="Spec";
 OnLoadName = "OP Air Raid";
 loadScreen="loading.jpg";
 
+disabledAI = 1;
 overviewText = "";
 overviewPicture = "";
