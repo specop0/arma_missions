@@ -1,0 +1,26 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_cargoDrop\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+};
+
+class Header
+{
+    gameType = "coop";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+onLoadMission = "Hier die Stimme aus dem Off. Frage: Macht die KI genug Pew Pew?";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "OP Pfau-COM";
+loadScreen="loading.jpg";
+
+disabledAI = 1;
