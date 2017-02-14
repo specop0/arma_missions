@@ -1,0 +1,29 @@
+.gitignore
+.git*
+
+# archives
+*.pbo
+*.zip
+
+# images, audio
+*.jpg
+*.png
+*.paa
+*.ogg
+
+# mission dumps
+/0_old/*
+/0_pool/*
+*test*
+
+# scripts from other source / own repo
+*/FUPS/*
+FUPS-master/*
+*/VCOMAI/*
+*/W_Teleporter/*
+
+# dynamic fups only altis version needed
+dynamic_fups_*
+
+# if folder has a version number it is a mission to check
+*_v??.*
