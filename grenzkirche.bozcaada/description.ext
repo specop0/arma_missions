@@ -13,8 +13,6 @@ class CfgFunctions {
 class Header
 {
     gameType = "coop";
-    minPlayers = "1";
-    maxPlayers = "22";
 };
 
 respawn = BASE;

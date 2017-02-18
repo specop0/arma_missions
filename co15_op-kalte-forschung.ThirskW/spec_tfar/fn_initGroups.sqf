@@ -21,8 +21,8 @@ if(_parameterCorrect) then {
     private ["_swFreq", "_lrFreq", "_callsign", "_BFTicon", "_BFTremarks"];
     _BFTicon = "b_inf";
     _BFTremarks = name _unitName;
-    _lrFreq = [];
     
+    _lrFreq = ["30"];
     switch _groupID do {
         case 0 : {
             _swFreq = ["101","100","102","103"];
