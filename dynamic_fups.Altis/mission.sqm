@@ -19,7 +19,7 @@ class EditorData
 		pos[]={15178.419,42.915009,17335.336};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -39,6 +39,7 @@ addons[]=
 	"ttt_units_us_c",
 	"CUP_AirVehicles_UH60",
 	"A3_Characters_F",
+	"ace_nouniformrestrictions",
 	"A3_Soft_F_Gamma_Truck_01",
 	"ace_realisticnames",
 	"ace_refuel",
@@ -57,7 +58,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -130,75 +131,82 @@ class AddonsMetaData
 		};
 		class Item11
 		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item12
+		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item14
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
 			name="UK3CB_BAF_Vehicles_Coyote_Jackal";
 		};
-		class Item18
+		class Item19
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item19
+		class Item20
 		{
 			className="r_unfold_RHS";
 			name="r_unfold_RHS";
 			author="Rallen";
 		};
-		class Item20
+		class Item21
 		{
 			className="CUP_AirVehicles_A10";
 			name="CUP_AirVehicles_A10";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item23
 		{
 			className="CUP_WheeledVehicles_Dingo";
 			name="CUP_WheeledVehicles_Dingo";
@@ -1760,8 +1768,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15177.181,17.985859,17317.262};
-				angles[]={6.2791886,2.3561945,0.0066682254};
+				position[]={15177.181,20.103756,17317.262};
+				angles[]={0.0013372133,2.3561945,0.0066682254};
 			};
 			side="Empty";
 			flags=4;
@@ -1770,15 +1778,15 @@ class Mission
 			};
 			id=151;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-2.1004944;
+			atlOffset=0.017402649;
 		};
 		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15179.997,17.988823,17319.574};
-				angles[]={0.0053265258,2.3561945,0.0013372133};
+				position[]={15179.997,20.0888,17319.574};
+				angles[]={0.0053265258,2.3561945,6.2805333};
 			};
 			side="Empty";
 			flags=4;
@@ -1787,7 +1795,7 @@ class Mission
 			};
 			id=152;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-2.1049271;
+			atlOffset=-0.0049495697;
 		};
 		class Item32
 		{
@@ -3817,16 +3825,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15192.206,21.215452,17279.57};
-				angles[]={6.2818413,5.497787,0.0013439035};
+				position[]={15192.206,19.574961,17279.57};
+				angles[]={6.2818484,5.497787,0.0013372133};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=285;
 			type="TTT_Schuetzenpanzer_Us_Woodland";
-			atlOffset=1.6401596;
+			atlOffset=-0.00033187866;
 		};
 		class Item47
 		{
