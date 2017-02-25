@@ -89,7 +89,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_epinephrine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_morphine",ADD_TO_BACKPACK, 8] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 1];
+            _unit setVariable ["ace_medical_medicClass", 1, true];
         };
         case CLASS_MEDEVAC : {
             [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
@@ -103,7 +103,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_morphine",ADD_TO_BACKPACK, 12] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_personalAidKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 2];
+            _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
             [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
@@ -136,12 +136,12 @@ if(_parameterCorrect) then {
             [_unit,"ACE_M26_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
-            _unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
+            _unit setVariable ["ACE_isEOD", true, true];
         };
         case CLASS_LOGISTIC : {
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
         };
         case CLASS_MG : {
             [_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

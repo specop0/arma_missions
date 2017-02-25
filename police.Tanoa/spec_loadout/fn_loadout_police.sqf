@@ -111,7 +111,7 @@ if(_parameterCorrect) then {
         [_unit,"ACE_morphine",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
         [_unit,"ACE_surgicalKit",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
         [_unit,"ACE_personalAidKit",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
-        _unit setVariable ["ace_medical_medicClass", 2];
+        _unit setVariable ["ace_medical_medicClass", 2, true];
     } else {
         [_unit, _uniform] call Spec_fnc_addContainer;
         [_unit, _vest] call Spec_fnc_addContainer;
@@ -152,12 +152,12 @@ if(_parameterCorrect) then {
             case CLASS_GL : {
                 [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
                 [_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-                _unit setVariable ["ACE_IsEngineer", true];
+                _unit setVariable ["ACE_IsEngineer", true, true];
             };
             case CLASS_PIO : {
                 [_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
                 [_unit,"ACE_wirecutter",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-                _unit setVariable ["ACE_isEOD", true];
+                _unit setVariable ["ACE_isEOD", true, true];
             };
             case CLASS_FUNKER : {
                 _unit linkItem "ItemGPS";

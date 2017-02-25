@@ -92,7 +92,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_epinephrine",2, 8] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_morphine",2, 8] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_surgicalKit",2, 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 1];
+            _unit setVariable ["ace_medical_medicClass", 1, true];
         };
         case CLASS_MEDEVAC : {
             [_unit,"ACE_fieldDressing",2, 10] call Spec_fnc_addItemToContainer;
@@ -106,7 +106,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_morphine",2, 12] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_surgicalKit",2, 5] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_personalAidKit",2, 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ace_medical_medicClass", 2];
+            _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
             [_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
@@ -135,15 +135,15 @@ if(_parameterCorrect) then {
             [_unit,"ACE_M26_Clacker",3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
-            _unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
+            _unit setVariable ["ACE_isEOD", true, true];
         };
         case CLASS_LOGISTIC : {
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
         };
         case CLASS_PILOT : {
-            _unit setVariable ["ACE_IsEngineer", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
         };
         case CLASS_MG : {
             [_unit,"ACE_SpareBarrel",2] call Spec_fnc_addItemToContainer;

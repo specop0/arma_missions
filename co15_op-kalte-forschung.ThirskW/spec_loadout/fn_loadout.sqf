@@ -186,7 +186,7 @@ if(_parameterCorrect) then {
             [_unit,"ACE_epinephrine",ADD_TO_VEST, 4] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_morphine",ADD_TO_VEST, 4] call Spec_fnc_addItemToContainer;
             
-            _unit setVariable ["ace_medical_medicClass", 2];
+            _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
             [_unit,"ACE_fieldDressing",ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
@@ -207,7 +207,7 @@ if(_parameterCorrect) then {
             [_unit,"DemoCharge_Remote_Mag",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_Clacker",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_isEOD", true, true];
         };
         case _mgAssiClass : {
             [_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;

@@ -93,7 +93,7 @@ if(_parameterCorrect && _type in [CLASS_LOGISTIC, CLASS_REPORTER]) then {
     
     if(_type == CLASS_LOGISTIC) then {
         [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-        _unit setVariable ["ACE_IsEngineer", true];
+        _unit setVariable ["ACE_IsEngineer", true, true];
     } else {
         [_unit,"ACE_Cellphone", ADD_TO_VEST] call Spec_fnc_addItemToContainer;
         [_unit,"ACE_SpraypaintBlack",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

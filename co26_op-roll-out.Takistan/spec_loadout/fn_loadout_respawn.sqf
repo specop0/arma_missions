@@ -373,8 +373,8 @@ if(_parameterCorrect) then {
             [_unit,  "ACE_Clacker", 2] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_DefusalKit", 2] call Spec_fnc_addItemToContainer;
             
-            _unit setVariable ["ACE_IsEngineer", true];
-            _unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
+            _unit setVariable ["ACE_isEOD", true, true];
         };
         comment "Repair Specialist - Logistic (inkl Repair)";
         case ("O_soldier_repair_F"): {
@@ -421,7 +421,7 @@ if(_parameterCorrect) then {
             [_unit,  "ACE_MapTools", 0] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
         };
         comment "Combat Life Saver) - MedEvac";
         case ("O_medic_F"): {
@@ -476,7 +476,7 @@ if(_parameterCorrect) then {
             [_unit,  "ACE_Flashlight_MX991", 0] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_microDAGR", 0] call Spec_fnc_addItemToContainer;
             
-            _unit setVariable ["ace_medical_medicClass", 2];
+            _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
             removeAllWeapons _unit;

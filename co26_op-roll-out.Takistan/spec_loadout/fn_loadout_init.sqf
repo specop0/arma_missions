@@ -436,8 +436,8 @@ if(_parameterCorrect) then {
             [_unit,  "ACE_Clacker", 2] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_DefusalKit", 2] call Spec_fnc_addItemToContainer;
             [_unit, "ACE_NVG_Wide", 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
-            _unit setVariable ["ACE_isEOD", true];            
+            _unit setVariable ["ACE_IsEngineer", true, true];
+            _unit setVariable ["ACE_isEOD", true, true];            
         };
     };
     if (!isNil "violett_6") then {
@@ -485,8 +485,8 @@ if(_parameterCorrect) then {
             [_unit,  "ACE_Clacker", 2] call Spec_fnc_addItemToContainer;
             [_unit,  "ACE_DefusalKit", 2] call Spec_fnc_addItemToContainer;
             [_unit, "ACE_NVG_Wide", 3] call Spec_fnc_addItemToContainer;
-            _unit setVariable ["ACE_IsEngineer", true];
-            _unit setVariable ["ACE_isEOD", true];
+            _unit setVariable ["ACE_IsEngineer", true, true];
+            _unit setVariable ["ACE_isEOD", true, true];
         };
     };
 };

@@ -1,21 +1,21 @@
 if(!isNil "gruen_3") then {
     if(player == gruen_3) then {
-        player setVariable ["ace_medical_medicClass", 1];
+        player setVariable ["ace_medical_medicClass", 1, true];
     };
 };
 if(!isNil "braun_3") then {
     if(player == braun_3) then {
-        player setVariable ["ace_medical_medicClass", 1];
+        player setVariable ["ace_medical_medicClass", 1, true];
     };
 };
 if(!isNil "weiss_1") then {
     if(player == weiss_1) then {
-        player setVariable ["ace_medical_medicClass", 2];
+        player setVariable ["ace_medical_medicClass", 2, true];
     };
 };
 if(!isNil "weiss_3") then {
     if(player == weiss_3) then {
-        player setVariable ["ace_medical_medicClass", 2];
+        player setVariable ["ace_medical_medicClass", 2, true];
     };
 };
 if(!isNil "z1") then {
