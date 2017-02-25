@@ -137,6 +137,7 @@ if(_parameterCorrect) then {
         case CLASS_LOGISTIC : {
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", true];
+            [_unit] call Spec_cargoDrop_fnc_addPackAction;
         };
         case CLASS_MG : {
             [_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;

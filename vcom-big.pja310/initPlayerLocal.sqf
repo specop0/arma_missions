@@ -8,3 +8,10 @@
         [_otherLamp,false] remoteExec ["hideObjectGlobal",2];
     }, [], 1.5, true, true, "", "true", 3];
 } forEach [lampMedicA, lampMedicB, lampMedicAOff, lampMedicBOff];
+
+player addEventHandler ["Respawn",{
+    params ["","_corpse"];
+    if((getPosASL player) distance (getMarkerPos "respawn") < 1000) then {
+        deleteVehicle _corpse;
+    };
+}];

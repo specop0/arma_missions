@@ -20,7 +20,7 @@ respawnDialog = false;
 onLoadMission = "Hier die Stimme aus dem Off. Frage: Macht die KI genug Pew Pew?";
 OnLoadMissionTime = TRUE;
 author="Spec";
-OnLoadName = "OP Pfau-COM";
+OnLoadName = "OP Pfau, komm!";
 loadScreen="loading.jpg";
 
 disabledAI = 1;

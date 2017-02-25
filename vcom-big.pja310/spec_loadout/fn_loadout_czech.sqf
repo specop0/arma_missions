@@ -67,7 +67,7 @@ private _goggles = "G_Lowprofile";
 private _standardWeapon = "CUP_arifle_CZ805_A1";
 private _standardAmmo = "30Rnd_556x45_Stanag";
 private _standardAccessory = ["optic_ERCO_blk_F","CUP_acc_ANPEQ_2"];
-private _standardAccessoryExtra = [];
+private _standardAccessoryExtra = ["CUP_acc_Flashlight"];
 
 private _secondaryWeapon = "CUP_hgun_Compact";
 private _secondaryAmmo = "CUP_10Rnd_9x19_Compact";
@@ -86,7 +86,7 @@ private _mgAccessory = ["optic_ERCO_khk_F","CUP_acc_ANPEQ_2"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "CUP_lmg_m249_pip1";
+private _lmgWeapon = "CUP_lmg_m249_pip4";
 private _lmgAmmo = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
