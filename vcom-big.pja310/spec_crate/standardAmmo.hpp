@@ -10,7 +10,7 @@
 #define CRATE_STANDARD_AMMO_CONTENT [\
     [PRIMARY_AMMO,34],\
     [MG_AMMO,4],\
-    [LMG_AMMO,4],\
+    [LMG_AMMO,6],\
     [SECONDARY_AMMO,8],\
     [UGL_SMOKE_WHITE,6],\
     [UGL_SMOKE_RED,6],\
