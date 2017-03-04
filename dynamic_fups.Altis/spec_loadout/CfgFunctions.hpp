@@ -27,6 +27,7 @@ class spec_loadout {
         class loadout_ussocom {};
         class loadoutBox {};
         class loadoutFaction {};
+        class loadoutParseUnitAndType {};
         class loadoutStandardEquipment {};
         class units_init { postInit = 1; };
     };

@@ -30,3 +30,4 @@ overviewText = "";
 overviewPicture = "";
 
 disabledAI = 1;
+enableDebugConsole = 1;

@@ -1,6 +1,24 @@
-private _parameterCorrect = params ["_parameter", ["_faction","NATO",[""]] ];
+/*
+    Author: SpecOp0
 
-if(_parameterCorrect) then {
+    Description:
+    Assigns a loadout for a given faction.
+
+    Parameter(s):
+    0: ARRAY
+        1: OBJECT - unit to assign loadout to
+        2 (Optional) : STRING - classname classname which represents loadout type (default: classname of unit)
+    1 (Optional) : STRING - Name of the faction. Uses the saved default value in missionNamespace or NATO.
+
+    Returns:
+    true
+*/
+#include "const.hpp"
+
+private _parameterCorrect = params ["_parameter", ["_faction", missionNamespace getVariable [SPEC_LOADOUT_VAR_FACTION, "NATO"],[""]] ];
+
+if(_parameter isEqualTypeAny [objNull,[]]) then {
+    missionNamespace setVariable [SPEC_LOADOUT_VAR_FACTION, _faction];
     switch (_faction) do {
         case "NATO" : {
             _parameter call Spec_fnc_loadout_nato;
@@ -67,3 +85,4 @@ if(_parameterCorrect) then {
         };
     };
 };
+true

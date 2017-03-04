@@ -23,35 +23,7 @@
 #include "addItemToContainer.hpp"
 #include "classVariables.hpp"
 
-waitUntil {!isNull player || isServer};
-private _unit = objNull;
-private _type = "";
-private _parameterCorrect = false;
-// test if addAction was used (caller _this select 3 is present)
-if(_this isEqualType [] && {count _this > 3}) then {
-    _parameterCorrect = params [ "", ["_caller", objNull,[objNull]] ];
-    _unit = _caller;
-    _type = typeOf _unit;
-    // test if addAction arguments were used
-    if (count _this > 3 && {(_this select 3) isEqualTypeAny ["",[]]}) then {
-        private _addActionParameterCorrect = (_this select 3) params [ ["_typeAddActionArg","",["STRING"]] ];
-        if(_addActionParameterCorrect) then {
-            _type = _typeAddActionArg;
-        };
-    };
-} else {
-    // normal call
-    _parameterCorrect = params [["_unitArg",objNull,[objNull]]];
-    _unit = _unitArg;
-    _type = typeOf _unit;
-    // test if type argument present (_this select 1)
-    if(_this isEqualType [] && {count _this > 1}) then {
-        private _typeParameterCorrect = params ["", ["_typeArg","",[""]] ];
-        if(_typeArg != "") then {
-            _type = _typeArg;
-        };
-    };
-};
+private _parameterCorrect = (_this call Spec_fnc_loadoutParseUnitAndType) params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
 private _uniform = "rhs_uniform_flora_patchless_alt"; //rhs_uniform_mflora_patchless
 private _vest = "rhs_6b23_ML_6sh92";
@@ -164,9 +136,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;

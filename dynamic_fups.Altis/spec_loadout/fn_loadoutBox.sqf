@@ -28,7 +28,9 @@ if(_parameterCorrect && hasInterface) then {
         _object addAction ["Benutze Slot",{
                 params ["","_caller"];
                 (_this select 3) params ["_factionName"];
-                [_caller, _factionName] call Spec_fnc_loadoutFaction;
+                // set mission time to current -> TFAR frequencies will be set
+                _caller setVariable ["Spec_var_timeAtInit", serverTime];
+                [[_caller, typeOf _caller], _factionName] call Spec_fnc_loadoutFaction;
                 Spec_var_loadoutFaction = "MAIN";
             }, [_factionName], _i, false, true, "", _conditionString];
         // for each class addAction
@@ -36,7 +38,9 @@ if(_parameterCorrect && hasInterface) then {
             _object addAction [(_x select 0), {
                     params ["","_caller"];
                     (_this select 3) params ["_type","_factionName"];
-                    [ [_caller, _type], _factionName] call Spec_fnc_loadoutFaction;
+                    // set mission time to current -> TFAR frequencies will be set
+                    _caller setVariable ["Spec_var_timeAtInit", serverTime];
+                    [[_caller, _type], _factionName] call Spec_fnc_loadoutFaction;
                     Spec_var_loadoutFaction = "MAIN";
                 }, [_x select 1,_factionName], _i, false, true, "", _conditionString];
             _i = _i - 1;
