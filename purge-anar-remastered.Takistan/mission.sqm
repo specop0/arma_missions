@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1099;
+		nextID=1101;
 	};
 	class MarkerIDProvider
 	{
@@ -284,7 +284,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=222;
+		items=224;
 		class Item0
 		{
 			dataType="Marker";
@@ -1801,8 +1801,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8265.1406,297.43604,1800.364};
-				angles[]={0,5.7595863,6.2816033};
+				position[]={8263.7656,297.4375,1799.535};
+				angles[]={6.2816033,5.7595863,6.2816033};
 			};
 			side="Empty";
 			flags=4;
@@ -9488,6 +9488,38 @@ class Mission
 			};
 			id=1098;
 			type="CUP_metalcase_01";
+		};
+		class Item222
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8099.1611,296.32407,2034.9248};
+				angles[]={-0,4.2411499,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1099;
+			type="TTT_Logistik_Pionierausruestung_Bw";
+		};
+		class Item223
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8097.9307,296.32407,2037.2684};
+				angles[]={-0,4.2411499,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1100;
+			type="TTT_Logistik_Pionierausruestung_Bw";
 		};
 	};
 	class Connections
