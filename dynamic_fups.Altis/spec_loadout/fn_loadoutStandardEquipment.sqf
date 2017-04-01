@@ -79,8 +79,8 @@ if(_parameterCorrect) then {
     comment "medic equipment";
     switch _type do {
         case CLASS_MEDIC : {
-            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
@@ -92,8 +92,8 @@ if(_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 1, true];
         };
         case CLASS_MEDEVAC : {
-            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
