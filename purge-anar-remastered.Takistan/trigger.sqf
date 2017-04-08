@@ -27,7 +27,7 @@ switch (_triggerNumber) do {
     };
     case 6 : {
         INCREASE_COUNT("civi_cargo_count")
-        "ine Lieferung Hilfsgueter hat Landay erreicht." remoteExecCall ["hint"];
+        "Eine Lieferung Hilfsgueter hat Landay erreicht." remoteExecCall ["hint"];
     };
     case 7 : {
         "Das sich das TTT trotz der Krisenzeit fuer die nahe Zivilbevoelkerung einsetzt, kriegt man auch in Zavarak mit. Von dort hat sich ein Einwohner gemeldet und laut seiner Aussage die letzten Tage eine Patrouille aus Norden mit schweren Kriegsgeraet gesehen. Er meldet sich, wenn er diese heute sieht." remoteExecCall ["hint"];
@@ -41,8 +41,8 @@ switch (_triggerNumber) do {
     };
     case 30 : {
         if(missionNamespace getVariable ["spotted", false]) then {
-            [opfor_pat_1, [opfor_pat_1, 8]] remoteExecCall ["setCurrentWaypoint", opfor_pat_1];
-            [opfor_pat_2, [opfor_pat_2, 11]] remoteExecCall ["setCurrentWaypoint", opfor_pat_2];
+            [opfor_pat_1, [opfor_pat_1, 8]] remoteExecCall ["setCurrentWaypoint", leader opfor_pat_1];
+            [opfor_pat_2, [opfor_pat_2, 11]] remoteExecCall ["setCurrentWaypoint", leader opfor_pat_2];
         };
     };
 };

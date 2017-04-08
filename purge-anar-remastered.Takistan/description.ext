@@ -21,3 +21,4 @@ OnLoadName = "OP Purge Anar";
 
 overviewText = "";
 overviewPicture = "";
+disabledAI = 1;
