@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1107;
+		nextID=1109;
 	};
 	class MarkerIDProvider
 	{
@@ -271,12 +271,12 @@ class Mission
 	{
 		resistanceWest=0;
 		resistanceEast=1;
-		timeOfChanges=6120;
+		timeOfChanges=9720;
 		startWeather=0;
 		startFog=1;
 		startWind=0.099999994;
 		forecastWeather=0;
-		forecastFog=0.84856445;
+		forecastFog=1;
 		forecastWind=0.099999994;
 		forecastWaves=0;
 		rainForced=1;
@@ -982,7 +982,7 @@ class Mission
 				angles[]={6.2655869,2.2689281,6.2703872};
 			};
 			side="East";
-			flags=6;
+			flags=7;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -999,7 +999,7 @@ class Mission
 				angles[]={6.251195,2.2689281,6.2543926};
 			};
 			side="East";
-			flags=6;
+			flags=7;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -1800,7 +1800,7 @@ class Mission
 			};
 			id=609;
 			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
-			atlOffset=-0.049987793;
+			atlOffset=-0.04989624;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1840,7 +1840,7 @@ class Mission
 			};
 			id=610;
 			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
-			atlOffset=-0.050231934;
+			atlOffset=-0.050140381;
 		};
 		class Item75
 		{
@@ -2406,7 +2406,7 @@ class Mission
 						angles[]={6.0904093,0.43633232,0.0095994528};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -2603,7 +2603,7 @@ class Mission
 						angles[]={6.1012197,2.6179938,0};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -2817,7 +2817,7 @@ class Mission
 						angles[]={0,3.8397243,0};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -2972,7 +2972,7 @@ class Mission
 						angles[]={0,1.9198622,0};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.40000001;
@@ -3258,7 +3258,7 @@ class Mission
 						angles[]={0,0.78539819,0};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -3379,7 +3379,7 @@ class Mission
 						angles[]={0,4.712389,0};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -3499,7 +3499,7 @@ class Mission
 						angles[]={0,4.0142574,6.282495};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -3619,7 +3619,7 @@ class Mission
 						angles[]={6.2767973,0,0.014398966};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -3910,7 +3910,7 @@ class Mission
 						position[]={5183.4561,145.40143,6069.4258};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -4275,7 +4275,7 @@ class Mission
 						angles[]={6.2591896,0.69813168,6.2655869};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -4619,7 +4619,7 @@ class Mission
 						angles[]={6.2448039,0.69813168,6.2559919};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5029,7 +5029,7 @@ class Mission
 						angles[]={6.2543926,0.69813168,6.2543926};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5264,7 +5264,7 @@ class Mission
 						angles[]={6.2352223,0.69813168,6.2384167};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5486,7 +5486,7 @@ class Mission
 						angles[]={0,1.8344374,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5577,7 +5577,7 @@ class Mission
 						angles[]={6.2767816,0,0.033584893};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5607,7 +5607,7 @@ class Mission
 						angles[]={0.0040998212,1.7453293,6.276135};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5698,7 +5698,7 @@ class Mission
 						angles[]={6.2824135,0.26357108,6.2799282};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5789,7 +5789,7 @@ class Mission
 						angles[]={0.0016914561,0.14323795,6.2239094};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5880,7 +5880,7 @@ class Mission
 						angles[]={6.278553,0,6.2657089};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -5971,7 +5971,7 @@ class Mission
 						angles[]={6.2336264,1.8325957,0.043171391};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6151,7 +6151,7 @@ class Mission
 						angles[]={0.054346491,2.1816616,0.06072529};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6181,7 +6181,7 @@ class Mission
 						angles[]={0.16333175,0.08726646,6.2144952};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6211,7 +6211,7 @@ class Mission
 						angles[]={6.2591896,4.712389,0.086187214};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6241,7 +6241,7 @@ class Mission
 						angles[]={0,0.34906584,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6332,7 +6332,7 @@ class Mission
 						angles[]={0.02317974,4.0142574,6.2743425};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6423,7 +6423,7 @@ class Mission
 						angles[]={6.2818046,1.9559401,0.0080381455};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6514,7 +6514,7 @@ class Mission
 						angles[]={6.2606473,2.7052603,0.023836492};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6605,7 +6605,7 @@ class Mission
 						angles[]={0.00069053395,1.650633,0.0067305053};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6696,7 +6696,7 @@ class Mission
 						angles[]={6.2802353,1.9730747,6.2667861};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6787,7 +6787,7 @@ class Mission
 						angles[]={0.0044215783,0,0.04362477};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6878,7 +6878,7 @@ class Mission
 						angles[]={6.2823472,3.6651914,0.078679442};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -6971,7 +6971,7 @@ class Mission
 						angles[]={6.2792058,4.0142574,0.020664699};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7064,7 +7064,7 @@ class Mission
 						angles[]={0,5.7595863,6.282495};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7155,7 +7155,7 @@ class Mission
 						angles[]={0,3.6651914,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7247,7 +7247,7 @@ class Mission
 						angles[]={0.0062530614,2.0943952,0.029665932};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7338,7 +7338,7 @@ class Mission
 						angles[]={0,0.87266463,6.2763495};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7430,7 +7430,7 @@ class Mission
 						angles[]={0,0.27213612,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7522,7 +7522,7 @@ class Mission
 						angles[]={0,4.3633232,6.2819896};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7614,7 +7614,7 @@ class Mission
 						angles[]={0,0,6.2819896};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7706,7 +7706,7 @@ class Mission
 						angles[]={0,2.0943952,6.2819896};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7798,7 +7798,7 @@ class Mission
 						angles[]={6.2564492,0.52359879,0.078937985};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7890,7 +7890,7 @@ class Mission
 						angles[]={0,2.1816616,6.2826972};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -7981,7 +7981,7 @@ class Mission
 						angles[]={0,5.0614548,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8072,7 +8072,7 @@ class Mission
 						angles[]={0.047309767,1.0471976,0.067979842};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8257,7 +8257,7 @@ class Mission
 						angles[]={0,4.1015239,6.282495};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8349,7 +8349,7 @@ class Mission
 						angles[]={0.077580132,0.52359879,0.012434486};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8441,7 +8441,7 @@ class Mission
 						angles[]={0,2.7925267,6.282495};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8533,7 +8533,7 @@ class Mission
 						angles[]={6.2828403,0.34906584,6.2549424};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8623,7 +8623,7 @@ class Mission
 						position[]={5937.1636,294.00143,5490.3408};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -8842,7 +8842,7 @@ class Mission
 						angles[]={0.011198638,2.5307274,0.39558831};
 					};
 					side="Independent";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -9062,7 +9062,7 @@ class Mission
 						angles[]={6.251193,3.2288592,6.2352238};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -9170,7 +9170,7 @@ class Mission
 						angles[]={6.1985893,3.0543261,6.1120734};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -9467,7 +9467,7 @@ class Mission
 						angles[]={6.268786,2.6179938,6.2591867};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -9743,7 +9743,7 @@ class Mission
 						angles[]={6.2815971,3.2288592,0.0079936078};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -9835,7 +9835,7 @@ class Mission
 						angles[]={0,2.2689281,0};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -9892,7 +9892,7 @@ class Mission
 				angles[]={0,2.2689281,0};
 			};
 			side="Civilian";
-			flags=6;
+			flags=7;
 			class Attributes
 			{
 			};
@@ -9938,7 +9938,7 @@ class Mission
 						angles[]={0,0.78539819,0};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -10049,7 +10049,7 @@ class Mission
 						angles[]={0,1.5184364,6.249588};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -10106,7 +10106,7 @@ class Mission
 				angles[]={0,1.5184364,6.249588};
 			};
 			side="Civilian";
-			flags=6;
+			flags=7;
 			class Attributes
 			{
 			};
@@ -10341,7 +10341,7 @@ class Mission
 						angles[]={0.011205014,2.2689281,6.2384176};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -10433,7 +10433,7 @@ class Mission
 						angles[]={0.022392575,0.34906584,6.268786};
 					};
 					side="Civilian";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.2;
@@ -10536,7 +10536,7 @@ class Mission
 						angles[]={0.025594741,3.0543261,6.2687831};
 					};
 					side="East";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						name="heavy_2C";
@@ -10715,7 +10715,7 @@ class Mission
 				angles[]={0.025594741,3.0543261,6.2687831};
 			};
 			side="East";
-			flags=6;
+			flags=7;
 			class Attributes
 			{
 				name="heavy_2";
@@ -11086,7 +11086,7 @@ class Mission
 						angles[]={0,5.6723199,0};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.69999999;
@@ -11182,7 +11182,7 @@ class Mission
 						angles[]={0,4.0472865,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11256,7 +11256,7 @@ class Mission
 						angles[]={0,5.2699485,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11387,7 +11387,7 @@ class Mission
 						angles[]={0,2.5307274,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11518,7 +11518,7 @@ class Mission
 						angles[]={0,2.5307274,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11592,7 +11592,7 @@ class Mission
 						angles[]={0,2.5307274,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11723,7 +11723,7 @@ class Mission
 						angles[]={0,0.43164682,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11854,7 +11854,7 @@ class Mission
 						angles[]={0,4.0441818,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
@@ -11948,7 +11948,7 @@ class Mission
 						angles[]={0,4.0063419,6.2826972};
 					};
 					side="West";
-					flags=6;
+					flags=7;
 					class Attributes
 					{
 						skill=0.64999998;
