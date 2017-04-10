@@ -1,0 +1,40 @@
+#include "W_Teleporter\dialog.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_cargoDrop\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+//#include "spec_tfar\CfgFunctions.hpp"
+#include "spec_zeus\CfgFunctions.hpp"
+
+class spec_scripts {
+    tag = "Spec";
+    class init {
+        file="scripts";
+        class fennek {};
+        class pandur {};
+    };
+};
+
+};
+
+class Header
+{
+    gameType = "coop";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+author="Spec";
+OnLoadName = "OP Ocean Devil";
+loadScreen="pictures\loading.jpg";
+onLoadMission = "Jesus hat das Kreuz verdient.";
+OnLoadMissionTime = TRUE;
+
+overviewText = "";
+overviewPicture = "";
+
+disabledAI = 1;
+enableDebugConsole = 1;
