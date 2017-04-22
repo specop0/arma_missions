@@ -23,6 +23,49 @@ class Header
     gameType = "coop";
 };
 
+
+// volume, pitch, radius
+#define VOLUME_VALUES 10, 1, 20
+class CfgSounds
+{
+    class musicA
+    {
+        name = "musicA";
+        sound[] = {"\sounds\A.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+    class musicB
+    {
+        name = "musicB";
+        sound[] = {"\sounds\B.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+    class musicC
+    {
+        name = "musicC";
+        sound[] = {"\sounds\C.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+    class musicD
+    {
+        name = "musicD";
+        sound[] = {"\sounds\D.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+    class musicE
+    {
+        name = "musicE";
+        sound[] = {"\sounds\E.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+    class musicF
+    {
+        name = "musicF";
+        sound[] = {"\sounds\F.ogg", VOLUME_VALUES};
+        titles[] = {0, ""};
+    };
+};
+
 respawn = BASE;
 respawnDelay = 5;
 respawnDialog = false;
@@ -32,9 +75,6 @@ OnLoadName = "OP Ocean Devil";
 loadScreen="pictures\loading.jpg";
 onLoadMission = "Jesus hat das Kreuz verdient.";
 OnLoadMissionTime = TRUE;
-
-overviewText = "";
-overviewPicture = "";
 
 disabledAI = 1;
 enableDebugConsole = 1;

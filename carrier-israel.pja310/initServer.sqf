@@ -20,3 +20,25 @@ dockTop setObjectTextureGlobal [0, "pictures\down.paa"];
     [[6656.33,17368.2,0],50],
     [[6541.25,17385.1,0],50]
 ];
+
+private _scriptHandle = [] spawn {
+    while { true } do {
+        {
+            _x params ["_musicName", "_duration"];
+            {
+                deleteVehicle _x;
+            } forEach allMissionObjects "#soundonvehicle";
+            {
+                [_x,_musicName] remoteExecCall ["say3D"];
+            } forEach [radioAhelper, radioBhelper];
+            sleep _duration;
+        } forEach [
+            ["musicA", 190],
+            ["musicB", 209],
+            ["musicC", 231],
+            ["musicD", 221],
+            ["musicE", 277],
+            ["musicF", 221]
+        ];
+    };
+};
