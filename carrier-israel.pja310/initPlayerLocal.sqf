@@ -2,6 +2,10 @@
     [_x] call FETT_fnc_W_addTeleport; 
 } forEach [flagA, flagB];
 
+if(typeof player in ["B_Helipilot_F", "B_soldier_repair_F"]) then {
+    [player] call Spec_cargoDrop_fnc_addPackAction;
+};
+
 dockBottom addAction ["Nach Oben", {
     player setPosASL getPosASL dockTopHelper;
     player setDir direction dockTopHelper;

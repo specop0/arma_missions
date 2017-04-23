@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=271;
+		nextID=287;
 	};
 	class Camera
 	{
@@ -2501,7 +2501,7 @@ class Mission
 					};
 					id=97;
 					type="I_APC_Wheeled_03_cannon_F";
-					atlOffset=17.05533;
+					atlOffset=17.055328;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18717,8 +18717,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
-						description="Bussard #1 - Pilot";
+						description="Bussard #1 - Fahrzeugfuehrer";
 						isPlayable=1;
 					};
 					id=1687;
@@ -18727,6 +18726,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -18745,7 +18763,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -18764,7 +18782,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -18779,8 +18797,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
-						description="Bussard #2 - Co-Pilot";
+						description="Bussard #2 - Fahrzeugfuehrer";
 						isPlayable=1;
 					};
 					id=1688;
@@ -18789,6 +18806,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -18807,7 +18843,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -18826,7 +18862,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -18879,7 +18915,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
 						description="Bussard #3 - Kraftfahrer";
 						isPlayable=1;
 					};
@@ -18941,7 +18976,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
 						description="Bussard #4 - Kraftfahrer";
 						isPlayable=1;
 					};
@@ -19040,7 +19074,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
 						description="Bussard #5 - Crew";
 						isPlayable=1;
 					};
@@ -19102,7 +19135,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this] call Spec_cargoDrop_fnc_addPackAction";
 						description="Bussard #6 - Crew";
 						isPlayable=1;
 					};

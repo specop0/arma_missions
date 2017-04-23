@@ -132,6 +132,10 @@ if(_parameterCorrect) then {
             [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", true, true];
         };
+        case CLASS_PILOT : {
+            [_unit,"ToolKit",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            _unit setVariable ["ACE_IsEngineer", true, true];
+        };
         case CLASS_MG : {
             [_unit,"ACE_SpareBarrel",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         };
