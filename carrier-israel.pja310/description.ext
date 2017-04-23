@@ -13,6 +13,7 @@ class spec_scripts {
         file="scripts";
         class fennek {};
         class pandur {};
+        class playMusic {};
     };
 };
 

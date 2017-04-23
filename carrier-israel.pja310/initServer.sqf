@@ -25,12 +25,7 @@ private _scriptHandle = [] spawn {
     while { true } do {
         {
             _x params ["_musicName", "_duration"];
-            {
-                deleteVehicle _x;
-            } forEach allMissionObjects "#soundonvehicle";
-            {
-                [_x,_musicName] remoteExecCall ["say3D"];
-            } forEach [radioAhelper, radioBhelper];
+            [_musicName] remoteExecCall ["Spec_fnc_playMusic"];
             sleep _duration;
         } forEach [
             ["musicA", 190],
