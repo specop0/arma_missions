@@ -4,9 +4,9 @@
 #define AA_AMMO "rhs_fim92_mag"
 
 #define CRATE_LAUNCHER_CONTENT [\
-    [AT_LAUNCHER, 2],\
-    [AT_AMMO, 2],\
-    ["CUP_optic_MAAWS_Scope", 2],\
-    [AA_LAUNCHER, 2],\
-    [AA_AMMO, 2]\
+    [AT_LAUNCHER, 3],\
+    [AT_AMMO, 3],\
+    ["CUP_optic_MAAWS_Scope", 3],\
+    [AA_LAUNCHER, 3],\
+    [AA_AMMO, 3]\
 ]
