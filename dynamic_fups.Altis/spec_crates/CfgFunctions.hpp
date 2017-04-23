@@ -4,6 +4,7 @@ class spec_crates {
         file="spec_crates";
         class addAmmo {};
         class addAmmoBoxActions {};
+        class filler {};
         class medic {};
         class spawnAmmoBox {};
     };

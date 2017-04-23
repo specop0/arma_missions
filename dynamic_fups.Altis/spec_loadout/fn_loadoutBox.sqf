@@ -162,25 +162,26 @@ if(_parameterCorrect && hasInterface) then {
     }, [], -7, false, true, "", _conditionString];
     
     // add items to cargo (launcher / weapon only)
-    _factionName = "ADD_CARGO";
+    _factionName = "ADD_LAUNCHER";
     _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
     _object addAction [_factionName, {
         (_this select 3) params ["_factionName"];
         Spec_var_loadoutFaction = _factionName;
     }, [_factionName], -2, false, false, "", _conditionString];
     private _cargoItems = [
-        "rhs_weap_M136","UK3CB_BAF_AT4_CS_AP_Launcher",
-        "BWA3_Pzf3",
-        "rhs_weap_rpg7",
-        "launch_NLAW_F","rhs_weap_smaw","BWA3_RGW90","CUP_launch_Mk153Mod0",
-        "CUP_launch_Javelin","rhs_weap_fgm148",
-        "launch_I_Titan_short_F",
-        "CUP_launch_FIM92Stinger","BWA3_Fliegerfaust","launch_B_Titan_F"
+        ["M136 (RHS)","rhs_weap_M136"],["AT4 (UK3CB AP)","UK3CB_BAF_AT4_CS_AP_Launcher"],
+        ["Pzf3","BWA3_Pzf3"],
+        ["RPG7 (RHS)","rhs_weap_rpg7"],
+        ["NLAW","launch_NLAW_F"],["SMAW (CUP)","CUP_launch_Mk153Mod0"],["SMAW (RHS)","rhs_weap_smaw"],["RGW90","BWA3_RGW90"],
+        ["Javelin (CUP)","CUP_launch_Javelin"],["Javelin (RHS)","rhs_weap_fgm148"],
+        ["Titan AT","launch_I_Titan_short_F"],
+        ["Stinger (CUP)","CUP_launch_FIM92Stinger"],["Fliegerfaust","BWA3_Fliegerfaust"],["Titan AA","launch_B_Titan_F"]
     ];
     _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
     _i = -4;
     {
-        _object addAction [_x, {
+        _x params ["_displayName","_className"];
+        _object addAction [_displayName, {
             params ["_target"];
             (_this select 3) params ["_cargoItem"];
             _target addWeaponCargoGlobal [_cargoItem,2];
@@ -190,9 +191,62 @@ if(_parameterCorrect && hasInterface) then {
                 _target addMagazineCargoGlobal [_x,3];
             } forEach _magazines;
             Spec_var_loadoutFaction = "MAIN";
-        }, [_x], _i, false, true, "", _conditionString];
+        }, [_className], _i, false, true, "", _conditionString];
         _i = _i - 1;
     } forEach _cargoItems;
+    if(_i < _minimumActionIndex) then {
+        _minimumActionIndex = _i;
+    };
+    
+    // add other stuff to box (e.g. weapon with some scopes, toolkits)
+    _factionName = "ADD_STUFF";
+    _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
+    _object addAction [_factionName, {
+        (_this select 3) params ["_factionName"];
+        Spec_var_loadoutFaction = _factionName;
+    }, [_factionName], -2, false, false, "", _conditionString];
+#define MARKSMAN_DEFAULT_ITEMS ["optic_DMS",2],["optic_SOS",2],["ACE_RangeCard",2],
+    private _itemsAndCount = [
+        ["Toolkit", [["ToolKit",4]]],
+        ["Wire Cutter",[["ACE_wirecutter",4]]],
+        ["Mk11 (RHS)", [
+            MARKSMAN_DEFAULT_ITEMS
+            ["rhs_weap_sr25_ec",2],
+            ["rhsusf_acc_harris_bipod",2],
+            ["rhsusf_20Rnd_762x51_m118_special_Mag",16]
+        ]],
+        ["Mk14 / DMR", [
+            MARKSMAN_DEFAULT_ITEMS
+            ["srifle_EBR_F",2],
+            ["rhs_acc_harris_swivel",2],
+            ["20Rnd_762x51_Mag",16]
+        ]],
+        ["G3", [
+            ["hlc_rifle_g3sg1",2],
+            ["hlc_optic_accupoint_g3",2],
+            ["HLC_Optic_ZFSG1",2],
+            ["ACE_RangeCard",2],
+            ["hlc_20rnd_762x51_b_G3",16]
+        ]],
+        ["M16A4", [
+            MARKSMAN_DEFAULT_ITEMS
+            ["rhs_weap_m16a4_carryhandle_grip2",2],
+            ["rhsusf_acc_harris_bipod",2],
+            ["rhsusf_acc_M8541",2],
+            ["30Rnd_556x45_Stanag",16]
+        ]]
+    ];
+    _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
+    _i = -4;
+    {
+        _x params ["_displayName","_itemsAndCount"];
+        _object addAction [_displayName, {
+            params ["_target"];
+            [_target, (_this select 3), false] remoteExecCall ["Spec_crates_fnc_filler",2];
+            Spec_var_loadoutFaction = "MAIN";
+        }, _itemsAndCount, _i, false, true, "", _conditionString];
+        _i = _i - 1;
+    } forEach _itemsAndCount;
     if(_i < _minimumActionIndex) then {
         _minimumActionIndex = _i;
     };
