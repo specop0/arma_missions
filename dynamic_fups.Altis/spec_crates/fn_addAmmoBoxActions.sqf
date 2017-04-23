@@ -16,16 +16,17 @@ if(_parameterCorrect && hasInterface) then {
         deleteVehicle _target;
     }, [], 1.5, false, true, "", _conditionDistance];
     private _cargoItems = [
-        "rhs_weap_M136","UK3CB_BAF_AT4_CS_AP_Launcher",
-        "BWA3_Pzf3",
-        "rhs_weap_rpg7",
-        "launch_NLAW_F","rhs_weap_smaw","BWA3_RGW90","CUP_launch_Mk153Mod0",
-        "CUP_launch_Javelin","rhs_weap_fgm148",
-        "launch_I_Titan_short_F",
-        "CUP_launch_FIM92Stinger","BWA3_Fliegerfaust","launch_B_Titan_F"
+        ["M136 (RHS)","rhs_weap_M136"],["AT4 (UK3CB AP)","UK3CB_BAF_AT4_CS_AP_Launcher"],
+        ["Pzf3","BWA3_Pzf3"],
+        ["RPG7 (RHS)","rhs_weap_rpg7"],
+        ["NLAW","launch_NLAW_F"],["SMAW (CUP)","CUP_launch_Mk153Mod0"],["SMAW (RHS)","rhs_weap_smaw"],["RGW90","BWA3_RGW90"],
+        ["Javelin (CUP)","CUP_launch_Javelin"],["Javelin (RHS)","rhs_weap_fgm148"],
+        ["Titan AT","launch_I_Titan_short_F"],
+        ["Stinger (CUP)","CUP_launch_FIM92Stinger"],["Fliegerfaust","BWA3_Fliegerfaust"],["Titan AA","launch_B_Titan_F"]
     ];
     {
-        _crate addAction [_x, {
+        _x params ["_displayName","_className"];
+        _crate addAction [_displayName, {
             params ["_target"];
             (_this select 3) params ["_cargoItem"];
             _target addWeaponCargoGlobal [_cargoItem,2];
@@ -34,7 +35,7 @@ if(_parameterCorrect && hasInterface) then {
             {
                 _target addMagazineCargoGlobal [_x,3];
             } forEach _magazines;
-        }, [_x], 1.5, false, true, "", _conditionDistance];
+        }, [_className], 1.5, false, true, "", _conditionDistance];
     } forEach _cargoItems;
 };
 true
