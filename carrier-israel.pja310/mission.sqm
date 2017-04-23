@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=263;
+		nextID=271;
 	};
 	class Camera
 	{
 		pos[]={558.73901,28.001757,18527.646};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -2501,7 +2501,7 @@ class Mission
 					};
 					id=97;
 					type="I_APC_Wheeled_03_cannon_F";
-					atlOffset=17.055328;
+					atlOffset=17.05533;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7673,7 +7673,7 @@ class Mission
 					};
 					id=513;
 					type="CUP_B_HMMWV_Avenger_NATO_T";
-					atlOffset=-0.0039978027;
+					atlOffset=-0.0039901733;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7776,7 +7776,7 @@ class Mission
 						};
 					};
 					id=518;
-					atlOffset=-0.0039978027;
+					atlOffset=-0.0039901733;
 				};
 				class Item27
 				{
@@ -15602,7 +15602,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Grün #2 - stellv. TF";
+						description="Grün #2 - Funker / FAC";
 						isPlayable=1;
 					};
 					id=1573;
@@ -15611,6 +15611,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -15629,7 +15648,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15648,7 +15667,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -16993,7 +17012,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Braun #4 - Funker";
+						description="Braun #4 - Funker / FAC";
 						isPlayable=1;
 					};
 					id=1623;
@@ -17002,6 +17021,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -17020,7 +17058,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -17039,7 +17077,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item4
