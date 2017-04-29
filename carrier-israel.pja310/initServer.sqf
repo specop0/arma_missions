@@ -22,6 +22,11 @@ dockTop setObjectTextureGlobal [0, "pictures\down.paa"];
 ];
 
 private _scriptHandle = [] spawn {
+    // ramp in carrier for HEMTT
+    ramp attachTo [LHD, [4.6,-35.0898,-12.4]];
+    ramp setVectorDirAndUp [[0,0.962128,0.272599],[0,-0.272599,0.962128]];
+    sleep 1;
+    detach ramp;
     while { true } do {
         {
             _x params ["_musicName", "_duration"];
