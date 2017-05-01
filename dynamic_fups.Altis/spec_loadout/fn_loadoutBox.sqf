@@ -209,6 +209,11 @@ if(_parameterCorrect && hasInterface) then {
     private _itemsAndCount = [
         ["Toolkit", [["ToolKit",4]]],
         ["Wire Cutter",[["ACE_wirecutter",4]]],
+        ["M6 60mm Mortar (UK3CB)", [
+            ["UK3CB_BAF_M6",2],
+            ["UK3CB_BAF_1Rnd_60mm_Mo_Shells",8],
+            ["ACE_Vector",2]
+        ]],
         ["Mk11 (RHS)", [
             MARKSMAN_DEFAULT_ITEMS
             ["rhs_weap_sr25_ec",2],
