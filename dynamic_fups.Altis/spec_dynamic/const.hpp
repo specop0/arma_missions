@@ -11,11 +11,13 @@
 #define LOCATIONS_ARRAY Spec_var_locations
 #define LOCATION_ICON "hd_objective"
 //"ColorUNKNOWN"
-#define LOCATION_COLOR "ColorEast"
+#define LOCATION_COLOR "ColorEAST"
+#define LOCATION_COLOR_DONE "ColorWEST"
 #define LOCATION_TEXT "OBJ %1"
 
 #define MARKER_BASENAME "Spec_marker_%1"
 #define MARKER_COUNTER Spec_var_markerCounter
+#define MARKER_CLEANUP_AVAILABLE "%1_cleanupAvailable"
 
 #define SPAWNED_OBJECTS_ARRAY Spec_var_spawnedObjects
 

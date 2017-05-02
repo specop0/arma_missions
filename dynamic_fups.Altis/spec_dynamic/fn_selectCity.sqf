@@ -231,14 +231,15 @@ if(isServer) then {
             [
                 format [CLEAN_UP_STRING,_textLocation],
                 "_this remoteExec ['Spec_dynamic_fnc_cleanUp',2]",
-                [_index],
+                [_index, _markerName],
                 1.5,
                 false,
                 true,
                 "",
-                "_this distance _target <3"
+                format ["missionNamespace getVariable [""%1_cleanupAvailable"", true]", _markerName],
+                3
             ]
-        ] remoteExecCall ["addAction",0,true];
+        ] remoteExec ["addAction",0,true];
     } else {
         ["Script Error: No Locations (cities) found"] call BIS_fnc_error;
     };
