@@ -35,9 +35,9 @@ _headgear = selectRandom ["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_B","UK3
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = selectRandom ["UK3CB_BAF_G_Tactical_Black","UK3CB_BAF_G_Tactical_Clear","UK3CB_BAF_G_Tactical_Grey","UK3CB_BAF_G_Tactical_Orange","UK3CB_BAF_G_Tactical_Yellow"];
 
-private _standardWeapon = "UK3CB_BAF_L85A2_RIS_LDSR2D_IR";
+private _standardWeapon = "UK3CB_BAF_L85A2";
 private _standardAmmo = "UK3CB_BAF_556_30Rnd";
-private _standardAccessory = ["UK3CB_BAF_LLM_IR_Black","UK3CB_BAF_SpecterLDS_Dot"];
+private _standardAccessory = ["UK3CB_BAF_LLM_IR_Black","RKSL_optic_LDS"];
 private _standardAccessoryExtra = [];
 
 private _secondaryWeapon = "UK3CB_BAF_L131A1";
@@ -45,7 +45,7 @@ private _secondaryAmmo = "UK3CB_BAF_9_17Rnd";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "UK3CB_BAF_L85A2_UGLLAD_LDSR2D_IR";
+private _grenadeLauncherWeapon = "UK3CB_BAF_L85A2_UGL";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
