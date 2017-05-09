@@ -4987,7 +4987,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -5143,7 +5143,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -5303,7 +5303,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -5463,7 +5463,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -5623,7 +5623,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -5781,7 +5781,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -8647,7 +8647,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon
@@ -8806,7 +8806,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
-								init="[group this, getPos this, 300] call BIS_fnc_taskPatrol;";
+								init="if(isServer) then { [group this, getPos this, 300] call BIS_fnc_taskPatrol; };";
 								class Inventory
 								{
 									class primaryWeapon

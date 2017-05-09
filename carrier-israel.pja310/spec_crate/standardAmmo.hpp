@@ -1,5 +1,5 @@
 #define PRIMARY_AMMO "30Rnd_556x45_Stanag"
-#define LMG_AMMO "200Rnd_65x39_cased_Box"
+#define LMG_AMMO "150Rnd_762x54_Box_Tracer"
 #define SECONDARY_AMMO "rhsusf_mag_17Rnd_9x19_JHP"
 
 #define UGL_SMOKE_WHITE "1Rnd_Smoke_Grenade_shell"
