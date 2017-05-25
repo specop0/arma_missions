@@ -55,7 +55,8 @@ private _uniform = "BWA3_Uniform2_Fleck";
 private _vest = "BWA3_Vest_Fleck";
 
 private _backpack = "BWA3_AssaultPack_Fleck";
-private _backpackBig = "BWA3_Kitbag_Fleck_Medic"; //BWA3_Kitbag_Fleck
+private _backpackBig = "BWA3_Kitbag_Fleck";
+private _backpackBigMedic = "BWA3_Kitbag_Fleck_Medic";
 private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn";
 
 private _headgear = "BWA3_M92_Fleck";
@@ -138,8 +139,12 @@ if(_parameterCorrect) then {
         clearItemCargoGlobal (unitBackpack _unit);
         clearMagazineCargoGlobal (unitBackpack _unit);
     } else {
-        if(_type in [_medevacClass, _medicClass]) then {
-            _unit addBackpackGlobal _backpackBig;
+        if(_type in [_medevacClass, _medicClass, _pioClass]) then {
+            if(_type in [_pioClass]) then {
+                _unit addBackpackGlobal _backpackBig;
+            } else {
+                _unit addBackpackGlobal _backpackBigMedic;
+            };
         } else {
             _unit addBackpackGlobal _backpack;
         };
@@ -170,10 +175,10 @@ if(_parameterCorrect) then {
     comment "lead equipment (tablet, etc)";
     if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
         [_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
-        if(_type in [_medevacClass, _funkerClass]) then {
-            [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
-        } else {
+        if(_type in [_oplClass]) then {
             [_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        } else {
+            [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type in [_oplClass, _tfClass, _logisticClass, _pilotClass]) then {
@@ -230,10 +235,9 @@ if(_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
-            [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 7] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 9] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_morphine",ADD_TO_BACKPACK, 1] call Spec_fnc_addItemToContainer;
         };
     };
     
@@ -277,10 +281,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
     
     if(_type == _mgClass) then {
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
         [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
