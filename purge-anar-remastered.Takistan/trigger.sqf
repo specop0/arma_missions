@@ -41,8 +41,8 @@ switch (_triggerNumber) do {
     };
     case 30 : {
         if(missionNamespace getVariable ["spotted", false]) then {
-            [opfor_pat_1, [opfor_pat_1, 8]] remoteExecCall ["setCurrentWaypoint", leader opfor_pat_1];
-            [opfor_pat_2, [opfor_pat_2, 11]] remoteExecCall ["setCurrentWaypoint", leader opfor_pat_2];
+            [opfor_pat_1, [opfor_pat_1, 8]] remoteExec ["setCurrentWaypoint", leader opfor_pat_1];
+            [opfor_pat_2, [opfor_pat_2, 11]] remoteExec ["setCurrentWaypoint", leader opfor_pat_2];
         };
     };
 };
