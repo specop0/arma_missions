@@ -285,18 +285,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4813.1919,13.323712,2539.9312};
+				position[]={4813.1919,12.783963,2539.9312};
 				angles[]={0,2.9244215,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				name="teleporter";
 			};
 			id=2;
 			type="Flag_NATO_F";
-			atlOffset=0.57840824;
+			atlOffset=0.038659096;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -465,10 +465,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4809.1025,9.580883,2517.1184};
-				angles[]={0,5.2619934,0};
+				position[]={4809.1025,9.3065023,2517.1184};
+				angles[]={-0,5.2619934,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="table";
@@ -476,7 +477,6 @@ class Mission
 			};
 			id=19;
 			type="Land_CampingTable_F";
-			atlOffset=0.27438068;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -525,8 +525,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4807.9209,9.6043282,2517.9741};
-				angles[]={0,5.0398059,0};
+				position[]={4807.9209,9.4064856,2517.9741};
+				angles[]={-0,5.0398059,0};
 			};
 			side="Empty";
 			flags=4;
@@ -535,15 +535,14 @@ class Mission
 			};
 			id=20;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.1978426;
 		};
 		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4809.3369,10.132284,2517.5134};
-				angles[]={0,4.9914088,0};
+				position[]={4809.3369,9.8646603,2517.5134};
+				angles[]={-0,4.9914088,0};
 			};
 			side="Empty";
 			class Attributes
@@ -554,7 +553,7 @@ class Mission
 			};
 			id=21;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=1.0762119;
+			atlOffset=0.80858803;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -603,10 +602,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4808.6216,10.523881,2535.1287};
-				angles[]={0,2.0767152,0};
+				position[]={4808.6216,9.813962,2535.1287};
+				angles[]={0.039977662,2.0767152,6.2698536};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				health=0.70821941;
@@ -615,7 +615,7 @@ class Mission
 			};
 			id=24;
 			type="B_CargoNet_01_ammo_F";
-			atlOffset=0.71795368;
+			atlOffset=0.0080347061;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -684,7 +684,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4635.2554,8.9391842,2541.7546};
-				angles[]={-0,2.0943952,0};
+				angles[]={0,2.0943952,0};
 			};
 			side="Empty";
 			flags=4;
@@ -744,17 +744,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4615.7266,12.998017,2511.2446};
-				angles[]={0,2.1816616,0};
+				position[]={4615.7266,12.713884,2511.2446};
+				angles[]={0.013327583,2.1816616,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="bussard";
 			};
 			id=27;
 			type="TTT_Logistikhelikopter_Us_Woodland";
-			atlOffset=0.53052139;
+			atlOffset=0.24638844;
 		};
 		class Item9
 		{
@@ -1214,7 +1215,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=58;
-					atlOffset=3.4338884;
+					atlOffset=3.699193;
 				};
 			};
 			class Attributes

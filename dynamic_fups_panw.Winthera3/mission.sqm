@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={733.31958,38.343819,9589.9395};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,0};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -288,7 +288,6 @@ class Mission
 			};
 			id=2;
 			type="Flag_NATO_F";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -456,8 +455,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={723.15521,13.589377,9611.0166};
-				angles[]={0,1.5968029,6.2372193};
+				position[]={723.15521,13.621794,9611.0166};
+				angles[]={-0,1.5968029,6.2372193};
 			};
 			side="Empty";
 			flags=4;
@@ -468,7 +467,6 @@ class Mission
 			};
 			id=19;
 			type="Land_CampingTable_F";
-			atlOffset=-0.032416344;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -517,7 +515,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={724.58954,13.638313,9610.8262};
+				position[]={724.58954,13.675033,9610.8262};
 				angles[]={6.2372193,1.374615,0};
 			};
 			side="Empty";
@@ -527,17 +525,17 @@ class Mission
 			};
 			id=20;
 			type="Land_CampingChair_V2_F";
-			atlOffset=-0.036719322;
 		};
 		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={723.19446,14.13738,9610.6426};
-				angles[]={0,1.3262179,6.2372193};
+				position[]={723.19446,14.183159,9610.6426};
+				angles[]={-0,1.3262179,6.2372193};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this attachTo [table, [0.45,0,0.57]]";
@@ -546,7 +544,6 @@ class Mission
 			};
 			id=21;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.76808929;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -595,8 +592,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={716.86395,14.134723,9598.998};
-				angles[]={0,0.854985,0};
+				position[]={716.86395,14.185303,9598.998};
+				angles[]={-0,0.854985,0};
 			};
 			side="Empty";
 			flags=4;
@@ -608,7 +605,6 @@ class Mission
 			};
 			id=24;
 			type="B_CargoNet_01_ammo_F";
-			atlOffset=-0.050580025;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -676,18 +672,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={729.19177,17.050064,9422.1475};
+				position[]={729.19177,17.18351,9422.1475};
 				angles[]={0,4.7123904,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="bussard";
 			};
 			id=27;
 			type="TTT_Logistikhelikopter_Us_Woodland";
-			atlOffset=0.13962078;
+			atlOffset=0.27306557;
 		};
 		class Item8
 		{
@@ -849,8 +844,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={731.09918,15.899981,9461.6641};
-				angles[]={0,4.7123899,0};
+				position[]={731.09918,15.995807,9461.6641};
+				angles[]={-0,4.7123899,0};
 			};
 			side="Empty";
 			flags=4;
@@ -860,7 +855,6 @@ class Mission
 			};
 			id=76;
 			type="CUP_B_UH60L_Unarmed_FFV_MEV_US";
-			atlOffset=-0.095826149;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3822,7 +3816,7 @@ class Mission
 			name="marker_laptop";
 			type="Empty";
 			id=271;
-			atlOffset=24.974636;
+			atlOffset=24.942221;
 		};
 		class Item43
 		{
@@ -3831,7 +3825,7 @@ class Mission
 			name="marker_loadoutbox";
 			type="Empty";
 			id=272;
-			atlOffset=20.453262;
+			atlOffset=20.402681;
 		};
 		class Item44
 		{
