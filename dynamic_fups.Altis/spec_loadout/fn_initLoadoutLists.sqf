@@ -13,6 +13,7 @@ _loadoutFactionList pushBack "KOREA";
 _loadoutFactionList pushBack "USARMY";
 _loadoutFactionList pushBack "USMC";
 _loadoutFactionList pushBack "USSOCOM";
+_loadoutFactionList pushBack "US_WINTER";
 _loadoutFactionList pushBack "RUS";
 _loadoutFactionList pushBack "RUS_ALT";
 //3CB

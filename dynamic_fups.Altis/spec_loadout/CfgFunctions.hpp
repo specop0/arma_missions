@@ -23,6 +23,7 @@ class spec_loadout {
         class loadout_uk {};
         class loadout_uk_winter {};
         class loadout_ukraine {};
+        class loadout_us_winter {};
         class loadout_usarmy {};
         class loadout_usmc {};
         class loadout_ussocom {};

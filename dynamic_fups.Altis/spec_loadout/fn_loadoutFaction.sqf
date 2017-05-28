@@ -56,6 +56,9 @@ if(_parameter isEqualTypeAny [objNull,[]]) then {
         case "USSOCOM" : {
             _parameter call Spec_fnc_loadout_ussocom;
         };
+        case "US_WINTER" : {
+            _parameter call Spec_fnc_loadout_us_winter;
+        };
         case "RUS" : {
             _parameter call Spec_fnc_loadout_rus_flora;
         };
