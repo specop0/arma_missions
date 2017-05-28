@@ -606,6 +606,7 @@ class Mission
 			};
 			id=24;
 			type="B_CargoNet_01_ammo_F";
+			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -740,7 +741,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=34;
 			type="Land_Medevac_HQ_V1_F";
@@ -3798,7 +3798,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=307;
 			type="Land_Cargo_HQ_V1_F";

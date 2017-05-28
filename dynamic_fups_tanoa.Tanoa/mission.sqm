@@ -702,7 +702,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=34;
 			type="Land_Medevac_HQ_V1_F";
@@ -4046,7 +4045,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=296;
 			type="Land_Cargo_HQ_V1_F";

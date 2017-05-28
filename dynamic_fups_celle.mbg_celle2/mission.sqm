@@ -780,18 +780,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11021.296,16.942703,10913.01};
-				angles[]={0,1.9094602,0};
+				position[]={11021.296,16.942331,10913.01};
+				angles[]={0,1.9094599,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=34;
 			type="Land_Medevac_HQ_V1_F";
-			atlOffset=0.35337067;
+			atlOffset=0.35299969;
 			class CustomAttributes
 			{
 				class Attribute0
