@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4803.7642,33.99865,2494.5005};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,0};
+		pos[]={4803.7642,33.998653,2494.5012};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -683,10 +683,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4635.2554,11.371424,2541.7546};
-				angles[]={0,2.0943952,0};
+				position[]={4635.2554,8.9391842,2541.7546};
+				angles[]={-0,2.0943952,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="helipad_weiss";
@@ -694,7 +695,7 @@ class Mission
 			};
 			id=25;
 			type="Land_HelipadRescue_F";
-			atlOffset=2.4714241;
+			atlOffset=0.03918457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4213,17 +4214,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4615.4028,13.814048,2511.5225};
-				angles[]={0,2.1816616,0};
+				position[]={4615.4028,9,2511.5225};
+				angles[]={0.013327583,2.1816616,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="helipad_bussard";
 			};
 			id=303;
 			type="Land_HelipadSquare_F";
-			atlOffset=4.9010172;
+			atlOffset=0.086969376;
 			class CustomAttributes
 			{
 				class Attribute0
