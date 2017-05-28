@@ -21,6 +21,7 @@ class spec_loadout {
         class loadout_rus_flora_alt {};
         class loadout_syndicat {};
         class loadout_uk {};
+        class loadout_uk_winter {};
         class loadout_ukraine {};
         class loadout_usarmy {};
         class loadout_usmc {};

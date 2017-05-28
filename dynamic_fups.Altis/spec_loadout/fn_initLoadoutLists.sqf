@@ -17,6 +17,7 @@ _loadoutFactionList pushBack "RUS";
 _loadoutFactionList pushBack "RUS_ALT";
 //3CB
 _loadoutFactionList pushBack "UK";
+_loadoutFactionList pushBack "UK_WINTER";
 //BW
 _loadoutFactionList pushBack "BW_TROPEN";
 _loadoutFactionList pushBack "BW_FLECK";

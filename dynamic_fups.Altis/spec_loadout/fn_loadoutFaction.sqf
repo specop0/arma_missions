@@ -65,6 +65,9 @@ if(_parameter isEqualTypeAny [objNull,[]]) then {
         case "UK" : {
             _parameter call Spec_fnc_loadout_uk;
         };
+        case "UK_WINTER" : {
+            _parameter call Spec_fnc_loadout_uk_winter;
+        };
         case "BW_TROPEN" : {
             _parameter call Spec_fnc_loadout_bw_tropentarn;
         };
