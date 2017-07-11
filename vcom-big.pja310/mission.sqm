@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=337;
+		nextID=353;
 	};
 	class Camera
 	{
-		pos[]={5059.603,36.517204,8834.1348};
-		dir[]={-0.0040584053,-0.56768495,0.82323641};
-		up[]={-0.0027985075,0.82324463,0.56767863};
-		aside[]={0.99998909,-5.5301825e-009,0.0049297884};
+		pos[]={5053.4272,28.346806,8841.4316};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -37,7 +37,6 @@ addons[]=
 	"A3_Structures_F_Mil_BagBunker",
 	"CUP_CAStructures_Mil",
 	"A3_Structures_F_Mil_BagFence",
-	"achilles_data_f_achilles",
 	"A3_Structures_F_Mil_Fortification",
 	"ace_logistics_wirecutter",
 	"A3_Structures_F_Mil_Cargo",
@@ -48,24 +47,34 @@ addons[]=
 	"A3_Structures_F_Civ_Accessories",
 	"A3_Structures_F_Bootcamp_Civ_Camping",
 	"A3_Structures_F_EPB_Civ_Accessories",
+	"A3_Structures_F_Argo",
 	"rhsusf_vehicles",
 	"r_unfold_RHS",
 	"ttt_units_bw_c",
 	"tfar_backpacks",
 	"tfar_handhelds",
 	"CUP_Creatures_Military_RACS",
+	"CUP_Weapons_M24",
+	"CUP_Weapons_West_Attachments",
+	"CUP_Weapons_Ammunition",
+	"CUP_Weapons_Glock17",
+	"ace_vector",
+	"A3_Weapons_F",
+	"CUP_Weapons_NVG",
+	"CUP_Weapons_Grenades",
+	"ace_realisticnames",
+	"A3_Weapons_F_Items",
+	"ace_medical",
+	"ace_attach",
+	"ace_rangecard",
+	"A3_Characters_F",
+	"ace_goggles",
 	"CUP_Creatures_StaticWeapons",
 	"CUP_WheeledVehicles_LR",
 	"ace_concertina_wire",
 	"CUP_AirVehicles_AH6",
 	"acex_headless",
 	"CUP_Weapons_M16",
-	"CUP_Weapons_Ammunition",
-	"CUP_Weapons_Glock17",
-	"A3_Weapons_F",
-	"CUP_Weapons_NVG",
-	"A3_Weapons_F_Items",
-	"ace_medical",
 	"CUP_Weapons_AmmoBoxes",
 	"A3_Modules_F_Curator_Curator",
 	"CUP_AirVehicles_Mi8",
@@ -75,21 +84,21 @@ addons[]=
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_Heli_Items_Airport",
 	"cba_xeh",
-	"A3_Characters_F",
 	"ace_explosives",
-	"ace_nouniformrestrictions"
+	"ace_nouniformrestrictions",
+	"rhs_c_heavyweapons"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=38;
+		items=46;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -103,7 +112,7 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
@@ -115,7 +124,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
@@ -124,45 +133,46 @@ class AddonsMetaData
 		};
 		class Item6
 		{
-			className="achilles_data_f_achilles";
-			name="achilles_data_f_achilles";
-			author="Kex";
-		};
-		class Item7
-		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item8
+		class Item7
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item9
+		class Item8
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item10
+		class Item9
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Structures_F_Argo";
+			name="Arma 3 Malden - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
@@ -199,116 +209,166 @@ class AddonsMetaData
 		};
 		class Item19
 		{
-			className="CUP_Creatures_StaticWeapons";
-			name="CUP_Creatures_StaticWeapons";
+			className="CUP_Weapons_M24";
+			name="CUP_Weapons_M24";
 		};
 		class Item20
 		{
-			className="CUP_WheeledVehicles_LR";
-			name="CUP_WheeledVehicles_LR";
+			className="CUP_Weapons_West_Attachments";
+			name="CUP_Weapons_West_Attachments";
 		};
 		class Item21
 		{
-			className="ace_concertina_wire";
-			name="ACE3 - Concertina Wire";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
+			className="CUP_Weapons_Ammunition";
+			name="CUP_Weapons_Ammunition";
 		};
 		class Item22
 		{
-			className="CUP_AirVehicles_AH6";
-			name="CUP_AirVehicles_AH6";
+			className="CUP_Weapons_Glock17";
+			name="CUP_Weapons_Glock17";
 		};
 		class Item23
 		{
-			className="acex_headless";
-			name="ACEX - Headless";
+			className="ace_vector";
+			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item24
 		{
-			className="CUP_Weapons_M16";
-			name="CUP_Weapons_M16";
-		};
-		class Item25
-		{
-			className="CUP_Weapons_Ammunition";
-			name="CUP_Weapons_Ammunition";
-		};
-		class Item26
-		{
-			className="CUP_Weapons_Glock17";
-			name="CUP_Weapons_Glock17";
-		};
-		class Item27
-		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item25
 		{
 			className="CUP_Weapons_NVG";
 			name="CUP_Weapons_NVG";
 		};
-		class Item29
+		class Item26
+		{
+			className="CUP_Weapons_Grenades";
+			name="CUP_Weapons_Grenades";
+		};
+		class Item27
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item28
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item29
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 		class Item30
+		{
+			className="ace_rangecard";
+			name="ACE3 - Range Card";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item31
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item32
+		{
+			className="CUP_Creatures_StaticWeapons";
+			name="CUP_Creatures_StaticWeapons";
+		};
+		class Item33
+		{
+			className="CUP_WheeledVehicles_LR";
+			name="CUP_WheeledVehicles_LR";
+		};
+		class Item34
+		{
+			className="ace_concertina_wire";
+			name="ACE3 - Concertina Wire";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item35
+		{
+			className="CUP_AirVehicles_AH6";
+			name="CUP_AirVehicles_AH6";
+		};
+		class Item36
+		{
+			className="acex_headless";
+			name="ACEX - Headless";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item37
+		{
+			className="CUP_Weapons_M16";
+			name="CUP_Weapons_M16";
+		};
+		class Item38
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item31
+		class Item39
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item40
 		{
 			className="CUP_AirVehicles_Mi8";
 			name="CUP_AirVehicles_Mi8";
 		};
-		class Item33
+		class Item41
 		{
 			className="CUP_CABuildings_Misc";
 			name="CUP_CABuildings_Misc";
 		};
-		class Item34
+		class Item42
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item35
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item36
+		class Item43
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item37
+		class Item44
 		{
 			className="ace_nouniformrestrictions";
 			name="ACE3 - No Uniform Restrictions";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item45
+		{
+			className="rhs_c_heavyweapons";
+			name="Heavy weapons pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -7845,7 +7905,6 @@ class Mission
 			};
 			id=1119;
 			type="TTT_Logistik_Medic_Bw";
-			atlOffset=0.094852448;
 		};
 		class Item205
 		{
@@ -7862,7 +7921,7 @@ class Mission
 			};
 			id=1120;
 			type="TTT_Logistik_Medic_Bw";
-			atlOffset=0.10432053;
+			atlOffset=0.0094680786;
 		};
 		class Item206
 		{
@@ -7879,7 +7938,7 @@ class Mission
 			};
 			id=1121;
 			type="TTT_Logistik_Medic_Bw";
-			atlOffset=0.10432053;
+			atlOffset=0.0094680786;
 		};
 		class Item207
 		{
@@ -8086,13 +8145,12 @@ class Mission
 				position[]={5122.2393,4.2823639,8916.8174};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=1136;
 			type="TTT_Logistik_Standardmunition_Bw";
-			atlOffset=0.091074467;
+			atlOffset=0.72507;
 		};
 		class Item220
 		{
@@ -8108,7 +8166,7 @@ class Mission
 			};
 			id=1137;
 			type="TTT_Logistik_Standardmunition_Bw";
-			atlOffset=0.094851971;
+			atlOffset=0.084342003;
 		};
 		class Item221
 		{
@@ -8140,7 +8198,7 @@ class Mission
 			};
 			id=1139;
 			type="TTT_Logistik_Standardmunition_Bw";
-			atlOffset=0.098629951;
+			atlOffset=0.088119984;
 		};
 		class Item223
 		{
@@ -8156,7 +8214,7 @@ class Mission
 			};
 			id=1140;
 			type="TTT_Logistik_Standardmunition_Bw";
-			atlOffset=0.094852448;
+			atlOffset=0.08434248;
 		};
 		class Item224
 		{
@@ -8172,7 +8230,7 @@ class Mission
 			};
 			id=1141;
 			type="TTT_Logistik_Standardmunition_Bw";
-			atlOffset=0.098629951;
+			atlOffset=0.088119984;
 		};
 		class Item225
 		{
@@ -8508,6 +8566,112 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_srifle_M24_des";
+								optics="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
+								class primaryMuzzleMag
+								{
+									name="CUP_5Rnd_762x51_M24";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="CUP_hgun_Glock17";
+								flashlight="CUP_acc_Glock17_Flashlight";
+								class primaryMuzzleMag
+								{
+									name="CUP_17Rnd_9x19_glock17";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="ACE_VectorDay";
+							};
+							class uniform
+							{
+								typeName="CUP_U_I_RACS_Desert_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_5Rnd_762x51_M24";
+										count=4;
+										ammoLeft=5;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellRed";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_I_RACS_Carrier_Vest_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_17Rnd_9x19_glock17";
+										count=3;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_RangeCard";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_RACS_Helmet_DES";
+						};
 					};
 					id=1166;
 					type="CUP_I_RACS_Sniper";
@@ -8562,6 +8726,113 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_srifle_M24_des";
+								optics="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
+								class primaryMuzzleMag
+								{
+									name="CUP_5Rnd_762x51_M24";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="CUP_hgun_Glock17";
+								flashlight="CUP_acc_Glock17_Flashlight";
+								class primaryMuzzleMag
+								{
+									name="CUP_17Rnd_9x19_glock17";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="ACE_VectorDay";
+							};
+							class uniform
+							{
+								typeName="CUP_U_I_RACS_Desert_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_5Rnd_762x51_M24";
+										count=4;
+										ammoLeft=5;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellRed";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_I_RACS_Carrier_Vest_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_17Rnd_9x19_glock17";
+										count=3;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_RangeCard";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							goggles="G_Sport_Greenblack";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_RACS_Helmet_DES";
+						};
 					};
 					id=1182;
 					type="CUP_I_RACS_Sniper";
@@ -8616,6 +8887,112 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_srifle_M24_des";
+								optics="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
+								class primaryMuzzleMag
+								{
+									name="CUP_5Rnd_762x51_M24";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="CUP_hgun_Glock17";
+								flashlight="CUP_acc_Glock17_Flashlight";
+								class primaryMuzzleMag
+								{
+									name="CUP_17Rnd_9x19_glock17";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="ACE_VectorDay";
+							};
+							class uniform
+							{
+								typeName="CUP_U_I_RACS_Desert_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_5Rnd_762x51_M24";
+										count=4;
+										ammoLeft=5;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellRed";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_I_RACS_Carrier_Vest_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_17Rnd_9x19_glock17";
+										count=3;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_RangeCard";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_RACS_Helmet_DES";
+						};
 					};
 					id=1186;
 					type="CUP_I_RACS_Sniper";
@@ -8670,6 +9047,112 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_srifle_M24_des";
+								optics="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
+								class primaryMuzzleMag
+								{
+									name="CUP_5Rnd_762x51_M24";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="CUP_hgun_Glock17";
+								flashlight="CUP_acc_Glock17_Flashlight";
+								class primaryMuzzleMag
+								{
+									name="CUP_17Rnd_9x19_glock17";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="ACE_VectorDay";
+							};
+							class uniform
+							{
+								typeName="CUP_U_I_RACS_Desert_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_5Rnd_762x51_M24";
+										count=4;
+										ammoLeft=5;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellRed";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_I_RACS_Carrier_Vest_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_17Rnd_9x19_glock17";
+										count=3;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_RangeCard";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_RACS_Helmet_DES";
+						};
 					};
 					id=1188;
 					type="CUP_I_RACS_Sniper";
@@ -8755,7 +9238,7 @@ class Mission
 				};
 			};
 			id=1191;
-			atlOffset=2.4479065;
+			atlOffset=2.4308472;
 		};
 		class Item249
 		{
@@ -8772,7 +9255,7 @@ class Mission
 			};
 			id=1192;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=2.4479065;
+			atlOffset=2.4308472;
 		};
 		class Item250
 		{
@@ -8910,6 +9393,7 @@ class Mission
 				};
 			};
 			id=1200;
+			atlOffset=0.79461288;
 		};
 		class Item256
 		{
@@ -8920,12 +9404,13 @@ class Mission
 				angles[]={0,0.0061502457,0};
 			};
 			side="Independent";
-			flags=6;
+			flags=2;
 			class Attributes
 			{
 			};
 			id=1201;
 			type="CUP_I_M2StaticMG_RACS";
+			atlOffset=0.79461288;
 		};
 		class Item257
 		{
@@ -8978,7 +9463,7 @@ class Mission
 				};
 			};
 			id=1203;
-			atlOffset=0.1261673;
+			atlOffset=0.10907745;
 		};
 		class Item258
 		{
@@ -8995,7 +9480,7 @@ class Mission
 			};
 			id=1204;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=0.1261673;
+			atlOffset=0.10907745;
 		};
 		class Item259
 		{
@@ -9048,7 +9533,7 @@ class Mission
 				};
 			};
 			id=1206;
-			atlOffset=0.037651062;
+			atlOffset=0.020614624;
 		};
 		class Item260
 		{
@@ -9065,7 +9550,7 @@ class Mission
 			};
 			id=1208;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=0.037651062;
+			atlOffset=0.020614624;
 		};
 		class Item261
 		{
@@ -9274,7 +9759,7 @@ class Mission
 				};
 			};
 			id=1218;
-			atlOffset=3.6598206;
+			atlOffset=3.6427612;
 		};
 		class Item271
 		{
@@ -9291,7 +9776,7 @@ class Mission
 			};
 			id=1220;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=3.6598206;
+			atlOffset=3.6427612;
 		};
 		class Item272
 		{
@@ -9411,6 +9896,7 @@ class Mission
 				};
 			};
 			id=1230;
+			atlOffset=2.4367981;
 		};
 		class Item277
 		{
@@ -9421,12 +9907,13 @@ class Mission
 				angles[]={0.026689282,0.46648717,0.033440802};
 			};
 			side="Independent";
-			flags=6;
+			flags=2;
 			class Attributes
 			{
 			};
 			id=1232;
 			type="CUP_I_M2StaticMG_RACS";
+			atlOffset=2.4367981;
 		};
 		class Item278
 		{
@@ -9564,7 +10051,7 @@ class Mission
 				};
 			};
 			id=1239;
-			atlOffset=3.526886;
+			atlOffset=3.5098419;
 		};
 		class Item284
 		{
@@ -9581,7 +10068,7 @@ class Mission
 			};
 			id=1241;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=3.526886;
+			atlOffset=3.5098419;
 		};
 		class Item285
 		{
@@ -9804,7 +10291,7 @@ class Mission
 				};
 			};
 			id=1252;
-			atlOffset=0.039329529;
+			atlOffset=0.022254944;
 		};
 		class Item296
 		{
@@ -9821,7 +10308,7 @@ class Mission
 			};
 			id=1253;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=0.039329529;
+			atlOffset=0.022254944;
 		};
 		class Item297
 		{
@@ -9874,7 +10361,7 @@ class Mission
 				};
 			};
 			id=1255;
-			atlOffset=5.5527725;
+			atlOffset=5.5347137;
 		};
 		class Item298
 		{
@@ -9891,7 +10378,7 @@ class Mission
 			};
 			id=1256;
 			type="CUP_I_M2StaticMG_RACS";
-			atlOffset=5.5527725;
+			atlOffset=5.5347137;
 		};
 		class Item299
 		{
@@ -10205,13 +10692,12 @@ class Mission
 				angles[]={6.223002,0.89341521,0.051669043};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=1352;
 			type="CUP_I_AH6J_Escort19_RACS";
-			atlOffset=0.016967773;
+			atlOffset=1.0721283;
 		};
 		class Item312
 		{
@@ -10685,6 +11171,113 @@ class Mission
 					class Attributes
 					{
 						init="this forceSpeed 0;";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_srifle_M24_des";
+								optics="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
+								class primaryMuzzleMag
+								{
+									name="CUP_5Rnd_762x51_M24";
+									ammoLeft=5;
+								};
+							};
+							class handgun
+							{
+								name="CUP_hgun_Glock17";
+								flashlight="CUP_acc_Glock17_Flashlight";
+								class primaryMuzzleMag
+								{
+									name="CUP_17Rnd_9x19_glock17";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="ACE_VectorDay";
+							};
+							class uniform
+							{
+								typeName="CUP_U_I_RACS_Desert_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_5Rnd_762x51_M24";
+										count=4;
+										ammoLeft=5;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellRed";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_I_RACS_Carrier_Vest_2";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="B_IR_Grenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_17Rnd_9x19_glock17";
+										count=3;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_RangeCard";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							goggles="G_Spectacles_Tinted";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_RACS_Helmet_DES";
+						};
 					};
 					id=1429;
 					type="CUP_I_RACS_Sniper";
@@ -15876,7 +16469,7 @@ class Mission
 			};
 			id=1659;
 			type="CUP_B_Mi171Sh_Unarmed_ACR";
-			atlOffset=-0.0079996586;
+			atlOffset=-0.18542385;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15916,7 +16509,7 @@ class Mission
 			};
 			id=1660;
 			type="CUP_B_Mi171Sh_Unarmed_ACR";
-			atlOffset=-0.0079996586;
+			atlOffset=-0.18542385;
 			class CustomAttributes
 			{
 				class Attribute0
