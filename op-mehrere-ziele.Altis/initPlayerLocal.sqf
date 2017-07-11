@@ -6,3 +6,6 @@ if(str player in ["opl1","opl2"]) then {
     spawner addAction ["Cleanup Edessa", Spec_fnc_cleanup, [player,"cleanup_3",4000],-8];
     spawner addAction ["Cleanup Solar", Spec_fnc_cleanup, [player,"cleanup_4",1500],-9];
 };
+{
+    _x addAction ["Fahrzeuge sind repariert", { missionNamespace setVariable ["repaired", true, true]; }];
+} forEach [civA, civB]
