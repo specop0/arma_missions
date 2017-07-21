@@ -17738,7 +17738,7 @@ class Mission
 					{
 						rank="COLONEL";
 						init="this setVariable [""Spec_var_TFARgroup"", 0];";
-						description="Gelb #1 - OPL";
+						description="#1 - OPL@Gelb";
 						isPlayable=1;
 					};
 					id=1748;
@@ -17781,7 +17781,7 @@ class Mission
 					{
 						rank="MAJOR";
 						init="this setVariable [""Spec_var_TFARgroup"", 0];";
-						description="Gelb #2 - stellv. OPL";
+						description="#2 - stellv. OPL@Gelb";
 						isPlayable=1;
 					};
 					id=1750;
@@ -17860,7 +17860,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						init="this setVariable [""Spec_var_TFARgroup"", 1];";
-						description="Gruen #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Gruen";
 						isPlayable=1;
 					};
 					id=1754;
@@ -17902,7 +17902,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 1];";
-						description="Gruen #2 - Funker / FAC";
+						description="#2 - Funker / FAC@Gruen";
 						isPlayable=1;
 					};
 					id=1756;
@@ -17944,7 +17944,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 1];";
-						description="Gruen #3 - Sanitaeter";
+						description="#3 - Sanitaeter@Gruen";
 						isPlayable=1;
 					};
 					id=1758;
@@ -18023,7 +18023,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Schwarz";
 						isPlayable=1;
 					};
 					id=1760;
@@ -18065,7 +18065,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #2 -  stellv. TF";
+						description="#2 -  stellv. TF@Schwarz";
 						isPlayable=1;
 					};
 					id=1762;
@@ -18107,7 +18107,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #3 - LMG-Schuetze";
+						description="#3 - LMG-Schuetze@Schwarz";
 						isPlayable=1;
 					};
 					id=1764;
@@ -18149,7 +18149,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #4 - AT-Schuetze";
+						description="#4 - AT-Schuetze@Schwarz";
 						isPlayable=1;
 					};
 					id=1766;
@@ -18191,7 +18191,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #5 - LMG-Schuetze";
+						description="#5 - LMG-Schuetze@Schwarz";
 						isPlayable=1;
 					};
 					id=1768;
@@ -18233,7 +18233,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 2];";
-						description="Schwarz #6 - Pionier";
+						description="#6 - Pionier@Schwarz";
 						isPlayable=1;
 					};
 					id=1770;
@@ -18312,7 +18312,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Blau";
 						isPlayable=1;
 					};
 					id=1772;
@@ -18354,7 +18354,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #2 - stellv. TF";
+						description="#2 - stellv. TF@Blau";
 						isPlayable=1;
 					};
 					id=1773;
@@ -18396,7 +18396,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #3 - MG-Assistent";
+						description="#3 - MG-Assistent@Blau";
 						isPlayable=1;
 					};
 					id=1778;
@@ -18438,7 +18438,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #4 - MG-Schuetze";
+						description="#4 - MG-Schuetze@Blau";
 						isPlayable=1;
 					};
 					id=1779;
@@ -18480,7 +18480,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #5 - AA-Schuetze";
+						description="#5 - AA-Schuetze@Blau";
 						isPlayable=1;
 					};
 					id=1780;
@@ -18560,7 +18560,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 3];";
-						description="Blau #6 - AA-Schuetze";
+						description="#6 - AA-Schuetze@Blau";
 						isPlayable=1;
 					};
 					id=1781;
@@ -18677,7 +18677,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Rot";
 						isPlayable=1;
 					};
 					id=1783;
@@ -18719,7 +18719,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #2 - stellv. TF";
+						description="#2 - stellv. TF@Rot";
 						isPlayable=1;
 					};
 					id=1784;
@@ -18761,7 +18761,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #3 - LMG-Schuetze";
+						description="#3 - LMG-Schuetze@Rot";
 						isPlayable=1;
 					};
 					id=1785;
@@ -18803,7 +18803,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #4 - AT-Schuetze";
+						description="#4 - AT-Schuetze@Rot";
 						isPlayable=1;
 					};
 					id=1786;
@@ -18883,7 +18883,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #5 - LMG-Schuetze";
+						description="#5 - LMG-Schuetze@Rot";
 						isPlayable=1;
 					};
 					id=1787;
@@ -18925,7 +18925,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 4];";
-						description="Rot #6 - Pionier";
+						description="#6 - Pionier@Rot";
 						isPlayable=1;
 					};
 					id=1788;
@@ -19042,7 +19042,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						init="this setVariable [""Spec_var_TFARgroup"", 11];";
-						description="Braun #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Braun";
 						isPlayable=1;
 					};
 					id=1790;
@@ -19084,7 +19084,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 11];";
-						description="Braun #2 - Funker / FAC";
+						description="#2 - Funker / FAC@Braun";
 						isPlayable=1;
 					};
 					id=1791;
@@ -19126,7 +19126,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 11];";
-						description="Braun #3 - Sanitaeter";
+						description="#3 - Sanitaeter@Braun";
 						isPlayable=1;
 					};
 					id=1792;
@@ -19205,7 +19205,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Orange";
 						isPlayable=1;
 					};
 					id=1794;
@@ -19247,7 +19247,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #2 - stellv. TF";
+						description="#2 - stellv. TF@Orange";
 						isPlayable=1;
 					};
 					id=1795;
@@ -19289,7 +19289,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #3 - LMG-Schuetze";
+						description="#3 - LMG-Schuetze@Orange";
 						isPlayable=1;
 					};
 					id=1796;
@@ -19331,7 +19331,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #4 - AT-Schuetze";
+						description="#4 - AT-Schuetze@Orange";
 						isPlayable=1;
 					};
 					id=1797;
@@ -19373,7 +19373,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #5 - LMG-Schuetze";
+						description="#5 - LMG-Schuetze@Orange";
 						isPlayable=1;
 					};
 					id=1798;
@@ -19415,7 +19415,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 12];";
-						description="Orange #6 - Pionier";
+						description="#6 - Pionier@Orange";
 						isPlayable=1;
 					};
 					id=1799;
@@ -19494,7 +19494,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Violett";
 						isPlayable=1;
 					};
 					id=1801;
@@ -19536,7 +19536,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #2 - stellv. TF";
+						description="#2 - stellv. TF@Violett";
 						isPlayable=1;
 					};
 					id=1802;
@@ -19578,7 +19578,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #3 - MG-Assistent";
+						description="#3 - MG-Assistent@Violett";
 						isPlayable=1;
 					};
 					id=1803;
@@ -19620,7 +19620,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #4 - MG-Schuetze";
+						description="#4 - MG-Schuetze@Violett";
 						isPlayable=1;
 					};
 					id=1804;
@@ -19662,7 +19662,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #5 - AA-Schuetze";
+						description="#5 - AA-Schuetze@Violett";
 						isPlayable=1;
 					};
 					id=1805;
@@ -19742,7 +19742,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 13];";
-						description="Violett #6 - AA-Schuetze";
+						description="#6 - AA-Schuetze@Violett";
 						isPlayable=1;
 					};
 					id=1806;
@@ -19859,7 +19859,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #1 - Truppfuehrer";
+						description="#1 - Truppfuehrer@Gold";
 						isPlayable=1;
 					};
 					id=1808;
@@ -19901,7 +19901,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #2 - stellv. TF";
+						description="#2 - stellv. TF@Gold";
 						isPlayable=1;
 					};
 					id=1809;
@@ -19943,7 +19943,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #3 - LMG-Schuetze";
+						description="#3 - LMG-Schuetze@Gold";
 						isPlayable=1;
 					};
 					id=1810;
@@ -19985,7 +19985,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #4 - AT-Schuetze";
+						description="#4 - AT-Schuetze@Gold";
 						isPlayable=1;
 					};
 					id=1811;
@@ -20065,7 +20065,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #5 - LMG-Schuetze";
+						description="#5 - LMG-Schuetze@Gold";
 						isPlayable=1;
 					};
 					id=1812;
@@ -20107,7 +20107,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 14];";
-						description="Gold #6 - Pionier";
+						description="#6 - Pionier@Gold";
 						isPlayable=1;
 					};
 					id=1813;
@@ -20223,7 +20223,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 20];";
-						description="Weiss #1 - Fahrzeugfuehrer";
+						description="#1 - Fahrzeugfuehrer@Weiss";
 						isPlayable=1;
 					};
 					id=1815;
@@ -20303,7 +20303,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this setVariable [""Spec_var_TFARgroup"", 20];}";
-						description="Weiss #2 - Fahrzeugfuehrer";
+						description="#2 - Fahrzeugfuehrer@Weiss";
 						isPlayable=1;
 					};
 					id=1817;
@@ -20383,7 +20383,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 20];";
-						description="Weiss #3 - Feldarzt";
+						description="#3 - Feldarzt@Weiss";
 						isPlayable=1;
 					};
 					id=1819;
@@ -20426,7 +20426,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 20];";
-						description="Weiss #4 - Feldarzt";
+						description="#4 - Feldarzt@Weiss";
 						isPlayable=1;
 					};
 					id=1821;
@@ -20469,7 +20469,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 20];";
-						description="Weiss #5 - Feldarzt";
+						description="#5 - Feldarzt@Weiss";
 						isPlayable=1;
 					};
 					id=1877;
@@ -20549,7 +20549,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 20];";
-						description="Weiss #6 - Feldarzt";
+						description="#6 - Feldarzt@Weiss";
 						isPlayable=1;
 					};
 					id=1878;
@@ -20665,7 +20665,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 21];";
-						description="Bussard #1 - Pilot";
+						description="#1 - Pilot@Bussard";
 						isPlayable=1;
 					};
 					id=1823;
@@ -20707,7 +20707,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""Spec_var_TFARgroup"", 21];";
-						description="Bussard #2 - Co-Pilot";
+						description="#2 - Co-Pilot@Bussard";
 						isPlayable=1;
 					};
 					id=1825;
@@ -21240,7 +21240,7 @@ class Mission
 						rank="COLONEL";
 						init="this setVariable [""Spec_var_TFARgroup"", 0];";
 						name="zeus1";
-						description="Spec #1 - Spec";
+						description="#1 - Spec@Spec";
 						isPlayer=1;
 						isPlayable=1;
 					};
