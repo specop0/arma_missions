@@ -9,6 +9,8 @@
     }, [], 1.5, true, true, "", "true", 3];
 } forEach [lampMedicA, lampMedicB, lampMedicAOff, lampMedicBOff];
 
+[medicVehicle] call JK_fnc_addTent;
+
 player addEventHandler ["Respawn",{
     params ["","_corpse"];
     if((getPosASL player) distance (getMarkerPos "respawn") < 1000) then {

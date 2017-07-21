@@ -1,6 +1,7 @@
 #include "W_Teleporter\dialog.hpp"
 class CfgFunctions {
 #include "W_Teleporter\CfgFunctions.hpp"
+#include "joko_tent\CfgFunctions.hpp"
 #include "spec_cargoDrop\CfgFunctions.hpp"
 #include "spec_crate\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"
