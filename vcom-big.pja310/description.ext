@@ -5,6 +5,7 @@ class CfgFunctions {
 #include "spec_cargoDrop\CfgFunctions.hpp"
 #include "spec_crate\CfgFunctions.hpp"
 #include "spec_loadout\CfgFunctions.hpp"
+#include "spec_noLoot\CfgFunctions.hpp"
 #include "spec_tfar\CfgFunctions.hpp"
 #include "spec_zeus\CfgFunctions.hpp"
 };
