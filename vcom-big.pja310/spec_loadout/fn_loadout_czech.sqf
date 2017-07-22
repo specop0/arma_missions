@@ -65,7 +65,7 @@ private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = "G_Lowprofile";
 
 private _standardWeapon = "CUP_arifle_CZ805_A1";
-private _standardAmmo = "30Rnd_556x45_Stanag";
+private _standardAmmo = "ACE_30Rnd_556x45_Stanag_Mk318_mag";
 private _standardAccessory = ["optic_ERCO_blk_F","CUP_acc_ANPEQ_2"];
 private _standardAccessoryExtra = ["CUP_acc_Flashlight"];
 

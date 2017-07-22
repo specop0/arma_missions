@@ -1,4 +1,4 @@
-#define PRIMARY_AMMO "30Rnd_556x45_Stanag"
+#define PRIMARY_AMMO "ACE_30Rnd_556x45_Stanag_Mk318_mag"
 #define MG_AMMO "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
 #define LMG_AMMO "CUP_200Rnd_TE4_Red_Tracer_556x45_M249"
 #define SECONDARY_AMMO "CUP_10Rnd_9x19_Compact"
