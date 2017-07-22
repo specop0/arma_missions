@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=1956;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=417;
+		nextID=433;
 	};
 	class Camera
 	{
@@ -4987,7 +4987,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=858;
 			type="Land_Medevac_house_V1_F";
@@ -8098,7 +8097,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=1116;
 			type="Land_Cargo_House_V3_F";
@@ -8138,7 +8136,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=1117;
 			type="Land_Cargo_House_V3_F";
@@ -8178,7 +8175,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=1118;
 			type="Land_Cargo_House_V3_F";
@@ -8834,11 +8830,9 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=1162;
 			type="Land_Cargo_Tower_V1_F";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11921,7 +11915,7 @@ class Mission
 					showWP="NEVER";
 					id=1463;
 					type="Move";
-					atlOffset=0.32800293;
+					atlOffset=0.1782608;
 				};
 				class Item7
 				{
@@ -14031,7 +14025,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=1564;
-					atlOffset=0.84182739;
+					atlOffset=0.071708679;
 				};
 			};
 			class Attributes
