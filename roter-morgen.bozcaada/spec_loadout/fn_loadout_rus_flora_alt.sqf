@@ -160,9 +160,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -199,7 +199,7 @@ if(_parameterCorrect) then {
                         [_unit,_x,2] call Spec_fnc_addItemToContainer;
                     } forEach _atAmmo;
                     _unit addWeapon _atWeapon;
-                    _secondaryAccessory pushBack "rhs_acc_1pn93_2";
+                    _secondaryAccessory pushBack "rhs_acc_pgo7v3";
                 };
                 comment "MG Ammunition for MG Assistant";
                 if(_type == CLASS_MG_ASSI) then {

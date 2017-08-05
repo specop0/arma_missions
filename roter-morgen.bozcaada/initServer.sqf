@@ -4,4 +4,4 @@ private _id = addMissionEventHandler ["HandleDisconnect",{
         deleteVehicle _unit;
     };
 }];
-[] call Spec_fnc_units_init;
+missionNamespace setVariable  ["ace_cookoff_ammoCookoffDuration", 0.01, true];

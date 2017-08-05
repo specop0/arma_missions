@@ -106,8 +106,8 @@ if(_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
-            [_unit,"ACE_elasticBandage",2, 7] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",2, 5] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",2, 9] call Spec_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",2, 3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",2, 2] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_morphine",2, 1] call Spec_fnc_addItemToContainer;
         };
@@ -128,10 +128,8 @@ if(_parameterCorrect) then {
         case CLASS_PIO : {
             [_unit,"ACE_VMH3",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
             [_unit,"ToolKit",2] call Spec_fnc_addItemToContainer;
-            [_unit,"DemoCharge_Remote_Mag",2, 2] call Spec_fnc_addItemToContainer;
-            [_unit,"SLAMDirectionalMine_Wire_Mag",2, 2] call Spec_fnc_addItemToContainer;
+            [_unit,"DemoCharge_Remote_Mag",2, 3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_M26_Clacker",3] call Spec_fnc_addItemToContainer;
-            [_unit,"ACE_Clacker",3] call Spec_fnc_addItemToContainer;
             [_unit,"ACE_DefusalKit",3] call Spec_fnc_addItemToContainer;
             _unit setVariable ["ACE_IsEngineer", true, true];
             _unit setVariable ["ACE_isEOD", true, true];
