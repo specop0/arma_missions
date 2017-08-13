@@ -12,6 +12,7 @@ class spec_scripts {
     tag = "Spec";
     class init {
         file="scripts";
+        class addDestroyOnGetIn {};
         class fennek {};
         class kasatka {};
         class pandur {};

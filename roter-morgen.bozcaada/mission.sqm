@@ -4063,7 +4063,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				lock="LOCKED";
 				init="[this] call Spec_fnc_fennek;";
 			};
 			id=285;
@@ -4239,7 +4238,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				lock="LOCKED";
 				init="[this] call Spec_fnc_pandur;";
 			};
 			id=293;
