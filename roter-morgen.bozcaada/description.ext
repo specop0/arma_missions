@@ -8,18 +8,17 @@ class CfgFunctions {
 #include "spec_tfar\CfgFunctions.hpp"
 #include "spec_zeus\CfgFunctions.hpp"
 
-class spec_scripts {
-    tag = "Spec";
-    class init {
-        file="scripts";
-        class addDestroyOnGetIn {};
-        class fennek {};
-        class kasatka {};
-        class pandur {};
-        class reinforceMarker {};
+    class spec_scripts {
+        tag = "Spec";
+        class init {
+            file="scripts";
+            class addDestroyOnGetIn {};
+            class fennek {};
+            class kasatka {};
+            class pandur {};
+            class reinforceMarker {};
+        };
     };
-};
-
 };
 
 
@@ -27,7 +26,7 @@ class Header
 {
     gameType = "coop";
     minPlayers = "1";
-    maxPlayers = "44";
+    maxPlayers = "42";
 };
 
 respawn = BASE;
@@ -42,3 +41,6 @@ OnLoadMissionTime = TRUE;
 
 overviewText = "";
 overviewPicture = "";
+
+disabledAI = 1;
+enableDebugConsole = 1;

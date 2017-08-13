@@ -1,6 +1,6 @@
 params [ ["_vehicle",objNull,[objNull]] ];
 
-if(!isNull _vehicle) then {
+if(!isNull _vehicle && isServer) then {
     _vehicle addEventHandler ["GetIn", {
         params ["_vehicle", "_position", "_unit"];
         if(({ isPlayer _x } count crew _vehicle) > 0 && _vehicle getVariable ["canBeDestroyed", true]) then {
