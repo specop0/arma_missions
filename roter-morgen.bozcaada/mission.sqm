@@ -4897,7 +4897,7 @@ class Mission
 						angles[]={0,5.3163972,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=0.75;
@@ -4905,7 +4905,7 @@ class Mission
 					};
 					id=355;
 					type="B_soldier_LAT_F";
-					atlOffset=0.20398712;
+					atlOffset=3.8336868;
 				};
 				class Item1
 				{
@@ -4917,13 +4917,14 @@ class Mission
 					};
 					showWP="NEVER";
 					id=357;
+					atlOffset=3.836319;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=353;
-			atlOffset=0.20398712;
+			atlOffset=3.8336868;
 		};
 		class Item69
 		{
@@ -4941,7 +4942,7 @@ class Mission
 						angles[]={0,0.18664658,0};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=0.75;
@@ -4949,7 +4950,7 @@ class Mission
 					};
 					id=354;
 					type="B_Soldier_F";
-					atlOffset=0.20398712;
+					atlOffset=3.8334045;
 				};
 				class Item1
 				{
@@ -4961,14 +4962,14 @@ class Mission
 					};
 					showWP="NEVER";
 					id=358;
-					atlOffset=7.6293945e-006;
+					atlOffset=3.8341827;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=356;
-			atlOffset=0.20398712;
+			atlOffset=3.8334045;
 		};
 		class Item70
 		{
@@ -11540,7 +11541,7 @@ class Mission
 					};
 					id=851;
 					type="O_Soldier_A_F";
-					atlOffset=0.023000717;
+					atlOffset=0.02299881;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12622,13 +12623,13 @@ class Mission
 		class Item154
 		{
 			dataType="Marker";
-			position[]={7758.875,42.375,12421.25};
+			position[]={13110.017,28.854004,9425.4873};
 			name="marker_10";
 			text="OBJ Quarry";
 			type="mil_objective";
 			colorName="ColorWEST";
 			id=899;
-			atlOffset=24.345617;
+			atlOffset=24.345436;
 		};
 		class Item155
 		{
