@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -54,7 +54,7 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -66,16 +66,16 @@ class AddonsMetaData
 		class Item2
 		{
 			className="A3_Air_F";
-			name="Arma 3 Alpha - Aircrafts";
+			name="Arma 3 Alpha - Aircraft";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
@@ -104,7 +104,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
@@ -116,7 +116,7 @@ class AddonsMetaData
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
@@ -130,7 +130,7 @@ class AddonsMetaData
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
@@ -144,7 +144,7 @@ class AddonsMetaData
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -157,9 +157,11 @@ class Mission
 {
 	class Intel
 	{
-		startWind=0.1;
-		forecastWind=0.1;
+		startWind=0.050000001;
+		startWindDir=120;
+		forecastWind=0.079999998;
 		forecastWaves=0.1;
+		windForced=1;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
 	};
@@ -248,6 +250,7 @@ class Mission
 			};
 			id=6;
 			type="B_Heli_Light_01_F";
+			atlOffset=-0.37890434;
 		};
 		class Item7
 		{
@@ -266,6 +269,7 @@ class Mission
 			};
 			id=7;
 			type="B_Heli_Light_01_F";
+			atlOffset=-0.37890434;
 		};
 		class Item8
 		{
@@ -282,7 +286,7 @@ class Mission
 			};
 			id=8;
 			type="CUP_O_Mi8_medevac_RU";
-			atlOffset=1.3005581;
+			atlOffset=1.136095;
 		};
 		class Item9
 		{
@@ -299,7 +303,7 @@ class Mission
 			};
 			id=9;
 			type="CUP_O_Mi8_medevac_RU";
-			atlOffset=1.3005981;
+			atlOffset=1.1361351;
 		};
 		class Item10
 		{
@@ -2401,7 +2405,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=100;
 			type="CamoNet_OPFOR_F";
@@ -2418,7 +2421,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=101;
 			type="CamoNet_OPFOR_F";
