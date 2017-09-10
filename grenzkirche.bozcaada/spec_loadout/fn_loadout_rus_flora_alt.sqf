@@ -160,9 +160,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,1] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,2, 2] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
