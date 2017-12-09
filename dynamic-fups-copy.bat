@@ -13,6 +13,7 @@ for %%s in (
     dynamic_fups_panw.Winthera3
     dynamic_fups_taki.Takistan
     dynamic_fups_tanoa.Tanoa
+    dynamic_fups_tmountain.Mountains_ACR
     ) do (
     for %%d in (%directoriesToCopy%) do (
         xcopy "%sourceDirectory%\%%d" "%%s\%%d" /s /e /y
