@@ -10,10 +10,12 @@ dockTop setObjectTextureGlobal [0, "pictures\down.paa"];
     _x params ["_pos","_distance"];
     {
         hideObjectGlobal _x;
+        _x allowDamage false;
     } forEach nearestTerrainObjects [_pos ,["House"],_distance];
     {
         if(typeOf _x in ["Land_Terrace_K_1_EP1"]) then {
             hideObjectGlobal _x;
+            _x allowDamage false;
         };
     } forEach nearestTerrainObjects [_pos ,[],_distance];
 } forEach [
