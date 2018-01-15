@@ -1,0 +1,42 @@
+#include "VCOMAI\defines.hpp"
+#include "VCOMAI\DialogDefines.hpp"
+#include "VCOMAI\dialogs.hpp"
+#include "W_Teleporter\dialog.hpp"
+
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+
+    class spec_scripts {
+        tag = "Spec";
+        class init {
+            file="scripts";
+            class abortPat {};
+            class addDestroyOnGetIn {};
+        };
+    };
+};
+
+class Header
+{
+    gameType = "coop";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+//onLoadMission = "Wilkommen zur OP Dynamischer FUPS...ähhh...Fuchs";
+OnLoadMissionTime = TRUE;
+author="Spec";
+OnLoadName = "Mehrere Ziele auf Russisch";
+loadScreen="loading.jpg";
+
+overviewText = "";
+overviewPicture = "";
+
+disabledAI = 1;
+enableDebugConsole = 1;
+
+cba_settings_hasSettingsFile = 1;
