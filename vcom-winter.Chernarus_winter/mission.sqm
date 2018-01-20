@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1008;
+		nextID=1023;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=28;
+		nextID=32;
 	};
 	class Camera
 	{
@@ -80,13 +80,15 @@ addons[]=
 	"CUP_WheeledVehicles_V3S",
 	"CUP_WheeledVehicles_Volha",
 	"A3_Structures_F_Walls",
-	"acex_headless"
+	"acex_headless",
+	"CUP_wheeledvehicles_Octaiva",
+	"A3_Supplies_F_Heli_CargoNets"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=44;
+		items=46;
 		class Item0
 		{
 			className="UK3CB_BAF_Vehicles_LandRover";
@@ -369,6 +371,18 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item44
+		{
+			className="CUP_wheeledvehicles_Octaiva";
+			name="CUP_wheeledvehicles_Octaiva";
+		};
+		class Item45
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=14376829;
@@ -419,7 +433,26 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		class Attribute2
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=3;
 	};
 };
 class Mission
@@ -449,7 +482,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=217;
+		items=225;
 		class Item0
 		{
 			dataType="Object";
@@ -1354,7 +1387,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
 					class Value
 					{
 						class data
@@ -1431,7 +1464,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
 					class Value
 					{
 						class data
@@ -1863,6 +1896,7 @@ class Mission
 			};
 			id=206;
 			type="Garbage_container";
+			atlOffset=0.026763916;
 		};
 		class Item23
 		{
@@ -14406,7 +14440,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
 					class Value
 					{
 						class data
@@ -26657,6 +26691,241 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item217
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4668.9253,341.38171,10422.412};
+				angles[]={0,1.0389218,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1010;
+			type="C_Truck_02_covered_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=21;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item218
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4660.2939,341.38171,10436.571};
+				angles[]={0,1.0389218,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1011;
+			type="C_Truck_02_covered_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=21;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item219
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4693.9536,341.34357,10431.975};
+				angles[]={0,6.1142817,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1012;
+			type="UK3CB_Civ_LandRover_Hard_Blue_A";
+		};
+		class Item220
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4696.5176,341.34357,10440.458};
+				angles[]={0,2.9651349,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1015;
+			type="UK3CB_Civ_LandRover_Hard_Green_A";
+		};
+		class Item221
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4692.5059,341.34357,10438.609};
+				angles[]={0,6.0411716,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1016;
+			type="UK3CB_Civ_LandRover_Hard_Red_A";
+		};
+		class Item222
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4753.1353,340.43256,10313.084};
+				angles[]={-0,5.8258095,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1018;
+			type="CUP_C_Octavia_CIV";
+		};
+		class Item223
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4723.54,339.82532,10328.087};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] call Spec_fnc_loadoutBox;}";
+			};
+			id=1021;
+			type="B_CargoNet_01_ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item224
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4760.0054,340.40167,10316.479};
+				angles[]={-0,5.710412,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1022;
+			type="CUP_C_Golf4_black_Civ";
 		};
 	};
 };
