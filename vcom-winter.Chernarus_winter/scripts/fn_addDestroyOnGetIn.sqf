@@ -6,7 +6,7 @@ if(!isNull _vehicle && isServer) then {
         if(({ isPlayer _x } count crew _vehicle) > 0 && _vehicle getVariable ["canBeDestroyed", true]) then {
             _vehicle setVariable ["canBeDestroyed", false, true];
             // a charge must be attached to the vehicle (can be disarmed by a player)
-            if(({ typeOf _x isEqualTo "DemoCharge_F" } count attachedObjects _vehicle) > 0) then {
+            if(({ typeOf _x isEqualTo "DemoCharge_Remote_Ammo" } count attachedObjects _vehicle) > 0) then {
                 private _scriptHandle = [_vehicle] spawn {
                     params ["_vehicle"];
                     // play a sound to signalize the player that he fucked up
