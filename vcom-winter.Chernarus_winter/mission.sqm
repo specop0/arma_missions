@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1092;
+		nextID=1096;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=36;
+		nextID=38;
 	};
 	class Camera
 	{
 		pos[]={4817.7861,364,10266.069};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -81,13 +81,18 @@ addons[]=
 	"A3_Structures_F_Walls",
 	"CUP_wheeledvehicles_Octaiva",
 	"A3_Supplies_F_Heli_CargoNets",
-	"ace_nouniformrestrictions"
+	"ace_nouniformrestrictions",
+	"tfar_backpacks",
+	"tfar_handhelds",
+	"A3_Structures_F_Civ_Camping",
+	"r_unfold",
+	"acex_sitting"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=45;
+		items=49;
 		class Item0
 		{
 			className="UK3CB_BAF_Vehicles_LandRover";
@@ -375,6 +380,31 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item45
+		{
+			className="tfar_backpacks";
+			name="tfar_backpacks";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item46
+		{
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item47
+		{
+			className="r_unfold";
+			name="r_unfold";
+			author="Rallen";
+		};
+		class Item48
+		{
+			className="acex_sitting";
+			name="ACEX - Sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=14376829;
@@ -474,7 +504,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=226;
+		items=230;
 		class Item0
 		{
 			dataType="Object";
@@ -27213,6 +27243,114 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item226
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4785.4487,339.28406,10269.051};
+				angles[]={-0,0.44417772,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1092;
+			type="TFAR_NATO_Radio_Crate";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[""UK3CB_BAF_B_Bergen_Arctic_JTAC_A""],[3]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff',_value,true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item227
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4786.772,339.41156,10268.447};
+				angles[]={0,0.44409901,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1093;
+			type="Land_CampingTable_F";
+		};
+		class Item228
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4784.8442,339.50766,10269.88};
+				angles[]={-0,4.1240511,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1094;
+			type="Land_CampingChair_V1_F";
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4787.627,339.50766,10269.194};
+				angles[]={-0,0.7803604,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1095;
+			type="Land_CampingChair_V1_F";
 		};
 	};
 };
