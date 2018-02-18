@@ -1,5 +1,5 @@
 #define CRATE_GRENADE_CONTENT [\
-        ["SmokeShell",36],\
+        ["SmokeShell",48],\
         ["SmokeShellGreen",12],\
         ["SmokeShellGreen",12],\
         ["SmokeShellPurple",12],\
