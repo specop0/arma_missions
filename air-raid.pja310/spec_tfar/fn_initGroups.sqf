@@ -22,7 +22,7 @@ if(_parameterCorrect) then {
     _BFTicon = "b_inf";
     _BFTremarks = name _unitName;
     
-        switch _groupID do {
+    switch _groupID do {
         case 0 : {
             _swFreq = ["100"];
             _lrFreq = ["30","31","32","41","42","43","44"];
@@ -116,7 +116,7 @@ if(_parameterCorrect) then {
     _unitName setVariable ["Spec_var_lrFreq", _lrFreq];
 
     // BFT Settings
-    _unitName setGroupIdGlobal [_callsign];
+    (group _unitName) setGroupIdGlobal [_callsign];
     _unitName setVariable ["BG_BFT_groupId", _callsign, true];
     _unitName setVariable ["BG_BFT_icon", _BFTicon, true]; 
     _unitName setVariable ["BG_BFT_remarks", _BFTremarks, true];
