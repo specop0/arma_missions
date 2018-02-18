@@ -19,7 +19,7 @@ class EditorData
 		pos[]={6917.8638,27.653625,7211.8809};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -46,6 +46,7 @@ addons[]=
 	"ace_cargo",
 	"ace_rearm",
 	"A3_Soft_F_Beta_Truck_01",
+	"UK3CB_BAF_Vehicles_Servicing",
 	"UK3CB_BAF_Vehicles_Coyote_Jackal",
 	"rhsusf_vehicles",
 	"r_unfold_RHS",
@@ -58,7 +59,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -180,35 +181,40 @@ class AddonsMetaData
 		};
 		class Item18
 		{
+			className="UK3CB_BAF_Vehicles_Servicing";
+			name="UK3CB_BAF_Vehicles_Servicing";
+		};
+		class Item19
+		{
 			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
 			name="3CB BAF Vehicles - Coyote and Jackal";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item20
+		class Item21
 		{
 			className="r_unfold_RHS";
 			name="r_unfold_RHS";
 			author="Rallen";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_AirVehicles_A10";
 			name="CUP_AirVehicles_A10";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item24
 		{
 			className="CUP_WheeledVehicles_Dingo";
 			name="CUP_WheeledVehicles_Dingo";
@@ -468,7 +474,7 @@ class Mission
 			};
 			id=19;
 			type="Land_CampingTable_F";
-			atlOffset=-8.3446503e-006;
+			atlOffset=-0.0050573349;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1649,7 +1655,7 @@ class Mission
 			};
 			id=134;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
-			atlOffset=-4.196167e-005;
+			atlOffset=-0.25136971;
 		};
 		class Item27
 		{
@@ -1665,14 +1671,14 @@ class Mission
 			};
 			id=135;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
-			atlOffset=-0.00014209747;
+			atlOffset=-0.25146985;
 		};
 		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6950.4287,2.7687171,7183.1792};
+				position[]={6950.4287,4.8747754,7183.1792};
 			};
 			side="Empty";
 			flags=4;
@@ -1681,7 +1687,6 @@ class Mission
 			};
 			id=151;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-2.1060584;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1730,7 +1735,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6950.3906,2.7704804,7175.9502};
+				position[]={6950.3906,4.8747754,7175.9502};
 			};
 			side="Empty";
 			flags=4;
@@ -1739,7 +1744,6 @@ class Mission
 			};
 			id=152;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-2.104295;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3814,7 +3818,7 @@ class Mission
 			name="marker_laptop";
 			type="Empty";
 			id=271;
-			atlOffset=32.382061;
+			atlOffset=32.384518;
 		};
 		class Item43
 		{
@@ -3934,14 +3938,14 @@ class Mission
 			};
 			id=291;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
-			atlOffset=-4.196167e-005;
+			atlOffset=-0.25136971;
 		};
 		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6950.4912,2.7720721,7168.4932};
+				position[]={6950.4912,4.8747754,7168.4932};
 			};
 			side="Empty";
 			flags=4;
@@ -3950,7 +3954,6 @@ class Mission
 			};
 			id=292;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-2.1027033;
 			class CustomAttributes
 			{
 				class Attribute0

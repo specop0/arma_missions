@@ -19,7 +19,7 @@ class EditorData
 		pos[]={5963.3438,108.08414,11294.307};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -45,6 +45,7 @@ addons[]=
 	"ace_cargo",
 	"ace_rearm",
 	"A3_Soft_F_Beta_Truck_01",
+	"UK3CB_BAF_Vehicles_Servicing",
 	"CUP_AirVehicles_A10",
 	"ace_explosives",
 	"CUP_WheeledVehicles_Dingo",
@@ -57,7 +58,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -169,37 +170,42 @@ class AddonsMetaData
 		};
 		class Item16
 		{
+			className="UK3CB_BAF_Vehicles_Servicing";
+			name="UK3CB_BAF_Vehicles_Servicing";
+		};
+		class Item17
+		{
 			className="CUP_AirVehicles_A10";
 			name="CUP_AirVehicles_A10";
 		};
-		class Item17
+		class Item18
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item19
 		{
 			className="CUP_WheeledVehicles_Dingo";
 			name="CUP_WheeledVehicles_Dingo";
 		};
-		class Item19
+		class Item20
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item20
+		class Item21
 		{
 			className="ttt_vehicles_us_c";
 			name="ttt_vehicles_us_c";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_AirVehicles_UH60";
 			name="CUP_AirVehicles_UH60";
 		};
-		class Item22
+		class Item23
 		{
 			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
 			name="3CB BAF Vehicles - Coyote and Jackal";
@@ -459,7 +465,7 @@ class Mission
 			};
 			id=19;
 			type="Land_CampingTable_F";
-			atlOffset=-0.064498901;
+			atlOffset=-0.069549561;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3834,8 +3840,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5932.895,83.152077,11336.647};
-				angles[]={0,3.2463124,0};
+				position[]={5932.895,85.254776,11336.647};
+				angles[]={-0,3.2463124,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3844,7 +3850,6 @@ class Mission
 			};
 			id=291;
 			type="rhsusf_m1025_d_m2";
-			atlOffset=-2.1026993;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3874,8 +3879,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5936.4629,83.152077,11335.912};
-				angles[]={0,3.2463124,0};
+				position[]={5936.4629,85.254776,11335.912};
+				angles[]={-0,3.2463124,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3884,7 +3889,6 @@ class Mission
 			};
 			id=292;
 			type="rhsusf_m1025_d_m2";
-			atlOffset=-2.1026993;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3994,7 +3998,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5933.5669,84.711304,11297.416};
+				position[]={5933.5669,84.711143,11297.416};
 				angles[]={0.0015822123,4.8520155,0.0032018756};
 			};
 			side="Empty";
@@ -4004,7 +4008,6 @@ class Mission
 			};
 			id=297;
 			type="TTT_Schuetzenpanzer_Us_Desert";
-			atlOffset=0.00016021729;
 		};
 		class Item46
 		{
@@ -4101,26 +4104,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item49
@@ -4141,8 +4125,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5920.77,85.531006,11339.43};
-				angles[]={0,3.2463124,0};
+				position[]={5920.77,85.782333,11339.43};
+				angles[]={-0,3.2463124,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4181,8 +4165,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5916.8647,85.531006,11339.813};
-				angles[]={0,3.2463124,0};
+				position[]={5916.8647,85.782333,11339.813};
+				angles[]={-0,3.2463124,0};
 			};
 			side="Empty";
 			flags=4;
