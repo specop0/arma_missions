@@ -1,0 +1,9 @@
+$[
+	1.063,
+	["Spec_crateNaming",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2200,"",[1,"",["0.334993 * safezoneW + safezoneX","0.400975 * safezoneH + safezoneY","0.350639 * safezoneW","0.15404 * safezoneH"],[-1,-1,-1,-1],[0.2,0.2,0.2,0.8],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.355619 * safezoneW + safezoneX","0.42298 * safezoneH + safezoneY","0.309387 * safezoneW","0.0440113 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Reset",["0.355619 * safezoneW + safezoneX","0.488997 * safezoneH + safezoneY","0.0515646 * safezoneW","0.0440113 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Resets the display name to the default value.","-1"],[]],
+	[2700,"",[1,"",["0.541252 * safezoneW + safezoneX","0.488997 * safezoneH + safezoneY","0.0515646 * safezoneW","0.0440113 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Cancels the dialog.","-1"],[]],
+	[2600,"",[1,"",["0.613442 * safezoneW + safezoneX","0.488997 * safezoneH + safezoneY","0.0515646 * safezoneW","0.0440113 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Changes display name of crate to the given one.","-1"],[]]
+]

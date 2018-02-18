@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ID="Arma2">
+    <Package ID="Missions">
+        <Container ID="Spec_crateNaming">
+            <Key ID="STR_Spec_crateNaming_Rename">
+                <Original>
+                    Rename
+                </Original>
+                <German>
+                    Umbennen
+                </German>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_OK">
+                <Original>
+                    OK
+                </Original>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_OK_Tooltip">
+                <Original>
+                    Changes the display name of crate to the given one.
+                </Original>
+                <German>
+                    Speichert den eingegeben Namen als Anzeigenamen der Kiste.
+                </German>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_Cancel">
+                <Original>
+                    Cancel
+                </Original>
+                <German>
+                    Abbrechen
+                </German>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_Cancel_Tooltip">
+                <Original>
+                    Cancels the dialog to rename the crate.
+                </Original>
+                <German>
+                    Bricht den Dialog zum Umbennen der Kiste ab.
+                </German>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_Default">
+                <Original>
+                    Default
+                </Original>
+            </Key>
+            <Key ID="STR_Spec_crateNaming_Button_Default_Tooltip">
+                <Original>
+                    Resets the display name to the default value. Rename must be saved manually.
+                </Original>
+                <German>
+                    Setzt den Anzeigenamen der Kiste auf den standardmäßig genutzten Namen zurück. Die Änderung muss manuell gespeichert werden.
+                </German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

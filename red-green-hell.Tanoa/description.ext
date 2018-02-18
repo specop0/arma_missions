@@ -1,0 +1,36 @@
+#include "W_Teleporter\dialog.hpp"
+#include "spec_crateNaming\DescriptionExt.hpp"
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+#include "spec_cargoDrop\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_crateNaming\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+
+class spec_scripts {
+    tag = "Spec";
+    class init {
+        file="scripts";
+        class fennek {};
+    };
+};
+
+};
+
+class Header
+{
+    gameType = "coop";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+author="Spec";
+OnLoadName = "Rot-Grüne Hölle";
+loadScreen="pictures\logo.jpg";
+onLoadMission = "Es ist besser, nicht zu rebellieren, als falsch zu rebellieren!";
+OnLoadMissionTime = TRUE;
+
+disabledAI = 1;
+enableDebugConsole = 1;
