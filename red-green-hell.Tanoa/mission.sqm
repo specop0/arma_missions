@@ -58543,7 +58543,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="#1 Logistiker@Grau";
+						description="#1 Logistiker@Silber";
 						isPlayable=1;
 					};
 					id=1155;
@@ -58623,7 +58623,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="#2 Logistiker@Grau";
+						description="#2 Logistiker@Silber";
 						isPlayable=1;
 					};
 					id=1157;
@@ -58703,7 +58703,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="#3 Logistiker@Grau";
+						description="#3 Logistiker@Silber";
 						isPlayable=1;
 					};
 					id=1159;
@@ -58782,7 +58782,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="#4 Logistiker@Grau";
+						description="#4 Logistiker@Silber";
 						isPlayable=1;
 					};
 					id=1161;
@@ -58872,7 +58872,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Grau";
+							value="Silber";
 						};
 					};
 				};
