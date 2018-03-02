@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=71;
+		nextID=78;
 	};
 	class Camera
 	{
 		pos[]={2343.968,37.630001,13110.255};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		dir[]={0.083709083,-0.5918684,0.80167776};
+		up[]={0.061467182,0.80603391,0.58866841};
+		aside[]={0.99459332,9.5606083e-009,-0.1038528};
 	};
 };
 binarizationWanted=0;
@@ -39,16 +39,15 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
 	"A3_Weapons_F_Rifles_MK20",
-	"A3_Weapons_F_Acc",
+	"ace_realisticnames",
 	"ace_scopes",
+	"ace_ballistics",
+	"A3_Weapons_F_Acc",
 	"ace_fcs",
 	"ace_laserpointer",
 	"A3_Weapons_F",
-	"ace_ballistics",
 	"A3_Weapons_F_Pistols_ACPC2",
-	"ace_realisticnames",
 	"ace_smallarms",
-	"ace_optics",
 	"A3_Weapons_F_Items",
 	"ace_medical",
 	"A3_Characters_F_Mark",
@@ -63,9 +62,6 @@ addons[]=
 	"A3_Weapons_F_Mark_Machineguns_M200",
 	"A3_Weapons_F_Mark_Acc",
 	"ace_reload",
-	"rhsusf_c_troops",
-	"ace_compat_rhs_usf3",
-	"ace_nightvision",
 	"A3_Weapons_F_Mark_LongRangeRifles_EBR",
 	"UK3CB_BAF_Weapons_Static",
 	"CUP_WheeledVehicles_Datsun",
@@ -112,7 +108,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=52;
 		class Item0
 		{
 			className="CUP_AirVehicles_C130J";
@@ -184,15 +180,15 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item12
 		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
+			className="ace_laserpointer";
+			name="ACE3 - Laser Pointer";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -205,282 +201,254 @@ class AddonsMetaData
 		};
 		class Item14
 		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item15
-		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="UK3CB_BAF_Equipment_Glasses";
 			name="3CB BAF Equipment - Glasses";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_javelin";
 			name="ACE3 - Javelin";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item22
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item23
 		{
 			className="ace_reload";
 			name="ACE3 - Reload";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
-		{
-			className="rhsusf_c_troops";
-			name="RHSUSF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item26
-		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USF Compatibility";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item27
-		{
-			className="ace_nightvision";
-			name="ACE3 - Night Vision";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item28
+		class Item24
 		{
 			className="UK3CB_BAF_Weapons_Static";
 			name="3CB BAF Weapons - Statics";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item29
+		class Item25
 		{
 			className="CUP_WheeledVehicles_Datsun";
 			name="CUP_WheeledVehicles_Datsun";
 		};
-		class Item30
+		class Item26
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item27
 		{
 			className="ace_disposable";
 			name="ACE3 - Disposable";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item28
 		{
 			className="ace_nlaw";
 			name="ACE3 - NLAW";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item29
 		{
 			className="ace_overpressure";
 			name="ACE3 - Overpressure";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item34
+		class Item30
 		{
 			className="ace_realisticweights";
 			name="ace_realisticweights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item35
+		class Item31
 		{
 			className="rhsusf_c_melb";
 			name="MELB";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item36
+		class Item32
 		{
 			className="A3_Structures_F_Exp_Industrial";
 			name="Arma 3 Apex - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item33
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item34
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item35
 		{
 			className="ttt_units_us_c";
 			name="ttt_units_us_c";
 		};
-		class Item40
+		class Item36
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item37
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item38
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item39
 		{
 			className="CUP_CAMisc_ACR_Sign_Mines";
 			name="CUP_CAMisc_ACR_Sign_Mines";
 		};
-		class Item44
+		class Item40
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item41
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item42
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item47
+		class Item43
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item48
+		class Item44
 		{
 			className="cba_modules";
 			name="Community Base Addons - Modules Component";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item49
+		class Item45
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item50
+		class Item46
 		{
 			className="ttt_units_bw_c";
 			name="ttt_units_bw_c";
 		};
-		class Item51
+		class Item47
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item48
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item49
 		{
 			className="CUP_WheeledVehicles_TowingTractor";
 			name="CUP_WheeledVehicles_TowingTractor";
 		};
-		class Item54
+		class Item50
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item51
 		{
 			className="ace_nouniformrestrictions";
 			name="ACE3 - No Uniform Restrictions";
@@ -496,7 +464,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -637,6 +605,7 @@ class Mission
 			type="mil_objective";
 			colorName="ColorEAST";
 			id=36;
+			atlOffset=0.044310808;
 		};
 		class Item6
 		{
@@ -923,18 +892,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -945,10 +909,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -1794,18 +1754,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -1816,10 +1771,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -3874,18 +3825,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -4007,8 +3953,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -4149,18 +4093,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -4171,10 +4110,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -5361,18 +5296,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -5383,10 +5313,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -7506,18 +7432,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -7639,8 +7560,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -7858,18 +7777,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -7880,10 +7794,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -8861,18 +8771,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -8883,10 +8788,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -9699,18 +9600,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -9721,10 +9617,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -10522,18 +10414,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -10544,10 +10431,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -11381,18 +11264,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -11403,10 +11281,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -12813,18 +12687,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -12946,8 +12815,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -13069,18 +12936,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -13091,10 +12953,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -13891,18 +13749,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -13913,10 +13766,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -16037,18 +15886,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -16059,10 +15903,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -17230,18 +17070,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -17252,10 +17087,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -18236,18 +18067,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -18258,10 +18084,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -19217,18 +19039,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -19239,10 +19056,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -21270,7 +21083,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={11300.495,11.039109,5289.6738};
-								angles[]={-0,2.0768948,0};
+								angles[]={0,2.0768948,0};
 							};
 							side="Independent";
 							flags=7;
@@ -21496,7 +21309,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11300.144,11.053831,5290.0107};
-						angles[]={-0,2.0768948,0};
+						angles[]={0,2.0768948,0};
 					};
 					side="Independent";
 					flags=6;
@@ -21623,7 +21436,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={11248.253,11.159752,5201.6875};
-								angles[]={-0,3.3149977,0};
+								angles[]={0,3.3149977,0};
 							};
 							side="Independent";
 							flags=7;
@@ -21849,7 +21662,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11247.901,11.192016,5202.0239};
-						angles[]={-0,3.3149977,0};
+						angles[]={0,3.3149977,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23901,18 +23714,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -23923,10 +23731,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -24043,6 +23847,7 @@ class Mission
 							};
 							id=642;
 							type="I_Soldier_TL_F";
+							atlOffset=0.0065304041;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24213,7 +24018,7 @@ class Mission
 							};
 							id=643;
 							type="I_Soldier_AR_F";
-							atlOffset=0.00039088726;
+							atlOffset=0.0065304041;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24425,7 +24230,7 @@ class Mission
 							};
 							id=644;
 							type="I_Soldier_GL_F";
-							atlOffset=0.0010738373;
+							atlOffset=0.0065304041;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24675,6 +24480,7 @@ class Mission
 						formation="FILE";
 					};
 					id=641;
+					atlOffset=0.0065304041;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25350,18 +25156,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -25483,8 +25284,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -26231,18 +26030,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -26364,8 +26158,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -26915,7 +26707,7 @@ class Mission
 								angles[]={0,1.8544996,0};
 							};
 							side="Independent";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								skill=0.44999999;
@@ -27014,7 +26806,7 @@ class Mission
 							};
 							id=658;
 							type="I_Soldier_AR_F";
-							atlOffset=9.5367432e-007;
+							atlOffset=3.372808;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27087,7 +26879,7 @@ class Mission
 							showWP="NEVER";
 							id=659;
 							type="Move";
-							atlOffset=8.1062317e-006;
+							atlOffset=3.3721275;
 						};
 					};
 					class Attributes
@@ -27095,7 +26887,7 @@ class Mission
 						formation="COLUMN";
 					};
 					id=657;
-					atlOffset=9.5367432e-007;
+					atlOffset=3.372808;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27355,7 +27147,7 @@ class Mission
 								angles[]={0,3.2207375,0};
 							};
 							side="Independent";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								rank="LIEUTENANT";
@@ -27459,6 +27251,7 @@ class Mission
 							};
 							id=664;
 							type="I_soldier_F";
+							atlOffset=10.934038;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27548,7 +27341,7 @@ class Mission
 						};
 					};
 					id=663;
-					atlOffset=0.019144058;
+					atlOffset=10.953304;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27582,13 +27375,13 @@ class Mission
 						angles[]={0,3.2207375,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=665;
 					type="UK3CB_BAF_Static_L111A1_Deployed_High";
-					atlOffset=0.019144058;
+					atlOffset=10.953304;
 				};
 				class Item55
 				{
@@ -27606,7 +27399,7 @@ class Mission
 								angles[]={0,6.1689196,0};
 							};
 							side="Independent";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								rank="LIEUTENANT";
@@ -27710,7 +27503,7 @@ class Mission
 							};
 							id=667;
 							type="I_soldier_F";
-							atlOffset=9.5367432e-007;
+							atlOffset=10.935173;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27800,7 +27593,7 @@ class Mission
 						};
 					};
 					id=666;
-					atlOffset=9.5367432e-007;
+					atlOffset=10.935173;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27834,13 +27627,13 @@ class Mission
 						angles[]={0,6.1689196,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=668;
 					type="UK3CB_BAF_Static_L111A1_Deployed_High";
-					atlOffset=9.5367432e-007;
+					atlOffset=10.935173;
 				};
 				class Item57
 				{
@@ -27851,14 +27644,14 @@ class Mission
 						angles[]={0,6.1098781,0};
 					};
 					side="Empty";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						disableSimulation=1;
 					};
 					id=672;
 					type="Land_SandbagBarricade_01_F";
-					atlOffset=1.9073486e-006;
+					atlOffset=10.93466;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27948,18 +27741,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -27970,10 +27758,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -28803,18 +28587,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -28825,10 +28604,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -30289,18 +30064,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -30422,8 +30192,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -30544,18 +30312,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -30566,10 +30329,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -31358,7 +31117,7 @@ class Mission
 								angles[]={0,3.5459292,0};
 							};
 							side="Independent";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								rank="CAPTAIN";
@@ -31366,18 +31125,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -31388,10 +31142,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -31508,6 +31258,7 @@ class Mission
 							};
 							id=705;
 							type="I_Soldier_TL_F";
+							atlOffset=3.4004626;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31678,7 +31429,7 @@ class Mission
 							};
 							id=706;
 							type="I_Soldier_AR_F";
-							atlOffset=0.36286736;
+							atlOffset=3.7644;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31750,7 +31501,7 @@ class Mission
 								angles[]={0,3.5459292,0};
 							};
 							side="Independent";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								skill=0.40000001;
@@ -31890,7 +31641,7 @@ class Mission
 							};
 							id=707;
 							type="I_Soldier_GL_F";
-							atlOffset=0.011209488;
+							atlOffset=3.408855;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31962,7 +31713,7 @@ class Mission
 								angles[]={0,3.5459292,0};
 							};
 							side="Independent";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								skill=0.40000001;
@@ -32071,7 +31822,7 @@ class Mission
 							};
 							id=708;
 							type="I_Soldier_LAT_F";
-							atlOffset=0.16567898;
+							atlOffset=3.5644355;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32140,6 +31891,7 @@ class Mission
 						formation="DIAMOND";
 					};
 					id=704;
+					atlOffset=3.4004626;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32815,18 +32567,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -32948,8 +32695,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -33167,6 +32912,7 @@ class Mission
 							};
 							id=710;
 							type="I_soldier_F";
+							atlOffset=0.19996333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33342,6 +33088,7 @@ class Mission
 							};
 							id=711;
 							type="I_soldier_F";
+							atlOffset=0.19996333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33517,6 +33264,7 @@ class Mission
 							};
 							id=712;
 							type="I_soldier_F";
+							atlOffset=0.19996333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33585,6 +33333,7 @@ class Mission
 						formation="DIAMOND";
 					};
 					id=709;
+					atlOffset=0.19996333;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33633,18 +33382,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -33655,10 +33399,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -34490,18 +34230,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -34512,10 +34247,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -35339,18 +35070,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -35361,10 +35087,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -36163,18 +35885,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -36185,10 +35902,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -38028,18 +37741,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -38050,10 +37758,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -39057,18 +38761,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -39079,10 +38778,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -39995,18 +39690,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -40017,10 +39707,6 @@ class Mission
 											name="9Rnd_45ACP_Mag";
 											ammoLeft=8;
 										};
-									};
-									class binocular
-									{
-										name="Binocular";
 									};
 									class uniform
 									{
@@ -41630,18 +41316,13 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="arifle_Mk20_GL_MRCO_pointer_F";
+										name="arifle_Mk20_F";
 										optics="optic_MRCO";
 										flashlight="acc_pointer_IR";
 										class primaryMuzzleMag
 										{
 											name="30Rnd_556x45_Stanag";
 											ammoLeft=30;
-										};
-										class secondaryMuzzleMag
-										{
-											name="1Rnd_HE_Grenade_shell";
-											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -41763,8 +41444,6 @@ class Mission
 									watch="ItemWatch";
 									radio="ItemRadio";
 									gps="ItemGPS";
-									goggles="rhs_googles_yellow";
-									hmd="NVGoggles_INDEP";
 									headgear="H_HelmetIA";
 								};
 							};
@@ -42770,18 +42449,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -42792,10 +42466,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -43621,18 +43291,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -43643,10 +43308,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -44478,18 +44139,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -44500,10 +44156,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -45300,18 +44952,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -45322,10 +44969,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -48327,18 +47970,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -48460,8 +48098,6 @@ class Mission
 											watch="ItemWatch";
 											radio="ItemRadio";
 											gps="ItemGPS";
-											goggles="rhs_googles_yellow";
-											hmd="NVGoggles_INDEP";
 											headgear="H_HelmetIA";
 										};
 									};
@@ -48583,18 +48219,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -48605,10 +48236,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -49437,18 +49064,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -49459,10 +49081,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -50294,18 +49912,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -50316,10 +49929,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
@@ -51118,18 +50727,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="arifle_Mk20_GL_MRCO_pointer_F";
+												name="arifle_Mk20_F";
 												optics="optic_MRCO";
 												flashlight="acc_pointer_IR";
 												class primaryMuzzleMag
 												{
 													name="30Rnd_556x45_Stanag";
 													ammoLeft=30;
-												};
-												class secondaryMuzzleMag
-												{
-													name="1Rnd_HE_Grenade_shell";
-													ammoLeft=1;
 												};
 											};
 											class handgun
@@ -51140,10 +50744,6 @@ class Mission
 													name="9Rnd_45ACP_Mag";
 													ammoLeft=8;
 												};
-											};
-											class binocular
-											{
-												name="Binocular";
 											};
 											class uniform
 											{
