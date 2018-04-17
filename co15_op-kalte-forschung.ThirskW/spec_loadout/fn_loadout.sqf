@@ -213,7 +213,7 @@ if(_parameterCorrect) then {
             [_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
         };
         case _sniperHelpClass : {
-            [_unit,_sniperAmmo,ADD_TO_VEST, 5] call Spec_fnc_addItemToContainer;
+            [_unit,_sniperAmmo,ADD_TO_VEST, 4] call Spec_fnc_addItemToContainer;
         };
     };
     
@@ -244,7 +244,7 @@ if(_parameterCorrect) then {
             [_unit,_lmgAmmo,ADD_TO_VEST, 1] call Spec_fnc_addItemToContainer;
         } else {
             if(_type == _sniperClass) then {
-                [_unit,_sniperAmmo,ADD_TO_VEST, 8] call Spec_fnc_addItemToContainer;
+                [_unit,_sniperAmmo,ADD_TO_VEST, 7] call Spec_fnc_addItemToContainer;
                 _unit addWeapon _sniperWeapon;
                 {
                     _unit addPrimaryWeaponItem _x;

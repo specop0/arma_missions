@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -58,7 +58,7 @@ addons[]=
 	"A3_Modules_F",
 	"rhs_cti_insurgents",
 	"A3_Characters_F",
-	"A3_Modules_F_Intel",
+	"ace_nouniformrestrictions",
 	"A3_Modules_F_Curator_Curator",
 	"ace_weather",
 	"ace_medical",
@@ -68,48 +68,48 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
@@ -123,21 +123,21 @@ class AddonsMetaData
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
@@ -151,21 +151,21 @@ class AddonsMetaData
 			className="A3_Boat_F_Beta";
 			name="Arma 3 Beta - Boats and Submersibles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item12
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item14
 		{
@@ -186,7 +186,7 @@ class AddonsMetaData
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item17
 		{
@@ -200,14 +200,14 @@ class AddonsMetaData
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item19
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item20
 		{
@@ -221,7 +221,7 @@ class AddonsMetaData
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item22
 		{
@@ -230,19 +230,26 @@ class AddonsMetaData
 		};
 		class Item23
 		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item24
+		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_weather";
 			name="ACE3 - Weather";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
@@ -283,7 +290,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=128;
+		items=124;
 		class Item0
 		{
 			dataType="Marker";
@@ -626,6 +633,7 @@ class Mission
 			};
 			id=21;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=0.0068321228;
 		};
 		class Item22
 		{
@@ -643,6 +651,7 @@ class Mission
 			};
 			id=22;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=0.0068321228;
 		};
 		class Item23
 		{
@@ -660,6 +669,7 @@ class Mission
 			};
 			id=23;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=0.0068321228;
 		};
 		class Item24
 		{
@@ -1034,7 +1044,7 @@ class Mission
 			};
 			id=45;
 			type="Land_Device_disassembled_F";
-			atlOffset=0.0032196045;
+			atlOffset=0.0032157898;
 		};
 		class Item46
 		{
@@ -1103,6 +1113,7 @@ class Mission
 			};
 			id=49;
 			type="Land_Mil_WallBig_4m_F";
+			atlOffset=0.0068321228;
 		};
 		class Item50
 		{
@@ -1136,7 +1147,6 @@ class Mission
 			};
 			id=51;
 			type="Land_MobileScafolding_01_F";
-			atlOffset=3.8146973e-006;
 		};
 		class Item52
 		{
@@ -1377,7 +1387,7 @@ class Mission
 			};
 			id=65;
 			type="I_Boat_Armed_01_minigun_F";
-			atlOffset=1.4666615;
+			atlOffset=1.5200222;
 		};
 		class Item66
 		{
@@ -1394,7 +1404,7 @@ class Mission
 			};
 			id=66;
 			type="B_Boat_Transport_01_F";
-			atlOffset=3.6047902;
+			atlOffset=3.6067164;
 		};
 		class Item67
 		{
@@ -1411,7 +1421,7 @@ class Mission
 			};
 			id=67;
 			type="B_Boat_Transport_01_F";
-			atlOffset=2.5826156;
+			atlOffset=2.5845418;
 		};
 		class Item68
 		{
@@ -1428,7 +1438,7 @@ class Mission
 			};
 			id=68;
 			type="B_Boat_Transport_01_F";
-			atlOffset=4.2347479;
+			atlOffset=4.2366743;
 		};
 		class Item69
 		{
@@ -1445,7 +1455,7 @@ class Mission
 			};
 			id=69;
 			type="B_Boat_Transport_01_F";
-			atlOffset=3.6131897;
+			atlOffset=3.6151159;
 		};
 		class Item70
 		{
@@ -1482,7 +1492,7 @@ class Mission
 			};
 			id=71;
 			type="I_Boat_Transport_01_F";
-			atlOffset=2.1525912;
+			atlOffset=2.1545177;
 		};
 		class Item72
 		{
@@ -1498,7 +1508,7 @@ class Mission
 			};
 			id=72;
 			type="I_Boat_Transport_01_F";
-			atlOffset=1.3296683;
+			atlOffset=1.3315946;
 		};
 		class Item73
 		{
@@ -1514,7 +1524,7 @@ class Mission
 			};
 			id=73;
 			type="I_Boat_Transport_01_F";
-			atlOffset=1.2321665;
+			atlOffset=1.234093;
 		};
 		class Item74
 		{
@@ -1531,7 +1541,7 @@ class Mission
 			};
 			id=74;
 			type="I_Boat_Transport_01_F";
-			atlOffset=1.2970588;
+			atlOffset=1.2989851;
 		};
 		class Item75
 		{
@@ -1548,7 +1558,7 @@ class Mission
 			};
 			id=75;
 			type="I_Boat_Transport_01_F";
-			atlOffset=0.42269075;
+			atlOffset=0.42461705;
 		};
 		class Item76
 		{
@@ -1601,6 +1611,7 @@ class Mission
 			};
 			id=78;
 			type="C_Van_01_fuel_F";
+			atlOffset=0.0006942749;
 		};
 		class Item79
 		{
@@ -1638,7 +1649,7 @@ class Mission
 			};
 			id=80;
 			type="Intel_File2_F";
-			atlOffset=1.6725349;
+			atlOffset=1.6725311;
 		};
 		class Item81
 		{
@@ -1936,7 +1947,7 @@ class Mission
 				};
 			};
 			id=85;
-			atlOffset=1.4666615;
+			atlOffset=1.5200222;
 		};
 		class Item86
 		{
@@ -2014,7 +2025,6 @@ class Mission
 					};
 					id=106;
 					type="rhs_g_Soldier_AR_F";
-					atlOffset=7.8201294e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2044,7 +2054,6 @@ class Mission
 			{
 			};
 			id=105;
-			atlOffset=7.8201294e-005;
 		};
 		class Item88
 		{
@@ -2069,7 +2078,6 @@ class Mission
 					};
 					id=108;
 					type="rhs_g_Soldier_TL_F";
-					atlOffset=7.8201294e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2099,7 +2107,6 @@ class Mission
 			{
 			};
 			id=107;
-			atlOffset=7.8201294e-005;
 		};
 		class Item89
 		{
@@ -2179,6 +2186,7 @@ class Mission
 					};
 					id=112;
 					type="rhs_g_Soldier_F";
+					atlOffset=0.00034046173;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2208,6 +2216,7 @@ class Mission
 			{
 			};
 			id=111;
+			atlOffset=0.00034046173;
 		};
 		class Item91
 		{
@@ -3245,6 +3254,7 @@ class Mission
 					showWP="NEVER";
 					id=185;
 					type="Move";
+					atlOffset=0.09072876;
 				};
 				class Item2
 				{
@@ -3256,6 +3266,7 @@ class Mission
 					showWP="NEVER";
 					id=186;
 					type="Move";
+					atlOffset=0.015724182;
 				};
 				class Item3
 				{
@@ -3267,6 +3278,7 @@ class Mission
 					showWP="NEVER";
 					id=187;
 					type="Move";
+					atlOffset=0.0068321228;
 				};
 				class Item4
 				{
@@ -3278,6 +3290,7 @@ class Mission
 					showWP="NEVER";
 					id=188;
 					type="Move";
+					atlOffset=0.008682251;
 				};
 				class Item5
 				{
@@ -3289,6 +3302,7 @@ class Mission
 					showWP="NEVER";
 					id=189;
 					type="Move";
+					atlOffset=0.055725098;
 				};
 				class Item6
 				{
@@ -3303,6 +3317,7 @@ class Mission
 					showWP="NEVER";
 					id=190;
 					type="Move";
+					atlOffset=0.1555748;
 				};
 				class Item7
 				{
@@ -4808,522 +4823,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4670.2056,0.24180615,4979.3433};
-			};
-			id=301;
-			type="ModuleCreateDiaryRecord_F";
-			atlOffset=4.241806;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCreateDiaryRecord_F_PresetTitle";
-					expression="_this setVariable ['PresetTitle',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Situation";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCreateDiaryRecord_F_Title";
-					expression="_this setVariable ['Title',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Lage";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCreateDiaryRecord_F_Description";
-					expression="_this setVariable ['Description',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Die 'National Party' NAPA hat schon seit über einem Jahr die Insel 'Thirsk' unter Kontrolle. Da diese aber die Bevölkerung gut behandeln und für einen Aufschwung der Wirtschaft - speziell die Binnenschifffahrt - sorgen ist kein Partner gewillt den gestürzten Grafen der Insel zu helfen.<br /><br/>Neusten Berichten zufolge wird auf der Insel 'Thirsk' von der 'National Party' NAPA ein geheimes Forschungsprojekt betrieben. Der Westen scheint besorgt, dass die Bevölkerung darunter leidet und denkt darüber nach Sanktionen zu verhängen.";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCreateDiaryRecord_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCreateDiaryRecord_F_Subject";
-					expression="_this setVariable ['Subject',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item117
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4669.6025,0.23822314,4949.6733};
-			};
-			id=302;
-			type="ModuleCreateDiaryRecord_F";
-			atlOffset=4.2382231;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCreateDiaryRecord_F_PresetTitle";
-					expression="_this setVariable ['PresetTitle',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Mission";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCreateDiaryRecord_F_Title";
-					expression="_this setVariable ['Title',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zusatzinformation";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCreateDiaryRecord_F_Description";
-					expression="_this setVariable ['Description',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="- <font color=""#80BFFF"">Sprengstoff</font> befindet sich am Startpunkt neben dem Lagerfeuer, falls es keinen Sprengstoffexperten gibt.<br />- Der zu sprengende <font color=""#80BFFF"">Leuchtturm</font> benötigt <font color=""#80BFFF"">3</font> und der <font color=""#80BFFF"">Wasserturm 1</font> explosive Sprengladungen / explosive charges<br />- Der <font color=""#80BFFF"">Teleporter</font> ist beim Lagerfeuer. Passt auf, dass Ihr euch beim Teleportieren nicht verbrennt!<br />- Das Erfüllen der <font color=""#80BFFF"">Missionziele</font> wird über <font color=""#80BFFF"">Hints</font> angezeigt.<br />- In 'Ykspihlaja' bzw. am OBJ 'Dome' befinden sich weitere Boote.<br />- Der Auftrag gilt als geschafft, wenn alle 3 Ziele erfüllt sind und auf die Startinsel 'Vasarakarikko' zurückverlegt wurde<br />- Die SQL u. Truppführer können eine Nachschubkiste anfordern, falls Munition und/oder Medic-Material knapp ist<br />- Falls etwas schief geht könnt ihr einen Spieler zum Zeus voten. Gebt dazu im Chat ein: #vote admin Spielername - Hierbei solltet ihr aber euch für einen Zeus entscheiden ;)";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCreateDiaryRecord_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCreateDiaryRecord_F_Subject";
-					expression="_this setVariable ['Subject',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item118
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4669.9683,0.24233884,4969.7207};
-			};
-			id=303;
-			type="ModuleCreateDiaryRecord_F";
-			atlOffset=4.2423387;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCreateDiaryRecord_F_PresetTitle";
-					expression="_this setVariable ['PresetTitle',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Mission";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCreateDiaryRecord_F_Title";
-					expression="_this setVariable ['Title',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Auftrag";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCreateDiaryRecord_F_Description";
-					expression="_this setVariable ['Description',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Bringen Sie das Forschungsprojekt zum Stillstand. Zerstören Sie dazu wichtige Infrastrukturen und greifen Sie die Forschungseinrichtung an.<br />- <font color=""#80BFFF"">Sprengen</font> Sie den Leuchtturm, damit Nachschub per Schiff eingeschränkt wird ('OBJ Leuchtturm').<br />- <font color=""#80BFFF"">Sprengen</font> Sie den Wasserturm am 'OBJ Dome'. Dessen Wasser gelangt über Rohre bis zum Forschungslabor.<br />- <font color=""#80BFFF"">Sammeln</font> Sie im Forschungslabor 'OBJ Labor' <font color=""#80BFFF"">Informationen</font> um das Projekt aufzudecken. Hierbei müssen Sie so viele Informationen sammeln, bis das Ausmaß der Forschung klar wird.";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCreateDiaryRecord_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCreateDiaryRecord_F_Subject";
-					expression="_this setVariable ['Subject',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item119
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4669.7197,0.24095768,4959.9458};
-			};
-			id=304;
-			type="ModuleCreateDiaryRecord_F";
-			atlOffset=4.2409577;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCreateDiaryRecord_F_PresetTitle";
-					expression="_this setVariable ['PresetTitle',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Mission";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCreateDiaryRecord_F_Title";
-					expression="_this setVariable ['Title',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Durchführung";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCreateDiaryRecord_F_Description";
-					expression="_this setVariable ['Description',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Verlegen Sie mit Booten von der Insel Vasarakarikko um das Objektiv 'Leuchtturm' auf der Insel Mustikkasaai zu sprengen.<br />Landen Sie anschließend auf der Hauptinsel um das Objektiv 'Dome' zu sprengen und das Forschungslabor (OBJ 'Labor') zu nehmen. Durchsuchen Sie dieses nach Informationen über das Forschungsprojekt.<br /><br />Hierbei müssen Sie die <font color=""#80BFFF"">Boote</font> so platzieren, dass Sie diese für die <font color=""#80BFFF"">Extraktion</font> nutzen können.<br />Zur Not können zwar Boote bei 'Ykspihlaja' genutzt werden, jedoch müssen diese vom Feind erobert werden und wir raten daher an, die eigenen Boote sorgfältig zu platzieren.";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleCreateDiaryRecord_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCreateDiaryRecord_F_Subject";
-					expression="_this setVariable ['Subject',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
-		};
-		class Item120
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={4630.0161,0.21623248,4969.9761};
 			};
 			id=305;
@@ -5429,7 +4928,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item121
+		class Item117
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5443,8 +4942,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_weather_ModuleSettings_useACEWeather";
-					expression="_this setVariable ['useACEWeather',_value,true];";
+					property="ace_weather_ModuleSettings_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
 					class Value
 					{
 						class data
@@ -5456,14 +4955,33 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="ace_weather_ModuleSettings_serverUpdateInterval";
-					expression="_this setVariable ['serverUpdateInterval',_value,true];";
+					property="ace_weather_ModuleSettings_windSimulation";
+					expression="_this setVariable ['windSimulation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_weather_ModuleSettings_updateInterval";
+					expression="_this setVariable ['updateInterval',_value,true];";
 					class Value
 					{
 						class data
@@ -5479,86 +4997,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_weather_ModuleSettings_syncMisc";
-					expression="_this setVariable ['syncMisc',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_weather_ModuleSettings_syncRain";
-					expression="_this setVariable ['syncRain',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_weather_ModuleSettings_enableServerController";
-					expression="_this setVariable ['enableServerController',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_weather_ModuleSettings_syncWind";
-					expression="_this setVariable ['syncWind',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
+				nAttributes=3;
 			};
 		};
-		class Item122
+		class Item118
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5668,7 +5110,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item123
+		class Item119
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5681,7 +5123,7 @@ class Mission
 			type="HeadlessClient_F";
 			atlOffset=-0.46237183;
 		};
-		class Item124
+		class Item120
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5962,7 +5404,7 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item125
+		class Item121
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6014,7 +5456,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item126
+		class Item122
 		{
 			dataType="Marker";
 			position[]={5741.8574,1.2374424e+038,5341.8276};
@@ -6023,7 +5465,7 @@ class Mission
 			id=313;
 			atlOffset=1.2374424e+038;
 		};
-		class Item127
+		class Item123
 		{
 			dataType="Object";
 			class PositionInfo
