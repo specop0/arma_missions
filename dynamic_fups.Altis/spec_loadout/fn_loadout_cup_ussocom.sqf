@@ -30,7 +30,7 @@ private _vest = "CUP_V_B_MTV_TL";
 
 private _backpack = selectRandom ["CUP_B_AssaultPack_Coyote","CUP_B_USMC_MOLLE"];
 private _backpackBig = "CUP_B_USPack_Coyote";
-private _backpackLR = "TTT_Backpack_Funkerfac_Us_Woodland";
+private _backpackLR = "TTT_Backpack_Operator_Radio_US_Woodland";
 
 private _headgear = selectRandom ["CUP_H_USMC_HelmetWDL","CUP_H_USMC_Goggles_HelmetWDL","CUP_H_USMC_Headset_HelmetWDL","CUP_H_USMC_Headset_GoggleW_HelmetWDL"];
 private _headgearPilot = "H_PilotHelmetHeli_B";

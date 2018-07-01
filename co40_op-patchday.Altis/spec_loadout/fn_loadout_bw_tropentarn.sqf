@@ -58,7 +58,7 @@ private _vest = "BWA3_Vest_Rifleman1_Tropen";
 
 private _backpack = "BWA3_TacticalPack_Tropen";
 private _backpackBig = "BWA3_Carryall_Tropen";
-private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Tropentarn"; //"tf_mr3000_bwmod_tropen";
+private _backpackLR = "TTT_Backpack_Operator_Radio_BW_Tropentarn"; //"tf_mr3000_bwmod_tropen";
 
 private _headgear = "BWA3_MICH_Tropen";
 private _headgearPilot = "H_PilotHelmetHeli_B";

@@ -58,7 +58,7 @@ private _vest = "MNP_Vest_DS_2";
 
 private _backpack = "B_AssaultPack_mcamo";
 private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "TTT_Backpack_Funkerfac_Us_Woodland";
+private _backpackLR = "TTT_Backpack_Operator_Radio_US_Woodland";
 
 private _headgear = "H_HelmetB_light_snakeskin";
 private _headgearPilot = selectRandom ["TTT_Helmet_Buzzard","TTT_Helmet_Eagle"];

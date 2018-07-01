@@ -58,7 +58,7 @@ private _vest = "BWA3_Vest_Rifleman1_Fleck";
 
 private _backpack = "BWA3_TacticalPack_Fleck";
 private _backpackBig = "BWA3_Carryall_Fleck";
-private _backpackLR = "TTT_Backpack_Funkerfac_Bw_Flecktarn"; // "tf_mr3000_bwmod";
+private _backpackLR = "TTT_Backpack_Operator_Radio_BW_Flecktarn"; // "tf_mr3000_bwmod";
 
 private _headgear = "BWA3_MICH_Fleck";
 private _headgearPilot = "H_PilotHelmetHeli_B";

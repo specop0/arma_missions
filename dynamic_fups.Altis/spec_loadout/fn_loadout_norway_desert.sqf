@@ -30,7 +30,7 @@ private _vest = selectRandom ["MNP_Vest_NOR_D_2", "MNP_Vest_NOR_D_1"];
 
 private _backpack = "B_AssaultPack_mcamo";
 private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "TTT_Backpack_Funkerfac_Us_Desert";
+private _backpackLR = "TTT_Backpack_Operator_Radio_US_Desert";
 
 private _headgear = "MNP_Boonie_NOR_D";
 private _headgearPilot = "H_PilotHelmetHeli_B";
