@@ -13,7 +13,7 @@ if(isServer) then {
                 case ("TTT_Crate_Ammo_Standard_BW") : {
                     [_x, CRATE_STANDARD_AMMO_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Crate_Weapons_Luncher_BW") : {
+                case ("TTT_Crate_Weapons_Launcher_BW") : {
                     [_x, CRATE_LAUNCHER_CONTENT] call Spec_crate_fnc_filler;
                 };
                 case ("TTT_Crate_Ammo_Grenade_BW") : {
@@ -27,7 +27,7 @@ if(isServer) then {
                             ["9Rnd_45ACP_Mag",8]
                     ]] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Crate_Weapons_Luncher_US") : {
+                case ("TTT_Crate_Weapons_Launcher_US") : {
                     [_x, [
                         ["Titan_AT", 1],
                         ["Titan_AP", 1],

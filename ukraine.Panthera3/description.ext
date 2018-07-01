@@ -28,7 +28,7 @@ respawnDelay = 5;
 respawnDialog = false;
 disabledAI = 1;
 
-// Anton Holoborodko (Антон Голобородько) - http://www.ex.ua/76677715
+// Anton Holoborodko (�?нтон Голобородько) - http://www.ex.ua/76677715
 // https://de.wikipedia.org/wiki/Krimkrise#/media/File:2014-03-09_-_Perevalne_military_base_-_0202.JPG
 // CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
 loadScreen="loading.jpg";

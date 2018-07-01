@@ -17,7 +17,7 @@ if(isServer) then {
         if(_x isKindOf "ReammoBox_F") then {
             switch (typeOf _x) do {
                 // at and aa launcher
-                case ("TTT_Crate_Weapons_Luncher_BW") : {
+                case ("TTT_Crate_Weapons_Launcher_BW") : {
                     [_x,
                         [
                             ["BWA3_Pzf3", 2],

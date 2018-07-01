@@ -5709,7 +5709,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=352;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item352
 		{
@@ -6692,7 +6692,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=412;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item412
 		{
@@ -6707,7 +6707,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=413;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item413
 		{
@@ -6722,7 +6722,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=414;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item414
 		{
@@ -6737,7 +6737,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=415;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item415
 		{
@@ -6752,7 +6752,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=416;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item416
 		{
@@ -6833,7 +6833,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=421;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item421
 		{
@@ -6863,7 +6863,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=423;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item423
 		{
@@ -6878,7 +6878,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=424;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item424
 		{
@@ -22735,7 +22735,7 @@ class Mission
 			{
 			};
 			id=2555;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item656
 		{

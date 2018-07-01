@@ -783,7 +783,7 @@ class Mission
 			{
 			};
 			id=39;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.68294525;
 		};
 		class Item11
@@ -799,7 +799,7 @@ class Mission
 			{
 			};
 			id=40;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.69307709;
 		};
 		class Item12
@@ -815,7 +815,7 @@ class Mission
 			{
 			};
 			id=41;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.73079634;
 		};
 		class Item13
@@ -831,7 +831,7 @@ class Mission
 			{
 			};
 			id=42;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.73699927;
 		};
 		class Item14
@@ -847,7 +847,7 @@ class Mission
 			{
 			};
 			id=43;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.68225074;
 		};
 		class Item15

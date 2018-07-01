@@ -956,7 +956,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=44;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.70000076;
 		};
 		class Item45
@@ -973,7 +973,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=45;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.70003891;
 		};
 		class Item46
@@ -990,7 +990,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=46;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.70004082;
 		};
 		class Item47
@@ -1007,7 +1007,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=47;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.70000076;
 		};
 		class Item48
@@ -1024,7 +1024,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=48;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 			atlOffset=0.70000076;
 		};
 		class Item49
@@ -1114,7 +1114,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=53;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 			atlOffset=0.70000076;
 		};
 		class Item54
@@ -1132,7 +1132,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=54;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 			atlOffset=0.70000076;
 		};
 		class Item55
@@ -1150,7 +1150,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=55;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 			atlOffset=0.69998932;
 		};
 		class Item56

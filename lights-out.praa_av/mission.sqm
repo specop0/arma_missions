@@ -3787,7 +3787,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=238;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item219
 		{
@@ -3803,7 +3803,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=239;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item220
 		{
@@ -3819,7 +3819,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=240;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item221
 		{
@@ -3835,7 +3835,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=241;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item222
 		{
@@ -3851,7 +3851,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=242;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item223
 		{
@@ -3867,7 +3867,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=243;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item224
 		{
@@ -3883,7 +3883,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=244;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item225
 		{
@@ -3899,7 +3899,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=245;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item226
 		{
@@ -3915,7 +3915,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=246;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item227
 		{
@@ -4068,7 +4068,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=255;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item236
 		{
@@ -4085,7 +4085,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=256;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item237
 		{
@@ -4102,7 +4102,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=257;
-			type="TTT_Crate_Weapons_Luncher_US";
+			type="TTT_Crate_Weapons_Launcher_US";
 		};
 		class Item238
 		{
@@ -4118,7 +4118,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=258;
-			type="TTT_Crate_Ammo_Luncher_US";
+			type="TTT_Crate_Medic_Doctor_US";
 		};
 		class Item239
 		{

@@ -14642,7 +14642,7 @@ class Mission
 			{
 			};
 			id=601;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item115
 		{
@@ -14658,7 +14658,7 @@ class Mission
 			{
 			};
 			id=602;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item116
 		{
@@ -15315,7 +15315,7 @@ class Mission
 			{
 			};
 			id=725;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item146
 		{
@@ -15331,7 +15331,7 @@ class Mission
 			{
 			};
 			id=726;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 			atlOffset=0.035827637;
 		};
 		class Item147

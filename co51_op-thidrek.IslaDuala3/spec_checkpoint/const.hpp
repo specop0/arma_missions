@@ -10,7 +10,7 @@
 #define SPEC_ACTION_SHOW_DATA_ID "Spec_action_showData"
 #define SPEC_ACTION_SHOW_DATA_NAME "Zeige Statistik"
 
-#define SPEC_ARRAY_SMUGGLER_ITEMS ["CUP_TKBasicAmmunitionBox_EP1","TTT_Crate_Ammo_Luncher_US"]
+#define SPEC_ARRAY_SMUGGLER_ITEMS ["CUP_TKBasicAmmunitionBox_EP1","TTT_Crate_Medic_Doctor_US"]
 
 // intel
 #define SPEC_VAR_INTEL_COUNT Spec_var_intelCount

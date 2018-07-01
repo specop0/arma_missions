@@ -1444,7 +1444,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=615;
-			type="TTT_Crate_Ammo_Luncher_BW";
+			type="TTT_Crate_Ammo_Launcher_BW";
 		};
 		class Item82
 		{
@@ -1478,7 +1478,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=617;
-			type="TTT_Crate_Ammo_Luncher_BW";
+			type="TTT_Crate_Ammo_Launcher_BW";
 		};
 		class Item84
 		{

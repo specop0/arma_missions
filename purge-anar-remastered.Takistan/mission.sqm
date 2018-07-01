@@ -12058,7 +12058,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=1053;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item186
 		{
@@ -12075,7 +12075,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=1056;
-			type="TTT_Crate_Weapons_Luncher_BW";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item187
 		{
