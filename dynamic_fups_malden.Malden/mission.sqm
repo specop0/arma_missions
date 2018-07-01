@@ -19,7 +19,7 @@ class EditorData
 		pos[]={854.30591,53.93,12102.104};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -33,9 +33,9 @@ addons[]=
 	"acex_sitting",
 	"A3_Structures_F_Items_Electronics",
 	"A3_Supplies_F_Heli_CargoNets",
-	"ttt_vehicles_us_c",
+	"TTT_Vehicles_US",
 	"A3_Structures_F_Mil_Cargo",
-	"ttt_units_us_c",
+	"TTT_Units_US",
 	"CUP_AirVehicles_UH60",
 	"A3_Characters_F",
 	"ace_nouniformrestrictions",
@@ -46,6 +46,7 @@ addons[]=
 	"ace_cargo",
 	"ace_rearm",
 	"A3_Soft_F_Beta_Truck_01",
+	"UK3CB_BAF_Vehicles_Servicing",
 	"UK3CB_BAF_Vehicles_Coyote_Jackal",
 	"rhsusf_vehicles",
 	"r_unfold_RHS",
@@ -59,7 +60,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -110,13 +111,13 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="ttt_vehicles_us_c";
-			name="ttt_vehicles_us_c";
+			className="TTT_Vehicles_US";
+			name="TTT_Vehicles_US";
 		};
 		class Item8
 		{
-			className="ttt_units_us_c";
-			name="ttt_units_us_c";
+			className="TTT_Units_US";
+			name="TTT_Units_US";
 		};
 		class Item9
 		{
@@ -181,40 +182,45 @@ class AddonsMetaData
 		};
 		class Item18
 		{
+			className="UK3CB_BAF_Vehicles_Servicing";
+			name="UK3CB_BAF_Vehicles_Servicing";
+		};
+		class Item19
+		{
 			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
 			name="3CB BAF Vehicles - Coyote and Jackal";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item20
+		class Item21
 		{
 			className="r_unfold_RHS";
 			name="r_unfold_RHS";
 			author="Rallen";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_AirVehicles_A10";
 			name="CUP_AirVehicles_A10";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item24
 		{
 			className="CUP_WheeledVehicles_Dingo";
 			name="CUP_WheeledVehicles_Dingo";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
@@ -296,6 +302,7 @@ class Mission
 			};
 			id=2;
 			type="Flag_NATO_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -345,7 +352,7 @@ class Mission
 			position[]={890.57886,65.700935,12134.662};
 			name="respawn";
 			type="Empty";
-			angle=254.99998;
+			angle=254.99997;
 			id=3;
 			atlOffset=36.770935;
 		};
@@ -355,7 +362,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={889.18317,28.93,12109.018};
-				angles[]={-0,5.1487222,0};
+				angles[]={0,5.1487222,0};
 			};
 			id=4;
 			type="ModuleCurator_F";
@@ -465,7 +472,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={861.98053,29.335281,12122.772};
-				angles[]={-0,6.0473928,0};
+				angles[]={0,6.0473928,0};
 			};
 			side="Empty";
 			flags=4;
@@ -476,6 +483,7 @@ class Mission
 			};
 			id=19;
 			type="Land_CampingTable_F";
+			atlOffset=-0.0062713623;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -525,7 +533,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={861.79645,29.430344,12124.23};
-				angles[]={-0,5.8252048,0};
+				angles[]={0,5.8252048,0};
 			};
 			side="Empty";
 			flags=4;
@@ -534,6 +542,7 @@ class Mission
 			};
 			id=20;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.0061435699;
 		};
 		class Item5
 		{
@@ -541,10 +550,9 @@ class Mission
 			class PositionInfo
 			{
 				position[]={862.32568,29.89394,12122.801};
-				angles[]={-0,5.7768078,0};
+				angles[]={0,5.7768078,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this attachTo [table, [0.45,0,0.57]]";
@@ -553,6 +561,7 @@ class Mission
 			};
 			id=21;
 			type="Land_Laptop_unfolded_F";
+			atlOffset=0.80786705;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -602,7 +611,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={874.08423,29.742203,12128.284};
-				angles[]={-0,5.3055749,0};
+				angles[]={0,5.3055749,0};
 			};
 			side="Empty";
 			flags=4;
@@ -614,6 +623,7 @@ class Mission
 			};
 			id=24;
 			type="B_CargoNet_01_ammo_F";
+			atlOffset=-0.01309967;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -682,7 +692,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={895.44159,32.453667,12234.239};
-				angles[]={-0,1.4305115e-006,0};
+				angles[]={0,1.4305115e-006,0};
 			};
 			side="Empty";
 			flags=4;
@@ -691,7 +701,8 @@ class Mission
 				name="bussard";
 			};
 			id=27;
-			type="TTT_Logistikhelikopter_Us_Woodland";
+			type="TTT_MTA_Heavy_US_Woodland";
+			atlOffset=-0.04271698;
 		};
 		class Item8
 		{
@@ -775,7 +786,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={815.61322,30.217552,12216.141};
-				angles[]={-0,1.1344659,0};
+				angles[]={0,1.1344659,0};
 			};
 			side="Empty";
 			flags=4;
@@ -783,8 +794,8 @@ class Mission
 			{
 			};
 			id=39;
-			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.018953323;
+			type="TTT_Crate_Ammo_Luncher_US";
+			atlOffset=0.018955231;
 		};
 		class Item11
 		{
@@ -792,7 +803,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={815.18817,30.201859,12216.91};
-				angles[]={-0,1.1344659,0};
+				angles[]={0,1.1344659,0};
 			};
 			side="Empty";
 			flags=4;
@@ -800,7 +811,7 @@ class Mission
 			{
 			};
 			id=40;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0032615662;
 		};
 		class Item12
@@ -809,15 +820,15 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.86664,30.183002,12217.874};
-				angles[]={-0,1.1344659,0};
+				angles[]={0,1.1344659,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 			};
 			id=41;
-			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.96894646;
+			type="TTT_Crate_Ammo_Luncher_US";
+			atlOffset=0.96894836;
 		};
 		class Item13
 		{
@@ -825,15 +836,15 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.52222,30.159958,12218.756};
-				angles[]={-0,1.1344659,0};
+				angles[]={0,1.1344659,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 			};
 			id=42;
-			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.94590187;
+			type="TTT_Crate_Ammo_Luncher_US";
+			atlOffset=0.94590378;
 		};
 		class Item14
 		{
@@ -841,15 +852,15 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.23352,30.176636,12219.525};
-				angles[]={-0,1.1344659,0};
+				angles[]={0,1.1344659,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 			};
 			id=43;
-			type="TTT_Logistik_Medic_Us";
-			atlOffset=0.96257973;
+			type="TTT_Crate_Ammo_Luncher_US";
+			atlOffset=0.96258163;
 		};
 		class Item15
 		{
@@ -857,7 +868,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={842.45618,31.563896,12233.572};
-				angles[]={-0,9.5367432e-007,0};
+				angles[]={0,9.5367432e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -867,6 +878,7 @@ class Mission
 			};
 			id=76;
 			type="CUP_B_UH60L_Unarmed_FFV_MEV_US";
+			atlOffset=-0.0019111633;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -904,7 +916,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={901.06073,28.931438,12236.636};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=6;
@@ -920,7 +932,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -939,7 +951,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -964,7 +976,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={902.35565,28.931438,12231.806};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=4;
@@ -980,7 +992,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -999,7 +1011,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1024,7 +1036,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={905.84296,28.931438,12235.662};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=4;
@@ -1040,7 +1052,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1059,7 +1071,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1084,7 +1096,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={907.13593,28.931438,12230.832};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=4;
@@ -1100,7 +1112,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1119,7 +1131,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1168,7 +1180,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.27448,28.931438,12223.441};
-						angles[]={-0,9.5367432e-007,0};
+						angles[]={0,9.5367432e-007,0};
 					};
 					side="West";
 					flags=4;
@@ -1183,7 +1195,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1202,7 +1214,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1227,7 +1239,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.2774,28.931438,12238.441};
-						angles[]={-0,9.5367432e-007,0};
+						angles[]={0,9.5367432e-007,0};
 					};
 					side="West";
 					flags=6;
@@ -1243,7 +1255,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1262,7 +1274,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1287,7 +1299,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.27643,28.931438,12233.439};
-						angles[]={-0,9.5367432e-007,0};
+						angles[]={0,9.5367432e-007,0};
 					};
 					side="West";
 					flags=4;
@@ -1303,7 +1315,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1322,7 +1334,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1347,7 +1359,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.27643,28.931438,12228.441};
-						angles[]={-0,9.5367432e-007,0};
+						angles[]={0,9.5367432e-007,0};
 					};
 					side="West";
 					flags=4;
@@ -1363,7 +1375,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1382,7 +1394,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1425,7 +1437,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={745.74072,30.835726,12126.225};
-				angles[]={-0,0.087268099,0};
+				angles[]={0,0.087268099,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1434,6 +1446,7 @@ class Mission
 			};
 			id=107;
 			type="B_Truck_01_fuel_F";
+			atlOffset=-0.0002784729;
 		};
 		class Item19
 		{
@@ -1441,7 +1454,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={753.54352,31.220232,12125.341};
-				angles[]={-0,0.087266445,0};
+				angles[]={0,0.087266445,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1450,6 +1463,7 @@ class Mission
 			};
 			id=110;
 			type="B_Truck_01_Repair_F";
+			atlOffset=-0.013244629;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1499,7 +1513,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={749.86804,30.837587,12125.853};
-				angles[]={-0,0.087266445,0};
+				angles[]={0,0.087266445,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1508,6 +1522,7 @@ class Mission
 			};
 			id=114;
 			type="B_Truck_01_ammo_F";
+			atlOffset=-0.0079994202;
 		};
 		class Item21
 		{
@@ -1515,7 +1530,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={760.15552,31.125643,12124.544};
-				angles[]={-0,0.087266922,0};
+				angles[]={0,0.087266922,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1524,6 +1539,7 @@ class Mission
 			};
 			id=118;
 			type="B_Truck_01_transport_F";
+			atlOffset=-0.019147873;
 		};
 		class Item22
 		{
@@ -1539,7 +1555,7 @@ class Mission
 			};
 			id=119;
 			type="B_Truck_01_covered_F";
-			atlOffset=0.50711823;
+			atlOffset=0.48797035;
 		};
 		class Item23
 		{
@@ -1547,7 +1563,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={818.13641,31.398277,12112.496};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1556,6 +1572,7 @@ class Mission
 			};
 			id=134;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=-0.273983;
 		};
 		class Item24
 		{
@@ -1563,7 +1580,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={818.21936,31.398277,12103.204};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1572,6 +1589,7 @@ class Mission
 			};
 			id=135;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=-0.273983;
 		};
 		class Item25
 		{
@@ -1579,7 +1597,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={810.31586,31.113907,12121.854};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1588,6 +1606,7 @@ class Mission
 			};
 			id=151;
 			type="rhsusf_m1025_w_m2";
+			atlOffset=-0.03086853;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1637,7 +1656,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={810.27472,31.127953,12114.679};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1646,6 +1665,7 @@ class Mission
 			};
 			id=152;
 			type="rhsusf_m1025_w_m2";
+			atlOffset=-0.016822815;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1695,7 +1715,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={806.75897,30.861053,12110.303};
-				angles[]={-0,2.3543835e-006,0};
+				angles[]={0,2.3543835e-006,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1704,6 +1724,7 @@ class Mission
 			};
 			id=164;
 			type="rhsusf_m998_w_2dr_fulltop";
+			atlOffset=-0.013946533;
 		};
 		class Item28
 		{
@@ -1711,7 +1732,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={806.94702,30.861099,12103.69};
-				angles[]={-0,1.4007092e-006,0};
+				angles[]={0,1.4007092e-006,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1720,6 +1741,7 @@ class Mission
 			};
 			id=165;
 			type="rhsusf_m998_w_2dr_fulltop";
+			atlOffset=-0.013900757;
 		};
 		class Item29
 		{
@@ -1727,7 +1749,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={698.73669,29.842951,12137.118};
-				angles[]={-0,9.5367432e-007,0};
+				angles[]={0,9.5367432e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1736,6 +1758,7 @@ class Mission
 			};
 			id=181;
 			type="CUP_B_A10_CAS_USA";
+			atlOffset=-0.036512375;
 		};
 		class Item30
 		{
@@ -1750,7 +1773,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={854.30591,28.931438,12127.154};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=6;
@@ -1770,7 +1793,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1789,7 +1812,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1814,7 +1837,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={858.09265,28.931438,12125.036};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=4;
@@ -1834,7 +1857,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1853,7 +1876,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1878,7 +1901,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={851.30768,28.931438,12123.277};
-						angles[]={-0,6.0213871,0};
+						angles[]={0,6.0213871,0};
 					};
 					side="West";
 					flags=4;
@@ -1897,7 +1920,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1916,7 +1939,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -1954,7 +1977,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={860.28857,28.931438,12134.485};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=6;
@@ -1973,7 +1996,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -1992,7 +2015,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2017,7 +2040,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={859.56476,28.931438,12137.003};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2036,7 +2059,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2055,7 +2078,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2080,7 +2103,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={858.88763,28.931438,12139.405};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2099,7 +2122,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2118,7 +2141,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2143,7 +2166,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={858.30341,28.931438,12142.027};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2161,7 +2184,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2180,7 +2203,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2205,7 +2228,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={857.64795,28.931438,12144.447};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2224,7 +2247,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2243,7 +2266,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2268,7 +2291,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={856.97931,28.931438,12147.244};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2286,7 +2309,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2305,7 +2328,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2343,7 +2366,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={855.89166,28.931438,12133.46};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=6;
@@ -2362,7 +2385,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2381,7 +2404,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2406,7 +2429,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={855.16797,28.931438,12135.976};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2425,7 +2448,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2444,7 +2467,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2469,7 +2492,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={854.4892,28.931438,12138.377};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2488,7 +2511,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2507,7 +2530,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2532,7 +2555,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={853.90338,28.931438,12141.001};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2550,7 +2573,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2569,7 +2592,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2594,7 +2617,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={853.25098,28.931438,12143.421};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2613,7 +2636,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2632,7 +2655,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2657,7 +2680,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={852.58282,28.931438,12146.216};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2675,7 +2698,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2694,7 +2717,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2732,7 +2755,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={851.21674,28.931438,12132.271};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=6;
@@ -2751,7 +2774,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2770,7 +2793,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2795,7 +2818,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={850.495,28.931438,12134.788};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2814,7 +2837,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2833,7 +2856,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2858,7 +2881,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.81573,28.931438,12137.19};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2877,7 +2900,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2896,7 +2919,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2921,7 +2944,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={849.23358,28.931438,12139.813};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -2939,7 +2962,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -2958,7 +2981,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -2983,7 +3006,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={848.57593,28.931438,12142.232};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -3002,7 +3025,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -3021,7 +3044,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -3046,7 +3069,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={847.90753,28.931438,12145.029};
-						angles[]={-0,2.8797948,0};
+						angles[]={0,2.8797948,0};
 					};
 					side="West";
 					flags=4;
@@ -3064,7 +3087,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -3083,7 +3106,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -3114,7 +3137,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={873.37555,28.93,12107.136};
-				angles[]={-0,5.1487222,0};
+				angles[]={0,5.1487222,0};
 			};
 			id=257;
 			type="ModuleCurator_F";
@@ -3224,7 +3247,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={859.2049,28.93,12123.261};
-				angles[]={-0,2.0943964,0};
+				angles[]={0,2.0943964,0};
 			};
 			id=260;
 			type="ModuleCurator_F";
@@ -3359,7 +3382,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -3378,7 +3401,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -3421,7 +3444,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 							class Value
 							{
 								class data
@@ -3440,7 +3463,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
 							{
 								class data
@@ -3472,7 +3495,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={862.03314,28.93,12114.452};
-				angles[]={-0,2.0071297,0};
+				angles[]={0,2.0071297,0};
 			};
 			id=269;
 			type="ModuleCurator_F";
@@ -3582,7 +3605,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={859.45593,28.93,12113.513};
-				angles[]={-0,2.0071297,0};
+				angles[]={0,2.0071297,0};
 			};
 			id=270;
 			type="ModuleCurator_F";
@@ -3692,9 +3715,9 @@ class Mission
 			position[]={862.3996,53.353249,12122.785};
 			name="marker_laptop";
 			type="Empty";
-			angle=254.99998;
+			angle=254.99997;
 			id=271;
-			atlOffset=23.615217;
+			atlOffset=23.613922;
 		};
 		class Item40
 		{
@@ -3702,7 +3725,7 @@ class Mission
 			position[]={873.79749,48.626015,12127.881};
 			name="marker_loadoutbox";
 			type="Empty";
-			angle=254.99998;
+			angle=254.99997;
 			id=272;
 			atlOffset=18.051323;
 		};
@@ -3712,7 +3735,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={786.18048,30.544458,12117.676};
-				angles[]={-0,0.17453527,0};
+				angles[]={0,0.17453527,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3720,7 +3743,8 @@ class Mission
 			{
 			};
 			id=285;
-			type="TTT_Schuetzenpanzer_Us_Woodland";
+			type="TTT_IFV_US_Woodland";
+			atlOffset=-0.17025185;
 		};
 		class Item42
 		{
@@ -3728,7 +3752,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.22626,31.628548,12121.601};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3737,6 +3761,7 @@ class Mission
 			};
 			id=286;
 			type="CUP_B_Dingo_GER_Wdl";
+			atlOffset=-0.035800934;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3767,7 +3792,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.14758,31.63961,12113.353};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3776,6 +3801,7 @@ class Mission
 			};
 			id=287;
 			type="CUP_B_Dingo_GER_Wdl";
+			atlOffset=-0.024738312;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3806,7 +3832,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={818.11682,31.388382,12120.503};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3815,6 +3841,7 @@ class Mission
 			};
 			id=291;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=-0.28387833;
 		};
 		class Item45
 		{
@@ -3822,7 +3849,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={810.27637,31.129448,12106.172};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3831,6 +3858,7 @@ class Mission
 			};
 			id=292;
 			type="rhsusf_m1025_w_m2";
+			atlOffset=-0.015327454;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3880,7 +3908,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={814.28821,31.641663,12104.05};
-				angles[]={-0,4.4703484e-007,0};
+				angles[]={0,4.4703484e-007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3889,6 +3917,7 @@ class Mission
 			};
 			id=293;
 			type="CUP_B_Dingo_GER_Wdl";
+			atlOffset=-0.022686005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3977,7 +4006,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={884.06,28.93,12123.899};
-				angles[]={-0,5.5850549,0};
+				angles[]={0,5.5850549,0};
 			};
 			name="hc1";
 			isPlayable=1;
@@ -4049,7 +4078,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={895.06659,28.93,12233.757};
-				angles[]={-0,1.4305115e-006,0};
+				angles[]={0,1.4305115e-006,0};
 			};
 			side="Empty";
 			flags=4;
