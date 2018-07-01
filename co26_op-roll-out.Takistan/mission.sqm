@@ -25,7 +25,7 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"ttt_vehicles_bw_c",
+	"TTT_Vehicles_BW",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Soft_F_HEMTT",
@@ -40,7 +40,7 @@ addons[]=
 	"A3_Soft_F_MRAP_02",
 	"A3_Weapons_F_Ammoboxes",
 	"task_force_radio_items",
-	"ttt_units_bw_c",
+	"TTT_Units_BW",
 	"A3_Structures_F_Mil_Flags",
 	"ace_repair",
 	"CAMisc",
@@ -421,7 +421,7 @@ class Mission
 				name="logistic_heli";
 			};
 			id=28;
-			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
+			type="TTT_MTA_SAR_BW_Tropentarn";
 		};
 		class Item29
 		{
@@ -483,7 +483,7 @@ class Mission
 				name="dingo";
 			};
 			id=32;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item33
 		{
@@ -500,7 +500,7 @@ class Mission
 				name="dingo_1";
 			};
 			id=33;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item34
 		{
@@ -517,7 +517,7 @@ class Mission
 				name="dingo_2";
 			};
 			id=34;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item35
 		{
@@ -534,7 +534,7 @@ class Mission
 				name="dingo_3";
 			};
 			id=35;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item36
 		{
@@ -789,7 +789,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=51;
-			type="TTT_Oplfahrzeug_Bw_Tropentarn";
+			type="TTT_LUV_COM_BW_Tropentarn";
 		};
 		class Item52
 		{
@@ -871,7 +871,7 @@ class Mission
 				name="dingo_5";
 			};
 			id=56;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item57
 		{
@@ -889,7 +889,7 @@ class Mission
 				name="dingo_4";
 			};
 			id=57;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item58
 		{
@@ -1129,7 +1129,7 @@ class Mission
 				init="this call Spec_fnc_crateMedic;";
 			};
 			id=72;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item73
 		{
@@ -1257,7 +1257,7 @@ class Mission
 				init="this call Spec_fnc_crateMedic;";
 			};
 			id=80;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item81
 		{
@@ -1292,7 +1292,7 @@ class Mission
 				name="dingo_8";
 			};
 			id=82;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item83
 		{
@@ -1310,7 +1310,7 @@ class Mission
 				name="dingo_7";
 			};
 			id=83;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item84
 		{
@@ -1328,7 +1328,7 @@ class Mission
 				name="dingo_6";
 			};
 			id=84;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item85
 		{
@@ -1359,7 +1359,7 @@ class Mission
 				name="logistic_heli_2";
 			};
 			id=86;
-			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
+			type="TTT_MTA_SAR_BW_Tropentarn";
 		};
 		class Item87
 		{
@@ -1484,7 +1484,7 @@ class Mission
 				init="this call Spec_fnc_crateMedic;";
 			};
 			id=94;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item95
 		{
@@ -1509,7 +1509,7 @@ class Mission
 						name="pilot_1_co";
 					};
 					id=96;
-					type="TTT_Weiss4_Bw_Tropentarn";
+					type="TTT_White_4_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -1526,7 +1526,7 @@ class Mission
 						name="pilot_1";
 					};
 					id=97;
-					type="TTT_Weiss2_Bw_Tropentarn";
+					type="TTT_White_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -1650,7 +1650,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=106;
-					type="TTT_Schwarz1_Bw_Tropentarn";
+					type="TTT_Black_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -1667,7 +1667,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=107;
-					type="TTT_Schwarz2_Bw_Tropentarn";
+					type="TTT_Black_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -1752,7 +1752,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=113;
-					type="TTT_Blau1_Bw_Tropentarn";
+					type="TTT_Blue_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -1769,7 +1769,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=114;
-					type="TTT_Blau2_Bw_Tropentarn";
+					type="TTT_Blue_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -1881,7 +1881,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=122;
-					type="TTT_Rot1_Bw_Tropentarn";
+					type="TTT_Red_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -1898,7 +1898,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=123;
-					type="TTT_Rot2_Bw_Tropentarn";
+					type="TTT_Red_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2002,7 +2002,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=131;
-					type="TTT_Violett1_Bw_Tropentarn";
+					type="TTT_Violet_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2019,7 +2019,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=132;
-					type="TTT_Violett2_Bw_Tropentarn";
+					type="TTT_Violet_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2135,7 +2135,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=141;
-					type="TTT_Blau5_Bw_Tropentarn";
+					type="TTT_Blue_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2151,7 +2151,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=142;
-					type="TTT_Blau6_Bw_Tropentarn";
+					type="TTT_Blue_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2261,7 +2261,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=150;
-					type="TTT_Blau3_Bw_Tropentarn";
+					type="TTT_Blue_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2277,7 +2277,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=151;
-					type="TTT_Blau4_Bw_Tropentarn";
+					type="TTT_Blue_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2386,7 +2386,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=159;
-					type="TTT_Schwarz5_Bw_Tropentarn";
+					type="TTT_Black_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2402,7 +2402,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=160;
-					type="TTT_Schwarz6_Bw_Tropentarn";
+					type="TTT_Black_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2485,7 +2485,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=166;
-					type="TTT_Schwarz3_Bw_Tropentarn";
+					type="TTT_Black_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2501,7 +2501,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=167;
-					type="TTT_Schwarz4_Bw_Tropentarn";
+					type="TTT_Black_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2597,7 +2597,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=174;
-					type="TTT_Rot3_Bw_Tropentarn";
+					type="TTT_Red_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2613,7 +2613,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=175;
-					type="TTT_Rot4_Bw_Tropentarn";
+					type="TTT_Red_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2729,7 +2729,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=184;
-					type="TTT_Rot5_Bw_Tropentarn";
+					type="TTT_Red_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2745,7 +2745,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=185;
-					type="TTT_Rot6_Bw_Tropentarn";
+					type="TTT_Red_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2861,7 +2861,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=194;
-					type="TTT_Violett3_Bw_Tropentarn";
+					type="TTT_Violet_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2877,7 +2877,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=195;
-					type="TTT_Violett4_Bw_Tropentarn";
+					type="TTT_Violet_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -2983,7 +2983,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=203;
-					type="TTT_Violett5_Bw_Tropentarn";
+					type="TTT_Violet_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -2999,7 +2999,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=204;
-					type="TTT_Violett6_Bw_Tropentarn";
+					type="TTT_Violet_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -3127,7 +3127,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=214;
-					type="TTT_Schwarz1_Bw_Tropentarn";
+					type="TTT_Black_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -3144,7 +3144,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=215;
-					type="TTT_Schwarz2_Bw_Tropentarn";
+					type="TTT_Black_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -3310,7 +3310,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=228;
-					type="TTT_Blau1_Bw_Tropentarn";
+					type="TTT_Blue_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -3327,7 +3327,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=229;
-					type="TTT_Blau2_Bw_Tropentarn";
+					type="TTT_Blue_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -3461,7 +3461,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=239;
-					type="TTT_Rot1_Bw_Tropentarn";
+					type="TTT_Red_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -3478,7 +3478,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=240;
-					type="TTT_Rot2_Bw_Tropentarn";
+					type="TTT_Red_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -3666,7 +3666,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=255;
-					type="TTT_Violett1_Bw_Tropentarn";
+					type="TTT_Violet_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -3683,7 +3683,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=256;
-					type="TTT_Violett2_Bw_Tropentarn";
+					type="TTT_Violet_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -4582,7 +4582,7 @@ class Mission
 						rank="COLONEL";
 					};
 					id=322;
-					type="TTT_Gelb1_Bw_Tropentarn";
+					type="TTT_Yellow_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -4624,7 +4624,7 @@ class Mission
 						rank="COLONEL";
 					};
 					id=325;
-					type="TTT_Weiss1_Bw_Tropentarn";
+					type="TTT_White_1_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -4655,7 +4655,7 @@ class Mission
 						rank="COLONEL";
 					};
 					id=327;
-					type="TTT_Gelb2_Bw_Tropentarn";
+					type="TTT_Yellow_2_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -4697,7 +4697,7 @@ class Mission
 						rank="COLONEL";
 					};
 					id=330;
-					type="TTT_Weiss3_Bw_Tropentarn";
+					type="TTT_White_3_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -4727,7 +4727,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=332;
-					type="TTT_Gruen1_Bw_Tropentarn";
+					type="TTT_Green_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -4743,7 +4743,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=333;
-					type="TTT_Gruen2_Bw_Tropentarn";
+					type="TTT_Green_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -4759,7 +4759,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=334;
-					type="TTT_Gruen3_Bw_Tropentarn";
+					type="TTT_Green_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -4884,7 +4884,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=344;
-					type="TTT_Braun1_Bw_Tropentarn";
+					type="TTT_Brown_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -4900,7 +4900,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=345;
-					type="TTT_Braun2_Bw_Tropentarn";
+					type="TTT_Brown_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -4916,7 +4916,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=346;
-					type="TTT_Braun3_Bw_Tropentarn";
+					type="TTT_Brown_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -5673,7 +5673,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=390;
-					type="TTT_Rot3_Bw_Tropentarn";
+					type="TTT_Red_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -5689,7 +5689,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=391;
-					type="TTT_Rot4_Bw_Tropentarn";
+					type="TTT_Red_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -5781,7 +5781,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=398;
-					type="TTT_Rot5_Bw_Tropentarn";
+					type="TTT_Red_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -5797,7 +5797,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=399;
-					type="TTT_Rot6_Bw_Tropentarn";
+					type="TTT_Red_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -5904,7 +5904,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=407;
-					type="TTT_Violett5_Bw_Tropentarn";
+					type="TTT_Violet_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -5920,7 +5920,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=408;
-					type="TTT_Violett6_Bw_Tropentarn";
+					type="TTT_Violet_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6012,7 +6012,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=415;
-					type="TTT_Violett3_Bw_Tropentarn";
+					type="TTT_Violet_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6028,7 +6028,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=416;
-					type="TTT_Violett4_Bw_Tropentarn";
+					type="TTT_Violet_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6120,7 +6120,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=423;
-					type="TTT_Schwarz3_Bw_Tropentarn";
+					type="TTT_Black_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6136,7 +6136,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=424;
-					type="TTT_Schwarz4_Bw_Tropentarn";
+					type="TTT_Black_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6228,7 +6228,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=431;
-					type="TTT_Schwarz5_Bw_Tropentarn";
+					type="TTT_Black_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6244,7 +6244,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=432;
-					type="TTT_Schwarz6_Bw_Tropentarn";
+					type="TTT_Black_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6347,7 +6347,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=440;
-					type="TTT_Blau3_Bw_Tropentarn";
+					type="TTT_Blue_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6363,7 +6363,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=441;
-					type="TTT_Blau4_Bw_Tropentarn";
+					type="TTT_Blue_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6455,7 +6455,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=448;
-					type="TTT_Blau5_Bw_Tropentarn";
+					type="TTT_Blue_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6471,7 +6471,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=449;
-					type="TTT_Blau6_Bw_Tropentarn";
+					type="TTT_Blue_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6663,7 +6663,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=456;
-					type="TTT_Violett1_Bw_Tropentarn";
+					type="TTT_Violet_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6680,7 +6680,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=457;
-					type="TTT_Violett2_Bw_Tropentarn";
+					type="TTT_Violet_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6751,7 +6751,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=462;
-					type="TTT_Violett4_Bw_Tropentarn";
+					type="TTT_Violet_4_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6768,7 +6768,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=463;
-					type="TTT_Violett3_Bw_Tropentarn";
+					type="TTT_Violet_3_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6862,7 +6862,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=470;
-					type="TTT_Violett5_Bw_Tropentarn";
+					type="TTT_Violet_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -6878,7 +6878,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=471;
-					type="TTT_Violett6_Bw_Tropentarn";
+					type="TTT_Violet_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -6997,7 +6997,7 @@ class Mission
 						rank="MAJOR";
 					};
 					id=480;
-					type="TTT_Rot1_Bw_Tropentarn";
+					type="TTT_Red_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -7014,7 +7014,7 @@ class Mission
 						rank="CAPTAIN";
 					};
 					id=481;
-					type="TTT_Rot2_Bw_Tropentarn";
+					type="TTT_Red_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -7097,7 +7097,7 @@ class Mission
 						rank="LIEUTENANT";
 					};
 					id=487;
-					type="TTT_Rot3_Bw_Tropentarn";
+					type="TTT_Red_3_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -7113,7 +7113,7 @@ class Mission
 						rank="SERGEANT";
 					};
 					id=488;
-					type="TTT_Rot4_Bw_Tropentarn";
+					type="TTT_Red_4_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -7196,7 +7196,7 @@ class Mission
 						rank="CORPORAL";
 					};
 					id=494;
-					type="TTT_Rot5_Bw_Tropentarn";
+					type="TTT_Red_5_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -7212,7 +7212,7 @@ class Mission
 						skill=0.40000001;
 					};
 					id=495;
-					type="TTT_Rot6_Bw_Tropentarn";
+					type="TTT_Red_6_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -7310,7 +7310,7 @@ class Mission
 						name="spotter_1";
 					};
 					id=502;
-					type="TTT_Gruen1_Bw_Tropentarn";
+					type="TTT_Green_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -7328,7 +7328,7 @@ class Mission
 						name="spotter_2";
 					};
 					id=503;
-					type="TTT_Gruen2_Bw_Tropentarn";
+					type="TTT_Green_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -7346,7 +7346,7 @@ class Mission
 						name="spotter_3";
 					};
 					id=504;
-					type="TTT_Gruen3_Bw_Tropentarn";
+					type="TTT_Green_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -7529,7 +7529,7 @@ class Mission
 						name="pilot_2_co";
 					};
 					id=517;
-					type="TTT_Bussard1_Bw_Tropentarn";
+					type="TTT_Buzzard_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -7546,7 +7546,7 @@ class Mission
 						name="pilot_2";
 					};
 					id=518;
-					type="TTT_Bussard1_Bw_Tropentarn";
+					type="TTT_Buzzard_1_BW_Tropentarn";
 				};
 				class Item2
 				{

@@ -65,7 +65,7 @@ addons[]=
 	"A3_Weapons_F",
 	"r_unfold",
 	"A3_Structures_F_Furniture",
-	"ttt_units_us_c",
+	"TTT_Units_US",
 	"CUP_WheeledVehicles_Skoda",
 	"CUP_WheeledVehicles_Ural",
 	"CUP_WheeledVehicles_LR",
@@ -105,7 +105,7 @@ addons[]=
 	"ace_repair",
 	"CUP_Editor_Signs_Config",
 	"ace_dragging",
-	"ttt_units_bw_c",
+	"TTT_Units_BW",
 	"A3_Structures_F_Walls",
 	"CUP_Editor_A2_Roads_Config"
 };
@@ -285,8 +285,8 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="ttt_units_us_c";
-			name="ttt_units_us_c";
+			className="TTT_Units_US";
+			name="TTT_Units_US";
 		};
 		class Item30
 		{
@@ -482,8 +482,8 @@ class AddonsMetaData
 		};
 		class Item62
 		{
-			className="ttt_units_bw_c";
-			name="ttt_units_bw_c";
+			className="TTT_Units_BW";
+			name="TTT_Units_BW";
 		};
 		class Item63
 		{
@@ -6627,7 +6627,7 @@ class Mission
 			{
 			};
 			id=1026;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 			atlOffset=0.84898758;
 			class CustomAttributes
 			{
@@ -14534,7 +14534,7 @@ class Mission
 			{
 			};
 			id=1956;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=-0.00054073334;
 			class CustomAttributes
 			{
@@ -14574,7 +14574,7 @@ class Mission
 			{
 			};
 			id=1957;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.00048160553;
 		};
 		class Item433
@@ -14591,7 +14591,7 @@ class Mission
 			{
 			};
 			id=1961;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=-0.000415802;
 		};
 		class Item434
@@ -14608,7 +14608,7 @@ class Mission
 			{
 			};
 			id=1962;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=-0.0004529953;
 		};
 		class Item435
@@ -14625,7 +14625,7 @@ class Mission
 			{
 			};
 			id=1963;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=-0.0011882782;
 		};
 		class Item436
@@ -14642,7 +14642,7 @@ class Mission
 			{
 			};
 			id=1964;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item437
 		{
@@ -14658,7 +14658,7 @@ class Mission
 			{
 			};
 			id=1965;
-			type="TTT_Logistik_Werfermunition_Bw";
+			type="TTT_Crate_Ammo_Luncher_BW";
 			atlOffset=-0.00047492981;
 		};
 		class Item438
@@ -14675,7 +14675,7 @@ class Mission
 			{
 			};
 			id=1966;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 		};
 		class Item439
 		{
@@ -14742,7 +14742,7 @@ class Mission
 			{
 			};
 			id=1970;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.012424469;
 			class CustomAttributes
 			{
@@ -14782,7 +14782,7 @@ class Mission
 			{
 			};
 			id=1971;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0086326599;
 		};
 		class Item444
@@ -14799,7 +14799,7 @@ class Mission
 			{
 			};
 			id=1972;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0015077591;
 		};
 		class Item445
@@ -14816,7 +14816,7 @@ class Mission
 			{
 			};
 			id=1973;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0092554092;
 		};
 		class Item446
@@ -14833,7 +14833,7 @@ class Mission
 			{
 			};
 			id=1974;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.050174713;
 		};
 		class Item447
@@ -14850,7 +14850,7 @@ class Mission
 			{
 			};
 			id=1975;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 			atlOffset=-2.0980835e-005;
 		};
 		class Item448
@@ -14866,7 +14866,7 @@ class Mission
 			{
 			};
 			id=1976;
-			type="TTT_Logistik_Werfermunition_Bw";
+			type="TTT_Crate_Ammo_Luncher_BW";
 			atlOffset=0.24070358;
 		};
 		class Item449
@@ -14883,7 +14883,7 @@ class Mission
 			{
 			};
 			id=1977;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			atlOffset=-0.0003156662;
 		};
 		class Item450

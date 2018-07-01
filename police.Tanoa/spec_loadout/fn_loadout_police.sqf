@@ -128,7 +128,7 @@ if(_parameterCorrect) then {
                 _headgear = "H_Beret_gen_F";
             };
             case CLASS_MG : {
-                _headgear = "TTT_Berets_Logo";
+                _headgear = "TTT_Beret_Logo";
             };
         };
         _unit addHeadgear _headgear;

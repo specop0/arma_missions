@@ -39,11 +39,11 @@ addons[]=
 	"A3_Structures_F_Mil_BagBunker",
 	"A3_Structures_F_Walls",
 	"rhsusf_vehicles",
-	"ttt_vehicles_us_c",
+	"TTT_Vehicles_US",
 	"A3_Soft_F_Gamma_Truck_01",
 	"ace_realisticnames",
 	"ace_cargo",
-	"ttt_units_us_c",
+	"TTT_Units_US",
 	"ace_refuel",
 	"ace_repair",
 	"ace_rearm",
@@ -138,8 +138,8 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="ttt_vehicles_us_c";
-			name="ttt_vehicles_us_c";
+			className="TTT_Vehicles_US";
+			name="TTT_Vehicles_US";
 		};
 		class Item10
 		{
@@ -164,8 +164,8 @@ class AddonsMetaData
 		};
 		class Item13
 		{
-			className="ttt_units_us_c";
-			name="ttt_units_us_c";
+			className="TTT_Units_US";
+			name="TTT_Units_US";
 		};
 		class Item14
 		{
@@ -1455,7 +1455,7 @@ class Mission
 			{
 			};
 			id=427;
-			type="TTT_Logistikhelikopter_Us_Woodland";
+			type="TTT_MTA_Heavy_US_Woodland";
 		};
 		class Item22
 		{
@@ -1471,7 +1471,7 @@ class Mission
 			{
 			};
 			id=431;
-			type="TTT_Logistikhelikopter_Us_Woodland";
+			type="TTT_MTA_Heavy_US_Woodland";
 		};
 		class Item23
 		{
@@ -1504,7 +1504,7 @@ class Mission
 			{
 			};
 			id=434;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item25
 		{
@@ -1520,7 +1520,7 @@ class Mission
 			{
 			};
 			id=441;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item26
 		{
@@ -1536,7 +1536,7 @@ class Mission
 			{
 			};
 			id=442;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.089999199;
 			class CustomAttributes
 			{
@@ -1576,7 +1576,7 @@ class Mission
 			{
 			};
 			id=446;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.089999199;
 			class CustomAttributes
 			{
@@ -1775,7 +1775,7 @@ class Mission
 			{
 			};
 			id=461;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 			atlOffset=0.090952873;
 		};
 		class Item36
@@ -1791,7 +1791,7 @@ class Mission
 			{
 			};
 			id=462;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item37
 		{
@@ -1806,7 +1806,7 @@ class Mission
 			{
 			};
 			id=463;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item38
 		{
@@ -1821,7 +1821,7 @@ class Mission
 			{
 			};
 			id=464;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 			atlOffset=0.0033864975;
 		};
 		class Item39
@@ -1838,7 +1838,7 @@ class Mission
 			{
 			};
 			id=465;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item40
 		{
@@ -1854,7 +1854,7 @@ class Mission
 			{
 			};
 			id=466;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item41
 		{
@@ -1870,7 +1870,7 @@ class Mission
 			{
 			};
 			id=467;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item42
 		{
@@ -1886,7 +1886,7 @@ class Mission
 			{
 			};
 			id=468;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item43
 		{
@@ -1902,7 +1902,7 @@ class Mission
 			{
 			};
 			id=469;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item44
 		{
@@ -1918,7 +1918,7 @@ class Mission
 			{
 			};
 			id=470;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item45
 		{
@@ -1934,7 +1934,7 @@ class Mission
 			{
 			};
 			id=471;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item46
 		{
@@ -1950,7 +1950,7 @@ class Mission
 			{
 			};
 			id=472;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item47
 		{
@@ -1966,7 +1966,7 @@ class Mission
 			{
 			};
 			id=473;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.085991859;
 		};
 		class Item48
@@ -1983,7 +1983,7 @@ class Mission
 			{
 			};
 			id=474;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item49
 		{
@@ -1999,7 +1999,7 @@ class Mission
 			{
 			};
 			id=475;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.087434769;
 		};
 		class Item50
@@ -2016,7 +2016,7 @@ class Mission
 			{
 			};
 			id=476;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item51
 		{
@@ -2032,7 +2032,7 @@ class Mission
 			{
 			};
 			id=479;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0042991638;
 		};
 		class Item52
@@ -2049,7 +2049,7 @@ class Mission
 			{
 			};
 			id=480;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0042991638;
 		};
 		class Item53
@@ -2066,7 +2066,7 @@ class Mission
 			{
 			};
 			id=483;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0011291504;
 			class CustomAttributes
 			{
@@ -2106,7 +2106,7 @@ class Mission
 			{
 			};
 			id=484;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2145,7 +2145,7 @@ class Mission
 			{
 			};
 			id=487;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2184,7 +2184,7 @@ class Mission
 			{
 			};
 			id=488;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.001083374;
 			class CustomAttributes
 			{
@@ -2224,7 +2224,7 @@ class Mission
 			{
 			};
 			id=489;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0060472488;
 			class CustomAttributes
 			{
@@ -2264,7 +2264,7 @@ class Mission
 			{
 			};
 			id=490;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0071763992;
 			class CustomAttributes
 			{
@@ -2304,7 +2304,7 @@ class Mission
 			{
 			};
 			id=492;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			atlOffset=0.079978943;
 			class CustomAttributes
 			{
@@ -2344,7 +2344,7 @@ class Mission
 			{
 			};
 			id=493;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2383,7 +2383,7 @@ class Mission
 			{
 			};
 			id=494;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2422,7 +2422,7 @@ class Mission
 			{
 			};
 			id=495;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2461,7 +2461,7 @@ class Mission
 			{
 			};
 			id=496;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.087787628;
 			class CustomAttributes
 			{
@@ -2501,7 +2501,7 @@ class Mission
 			{
 			};
 			id=497;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.088176727;
 			class CustomAttributes
 			{
@@ -2541,7 +2541,7 @@ class Mission
 			{
 			};
 			id=498;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2580,7 +2580,7 @@ class Mission
 			{
 			};
 			id=499;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.0049629211;
 			class CustomAttributes
 			{
@@ -12773,7 +12773,7 @@ class Mission
 			{
 			};
 			id=1647;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12872,7 +12872,7 @@ class Mission
 			{
 			};
 			id=1649;
-			type="TTT_Sanitaetshelikopter_Us_Woodland";
+			type="TTT_MTA_SAR_US_Woodland";
 			atlOffset=-0.11419964;
 		};
 		class Item251
@@ -17955,7 +17955,7 @@ class Mission
 			{
 			};
 			id=2032;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.00024795532;
 		};
 		class Item302
@@ -17972,7 +17972,7 @@ class Mission
 			{
 			};
 			id=2033;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item303
 		{
@@ -17988,7 +17988,7 @@ class Mission
 			{
 			};
 			id=2034;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0014419556;
 		};
 		class Item304
@@ -18005,7 +18005,7 @@ class Mission
 			{
 			};
 			id=2035;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.0069484711;
 		};
 		class Item305

@@ -7,27 +7,27 @@ if(isServer) then {
     {
         if(_x isKindOf "ReammoBox_F") then {
             switch (typeOf _x) do {
-                case ("TTT_Logistik_Medic_Bw") : {
+                case ("TTT_Crate_Medic_Doctor_BW") : {
                     [_x, CRATE_MEDIC_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Standardmunition_Bw") : {
+                case ("TTT_Crate_Ammo_Standard_BW") : {
                     [_x, CRATE_STANDARD_AMMO_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Werfer_Bw") : {
+                case ("TTT_Crate_Weapons_Luncher_BW") : {
                     [_x, CRATE_LAUNCHER_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Granaten_Bw") : {
+                case ("TTT_Crate_Ammo_Grenade_BW") : {
                     [_x, CRATE_GRENADE_CONTENT] call Spec_crate_fnc_filler;
                 };
                 // enemy
-                case ("TTT_Logistik_Standardmunition_Us") : {
+                case ("TTT_Crate_Ammo_Standard_US") : {
                     [_x, [
                             ["30Rnd_556x45_Stanag",40],
                             ["200Rnd_65x39_cased_Box",6],
                             ["9Rnd_45ACP_Mag",8]
                     ]] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Werfer_Us") : {
+                case ("TTT_Crate_Weapons_Luncher_US") : {
                     [_x, [
                         ["Titan_AT", 1],
                         ["Titan_AP", 1],

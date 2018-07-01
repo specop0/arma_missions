@@ -30,7 +30,7 @@ addons[]=
 	"A3_Air_F_Heli_Light_01",
 	"ace_realisticnames",
 	"CUP_AirVehicles_Mi8",
-	"ttt_units_us_c",
+	"TTT_Units_US",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_Mil_Cargo",
 	"CUP_WheeledVehicles_UAZ",
@@ -103,8 +103,8 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="ttt_units_us_c";
-			name="ttt_units_us_c";
+			className="TTT_Units_US";
+			name="TTT_Units_US";
 		};
 		class Item6
 		{
@@ -485,7 +485,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=10;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item10
 		{
@@ -502,7 +502,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=11;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item11
 		{
@@ -519,7 +519,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=12;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item12
 		{
@@ -536,7 +536,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=17;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item13
 		{
@@ -690,7 +690,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=28;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.021900177;
 		};
 		class Item17
@@ -709,7 +709,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=29;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.017641068;
 		};
 		class Item18
@@ -728,7 +728,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=30;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.014823914;
 		};
 		class Item19
@@ -747,7 +747,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=31;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.010791779;
 		};
 		class Item20
@@ -765,7 +765,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=32;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item21
 		{
@@ -782,7 +782,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=33;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item22
 		{
@@ -798,7 +798,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=35;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.71934509;
 		};
 		class Item23
@@ -815,7 +815,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=36;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.72076607;
 		};
 		class Item24
@@ -832,7 +832,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=37;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.7227478;
 		};
 		class Item25
@@ -849,7 +849,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=38;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.58759308;
 		};
 		class Item26
@@ -866,7 +866,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=39;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.50471687;
 		};
 		class Item27
@@ -883,7 +883,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=40;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 			atlOffset=0.72290039;
 		};
 		class Item28
@@ -902,7 +902,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=43;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 			atlOffset=0.0033473969;
 		};
 		class Item29
@@ -921,7 +921,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=44;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 			atlOffset=0.0011978149;
 		};
 		class Item30
@@ -9468,7 +9468,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=767;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			atlOffset=0.013027191;
 			class CustomAttributes
 			{
@@ -9509,7 +9509,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=768;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 			atlOffset=0.0090427399;
 			class CustomAttributes
 			{
@@ -9550,7 +9550,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=769;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item132
 		{
@@ -9567,7 +9567,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=770;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item133
 		{
@@ -9584,7 +9584,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=771;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item134
 		{
@@ -9601,7 +9601,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=772;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item135
 		{
@@ -9619,7 +9619,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=773;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.025411606;
 		};
 		class Item136
@@ -9638,7 +9638,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=774;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.021286011;
 		};
 		class Item137
@@ -9657,7 +9657,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=775;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.017320633;
 		};
 		class Item138
@@ -9676,7 +9676,7 @@ class Mission
 				init="this call Spec_fnc_crateStandardAmmo;";
 			};
 			id=776;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 			atlOffset=0.014122009;
 		};
 		class Item139
@@ -9857,7 +9857,7 @@ class Mission
 			{
 			};
 			id=790;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12525,7 +12525,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=869;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 			atlOffset=0.0055007935;
 		};
 		class Item150
@@ -12544,7 +12544,7 @@ class Mission
 				init="this call Spec_fnc_crateLauncher;";
 			};
 			id=870;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item151
 		{
@@ -12561,7 +12561,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=871;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item152
 		{
@@ -12578,7 +12578,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=872;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item153
 		{

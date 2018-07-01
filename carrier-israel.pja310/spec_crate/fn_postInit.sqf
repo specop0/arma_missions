@@ -6,13 +6,13 @@ if(isServer) then {
     {
         if(_x isKindOf "ReammoBox_F") then {
             switch (typeOf _x) do {
-                case ("TTT_Logistik_Standardmunition_Us") : {
+                case ("TTT_Crate_Ammo_Standard_US") : {
                     [_x, CRATE_STANDARD_AMMO_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Werfer_Us") : {
+                case ("TTT_Crate_Weapons_Luncher_US") : {
                     [_x, CRATE_LAUNCHER_CONTENT] call Spec_crate_fnc_filler;
                 };
-                case ("TTT_Logistik_Granaten_Us") : {
+                case ("TTT_Crate_Ammo_Grenade_US") : {
                     [_x, CRATE_GRENADE_CONTENT] call Spec_crate_fnc_filler;
                 };
             };

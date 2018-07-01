@@ -28,7 +28,7 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Soft_F_Offroad_01",
 	"A3_Supplies_F_Heli_CargoNets",
-	"ttt_vehicles_bw_c",
+	"TTT_Vehicles_BW",
 	"A3_Soft_F_Quadbike_01",
 	"ace_repair",
 	"A3_Air_F_Heli_Light_01",
@@ -36,7 +36,7 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"tfar_backpacks",
 	"tfar_handhelds",
-	"ttt_units_bw_c",
+	"TTT_Units_BW",
 	"CUP_Misc_e_Config",
 	"A3_Characters_F",
 	"CUP_Creatures_Military_TakiInsurgents",
@@ -89,8 +89,8 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="ttt_vehicles_bw_c";
-			name="ttt_vehicles_bw_c";
+			className="TTT_Vehicles_BW";
+			name="TTT_Vehicles_BW";
 		};
 		class Item4
 		{
@@ -134,8 +134,8 @@ class AddonsMetaData
 		};
 		class Item10
 		{
-			className="ttt_units_bw_c";
-			name="ttt_units_bw_c";
+			className="TTT_Units_BW";
+			name="TTT_Units_BW";
 		};
 		class Item11
 		{
@@ -1646,7 +1646,7 @@ class Mission
 				name="dingo_extra_ammo";
 			};
 			id=600;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item65
 		{
@@ -1683,7 +1683,7 @@ class Mission
 				name="dingo_extra_ammo_1";
 			};
 			id=602;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item67
 		{
@@ -1703,7 +1703,7 @@ class Mission
 				name="dingo_extra_ammo_2";
 			};
 			id=603;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item68
 		{
@@ -1723,7 +1723,7 @@ class Mission
 				name="dingo_extra_ammo_3";
 			};
 			id=604;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item69
 		{
@@ -1830,7 +1830,7 @@ class Mission
 			{
 			};
 			id=609;
-			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
+			type="TTT_MTA_SAR_BW_Tropentarn";
 			atlOffset=-0.049987793;
 			class CustomAttributes
 			{
@@ -1870,7 +1870,7 @@ class Mission
 			{
 			};
 			id=610;
-			type="TTT_Sanitaetshelikopter_Bw_Tropentarn";
+			type="TTT_MTA_SAR_BW_Tropentarn";
 			atlOffset=-0.050231934;
 		};
 		class Item75
@@ -1888,7 +1888,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=611;
-			type="TTT_Oplfahrzeug_Bw_Tropentarn";
+			type="TTT_LUV_COM_BW_Tropentarn";
 			atlOffset=0.0059814453;
 			class CustomAttributes
 			{
@@ -2025,7 +2025,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=614;
-			type="TTT_Logistik_Ausruestung_Bw";
+			type="TTT_Crate_Equipment_BW";
 		};
 		class Item79
 		{
@@ -2042,7 +2042,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=616;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item80
 		{
@@ -2059,7 +2059,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=618;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 		};
 		class Item81
 		{
@@ -2076,7 +2076,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=619;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 		};
 		class Item82
 		{
@@ -2093,7 +2093,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=620;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item83
 		{
@@ -2110,7 +2110,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=621;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item84
 		{
@@ -2127,7 +2127,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=622;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item85
 		{
@@ -2144,7 +2144,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=623;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item86
 		{
@@ -2161,7 +2161,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=624;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item87
 		{
@@ -2178,7 +2178,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=625;
-			type="TTT_Logistik_Spezialmunition_Bw";
+			type="TTT_Crate_Ammo_Special_BW";
 		};
 		class Item88
 		{
@@ -2195,7 +2195,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=626;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item89
 		{
@@ -2212,7 +2212,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=627;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item90
 		{
@@ -2229,7 +2229,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=628;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item91
 		{
@@ -2246,7 +2246,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=629;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item92
 		{
@@ -2263,7 +2263,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=630;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item93
 		{
@@ -2279,7 +2279,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=631;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item94
 		{
@@ -2296,7 +2296,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=632;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item95
 		{
@@ -2313,7 +2313,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=633;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item96
 		{
@@ -2370,7 +2370,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=636;
-			type="TTT_Logistik_Medic_Rucksaecke_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item98
 		{
@@ -2387,7 +2387,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=637;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Backpack_BW";
 		};
 		class Item99
 		{
@@ -2407,7 +2407,7 @@ class Mission
 				name="dingo_extra_ammo_4";
 			};
 			id=638;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item100
 		{
@@ -2427,7 +2427,7 @@ class Mission
 				name="dingo_extra_ammo_5";
 			};
 			id=639;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item101
 		{
@@ -11154,7 +11154,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=982;
-					type="TTT_Gelb1_Bw_Tropentarn";
+					type="TTT_Yellow_1_BW_Tropentarn";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11216,7 +11216,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=983;
-					type="TTT_Gelb2_Bw_Tropentarn";
+					type="TTT_Yellow_2_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11249,7 +11249,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=985;
-					type="TTT_Gruen1_Bw_Tropentarn";
+					type="TTT_Green_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11269,7 +11269,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=986;
-					type="TTT_Gruen2_Bw_Tropentarn";
+					type="TTT_Green_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11290,7 +11290,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=987;
-					type="TTT_Gruen3_Bw_Tropentarn";
+					type="TTT_Green_3_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11323,7 +11323,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=989;
-					type="TTT_Schwarz1_Bw_Tropentarn";
+					type="TTT_Black_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11343,7 +11343,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=990;
-					type="TTT_Schwarz2_Bw_Tropentarn";
+					type="TTT_Black_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11363,7 +11363,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=991;
-					type="TTT_Schwarz3_Bw_Tropentarn";
+					type="TTT_Black_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -11382,7 +11382,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=992;
-					type="TTT_Schwarz4_Bw_Tropentarn";
+					type="TTT_Black_4_BW_Tropentarn";
 				};
 				class Item4
 				{
@@ -11402,7 +11402,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=993;
-					type="TTT_Schwarz5_Bw_Tropentarn";
+					type="TTT_Black_5_BW_Tropentarn";
 				};
 				class Item5
 				{
@@ -11421,7 +11421,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=994;
-					type="TTT_Schwarz6_Bw_Tropentarn";
+					type="TTT_Black_6_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11454,7 +11454,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=996;
-					type="TTT_Blau1_Bw_Tropentarn";
+					type="TTT_Blue_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11474,7 +11474,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=997;
-					type="TTT_Blau2_Bw_Tropentarn";
+					type="TTT_Blue_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11494,7 +11494,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=998;
-					type="TTT_Blau3_Bw_Tropentarn";
+					type="TTT_Blue_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -11513,7 +11513,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=999;
-					type="TTT_Blau4_Bw_Tropentarn";
+					type="TTT_Blue_4_BW_Tropentarn";
 				};
 				class Item4
 				{
@@ -11533,7 +11533,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1000;
-					type="TTT_Blau5_Bw_Tropentarn";
+					type="TTT_Blue_5_BW_Tropentarn";
 				};
 				class Item5
 				{
@@ -11552,7 +11552,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1001;
-					type="TTT_Blau6_Bw_Tropentarn";
+					type="TTT_Blue_6_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11585,7 +11585,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1003;
-					type="TTT_Braun1_Bw_Tropentarn";
+					type="TTT_Brown_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11605,7 +11605,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1004;
-					type="TTT_Braun2_Bw_Tropentarn";
+					type="TTT_Brown_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11626,7 +11626,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1005;
-					type="TTT_Braun3_Bw_Tropentarn";
+					type="TTT_Brown_3_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11659,7 +11659,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1007;
-					type="TTT_Rot1_Bw_Tropentarn";
+					type="TTT_Red_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11679,7 +11679,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1008;
-					type="TTT_Rot2_Bw_Tropentarn";
+					type="TTT_Red_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11699,7 +11699,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1009;
-					type="TTT_Rot3_Bw_Tropentarn";
+					type="TTT_Red_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -11718,7 +11718,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1010;
-					type="TTT_Rot4_Bw_Tropentarn";
+					type="TTT_Red_4_BW_Tropentarn";
 				};
 				class Item4
 				{
@@ -11738,7 +11738,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1011;
-					type="TTT_Rot5_Bw_Tropentarn";
+					type="TTT_Red_5_BW_Tropentarn";
 				};
 				class Item5
 				{
@@ -11757,7 +11757,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1012;
-					type="TTT_Rot6_Bw_Tropentarn";
+					type="TTT_Red_6_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11790,7 +11790,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1014;
-					type="TTT_Violett1_Bw_Tropentarn";
+					type="TTT_Violet_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11810,7 +11810,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1015;
-					type="TTT_Violett2_Bw_Tropentarn";
+					type="TTT_Violet_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11830,7 +11830,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1016;
-					type="TTT_Violett3_Bw_Tropentarn";
+					type="TTT_Violet_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -11849,7 +11849,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1017;
-					type="TTT_Violett4_Bw_Tropentarn";
+					type="TTT_Violet_4_BW_Tropentarn";
 				};
 				class Item4
 				{
@@ -11869,7 +11869,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1018;
-					type="TTT_Violett5_Bw_Tropentarn";
+					type="TTT_Violet_5_BW_Tropentarn";
 				};
 				class Item5
 				{
@@ -11888,7 +11888,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1019;
-					type="TTT_Violett6_Bw_Tropentarn";
+					type="TTT_Violet_6_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -11922,7 +11922,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1021;
-					type="TTT_Weiss1_Bw_Tropentarn";
+					type="TTT_White_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -11942,7 +11942,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1022;
-					type="TTT_Weiss2_Bw_Tropentarn";
+					type="TTT_White_2_BW_Tropentarn";
 				};
 				class Item2
 				{
@@ -11963,7 +11963,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1023;
-					type="TTT_Weiss3_Bw_Tropentarn";
+					type="TTT_White_3_BW_Tropentarn";
 				};
 				class Item3
 				{
@@ -11982,7 +11982,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1024;
-					type="TTT_Weiss4_Bw_Tropentarn";
+					type="TTT_White_4_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -12015,7 +12015,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1026;
-					type="TTT_Bussard1_Bw_Tropentarn";
+					type="TTT_Buzzard_1_BW_Tropentarn";
 				};
 				class Item1
 				{
@@ -12035,7 +12035,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1027;
-					type="TTT_Bussard2_Bw_Tropentarn";
+					type="TTT_Buzzard_2_BW_Tropentarn";
 				};
 			};
 			class Attributes
@@ -12058,7 +12058,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=1053;
-			type="TTT_Logistik_Werfer_Bw";
+			type="TTT_Crate_Weapons_Luncher_BW";
 		};
 		class Item186
 		{
@@ -12075,7 +12075,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=1056;
-			type="TTT_Logistik_Werfer_Bw";
+			type="TTT_Crate_Weapons_Luncher_BW";
 		};
 		class Item187
 		{
@@ -12645,7 +12645,7 @@ class Mission
 			{
 			};
 			id=1099;
-			type="TTT_Logistik_Pionierausruestung_Bw";
+			type="TTT_Crate_Equipment_Pioneer_BW";
 		};
 		class Item220
 		{
@@ -12661,7 +12661,7 @@ class Mission
 			{
 			};
 			id=1100;
-			type="TTT_Logistik_Pionierausruestung_Bw";
+			type="TTT_Crate_Equipment_Pioneer_BW";
 		};
 		class Item221
 		{

@@ -17,7 +17,7 @@ if(isServer) then {
         if(_x isKindOf "ReammoBox_F") then {
             switch (typeOf _x) do {
                 // at and aa launcher
-                case ("TTT_Logistik_Werfer_Bw") : {
+                case ("TTT_Crate_Weapons_Luncher_BW") : {
                     [_x,
                         [
                             ["BWA3_Pzf3", 2],
@@ -28,7 +28,7 @@ if(isServer) then {
                     ] call Spec_crate_fnc_filler;
                 };
                 // grenades
-                case ("TTT_Logistik_Granaten_Bw") : {
+                case ("TTT_Crate_Ammo_Grenade_BW") : {
                     [_x,
                         [
                             ["SmokeShell",36],

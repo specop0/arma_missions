@@ -31,9 +31,9 @@ addons[]=
 {
 	"A3_Structures_F_Mil_Cargo",
 	"JS_JC_FA18",
-	"ttt_signs_c",
+	"TTT_Signs",
 	"A3_Structures_F_Civ_Lamps",
-	"ttt_vehicles_us_c",
+	"TTT_Vehicles_US",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_Mil_BagBunker",
 	"A3_Structures_F_Mil_BagFence",
@@ -62,14 +62,14 @@ addons[]=
 	"A3_Structures_F_Heli_Items_Tools",
 	"A3_Structures_F_Heli_Items_Airport",
 	"A3_Structures_F_Walls",
-	"ttt_units_us_c",
+	"TTT_Units_US",
 	"A3_Structures_F_Training",
 	"A3_Structures_F_Ind_Shed",
 	"A3_Structures_F_Ind_DieselPowerPlant",
 	"A3_Structures_F_Ind_SolarPowerPlant",
 	"A3_Structures_F_Ind_Transmitter_Tower",
 	"A3_Structures_F_Mil_Radar",
-	"ttt_vehicles_bw_c",
+	"TTT_Vehicles_BW",
 	"A3_Static_F_Gamma",
 	"a3_static_f",
 	"A3_Structures_F_EPB_Civ_Graffiti",
@@ -279,7 +279,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=14;
-			type="TTT_Flagge_Blau";
+			type="TTT_Flag_Blue";
 		};
 		class Item15
 		{
@@ -294,7 +294,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=15;
-			type="TTT_Flagge_Gruen";
+			type="TTT_Flag_Green";
 		};
 		class Item16
 		{
@@ -309,7 +309,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=16;
-			type="TTT_Flagge_Schwarz";
+			type="TTT_Flag_Black";
 		};
 		class Item17
 		{
@@ -324,7 +324,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=17;
-			type="TTT_Flagge_Gold";
+			type="TTT_Flag_Gold";
 		};
 		class Item18
 		{
@@ -339,7 +339,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=18;
-			type="TTT_Flagge_Braun";
+			type="TTT_Flag_Brown";
 		};
 		class Item19
 		{
@@ -369,7 +369,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=20;
-			type="TTT_Flagge_Gelb";
+			type="TTT_Flag_Yellow";
 		};
 		class Item21
 		{
@@ -384,7 +384,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=21;
-			type="TTT_Flagge_Rot";
+			type="TTT_Flag_Red";
 		};
 		class Item22
 		{
@@ -399,7 +399,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=22;
-			type="TTT_Flagge_Violett";
+			type="TTT_Flag_Violet";
 		};
 		class Item23
 		{
@@ -414,7 +414,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=23;
-			type="TTT_Flagge_Weiss";
+			type="TTT_Flag_White";
 		};
 		class Item24
 		{
@@ -445,7 +445,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=25;
-			type="TTT_Logistikhelikopter_Us_Desert";
+			type="TTT_MTA_Heavy_US_Desert";
 		};
 		class Item26
 		{
@@ -460,7 +460,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=26;
-			type="TTT_Flagge_Silber";
+			type="TTT_Flag_Silver";
 		};
 		class Item27
 		{
@@ -492,7 +492,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=28;
-			type="TTT_Logistikhelikopter_Us_Desert";
+			type="TTT_MTA_Heavy_US_Desert";
 		};
 		class Item29
 		{
@@ -2693,7 +2693,7 @@ class Mission
 				name="teleporter_2";
 			};
 			id=172;
-			type="TTT_Flagge_Logo";
+			type="TTT_Flag_Logo";
 		};
 		class Item173
 		{
@@ -2709,7 +2709,7 @@ class Mission
 				name="teleporter_1";
 			};
 			id=173;
-			type="TTT_Flagge_Logo";
+			type="TTT_Flag_Logo";
 		};
 		class Item174
 		{
@@ -3454,7 +3454,7 @@ class Mission
 				name="heli_m_1";
 			};
 			id=216;
-			type="TTT_Sanitaetshelikopter_Us_Desert";
+			type="TTT_MTA_SAR_US_Desert";
 		};
 		class Item217
 		{
@@ -3471,7 +3471,7 @@ class Mission
 				name="heli_m_2";
 			};
 			id=217;
-			type="TTT_Sanitaetshelikopter_Us_Desert";
+			type="TTT_MTA_SAR_US_Desert";
 		};
 		class Item218
 		{
@@ -3487,7 +3487,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=218;
-			type="TTT_Transporthelikopter_Us_Desert";
+			type="TTT_MTA_Medium_US_Desert";
 		};
 		class Item219
 		{
@@ -3503,7 +3503,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=219;
-			type="TTT_Transporthelikopter_Us_Desert";
+			type="TTT_MTA_Medium_US_Desert";
 		};
 		class Item220
 		{
@@ -3730,7 +3730,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=234;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item234
 		{
@@ -3745,7 +3745,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=235;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item235
 		{
@@ -3760,7 +3760,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=236;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item236
 		{
@@ -3776,7 +3776,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=237;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item237
 		{
@@ -3791,7 +3791,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=238;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item238
 		{
@@ -3806,7 +3806,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=239;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item239
 		{
@@ -3838,7 +3838,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=241;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item241
 		{
@@ -3853,7 +3853,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=242;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item242
 		{
@@ -3868,7 +3868,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=243;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item243
 		{
@@ -4486,7 +4486,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=276;
-			type="TTT_Oplfahrzeug_Us_Desert";
+			type="TTT_LUV_COM_US_Desert";
 		};
 		class Item276
 		{
@@ -4503,7 +4503,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=277;
-			type="TTT_Oplfahrzeug_Us_Desert";
+			type="TTT_LUV_COM_US_Desert";
 		};
 		class Item277
 		{
@@ -4521,7 +4521,7 @@ class Mission
 				name="car_m_1";
 			};
 			id=278;
-			type="TTT_Sanitaetsfahrzeug_Us_Desert";
+			type="TTT_LUV_SAR_US_Desert";
 		};
 		class Item278
 		{
@@ -4538,7 +4538,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=279;
-			type="TTT_Truppfahrzeug_Mg_Us_Desert";
+			type="TTT_IMV_MG_US_Desert";
 		};
 		class Item279
 		{
@@ -4555,7 +4555,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=280;
-			type="TTT_Truppfahrzeug_Gl_Us_Desert";
+			type="TTT_IMV_GL_US_Desert";
 		};
 		class Item280
 		{
@@ -4572,7 +4572,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=281;
-			type="TTT_Truppfahrzeug_Mg_Us_Desert";
+			type="TTT_IMV_MG_US_Desert";
 		};
 		class Item281
 		{
@@ -4589,7 +4589,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=282;
-			type="TTT_Truppfahrzeug_Mg_Us_Desert";
+			type="TTT_IMV_MG_US_Desert";
 		};
 		class Item282
 		{
@@ -4606,7 +4606,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=283;
-			type="TTT_Truppfahrzeug_Gl_Us_Desert";
+			type="TTT_IMV_GL_US_Desert";
 		};
 		class Item283
 		{
@@ -4623,7 +4623,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=284;
-			type="TTT_Truppfahrzeug_Mg_Us_Desert";
+			type="TTT_IMV_MG_US_Desert";
 		};
 		class Item284
 		{
@@ -4753,7 +4753,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=292;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item292
 		{
@@ -4769,7 +4769,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=293;
-			type="TTT_Truppfahrzeug_Gl_Bw_Tropentarn";
+			type="TTT_IMV_GL_BW_Tropentarn";
 		};
 		class Item293
 		{
@@ -4785,7 +4785,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=294;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item294
 		{
@@ -4801,7 +4801,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=295;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item295
 		{
@@ -4817,7 +4817,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=296;
-			type="TTT_Truppfahrzeug_Gl_Bw_Tropentarn";
+			type="TTT_IMV_GL_BW_Tropentarn";
 		};
 		class Item296
 		{
@@ -4833,7 +4833,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=297;
-			type="TTT_Truppfahrzeug_Mg_Bw_Tropentarn";
+			type="TTT_IMV_MG_BW_Tropentarn";
 		};
 		class Item297
 		{
@@ -5664,7 +5664,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=349;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 		};
 		class Item349
 		{
@@ -5679,7 +5679,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=350;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 		};
 		class Item350
 		{
@@ -5694,7 +5694,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=351;
-			type="TTT_Logistik_Pionierausruestung_Us";
+			type="TTT_Crate_Equipment_Pioneer_US";
 		};
 		class Item351
 		{
@@ -5709,7 +5709,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=352;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item352
 		{
@@ -6332,7 +6332,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=389;
-			type="TTT_Flagge_Logo";
+			type="TTT_Flag_Logo";
 		};
 		class Item389
 		{
@@ -6347,7 +6347,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=390;
-			type="TTT_Flagge_Logo";
+			type="TTT_Flag_Logo";
 		};
 		class Item390
 		{
@@ -6512,7 +6512,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=400;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item400
 		{
@@ -6527,7 +6527,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=401;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item401
 		{
@@ -6542,7 +6542,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=402;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item402
 		{
@@ -6557,7 +6557,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=403;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item403
 		{
@@ -6572,7 +6572,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=404;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item404
 		{
@@ -6587,7 +6587,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=405;
-			type="TTT_Logistik_Granaten_Us";
+			type="TTT_Crate_Ammo_Grenade_US";
 		};
 		class Item405
 		{
@@ -6602,7 +6602,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=406;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item406
 		{
@@ -6617,7 +6617,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=407;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item407
 		{
@@ -6632,7 +6632,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=408;
-			type="TTT_Logistik_Standardmunition_Us";
+			type="TTT_Crate_Ammo_Standard_US";
 		};
 		class Item408
 		{
@@ -6647,7 +6647,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=409;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item409
 		{
@@ -6662,7 +6662,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=410;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item410
 		{
@@ -6677,7 +6677,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=411;
-			type="TTT_Logistik_Spezialmunition_Us";
+			type="TTT_Crate_Ammo_Special_US";
 		};
 		class Item411
 		{
@@ -6692,7 +6692,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=412;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item412
 		{
@@ -6707,7 +6707,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=413;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item413
 		{
@@ -6722,7 +6722,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=414;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item414
 		{
@@ -6737,7 +6737,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=415;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item415
 		{
@@ -6752,7 +6752,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=416;
-			type="TTT_Logistik_Werfer_Us";
+			type="TTT_Crate_Weapons_Luncher_US";
 		};
 		class Item416
 		{
@@ -6770,7 +6770,7 @@ class Mission
 				name="car_m_2";
 			};
 			id=417;
-			type="TTT_Sanitaetsfahrzeug_Us_Desert";
+			type="TTT_LUV_SAR_US_Desert";
 		};
 		class Item417
 		{
@@ -6786,7 +6786,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=418;
-			type="TTT_Logistik_Ausruestung_Us";
+			type="TTT_Crate_Equipment_US";
 		};
 		class Item418
 		{
@@ -6802,7 +6802,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=419;
-			type="TTT_Logistik_Ausruestung_Us";
+			type="TTT_Crate_Equipment_US";
 		};
 		class Item419
 		{
@@ -6818,7 +6818,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=420;
-			type="TTT_Logistik_Ausruestung_Us";
+			type="TTT_Crate_Equipment_US";
 		};
 		class Item420
 		{
@@ -6833,7 +6833,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=421;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item421
 		{
@@ -6848,7 +6848,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=422;
-			type="TTT_Logistik_Medic_Rucksaecke_Us";
+			type="TTT_Crate_Medic_Backpack_US";
 		};
 		class Item422
 		{
@@ -6863,7 +6863,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=423;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item423
 		{
@@ -6878,7 +6878,7 @@ class Mission
 				skill=0.64999998;
 			};
 			id=424;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item424
 		{
@@ -6954,7 +6954,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=429;
-			type="TTT_Logistik_Kiste_Gross_Us";
+			type="TTT_Crate_Large_US";
 		};
 		class Item429
 		{
@@ -6969,7 +6969,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=430;
-			type="TTT_Logistik_Kiste_Gross_Us";
+			type="TTT_Crate_Large_US";
 		};
 		class Item430
 		{
@@ -6984,7 +6984,7 @@ class Mission
 				skill=0.60000002;
 			};
 			id=431;
-			type="TTT_Logistik_Kiste_Gross_Us";
+			type="TTT_Crate_Large_US";
 		};
 		class Item431
 		{
@@ -7000,7 +7000,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=432;
-			type="TTT_Logistik_Medic_Rucksaecke_Us";
+			type="TTT_Crate_Medic_Backpack_US";
 		};
 		class Item432
 		{
@@ -7016,7 +7016,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=433;
-			type="TTT_Logistik_Medic_Rucksaecke_Us";
+			type="TTT_Crate_Medic_Backpack_US";
 		};
 		class Item433
 		{
@@ -7032,7 +7032,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=434;
-			type="TTT_Logistik_Medic_Rucksaecke_Us";
+			type="TTT_Crate_Medic_Backpack_US";
 		};
 		class Item434
 		{
@@ -7048,7 +7048,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=435;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 		};
 		class Item435
 		{
@@ -7064,7 +7064,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=436;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 		};
 		class Item436
 		{
@@ -7080,7 +7080,7 @@ class Mission
 				lock="UNLOCKED";
 			};
 			id=437;
-			type="TTT_Logistik_Kiste_Klein_Us";
+			type="TTT_Crate_Small_US";
 		};
 		class Item437
 		{
@@ -7170,7 +7170,7 @@ class Mission
 				rank="COLONEL";
 			};
 			id=439;
-			type="TTT_Aufklaerungsdrohne_Us_Desert";
+			type="TTT_UAV_US_Desert";
 		};
 		class Item439
 		{
@@ -7198,7 +7198,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=443;
-					type="TTT_Gelb1_Us_Desert";
+					type="TTT_Yellow_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7217,7 +7217,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=444;
-					type="TTT_Gelb2_Us_Desert";
+					type="TTT_Yellow_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7236,7 +7236,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=445;
-					type="TTT_Gelb3_Us_Desert";
+					type="TTT_Yellow_3_US_Desert";
 				};
 			};
 			class Attributes
@@ -7269,7 +7269,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=447;
-					type="TTT_Grau1_Us_Desert";
+					type="TTT_Grey_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7288,7 +7288,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=448;
-					type="TTT_Grau2_Us_Desert";
+					type="TTT_Grey_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7307,7 +7307,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=449;
-					type="TTT_Grau3_Us_Desert";
+					type="TTT_Grey_3_US_Desert";
 				};
 				class Item3
 				{
@@ -7325,7 +7325,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=450;
-					type="TTT_Grau4_Us_Desert";
+					type="TTT_Grey_4_US_Desert";
 				};
 				class Item4
 				{
@@ -7344,7 +7344,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=451;
-					type="TTT_Grau5_Us_Desert";
+					type="TTT_Grey_5_US_Desert";
 				};
 				class Item5
 				{
@@ -7362,7 +7362,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=452;
-					type="TTT_Grau6_Us_Desert";
+					type="TTT_Grey_6_US_Desert";
 				};
 			};
 			class Attributes
@@ -7395,7 +7395,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=454;
-					type="TTT_Gold1_Us_Desert";
+					type="TTT_Gold_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7414,7 +7414,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=455;
-					type="TTT_Gold2_Us_Desert";
+					type="TTT_Gold_2_US_Desert";
 				};
 			};
 			class Attributes
@@ -7447,7 +7447,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=457;
-					type="TTT_Gruen1_Us_Desert";
+					type="TTT_Green_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7466,7 +7466,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=458;
-					type="TTT_Gruen2_Us_Desert";
+					type="TTT_Green_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7485,7 +7485,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=459;
-					type="TTT_Gruen3_Us_Desert";
+					type="TTT_Green_3_US_Desert";
 				};
 			};
 			class Attributes
@@ -7518,7 +7518,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=461;
-					type="TTT_Schwarz1_Us_Desert";
+					type="TTT_Black_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7537,7 +7537,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=462;
-					type="TTT_Schwarz2_Us_Desert";
+					type="TTT_Black_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7556,7 +7556,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=463;
-					type="TTT_Schwarz3_Us_Desert";
+					type="TTT_Black_3_US_Desert";
 				};
 				class Item3
 				{
@@ -7574,7 +7574,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=464;
-					type="TTT_Schwarz4_Us_Desert";
+					type="TTT_Black_4_US_Desert";
 				};
 				class Item4
 				{
@@ -7593,7 +7593,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=465;
-					type="TTT_Schwarz5_Us_Desert";
+					type="TTT_Black_5_US_Desert";
 				};
 				class Item5
 				{
@@ -7611,7 +7611,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=466;
-					type="TTT_Schwarz6_Us_Desert";
+					type="TTT_Black_6_US_Desert";
 				};
 			};
 			class Attributes
@@ -7644,7 +7644,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=468;
-					type="TTT_Blau1_Us_Desert";
+					type="TTT_Blue_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7663,7 +7663,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=469;
-					type="TTT_Blau2_Us_Desert";
+					type="TTT_Blue_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7682,7 +7682,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=470;
-					type="TTT_Blau3_Us_Desert";
+					type="TTT_Blue_3_US_Desert";
 				};
 				class Item3
 				{
@@ -7700,7 +7700,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=471;
-					type="TTT_Blau4_Us_Desert";
+					type="TTT_Blue_4_US_Desert";
 				};
 				class Item4
 				{
@@ -7719,7 +7719,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=472;
-					type="TTT_Blau5_Us_Desert";
+					type="TTT_Blue_5_US_Desert";
 				};
 				class Item5
 				{
@@ -7737,7 +7737,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=473;
-					type="TTT_Blau6_Us_Desert";
+					type="TTT_Blue_6_US_Desert";
 				};
 			};
 			class Attributes
@@ -7770,7 +7770,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=475;
-					type="TTT_Braun1_Us_Desert";
+					type="TTT_Brown_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7789,7 +7789,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=476;
-					type="TTT_Braun2_Us_Desert";
+					type="TTT_Brown_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7808,7 +7808,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=477;
-					type="TTT_Braun3_Us_Desert";
+					type="TTT_Brown_3_US_Desert";
 				};
 			};
 			class Attributes
@@ -7841,7 +7841,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=479;
-					type="TTT_Rot1_Us_Desert";
+					type="TTT_Red_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7860,7 +7860,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=480;
-					type="TTT_Rot2_Us_Desert";
+					type="TTT_Red_2_US_Desert";
 				};
 				class Item2
 				{
@@ -7879,7 +7879,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=481;
-					type="TTT_Rot3_Us_Desert";
+					type="TTT_Red_3_US_Desert";
 				};
 				class Item3
 				{
@@ -7897,7 +7897,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=482;
-					type="TTT_Rot4_Us_Desert";
+					type="TTT_Red_4_US_Desert";
 				};
 				class Item4
 				{
@@ -7916,7 +7916,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=483;
-					type="TTT_Rot5_Us_Desert";
+					type="TTT_Red_5_US_Desert";
 				};
 				class Item5
 				{
@@ -7934,7 +7934,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=484;
-					type="TTT_Rot6_Us_Desert";
+					type="TTT_Red_6_US_Desert";
 				};
 			};
 			class Attributes
@@ -7967,7 +7967,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=486;
-					type="TTT_Violett1_Us_Desert";
+					type="TTT_Violet_1_US_Desert";
 				};
 				class Item1
 				{
@@ -7986,7 +7986,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=487;
-					type="TTT_Violett2_Us_Desert";
+					type="TTT_Violet_2_US_Desert";
 				};
 				class Item2
 				{
@@ -8005,7 +8005,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=488;
-					type="TTT_Violett3_Us_Desert";
+					type="TTT_Violet_3_US_Desert";
 				};
 				class Item3
 				{
@@ -8023,7 +8023,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=489;
-					type="TTT_Violett4_Us_Desert";
+					type="TTT_Violet_4_US_Desert";
 				};
 				class Item4
 				{
@@ -8042,7 +8042,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=490;
-					type="TTT_Violett5_Us_Desert";
+					type="TTT_Violet_5_US_Desert";
 				};
 				class Item5
 				{
@@ -8060,7 +8060,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=491;
-					type="TTT_Violett6_Us_Desert";
+					type="TTT_Violet_6_US_Desert";
 				};
 			};
 			class Attributes
@@ -8094,7 +8094,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=493;
-					type="TTT_Weiss1_Us_Desert";
+					type="TTT_White_1_US_Desert";
 				};
 				class Item1
 				{
@@ -8114,7 +8114,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=494;
-					type="TTT_Weiss2_Us_Desert";
+					type="TTT_White_2_US_Desert";
 				};
 				class Item2
 				{
@@ -8134,7 +8134,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=495;
-					type="TTT_Weiss3_Us_Desert";
+					type="TTT_White_3_US_Desert";
 				};
 				class Item3
 				{
@@ -8153,7 +8153,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=496;
-					type="TTT_Weiss4_Us_Desert";
+					type="TTT_White_4_US_Desert";
 				};
 			};
 			class Attributes
@@ -8187,7 +8187,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=498;
-					type="TTT_Adler1_Us_Desert";
+					type="TTT_Platinum_1_US_Desert";
 				};
 				class Item1
 				{
@@ -8207,7 +8207,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=499;
-					type="TTT_Adler2_Us_Desert";
+					type="TTT_Platinum_2_US_Desert";
 				};
 			};
 			class Attributes
@@ -8241,7 +8241,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=501;
-					type="TTT_Habicht1_Us_Desert";
+					type="TTT_Hawk_1_US_Desert";
 				};
 				class Item1
 				{
@@ -8261,7 +8261,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=502;
-					type="TTT_Habicht2_Us_Desert";
+					type="TTT_Hawk_2_US_Desert";
 				};
 				class Item2
 				{
@@ -8281,7 +8281,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=503;
-					type="TTT_Bussard1_Us_Desert";
+					type="TTT_Buzzard_1_US_Desert";
 				};
 				class Item3
 				{
@@ -8301,7 +8301,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=504;
-					type="TTT_Bussard2_Us_Desert";
+					type="TTT_Buzzard_2_US_Desert";
 				};
 			};
 			class Attributes
@@ -8942,7 +8942,7 @@ class Mission
 			{
 			};
 			id=1306;
-			type="TTT_Logistik_Spezialwaffen_Us";
+			type="TTT_Crate_Weapons_Special_US";
 		};
 		class Item457
 		{
@@ -8956,7 +8956,7 @@ class Mission
 			{
 			};
 			id=1307;
-			type="TTT_Logistik_Spezialwaffen_Us";
+			type="TTT_Crate_Weapons_Special_US";
 		};
 		class Item458
 		{
@@ -8970,7 +8970,7 @@ class Mission
 			{
 			};
 			id=1308;
-			type="TTT_Logistik_Spezialwaffen_Us";
+			type="TTT_Crate_Weapons_Special_US";
 		};
 		class Item459
 		{
@@ -8984,7 +8984,7 @@ class Mission
 			{
 			};
 			id=1309;
-			type="TTT_Logistik_Waffen_Us";
+			type="TTT_Crate_Weapons_US";
 		};
 		class Item460
 		{
@@ -8998,7 +8998,7 @@ class Mission
 			{
 			};
 			id=1310;
-			type="TTT_Logistik_Waffen_Us";
+			type="TTT_Crate_Weapons_US";
 		};
 		class Item461
 		{
@@ -9012,7 +9012,7 @@ class Mission
 			{
 			};
 			id=1311;
-			type="TTT_Logistik_Waffen_Us";
+			type="TTT_Crate_Weapons_US";
 		};
 		class Item462
 		{
@@ -22735,7 +22735,7 @@ class Mission
 			{
 			};
 			id=2555;
-			type="TTT_Logistik_Medic_Us";
+			type="TTT_Crate_Ammo_Luncher_US";
 		};
 		class Item656
 		{
