@@ -30,7 +30,7 @@ private _vest = "V_Chestrig_rgr";
 
 private _backpack = "B_FieldPack_ghex_F";
 private _backpackBig = "B_Carryall_ghex_F";
-private _backpackLR = "tf_mr3000_multicam";
+private _backpackLR = "TFAR_mr3000_multicam";
 
 private _headgear = "H_HelmetO_ghex_F";
 private _headgearPilot = "H_PilotHelmetHeli_O";

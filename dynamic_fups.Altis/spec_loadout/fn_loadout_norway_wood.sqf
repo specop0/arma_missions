@@ -30,7 +30,7 @@ private _vest = selectRandom ["MNP_Vest_NOR_2", "MNP_Vest_NOR_1"];
 
 private _backpack = "B_AssaultPack_rgr";
 private _backpackBig = "B_Carryall_khk";
-private _backpackLR = "TTT_Backpack_Operator_Radio_BW_Flecktarn";
+private _backpackLR = "TFAR_rt1523g_big_bwmod";
 
 private _headgear = "MNP_Boonie_NOR";
 private _headgearPilot = "H_PilotHelmetHeli_B";
@@ -83,8 +83,6 @@ if(_parameterCorrect) then {
     [_unit, _vest] call Spec_fnc_addContainer;
     if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
         [_unit, _backpackLR] call Spec_fnc_addContainer;
-        clearItemCargoGlobal (unitBackpack _unit);
-        clearMagazineCargoGlobal (unitBackpack _unit);
         if(backpack _unit == "") then {
             [_unit, _backpack] call Spec_fnc_addContainer;
         };

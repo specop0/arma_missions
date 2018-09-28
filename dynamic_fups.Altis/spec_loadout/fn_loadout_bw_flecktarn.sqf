@@ -30,7 +30,7 @@ private _vest = "BWA3_Vest_Rifleman1_Fleck";
 
 private _backpack = "BWA3_TacticalPack_Fleck";
 private _backpackBig = "BWA3_Carryall_Fleck";
-private _backpackLR = "TTT_Backpack_Operator_Radio_BW_Flecktarn"; // "tf_mr3000_bwmod";
+private _backpackLR = "TFAR_rt1523g_big_bwmod";
 
 private _headgear = "BWA3_MICH_Fleck";
 private _headgearPilot = "H_PilotHelmetHeli_B";
@@ -105,8 +105,6 @@ if(_parameterCorrect) then {
     [_unit, _vest] call Spec_fnc_addContainer;
     if(_type in [CLASS_OPL, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_PILOT]) then {
         [_unit, _backpackLR] call Spec_fnc_addContainer;
-        clearItemCargoGlobal (unitBackpack _unit);
-        clearMagazineCargoGlobal (unitBackpack _unit);
         if(backpack _unit == "") then {
             [_unit, _backpack] call Spec_fnc_addContainer;
         };

@@ -30,7 +30,7 @@ private _vest = selectRandom ["MNP_Vest_ROK_1","MNP_Vest_ROK_2"];
 
 private _backpack = "MNP_B_FieldPack_PLA_Basic";
 private _backpackBig = "MNP_B_Carryall_PLA_Basic";
-private _backpackLR = "tf_rt1523g_black";
+private _backpackLR = "TFAR_rt1523g_black";
 
 private _headgear = "MNP_Helmet_ROKMC";
 private _headgearPilot = "H_PilotHelmetHeli_B";

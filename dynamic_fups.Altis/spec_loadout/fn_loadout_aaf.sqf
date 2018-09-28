@@ -30,7 +30,7 @@ private _vest = "V_PlateCarrierIA2_dgtl";
 
 private _backpack = "B_AssaultPack_dgtl";
 private _backpackBig = "B_Carryall_oli";
-private _backpackLR = "tf_anprc155";
+private _backpackLR = "TFAR_anprc155";
 
 private _headgear = "H_HelmetIA";
 private _headgearPilot = "H_PilotHelmetHeli_I";

@@ -30,7 +30,7 @@ private _vest = "rhs_6b23_ML_6sh92";
 
 private _backpack = "B_AssaultPack_khk";
 private _backpackBig = "B_Carryall_oli";
-private _backpackLR = "tf_mr3000_rhs";
+private _backpackLR = "TFAR_mr3000_rhs";
 
 private _headgear = "rhs_6b26";
 _headgear = selectRandom ["rhs_6b27m_ml","rhs_6b27m_ml_bala","rhs_6b27m_ml_ess","rhs_6b27m_ML_ess_bala"];

@@ -41,7 +41,7 @@ Ueber die Loadout-Kiste (NATO-Kiste) koennen auch die ACE-Interaktionen fuer die
 
 _unit createDiaryRecord ["Diary",["Briefing","
 <font size=20 color='#0094FF'>Lage</font><br/>
-Die idyllische Insel Altis war bis 2009 ein beliebtes Ziel bei Touristen aus aller Welt. Jedoch wurde ab 2010 die griechische Staatsschuldenkrise fuer die Weltoeffentlichkeit praesent. ueber die Jahre kippte aufgrund der Verschuldung und Sparmaﬂnahmen die Stimmung der Bevoelkerung. Durch Verlust jeglichen Vertrauens griff die Bevoelkerung zur Waffe - jedoch jeder Ort zu einer Verschiedenen!<br/>
+Die idyllische Insel Altis war bis 2009 ein beliebtes Ziel bei Touristen aus aller Welt. Jedoch wurde ab 2010 die griechische Staatsschuldenkrise fuer die Weltoeffentlichkeit praesent. ueber die Jahre kippte aufgrund der Verschuldung und Sparma√ünahmen die Stimmung der Bevoelkerung. Durch Verlust jeglichen Vertrauens griff die Bevoelkerung zur Waffe - jedoch jeder Ort zu einer Verschiedenen!<br/>
 Mittlerweile sind unterschiedliche militaerische Parteien auf Altis taetig um unter dem Vorwand der Bevoelkerung zu helfen Krieg zu spielen.<br/>
 Das primaere Ziel der Parteien sind Staedte, in der Sie patrouillieren koennen bis eine gegnerische Partei aufkreuzt. Hierbei nutzen alle Parteien auch schweres militaerisches Material.<br/>
 <font size=20 color='#0094FF'>Auftrag</font><br/>
@@ -49,9 +49,9 @@ Ihr Auftrag ist kurz und schmerzlos: Nehmen Sie die Staedte ein, bei denen sich 
 Beachten Sie, dass der Feind halb-hart und hart gepanzerte Fahrzeuge besitzt. Gehen Sie mit bedacht vor.<br/>
 <font size=20 color='#0094FF'>Durchfuehrung</font><br/>
 Entscheiden Sie sich vor Unterrichtung ihrer Truppen welcher Fraktion wir unsere Dienste zur Verfuegung stellen.<br/>
-Fuehren Sie anschlieﬂend aus welche Feinde praeferiert angegriffen werden.<br/>
+Fuehren Sie anschlie√üend aus welche Feinde praeferiert angegriffen werden.<br/>
 Dieses muss auch ueber den Laptop an unsere Zentrale in Panama uebermittelt werden. (Laptop -> Settings FUPS -> gegnerische Fraktion waehlen)<br/>
-Sobald das gegnerische Dorf auf der Karte markiert ist (Laptop -> Naechstes OBJ) und der Plan steht, kann Bussard Sie zu einer gewaehlten LZ verlegen. Falls Sie einen MedEvac benoetigen steht Ihnen Weiﬂ zur Verfuegung.<br/>
+Sobald das gegnerische Dorf auf der Karte markiert ist (Laptop -> Naechstes OBJ) und der Plan steht, kann Bussard Sie zu einer gewaehlten LZ verlegen. Falls Sie einen MedEvac benoetigen steht Ihnen Wei√ü zur Verfuegung.<br/>
 Gegebenenfalls befinden sich unter Ihrem Truppen Soldaten, die eine Flugzeug oder schwer gepanzertes Fahrzeug bedienen koennen. Beruecksichtigen dies rechtzeitig in ihrer Planung.<br/>
 Nach erfolgreichen Nehmen einer Stadt nicht vergessen zeitnah unser Hauptquartier ueber den Laptop zu informieren, damit Praemien fuer die einzelnen Soldaten ausgezahlt werden koennen. (Laptop -> Clean Up OBJ)<br/>
 <font size=20 color='#0094FF'>Zusaetzliche Informationen</font><br/>

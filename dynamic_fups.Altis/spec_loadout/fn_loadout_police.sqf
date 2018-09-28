@@ -30,7 +30,7 @@ private _vest = "V_TacVest_gen_F";
 
 private _backpack = "B_FieldPack_blk";
 private _backpackBig = "B_Carryall_cbr";
-private _backpackLR = "tf_rt1523g_black";
+private _backpackLR = "TFAR_rt1523g_black";
 
 private _headgear = "H_MilCap_gen_F";
 private _headgearPilot = "H_PilotHelmetHeli_B";

@@ -30,7 +30,7 @@ private _vest = "V_Chestrig_khk";
 
 private _backpack = "B_AssaultPack_ocamo";
 private _backpackBig = "B_Carryall_ocamo";
-private _backpackLR = "tf_mr3000";
+private _backpackLR = "TFAR_mr3000";
 
 private _headgear = "H_HelmetLeaderO_ocamo";
 private _headgearPilot = "H_PilotHelmetHeli_O";

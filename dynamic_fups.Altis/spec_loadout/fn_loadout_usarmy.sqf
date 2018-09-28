@@ -30,7 +30,7 @@ private _vest = "rhsusf_iotv_ucp_Rifleman";
 
 private _backpack = "rhsusf_assault_eagleaiii_ucp";
 private _backpackBig = "B_Carryall_mcamo";
-private _backpackLR = "tf_rt1523g_black";
+private _backpackLR = "TFAR_rt1523g_black";
 
 private _headgear = "H_HelmetSpecB_paint1";
 private _headgearPilot = "H_PilotHelmetHeli_B";

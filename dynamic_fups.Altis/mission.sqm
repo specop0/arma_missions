@@ -34,9 +34,9 @@ addons[]=
 	"A3_Structures_F_Items_Electronics",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Structures_F_Mil_Helipads",
-	"TTT_Vehicles_US",
+	"UK3CB_BAF_Vehicles_Chinook",
 	"A3_Structures_F_Mil_Cargo",
-	"TTT_Units_US",
+	"A3_Weapons_F_Ammoboxes",
 	"CUP_AirVehicles_UH60",
 	"A3_Characters_F",
 	"ace_nouniformrestrictions",
@@ -53,13 +53,14 @@ addons[]=
 	"r_unfold_RHS",
 	"CUP_AirVehicles_A10",
 	"ace_explosives",
+	"CUP_TrackedVehicles_Bradley",
 	"CUP_WheeledVehicles_Dingo"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -110,13 +111,17 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="TTT_Vehicles_US";
-			name="TTT_Vehicles_US";
+			className="UK3CB_BAF_Vehicles_Chinook";
+			name="3CB BAF Vehicles - Chinook";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
 		};
 		class Item8
 		{
-			className="TTT_Units_US";
-			name="TTT_Units_US";
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
@@ -215,6 +220,11 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 		class Item24
+		{
+			className="CUP_TrackedVehicles_Bradley";
+			name="CUP_TrackedVehicles_Bradley";
+		};
+		class Item25
 		{
 			className="CUP_WheeledVehicles_Dingo";
 			name="CUP_WheeledVehicles_Dingo";
@@ -789,8 +799,8 @@ class Mission
 				name="bussard";
 			};
 			id=27;
-			type="TTT_MTA_Heavy_US_Woodland";
-			atlOffset=-0.015939713;
+			type="UK3CB_BAF_Chinook_HC2";
+			atlOffset=-0.17783928;
 		};
 		class Item10
 		{
@@ -880,7 +890,7 @@ class Mission
 			{
 			};
 			id=39;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item13
 		{
@@ -895,7 +905,7 @@ class Mission
 			{
 			};
 			id=40;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 			atlOffset=0.70588303;
 		};
 		class Item14
@@ -912,7 +922,7 @@ class Mission
 			{
 			};
 			id=41;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item15
 		{
@@ -928,7 +938,7 @@ class Mission
 			{
 			};
 			id=42;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item16
 		{
@@ -944,7 +954,7 @@ class Mission
 			{
 			};
 			id=43;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 			atlOffset=0.021162033;
 		};
 		class Item17
@@ -1742,7 +1752,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15165.291,20.351286,17306.752};
+				position[]={15165.291,20.624924,17306.752};
 				angles[]={0.0093286335,2.3561945,0};
 			};
 			side="Empty";
@@ -1752,14 +1762,14 @@ class Mission
 			};
 			id=134;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
-			atlOffset=-0.25138664;
+			atlOffset=-0.0018215179;
 		};
 		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15167.932,20.342403,17309.328};
+				position[]={15167.932,20.604506,17309.328};
 				angles[]={0.0026520467,2.3561945,0.0066682254};
 			};
 			side="Empty";
@@ -1769,7 +1779,7 @@ class Mission
 			};
 			id=135;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
-			atlOffset=-0.25126648;
+			atlOffset=-0.013231277;
 		};
 		class Item30
 		{
@@ -5354,7 +5364,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15192.206,19.574961,17279.57};
+				position[]={15192.206,20.207304,17279.57};
 				angles[]={6.2818484,5.497787,0.0013372133};
 			};
 			side="Empty";
@@ -5363,8 +5373,8 @@ class Mission
 			{
 			};
 			id=285;
-			type="TTT_IFV_US_Woodland";
-			atlOffset=-0.15545654;
+			type="CUP_B_M2Bradley_USA_W";
+			atlOffset=-0.0015220642;
 		};
 		class Item47
 		{

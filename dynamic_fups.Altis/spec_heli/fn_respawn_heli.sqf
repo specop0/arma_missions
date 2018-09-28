@@ -20,7 +20,7 @@ if(isServer) then {
             deleteVehicle _x;
         } forEach crew HELI_TAXI_ID;
         deleteVehicle HELI_TAXI_ID;
-        HELI_TAXI_ID = "TTT_MTA_Heavy_US_Woodland" createVehicle getPos HELI_TAXI_HELIPAD_BASE_ID;
+        HELI_TAXI_ID = "UK3CB_BAF_Chinook_HC2" createVehicle getPos HELI_TAXI_HELIPAD_BASE_ID;
         HELI_TAXI_ID setPos getPos HELI_TAXI_HELIPAD_BASE_ID;
         HELI_TAXI_ID setDir direction HELI_TAXI_HELIPAD_BASE_ID;
         createVehicleCrew HELI_TAXI_ID;

@@ -30,7 +30,7 @@ private _vest = "rhsusf_spc_rifleman";
 
 private _backpack = "rhsusf_assault_eagleaiii_coy";
 private _backpackBig = "B_Carryall_cbr";
-private _backpackLR = "tf_anprc155_coyote";
+private _backpackLR = "TFAR_anprc155_coyote";
 
 private _headgear = "rhsusf_ach_bare_semi";
 private _headgearPilot = "H_PilotHelmetHeli_B";

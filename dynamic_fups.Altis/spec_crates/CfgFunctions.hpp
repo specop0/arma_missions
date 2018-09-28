@@ -6,6 +6,7 @@ class spec_crates {
         class addAmmoBoxActions {};
         class filler {};
         class medic {};
+        class postInit { postInit = 1; };
         class spawnAmmoBox {};
     };
 };

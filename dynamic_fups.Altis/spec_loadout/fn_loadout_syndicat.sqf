@@ -30,7 +30,7 @@ private _vest = selectRandom ["V_Chestrig_rgr", "V_Chestrig_khk", "V_Chestrig_ol
 
 private _backpack = selectRandom ["B_Kitbag_rgr", "B_Kitbag_cbr"];
 private _backpackBig = selectRandom ["B_Carryall_cbr", "B_Carryall_oli"];
-private _backpackLR = "tf_anprc155_coyote";
+private _backpackLR = "TFAR_anprc155_coyote";
 
 private _headgear = selectRandom ["H_Bandanna_gry", "H_Bandanna_blu", "H_Bandanna_cbr", "H_Bandanna_khk", "H_Bandanna_sgg", "H_Bandanna_sand", "H_Cap_grn_BI", "H_Cap_blk", "H_Cap_blk_CMMG", "H_Cap_blk_ION", "H_Cap_red", "H_Cap_tan_Syndikat_F"];
 private _headgearPilot = "H_Cap_headphones";
