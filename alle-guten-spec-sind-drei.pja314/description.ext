@@ -1,0 +1,21 @@
+#include "W_Teleporter\dialog.hpp"
+#include "spec_crateNaming\DescriptionExt.hpp"
+
+class CfgFunctions {
+#include "spec_construct\CfgFunctions.hpp"
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_crateNaming\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+disabledAI = 1;
+
+OnLoadName = "TO NAME";
+//loadScreen="loading.jpg";
+//onLoadMission = "Missionsbeispiel mit W-Teleporter und eigenem Loadout";
+author="Spec";
