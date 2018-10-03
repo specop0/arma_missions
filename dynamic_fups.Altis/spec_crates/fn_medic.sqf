@@ -19,9 +19,9 @@ private _saline500 = "ACE_salineIV_500";
 private _bodyBag = "ACE_bodyBag";
 
 if(_parameterCorrect) then {
+    _crate addItemCargoGlobal [_bandageBasic,125];
     _crate addItemCargoGlobal [_packingBandage,50];
     _crate addItemCargoGlobal [_elasticBandage,25];
-    _crate addItemCargoGlobal [_bandageBasic,125];
     _crate addItemCargoGlobal [_quikcloth,25];
     _crate addItemCargoGlobal [_tourniquet,10];
     

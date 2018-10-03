@@ -1,20 +1,27 @@
 private _parameterCorrect = params [ ["_crate",objNull,[objNull]] ];
 
 if(_parameterCorrect && hasInterface) then {
-    private _conditionDistance = "_this distance _target < 5";
-    _crate addAction ["<t color='#579D1C'>Munition (Hauptwaffe)</t>",{ _this call Spec_crates_fnc_addAmmo; }, [], 1.5, false, true, "", _conditionDistance];
-    _crate addAction ["<t color='#579D1C'>Medizinisches Material</t>",{ _this call Spec_crates_fnc_medic; }, [], 1.5, false, true, "", _conditionDistance];
+    _crate addAction ["<t color='#579D1C'>Munition (Hauptwaffe)</t>",{ _this call Spec_crates_fnc_addAmmo; }, [], 1.5, false, true, "", "true", 5];
+    _crate addAction ["<t color='#579D1C'>Medizinisches Material</t>",{ _this call Spec_crates_fnc_medic; }, [], 1.5, false, true, "", "true", 5];
     _crate addAction ["<t color='#FF950E'>Kiste leeren",{
         params ["_target","_caller"];
         clearBackpackCargoGlobal _target;
         clearItemCargoGlobal _target;
         clearMagazineCargoGlobal _target;
         clearWeaponCargoGlobal _target;
-    }, [], 1.5, false, true, "", _conditionDistance];
+    }, [], 1.5, false, true, "", "true", 5];
     _crate addAction ["<t color='#EE0000'>Kiste löschen</t>",{
         params ["_target","_caller"];
         deleteVehicle _target;
-    }, [], 1.5, false, true, "", _conditionDistance];
+    }, [], 1.5, false, true, "", "true", 5];
+    _crate addAction ["Granaten",{
+        private _parameterCorrect = params [["_crate",objNull,[objNull]], ["_player",objNull,[objNull]] ];
+        _crate addItemCargoGlobal ["SmokeShell",36];
+        _crate addItemCargoGlobal ["SmokeShellRed",12];
+        _crate addItemCargoGlobal ["SmokeShellGreen",12];
+        _crate addItemCargoGlobal ["SmokeShellPurple",12];
+        _crate addItemCargoGlobal ["ACE_M84",12];
+    }, [], 1.5, false, true, "", "true", 5];
     private _cargoItems = [
         ["M136 (RHS)","rhs_weap_M136"],["AT4 (UK3CB AP)","UK3CB_BAF_AT4_CS_AP_Launcher"],
         ["Pzf3","BWA3_Pzf3"],
@@ -35,7 +42,7 @@ if(_parameterCorrect && hasInterface) then {
             {
                 _target addMagazineCargoGlobal [_x,3];
             } forEach _magazines;
-        }, [_className], 1.5, false, true, "", _conditionDistance];
+        }, [_className], 1.5, false, true, "", "true", 5];
     } forEach _cargoItems;
 };
 true
