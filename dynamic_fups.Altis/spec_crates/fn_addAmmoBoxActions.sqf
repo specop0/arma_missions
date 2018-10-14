@@ -24,7 +24,7 @@ if(_parameterCorrect && hasInterface) then {
     }, [], 1.5, false, true, "", "true", 5];
     private _cargoItems = [
         ["M136 (RHS)","rhs_weap_M136"],["AT4 (UK3CB AP)","UK3CB_BAF_AT4_CS_AP_Launcher"],
-        ["Pzf3","BWA3_Pzf3"],
+        ["Pzf3","BWA3_PzF3_Tandem_Loaded"],
         ["RPG7 (RHS)","rhs_weap_rpg7"],
         ["NLAW","launch_NLAW_F"],["SMAW (CUP)","CUP_launch_Mk153Mod0"],["SMAW (RHS)","rhs_weap_smaw"],["RGW90","BWA3_RGW90"],
         ["Javelin (CUP)","CUP_launch_Javelin"],["Javelin (RHS)","rhs_weap_fgm148"],

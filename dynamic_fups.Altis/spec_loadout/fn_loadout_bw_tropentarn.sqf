@@ -25,14 +25,14 @@
 
 private _parameterCorrect = (_this call Spec_fnc_loadoutParseUnitAndType) params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
-private _uniform = "BWA3_Uniform_idz_Tropen";
-private _vest = "BWA3_Vest_Rifleman1_Tropen";
+private _uniform = "BWA3_Uniform_Tropen";
+private _vest = "BWA3_Vest_Rifleman_Tropen";
 
 private _backpack = "BWA3_TacticalPack_Tropen";
 private _backpackBig = "BWA3_Carryall_Tropen";
 private _backpackLR = "TFAR_rt1523g_big_bwmod_tropen";
 
-private _headgear = "BWA3_MICH_Tropen";
+private _headgear = "BWA3_M92_Tropen";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = selectRandom ["BWA3_G_Combat_Black","BWA3_G_Combat_Clear","BWA3_G_Combat_Orange"];
 
@@ -52,7 +52,7 @@ private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "BWA3_MG5_equipped";
+private _mgWeapon = "BWA3_MG5";
 private _mgAmmo = "BWA3_120Rnd_762x51_Tracer";
 private _mgAccessory = ["BWA3_optic_EOTech_Mag_Off"];
 private _mgAccessoryExtra = _standardAccessoryExtra;
@@ -64,8 +64,8 @@ private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "BWA3_Pzf3";
-private _atAmmo = ["BWA3_Pzf3_IT"];
+private _atWeapon = "BWA3_PzF3_Tandem_Loaded";
+private _atAmmo = [];
 
 if(_parameterCorrect) then {
     removeAllWeapons _unit;
@@ -81,10 +81,10 @@ if(_parameterCorrect) then {
     [_unit, _uniform] call Spec_fnc_addContainer;
     switch (_type) do {
         case CLASS_MG : {
-            _vest = "BWA3_Vest_Autorifleman_Tropen";
+            _vest = "BWA3_Vest_MachineGunner_Tropen";
         };
         case CLASS_LMG : {
-            _vest = "BWA3_Vest_Autorifleman_Tropen";
+            _vest = "BWA3_Vest_MachineGunner_Tropen";
         };
         case CLASS_GL : {
             _vest = "BWA3_Vest_Grenadier_Tropen";

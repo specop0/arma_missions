@@ -108,8 +108,7 @@ if(_parameterCorrect) then {
         _spawnedAmmoBox addItemCargoGlobal ["SmokeShellPurple", 12];
 
         _spawnedAmmoBox addItemCargoGlobal ["DemoCharge_Remote_Mag",2];
-        _spawnedAmmoBox addWeaponCargoGlobal ["BWA3_Pzf3",1];
-        _spawnedAmmoBox addItemCargoGlobal ["BWA3_Pzf3_IT",1];
+        _spawnedAmmoBox addWeaponCargoGlobal ["BWA3_PzF3_Tandem_Loaded",1];
         
         comment "end of ammo content";
         hint _hintAmmoBoxSpawned;

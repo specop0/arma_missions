@@ -124,7 +124,7 @@ private _usVest = "V_PlateCarrier1_blk";
 private _usBackpack = "B_AssaultPack_blk";
 private _usLongRange = "tf_rt1523g_black";
 
-private _usHeadgear = "BWA3_OpsCore_Schwarz_Camera";
+private _usHeadgear = "BWA3_OpsCore_Camera";
 private _usHeadgearPilot = "rhsusf_hgu56p_mask";
 
 private _usStandardWeapon = "rhs_weap_m4_grip";

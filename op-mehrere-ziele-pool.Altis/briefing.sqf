@@ -11,7 +11,7 @@ Nicht direkt unter dem Landepunkt stehen, da sonst die KI nicht landet (die neue
 Fuer die Helis werden ein Haufen Hints ausgegeben - Lesen ist von Vorteil.<br/>
 <font size=20 color='#0094FF'>Sonstiges</font><br/>
 Der Funker besitzt einen Zeus, falls etwas schief laeuft (etwa die KI einen Heli versemmelt - diesen dann per Zeus reparieren).<br/>
-Zur Zur¸ckverlegung soll die LR im Chinook genutzt werden (kurz Aufnehmen, Gr¸n anfunken und warten bis der Heli abhebt - fr¸hestens dann kann der alte Rucksack wieder aufgenommen werden).
+Zur Zur√ºckverlegung soll die LR im Chinook genutzt werden (kurz Aufnehmen, Gr√ºn anfunken und warten bis der Heli abhebt - fr√ºhestens dann kann der alte Rucksack wieder aufgenommen werden).
 "]];
 
 _unit createDiaryRecord ["Diary",["Zusaetzliche Informationen","
@@ -29,10 +29,10 @@ _unit createDiaryRecord ["Diary",["Zusaetzliche Informationen","
 
 _unit createDiaryRecord ["Diary",["Durchfuehrung","
 <font size=20 color='#0094FF'>Durchfuehrung</font><br/>
-Legen Sie eine Prioritaet der 4 Ziele fest und lassen Sie anschlieﬂend ihre Truppen per Luftweg verlegen, um die Lage vor Ort zu pruefen.<br/>
+Legen Sie eine Prioritaet der 4 Ziele fest und lassen Sie anschlie√üend ihre Truppen per Luftweg verlegen, um die Lage vor Ort zu pruefen.<br/>
 Dadurch dass unsere Drohnen schon verladen wurden, steht keine Aufklaerung zur Verfuegung. Wir wissen nicht, ob ein oder zwei Zuege erforderlich sind - oder keiner. Im Idealfall koennen wir alle 4 Ziele heute schon erreichen.<br/>
 <br/>
-Passen Sie abschlieﬂend auf, dass Sie sich im letzten Einsatz nicht bei der Zivilbevoelkerung verscherzen. Bleiben Sie hilfsbereit wie eh und je.<br/>
+Passen Sie abschlie√üend auf, dass Sie sich im letzten Einsatz nicht bei der Zivilbevoelkerung verscherzen. Bleiben Sie hilfsbereit wie eh und je.<br/>
 Wenn eine oder beide Zuege ausruecken, teilen Sie dies dem HQ mit ihrem Telekommunikationsmitteln (Laptop) am Fuehrungsbunker das ausgewaehlte Objektive mit.<br/>
 "]];
 
@@ -46,7 +46,7 @@ Dem deutschen Bundestag wird der Abschlussbericht ""der weiteren ergaenzenden Un
 Der Verteidigungsetat der Bundeswehr soll aufgestockt werden, damit das G36 abgeschafft und eine neue Waffe eingefuehrt werden kann. Als uebergangsloesung wurde eine Fertigungslizenz des CZ 805 BREN aus Tschechien gekauft. Bis 2020 soll eine neuartige Waffe von Heckler und Koch erforscht werden.<br/>
 <br/>
 <font size=14>04. Dezember 2017</font><br/>
-Der deutsche Bundestag beschlieﬂt einen Einsatz auf Altis. Dort haben AAF Rebellen die Regierung destabilisiert und zwingen die Bevoelkerung mit Ihnen zu kooperieren. Hierbei handelt es sich um einen Kampfeinsatz bis zum 31. Dezember 2018, wenn das Mandat nicht verlaengert wird.<br/>
+Der deutsche Bundestag beschlie√üt einen Einsatz auf Altis. Dort haben AAF Rebellen die Regierung destabilisiert und zwingen die Bevoelkerung mit Ihnen zu kooperieren. Hierbei handelt es sich um einen Kampfeinsatz bis zum 31. Dezember 2018, wenn das Mandat nicht verlaengert wird.<br/>
 <br/>
 <font size=14>14. Dezember 2018</font><br/>
 Auf Altis sind die AAF Rebellen von den deutschen Streitkraeften erfolgreich bekaempft worden. Das Mandat wird in wenigen Wochen ablaufen, sodass bereits angefangen wird Material als auch Truppen abzuziehen.<br/>

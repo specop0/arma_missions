@@ -3787,7 +3787,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=238;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item219
 		{
@@ -3803,7 +3803,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=239;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item220
 		{
@@ -3819,7 +3819,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=240;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item221
 		{
@@ -3835,7 +3835,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=241;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item222
 		{
@@ -3851,7 +3851,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=242;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item223
 		{
@@ -3867,7 +3867,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=243;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item224
 		{
@@ -3883,7 +3883,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=244;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item225
 		{
@@ -3899,7 +3899,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=245;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item226
 		{
@@ -3915,7 +3915,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=246;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item227
 		{
@@ -3932,7 +3932,7 @@ class Mission
 				init="[this] call Spec_fnc_crateStandardAmmo;";
 			};
 			id=247;
-			type="TTT_Crate_Ammo_Standard_US";
+			type="Box_NATO_Ammo_F";
 		};
 		class Item228
 		{
@@ -3949,7 +3949,7 @@ class Mission
 				init="[this] call Spec_fnc_crateStandardAmmo;";
 			};
 			id=248;
-			type="TTT_Crate_Ammo_Standard_US";
+			type="Box_NATO_Ammo_F";
 		};
 		class Item229
 		{
@@ -3966,7 +3966,7 @@ class Mission
 				init="[this] call Spec_fnc_crateStandardAmmo;";
 			};
 			id=249;
-			type="TTT_Crate_Ammo_Standard_US";
+			type="Box_NATO_Ammo_F";
 		};
 		class Item230
 		{
@@ -3983,7 +3983,7 @@ class Mission
 				init="[this] call Spec_fnc_crateGrenades;";
 			};
 			id=250;
-			type="TTT_Crate_Ammo_Grenade_US";
+			type="Box_NATO_Grenades_F";
 		};
 		class Item231
 		{
@@ -4000,7 +4000,7 @@ class Mission
 				init="[this] call Spec_fnc_crateGrenades;";
 			};
 			id=251;
-			type="TTT_Crate_Ammo_Grenade_US";
+			type="Box_NATO_Grenades_F";
 		};
 		class Item232
 		{
@@ -4017,7 +4017,7 @@ class Mission
 				init="[this] call Spec_fnc_crateGrenades;";
 			};
 			id=252;
-			type="TTT_Crate_Ammo_Grenade_US";
+			type="Box_NATO_Grenades_F";
 		};
 		class Item233
 		{
@@ -4034,7 +4034,7 @@ class Mission
 				init="[this] call Spec_fnc_crateGrenades;";
 			};
 			id=253;
-			type="TTT_Crate_Ammo_Grenade_US";
+			type="Box_NATO_Grenades_F";
 		};
 		class Item234
 		{
@@ -4051,7 +4051,7 @@ class Mission
 				init="[this] call Spec_fnc_crateStandardAmmo;";
 			};
 			id=254;
-			type="TTT_Crate_Ammo_Standard_US";
+			type="Box_NATO_Ammo_F";
 		};
 		class Item235
 		{
@@ -4068,7 +4068,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=255;
-			type="TTT_Crate_Weapons_Launcher_US";
+			type="Box_NATO_WpsLaunch_F";
 		};
 		class Item236
 		{
@@ -4085,7 +4085,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=256;
-			type="TTT_Crate_Weapons_Launcher_US";
+			type="Box_NATO_WpsLaunch_F";
 		};
 		class Item237
 		{
@@ -4102,7 +4102,7 @@ class Mission
 				init="[this] call Spec_fnc_crateLauncher;";
 			};
 			id=257;
-			type="TTT_Crate_Weapons_Launcher_US";
+			type="Box_NATO_WpsLaunch_F";
 		};
 		class Item238
 		{
@@ -4118,7 +4118,7 @@ class Mission
 				skill=0.40000001;
 			};
 			id=258;
-			type="TTT_Crate_Medic_Doctor_US";
+			type="Box_NATO_Support_F";
 		};
 		class Item239
 		{
@@ -4135,7 +4135,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarWeapon;";
 			};
 			id=259;
-			type="UK3CB_BAF_Static_Weapons_L16_Box";
+			type="UK3CB_BAF_Box_L16";
 		};
 		class Item240
 		{
@@ -4152,7 +4152,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=260;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item241
 		{
@@ -4169,7 +4169,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=261;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item242
 		{
@@ -4186,7 +4186,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=262;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item243
 		{
@@ -4236,7 +4236,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=265;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item246
 		{
@@ -4253,7 +4253,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=266;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item247
 		{
@@ -4270,7 +4270,7 @@ class Mission
 				init="[this] call Spec_fnc_crateMortarAmmo";
 			};
 			id=267;
-			type="UK3CB_BAF_Static_Weapons_L16_ammo";
+			type="UK3CB_BAF_Box_L16_Ammo_Mixed";
 		};
 		class Item248
 		{

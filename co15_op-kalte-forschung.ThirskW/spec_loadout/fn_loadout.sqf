@@ -82,9 +82,9 @@ private _medicClass = "B_medic_F";
 
 comment "Autorifleman";
 private _mgClass = "B_soldier_AR_F";
-private _mgWeapon = "BWA3_mg5";
+private _mgWeapon = "BWA3_MG5";
 private _mgAmmo = "BWA3_120Rnd_762x51";
-private _mgAccessory = ["BWA3_muzzle_snds_G28","acc_pointer_IR","optic_MRCO"];
+private _mgAccessory = ["BWA3_muzzle_snds_Rotex_IIA","acc_pointer_IR","optic_MRCO"];
 private _mgAccessoryExtra = ["BWA3_optic_EOTech"];
 comment "Ammo Bearer";
 private _mgAssiClass = "B_Soldier_A_F";
@@ -93,13 +93,12 @@ comment "Helicopter Crew";
 private _lmgClass = "B_Soldier_lite_F";
 private _lmgWeapon = "BWA3_MG4";
 private _lmgAmmo = "BWA3_200Rnd_556x45_Tracer";
-private _lmgAccessory = ["BWA3_muzzle_snds_G36","acc_pointer_IR","optic_MRCO"];
+private _lmgAccessory = ["BWA3_muzzle_snds_Rotex_IIIC","acc_pointer_IR","optic_MRCO"];
 private _lmgAccessoryExtra = ["BWA3_optic_EOTech"];
 
 comment "Rifleman (AT)";
 private _atClass = "B_soldier_LAT_F";
-private _atWeapon = "BWA3_Pzf3";
-private _atAmmo = "BWA3_Pzf3_IT";
+private _atWeapon = "BWA3_PzF3_Tandem_Loaded";
 
 comment "Engineer";
 private _pioClass = "B_engineer_F";
@@ -267,10 +266,7 @@ if(_parameterCorrect) then {
                 } else {
                     comment "AT launcher";
                     if(_type == _atClass) then {
-                        _unit addBackpack _backpack;
-                        _unit addItemToBackpack _atAmmo;
                         _unit addWeapon _atWeapon;
-                        removeBackpackGlobal _unit;
                     };
                     comment "standard weapon";
                     [_unit,_standardAmmo,ADD_TO_VEST, 6] call Spec_fnc_addItemToContainer;

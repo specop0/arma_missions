@@ -123,8 +123,7 @@ if(isServer) then {
                 };
                 case ("Box_Syndicate_WpsLaunch_F") : {
                     [_x, [
-                        ["BWA3_Pzf3", 4],
-                        ["BWA3_Pzf3_IT", 4]
+                        ["BWA3_PzF3_Tandem_Loaded", 4]
                     ]] call Spec_crate_fnc_filler;
                 };
             };

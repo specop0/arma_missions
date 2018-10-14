@@ -20,8 +20,7 @@ if(isServer) then {
                 case ("TTT_Crate_Weapons_Launcher_BW") : {
                     [_x,
                         [
-                            ["BWA3_Pzf3", 2],
-                            ["BWA3_Pzf3_IT", 2],
+                            ["BWA3_PzF3_Tandem_Loaded", 2],
                             ["BWA3_Fliegerfaust", 2],
                             ["BWA3_Fliegerfaust_Mag", 2]
                         ]
