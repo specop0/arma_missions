@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=63;
+		nextID=67;
 	};
 	class Camera
 	{
@@ -288,7 +288,7 @@ class AddonsMetaData
 		class Item32
 		{
 			className="cba_modules";
-			name="Community Base Addons - Modules Component";
+			name="Community Base Addons - Modules";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
@@ -464,6 +464,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=24;
 					type="rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy";
@@ -504,6 +505,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 						name="carA";
 					};
 					id=25;
@@ -583,6 +585,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 						name="medic1";
 					};
 					id=26;
@@ -662,6 +665,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=27;
 					type="rhsusf_M978A4_usarmy_wd";
@@ -701,6 +705,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
+						lock="UNLOCKED";
 						name="birdA";
 					};
 					id=102;
@@ -761,6 +766,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 						name="carB";
 					};
 					id=103;
@@ -840,6 +846,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=105;
 					type="rhsusf_m1043_w_m2";
@@ -937,6 +944,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=108;
 					type="rhsusf_m1043_w_m2";
@@ -1034,6 +1042,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=110;
 					type="rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy";
@@ -1093,6 +1102,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=116;
 					type="rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy";
@@ -1768,6 +1778,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=1142;
 					type="rhsusf_m998_w_2dr_fulltop";
@@ -1846,6 +1857,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=1157;
 					type="rhsusf_m998_w_2dr_fulltop";
@@ -19019,6 +19031,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=130;
 					type="CUP_O_UH1H_slick_SLA";
@@ -19363,6 +19376,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=259;
 					type="CUP_O_DSHKM_SLA";
@@ -19465,6 +19479,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=270;
 					type="CUP_O_DSHKM_SLA";
@@ -19535,6 +19550,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=274;
 					type="CUP_O_DSHKM_SLA";
@@ -19634,6 +19650,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=279;
 					type="CUP_O_Ural_Open_SLA";
@@ -19651,6 +19668,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=282;
 					type="CUP_O_Ural_SLA";
@@ -19709,6 +19727,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=283;
 					type="CUP_O_Ural_SLA";
@@ -19767,6 +19786,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=285;
 					type="CUP_O_UAZ_Unarmed_SLA";
@@ -20578,6 +20598,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=406;
 					type="CUP_O_DSHKM_SLA";
@@ -20645,6 +20666,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=409;
 					type="CUP_O_DSHKM_SLA";
@@ -21014,6 +21036,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=501;
 					type="CUP_O_DSHKM_MiniTripod_SLA";
@@ -21172,6 +21195,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=523;
 					type="CUP_O_DSHKM_MiniTripod_SLA";
@@ -22254,6 +22278,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=580;
 					type="CUP_O_UAZ_MG_SLA";
@@ -22271,6 +22296,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=592;
 					type="CUP_O_UAZ_MG_SLA";
@@ -22287,6 +22313,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=764;
 					type="CUP_O_Ural_Open_SLA";
@@ -22303,6 +22330,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=765;
 					type="CUP_O_Ural_SLA";
@@ -22361,6 +22389,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=766;
 					type="CUP_O_Ural_SLA";
@@ -22420,6 +22449,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=777;
 					type="CUP_O_Ural_Open_SLA";
@@ -23832,6 +23862,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=156;
 					type="CUP_O_BTR60_SLA";
@@ -23954,6 +23985,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=223;
 					type="CUP_O_Ural_ZU23_SLA";
@@ -24047,6 +24079,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=310;
 					type="C_IDAP_Truck_02_F";
@@ -28840,6 +28873,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=657;
 					type="CUP_O_Ural_Open_SLA";
@@ -28856,6 +28890,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=658;
 					type="CUP_O_Ural_SLA";
@@ -28915,6 +28950,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=659;
 					type="CUP_O_Ural_SLA";
@@ -28973,6 +29009,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=660;
 					type="CUP_O_Ural_Open_SLA";
@@ -32147,6 +32184,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=645;
 					type="CUP_O_UAZ_MG_SLA";
@@ -32735,6 +32773,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=663;
 					type="CUP_O_DSHKM_SLA";
@@ -32804,6 +32843,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=666;
 					type="CUP_O_DSHKM_MiniTripod_SLA";
@@ -33009,6 +33049,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=677;
 					type="CUP_O_DSHKM_SLA";
@@ -33197,6 +33238,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=684;
 					type="CUP_O_DSHKM_SLA";
@@ -36925,6 +36967,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=695;
 					type="CUP_O_UAZ_MG_SLA";
@@ -36942,6 +36985,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=701;
 					type="CUP_O_UAZ_MG_SLA";
@@ -37075,6 +37119,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=232;
 					type="CUP_O_BTR60_SLA";
@@ -37092,6 +37137,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=219;
 					type="CUP_O_UAZ_MG_SLA";
@@ -37126,6 +37172,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=770;
 					type="CUP_O_DSHKM_MiniTripod_SLA";
@@ -37142,6 +37189,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=773;
 					type="CUP_O_DSHKM_MiniTripod_SLA";
@@ -37329,6 +37377,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=780;
 					type="CUP_O_DSHKM_SLA";
@@ -45301,6 +45350,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						lock="UNLOCKED";
 					};
 					id=872;
 					type="CUP_O_UAZ_MG_SLA";
