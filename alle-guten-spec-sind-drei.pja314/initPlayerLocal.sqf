@@ -15,5 +15,6 @@ carA addAction [
     false,
     true,
     "",
-    "birdA in attachedObjects carA"
+    "birdA in attachedObjects carA",
+    3
 ];
