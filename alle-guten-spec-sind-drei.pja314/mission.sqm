@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=67;
+		nextID=71;
 	};
 	class Camera
 	{
@@ -633,6 +633,25 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isMedicalVehicle";
+							expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="ace_cargo_space";
 							expression="[_this,_value] call ace_cargo_fnc_setSpace;";
 							class Value
@@ -650,7 +669,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=4;
 					};
 				};
 				class Item3
@@ -1842,7 +1861,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="ace_isMedicalVehicle";
+							expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item41
@@ -1921,7 +1959,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="ace_isMedicalVehicle";
+							expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item42
