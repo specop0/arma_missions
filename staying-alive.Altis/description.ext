@@ -1,0 +1,33 @@
+#include "W_Teleporter\dialog.hpp"
+
+class Extended_Init_EventHandlers {
+#include "spec_crateNaming\CfgEventHandlers.hpp"
+#include "spec_noLoot\CfgEventHandlers.hpp"
+};
+
+class CfgFunctions {
+#include "spec_crate\CfgFunctions.hpp"
+#include "spec_crateNaming\CfgFunctions.hpp"
+#include "spec_loadout\CfgFunctions.hpp"
+#include "spec_noLoot\CfgFunctions.hpp"
+#include "spec_tfar\CfgFunctions.hpp"
+#include "W_Teleporter\CfgFunctions.hpp"
+};
+
+class Header
+{
+    gameType = "coop";
+};
+
+respawn = BASE;
+respawnDelay = 5;
+respawnDialog = false;
+
+author="Spec";
+OnLoadName = "OP Staying Alive";
+loadScreen="loading.jpg";
+
+disabledAI = 1;
+enableDebugConsole = 1;
+
+cba_settings_hasSettingsFile = 1;
