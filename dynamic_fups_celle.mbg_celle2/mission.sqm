@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=161;
+	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=359;
+		nextID=360;
 	};
 	class MarkerIDProvider
 	{
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={10926.977,37.720001,10845.715};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -2287,19 +2287,6 @@ class Mission
 		};
 		class Item38
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10948.807,12.719978,10863.835};
-			};
-			name="hc1";
-			isPlayable=1;
-			id=289;
-			type="HeadlessClient_F";
-			atlOffset=-2.1934509e-005;
-		};
-		class Item39
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -2314,7 +2301,7 @@ class Mission
 			id=290;
 			type="B_Truck_01_fuel_F";
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2373,7 +2360,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2389,7 +2376,7 @@ class Mission
 			id=292;
 			type="B_Truck_01_ammo_F";
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2430,7 +2417,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2447,7 +2434,7 @@ class Mission
 			type="Land_Cargo_HQ_V1_F";
 			atlOffset=-9.5367432e-007;
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2486,7 +2473,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2526,7 +2513,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2542,7 +2529,7 @@ class Mission
 			id=301;
 			type="rsr_fennek_hmg_flecktarn";
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2558,7 +2545,7 @@ class Mission
 			id=302;
 			type="rsr_fennek_hmg_flecktarn";
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2597,7 +2584,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2636,7 +2623,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2652,7 +2639,7 @@ class Mission
 			id=307;
 			type="CUP_B_TowingTractor_USMC";
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2692,7 +2679,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Group";
 			side="West";
@@ -3045,7 +3032,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Group";
 			side="West";
@@ -3101,7 +3088,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -3214,7 +3201,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Group";
 			side="West";
@@ -3327,7 +3314,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item56
+		class Item55
 		{
 			dataType="Group";
 			side="West";
@@ -3383,7 +3370,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item57
+		class Item56
 		{
 			dataType="Group";
 			side="West";
@@ -3496,7 +3483,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item58
+		class Item57
 		{
 			dataType="Group";
 			side="West";
@@ -3609,7 +3596,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Group";
 			side="West";
@@ -3665,7 +3652,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Group";
 			side="West";
@@ -3778,7 +3765,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Group";
 			side="West";
@@ -3891,7 +3878,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Group";
 			side="West";
@@ -4189,6 +4176,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item62
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10949.952,12.72,10863.874};
+			};
+			name="hc1";
+			isPlayable=1;
+			id=359;
+			type="HeadlessClient_F";
 		};
 	};
 };

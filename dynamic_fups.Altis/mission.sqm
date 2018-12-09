@@ -8,7 +8,7 @@ class EditorData
 	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=345;
+		nextID=346;
 	};
 	class MarkerIDProvider
 	{
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={15182.33,42.916039,17334.529};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -2421,19 +2421,6 @@ class Mission
 		};
 		class Item44
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={15182.172,17.892925,17390.91};
-			};
-			name="hc1";
-			isPlayable=1;
-			id=289;
-			type="HeadlessClient_F";
-			atlOffset=-1.9073486e-006;
-		};
-		class Item45
-		{
 			dataType="Group";
 			side="West";
 			class Entities
@@ -2785,7 +2772,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Group";
 			side="West";
@@ -2841,7 +2828,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Group";
 			side="West";
@@ -2954,7 +2941,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Group";
 			side="West";
@@ -3067,7 +3054,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Group";
 			side="West";
@@ -3123,7 +3110,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Group";
 			side="West";
@@ -3148,6 +3135,7 @@ class Mission
 					};
 					id=321;
 					type="B_Soldier_TL_F";
+					atlOffset=-1.9073486e-006;
 				};
 				class Item1
 				{
@@ -3212,6 +3200,7 @@ class Mission
 				formation="FILE";
 			};
 			id=320;
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3236,7 +3225,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Group";
 			side="West";
@@ -3349,7 +3338,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Group";
 			side="West";
@@ -3405,7 +3394,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Group";
 			side="West";
@@ -3518,7 +3507,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -3631,7 +3620,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Group";
 			side="West";
@@ -3929,6 +3918,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item55
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15182.21,17.901459,17389.279};
+			};
+			name="hc1";
+			isPlayable=1;
+			id=345;
+			type="HeadlessClient_F";
 		};
 	};
 };

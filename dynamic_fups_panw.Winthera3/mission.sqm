@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=309;
+		nextID=310;
 	};
 	class MarkerIDProvider
 	{
@@ -19,7 +19,7 @@ class EditorData
 		pos[]={733.31958,38.343819,9589.9395};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -1511,7 +1511,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairVehicle";
-					expression="_this setVariable ['ace_isRepairVehicle',_value, true];";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
 					{
 						class data
@@ -1570,7 +1570,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairVehicle";
-					expression="_this setVariable ['ace_isRepairVehicle',_value, true];";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
 					{
 						class data
@@ -1663,7 +1663,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={735.47223,16.207081,9727.4121};
-				angles[]={-0,3.141593,0};
+				angles[]={0,3.141593,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1672,6 +1672,7 @@ class Mission
 			};
 			id=134;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=9.5367432e-007;
 		};
 		class Item27
 		{
@@ -1679,7 +1680,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={735.38922,16.207081,9736.7041};
-				angles[]={-0,3.141593,0};
+				angles[]={0,3.141593,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1688,6 +1689,7 @@ class Mission
 			};
 			id=135;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=9.5367432e-007;
 		};
 		class Item28
 		{
@@ -3851,7 +3853,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={730.13953,15.713872,9735.457};
-				angles[]={-0,3.1415949,0};
+				angles[]={0,3.1415949,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3947,7 +3949,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={735.51178,16.207081,9719.2705};
-				angles[]={-0,3.141593,0};
+				angles[]={0,3.141593,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3956,6 +3958,7 @@ class Mission
 			};
 			id=291;
 			type="UK3CB_BAF_Coyote_Passenger_L111A1_W";
+			atlOffset=9.5367432e-007;
 		};
 		class Item48
 		{
@@ -4117,19 +4120,6 @@ class Mission
 		};
 		class Item51
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={718.62213,13.36,9589.3574};
-				angles[]={0,1.134465,0};
-			};
-			name="hc1";
-			isPlayable=1;
-			id=297;
-			type="HeadlessClient_F";
-		};
-		class Item52
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -4188,7 +4178,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4228,7 +4218,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -4498,6 +4488,18 @@ class Mission
 			};
 			id=300;
 			atlOffset=-9.5367432e-007;
+		};
+		class Item54
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={718.90802,13.36,9589.6074};
+			};
+			name="hc1";
+			isPlayable=1;
+			id=309;
+			type="HeadlessClient_F";
 		};
 	};
 };
