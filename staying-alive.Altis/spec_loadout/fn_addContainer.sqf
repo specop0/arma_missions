@@ -22,7 +22,6 @@ if !(isNull _unit || _containerClassname isEqualTo "") then {
     private _cfg = (configFile >> "CfgWeapons");
     if (_containerClassname isKindOf ["Uniform_Base", _cfg]) then {
         _containerNumber = 0;
-        
     };
     if (_containerClassname isKindOf ["Vest_NoCamo_Base", _cfg] || _containerClassname isKindOf ["Vest_Camo_Base", _cfg]) then {
         _containerNumber = 1;

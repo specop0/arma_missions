@@ -67,7 +67,7 @@ if (_parameterCorrect) then {
         case CLASS_MEDIC : {
             [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 15] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
-            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
+            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 15] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 3] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_salineIV_500",ADD_TO_BACKPACK, 4] call Spec_loadout_fnc_addItemToContainer;
@@ -80,7 +80,7 @@ if (_parameterCorrect) then {
         case CLASS_MEDEVAC : {
             [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 15] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
-            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
+            [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 15] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 10] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_salineIV",ADD_TO_BACKPACK, 6] call Spec_loadout_fnc_addItemToContainer;
@@ -92,8 +92,8 @@ if (_parameterCorrect) then {
             _unit setVariable ["ace_medical_medicClass", 2, true];
         };
         default {
-            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 9] call Spec_loadout_fnc_addItemToContainer;
-            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 3] call Spec_loadout_fnc_addItemToContainer;
+            [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 18] call Spec_loadout_fnc_addItemToContainer;
+            [_unit,"ACE_packingBandage",ADD_TO_BACKPACK, 6] call Spec_loadout_fnc_addItemToContainer;
             [_unit,"ACE_tourniquet",ADD_TO_BACKPACK, 2] call Spec_loadout_fnc_addItemToContainer;
         };
     };

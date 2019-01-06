@@ -14,7 +14,7 @@
 
 #define PRIMARY_AMMO "30Rnd_556x45_Stanag"
 #define LMG_AMMO "100Rnd_580x42_Mag_F"
-#define SECONDARY_AMMO "rhsusf_mag_17Rnd_9x19_JHP"
+#define SECONDARY_AMMO "CUP_15Rnd_9x19_M9"
 
 #define UGL_SMOKE_WHITE "1Rnd_Smoke_Grenade_shell"
 #define UGL_SMOKE_RED "1Rnd_SmokeRed_Grenade_shell"
@@ -27,8 +27,8 @@ if(isServer) then {
             case ("ACE_medicalSupplyCrate") : {
                 [_x,
                     [
-                        ["ACE_fieldDressing", 125],
-                        ["ACE_packingBandage", 50],
+                        ["ACE_fieldDressing", 250],
+                        ["ACE_packingBandage", 100],
                         ["ACE_elasticBandage", 25],
                         ["ACE_quikclot", 25],
                         ["ACE_tourniquet", 10],
@@ -61,7 +61,7 @@ if(isServer) then {
                     [
                         ["Titan_AT", 2],
                         ["Titan_AA", 2],
-                        ["UK3CB_BAF_AT4_CS_AP_Launcher", 2]
+                        ["CUP_launch_M136", 2]
                     ]
                 ] call Spec_crate_fnc_filler;
                 _x setVariable ["ace_cargo_displayName", "Werfermunition", true];

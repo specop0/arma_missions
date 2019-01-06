@@ -25,32 +25,24 @@
 
 private _parameterCorrect = (_this call Spec_loadout_fnc_parseUnitAndType) params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
-private _uniform = "rhs_uniform_g3_mc";
-private _vest = selectRandom [
-    "rhsusf_spcs_ocp_crewman",
-    "rhsusf_spcs_ocp_machinegunner",
-    "rhsusf_spcs_ocp_medic",
-    "rhsusf_spcs_ocp_rifleman_alt",
-    "rhsusf_spcs_ocp_rifleman",
-    "rhsusf_spcs_ocp_saw",
-    "rhsusf_spcs_ocp_sniper"
-];
+private _uniform = "CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE";
+private _vest = "V_PlateCarrier2_rgr_noflag_F";
 
-private _backpack = "rhsusf_falconii_mc";
+private _backpack = "B_Kitbag_tan";
 private _backpackBig = "CUP_B_USPack_Coyote";
-private _backpackLR = "TFAR_rt1523g_big_rhs";
+private _backpackLR = "TFAR_anprc155_coyote";
 
-private _headgear = "rhsusf_opscore_mc_cover";
+private _headgear = "CUP_H_BAF_DDPM_Mk6_EMPTY_PRR";
 private _headgearPilot = "H_PilotHelmetHeli_B";
-private _goggles = "PBW_RevisionT_Klar";
+private _goggles = "";
 
 private _standardWeapon = "CUP_arifle_Mk16_CQC_FG_black";
 private _standardAmmo = "30Rnd_556x45_Stanag";
-private _standardAccessory = ["rhsusf_acc_g33_xps3"];
-private _standardAccessoryExtra = ["rhsusf_acc_eotech_xps3"];
+private _standardAccessory = ["CUP_optic_HoloBlack"];
+private _standardAccessoryExtra = ["optic_MRCO"];
 
-private _secondaryWeapon = "rhsusf_weap_glock17g4";
-private _secondaryAmmo = "rhsusf_mag_17Rnd_9x19_JHP";
+private _secondaryWeapon = "CUP_hgun_M9";
+private _secondaryAmmo = "CUP_15Rnd_9x19_M9";
 private _secondaryAccessory = [];
 
 // Weapon with Underslung Grenade Launcher
@@ -66,7 +58,7 @@ private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 // Launcher
-private _atSimple = "UK3CB_BAF_AT4_CS_AP_Launcher";
+private _atSimple = "CUP_launch_M136";
 private _atWeapon = "launch_B_Titan_short_F";
 private _atAmmo = "Titan_AT";
 private _aaWeapon = "launch_B_Titan_F";
@@ -83,7 +75,7 @@ if (_parameterCorrect) then {
     removeGoggles _unit;
 
     // Vest, Uniform, Backpack, Headgear , Googgles
-    [_unit, _uniform] call Spec_loadout_fnc_addContainer;
+    _unit forceAddUniform _uniform;
     [_unit, _vest] call Spec_loadout_fnc_addContainer;
     if (_type in [CLASS_OPL, CLASS_DRIVER, CLASS_PILOT, CLASS_LOGISTIC]) then {
         [_unit, _backpackLR] call Spec_loadout_fnc_addContainer;
