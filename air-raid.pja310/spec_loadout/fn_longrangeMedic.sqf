@@ -7,7 +7,7 @@ if(_parameterCorrect) then {
     _unit addBackpackGlobal _backpackLR;
     clearItemCargoGlobal (unitBackpack _unit);
     clearMagazineCargoGlobal (unitBackpack _unit);
-    [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+    [_unit,"ItemAndroid",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_fieldDressing",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_elasticBandage",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;
     [_unit,"ACE_quikclot",ADD_TO_BACKPACK, 15] call Spec_fnc_addItemToContainer;

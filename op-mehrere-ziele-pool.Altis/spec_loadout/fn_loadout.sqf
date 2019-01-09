@@ -171,9 +171,9 @@ if(_parameterCorrect) then {
     if(_type in [_oplClass, _tfClass, _funkerClass, _logisticClass, _medevacClass, _pilotClass]) then {
         [_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
         if(_type in [_medevacClass, _funkerClass]) then {
-            [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            [_unit,"ItemAndroid",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         } else {
-            [_unit,"ACE_DK10_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+            [_unit,"ItemcTab",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type in [_oplClass, _tfClass, _logisticClass, _pilotClass]) then {

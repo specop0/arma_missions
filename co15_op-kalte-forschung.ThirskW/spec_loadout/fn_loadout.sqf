@@ -149,7 +149,7 @@ if(_parameterCorrect) then {
     comment "lead equipment (tablet, etc)";
     if(_type == _tfClass) then {
         /*
-        [_unit,"ACE_DK10_b",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+        [_unit,"ItemcTab",ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
         [_unit,"ACE_CableTie",ADD_TO_VEST, 3] call Spec_fnc_addItemToContainer;
         */        
         Spec_fnc_ammoBox = compile preprocessFileLineNumbers "scripts\ammoBox.sqf";

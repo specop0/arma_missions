@@ -46,7 +46,7 @@ if(_parameterCorrect) then {
     comment "lead equipment (tablet, etc)";
     if(_type in [CLASS_TF_BLUE, CLASS_FUNKER_BLUE, CLASS_LOGISTIC, CLASS_MEDEVAC, CLASS_PILOT, CLASS_PILOT_JET]) then {
         [_unit,"ACE_microDAGR",ADD_TO_UNIFORM] call Spec_fnc_addItemToContainer;
-        [_unit,"ACE_GD300_b",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,"ItemAndroid",ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
     };    
     [_unit,"ACE_CableTie",ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
 

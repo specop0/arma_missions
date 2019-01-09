@@ -47,9 +47,9 @@ if(_parameterCorrect) then {
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_FUNKER, CLASS_LOGISTIC, CLASS_MEDEVAC, CLASS_PILOT]) then {
         [_unit,"ACE_microDAGR",0] call Spec_fnc_addItemToContainer;
         if(_type in [CLASS_MEDEVAC, CLASS_FUNKER]) then {
-            [_unit,"ACE_GD300_b",2] call Spec_fnc_addItemToContainer;
+            [_unit,"ItemAndroid",2] call Spec_fnc_addItemToContainer;
         } else {
-            [_unit,"ACE_DK10_b",2] call Spec_fnc_addItemToContainer;
+            [_unit,"ItemcTab",2] call Spec_fnc_addItemToContainer;
         };
     };
     if(_type in [CLASS_OPL, CLASS_TF, CLASS_LOGISTIC, CLASS_PILOT]) then {
