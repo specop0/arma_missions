@@ -7,25 +7,55 @@ _loadoutFactionList pushBack "CSAT";
 _loadoutFactionList pushBack "NATO_PACIFIC";
 _loadoutFactionList pushBack "CSAT_PACIFIC";
 // CUP
-_loadoutFactionList pushBack "CUP_USSOCOM";
-_loadoutFactionList pushBack "KOREA";
+if (["CUP_arifle_M16A4_Base"] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "CUP_USSOCOM";
+};
+if ([["CUP_arifle_M16A4_Base","MNP_CombatUniform_ROKMC"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "KOREA";
+};
 // RHS
-_loadoutFactionList pushBack "USARMY";
-_loadoutFactionList pushBack "USMC";
-_loadoutFactionList pushBack "USSOCOM";
-_loadoutFactionList pushBack "US_WINTER";
-_loadoutFactionList pushBack "RUS";
-_loadoutFactionList pushBack "RUS_ALT";
+if ([["rhs_m4a1_grip_acog","rhs_uniform_cu_ucp"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "USARMY";
+};
+if ([["rhs_m4a1_grip_acog","rhs_uniform_FROG01_d"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "USMC";
+};
+if ([["rhs_m4a1_grip_acog","rhs_uniform_FROG01_m81"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "USSOCOM";
+};
+if ([["rhs_m4a1_grip_acog","MNP_CombatUniform_USMC_arctic"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "US_WINTER";
+};
+if ([["rhs_weap_ak74m_camo","rhs_uniform_flora_patchless"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "RUS";
+};
+if ([["rhs_weap_ak74m_camo","rhs_uniform_flora_patchless_alt"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "RUS_ALT";
+};
 //3CB
-_loadoutFactionList pushBack "UK";
-_loadoutFactionList pushBack "UK_WINTER";
+if ([["UK3CB_BAF_L85A2","UK3CB_BAF_U_CombatUniform_MTP"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "UK";
+};
+if ([["UK3CB_BAF_L85A2","MNP_CombatUniform_USMC_arctic"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "UK_WINTER";
+};
 //BW
-_loadoutFactionList pushBack "BW_TROPEN";
-_loadoutFactionList pushBack "BW_FLECK";
+if ([["hlc_rifle_G36KE1","BWA3_Uniform_Fleck"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "BW_TROPEN";
+};
+if ([["hlc_rifle_G36KE1","BWA3_Uniform_Tropen"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "BW_FLECK";
+};
 //other / mixed
-_loadoutFactionList pushBack "NORWAY_WOOD";
-_loadoutFactionList pushBack "NORWAY_DESERT";
-_loadoutFactionList pushBack "UKRAINE";
+if ([["MNP_CombatUniform_NOR_A"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "NORWAY_WOOD";
+};
+if ([["MNP_CombatUniform_NOR_D_A"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "NORWAY_DESERT";
+};
+if ([["CUP_arifle_AK74","MNP_CombatUniform_Ukrainian","CFP_AssaultPack_M81"], true] call Spec_fnc_isClassNamePresent) then {
+    _loadoutFactionList pushBack "UKRAINE";
+};
 // low tech
 _loadoutFactionList pushBack "POLICE";
 _loadoutFactionList pushBack "SYNDICAT";

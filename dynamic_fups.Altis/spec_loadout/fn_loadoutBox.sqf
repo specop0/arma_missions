@@ -80,39 +80,43 @@ if(_parameterCorrect && hasInterface) then {
     
     
     // change m4 variants
-    _factionName = "M4_VARIANTS";
-    _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
-    _object addAction [_factionName, {
-        (_this select 3) params ["_factionName"];
-        Spec_var_loadoutFaction = _factionName;
-    }, [_factionName], -2, false, false, "", _conditionString];
     private _weapons = ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m16a4_carryhandle_M203",
         "rhs_weap_m4","rhs_weap_m4_grip","rhs_weap_m4_m320",
         "rhs_weap_m4a1","rhs_weap_m4a1_grip","rhs_weap_m4a1_m320",
         "rhs_weap_m4a1_carryhandle","rhs_weap_m4a1_carryhandle_grip","rhs_weap_m4a1_carryhandle_m203S"
     ];
-    _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
-    _i = -4;
-    {
-        _object addAction [_x, {
-            params ["","_caller"];
-            (_this select 3) params ["_weapon"];
-            private _magazines = primaryWeaponMagazine _caller;
-            private _items = primaryWeaponItems _caller;
-            _caller removeWeapon primaryWeapon _caller;
-            {
-                [_caller,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
-            } forEach _magazines;
-            _caller addWeapon _weapon;
-            {
-                _caller addPrimaryWeaponItem _x;
-            } forEach _items;
-            Spec_var_loadoutFaction = "MAIN";
-        }, [_x], _i, false, true, "", _conditionString];
-        _i = _i - 1;
-    } forEach _weapons;
-    if(_i < _minimumActionIndex) then {
-        _minimumActionIndex = _i;
+    if ([_weapons, false] call Spec_fnc_isClassNamePresent) then {
+        _factionName = "M4_VARIANTS";
+        _conditionString = "Spec_var_loadoutFaction isEqualTo ""MAIN"";";
+        _object addAction [_factionName, {
+            (_this select 3) params ["_factionName"];
+            Spec_var_loadoutFaction = _factionName;
+        }, [_factionName], -2, false, false, "", _conditionString];
+        _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
+        _i = -4;
+        {
+            if ([_x] call Spec_fnc_isClassNamePresent) then {
+                _object addAction [_x, {
+                    params ["","_caller"];
+                    (_this select 3) params ["_weapon"];
+                    private _magazines = primaryWeaponMagazine _caller;
+                    private _items = primaryWeaponItems _caller;
+                    _caller removeWeapon primaryWeapon _caller;
+                    {
+                        [_caller,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
+                    } forEach _magazines;
+                    _caller addWeapon _weapon;
+                    {
+                        _caller addPrimaryWeaponItem _x;
+                    } forEach _items;
+                    Spec_var_loadoutFaction = "MAIN";
+                }, [_x], _i, false, true, "", _conditionString];
+            };
+            _i = _i - 1;
+        } forEach _weapons;
+        if(_i < _minimumActionIndex) then {
+            _minimumActionIndex = _i;
+        };
     };
     
     // add ace action for helicopter scripts
@@ -125,6 +129,7 @@ if(_parameterCorrect && hasInterface) then {
     _conditionString = format ["Spec_var_loadoutFaction isEqualTo ""%1"";", _factionName];
     _object addAction ["MedEvac/Weiss",{
         params ["_target","_caller"];
+        [_caller,1,["ACE_SelfActions", "Spec_action_callMedevac"]] call ace_interact_menu_fnc_removeActionFromObject;
         private _actionMedevac = ["Spec_action_callMedevac", "Rufe Weiss", "", {_this remoteExec ["Spec_fnc_heli_medevac",2]}, {true}] call ace_interact_menu_fnc_createAction;
         [_caller,1, ["ACE_SelfActions"], _actionMedevac] call ace_interact_menu_fnc_addActionToObject;
         
@@ -132,6 +137,7 @@ if(_parameterCorrect && hasInterface) then {
     }, [], -4, false, true, "", _conditionString];
     _object addAction ["Logistik/Bussard",{
         params ["_target","_caller"];
+        [_caller,1,["ACE_SelfActions", "Spec_action_callBussard"]] call ace_interact_menu_fnc_removeActionFromObject;
         private _actionBussard = ["Spec_action_callBussard", "Rufe Bussard", "", {_this remoteExec ["Spec_fnc_heli_taxi",2]}, {true}] call ace_interact_menu_fnc_createAction;
         [_caller,1, ["ACE_SelfActions"], _actionBussard] call ace_interact_menu_fnc_addActionToObject;
         
@@ -139,6 +145,7 @@ if(_parameterCorrect && hasInterface) then {
             [] call Spec_fnc_moveMarkerLZ;
             _caller setVariable ["hasClickEvent",true];
         } else {
+            [_caller,1,["ACE_SelfActions", "Spec_action_moveMarkerLZ"]] call ace_interact_menu_fnc_removeActionFromObject;
             _action = ["Spec_action_moveMarkerLZ", "Bewege LZ", "", {(_this select 0) setVariable ["Spec_var_selectLZ", true]}, {true}] call ace_interact_menu_fnc_createAction;
             [_caller,1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
         };
@@ -147,16 +154,17 @@ if(_parameterCorrect && hasInterface) then {
     }, [], -5, false, true, "", _conditionString];
     _object addAction ["Nachschubkiste",{
         params ["_target","_caller"];
+        [_caller,1,["ACE_SelfActions", "Spec_action_spawnAmmoBox"]] call ace_interact_menu_fnc_removeActionFromObject;
         private _actionAmmoBox = ["Spec_action_spawnAmmoBox", "Nachschubkiste", "", {_this remoteExec ["Spec_crates_fnc_spawnAmmoBox",2]}, {true}] call ace_interact_menu_fnc_createAction;
         [_caller,1, ["ACE_SelfActions"], _actionAmmoBox] call ace_interact_menu_fnc_addActionToObject;
         Spec_var_loadoutFaction = "MAIN";
     }, [], -6, false, true, "", _conditionString];
     _object addAction ["Entferne Actions",{
         params ["_target","_caller"];
-        [_caller,1,["ACE_SelfActions", "Spec_action_moveMarkerLZ"]] call ace_interact_menu_fnc_removeActionFromObject; 
-        [_caller,1,["ACE_SelfActions", "Spec_action_callMedevac"]] call ace_interact_menu_fnc_removeActionFromObject; 
-        [_caller,1,["ACE_SelfActions", "Spec_action_callBussard"]] call ace_interact_menu_fnc_removeActionFromObject; 
-        [_caller,1,["ACE_SelfActions", "Spec_action_spawnAmmoBox"]] call ace_interact_menu_fnc_removeActionFromObject; 
+        [_caller,1,["ACE_SelfActions", "Spec_action_moveMarkerLZ"]] call ace_interact_menu_fnc_removeActionFromObject;
+        [_caller,1,["ACE_SelfActions", "Spec_action_callMedevac"]] call ace_interact_menu_fnc_removeActionFromObject;
+        [_caller,1,["ACE_SelfActions", "Spec_action_callBussard"]] call ace_interact_menu_fnc_removeActionFromObject;
+        [_caller,1,["ACE_SelfActions", "Spec_action_spawnAmmoBox"]] call ace_interact_menu_fnc_removeActionFromObject;
         
         Spec_var_loadoutFaction = "MAIN";
     }, [], -7, false, true, "", _conditionString];
@@ -181,17 +189,19 @@ if(_parameterCorrect && hasInterface) then {
     _i = -4;
     {
         _x params ["_displayName","_className"];
-        _object addAction [_displayName, {
-            params ["_target"];
-            (_this select 3) params ["_cargoItem"];
-            _target addWeaponCargoGlobal [_cargoItem,2];
-            // add magazines
-            _magazines = getArray (configFile >> "CfgWeapons" >> _cargoItem >> "Magazines");
-            {
-                _target addMagazineCargoGlobal [_x,3];
-            } forEach _magazines;
-            Spec_var_loadoutFaction = "MAIN";
-        }, [_className], _i, false, true, "", _conditionString];
+        if ([_className] call Spec_fnc_isClassNamePresent) then {
+            _object addAction [_displayName, {
+                params ["_target"];
+                (_this select 3) params ["_cargoItem"];
+                _target addWeaponCargoGlobal [_cargoItem,2];
+                // add magazines
+                _magazines = getArray (configFile >> "CfgWeapons" >> _cargoItem >> "Magazines");
+                {
+                    _target addMagazineCargoGlobal [_x,3];
+                } forEach _magazines;
+                Spec_var_loadoutFaction = "MAIN";
+            }, [_className], _i, false, true, "", _conditionString];
+        };
         _i = _i - 1;
     } forEach _cargoItems;
     if(_i < _minimumActionIndex) then {
@@ -206,7 +216,7 @@ if(_parameterCorrect && hasInterface) then {
         Spec_var_loadoutFaction = _factionName;
     }, [_factionName], -2, false, false, "", _conditionString];
 #define MARKSMAN_DEFAULT_ITEMS ["optic_DMS",2],["optic_SOS",2],["ACE_RangeCard",2],
-    private _itemsAndCount = [
+    private _additionalItems = [
         ["Toolkit", [["ToolKit",4]]],
         ["Wire Cutter",[["ACE_wirecutter",4]]],
         ["M6 60mm Mortar (UK3CB)", [
@@ -245,13 +255,19 @@ if(_parameterCorrect && hasInterface) then {
     _i = -4;
     {
         _x params ["_displayName","_itemsAndCount"];
-        _object addAction [_displayName, {
-            params ["_target"];
-            [_target, (_this select 3), false] remoteExecCall ["Spec_crates_fnc_filler",2];
-            Spec_var_loadoutFaction = "MAIN";
-        }, _itemsAndCount, _i, false, true, "", _conditionString];
+        private _classNames = [];
+        {
+            _classNames pushBack (_x select 0);
+        } forEach _itemsAndCount;
+        if ([_classNames, true] call Spec_fnc_isClassNamePresent) then {
+            _object addAction [_displayName, {
+                params ["_target"];
+                [_target, (_this select 3), false] remoteExecCall ["Spec_crates_fnc_filler",2];
+                Spec_var_loadoutFaction = "MAIN";
+            }, _itemsAndCount, _i, false, true, "", _conditionString];
+        };
         _i = _i - 1;
-    } forEach _itemsAndCount;
+    } forEach _additionalItems;
     if(_i < _minimumActionIndex) then {
         _minimumActionIndex = _i;
     };

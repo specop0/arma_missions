@@ -25,7 +25,7 @@
 
 private _parameterCorrect = (_this call Spec_fnc_loadoutParseUnitAndType) params [ ["_unit",objNull,[objNull]], ["_type","",[""]] ];
 
-private _uniform = "rhs_uniform_flora_patchless_alt"; //rhs_uniform_mflora_patchless
+private _uniform = "rhs_uniform_flora_patchless_alt";
 private _vest = "rhs_6b23_ML_6sh92";
 
 private _backpack = "B_AssaultPack_khk";
@@ -136,9 +136,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE, 2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -147,15 +147,15 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE, 5] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;
             {
                 [_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             } forEach _lmgAccessoryExtra;
-            [_unit,_lmgAmmo,ADD_TO_BACKPACK, 5] call Spec_fnc_addItemToContainer;
         } else {
             comment "Grenade launcher";
             if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {
@@ -206,7 +206,7 @@ if(_parameterCorrect) then {
         };
     };
     comment "Secondary Weapon";
-    [_unit,_secondaryAmmo,ADD_ANYWHERE, 3] call Spec_fnc_addItemToContainer;
+    [_unit,_secondaryAmmo,ADD_ANYWHERE, 2] call Spec_fnc_addItemToContainer;
     _unit addWeapon _secondaryWeapon;
     {
         _unit addSecondaryWeaponItem _x;

@@ -105,9 +105,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE, 2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -116,9 +116,9 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-            [_unit,_lmgAmmo,ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE, 3] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;

@@ -25,7 +25,7 @@ if(isServer) then {
                 _x removeMagazines "1Rnd_HE_Grenade_shell";
             };
         };
-    } foreach  allUnits - allPlayers;  
+    } foreach  allUnits - allPlayers;
 };
 if(hasInterface) then {
     [player] call Spec_fnc_loadoutFaction;

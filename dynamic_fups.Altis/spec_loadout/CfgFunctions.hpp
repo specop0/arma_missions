@@ -5,6 +5,7 @@ class spec_loadout {
         class addContainer {};
         class addItemToContainer {};
         class initLoadoutLists {};
+        class isClassNamePresent {};
         class loadout_aaf {};
         class loadout_bw_tropentarn {};
         class loadout_bw_flecktarn {};

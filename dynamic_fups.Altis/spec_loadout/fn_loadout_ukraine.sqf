@@ -28,7 +28,7 @@ private _parameterCorrect = (_this call Spec_fnc_loadoutParseUnitAndType) params
 private _uniform = "MNP_CombatUniform_Ukrainian";
 private _vest = selectRandom ["MNP_Vest_UKR_A", "MNP_Vest_UKR_B"];
 
-private _backpack = "BWA3_AssaultPack_Fleck";
+private _backpack = "CFP_AssaultPack_M81";
 private _backpackBig = "B_Carryall_ghex_F";
 private _backpackLR = "TFAR_rt1523g_big_bwmod";
 
@@ -41,8 +41,8 @@ private _standardAmmo = "CUP_30Rnd_545x39_AK_M";
 private _standardAccessory = ["CUP_optic_PSO_1"];
 private _standardAccessoryExtra = [];
 
-private _secondaryWeapon = "rhs_weap_makarov_pm";
-private _secondaryAmmo = "rhs_mag_9x18_8_57N181S";
+private _secondaryWeapon = "CUP_hgun_Makarov";
+private _secondaryAmmo = "CUP_8Rnd_9x18_Makarov_M";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
@@ -108,10 +108,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE, 2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -120,16 +119,15 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-            [_unit,_lmgAmmo,ADD_TO_BACKPACK, 3] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE, 5] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;
             {
                 [_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             } forEach _lmgAccessoryExtra;
-            [_unit,_lmgAmmo,ADD_ANYWHERE, 2] call Spec_fnc_addItemToContainer;
         } else {
             comment "Grenade launcher";
             if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {

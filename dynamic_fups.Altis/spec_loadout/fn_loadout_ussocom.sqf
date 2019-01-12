@@ -127,9 +127,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE, 2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -138,16 +138,15 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-            [_unit,_lmgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE, 3] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;
             {
                 [_unit,_x,ADD_ANYWHERE] call Spec_fnc_addItemToContainer;
             } forEach _lmgAccessoryExtra;
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
         } else {
             comment "Grenade launcher";
             if(_type in [CLASS_TF, CLASS_GL, CLASS_FUNKER]) then {

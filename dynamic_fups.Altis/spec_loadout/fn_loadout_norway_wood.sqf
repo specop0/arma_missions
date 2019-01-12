@@ -36,37 +36,36 @@ private _headgear = "MNP_Boonie_NOR";
 private _headgearPilot = "H_PilotHelmetHeli_B";
 private _goggles = "G_Lowprofile";
 
-private _standardWeapon = "rhs_weap_hk416d145";
+private _standardWeapon = "arifle_SPAR_01_blk_F";
 private _standardAmmo = "30Rnd_556x45_Stanag";
-private _standardAccessory = ["optic_Hamr","rhsusf_acc_anpeq15_bk"];
-private _standardAccessoryExtra = ["rhsusf_acc_compm4"];
+private _standardAccessory = ["optic_Hamr","acc_pointer_IR"];
+private _standardAccessoryExtra = ["optic_Aco"];
 
-private _secondaryWeapon = "rhsusf_weap_m9";
-private _secondaryAmmo = "rhsusf_mag_15Rnd_9x19_JHP";
+private _secondaryWeapon = "hgun_P07_F";
+private _secondaryAmmo = "16Rnd_9x21_Mag";
 private _secondaryAccessory = [];
 
 comment "Weapon with Underslung Grenade Launcher";
-private _grenadeLauncherWeapon = "rhs_weap_hk416d145_m320";
+private _grenadeLauncherWeapon = "arifle_SPAR_01_GL_blk_F";
 private _grenadeLauncherAmmo = _standardAmmo;
 private _grenadeLauncherAccessory = _standardAccessory;
 private _grenadeLauncherAccessoryExtra = _standardAccessoryExtra;
 
 comment "Machine Gunner";
-private _mgWeapon = "rhs_weap_m240B";
-private _mgAmmo = "rhsusf_100Rnd_762x51_m62_tracer";
-private _mgAccessory = ["optic_Hamr"];
+private _mgWeapon = "MMG_02_black_F";
+private _mgAmmo = "130Rnd_338_Mag";
+private _mgAccessory = _standardAccessory;
 private _mgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Light Machine Gunner";
-private _lmgWeapon = "CUP_lmg_minimi_railed";
-private _lmgAmmo = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+private _lmgWeapon = "arifle_SPAR_02_blk_F";
+private _lmgAmmo = "150Rnd_556x45_Drum_Mag_Tracer_F";
 private _lmgAccessory = _standardAccessory;
 private _lmgAccessoryExtra = _standardAccessoryExtra;
 
 comment "Rifleman (AT)";
-private _atWeapon = "CUP_launch_MAAWS";
-private _atAmmo = ["CUP_MAAWS_HEAT_M", "CUP_MAAWS_HEAT_M"];
-private _atAccessory = ["CUP_optic_MAAWS_Scope"];
+private _atWeapon = "launch_RPG32_F";
+private _atAmmo = ["RPG32_F","RPG32_F"];
 
 if(_parameterCorrect) then {
     removeAllWeapons _unit;
@@ -106,9 +105,9 @@ if(_parameterCorrect) then {
     comment "===========================================";
 
     if(_type == CLASS_MG) then {
-        [_unit,_mgAmmo,ADD_TO_VEST, 2] call Spec_fnc_addItemToContainer;
-        [_unit,_mgAmmo,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
         _unit addWeapon _mgWeapon;
+        [_unit,_mgAmmo,ADD_ANYWHERE_REVERSE, 2] call Spec_fnc_addItemToContainer;
         {
             _unit addPrimaryWeaponItem _x;
         } forEach _mgAccessory;
@@ -117,11 +116,9 @@ if(_parameterCorrect) then {
         } forEach _mgAccessoryExtra;
     } else {
         if(_type == CLASS_LMG) then {
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE] call Spec_fnc_addItemToContainer;
             _unit addWeapon _lmgWeapon;
-            [_unit,_lmgAmmo,ADD_TO_VEST] call Spec_fnc_addItemToContainer;
-            [_unit,_lmgAmmo,ADD_TO_BACKPACK, 2] call Spec_fnc_addItemToContainer;
-            _unit addWeapon _lmgWeapon;
+            [_unit,_lmgAmmo,ADD_ANYWHERE_REVERSE, 4] call Spec_fnc_addItemToContainer;
             {
                 _unit addPrimaryWeaponItem _x;
             } forEach _lmgAccessory;
@@ -147,9 +144,6 @@ if(_parameterCorrect) then {
                         [_unit,_x,ADD_TO_BACKPACK] call Spec_fnc_addItemToContainer;
                     } forEach _atAmmo;
                     _unit addWeapon _atWeapon;
-                    {
-                        _unit addSecondaryWeaponItem _x;
-                    } forEach _atAccessory;
                 };
                 comment "MG Ammunition for MG Assistant";
                 if(_type == CLASS_MG_ASSI) then {
