@@ -7,7 +7,7 @@ if(isServer) then {
             deleteVehicle _x;
         } forEach crew MEDEVAC_ID;
         deleteVehicle MEDEVAC_ID;
-        MEDEVAC_ID = "CUP_B_UH60L_Unarmed_FFV_MEV_US" createVehicle getPos MEDEVAC_HELIPAD_BASE_ID;
+        MEDEVAC_ID = "B_Heli_Transport_01_F" createVehicle getPos MEDEVAC_HELIPAD_BASE_ID;
         MEDEVAC_ID setPos getPos MEDEVAC_HELIPAD_BASE_ID;
         MEDEVAC_ID setDir direction MEDEVAC_HELIPAD_BASE_ID;
         createVehicleCrew MEDEVAC_ID;
@@ -20,7 +20,7 @@ if(isServer) then {
             deleteVehicle _x;
         } forEach crew HELI_TAXI_ID;
         deleteVehicle HELI_TAXI_ID;
-        HELI_TAXI_ID = "UK3CB_BAF_Chinook_HC2" createVehicle getPos HELI_TAXI_HELIPAD_BASE_ID;
+        HELI_TAXI_ID = "B_Heli_Transport_03_F" createVehicle getPos HELI_TAXI_HELIPAD_BASE_ID;
         HELI_TAXI_ID setPos getPos HELI_TAXI_HELIPAD_BASE_ID;
         HELI_TAXI_ID setDir direction HELI_TAXI_HELIPAD_BASE_ID;
         createVehicleCrew HELI_TAXI_ID;

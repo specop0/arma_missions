@@ -33,16 +33,18 @@ if(_parameterCorrect && hasInterface) then {
     ];
     {
         _x params ["_displayName","_className"];
-        _crate addAction [_displayName, {
-            params ["_target"];
-            (_this select 3) params ["_cargoItem"];
-            _target addWeaponCargoGlobal [_cargoItem,2];
-            // add magazines
-            private _magazines = getArray (configFile >> "CfgWeapons" >> _cargoItem >> "Magazines");
-            {
-                _target addMagazineCargoGlobal [_x,3];
-            } forEach _magazines;
-        }, [_className], 1.5, false, true, "", "true", 5];
+        if (isClass (configFile >> "CfgWeapons" >> _className)) then {
+            _crate addAction [_displayName, {
+                params ["_target"];
+                (_this select 3) params ["_cargoItem"];
+                _target addWeaponCargoGlobal [_cargoItem,2];
+                // add magazines
+                private _magazines = getArray (configFile >> "CfgWeapons" >> _cargoItem >> "Magazines");
+                {
+                    _target addMagazineCargoGlobal [_x,3];
+                } forEach _magazines;
+            }, [_className], 1.5, false, true, "", "true", 5];
+        };
     } forEach _cargoItems;
 };
 true
