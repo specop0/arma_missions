@@ -2,7 +2,15 @@
 private _parameterCorrect = params [ ["_enemy","",[""]] ];
 
 if(isNil {ENEMY_SIDE_ARRAY}) then {
-    ENEMY_SIDE_ARRAY = ["CSAT","CSAT_PACIFIC","RUS_MSV","RUS_VDV","TAKISTAN","AAF","RACS","NAPA","EAST_MILITIA", "SYNDICAT"];
+    private _rhsLoaded = isClass (configFile >> "CfgPatches" >> "rhs_main");
+    private _cupLoaded = { isClass (configFile >> "CfgPatches" >> _x) } count ["CUP_Creatures_People_Core","CUP_Vehicles_Core","CUP_Weapons_WeaponsCore"] == 3;
+    ENEMY_SIDE_ARRAY = ["AAF","CSAT","CSAT_PACIFIC","SYNDICAT"];
+    if (_cupLoaded) then {
+        ENEMY_SIDE_ARRAY append ["CHERNARUS", "NAPA", "RACS", "TAKISTAN"];
+    };
+    if (_rhsLoaded) then {
+        ENEMY_SIDE_ARRAY append ["EAST_MILITIA", "RUS_MSV","RUS_VDV", "SAF"];
+    };
 };
 
 if(_parameterCorrect) then {
@@ -47,6 +55,31 @@ if(_parameterCorrect) then {
             UNITS_MARKSMAN = ["CUP_I_RACS_Sniper"];
             VEHICLE_ENEMY = ["CUP_I_LR_MG_RACS"];
             ARMOR_ENEMY = ["CUP_I_M113_RACS","CUP_I_T72_RACS","CUP_I_M163_RACS"];
+        };
+        case "SAF": {
+            ENEMY_SIDE = INDEPENDENT;
+            UNITS_ENEMY = [
+                "rhssaf_army_m10_digital_asst_mgun",
+                "rhssaf_army_m10_digital_asst_spec_aa",
+                "rhssaf_army_m10_digital_asst_spec_at",
+                "rhssaf_army_m10_digital_engineer",
+                "rhssaf_army_m10_digital_exp",
+                "rhssaf_army_m10_digital_medic",
+                "rhssaf_army_m10_digital_ft_lead",
+                "rhssaf_army_m10_digital_mgun_m84",
+                "rhssaf_army_m10_digital_spec_aa",
+                "rhssaf_army_m10_digital_spec_at",
+                "rhssaf_army_m10_digital_repair",
+                "rhssaf_army_m10_digital_rifleman_ammo",
+                "rhssaf_army_m10_digital_rifleman_at",
+                "rhssaf_army_m10_digital_rifleman_m21",
+                "rhssaf_army_m10_digital_rifleman_m70",
+                "rhssaf_army_m10_digital_sq_lead",
+                "rhssaf_army_m10_digital_gl"
+            ];
+            VEHICLE_ENEMY = ["rhssaf_m1025_olive_m2"];
+            ARMOR_ENEMY = ["rhssaf_army_t72s"];
+            UNITS_MARKSMAN = ["rhssaf_army_m10_digital_sniper_m76"];
         };
         case "NAPA": {
             ENEMY_SIDE = INDEPENDENT;
@@ -96,6 +129,26 @@ if(_parameterCorrect) then {
             UNITS_MARKSMAN = ["rhs_g_Soldier_M_F"];
             VEHICLE_ENEMY = ["rhs_uaz_dshkm_chdkz","rhs_btr60_chdkz"];
             ARMOR_ENEMY = ["rhs_bmp1_chdkz","rhs_bmp2_chdkz","rhs_t72bb_chdkz"];
+        };
+        case "CHERNARUS": {
+            ENEMY_SIDE = EAST;
+            UNITS_ENEMY = [
+                "CUP_O_INS_Soldier_AA",
+                "CUP_O_INS_Soldier_Ammo",
+                "CUP_O_INS_Soldier_AT",
+                "CUP_O_INS_Soldier_AR",
+                "CUP_O_INS_Soldier_Engineer",
+                "CUP_O_INS_Soldier_MG",
+                "CUP_O_INS_Medic",
+                "CUP_O_INS_Officer",
+                "CUP_O_INS_Soldier",
+                "CUP_O_INS_Soldier_AK74",
+                "CUP_O_INS_Saboteur",
+                "CUP_O_INS_Soldier_Exp"
+            ];
+            UNITS_MARKSMAN = ["CUP_O_INS_Sniper"];
+            VEHICLE_ENEMY = ["CUP_O_UAZ_MG_CHDKZ","CUP_O_BRDM2_CHDKZ"];
+            ARMOR_ENEMY = ["CUP_O_BMP2_CHDKZ"];
         };
         case "RUS_MSV": {
             ENEMY_SIDE = EAST;
