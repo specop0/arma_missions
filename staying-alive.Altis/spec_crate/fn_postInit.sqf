@@ -24,7 +24,7 @@ if(isServer) then {
     {
         switch (typeOf _x) do {
             // medic
-            case ("ACE_medicalSupplyCrate") : {
+            case ("ACE_medicalSupplyCrate_advanced") : {
                 [_x,
                     [
                         ["ACE_fieldDressing", 250],

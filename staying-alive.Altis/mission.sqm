@@ -670,7 +670,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="3000";
+							value="3200";
 						};
 					};
 				};

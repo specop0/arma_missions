@@ -1,4 +1,5 @@
 force ace_medical_useLocation_PAK = 2;
+force ace_medical_useLocation_SurgicalKit = 3;
 
 force Vcm_ActivateAI = true;
 force VCM_AIMagLimit = 1;
